@@ -404,8 +404,12 @@ class Builder:
         ctx = self._ctx(lang, depth=0, active="home", path="")
         # 注目5本は本数を固定する。読者に「これで主要な動きは押さえた」
         # という完了感を与えるため（可変だと読み終わりの判断ができない）。
-        featured = news[:5]
-        latest = news[5:17]
+        # ヒーローは画像がある記事だけを使う。
+        # 画像なしだとグレーの矩形が出て、トップの見栄えが崩れるため。
+        with_img = [n for n in news if n.get("image")]
+        featured = with_img[:5]
+        used = {id(n) for n in featured}
+        latest = [n for n in news if id(n) not in used][:12]
         upcoming = [l for l in launches if l.get("upcoming")]
         tcounts = topics.counts(news)
         topic_nav = [
