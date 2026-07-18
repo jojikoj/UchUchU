@@ -118,6 +118,27 @@ _STATUS_CLASS = {
 }
 
 
+# 画像のない記事に使うイメージ写真。主題に応じて出し分ける。
+# 元記事の写真ではないため、テンプレート側で「イメージ」と明示する。
+_FALLBACK_BY_TOPIC = {
+    "rocket": "fallback-launch.jpg",
+    "moon": "fallback-launch.jpg",
+    "mars": "fallback-research.jpg",
+    "satellite": "fallback-space.jpg",
+    "human": "fallback-space.jpg",
+    "science": "fallback-research.jpg",
+    "business": "fallback-space.jpg",
+    "japan": "fallback-space.jpg",
+}
+
+
+def _fallback_image(topics: list[str]) -> str:
+    for t in topics:
+        if t in _FALLBACK_BY_TOPIC:
+            return _FALLBACK_BY_TOPIC[t]
+    return "fallback-space.jpg"
+
+
 # --- データ整形 ---------------------------------------------------------
 def prepare_news(raw: list[dict], lang: str) -> list[dict]:
     """その言語サイトに載せるニュースを選び、表示用に整形する。
@@ -147,6 +168,11 @@ def prepare_news(raw: list[dict], lang: str) -> list[dict]:
         it["slug"] = news_slug(it)
         it["display_title"] = it.get(f"title_{lang}") or it.get("title") or ""
         it["display_summary"] = it.get(f"summary_{lang}") or it.get("summary") or ""
+        # 画像のない記事にはトピックに応じたイメージ写真をあてる。
+        # グレーの空欄が並ぶと一覧の見栄えが崩れ、記事も読まれにくくなるため。
+        if not it.get("image"):
+            it["stock_image"] = _fallback_image(it.get("topics", []))
+            it["image_is_stock"] = True
         out.append(it)
     return out
 

@@ -2,7 +2,7 @@
 title: 中小製造業が宇宙産業に参入するには — 何から始めるべきか
 excerpt: 「宇宙は大手だけの世界」ではない。町工場が宇宙部品を受注するまでに何が必要か、実際の入口を順に整理する。
 tag: 参入ガイド
-hero: cover-entry.svg
+hero: cover-entry.jpg
 author: UchUchU 編集部
 date: 2026-07-18
 order: 0

@@ -184,6 +184,7 @@ STRINGS = {
         "ja": "UchUchUは宇宙産業に関わる日本企業をデータベース化しています。参入検討・取引先探索にお使いください。",
         "en": "UchUchU maintains a database of Japanese companies in the space industry."},
 
+    "meta.stock_image": {"ja": "イメージ", "en": "Illustrative image"},
     "meta.source": {"ja": "出典", "en": "Source"},
     "meta.updated": {"ja": "更新", "en": "Updated"},
     "meta.published": {"ja": "公開", "en": "Published"},

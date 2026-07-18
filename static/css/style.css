@@ -1061,3 +1061,17 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
 .ndetail-cta p { margin: 0 0 18px; color: var(--text-2); line-height: 1.8; }
 .ndetail-cta-actions { display: flex; gap: 11px; flex-wrap: wrap; }
 .ndetail-back a { font-size: .88rem; font-weight: 650; color: var(--accent); }
+
+/* イメージ写真であることの明示（元記事の写真と誤認させない） */
+.stock-mark {
+  position: absolute; right: 6px; bottom: 6px; font-size: .62rem;
+  padding: 2px 6px; border-radius: 4px; color: #fff;
+  background: rgba(13,21,38,.6); backdrop-filter: blur(4px);
+}
+.tile-media { position: relative; }
+.ndetail-media { position: relative; }
+.stock-caption {
+  position: absolute; right: 10px; bottom: 10px; font-size: .7rem;
+  padding: 3px 9px; border-radius: 5px; color: #fff;
+  background: rgba(13,21,38,.6); backdrop-filter: blur(4px);
+}

@@ -142,8 +142,8 @@
 <article class="news-row">
   {% if item.image %}
   <a class="row-thumb" href="{{ rel }}a/{{ item.slug }}/">
-    <img src="{{ item.image }}" alt="" loading="lazy"
-         onerror="this.closest('.row-thumb').classList.add('no-img')">
+    <img src="{{ item.image if item.image else (rel ~ '../static/img/' ~ item.stock_image) }}"
+         alt="" loading="lazy" onerror="this.closest('.row-thumb').classList.add('no-img')">
   </a>
   {% endif %}
   <div class="row-body">
@@ -170,6 +170,10 @@
     {% if item.image %}
     <img src="{{ item.image }}" alt="" loading="lazy"
          onerror="this.closest('.tile-media').classList.add('no-img')">
+    {% elif item.stock_image %}
+    {# 元記事に画像がない場合のイメージ写真。実際の被写体ではない #}
+    <img src="{{ rel }}../static/img/{{ item.stock_image }}" alt="" loading="lazy">
+    <span class="stock-mark">{{ t('meta.stock_image') }}</span>
     {% endif %}
   </a>
   <div class="tile-body">

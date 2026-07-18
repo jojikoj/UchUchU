@@ -16,7 +16,7 @@
     <div class="cat-cards">
       {% for c in cats %}
       <a class="cat-card {{ 'on' if current_cat == c.id }}" href="{{ c.href }}">
-        <span class="cat-media"><img src="{{ asset }}static/img/cat-{{ c.id }}.svg" alt="" loading="lazy"></span>
+        <span class="cat-media"><img src="{{ asset }}static/img/cat-{{ c.id }}.jpg" alt="" loading="lazy"></span>
         <span class="cat-body">
           <span class="cat-name">{{ c.name }}</span>
           <span class="cat-n">{{ c.count }}</span>

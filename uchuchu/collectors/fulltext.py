@@ -1,0 +1,194 @@
+"""元記事の本文を取得し、独自の日本語要約を作る。
+
+RSSが配信する要約は50〜150字程度で、しかも途中で切れていることが多い。
+それだけを載せた記事ページは読者にとって価値がなく、
+検索エンジンからも「中身の薄いページ」と見なされる。
+
+そこで元記事の本文を取得し、**600字以上の日本語要約**を生成する。
+本文そのものは保存も掲載もしない（著作権は元の発信者にあるため）。
+生成するのは要約であって転載ではない。
+
+守っていること:
+  - robots.txt を必ず確認し、拒否されているサイトは取得しない
+  - User-Agent に連絡先を含め、身元を明示する
+  - リクエスト間隔を空け、相手サーバーに負荷をかけない
+  - 本文は要約生成にのみ使い、保存しない
+  - 掲載時は必ず出典と元記事リンクを併記する
+"""
+from __future__ import annotations
+
+import json
+import sys
+import time
+import urllib.parse as up
+import urllib.robotparser as rp
+
+import requests
+
+from .. import config
+from . import translate
+
+try:
+    import trafilatura
+except ImportError:
+    trafilatura = None
+
+UA = "UchUchU/1.0 (+https://uchuchu.tech; space industry media)"
+FETCH_TIMEOUT = 20
+POLITE_INTERVAL = 1.5      # 同一ホストへの連続アクセス間隔（秒）
+MIN_BODY = 400             # これ未満なら要約に足る本文が取れていないと判断
+TARGET_CHARS = 600         # 生成する要約の最低文字数
+
+_robots_cache: dict[str, rp.RobotFileParser | None] = {}
+_last_access: dict[str, float] = {}
+
+
+def _allowed(url: str) -> bool:
+    """robots.txt で許可されているかを確認する。判断できない場合は取得しない。"""
+    host = up.urlparse(url).netloc
+    if host not in _robots_cache:
+        parser = rp.RobotFileParser()
+        parser.set_url(f"https://{host}/robots.txt")
+        try:
+            parser.read()
+            _robots_cache[host] = parser
+        except Exception:
+            _robots_cache[host] = None
+    parser = _robots_cache[host]
+    if parser is None:
+        return False          # 確認できないなら取りに行かない
+    try:
+        return parser.can_fetch(UA, url)
+    except Exception:
+        return False
+
+
+def _wait(host: str) -> None:
+    last = _last_access.get(host, 0.0)
+    delta = time.time() - last
+    if delta < POLITE_INTERVAL:
+        time.sleep(POLITE_INTERVAL - delta)
+    _last_access[host] = time.time()
+
+
+def fetch_body(url: str) -> str:
+    """元記事の本文を返す。取得できない場合は空文字。"""
+    if trafilatura is None or not url:
+        return ""
+    if not _allowed(url):
+        return ""
+    host = up.urlparse(url).netloc
+    _wait(host)
+    try:
+        r = requests.get(url, timeout=FETCH_TIMEOUT, headers={"User-Agent": UA})
+        r.raise_for_status()
+    except Exception:
+        return ""
+    try:
+        text = trafilatura.extract(
+            r.text, include_comments=False, include_tables=False,
+            no_fallback=False) or ""
+    except Exception:
+        return ""
+    return text.strip()
+
+
+# --- 要約生成 -----------------------------------------------------------
+_PROMPT = """あなたは宇宙産業の専門メディアの編集者です。
+以下の記事本文を読み、日本語の要約記事を書いてください。
+
+要件:
+- **必ず600字以上**書くこと。短くまとめようとしないこと
+- 3〜4段落に分け、段落間は空行で区切る
+- 1段落目で「何が起きたか」を明確に述べる
+- 2段落目以降で背景・経緯・技術的な内容・今後の見通しを説明する
+- 原文にない事実を足さない。推測を断定で書かない
+- 「〜と報じられた」等の伝聞表現は避け、事実として簡潔に述べる
+- 敬体（です・ます）ではなく常体（だ・である）で書く
+- 見出しや箇条書きは使わず、通常の文章で書く
+- 出力は要約本文のみ。前置き・説明・引用符は書かない
+
+記事タイトル: {title}
+
+記事本文:
+{body}
+"""
+
+
+def summarize(title: str, body: str) -> str:
+    """本文から600字以上の日本語要約を生成する。失敗時は空文字。"""
+    if not body or len(body) < MIN_BODY:
+        return ""
+    if not translate.claude_available():
+        return ""
+    # 長すぎる本文は先頭を使う（結論が先に書かれる記事が多いため）
+    src = body[:6000]
+    prompt = _PROMPT.format(title=title, body=src)
+    import subprocess
+    try:
+        proc = subprocess.run(
+            [translate.CLAUDE_BIN, "-p", prompt],
+            capture_output=True, text=True, timeout=300)
+    except Exception as e:
+        print(f"    [summary] 呼び出し失敗: {type(e).__name__}", file=sys.stderr)
+        return ""
+    if proc.returncode != 0:
+        return ""
+    out = proc.stdout.strip()
+    # コードフェンスが付いた場合は剥がす
+    if out.startswith("```"):
+        out = out.split("```")[1] if "```" in out[3:] else out
+        out = out.lstrip("markdown").lstrip("\n")
+    return out.strip()
+
+
+def enrich(items: list[dict], limit: int | None = None) -> int:
+    """記事に本文由来の要約（body_ja）を付与する。付与できた件数を返す。
+
+    既に body_ja がある記事はスキップするため、
+    再実行しても新着分だけが処理される。
+    """
+    targets = [it for it in items if not it.get("body_ja") and it.get("url")]
+    if limit:
+        targets = targets[:limit]
+    if not targets:
+        print("  [fulltext] 新規対象なし")
+        return 0
+
+    print(f"  [fulltext] 本文取得＋要約生成: {len(targets)}件")
+    done = skipped = 0
+    for i, it in enumerate(targets, 1):
+        body = fetch_body(it["url"])
+        if not body or len(body) < MIN_BODY:
+            it["body_skip"] = "no_body"
+            skipped += 1
+        else:
+            summary = summarize(it.get("title", ""), body)
+            if summary and len(summary) >= 300:
+                it["body_ja"] = summary
+                it["body_chars"] = len(summary)
+                done += 1
+            else:
+                it["body_skip"] = "no_summary"
+                skipped += 1
+        if i % 10 == 0 or i == len(targets):
+            print(f"    {i}/{len(targets)}  生成{done} / スキップ{skipped}")
+    return done
+
+
+def main() -> int:
+    path = config.DATA_DIR / "news.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    limit = None
+    for a in sys.argv[1:]:
+        if a.startswith("--limit="):
+            limit = int(a.split("=", 1)[1])
+    n = enrich(data["items"], limit=limit)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    total = sum(1 for x in data["items"] if x.get("body_ja"))
+    print(f"=== 今回 {n}件生成 / 累計 {total}件が本文要約つき ===")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

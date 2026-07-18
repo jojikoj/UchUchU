@@ -17,10 +17,11 @@
     <h1>{{ item.display_title }}</h1>
   </div>
 
-  {% if item.image %}
+  {% if item.image or item.stock_image %}
   <div class="ndetail-media">
-    <img src="{{ item.image }}" alt="" loading="eager"
-         onerror="this.closest('.ndetail-media').remove()">
+    <img src="{{ item.image if item.image else (asset ~ 'static/img/' ~ item.stock_image) }}"
+         alt="" loading="eager" onerror="this.closest('.ndetail-media').remove()">
+    {% if item.image_is_stock %}<span class="stock-caption">{{ t('meta.stock_image') }}</span>{% endif %}
   </div>
   {% endif %}
 
