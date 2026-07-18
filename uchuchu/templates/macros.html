@@ -103,3 +103,57 @@
 </nav>
 {% endif %}
 {% endmacro %}
+
+
+{#
+  注目トップ記事。強弱は「大きな画像＋リード文」だけで付ける。
+  通常記事にはリード文を付けないので、この差だけで序列が伝わる。
+#}
+{% macro news_lead(item, lang, t) %}
+{% set title = item.get('title_' ~ lang) or item.title %}
+{% set summary = item.get('summary_' ~ lang) or item.summary %}
+<article class="lead-card">
+  {% if item.image %}
+  <a class="lead-media" href="{{ item.url }}" target="_blank" rel="noopener">
+    <img src="{{ item.image }}" alt="" loading="eager"
+         onerror="this.closest('.lead-media').classList.add('no-img')">
+  </a>
+  {% endif %}
+  <div class="lead-body">
+    <div class="card-meta">
+      <span class="src">{{ item.source }}</span>
+      {% if item.is_translated %}<span class="mt-mark" title="{{ item.title }}">{{ t('meta.machine_translated') }}</span>{% endif %}
+      {% if item.published_short %}<time datetime="{{ item.published }}">{{ item.published_short }}</time>{% endif %}
+    </div>
+    <h3 class="lead-title"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ title }}</a></h3>
+    {% if summary %}<p class="lead-summary">{{ summary }}</p>{% endif %}
+  </div>
+</article>
+{% endmacro %}
+
+
+{#
+  一覧用の1行。要約は出さない。
+  調査した5サイト中4サイトが一覧に要約を出しておらず、
+  要約2行は1記事あたり約40pxを消費してスキャン速度を落とすため。
+#}
+{% macro news_row(item, lang, t) %}
+{% set title = item.get('title_' ~ lang) or item.title %}
+<article class="news-row">
+  {% if item.image %}
+  <a class="row-thumb" href="{{ item.url }}" target="_blank" rel="noopener">
+    <img src="{{ item.image }}" alt="" loading="lazy"
+         onerror="this.closest('.row-thumb').classList.add('no-img')">
+  </a>
+  {% endif %}
+  <div class="row-body">
+    <h3 class="row-title"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ title }}</a></h3>
+    <div class="card-meta">
+      <span class="src">{{ item.source }}</span>
+      {% if item.is_translated %}<span class="mt-mark" title="{{ item.title }}">{{ t('meta.machine_translated') }}</span>{% endif %}
+      {% if item.published_short %}<time datetime="{{ item.published }}">{{ item.published_short }}</time>{% endif %}
+      {% for tp in item.topic_labels or [] %}<span class="row-topic">{{ tp }}</span>{% endfor %}
+    </div>
+  </div>
+</article>
+{% endmacro %}

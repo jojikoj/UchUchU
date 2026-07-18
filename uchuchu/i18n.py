@@ -11,6 +11,14 @@ STRINGS = {
     "hero.cta_news": {"ja": "最新ニュースを見る", "en": "Latest news"},
     "hero.cta_launches": {"ja": "打ち上げ予定", "en": "Upcoming launches"},
 
+    "home.title": {"ja": "宇宙開発ニュース・打ち上げ予定", "en": "Space News & Launch Schedule"},
+    "home.next_launch": {"ja": "次の打ち上げ", "en": "Next Launches"},
+    "home.featured": {"ja": "注目のニュース", "en": "Top Stories"},
+    "home.by_topic": {"ja": "トピックから探す", "en": "Browse by Topic"},
+    "nav.topics": {"ja": "トピック", "en": "Topics"},
+    "topic.other": {"ja": "他のトピック", "en": "Other topics"},
+    "topic.count": {"ja": "{n}件の記事", "en": "{n} articles"},
+
     "home.latest_news": {"ja": "最新ニュース", "en": "Latest News"},
     "home.upcoming_launches": {"ja": "次の打ち上げ", "en": "Upcoming Launches"},
     "home.features": {"ja": "特集記事", "en": "Featured Articles"},

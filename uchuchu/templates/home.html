@@ -1,56 +1,105 @@
 {% extends "base.html" %}
-{% from "macros.html" import news_card, launch_card, paper_card, article_card %}
-{% block title %}{{ site_tagline }}{% endblock %}
+{% from "macros.html" import news_row, news_lead, launch_card, paper_card, article_card %}
+{% block title %}{{ t('home.title') }}{% endblock %}
 {% block og_title %}{{ site_name }} — {{ site_tagline }}{% endblock %}
 
 {% block content %}
-<section class="hero">
-  <div class="wrap hero-inner">
-    <p class="hero-eyebrow">{{ 'SPACE DEVELOPMENT · JAPAN & THE WORLD' }}</p>
-    <h1 class="hero-title">{{ site_tagline }}</h1>
-    <p class="hero-lead">{{ site_description }}</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ rel }}news/">{{ t('hero.cta_news') }}</a>
-      <a class="btn btn-ghost" href="{{ rel }}launches/">{{ t('hero.cta_launches') }}</a>
-    </div>
-    <ul class="hero-stats">
-      <li><strong>{{ news|length }}</strong><span>{{ t('nav.news') }}</span></li>
-      <li><strong>{{ launches|length }}</strong><span>{{ t('nav.launches') }}</span></li>
-      <li><strong>{{ papers|length }}</strong><span>{{ t('nav.papers') }}</span></li>
-    </ul>
-  </div>
-</section>
+{#
+  情報ポータル型のトップ。大きなキャッチコピーは置かない。
+  国内外の主要ニュースポータル5サイトを調査したところ、
+  ファーストビューにヒーローコピーを置くサイトは1つも無く、
+  いずれも2〜3ブロック目には実記事が出ていた。
+  代わりに最上部へ「次の打ち上げ」を置く。時間で必ず変化し、
+  読者が毎回確認しに来る情報だからで、日経がマーケット数値を
+  記事より先に置いているのと同じ役割を担わせる。
+#}
 
-{% if launches %}
-<section class="section">
+{% if next_launches %}
+<section class="launchbar">
   <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.upcoming_launches') }}</h2>
-      <a class="section-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
+    <div class="launchbar-head">
+      <h2 class="launchbar-title">
+        <span class="live-dot" aria-hidden="true"></span>{{ t('home.next_launch') }}
+      </h2>
+      <a class="launchbar-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
     </div>
-    <div class="grid grid-launches">
-      {% for l in launches[:3] %}{{ launch_card(l, lang, t) }}{% endfor %}
+    <div class="launchbar-grid">
+      {% for l in next_launches %}
+      <article class="launchbar-item">
+        <div class="launchbar-cd">
+          {% if l.countdown %}<span class="net-countdown" data-net="{{ l.net }}">{{ l.countdown }}</span>{% endif %}
+          {% if l.status %}<span class="pill status-{{ l.status_class or 'tbd' }}">{{ l.status }}</span>{% endif %}
+        </div>
+        <h3 class="launchbar-name">{{ l.name }}</h3>
+        <p class="launchbar-meta">
+          {% if l.net_display %}<time datetime="{{ l.net }}">{{ l.net_display }}</time>{% endif %}
+          {% if l.location %}<span class="dim">/ {{ l.location }}</span>{% endif %}
+        </p>
+      </article>
+      {% endfor %}
     </div>
   </div>
 </section>
 {% endif %}
 
-{% if news %}
+{#
+  注目5本。本数を固定することで「これだけ読めば主要な動きは押さえた」
+  という完了感が生まれる（Yahoo!トピックスが8本固定である理由と同じ）。
+  強弱は画像サイズとリード文の有無だけで付け、バッジは増やさない。
+#}
+{% if featured %}
+<section class="section section-top">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.featured') }}</h2>
+      <a class="section-more" href="{{ rel }}news/">{{ t('home.view_all') }} →</a>
+    </div>
+    <div class="featured-grid">
+      {{ news_lead(featured[0], lang, t) }}
+      <div class="featured-rest">
+        {% for n in featured[1:] %}{{ news_row(n, lang, t) }}{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if topic_nav %}
 <section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.by_topic') }}</h2>
+    </div>
+    <div class="topic-grid">
+      {% for tp in topic_nav %}
+      <a class="topic-card" href="{{ rel }}topics/{{ tp.id }}/">
+        <span class="topic-card-name">{{ tp.name }}</span>
+        <span class="topic-card-count">{{ tp.count }}</span>
+        <span class="topic-card-desc">{{ tp.desc }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# 最新ニュースは一覧型。要約は出さない（スキャン速度を落とさないため） #}
+{% if latest %}
+<section class="section">
   <div class="wrap">
     <div class="section-head">
       <h2>{{ t('home.latest_news') }}</h2>
       <a class="section-more" href="{{ rel }}news/">{{ t('home.view_all') }} →</a>
     </div>
-    <div class="grid grid-news">
-      {% for n in news[:6] %}{{ news_card(n, lang, t) }}{% endfor %}
+    <div class="news-list">
+      {% for n in latest %}{{ news_row(n, lang, t) }}{% endfor %}
     </div>
   </div>
 </section>
 {% endif %}
 
 {% if articles %}
-<section class="section">
+<section class="section section-alt">
   <div class="wrap">
     <div class="section-head">
       <h2>{{ t('home.features') }}</h2>
@@ -64,7 +113,7 @@
 {% endif %}
 
 {% if papers %}
-<section class="section section-alt">
+<section class="section">
   <div class="wrap">
     <div class="section-head">
       <h2>{{ t('home.research') }}</h2>

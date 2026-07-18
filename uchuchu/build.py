@@ -25,7 +25,7 @@ from datetime import datetime, timezone
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import config, seo
+from . import config, seo, topics
 from .i18n import t as _t
 
 
@@ -68,6 +68,24 @@ def fmt_date(iso: str | None, lang: str, with_time: bool = False) -> str | None:
     if with_time:
         base += f" {dt.hour:02d}:{dt.minute:02d} UTC"
     return base
+
+
+_JA_WDAY = ["月", "火", "水", "木", "金", "土", "日"]
+_EN_WDAY = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+
+def fmt_date_short(iso: str | None, lang: str) -> str | None:
+    """一覧用の短い絶対表記。曜日を入れる。
+
+    「2時間前」のような相対表記は使わない。宇宙開発では打ち上げ日など
+    日付そのものが情報価値を持ち、相対表記では予定と照合できないため。
+    """
+    dt = _parse_iso(iso)
+    if dt is None:
+        return None
+    if lang == "ja":
+        return f"{dt.month}/{dt.day}({_JA_WDAY[dt.weekday()]})"
+    return f"{_EN_WDAY[dt.weekday()]} {_EN_MONTHS[dt.month]} {dt.day}"
 
 
 def countdown_label(iso: str | None, now: datetime, lang: str) -> str | None:
@@ -115,10 +133,16 @@ def prepare_news(raw: list[dict], lang: str) -> list[dict]:
             continue
         it = dict(it)
         it["published_display"] = fmt_date(it.get("published"), lang)
+        it["published_short"] = fmt_date_short(it.get("published"), lang)
         # 自動翻訳で表示しているかどうか（UIバッジ用）
         it["is_translated"] = bool(
             it.get("lang") != lang and it.get(f"title_{lang}")
         )
+        # 主題分類（原文で判定する。訳文よりキーワードが安定するため）
+        it["topics"] = topics.classify(
+            it.get("title", ""), it.get("summary", ""))
+        # 一覧に出す主題ラベル（多すぎると読みにくいので1つに絞る）
+        it["topic_labels"] = [topics.name(x, lang) for x in it["topics"][:1]]
         out.append(it)
     return out
 
@@ -360,7 +384,21 @@ class Builder:
 
         # トップ（depth: ja=0, en=1 だが rel は言語ルート基準なので 0）
         ctx = self._ctx(lang, depth=0, active="home", path="")
-        ctx.update(news=news, launches=launches, papers=papers, articles=articles)
+        # 注目5本は本数を固定する。読者に「これで主要な動きは押さえた」
+        # という完了感を与えるため（可変だと読み終わりの判断ができない）。
+        featured = news[:5]
+        latest = news[5:17]
+        upcoming = [l for l in launches if l.get("upcoming")]
+        tcounts = topics.counts(news)
+        topic_nav = [
+            {"id": t["id"], "name": topics.name(t["id"], lang),
+             "desc": topics.desc(t["id"], lang), "count": tcounts.get(t["id"], 0)}
+            for t in topics.TOPICS if tcounts.get(t["id"], 0) >= 3
+        ]
+        topic_nav.sort(key=lambda x: -x["count"])
+        ctx.update(news=news, launches=launches, papers=papers, articles=articles,
+                   featured=featured, latest=latest,
+                   next_launches=upcoming[:3], topic_nav=topic_nav)
         ctx["jsonld"] = seo.build_jsonld(
             self.base_url, lang, "home",
             trail=[(home_label, self._url_for(lang, ""))])
@@ -470,6 +508,43 @@ class Builder:
         (config.STATIC_DIR / f"search-{lang}.json").write_text(
             seo.build_search_index(lang, news, papers, launches, articles),
             encoding="utf-8")
+
+        # トピック別ページ（topics/<id>/）
+        # 時系列一覧だけでは読者が関心領域にたどり着けないため、
+        # 主題ごとの入口を実ページとして持たせる。
+        topic_pages = 0
+        for tp in topics.TOPICS:
+            items = [n for n in news if tp["id"] in n.get("topics", [])]
+            if len(items) < 3:
+                continue
+            base_path = f"topics/{tp['id']}/"
+            chunks = _paginate(items, config.PAGE_SIZE)
+            for pno, chunk in enumerate(chunks, 1):
+                path = base_path if pno == 1 else f"{base_path}{pno}/"
+                depth = 2 if pno == 1 else 3
+                ctx = self._ctx(lang, depth=depth, active="topics", path=path,
+                                page_description=topics.desc(tp["id"], lang))
+                ctx["news"] = chunk
+                ctx["pagination"] = _pagination_ctx(pno, len(chunks))
+                ctx["topic_name"] = topics.name(tp["id"], lang)
+                ctx["topic_desc"] = topics.desc(tp["id"], lang)
+                ctx["topic_id"] = tp["id"]
+                ctx["all_topics"] = [
+                    {"id": x["id"], "name": topics.name(x["id"], lang),
+                     "href": f"{'../' * (depth - 1)}{x['id']}/",
+                     "current": x["id"] == tp["id"]}
+                    for x in topics.TOPICS
+                    if sum(1 for n in news if x["id"] in n.get("topics", [])) >= 3
+                ]
+                ctx["jsonld"] = seo.build_jsonld(
+                    self.base_url, lang, "news",
+                    trail=[(home_label, self._url_for(lang, "")),
+                           (topics.name(tp["id"], lang), self._url_for(lang, base_path))],
+                    news=chunk)
+                self._write(lang, path.rstrip("/"),
+                            self.env.get_template("topic.html").render(**ctx))
+                topic_pages += 1
+        total_pages_built += topic_pages
 
         # RSSフィード
         feed = seo.build_feed(self.base_url, lang, articles, news, self.now)
