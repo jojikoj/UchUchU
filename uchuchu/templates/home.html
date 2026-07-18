@@ -1,190 +1,168 @@
 {% extends "base.html" %}
-{% from "macros.html" import news_row, news_lead, news_tile, paper_card, article_card %}
+{% from "macros.html" import news_tile, paper_card %}
 {% block title %}{{ t('home.title') }}{% endblock %}
 {% block og_title %}{{ site_name }} — {{ site_tagline }}{% endblock %}
+
+{% macro sec_head(en, ja, more_href, more_label) %}
+<div class="sec-head">
+  <span class="sec-en">{{ en }}</span>
+  <span class="sec-ja">{{ ja }}</span>
+  {% if more_href %}<a class="sec-more" href="{{ more_href }}">{{ more_label }} →</a>{% endif %}
+</div>
+{% endmacro %}
 
 {% block content %}
 
 {#
-  立ち位置を1行で示す帯。巨大なヒーローは置かないが、
-  B2Bメディアとして「誰向けか」が伝わらないと読者も広告主も判断できない。
-  高さを抑えつつ、下に打ち上げデータを同居させて情報密度を保つ。
+  ヒーロー: 左に大きな注目記事、右に縦積みリスト。
+  1画面に「主役1本＋選択肢4本」を出せる、情報メディアの定番構成。
 #}
-<section class="topband">
-  <div class="wrap topband-inner">
-    <div class="topband-lead">
-      <p class="topband-eyebrow">{{ t('home.eyebrow') }}</p>
-      <h1 class="topband-title">{{ site_tagline }}</h1>
-      <p class="topband-desc">{{ t('home.positioning') }}</p>
-      <div class="topband-cta">
-        <a class="btn btn-primary" href="{{ rel }}companies/">{{ t('home.cta_db') }}</a>
-        <a class="btn btn-ghost" href="{{ rel }}articles/">{{ t('home.cta_guide') }}</a>
-      </div>
-    </div>
-    {% if next_launches %}
-    <aside class="topband-launch">
-      <div class="topband-launch-head">
-        <span class="live-dot" aria-hidden="true"></span>{{ t('home.next_launch') }}
-        <a class="topband-launch-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
-      </div>
-      {% for l in next_launches %}
-      <article class="mini-launch">
-        <div class="mini-launch-top">
-          {% if l.countdown %}<span class="net-countdown" data-net="{{ l.net }}">{{ l.countdown }}</span>{% endif %}
-          {% if l.status %}<span class="pill status-{{ l.status_class or 'tbd' }}">{{ l.status }}</span>{% endif %}
-        </div>
-        <h3 class="mini-launch-name">{{ l.name }}</h3>
-        <p class="mini-launch-meta">{{ l.net_display }}{% if l.location %} · {{ l.location }}{% endif %}</p>
-      </article>
-      {% endfor %}
-    </aside>
-    {% endif %}
-  </div>
-</section>
-
-{# タグ導線。読者が関心領域から入れるよう、上部に置く #}
-{% if topic_nav %}
-<section class="tagbar">
-  <div class="wrap tagbar-inner">
-    <span class="tagbar-label">{{ t('home.popular_tags') }}</span>
-    <div class="tagbar-tags">
-      {% for tp in topic_nav %}
-      <a class="tag-hash tag-link" href="{{ rel }}topics/{{ tp.id }}/">#{{ tp.name }}</a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{# 独自資産その1: 企業DB。集約でない唯一のコンテンツなので目立たせる #}
-<section class="section section-db">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.db_title') }}</h2>
-      <a class="section-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
-    </div>
-    <p class="section-lead">{{ t('home.db_lead') }}</p>
-    <div class="db-cats">
-      {% for c in company_cats %}
-      <a class="db-cat" href="{{ rel }}companies/{{ c.id }}/">
-        <span class="db-cat-n">{{ c.count }}</span>
-        <span class="db-cat-name">{{ c.name }}</span>
-      </a>
-      {% endfor %}
-    </div>
-    {% if featured_companies %}
-    <div class="db-preview">
-      {% for c in featured_companies %}
-      <a class="db-chip" href="{{ rel }}companies/">{{ c.display_name }}</a>
-      {% endfor %}
-      <a class="db-chip db-chip-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
-    </div>
-    {% endif %}
-  </div>
-</section>
-
-{# 独自資産その2: 参入ガイド。AEOで引用される入口 #}
-{% if guides %}
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.guide_title') }}</h2>
-      <a class="section-more" href="{{ rel }}articles/">{{ t('home.view_all') }} →</a>
-    </div>
-    <p class="section-lead">{{ t('home.guide_lead') }}</p>
-    <div class="guide-grid">
-      {% for a in guides %}
-      <a class="guide-card" href="{{ rel }}articles/{{ a.slug }}/">
-        {% if a.hero %}
-        <span class="guide-media">
-          <img src="{{ asset }}static/img/{{ a.hero }}" alt="" loading="lazy">
-          <span class="guide-num">{{ '%02d'|format(loop.index) }}</span>
-        </span>
-        {% else %}<span class="guide-num">{{ '%02d'|format(loop.index) }}</span>{% endif %}
-        <h3 class="guide-title">{{ a.title }}</h3>
-        <p class="guide-excerpt">{{ a.excerpt }}</p>
-        <span class="card-link">{{ t('articles.read') }} →</span>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
 {% if featured %}
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.featured') }}</h2>
-      <a class="section-more" href="{{ rel }}news/">{{ t('home.view_all') }} →</a>
-    </div>
-    <div class="featured-grid">
-      {{ news_lead(featured[0], lang, t) }}
-      <div class="featured-rest">
-        {% for n in featured[1:] %}{{ news_row(n, lang, t) }}{% endfor %}
+<section class="hero-block">
+  <div class="hero-main">
+    {% set f = featured[0] %}
+    {% set ftitle = f.get('title_' ~ lang) or f.title %}
+    <a class="hero-media" href="{{ f.url }}" target="_blank" rel="noopener">
+      {% if f.image %}<img src="{{ f.image }}" alt="" loading="eager"
+           onerror="this.closest('.hero-media').classList.add('no-img')">{% endif %}
+    </a>
+    <div class="hero-body">
+      <h2 class="hero-title"><a href="{{ f.url }}" target="_blank" rel="noopener">{{ ftitle }}</a></h2>
+      <div class="hero-meta">
+        {% for tp in f.topic_labels or [] %}<span class="pill-tag">#{{ tp }}</span>{% endfor %}
+        <span class="pill-tag src">{{ f.source }}</span>
+        {% if f.published_short %}<time datetime="{{ f.published }}">{{ f.published_short }}</time>{% endif %}
       </div>
     </div>
+  </div>
+
+  <div class="hero-side">
+    {% for n in featured[1:5] %}
+    {% set ntitle = n.get('title_' ~ lang) or n.title %}
+    <article class="hero-item">
+      <a class="hero-item-media" href="{{ n.url }}" target="_blank" rel="noopener">
+        {% if n.image %}<img src="{{ n.image }}" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">{% endif %}
+      </a>
+      <div class="hero-item-body">
+        <h3><a href="{{ n.url }}" target="_blank" rel="noopener">{{ ntitle }}</a></h3>
+        <div class="hero-item-meta">
+          {% for tp in n.topic_labels or [] %}<span class="pill-tag sm">#{{ tp }}</span>{% endfor %}
+          {% if n.published_short %}<time datetime="{{ n.published }}">{{ n.published_short }}</time>{% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
   </div>
 </section>
 {% endif %}
 
-{% if topic_nav %}
-<section class="section">
-  <div class="wrap">
-    <div class="section-head"><h2>{{ t('home.by_topic') }}</h2></div>
-    <div class="topic-grid">
-      {% for tp in topic_nav %}
-      <a class="topic-card" href="{{ rel }}topics/{{ tp.id }}/">
-        <span class="topic-card-name">{{ tp.name }}</span>
-        <span class="topic-card-count">{{ tp.count }}</span>
-        <span class="topic-card-desc">{{ tp.desc }}</span>
-      </a>
-      {% endfor %}
-    </div>
+{# 打ち上げ帯。時間で変化する固有データなので上部に置く #}
+{% if next_launches %}
+<section class="launch-strip">
+  <div class="strip-head">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span class="strip-title">{{ t('home.next_launch') }}</span>
+    <a class="strip-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
+  </div>
+  <div class="strip-items">
+    {% for l in next_launches %}
+    <article class="strip-item">
+      <div class="strip-cd">
+        {% if l.countdown %}<span class="net-countdown" data-net="{{ l.net }}">{{ l.countdown }}</span>{% endif %}
+        {% if l.status %}<span class="pill status-{{ l.status_class or 'tbd' }}">{{ l.status }}</span>{% endif %}
+      </div>
+      <h3>{{ l.name }}</h3>
+      <p>{{ l.net_display }}{% if l.location %} · {{ l.location }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{# 独自資産1: 企業DB #}
+<section class="block block-tint">
+  {{ sec_head('DATABASE', t('home.db_title'), rel ~ 'companies/', t('home.db_more')) }}
+  <p class="block-lead">{{ t('home.db_lead') }}</p>
+  <div class="db-cats">
+    {% for c in company_cats %}
+    <a class="db-cat" href="{{ rel }}companies/{{ c.id }}/">
+      <span class="db-cat-n">{{ c.count }}</span>
+      <span class="db-cat-name">{{ c.name }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="db-preview">
+    {% for c in featured_companies %}<a class="db-chip" href="{{ rel }}companies/">{{ c.display_name }}</a>{% endfor %}
+    <a class="db-chip db-chip-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
+  </div>
+</section>
+
+{# 独自資産2: 参入ガイド #}
+{% if guides %}
+<section class="block">
+  {{ sec_head('GUIDE', t('home.guide_title'), rel ~ 'articles/', t('home.view_all')) }}
+  <p class="block-lead">{{ t('home.guide_lead') }}</p>
+  <div class="guide-grid">
+    {% for a in guides %}
+    <a class="guide-card" href="{{ rel }}articles/{{ a.slug }}/">
+      {% if a.hero %}
+      <span class="guide-media">
+        <img src="{{ asset }}static/img/{{ a.hero }}" alt="" loading="lazy">
+        <span class="guide-num">{{ '%02d'|format(loop.index) }}</span>
+      </span>
+      {% endif %}
+      <h3 class="guide-title">{{ a.title }}</h3>
+      <p class="guide-excerpt">{{ a.excerpt }}</p>
+      <span class="card-link">{{ t('articles.read') }} →</span>
+    </a>
+    {% endfor %}
   </div>
 </section>
 {% endif %}
 
 {% if latest %}
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.latest_news') }}</h2>
-      <a class="section-more" href="{{ rel }}news/">{{ t('home.view_all') }} →</a>
-    </div>
-    <div class="tile-grid">
-      {% for n in latest %}{{ news_tile(n, lang, t) }}{% endfor %}
-    </div>
+<section class="block block-tint">
+  {{ sec_head('NEW', t('home.latest_news'), rel ~ 'news/', t('home.view_all')) }}
+  <div class="tile-grid">
+    {% for n in latest %}{{ news_tile(n, lang, t) }}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if topic_nav %}
+<section class="block">
+  {{ sec_head('TOPICS', t('home.by_topic'), '', '') }}
+  <div class="topic-grid">
+    {% for tp in topic_nav %}
+    <a class="topic-card" href="{{ rel }}topics/{{ tp.id }}/">
+      <span class="topic-card-name">#{{ tp.name }}</span>
+      <span class="topic-card-count">{{ tp.count }}</span>
+      <span class="topic-card-desc">{{ tp.desc }}</span>
+    </a>
+    {% endfor %}
   </div>
 </section>
 {% endif %}
 
 {% if papers %}
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.research') }}</h2>
-      <a class="section-more" href="{{ rel }}papers/">{{ t('home.view_all') }} →</a>
-    </div>
-    <div class="grid grid-papers">
-      {% for p in papers[:3] %}{{ paper_card(p, lang, t) }}{% endfor %}
-    </div>
+<section class="block block-tint">
+  {{ sec_head('RESEARCH', t('home.research'), rel ~ 'papers/', t('home.view_all')) }}
+  <div class="grid grid-papers">
+    {% for p in papers[:3] %}{{ paper_card(p, lang, t) }}{% endfor %}
   </div>
 </section>
 {% endif %}
 
-{# 収益導線。目的は問い合わせ獲得なので、トップの末尾で必ず受ける #}
-<section class="section cta-band-wrap">
-  <div class="wrap">
-    <div class="cta-band">
-      <div class="cta-band-body">
-        <h2>{{ t('home.cta_title') }}</h2>
-        <p>{{ t('home.cta_body') }}</p>
-      </div>
-      <div class="cta-band-actions">
-        <a class="btn btn-primary" href="{{ rel }}contact/">{{ t('nav.contact') }}</a>
-        <a class="btn btn-ghost" href="{{ rel }}advertise/">{{ t('nav.advertise') }}</a>
-      </div>
+<section class="block">
+  <div class="cta-band">
+    <div class="cta-band-body">
+      <h2>{{ t('home.cta_title') }}</h2>
+      <p>{{ t('home.cta_body') }}</p>
+    </div>
+    <div class="cta-band-actions">
+      <a class="btn btn-primary" href="{{ rel }}contact/">{{ t('nav.contact') }}</a>
+      <a class="btn btn-ghost" href="{{ rel }}advertise/">{{ t('nav.advertise') }}</a>
     </div>
   </div>
 </section>

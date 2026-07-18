@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 STRINGS = {
+    "side.by_tag": {"ja": "タグから探す", "en": "Browse by tag"},
+    "side.search_ph": {"ja": "記事を検索", "en": "Search articles"},
+
     "brand.tagline": {"ja": "宇宙産業ポータル", "en": "Space Industry Portal"},
 
     "nav.home": {"ja": "ホーム", "en": "Home"},
