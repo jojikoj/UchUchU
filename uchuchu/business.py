@@ -15,11 +15,12 @@ from . import config
 
 
 def mailto(subject: str, body: str = "") -> str:
-    q = {"subject": subject}
-    if body:
-        q["body"] = body
-    return f"mailto:{config.CONTACT_EMAIL}?" + urllib.parse.urlencode(
-        q, quote_via=urllib.parse.quote)
+    """かつてmailto導線を出していた名残。
+
+    サイト上にメールアドレスを出さない方針にしたため、
+    問い合わせページへのリンクを返す。
+    """
+    return "../contact/"
 
 
 # --- 用件別の問い合わせ ------------------------------------------------

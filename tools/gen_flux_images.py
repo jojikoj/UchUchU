@@ -84,6 +84,37 @@ JOBS = [
     ("fallback-research.jpg",
      "A radio telescope dish array under a clear sky at dusk, several dishes "
      "aligned in the same direction, cool tones, " + REALISM),
+# --- 特集記事カバー（第2弾）---
+    ("cover-procurement.jpg",
+     "A Japanese businessman in a small factory office reviewing printed "
+     "technical specification documents at a desk, calipers and a metal part "
+     "beside the papers, factory visible through the window behind, "
+     "natural daylight, " + REALISM),
+    ("cover-materials.jpg",
+     "Close-up of engineering material samples laid out on a laboratory bench, "
+     "aluminium plates, carbon fibre composite sheets, gold thermal insulation "
+     "film and titanium fasteners, neutral studio lighting, shallow depth of field, "
+     + REALISM),
+    ("cover-market.jpg",
+     "A wide view of a modern factory floor with several production cells, "
+     "workers at machines in the middle distance, overhead lighting, "
+     "sense of an industrial supply chain, " + REALISM),
+    ("cover-cost.jpg",
+     "A factory owner and an engineer discussing over a laptop and printed "
+     "documents at a table in a small manufacturing workshop, machines in the "
+     "background, warm natural light, candid working atmosphere, " + REALISM),
+
+    # --- 特集記事カバー（第3弾：入門記事）---
+    ("cover-overview.jpg",
+     "A wide view of a satellite integration cleanroom seen through an "
+     "observation window, several spacecraft structures under assembly, "
+     "engineers in white suits working, bright even lighting, "
+     "sense of an industry at scale, " + REALISM),
+    ("cover-orbit.jpg",
+     "A rocket in powered ascent seen from a long distance against a deep "
+     "blue sky, the trajectory arcing over rather than going straight up, "
+     "thin exhaust trail, curvature of the horizon faintly visible, "
+     + REALISM),
 ]
 
 

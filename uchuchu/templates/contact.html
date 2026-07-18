@@ -76,9 +76,9 @@
     </form>
     {% endif %}
 
+    {# メールアドレスは掲載しない。スパム収集を招くうえ、
+       フォーム(GAS)で受けられるため掲載する必要がない。 #}
     <div class="contact-direct">
-      <h2>{{ t('contact.direct') }}</h2>
-      <p class="contact-mail"><a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
       <p class="contact-note">{{ t('contact.note') }}</p>
     </div>
 
@@ -93,7 +93,6 @@
 
 <script>
   window.UCHUCHU_FORM = {
-    email: "{{ contact_email }}",
     endpoint: {{ (form_endpoint or '')|tojson }},
     site_key: "uchuchu",
     site_origin: "https://uchuchu.tech",

@@ -114,13 +114,10 @@
       return;
     }
 
-    // --- 経路2: メーラーを開く（フォールバック）---
-    var href =
-      "mailto:" + cfg.email +
-      "?subject=" + encodeURIComponent(subject) +
-      "&body=" + encodeURIComponent(body);
-    window.location.href = href;
-    setStatus(cfg.strings.mail_opened, "ok");
+    // 送信先が未設定の場合はフォームを使えないことを明示する。
+    // メールアドレスをHTMLに埋め込むとスパム収集ボットに拾われるため、
+    // mailto へのフォールバックは行わない。
+    setStatus(cfg.strings.failed, "error");
   });
 
   // URLの ?kind= で用件を初期選択する（各所のCTAから遷移する用）

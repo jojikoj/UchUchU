@@ -72,7 +72,7 @@ STRINGS = {
     "contact.send": {"ja": "メールを作成", "en": "Compose email"},
     "contact.direct": {"ja": "直接ご連絡", "en": "Direct contact"},
     "contact.note": {
-        "ja": "通常2営業日以内にご返信します。",
+        "ja": "通常2営業日以内に、ご入力いただいたメールアドレス宛にご返信します。",
         "en": "We usually reply within two business days."},
     "contact.operator": {"ja": "運営", "en": "Operator"},
     "contact.operator_note": {
