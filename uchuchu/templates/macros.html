@@ -152,7 +152,35 @@
       <span class="src">{{ item.source }}</span>
       {% if item.is_translated %}<span class="mt-mark" title="{{ item.title }}">{{ t('meta.machine_translated') }}</span>{% endif %}
       {% if item.published_short %}<time datetime="{{ item.published }}">{{ item.published_short }}</time>{% endif %}
-      {% for tp in item.topic_labels or [] %}<span class="row-topic">{{ tp }}</span>{% endfor %}
+      {% for tp in item.topic_labels or [] %}<span class="tag-hash">#{{ tp }}</span>{% endfor %}
+    </div>
+  </div>
+</article>
+{% endmacro %}
+
+
+{#
+  カード型のニュース。サムネイルを主役にし、要約は出さない。
+  一覧のスキャン速度を落とさずに視覚的な情報量を上げる。
+#}
+{% macro news_tile(item, lang, t) %}
+{% set title = item.get('title_' ~ lang) or item.title %}
+<article class="news-tile">
+  <a class="tile-media" href="{{ item.url }}" target="_blank" rel="noopener">
+    {% if item.image %}
+    <img src="{{ item.image }}" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+    {% endif %}
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ title }}</a></h3>
+    <div class="tile-meta">
+      {% for tp in item.topic_labels or [] %}<span class="tag-hash">#{{ tp }}</span>{% endfor %}
+      {% if item.published_short %}<time datetime="{{ item.published }}">{{ item.published_short }}</time>{% endif %}
+    </div>
+    <div class="tile-src">
+      <span class="src">{{ item.source }}</span>
+      {% if item.is_translated %}<span class="mt-mark">{{ t('meta.machine_translated') }}</span>{% endif %}
     </div>
   </div>
 </article>

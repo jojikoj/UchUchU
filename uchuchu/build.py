@@ -83,9 +83,8 @@ def fmt_date_short(iso: str | None, lang: str) -> str | None:
     dt = _parse_iso(iso)
     if dt is None:
         return None
-    if lang == "ja":
-        return f"{dt.month}/{dt.day}({_JA_WDAY[dt.weekday()]})"
-    return f"{_EN_WDAY[dt.weekday()]} {_EN_MONTHS[dt.month]} {dt.day}"
+    # メディアで一般的な YYYY.MM.DD 表記。桁が揃い一覧で読みやすい。
+    return f"{dt.year}.{dt.month:02d}.{dt.day:02d}"
 
 
 def countdown_label(iso: str | None, now: datetime, lang: str) -> str | None:

@@ -785,3 +785,60 @@ h1, h2, h3, h4 {
 
 /* ボット対策のハニーポット。視覚的にもスクリーンリーダー上も隠す */
 .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* --- ハッシュタグ表記 --- */
+.tag-hash {
+  font-size: .76rem; color: var(--accent); font-weight: 600;
+  letter-spacing: .01em; white-space: nowrap;
+}
+a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
+
+/* --- タグバー（上部の関心導線）--- */
+.tagbar { border-bottom: 1px solid var(--line); background: var(--surface); padding: 13px 0; }
+.tagbar-inner { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.tagbar-label { font-size: .78rem; font-weight: 700; color: var(--text-3); white-space: nowrap; }
+.tagbar-tags { display: flex; gap: 14px; flex-wrap: wrap; }
+.tag-link { font-size: .82rem; }
+
+/* --- カード型ニュース（サムネイル主役）--- */
+.tile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(228px, 1fr)); gap: 22px 20px; }
+.news-tile { display: flex; flex-direction: column; gap: 10px; }
+.tile-media {
+  display: block; aspect-ratio: 16/10; overflow: hidden;
+  border-radius: var(--r-md); background: var(--surface-3);
+}
+.tile-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s cubic-bezier(.2,.7,.3,1); }
+.news-tile:hover .tile-media img { transform: scale(1.05); }
+.tile-media.no-img { background: linear-gradient(135deg, var(--surface-3), var(--accent-soft)); }
+.tile-body { display: flex; flex-direction: column; gap: 6px; }
+.tile-title {
+  font-size: .95rem; line-height: 1.5; margin: 0; font-weight: 650;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+}
+.tile-title a:hover { color: var(--accent); }
+.tile-meta { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.tile-meta time { font-family: var(--mono); font-size: .74rem; color: var(--text-3); }
+.tile-src { display: flex; align-items: center; gap: 7px; font-size: .74rem; color: var(--text-3); }
+
+@media (max-width: 560px) {
+  .tile-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 14px; }
+  .tile-title { font-size: .87rem; }
+}
+
+/* ソースフィルタの折りたたみ（28件あるため既定は閉じる） */
+.filter-fold { margin-bottom: 24px; }
+.filter-fold summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
+  font-size: .86rem; font-weight: 650; color: var(--text-2);
+  padding: 8px 14px; border: 1px solid var(--line); border-radius: 9px;
+  background: var(--surface); transition: .16s;
+}
+.filter-fold summary::-webkit-details-marker { display: none; }
+.filter-fold summary::after {
+  content: ""; width: 7px; height: 7px; margin-left: 2px;
+  border-right: 2px solid var(--text-3); border-bottom: 2px solid var(--text-3);
+  transform: rotate(45deg) translateY(-2px); transition: transform .2s;
+}
+.filter-fold[open] summary::after { transform: rotate(-135deg) translateY(-2px); }
+.filter-fold summary:hover { border-color: var(--accent); color: var(--accent-ink); }
+.filter-fold .filter-bar { margin-top: 14px; margin-bottom: 0; }

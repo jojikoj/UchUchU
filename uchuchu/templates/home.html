@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import news_row, news_lead, paper_card, article_card %}
+{% from "macros.html" import news_row, news_lead, news_tile, paper_card, article_card %}
 {% block title %}{{ t('home.title') }}{% endblock %}
 {% block og_title %}{{ site_name }} — {{ site_tagline }}{% endblock %}
 
@@ -41,6 +41,20 @@
     {% endif %}
   </div>
 </section>
+
+{# タグ導線。読者が関心領域から入れるよう、上部に置く #}
+{% if topic_nav %}
+<section class="tagbar">
+  <div class="wrap tagbar-inner">
+    <span class="tagbar-label">{{ t('home.popular_tags') }}</span>
+    <div class="tagbar-tags">
+      {% for tp in topic_nav %}
+      <a class="tag-hash tag-link" href="{{ rel }}topics/{{ tp.id }}/">#{{ tp.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {# 独自資産その1: 企業DB。集約でない唯一のコンテンツなので目立たせる #}
 <section class="section section-db">
@@ -138,8 +152,8 @@
       <h2>{{ t('home.latest_news') }}</h2>
       <a class="section-more" href="{{ rel }}news/">{{ t('home.view_all') }} →</a>
     </div>
-    <div class="news-cols">
-      {% for n in latest %}{{ news_row(n, lang, t) }}{% endfor %}
+    <div class="tile-grid">
+      {% for n in latest %}{{ news_tile(n, lang, t) }}{% endfor %}
     </div>
   </div>
 </section>

@@ -13,6 +13,8 @@ STRINGS = {
     "hero.cta_news": {"ja": "最新ニュースを見る", "en": "Latest news"},
     "hero.cta_launches": {"ja": "打ち上げ予定", "en": "Upcoming launches"},
 
+    "home.popular_tags": {"ja": "話題のタグ", "en": "Popular tags"},
+
     "home.eyebrow": {"ja": "宇宙産業 × 日本のものづくり", "en": "SPACE INDUSTRY × JAPANESE MANUFACTURING"},
     "home.positioning": {
         "ja": "宇宙産業に関わる企業データベース、参入の実務ガイド、国内外のニュースを集約。自社の技術が宇宙でどう活きるかを探す製造業のための媒体です。",
@@ -121,6 +123,7 @@ STRINGS = {
     "news.subtitle": {"ja": "国内外の公式発表とメディアを横断して集約。",
                       "en": "Aggregated from official and media sources worldwide."},
     "news.read_source": {"ja": "元記事を読む", "en": "Read source"},
+    "news.filter_by_source": {"ja": "配信元で絞り込む", "en": "Filter by source"},
     "news.filter_all": {"ja": "すべて", "en": "All"},
 
     "launches.title": {"ja": "ロケット打ち上げ予定", "en": "Rocket Launch Schedule"},

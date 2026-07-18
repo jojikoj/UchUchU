@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import pager, news_row %}
+{% from "macros.html" import pager, news_tile %}
 {% block title %}{{ topic_name }}{% endblock %}
 {% block og_title %}{{ topic_name }} · {{ site_name }}{% endblock %}
 
@@ -15,12 +15,12 @@
     {# 他トピックへの横移動導線。関心が確定した読者に隣接領域を提示する #}
     <div class="filter-bar">
       {% for tp in all_topics %}
-      <a class="chip {{ 'on' if tp.current }}" href="{{ tp.href }}">{{ tp.name }}</a>
+      <a class="chip {{ 'on' if tp.current }}" href="{{ tp.href }}">#{{ tp.name }}</a>
       {% endfor %}
     </div>
     {% if news %}
-    <div class="news-list">
-      {% for n in news %}{{ news_row(n, lang, t) }}{% endfor %}
+    <div class="tile-grid">
+      {% for n in news %}{{ news_tile(n, lang, t) }}{% endfor %}
     </div>
     {{ pager(pagination, t) }}
     {% else %}
