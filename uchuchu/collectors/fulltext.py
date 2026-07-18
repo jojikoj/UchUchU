@@ -142,11 +142,15 @@ def summarize(title: str, body: str) -> str:
     return out.strip()
 
 
-def enrich(items: list[dict], limit: int | None = None) -> int:
+def enrich(items: list[dict], limit: int | None = None,
+           save_cb=None, save_every: int = 5) -> int:
     """記事に本文由来の要約（body_ja）を付与する。付与できた件数を返す。
 
     既に body_ja がある記事はスキップするため、
     再実行しても新着分だけが処理される。
+
+    全件で数時間かかるため、save_every 件ごとに save_cb を呼んで
+    途中経過を保存する。中断しても、そこまでの成果は失われない。
     """
     targets = [it for it in items if not it.get("body_ja") and it.get("url")]
     if limit:
@@ -171,8 +175,11 @@ def enrich(items: list[dict], limit: int | None = None) -> int:
             else:
                 it["body_skip"] = "no_summary"
                 skipped += 1
+        # 途中経過を保存する（4時間かかる処理を最後まで抱え込まない）
+        if save_cb and (i % save_every == 0 or i == len(targets)):
+            save_cb()
         if i % 10 == 0 or i == len(targets):
-            print(f"    {i}/{len(targets)}  生成{done} / スキップ{skipped}")
+            print(f"    {i}/{len(targets)}  生成{done} / スキップ{skipped}", flush=True)
     return done
 
 
@@ -183,8 +190,13 @@ def main() -> int:
     for a in sys.argv[1:]:
         if a.startswith("--limit="):
             limit = int(a.split("=", 1)[1])
-    n = enrich(data["items"], limit=limit)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    def save():
+        tmp = path.with_suffix(".json.tmp")
+        tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        tmp.replace(path)   # 書き込み中の破損を避けるため原子的に置き換える
+
+    n = enrich(data["items"], limit=limit, save_cb=save)
+    save()
     total = sum(1 for x in data["items"] if x.get("body_ja"))
     print(f"=== 今回 {n}件生成 / 累計 {total}件が本文要約つき ===")
     return 0

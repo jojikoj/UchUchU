@@ -282,6 +282,48 @@ def news_slug(item: dict) -> str:
     return f"{src}-{h}"
 
 
+# ヒーローのメインに向かない記事の特徴。
+# 口語的な見出し、スポーツ・エンタメ寄りの話題、株価の値動きなど、
+# 製造業向けB2Bメディアの「顔」として弱いものを後ろに回す。
+_WEAK_TITLE = [
+    "…", "!?", "！？", "ずりずり", "やばい", "すごい", "だった件", "してみた",
+    "アニメ", "映画", "ドラマ", "ゲーム", "グッズ", "回顧", "振り返",
+    "株価", "急落", "暴落", "ランキング",
+]
+# 逆に主役に据えたい主題（産業・技術・国内）
+_STRONG_TOPIC = ("rocket", "satellite", "japan", "business")
+
+
+def _featured_score(item: dict) -> int:
+    """ヒーローのメイン適性を点数化する。高いほど主役向き。"""
+    title = (item.get("display_title") or item.get("title") or "")
+    score = 0
+    if any(w in title for w in _WEAK_TITLE):
+        score -= 5
+    if len(title) < 14:            # 短すぎる見出しは大きく出すと間が持たない
+        score -= 2
+    for t in item.get("topics", []):
+        if t in _STRONG_TOPIC:
+            score += 2
+    if item.get("lang") == "ja":   # 日本語ソースは訳のぎこちなさがない
+        score += 2
+    if item.get("body_ja"):        # 本文要約があるページは読み応えがある
+        score += 3
+    return score
+
+
+def _order_featured(items: list[dict]) -> list[dict]:
+    """新しさを保ちつつ、主役に向くものを先頭へ寄せる。
+
+    直近の記事だけを対象に並べ替える。全体を点数順にすると
+    古い記事が主役になり、媒体が更新されていないように見えるため。
+    """
+    head = items[:12]
+    rest = items[12:]
+    head.sort(key=lambda x: -_featured_score(x))
+    return head + rest
+
+
 # --- ページ分割 ---------------------------------------------------------
 def _paginate(items: list, size: int) -> list[list]:
     """items を size 件ずつに分割する。空でも1ページは返す（空表示のため）。"""
@@ -450,7 +492,9 @@ class Builder:
         # ヒーローは画像がある記事だけを使う。
         # 画像なしだとグレーの矩形が出て、トップの見栄えが崩れるため。
         with_img = [n for n in news if n.get("image")]
-        featured = with_img[:5]
+        # メインの1本は「媒体の顔」になるので、新しい順に置くだけにしない。
+        # 製造業читатель向けB2Bメディアとして相応しいものを選ぶ。
+        featured = _order_featured(with_img)[:5]
         used = {id(n) for n in featured}
         latest = [n for n in news if id(n) not in used][:12]
         upcoming = [l for l in launches if l.get("upcoming")]
