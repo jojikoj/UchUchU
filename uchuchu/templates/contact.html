@@ -82,12 +82,11 @@
       <p class="contact-note">{{ t('contact.note') }}</p>
     </div>
 
-    <div class="contact-operator">
-      <h2>{{ t('contact.operator') }}</h2>
-      <p>{{ company_name }}<br>
-        <a href="{{ company_url }}" target="_blank" rel="noopener">{{ company_url }}</a></p>
-      <p class="contact-note">{{ t('contact.operator_note') }}</p>
-    </div>
+    {# 運営情報は独立した /about/ に集約した。
+       ここに置くと問い合わせ動線から目を逸らすため置かない。 #}
+    <p class="contact-note">
+      <a href="{{ rel }}about/">{{ t('about.title') }}</a>
+    </p>
   </div>
 </section>
 

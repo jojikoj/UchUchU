@@ -159,3 +159,50 @@ def ad_mailto() -> str:
         "\n\n希望メニュー（タイアップ記事／PR枠／レポート共同制作）：\n"
         "ご検討中の時期：\n" + _BODY_COMMON,
     )
+
+
+# --- 運営会社ページ ---------------------------------------------------
+# 「誰が何のために書いているか」を明示する。
+# 匿名のまとめサイトと同じ扱いを受けないための、実務上の必須要素。
+ABOUT_WHY = {
+    "ja": [
+        "株式会社TOEは福岡を拠点に、Web制作とAI開発を手がけています。"
+        "その中で製造業のお客様と接する機会が多く、"
+        "高い技術を持ちながら「宇宙産業は自分たちとは関係のない世界だ」と"
+        "考えている企業が少なくないことを知りました。",
+        "実際には、宇宙産業が必要としているものの多くは、"
+        "精密加工・機構設計・品質管理といった、"
+        "日本の製造業がすでに持っている能力です。"
+        "足りていないのは技術ではなく、"
+        "「どこに需要があり、何を求められ、誰に話を持っていけばよいか」という情報でした。",
+        "UchUchUは、その情報の空白を埋めるために作りました。"
+        "宇宙開発のニュースを追うだけでなく、"
+        "それが自社の仕事にどうつながるのかまで書くことを方針としています。",
+    ],
+    "en": [
+        "TOE Inc. is a Fukuoka-based company working in web production and AI development.",
+        "Through our work with manufacturers, we found that many capable companies "
+        "assume the space industry is unrelated to them — when in fact the industry "
+        "needs precisely the skills they already have.",
+        "UchUchU exists to close that information gap.",
+    ],
+}
+
+EDITORIAL_POLICY = {
+    "ja": [
+        "事実と推測を分けて書きます。断定できないことは断定しません。",
+        "誇張しません。参入が難しい点は難しいと書きます。",
+        "記事は公開情報をもとに編集部が整理し、出典を明示します。",
+        "広告記事は広告と分かる形で掲載し、"
+        "事実と異なる内容・誇大な表現は掲載しません。",
+        "企業データベースへの掲載は無料で、掲載料による順位付けは行いません。",
+        "誤りの指摘は歓迎します。確認のうえ訂正し、訂正した旨を残します。",
+    ],
+    "en": [
+        "We separate fact from inference and do not overstate.",
+        "Articles are compiled from public sources with attribution.",
+        "Sponsored content is clearly labelled; we do not publish inaccurate claims.",
+        "Database listings are free and never ranked by payment.",
+        "We welcome corrections and record them when made.",
+    ],
+}

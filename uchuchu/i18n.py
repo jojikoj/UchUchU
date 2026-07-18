@@ -75,6 +75,17 @@ STRINGS = {
         "ja": "通常2営業日以内に、ご入力いただいたメールアドレス宛にご返信します。",
         "en": "We usually reply within two business days."},
     "contact.operator": {"ja": "運営", "en": "Operator"},
+
+    "about.title": {"ja": "運営会社", "en": "About us"},
+    "about.subtitle": {
+        "ja": "UchUchUは株式会社TOEが運営する、宇宙産業のサプライチェーン・メディアです。",
+        "en": "UchUchU is a space industry supply chain media operated by TOE Inc."},
+    "about.why": {"ja": "なぜこのメディアを運営しているのか", "en": "Why we run this media"},
+    "about.policy": {"ja": "編集方針", "en": "Editorial policy"},
+    "about.profile": {"ja": "会社概要", "en": "Company profile"},
+    "about.contact_lead": {
+        "ja": "掲載・広告・取材のご相談はフォームから承っています。",
+        "en": "Please use the form for listings, advertising, and press inquiries."},
     "contact.operator_note": {
         "ja": "UchUchUは株式会社TOEが運営する宇宙産業のサプライチェーン・メディアです。",
         "en": "UchUchU is a space industry supply chain media operated by TOE Inc."},
