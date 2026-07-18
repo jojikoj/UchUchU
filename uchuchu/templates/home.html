@@ -57,7 +57,30 @@
 </section>
 {% endif %}
 
-{# 打ち上げ帯。時間で変化する固有データなので上部に置く #}
+{# 独自資産1: 企業DB。
+   このサイトが広告主に売れる中核資産のため、最初のブロックに置く #}
+<section class="block block-tint">
+  {{ sec_head('DATABASE', t('home.db_title'), rel ~ 'companies/', t('home.db_more')) }}
+  <p class="block-lead">{{ t('home.db_lead') }}</p>
+  <div class="db-cats">
+    {% for c in company_cats %}
+    <a class="db-cat" href="{{ rel }}companies/{{ c.id }}/">
+      <span class="db-cat-media">
+        <img src="{{ asset }}static/img/cat-{{ c.id }}.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">{{ c.count }}</span>
+      </span>
+      <span class="db-cat-name">{{ c.name }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="db-preview">
+    {% for c in featured_companies %}<a class="db-chip" href="{{ rel }}companies/">{{ c.display_name }}</a>{% endfor %}
+    <a class="db-chip db-chip-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
+  </div>
+</section>
+
+{# 打ち上げ帯。時間で変化する固有データ。
+   独自資産である企業DBを先に見せたいので、その下に置く #}
 {% if next_launches %}
 <section class="launch-strip">
   <div class="strip-head">
@@ -79,27 +102,6 @@
   </div>
 </section>
 {% endif %}
-
-{# 独自資産1: 企業DB #}
-<section class="block block-tint">
-  {{ sec_head('DATABASE', t('home.db_title'), rel ~ 'companies/', t('home.db_more')) }}
-  <p class="block-lead">{{ t('home.db_lead') }}</p>
-  <div class="db-cats">
-    {% for c in company_cats %}
-    <a class="db-cat" href="{{ rel }}companies/{{ c.id }}/">
-      <span class="db-cat-media">
-        <img src="{{ asset }}static/img/cat-{{ c.id }}.jpg" alt="" loading="lazy">
-        <span class="db-cat-n">{{ c.count }}</span>
-      </span>
-      <span class="db-cat-name">{{ c.name }}</span>
-    </a>
-    {% endfor %}
-  </div>
-  <div class="db-preview">
-    {% for c in featured_companies %}<a class="db-chip" href="{{ rel }}companies/">{{ c.display_name }}</a>{% endfor %}
-    <a class="db-chip db-chip-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
-  </div>
-</section>
 
 {# 独自資産2: 参入ガイド #}
 {% if guides %}
