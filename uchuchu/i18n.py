@@ -15,6 +15,17 @@ STRINGS = {
     "home.next_launch": {"ja": "次の打ち上げ", "en": "Next Launches"},
     "home.featured": {"ja": "注目のニュース", "en": "Top Stories"},
     "home.by_topic": {"ja": "トピックから探す", "en": "Browse by Topic"},
+    "nav.companies": {"ja": "企業DB", "en": "Companies"},
+    "companies.title": {"ja": "宇宙産業 企業データベース", "en": "Space Industry Company Database"},
+    "companies.subtitle": {
+        "ja": "日本の宇宙産業に関わる企業を、事業領域別に整理しています。参入検討・取引先探索にお使いください。",
+        "en": "Japanese companies in the space industry, organised by business area."},
+    "companies.hq": {"ja": "本社", "en": "HQ"},
+    "companies.official": {"ja": "公式サイト", "en": "Official site"},
+    "companies.cta": {
+        "ja": "掲載のご依頼・情報の修正は、お問い合わせよりご連絡ください。掲載は無料です。",
+        "en": "To be listed or to correct information, please contact us. Listing is free."},
+
     "nav.topics": {"ja": "トピック", "en": "Topics"},
     "topic.other": {"ja": "他のトピック", "en": "Other topics"},
     "topic.count": {"ja": "{n}件の記事", "en": "{n} articles"},

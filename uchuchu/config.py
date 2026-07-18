@@ -19,12 +19,14 @@ DIST_DIR = ROOT / "dist"
 # --- サイト情報 ---------------------------------------------------------
 SITE_NAME = "UchUchU"
 SITE_TAGLINE = {
-    "ja": "宇宙開発を、世界とつなぐ。",
-    "en": "Connecting space exploration to the world.",
+    "ja": "宇宙産業と、日本のものづくりをつなぐ。",
+    "en": "Connecting Japan's manufacturing to the space industry.",
 }
 SITE_DESCRIPTION = {
-    "ja": "国内外の宇宙開発ニュース・打ち上げ予定・研究動向を一か所に集約する発信プラットフォーム。",
-    "en": "A platform aggregating global space-exploration news, launch schedules, and research trends in one place.",
+    "ja": "日本の製造業が宇宙産業に参入・受注するための実務メディア。"
+          "宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。",
+    "en": "A practical media for manufacturers entering the space supply chain — "
+          "company database, entry guides, procurement information, and global news.",
 }
 # 独自ドメイン。dist/CNAME に書き出され、GitHub Pages がこのドメインで配信する。
 # 空文字にすると CNAME を出力しない（github.io のURLで公開）。

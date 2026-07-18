@@ -1,0 +1,188 @@
+{
+  "_note": "宇宙産業に関わる日本企業のデータベース。公開情報（各社公式サイト・IR・プレスリリース）に基づく。憶測での記載はしない。不確かな情報は空欄にする。各社の詳細は必ず公式サイトで確認できるようリンクを併記する。",
+  "_disclaimer": {
+    "ja": "本データベースは各社の公開情報をもとに編集部が整理したものです。事業内容は変更される場合があります。正確な情報は各社公式サイトをご確認ください。掲載・修正のご依頼はお問い合わせください。",
+    "en": "This database is compiled by our editorial team from publicly available information. Business details may change. Please refer to each company's official website for accurate information."
+  },
+  "categories": {
+    "launch": {"ja": "打ち上げ・ロケット", "en": "Launch Vehicles"},
+    "satellite": {"ja": "衛星製造・機器", "en": "Satellite Manufacturing"},
+    "component": {"ja": "部品・素材・加工", "en": "Components & Materials"},
+    "ground": {"ja": "地上設備・通信", "en": "Ground Systems"},
+    "service": {"ja": "衛星データ・サービス", "en": "Data & Services"},
+    "exploration": {"ja": "探査・軌道上サービス", "en": "Exploration & In-orbit"}
+  },
+  "companies": [
+    {
+      "id": "mhi",
+      "name": "三菱重工業",
+      "name_en": "Mitsubishi Heavy Industries",
+      "categories": ["launch", "satellite"],
+      "hq": "東京都千代田区",
+      "url": "https://www.mhi.com/jp/products/space/",
+      "listed": "東証プライム 7011",
+      "summary": "H3ロケット・H-IIAロケットの製造と打ち上げ輸送サービスを担う。種子島宇宙センターでの打ち上げ運用も実施。",
+      "summary_en": "Manufactures and operates the H3 and H-IIA launch vehicles, including launch services from Tanegashima Space Center."
+    },
+    {
+      "id": "ihi-aerospace",
+      "name": "IHIエアロスペース",
+      "name_en": "IHI Aerospace",
+      "categories": ["launch", "component"],
+      "hq": "東京都江東区",
+      "url": "https://www.ihi.co.jp/ia/",
+      "summary": "イプシロンロケットの開発・製造を担当。固体ロケットモータ、宇宙機推進系も手がける。",
+      "summary_en": "Develops and manufactures the Epsilon launch vehicle, solid rocket motors, and spacecraft propulsion systems."
+    },
+    {
+      "id": "nec",
+      "name": "NEC",
+      "name_en": "NEC Corporation",
+      "categories": ["satellite", "ground"],
+      "hq": "東京都港区",
+      "url": "https://jpn.nec.com/solution/space/",
+      "listed": "東証プライム 6701",
+      "summary": "人工衛星のシステム設計・製造、地上システムを一貫して手がける。小惑星探査機はやぶさ2の開発にも参画。",
+      "summary_en": "Provides end-to-end satellite system design and manufacturing, plus ground systems. Participated in the Hayabusa2 asteroid mission."
+    },
+    {
+      "id": "mitsubishi-electric",
+      "name": "三菱電機",
+      "name_en": "Mitsubishi Electric",
+      "categories": ["satellite", "ground"],
+      "hq": "東京都千代田区",
+      "url": "https://www.mitsubishielectric.co.jp/business/space/",
+      "listed": "東証プライム 6503",
+      "summary": "通信・放送・観測衛星の製造、衛星測位システム、大型電波望遠鏡などを手がける。",
+      "summary_en": "Manufactures communication, broadcasting, and observation satellites, satellite positioning systems, and large radio telescopes."
+    },
+    {
+      "id": "kawasaki",
+      "name": "川崎重工業",
+      "name_en": "Kawasaki Heavy Industries",
+      "categories": ["launch", "component"],
+      "hq": "東京都港区",
+      "url": "https://www.khi.co.jp/aerospace/space/",
+      "listed": "東証プライム 7012",
+      "summary": "ロケットフェアリング、衛星分離機構などの製造を担当。軌道上サービス関連技術の開発も進める。",
+      "summary_en": "Manufactures rocket payload fairings and satellite separation systems; develops in-orbit servicing technologies."
+    },
+    {
+      "id": "canon-electronics",
+      "name": "キヤノン電子",
+      "name_en": "Canon Electronics",
+      "categories": ["satellite", "component"],
+      "hq": "埼玉県秩父市",
+      "url": "https://www.canon-elec.co.jp/",
+      "listed": "東証プライム 7739",
+      "summary": "超小型衛星の開発・製造を手がける。民生部品を活用した低コスト衛星の実現に取り組む。",
+      "summary_en": "Develops and manufactures microsatellites, pursuing low-cost designs using commercial off-the-shelf components."
+    },
+    {
+      "id": "skyperfect-jsat",
+      "name": "スカパーJSAT",
+      "name_en": "SKY Perfect JSAT",
+      "categories": ["ground", "service"],
+      "hq": "東京都港区",
+      "url": "https://www.skyperfectjsat.space/",
+      "listed": "東証プライム 9412",
+      "summary": "衛星通信・衛星放送事業を展開するアジア最大級の衛星オペレーター。宇宙事業と有料多チャンネル事業を運営。",
+      "summary_en": "One of Asia's largest satellite operators, running satellite communications, broadcasting, and pay-TV businesses."
+    },
+    {
+      "id": "ispace",
+      "name": "ispace",
+      "name_en": "ispace, inc.",
+      "categories": ["exploration"],
+      "hq": "東京都中央区",
+      "url": "https://ispace-inc.com/jpn/",
+      "listed": "東証グロース 9348",
+      "summary": "月面輸送サービスを手がける民間宇宙企業。月着陸船およびローバーを開発し、月面への物資輸送を目指す。",
+      "summary_en": "A commercial lunar exploration company developing landers and rovers to deliver payloads to the Moon."
+    },
+    {
+      "id": "astroscale",
+      "name": "アストロスケール",
+      "name_en": "Astroscale",
+      "categories": ["exploration", "service"],
+      "hq": "東京都墨田区",
+      "url": "https://astroscale.com/ja/",
+      "listed": "東証グロース 186A",
+      "summary": "スペースデブリ除去および軌道上サービスを専門とする企業。デブリ捕獲・除去技術の実証を進める。",
+      "summary_en": "Specializes in space debris removal and on-orbit servicing, demonstrating capture and removal technologies."
+    },
+    {
+      "id": "interstellar",
+      "name": "インターステラテクノロジズ",
+      "name_en": "Interstellar Technologies",
+      "categories": ["launch"],
+      "hq": "北海道広尾郡大樹町",
+      "url": "https://www.istellartech.com/",
+      "summary": "観測ロケットMOMOおよび超小型衛星用ロケットZEROを開発。北海道大樹町に射場と生産拠点を持つ。",
+      "summary_en": "Develops the MOMO sounding rocket and the ZERO small satellite launch vehicle, with facilities in Taiki, Hokkaido."
+    },
+    {
+      "id": "synspective",
+      "name": "Synspective",
+      "name_en": "Synspective",
+      "categories": ["satellite", "service"],
+      "hq": "東京都江東区",
+      "url": "https://synspective.com/jp/",
+      "listed": "東証グロース 290A",
+      "summary": "小型SAR衛星の開発・運用と、衛星データを用いたソリューション提供を行う。",
+      "summary_en": "Develops and operates small SAR satellites and provides solutions based on satellite data."
+    },
+    {
+      "id": "axelspace",
+      "name": "アクセルスペース",
+      "name_en": "Axelspace",
+      "categories": ["satellite", "service"],
+      "hq": "東京都中央区",
+      "url": "https://www.axelspace.com/ja/",
+      "summary": "超小型衛星の開発・製造と、地球観測プラットフォームの運用を手がける。",
+      "summary_en": "Develops and manufactures microsatellites and operates an Earth observation platform."
+    },
+    {
+      "id": "qps",
+      "name": "QPS研究所",
+      "name_en": "iQPS",
+      "categories": ["satellite", "service"],
+      "hq": "福岡県福岡市",
+      "url": "https://i-qps.net/",
+      "listed": "東証グロース 5595",
+      "summary": "小型SAR衛星の開発・運用を行う。九州の製造業と連携した衛星開発体制を構築している。",
+      "summary_en": "Develops and operates small SAR satellites, building its supply chain with manufacturers in the Kyushu region."
+    },
+    {
+      "id": "space-one",
+      "name": "スペースワン",
+      "name_en": "Space One",
+      "categories": ["launch"],
+      "hq": "東京都港区",
+      "url": "https://www.space-one.co.jp/",
+      "summary": "小型ロケット「カイロス」による小型衛星打ち上げサービスを手がける。和歌山県串本町に射場を持つ。",
+      "summary_en": "Provides small satellite launch services with the KAIROS rocket, operating a launch site in Kushimoto, Wakayama."
+    },
+    {
+      "id": "shimadzu",
+      "name": "島津製作所",
+      "name_en": "Shimadzu Corporation",
+      "categories": ["component"],
+      "hq": "京都府京都市",
+      "url": "https://www.shimadzu.co.jp/aero/",
+      "listed": "東証プライム 7701",
+      "summary": "航空・宇宙向けの機器を手がける。計測・分析技術を基盤とした宇宙用機器を供給。",
+      "summary_en": "Supplies aerospace equipment built on its measurement and analysis technology base."
+    },
+    {
+      "id": "meisei",
+      "name": "明星電気",
+      "name_en": "Meisei Electric",
+      "categories": ["component", "satellite"],
+      "hq": "群馬県伊勢崎市",
+      "url": "https://www.meisei.co.jp/",
+      "summary": "宇宙観測機器・センサ類を手がける。気象観測機器で培った技術を宇宙分野に展開している。",
+      "summary_en": "Produces space observation instruments and sensors, applying technology developed for meteorological equipment."
+    }
+  ]
+}

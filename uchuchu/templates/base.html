@@ -66,6 +66,7 @@
       </a>
       <button class="nav-toggle" aria-label="menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="site-nav">
+        <a href="{{ rel }}{{ 'companies/' }}" {{ 'class="active"' if active == 'companies' }}>{{ t('nav.companies') }}</a>
         <a href="{{ rel }}{{ 'news/' }}" {{ 'class="active"' if active == 'news' }}>{{ t('nav.news') }}</a>
         <a href="{{ rel }}{{ 'launches/' }}" {{ 'class="active"' if active == 'launches' }}>{{ t('nav.launches') }}</a>
         <a href="{{ rel }}{{ 'topics/moon/' }}" {{ 'class="active"' if active == 'topics' }}>{{ t('nav.topics') }}</a>

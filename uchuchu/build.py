@@ -25,7 +25,7 @@ from datetime import datetime, timezone
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import config, seo, topics
+from . import companies, config, indexnow, seo, topics
 from .i18n import t as _t
 
 
@@ -546,6 +546,30 @@ class Builder:
                 topic_pages += 1
         total_pages_built += topic_pages
 
+        # 企業DBページ（このサイト唯一の独自資産。集約でないためSEO評価が付く）
+        comp_cats = companies.categories(lang)
+        for cat in [None] + comp_cats:
+            cid = cat["id"] if cat else None
+            path = "companies/" if cid is None else f"companies/{cid}/"
+            depth = 1 if cid is None else 2
+            ctx = self._ctx(lang, depth=depth, active="companies", path=path,
+                            page_description=_t("companies.subtitle", lang))
+            ctx["companies"] = (companies.all_companies(lang) if cid is None
+                                else companies.by_category(cid, lang))
+            ctx["cats"] = [
+                {**c, "href": f"{'../' * (depth - 1)}{c['id']}/"} for c in comp_cats
+            ]
+            ctx["current_cat"] = cid
+            ctx["back_to_all"] = "../" if cid else "./"
+            ctx["disclaimer"] = companies.disclaimer(lang)
+            ctx["jsonld"] = seo.build_jsonld(
+                self.base_url, lang, "companies",
+                trail=[(home_label, self._url_for(lang, "")),
+                       (_t("companies.title", lang), self._url_for(lang, "companies/"))])
+            self._write(lang, path.rstrip("/"),
+                        self.env.get_template("companies.html").render(**ctx))
+            total_pages_built += 1
+
         # RSSフィード
         feed = seo.build_feed(self.base_url, lang, articles, news, self.now)
         feed_dir = self._lang_root(lang)
@@ -581,6 +605,11 @@ class Builder:
             seo.build_sitemap(self.base_url, self.paths_by_lang, self.now),
             encoding="utf-8")
 
+        # IndexNow の鍵ファイル。検索エンジンがこれを取得して
+        # サイト所有者であることを確認する（Webmaster Toolsのログイン不要）。
+        (config.DIST_DIR / indexnow.key_filename()).write_text(
+            indexnow.KEY, encoding="utf-8")
+
         # llms.txt（AI検索にサイト構造を伝える）
         articles_en = load_articles("en")
         (config.DIST_DIR / "llms.txt").write_text(
@@ -600,7 +629,8 @@ class Builder:
         ctx = self._ctx(config.DEFAULT_LANG, depth=0, active="", path="404")
         four04 = self.env.from_string(_FOUR04_TPL).render(**ctx)
         (config.DIST_DIR / "404.html").write_text(four04, encoding="utf-8")
-        extras = "static/, .nojekyll, robots.txt, sitemap.xml, llms.txt, llms-full.txt, 404.html"
+        extras = ("static/, .nojekyll, robots.txt, sitemap.xml, llms.txt, "
+                  "llms-full.txt, 404.html, indexnow-key")
         if config.SITE_DOMAIN:
             extras += f", CNAME({config.SITE_DOMAIN})"
         print(f"  extras: {extras}")

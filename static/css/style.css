@@ -560,3 +560,30 @@ h1, h2, h3, h4 {
   .row-thumb { width: 88px; }
   .lead-title { font-size: 1.2rem; }
 }
+
+/* --- 企業データベース（独自資産・広告枠の器）--- */
+.company-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 16px; }
+.company-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-lg); padding: 20px; box-shadow: var(--sh-1);
+  display: flex; flex-direction: column; gap: 10px; transition: .18s;
+}
+.company-card:hover { border-color: var(--line-strong); box-shadow: var(--sh-2); }
+.company-head { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; }
+.company-name { font-size: 1.12rem; letter-spacing: -.02em; margin: 0; }
+.company-sub { font-size: .78rem; color: var(--text-3); }
+.company-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.company-summary { margin: 0; font-size: .89rem; color: var(--text-2); line-height: 1.72; flex: 1; }
+.company-meta { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; margin: 0; font-size: .82rem; }
+.company-meta dt { color: var(--text-3); }
+.company-meta dd { margin: 0; }
+.chip-n { font-family: var(--mono); font-size: .74rem; opacity: .65; margin-left: 3px; }
+
+.db-note {
+  margin-top: 30px; padding: 18px 20px; background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: var(--r-md);
+  font-size: .85rem; color: var(--text-2); line-height: 1.7;
+}
+.db-note p { margin: 0 0 8px; }
+.db-note p:last-child { margin: 0; }
+.db-cta { font-weight: 650; color: var(--text); }

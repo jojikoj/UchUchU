@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}{{ t('companies.title') }}{% endblock %}
+{% block og_title %}{{ t('companies.title') }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>{{ t('companies.title') }}</h1>
+    <p class="page-sub">{{ t('companies.subtitle') }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filter-bar">
+      <a class="chip {{ 'on' if not current_cat }}" href="{{ back_to_all }}">{{ t('news.filter_all') }}</a>
+      {% for c in cats %}
+      <a class="chip {{ 'on' if current_cat == c.id }}" href="{{ c.href }}">{{ c.name }} <span class="chip-n">{{ c.count }}</span></a>
+      {% endfor %}
+    </div>
+
+    {% if companies %}
+    <div class="company-list">
+      {% for c in companies %}
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">{{ c.display_name }}</h3>
+          {% if c.sub_name %}<span class="company-sub">{{ c.sub_name }}</span>{% endif %}
+        </div>
+        <div class="company-tags">
+          {% for l in c.category_labels %}<span class="pill ghost">{{ l }}</span>{% endfor %}
+          {% if c.listed %}<span class="pill">{{ c.listed }}</span>{% endif %}
+        </div>
+        {% if c.display_summary %}<p class="company-summary">{{ c.display_summary }}</p>{% endif %}
+        <dl class="company-meta">
+          {% if c.hq %}<dt>{{ t('companies.hq') }}</dt><dd>{{ c.hq }}</dd>{% endif %}
+        </dl>
+        <a class="card-link" href="{{ c.url }}" target="_blank" rel="noopener">{{ t('companies.official') }} →</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="empty">{{ t('meta.no_data') }}</p>
+    {% endif %}
+
+    <div class="db-note">
+      <p>{{ disclaimer }}</p>
+      <p class="db-cta">{{ t('companies.cta') }}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
