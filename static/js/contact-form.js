@@ -60,16 +60,22 @@
     // --- 経路1: 受信プログラムへ直接POST ---
     if (cfg.endpoint) {
       setStatus(cfg.strings.sending, "sending");
+      // 共通GAS（コンテンツ部）の仕様に合わせる。
+      // site でメディアを判別し、type で申込種別を決める。
+      // origin は送信元チェックに使われる。
       var payload = {
-        subject: subject,
+        site: cfg.site_key || "uchuchu",
+        type: "consult",
+        origin: location.origin,
         kind: val("kind"),
         company: val("company"),
         name: val("name"),
         email: val("email"),
         tel: val("tel"),
-        site: val("site"),
-        message: val("message"),
-        hp: val("hp"),          // ハニーポット（人間は空のまま）
+        url: val("site"),
+        message: val("message") + "\n\n【ご用件】" + val("kind"),
+        fax: val("hp"),        // ハニーポット（GAS側の想定フィールド名）
+        // FormSubmit 互換（エンドポイントを戻した場合に備える）
         _subject: subject,
         _captcha: "false",
         _template: "table"
@@ -89,12 +95,14 @@
         .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
         .then(function (j) {
           // FormSubmit は success を文字列で返すため両方を見る
-          var ok = j.success === true || j.success === "true";
+          // GASは {ok:true}、FormSubmitは {success:"true"} を返す
+          var ok = j.ok === true || j.success === true || j.success === "true";
           if (ok) {
             form.reset();
             setStatus(cfg.strings.sent, "ok");
           } else {
-            setStatus(cfg.strings.failed, "error");
+            // GASはエラー理由を返すので、そのまま見せた方が親切
+            setStatus(j.error || cfg.strings.failed, "error");
           }
         })
         .catch(function () { setStatus(cfg.strings.failed, "error"); });

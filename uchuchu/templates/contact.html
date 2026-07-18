@@ -95,6 +95,7 @@
   window.UCHUCHU_FORM = {
     email: "{{ contact_email }}",
     endpoint: {{ (form_endpoint or '')|tojson }},
+    site_key: "uchuchu",
     access_key: {{ (form_access_key or '')|tojson }},
     labels: {
       kind: "{{ t('form.kind') }}", company: "{{ t('form.company') }}",
