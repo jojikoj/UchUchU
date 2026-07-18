@@ -22,12 +22,12 @@
   <div class="hero-main">
     {% set f = featured[0] %}
     {% set ftitle = f.get('title_' ~ lang) or f.title %}
-    <a class="hero-media" href="{{ f.url }}" target="_blank" rel="noopener">
+    <a class="hero-media" href="{{ rel }}a/{{ f.slug }}/">
       {% if f.image %}<img src="{{ f.image }}" alt="" loading="eager"
            onerror="this.closest('.hero-media').classList.add('no-img')">{% endif %}
     </a>
     <div class="hero-body">
-      <h2 class="hero-title"><a href="{{ f.url }}" target="_blank" rel="noopener">{{ ftitle }}</a></h2>
+      <h2 class="hero-title"><a href="{{ rel }}a/{{ f.slug }}/">{{ ftitle }}</a></h2>
       <div class="hero-meta">
         {% for tp in f.topic_labels or [] %}<span class="pill-tag">#{{ tp }}</span>{% endfor %}
         <span class="pill-tag src">{{ f.source }}</span>
@@ -40,12 +40,12 @@
     {% for n in featured[1:5] %}
     {% set ntitle = n.get('title_' ~ lang) or n.title %}
     <article class="hero-item">
-      <a class="hero-item-media" href="{{ n.url }}" target="_blank" rel="noopener">
+      <a class="hero-item-media" href="{{ rel }}a/{{ n.slug }}/">
         {% if n.image %}<img src="{{ n.image }}" alt="" loading="lazy"
              onerror="this.closest('.hero-item-media').classList.add('no-img')">{% endif %}
       </a>
       <div class="hero-item-body">
-        <h3><a href="{{ n.url }}" target="_blank" rel="noopener">{{ ntitle }}</a></h3>
+        <h3><a href="{{ rel }}a/{{ n.slug }}/">{{ ntitle }}</a></h3>
         <div class="hero-item-meta">
           {% for tp in n.topic_labels or [] %}<span class="pill-tag sm">#{{ tp }}</span>{% endfor %}
           {% if n.published_short %}<time datetime="{{ n.published }}">{{ n.published_short }}</time>{% endif %}
@@ -128,7 +128,7 @@
 <section class="block block-tint">
   {{ sec_head('NEW', t('home.latest_news'), rel ~ 'news/', t('home.view_all')) }}
   <div class="tile-grid">
-    {% for n in latest %}{{ news_tile(n, lang, t) }}{% endfor %}
+    {% for n in latest %}{{ news_tile(n, lang, t, rel) }}{% endfor %}
   </div>
 </section>
 {% endif %}

@@ -177,6 +177,13 @@ STRINGS = {
         "ja": "海外ソースの記事は、この場で自動翻訳して掲載しています（機械翻訳のため訳文が不正確な場合があります）。正確な内容は各記事の元記事をご確認ください。",
         "en": "Articles from non-English sources are machine translated. Please refer to the original article for accuracy.",
     },
+    "detail.related": {"ja": "関連するニュース", "en": "Related news"},
+    "detail.back": {"ja": "ニュース一覧へ戻る", "en": "Back to news"},
+    "detail.cta_title": {"ja": "この分野の企業を探していますか？", "en": "Looking for companies in this field?"},
+    "detail.cta_body": {
+        "ja": "UchUchUは宇宙産業に関わる日本企業をデータベース化しています。参入検討・取引先探索にお使いください。",
+        "en": "UchUchU maintains a database of Japanese companies in the space industry."},
+
     "meta.source": {"ja": "出典", "en": "Source"},
     "meta.updated": {"ja": "更新", "en": "Updated"},
     "meta.published": {"ja": "公開", "en": "Published"},

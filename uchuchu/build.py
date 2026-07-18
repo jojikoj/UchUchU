@@ -142,6 +142,11 @@ def prepare_news(raw: list[dict], lang: str) -> list[dict]:
             it.get("title", ""), it.get("summary", ""))
         # 一覧に出す主題ラベル（多すぎると読みにくいので1つに絞る）
         it["topic_labels"] = [topics.name(x, lang) for x in it["topics"][:1]]
+        # サイト内の記事ページ。外部リンクに直接飛ばすと読者が離脱し、
+        # 回遊も問い合わせも起きないため、必ず自サイトを経由させる。
+        it["slug"] = news_slug(it)
+        it["display_title"] = it.get(f"title_{lang}") or it.get("title") or ""
+        it["display_summary"] = it.get(f"summary_{lang}") or it.get("summary") or ""
         out.append(it)
     return out
 
@@ -237,6 +242,18 @@ def article_plain_text(html: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text)
     text = html_mod.unescape(text)
     return re.sub(r"[ \t]+", " ", text).strip()
+
+
+def news_slug(item: dict) -> str:
+    """ニュース1件の安定したURLスラッグ。
+
+    元記事URLのハッシュを使う。タイトルは翻訳で変わりうるが
+    URLは変わらないため、再ビルドしてもスラッグが安定する。
+    """
+    import hashlib
+    src = item.get("source_id") or "news"
+    h = hashlib.sha1((item.get("url") or "").encode("utf-8")).hexdigest()[:10]
+    return f"{src}-{h}"
 
 
 # --- ページ分割 ---------------------------------------------------------
@@ -574,6 +591,45 @@ class Builder:
                             self.env.get_template("topic.html").render(**ctx))
                 topic_pages += 1
         total_pages_built += topic_pages
+
+        # ニュース詳細ページ（a/<slug>/）
+        # 一覧から直接外部サイトへ飛ばすと、読者が即座に離脱して
+        # 回遊も問い合わせも起きない。必ず自サイトのページを経由させ、
+        # 関連記事と企業DBへの導線をそこで提示する。
+        by_topic: dict[str, list[dict]] = {}
+        for n in news:
+            for tid in n.get("topics", []):
+                by_topic.setdefault(tid, []).append(n)
+
+        for n in news:
+            # 同じ主題の記事を関連として出す（自分自身は除く）
+            rel_items: list[dict] = []
+            seen_slugs = {n["slug"]}
+            for tid in n.get("topics", []):
+                for cand in by_topic.get(tid, []):
+                    if cand["slug"] in seen_slugs:
+                        continue
+                    seen_slugs.add(cand["slug"])
+                    rel_items.append(cand)
+                    if len(rel_items) >= 6:
+                        break
+                if len(rel_items) >= 6:
+                    break
+
+            path = f"a/{n['slug']}/"
+            ctx = self._ctx(lang, depth=2, active="news", path=path,
+                            page_description=(n.get("display_summary") or "")[:150])
+            ctx["item"] = n
+            ctx["related"] = rel_items
+            ctx["jsonld"] = seo.build_jsonld(
+                self.base_url, lang, "news",
+                trail=[(home_label, self._url_for(lang, "")),
+                       (_t("nav.news", lang), self._url_for(lang, "news/")),
+                       (n["display_title"][:60], self._url_for(lang, path))],
+                news=[n])
+            self._write(lang, path.rstrip("/"),
+                        self.env.get_template("news_detail.html").render(**ctx))
+        total_pages_built += len(news)
 
         # 企業DBページ（このサイト唯一の独自資産。集約でないためSEO評価が付く）
         comp_cats = companies.categories(lang)

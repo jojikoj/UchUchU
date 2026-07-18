@@ -20,7 +20,7 @@
     </div>
     {% if news %}
     <div class="tile-grid">
-      {% for n in news %}{{ news_tile(n, lang, t) }}{% endfor %}
+      {% for n in news %}{{ news_tile(n, lang, t, rel) }}{% endfor %}
     </div>
     {{ pager(pagination, t) }}
     {% else %}
