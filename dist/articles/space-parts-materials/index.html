@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁 · UchUchU</title>
+  <meta name="description" content="地上では優秀な材料が、宇宙では使い物にならないことがある。なぜそうなるのか、どう選べばいいのかを、材料の視点から整理する。">
+  <link rel="canonical" href="https://uchuchu.tech/articles/space-parts-materials/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/articles/space-parts-materials/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/articles/space-parts-materials/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁 · UchUchU">
+  <meta property="og:description" content="地上では優秀な材料が、宇宙では使い物にならないことがある。なぜそうなるのか、どう選べばいいのかを、材料の視点から整理する。">
+  <meta property="og:url" content="https://uchuchu.tech/articles/space-parts-materials/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁 · UchUchU">
+  <meta name="twitter:description" content="地上では優秀な材料が、宇宙では使い物にならないことがある。なぜそうなるのか、どう選べばいいのかを、材料の視点から整理する。">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"特集","item":"https://uchuchu.tech/articles/"},{"@type":"ListItem","position":3,"name":"宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁","item":"https://uchuchu.tech/articles/space-parts-materials/"}]},{"@type":"Article","headline":"宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁","description":"地上では優秀な材料が、宇宙では使い物にならないことがある。なぜそうなるのか、どう選べばいいのかを、材料の視点から整理する。","inLanguage":"ja-JP","mainEntityOfPage":{"@type":"WebPage","@id":"https://uchuchu.tech/articles/space-parts-materials/"},"url":"https://uchuchu.tech/articles/space-parts-materials/","publisher":{"@id":"https://uchuchu.tech/#organization"},"isAccessibleForFree":true,"author":{"@type":"Organization","name":"UchUchU 編集部"},"datePublished":"2026-07-18","dateModified":"2026-07-18","image":"cover-materials.jpg"}]}</script>
+  <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../static/css/style.css?v=87149ef7">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/articles/space-parts-materials/" : "https://uchuchu.tech/en/articles/space-parts-materials/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../" class="">ホーム</a>
+      <a href="../../companies/" class="">企業DB</a>
+      <a href="../../articles/" class="on">特集</a>
+      <a href="../../news/" class="">ニュース</a>
+      <a href="../../launches/" class="">打ち上げ</a>
+      <a href="../../papers/" class="">研究動向</a>
+      <a href="../../faq/" class="">よくある質問</a>
+      <a href="../../advertise/" class="">広告掲載</a>
+      <a href="../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/articles/space-parts-materials/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/articles/space-parts-materials/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<article class="article">
+  <header class="article-hero">
+<div class="article-hero-img" style="background-image:url('../../static/img/cover-materials.jpg')"></div>    <div class="wrap article-hero-inner">
+<span class="pill accent">参入ガイド</span>      <h1>宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁</h1>
+<p class="article-lead">地上では優秀な材料が、宇宙では使い物にならないことがある。なぜそうなるのか、どう選べばいいのかを、材料の視点から整理する。</p>      <div class="article-meta">
+<span>UchUchU 編集部</span><time>2026年7月18日</time>      </div>
+    </div>
+  </header>
+  <div class="wrap article-body prose">
+    <p>「この樹脂は地上で20年使える実績がある」——それでも宇宙では採用されないことがある。</p>
+<p>宇宙機の材料選定は、強度や耐久性といった地上の常識とは別の基準で動いている。中でも製造業が最初に戸惑うのが、<strong>アウトガス</strong>と<strong>放射線</strong>という2つの壁だ。</p>
+<p>この記事では、材料の視点から宇宙環境の特殊性を整理する。</p>
+<h2 id="_1">アウトガスとは何か</h2>
+<p><strong>アウトガス（outgassing）とは、真空中で材料からガス成分が放出される現象</strong>である。</p>
+<p>地上では、樹脂や接着剤、塗料に含まれる可塑剤や溶剤の残りは、材料内部に留まっている。ところが真空に置かれると、それらが少しずつ気化して外に出ていく。</p>
+<p>問題はここからだ。放出されたガスは真空中を飛び回り、<strong>近くの冷たい面に付着して膜を作る</strong>。これを汚染（コンタミネーション）と呼ぶ。</p>
+<p>付着先が悪いと致命傷になる。</p>
+<ul>
+<li><strong>光学レンズやセンサ面</strong>に付くと、透過率が落ちて観測性能が劣化する</li>
+<li><strong>太陽電池パネル</strong>に付くと、発電量が落ちる</li>
+<li><strong>放熱面（ラジエータ）</strong>に付くと、熱を逃がせなくなる</li>
+</ul>
+<p>自分の部品が壊れるのではなく、<strong>他の機器を巻き添えにする</strong>のがアウトガスの厄介なところだ。だから「うちの部品は問題ない」では済まされない。</p>
+<h2 id="_2">アウトガスはどう評価されるか</h2>
+<p>宇宙業界では、材料のアウトガス特性を数値で管理する。代表的な指標が2つある。</p>
+<p><strong>TML（Total Mass Loss／全質量損失）</strong> — 真空・加熱下で材料が失う質量の割合。どれだけガスが出ていくかを示す。</p>
+<p><strong>CVCM（Collected Volatile Condensable Material／捕集された揮発性凝縮物）</strong> — 放出されたガスのうち、冷たい面に凝縮して付着した量の割合。実際に汚染を起こす分量にあたる。</p>
+<p>一般に <strong>TML 1.0%以下、CVCM 0.10%以下</strong>が採用の目安とされる。この基準を満たす材料はデータベース化されており、宇宙機の設計では基本的にその中から選ぶ。</p>
+<p>つまり<strong>「良い材料を探す」のではなく「認められた材料の中から選ぶ」</strong>のが宇宙機設計の作法だ。ここが一般産業と発想が違う。</p>
+<h2 id="_3">放射線という第二の壁</h2>
+<p>大気と地磁気に守られている地上と違い、宇宙空間には放射線が降り注ぐ。これが材料と電子部品を痛めつける。</p>
+<p>影響は大きく2種類ある。</p>
+<p><strong>総線量による劣化（TID）</strong> — 長期間浴び続けることで、じわじわ性能が落ちる。樹脂は硬化して脆くなり、着色する。半導体は特性がずれていく。寿命に直結する。</p>
+<p><strong>単一の粒子による異常（SEE）</strong> — 高エネルギー粒子が1個当たっただけで、その瞬間に誤動作や破壊が起きる。メモリのビットが反転する、素子が過電流で焼ける、といった現象である。</p>
+<p><strong>ここが直感に反する点だ。</strong> 「たくさん浴びると壊れる」だけでなく、<strong>「1個当たっただけで壊れることがある」</strong>。だから統計的な信頼性設計だけでは不十分で、そもそも耐性のある部品を選ぶ、あるいは異常からの復帰手段を設計に織り込む必要がある。</p>
+<h2 id="_4">温度差と真空がもたらすもの</h2>
+<p>アウトガスと放射線に比べれば地味だが、無視できない要素がもう2つある。</p>
+<p><strong>極端な温度差</strong>。日向と日陰で数百度の差が生じる。異なる材料を接合していると、熱膨張率の違いから接合部に応力が集中し、繰り返しの温度サイクルで剥離や破断に至る。地上の温度サイクル試験より遥かに厳しい条件になる。</p>
+<p><strong>真空中の摩擦</strong>。空気がないと、金属表面の酸化膜が失われ、金属同士が直接触れ合って固着する現象（コールドウェルド）が起こりうる。潤滑剤も真空中では蒸発してしまうため、地上用のグリスはそのまま使えない。可動部を持つ機構では特に注意が要る。</p>
+<h2 id="_5">よく使われる材料の傾向</h2>
+<p>以上を踏まえると、実際に使われる材料には偏りが出る。</p>
+<p><strong>構造材</strong>：アルミニウム合金が主力。軽く、加工しやすく、実績が豊富。高い剛性が必要なら炭素繊維複合材（CFRP）が使われる。ただしCFRPは樹脂を含むため、アウトガス特性の管理が必要になる。</p>
+<p><strong>締結部品</strong>：チタン合金やステンレス鋼。強度と耐食性、そして熱膨張の整合が理由。</p>
+<p><strong>断熱材</strong>：多層断熱材（MLI）。金属蒸着した薄膜を重ねた、あの金色の膜である。</p>
+<p><strong>接着剤・塗料</strong>：アウトガス基準を満たす宇宙用グレードのものに限定される。<strong>ここが一般産業との違いが最も大きい領域</strong>で、地上で標準的に使っている接着剤がそのままでは使えないことが多い。</p>
+<h2 id="_6">製造業として押さえるべきこと</h2>
+<p>材料の性質そのものより、<strong>実務上の作法</strong>の方が参入時には重要になる。</p>
+<p><strong>第一に、材料を勝手に変えない。</strong> 同等品への置き換えは、地上では日常的な判断だが、宇宙機では原則として認められない。アウトガス特性が変わるためだ。変更するなら再評価と承認の手続きが要る。</p>
+<p><strong>第二に、材料のロットを記録する。</strong> どのロットの材料をどの製品に使ったかを追跡できる状態にしておく。問題が起きたときの影響範囲を特定するために不可欠で、これは<a href="/articles/space-quality-requirements/">品質要求の記事</a>で述べたトレーサビリティそのものだ。</p>
+<p><strong>第三に、洗浄と保管の管理。</strong> 手の脂や加工油の残留が汚染源になる。クリーンな環境での取り扱いと、適切な梱包・保管が要求される。</p>
+<h2 id="_7">まとめ</h2>
+<ul>
+<li><strong>アウトガス</strong>は自分の部品ではなく他の機器を汚染する。TML 1.0%以下、CVCM 0.10%以下が目安</li>
+<li>材料は「探す」のではなく<strong>認められたものから選ぶ</strong></li>
+<li><strong>放射線</strong>は総線量による劣化と、粒子1個による突発異常の2種類がある</li>
+<li>真空中では潤滑剤が蒸発し、金属同士が固着することもある</li>
+<li>実務では<strong>材料を勝手に変えない・ロットを記録する・清浄に扱う</strong>の3点が要</li>
+<li>一般産業との差が最も大きいのは<strong>接着剤と塗料</strong></li>
+</ul>
+<p>自社の材料や加工が宇宙分野で通用するか判断がつかない場合は、<a href="/contact/">お問い合わせ</a>からご相談ください。</p>
+<hr />
+<p><em>本記事は公開情報をもとに編集部が整理したものです。具体的な材料選定基準は発注元やミッションにより異なります。実際の設計・調達にあたっては、必ず該当する仕様書と公式の材料データベースをご確認ください。</em></p>
+  </div>
+  <div class="wrap article-foot">
+    <a class="btn btn-ghost" href="../../articles/">← 特集一覧へ戻る</a>
+  </div>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../companies/">企業DB</a>
+          <a href="../../articles/">特集</a>
+          <a href="../../news/">ニュース</a>
+          <a href="../../launches/">打ち上げ</a>
+          <a href="../../papers/">研究動向</a>
+          <a href="../../topics/moon/">トピック</a>
+          <a href="../../search/">検索</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-07-18 14:47 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../static/js/main.js?v=87149ef7" defer></script>
+</body>
+</html>

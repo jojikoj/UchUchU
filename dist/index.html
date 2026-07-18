@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宇宙開発ニュース・打ち上げ予定 · UchUchU</title>
+  <meta name="description" content="日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。">
+  <link rel="canonical" href="https://uchuchu.tech/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="UchUchU — 宇宙産業と、日本のものづくりをつなぐ。">
+  <meta property="og:description" content="日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。">
+  <meta property="og:url" content="https://uchuchu.tech/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UchUchU — 宇宙産業と、日本のものづくりをつなぐ。">
+  <meta name="twitter:description" content="日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"}]}]}</script>
+  <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/style.css?v=87149ef7">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/" : "https://uchuchu.tech/en/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="./">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="./" class="on">ホーム</a>
+      <a href="companies/" class="">企業DB</a>
+      <a href="articles/" class="">特集</a>
+      <a href="news/" class="">ニュース</a>
+      <a href="launches/" class="">打ち上げ</a>
+      <a href="papers/" class="">研究動向</a>
+      <a href="faq/" class="">よくある質問</a>
+      <a href="advertise/" class="">広告掲載</a>
+      <a href="contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="./">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+
+<section class="hero-block">
+  <div class="hero-main">
+    <a class="hero-media" href="a/phys_space-16c500adce/">
+<img src="https://scx1.b-cdn.net/csz/news/tmb/2026/fcc-approves-first-lau.jpg" alt="" loading="eager"
+           onerror="this.closest('.hero-media').classList.add('no-img')">    </a>
+    <div class="hero-body">
+      <h2 class="hero-title"><a href="a/phys_space-16c500adce/">FCC、宇宙反射衛星群の初打ち上げを承認</a></h2>
+      <div class="hero-meta">
+<span class="pill-tag">#衛星・地球観測</span>        <span class="pill-tag src">Phys.org</span>
+<time datetime="2026-07-18T03:00:01+00:00">2026.07.18</time>      </div>
+    </div>
+  </div>
+
+  <div class="hero-side">
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/spaceflightnews-88306362a2/">
+<img src="https://blogs.nasa.gov/spacestation/wp-content/uploads/sites/240/2023/01/nasa-logo-web-rgb.png" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/spaceflightnews-88306362a2/">NASA、エイムズ研究センターの施設支援サービス契約を発注</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#宇宙ビジネス</span><time datetime="2026-07-17T20:34:59Z">2026.07.17</time>        </div>
+      </div>
+    </article>
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/arstechnica-f1a853eaf4/">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/Operational-FireSat-satellites-500x500.png" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/arstechnica-f1a853eaf4/">グーグル出資の山火事検知衛星が打ち上げ、米国・カナダは煙害に苦しむ</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#衛星・地球観測</span><time datetime="2026-07-17T19:50:18+00:00">2026.07.17</time>        </div>
+      </div>
+    </article>
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/gizmodo_jp-6156189d72/">
+<img src="https://media.loom-app.com/loom/2026/07/17/2cad370c-5271-4acd-ae0c-1e1a8a9553db/original.png?w=1200" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/gizmodo_jp-6156189d72/">SpaceXの株価がずりずり下がってる…</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#ロケット</span><time datetime="2026-07-18T03:30:00+00:00">2026.07.18</time>        </div>
+      </div>
+    </article>
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/spaceflightnews-b04101aaf2/">
+<img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2023/09/ispace-apex.jpg?fit=1024%2C580&amp;ssl=1" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/spaceflightnews-b04101aaf2/">NASA、ドレイパー社の月着陸船ミッションを中止</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#月</span><time datetime="2026-07-18T00:00:20Z">2026.07.18</time>        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="launch-strip">
+  <div class="strip-head">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span class="strip-title">次の打ち上げ</span>
+    <a class="strip-more" href="launches/">すべて見る →</a>
+  </div>
+  <div class="strip-items">
+    <article class="strip-item">
+      <div class="strip-cd">
+<span class="net-countdown" data-net="2026-07-18T06:01:00Z">まもなく</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Vikram-I | Demo Flight</h3>
+      <p>2026年7月18日 06:01 UTC · Satish Dhawan Space Centre, India</p>
+    </article>
+    <article class="strip-item">
+      <div class="strip-cd">
+<span class="net-countdown" data-net="2026-07-20T14:00:00Z">T-1日 23時間</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Falcon 9 Block 5 | Starlink Group 17-39</h3>
+      <p>2026年7月20日 14:00 UTC · Vandenberg SFB, CA, USA</p>
+    </article>
+    <article class="strip-item">
+      <div class="strip-cd">
+<span class="net-countdown" data-net="2026-07-20T22:45:00Z">T-2日 7時間</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Starship | Flight 13</h3>
+      <p>2026年7月20日 22:45 UTC · SpaceX Starbase, TX, USA</p>
+    </article>
+  </div>
+</section>
+
+<section class="block block-tint">
+  <div class="sec-head">
+  <span class="sec-en">DATABASE</span>
+  <span class="sec-ja">宇宙産業 企業データベース</span>
+<a class="sec-more" href="companies/">すべての企業を見る →</a></div>
+
+  <p class="block-lead">日本の宇宙産業に関わる企業を事業領域別に整理しています。取引先探索・競合把握にお使いください。掲載は無料です。</p>
+  <div class="db-cats">
+    <a class="db-cat" href="companies/component/">
+      <span class="db-cat-media">
+        <img src="static/img/cat-component.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">20</span>
+      </span>
+      <span class="db-cat-name">部品・素材・加工</span>
+    </a>
+    <a class="db-cat" href="companies/satellite/">
+      <span class="db-cat-media">
+        <img src="static/img/cat-satellite.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">12</span>
+      </span>
+      <span class="db-cat-name">衛星製造・機器</span>
+    </a>
+    <a class="db-cat" href="companies/ground/">
+      <span class="db-cat-media">
+        <img src="static/img/cat-ground.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">10</span>
+      </span>
+      <span class="db-cat-name">地上設備・通信</span>
+    </a>
+    <a class="db-cat" href="companies/service/">
+      <span class="db-cat-media">
+        <img src="static/img/cat-service.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">9</span>
+      </span>
+      <span class="db-cat-name">衛星データ・サービス</span>
+    </a>
+    <a class="db-cat" href="companies/exploration/">
+      <span class="db-cat-media">
+        <img src="static/img/cat-exploration.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">7</span>
+      </span>
+      <span class="db-cat-name">探査・軌道上サービス</span>
+    </a>
+    <a class="db-cat" href="companies/launch/">
+      <span class="db-cat-media">
+        <img src="static/img/cat-launch.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">6</span>
+      </span>
+      <span class="db-cat-name">打ち上げ・ロケット</span>
+    </a>
+  </div>
+  <div class="db-preview">
+<a class="db-chip" href="companies/">ALE</a><a class="db-chip" href="companies/">ArkEdge Space</a><a class="db-chip" href="companies/">ElevationSpace</a><a class="db-chip" href="companies/">GITAI</a><a class="db-chip" href="companies/">IHIエアロスペース</a><a class="db-chip" href="companies/">NEC</a><a class="db-chip" href="companies/">Pale Blue</a><a class="db-chip" href="companies/">QPS研究所</a><a class="db-chip" href="companies/">Space Walker</a><a class="db-chip" href="companies/">Synspective</a><a class="db-chip" href="companies/">WARPSPACE</a><a class="db-chip" href="companies/">ispace</a><a class="db-chip" href="companies/">アクセルスペース</a><a class="db-chip" href="companies/">アストロスケール</a>    <a class="db-chip db-chip-more" href="companies/">すべての企業を見る →</a>
+  </div>
+</section>
+
+<section class="block">
+  <div class="sec-head">
+  <span class="sec-en">GUIDE</span>
+  <span class="sec-ja">宇宙産業 参入ガイド</span>
+<a class="sec-more" href="articles/">すべて見る →</a></div>
+
+  <p class="block-lead">「うちの技術は宇宙で使えるのか」「何から始めればいいのか」に答える実務記事です。</p>
+  <div class="guide-grid">
+    <a class="guide-card" href="articles/manufacturing-entry-guide/">
+      <span class="guide-media">
+        <img src="static/img/cover-entry.jpg" alt="" loading="lazy">
+        <span class="guide-num">01</span>
+      </span>
+      <h3 class="guide-title">中小製造業が宇宙産業に参入するには — 何から始めるべきか</h3>
+      <p class="guide-excerpt">「宇宙は大手だけの世界」ではない。町工場が宇宙部品を受注するまでに何が必要か、実際の入口を順に整理する。</p>
+      <span class="card-link">続きを読む →</span>
+    </a>
+    <a class="guide-card" href="articles/space-quality-requirements/">
+      <span class="guide-media">
+        <img src="static/img/cover-quality.jpg" alt="" loading="lazy">
+        <span class="guide-num">02</span>
+      </span>
+      <h3 class="guide-title">宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか</h3>
+      <p class="guide-excerpt">「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。</p>
+      <span class="card-link">続きを読む →</span>
+    </a>
+    <a class="guide-card" href="articles/satellite-mass-production/">
+      <span class="guide-media">
+        <img src="static/img/cover-massprod.jpg" alt="" loading="lazy">
+        <span class="guide-num">03</span>
+      </span>
+      <h3 class="guide-title">衛星コンステレーション時代 — 宇宙産業に「量産」の需要が生まれている</h3>
+      <p class="guide-excerpt">宇宙は少量多品種の世界だった。しかし数千機規模の衛星群が現れ、製造業が得意とする量産の領域が初めて開いた。</p>
+      <span class="card-link">続きを読む →</span>
+    </a>
+  </div>
+</section>
+
+<section class="block block-tint">
+  <div class="sec-head">
+  <span class="sec-en">NEW</span>
+  <span class="sec-ja">最新ニュース</span>
+<a class="sec-more" href="news/">すべて見る →</a></div>
+
+  <div class="tile-grid">
+<article class="news-tile">
+  <a class="tile-media" href="a/sorae-4fdb3f14a7/">
+    <img src="../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/sorae-4fdb3f14a7/">スペースX、ファルコン9でアメリカ宇宙軍のデータ伝送衛星21機を打ち上げ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-07-18T05:31:59+00:00">2026.07.18</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/sorae-4fbe77f247/">
+    <img src="../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/sorae-4fbe77f247/">ispaceの月着陸船で2030年に月面着陸が予定されていたNASA月輸送契約「CP-12」が契約終了</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-07-18T01:13:04+00:00">2026.07.18</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-14ce1de779/">
+    <img src="https://www.nasa.gov/wp-content/uploads/2026/07/afrc2025-0136-2115-copy.jpeg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-14ce1de779/">NASA、新型主翼の構造限界を探る試験を実施</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-07-17T23:08:33Z">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/universetoday-b84117f5ac/">
+    <img src="../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/universetoday-b84117f5ac/">ダークエネルギーカメラの新画像、ゴッホの絵画を想起させる仕上がり</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-07-17T22:37:50+00:00">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-7334c8e15d/">
+    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26586/PIA26586.png" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-7334c8e15d/">接近するNASAプシケ探査機がとらえた、満ちゆく火星の三日月</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#火星</span><time datetime="2026-07-17T22:32:27Z">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/space_com-26c74583ca/">
+    <img src="https://cdn.mos.cms.futurecdn.net/Q7rPj7uQYGsNhvUFSf4QBS-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/space_com-26c74583ca/">『ユリシーズ31』回顧、『オデュッセイア』を宇宙に移した80年代アニメ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-07-17T22:00:00+00:00">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-2a91443cd2/">
+    <img src="https://spacepolicyonline.com/wp-content/uploads/2026/07/Artemis-Accords-70-300x164.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-2a91443cd2/">セルビアとモーリシャスが加盟、アルテミス合意は70か国に</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-07-17T21:42:00Z">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">SpacePolicyOnline.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-4a5be2e9a2/">
+    <img src="https://www.nasa.gov/wp-content/uploads/2026/07/10-1177-1358863x221086619-fig2.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-4a5be2e9a2/">宇宙飛行士向け静脈血栓塞栓症リスクスコア算定アルゴリズムの確立へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#有人宇宙</span><time datetime="2026-07-17T21:01:38Z">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/space_com-17afa38240/">
+    <img src="https://cdn.mos.cms.futurecdn.net/PnVbSEh2nwrwxvgFfxBU6G-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/space_com-17afa38240/">SFさながらの火星の「金属質」砂丘、その正体とは</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#火星</span><time datetime="2026-07-17T21:00:00+00:00">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-1909b208de/">
+    <img src="https://www.nasa.gov/wp-content/uploads/2026/07/lighthouse-lg.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-1909b208de/">NASAのチャンドラとIXPE、灯台星雲のパルサーを観測</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-07-17T20:05:23Z">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/universetoday-003df44a57/">
+    <img src="../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/universetoday-003df44a57/">光速に近い速さで移動するとどうなるか　第4回：熱く輝く世界</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-07-17T19:40:00+00:00">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-290bd8e3d0/">
+    <img src="https://www.nasa.gov/wp-content/uploads/2026/07/roman.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-290bd8e3d0/">NASA、ローマン宇宙望遠鏡の打ち上げ取材を報道機関に呼びかけ</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-07-17T19:27:06Z">2026.07.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="block">
+  <div class="sec-head">
+  <span class="sec-en">TOPICS</span>
+  <span class="sec-ja">トピックから探す</span>
+</div>
+
+  <div class="topic-grid">
+    <a class="topic-card" href="topics/science/">
+      <span class="topic-card-name">#宇宙科学</span>
+      <span class="topic-card-count">172</span>
+      <span class="topic-card-desc">天体観測・惑星科学・宇宙物理</span>
+    </a>
+    <a class="topic-card" href="topics/human/">
+      <span class="topic-card-name">#有人宇宙</span>
+      <span class="topic-card-count">139</span>
+      <span class="topic-card-desc">宇宙飛行士・国際宇宙ステーション・宇宙滞在</span>
+    </a>
+    <a class="topic-card" href="topics/rocket/">
+      <span class="topic-card-name">#ロケット</span>
+      <span class="topic-card-count">129</span>
+      <span class="topic-card-desc">打ち上げ機・エンジン・再使用技術</span>
+    </a>
+    <a class="topic-card" href="topics/satellite/">
+      <span class="topic-card-name">#衛星・地球観測</span>
+      <span class="topic-card-count">125</span>
+      <span class="topic-card-desc">人工衛星・通信コンステレーション・地球観測</span>
+    </a>
+    <a class="topic-card" href="topics/business/">
+      <span class="topic-card-name">#宇宙ビジネス</span>
+      <span class="topic-card-count">122</span>
+      <span class="topic-card-desc">資金調達・契約・宇宙産業の動向</span>
+    </a>
+    <a class="topic-card" href="topics/moon/">
+      <span class="topic-card-name">#月</span>
+      <span class="topic-card-count">89</span>
+      <span class="topic-card-desc">月探査・月着陸・アルテミス計画</span>
+    </a>
+    <a class="topic-card" href="topics/japan/">
+      <span class="topic-card-name">#日本の宇宙開発</span>
+      <span class="topic-card-count">37</span>
+      <span class="topic-card-desc">JAXA・国内企業・日本の宇宙政策</span>
+    </a>
+    <a class="topic-card" href="topics/mars/">
+      <span class="topic-card-name">#火星</span>
+      <span class="topic-card-count">24</span>
+      <span class="topic-card-desc">火星探査・火星探査車・有人火星計画</span>
+    </a>
+  </div>
+</section>
+
+<section class="block block-tint">
+  <div class="sec-head">
+  <span class="sec-en">RESEARCH</span>
+  <span class="sec-ja">最新の研究動向</span>
+<a class="sec-more" href="papers/">すべて見る →</a></div>
+
+  <div class="grid grid-papers">
+<article class="card paper-card">
+  <div class="card-body">
+    <div class="card-meta">
+<span class="pill ghost mono">astro-ph.HE</span><time datetime="2026-07-16T17:44:08+00:00">2026年7月16日</time>    </div>
+    <h3 class="card-title"><a href="https://arxiv.org/abs/2607.15245v1" target="_blank" rel="noopener">When will T Coronae Borealis next erupt as a nova? Constraints from recurrence, orbital phase, and accretion-state evolution</a></h3>
+<p class="paper-authors">Songpeng Pei, Xiaowan Zhang, Renzhi Su, Ziwei Ou, Yongzhi Cai, Qiang Li, Yu Liu, Xiaoqin Ren et al.</p><p class="card-summary">T Coronae Borealis (T CrB) is the nearest symbiotic recurrent nova and is now intensively monitored for its next eruption. We combine three constraints on the eruption time: historical recurrence, orbital phase, and recent accretion-state evolution. Conditioning on no eruption by 2026 July 11, the three effective historical intervals give illustrative survival-conditioned probabilities of 30.2\% for the rest of 2026 and 56.9\% within the following year; these are empirical indicators, not physic…</p>    <div class="card-actions">
+      <a class="card-link" href="https://arxiv.org/abs/2607.15245v1" target="_blank" rel="noopener">arXiv →</a>
+<a class="card-link ghost" href="https://arxiv.org/pdf/2607.15245v1" target="_blank" rel="noopener">PDF</a>    </div>
+  </div>
+</article>
+<article class="card paper-card">
+  <div class="card-body">
+    <div class="card-meta">
+<span class="pill ghost mono">astro-ph.EP</span><span class="pill ghost mono">physics.geo-ph</span><time datetime="2026-07-16T17:01:27+00:00">2026年7月16日</time>    </div>
+    <h3 class="card-title"><a href="https://arxiv.org/abs/2607.15204v1" target="_blank" rel="noopener">Sulfur photochemistry observationally traces mantle redox states of rocky planets</a></h3>
+<p class="paper-authors">Ioannis Panagiotou, Tim Lichtenberg, Shang-Min Tsai, Harrison Nicholls</p><p class="card-summary">Volatile outgassing from planetary interiors controls the composition of rocky exoplanets&#39; secondary atmospheres. However, observations indicate that disequilibrium processes, such as photochemistry and vertical transport, can strongly alter the chemical structure of Hot Jupiters. Which process dominates under different types of rocky planets, and how outgassing and photochemistry jointly determine the atmospheric composition, remain open questions. Sulfur species are promising tracers of interi…</p>    <div class="card-actions">
+      <a class="card-link" href="https://arxiv.org/abs/2607.15204v1" target="_blank" rel="noopener">arXiv →</a>
+<a class="card-link ghost" href="https://arxiv.org/pdf/2607.15204v1" target="_blank" rel="noopener">PDF</a>    </div>
+  </div>
+</article>
+<article class="card paper-card">
+  <div class="card-body">
+    <div class="card-meta">
+<span class="pill ghost mono">astro-ph.HE</span><time datetime="2026-07-16T16:16:49+00:00">2026年7月16日</time>    </div>
+    <h3 class="card-title"><a href="https://arxiv.org/abs/2607.15167v1" target="_blank" rel="noopener">Spectral study of the outburst decay of the accreting millisecond X-ray pulsar SRGA J144459.2-604207</a></h3>
+<p class="paper-authors">Amar Deo Chandra</p><p class="card-summary">We study the spectra of the accreting X-ray millisecond pulsar SRGA J144459.2-604207 during the 2024 outburst using the Neutron star Interior Composition Explorer (NICER) and Swift observations. The spectra during the outburst decay, reflares, and quiescent state are explored using the absorbed Comptonized model. We find that the spectra during the quiescent state can also be explained using the absorbed power-law and absorbed blackbody model. The spectral evolution of the source is explored as…</p>    <div class="card-actions">
+      <a class="card-link" href="https://arxiv.org/abs/2607.15167v1" target="_blank" rel="noopener">arXiv →</a>
+<a class="card-link ghost" href="https://arxiv.org/pdf/2607.15167v1" target="_blank" rel="noopener">PDF</a>    </div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="block">
+  <div class="cta-band">
+    <div class="cta-band-body">
+      <h2>宇宙産業への参入・広告掲載のご相談</h2>
+      <p>自社技術が宇宙産業で活きるかのご相談、企業データベースへの掲載（無料）、広告掲載のご相談を承っています。</p>
+    </div>
+    <div class="cta-band-actions">
+      <a class="btn btn-primary" href="contact/">お問い合わせ</a>
+      <a class="btn btn-ghost" href="advertise/">広告掲載</a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="companies/">企業DB</a>
+          <a href="articles/">特集</a>
+          <a href="news/">ニュース</a>
+          <a href="launches/">打ち上げ</a>
+          <a href="papers/">研究動向</a>
+          <a href="topics/moon/">トピック</a>
+          <a href="search/">検索</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-07-18 14:47 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="static/js/main.js?v=87149ef7" defer></script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宇宙産業 企業データベース · UchUchU</title>
+  <meta name="description" content="日本の宇宙産業に関わる企業を、事業領域別に整理しています。参入検討・取引先探索にお使いください。">
+  <link rel="canonical" href="https://uchuchu.tech/companies/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/companies/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/companies/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="宇宙産業 企業データベース · UchUchU">
+  <meta property="og:description" content="日本の宇宙産業に関わる企業を、事業領域別に整理しています。参入検討・取引先探索にお使いください。">
+  <meta property="og:url" content="https://uchuchu.tech/companies/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="宇宙産業 企業データベース · UchUchU">
+  <meta name="twitter:description" content="日本の宇宙産業に関わる企業を、事業領域別に整理しています。参入検討・取引先探索にお使いください。">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"宇宙産業 企業データベース","item":"https://uchuchu.tech/companies/"}]}]}</script>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/style.css?v=87149ef7">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/companies/" : "https://uchuchu.tech/en/companies/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../" class="">ホーム</a>
+      <a href="../companies/" class="on">企業DB</a>
+      <a href="../articles/" class="">特集</a>
+      <a href="../news/" class="">ニュース</a>
+      <a href="../launches/" class="">打ち上げ</a>
+      <a href="../papers/" class="">研究動向</a>
+      <a href="../faq/" class="">よくある質問</a>
+      <a href="../advertise/" class="">広告掲載</a>
+      <a href="../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/companies/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/companies/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>宇宙産業 企業データベース</h1>
+    <p class="page-sub">日本の宇宙産業に関わる企業を、事業領域別に整理しています。参入検討・取引先探索にお使いください。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cat-cards">
+      <a class="cat-card " href="component/">
+        <span class="cat-media"><img src="../static/img/cat-component.jpg" alt="" loading="lazy"></span>
+        <span class="cat-body">
+          <span class="cat-name">部品・素材・加工</span>
+          <span class="cat-n">20</span>
+        </span>
+      </a>
+      <a class="cat-card " href="satellite/">
+        <span class="cat-media"><img src="../static/img/cat-satellite.jpg" alt="" loading="lazy"></span>
+        <span class="cat-body">
+          <span class="cat-name">衛星製造・機器</span>
+          <span class="cat-n">12</span>
+        </span>
+      </a>
+      <a class="cat-card " href="ground/">
+        <span class="cat-media"><img src="../static/img/cat-ground.jpg" alt="" loading="lazy"></span>
+        <span class="cat-body">
+          <span class="cat-name">地上設備・通信</span>
+          <span class="cat-n">10</span>
+        </span>
+      </a>
+      <a class="cat-card " href="service/">
+        <span class="cat-media"><img src="../static/img/cat-service.jpg" alt="" loading="lazy"></span>
+        <span class="cat-body">
+          <span class="cat-name">衛星データ・サービス</span>
+          <span class="cat-n">9</span>
+        </span>
+      </a>
+      <a class="cat-card " href="exploration/">
+        <span class="cat-media"><img src="../static/img/cat-exploration.jpg" alt="" loading="lazy"></span>
+        <span class="cat-body">
+          <span class="cat-name">探査・軌道上サービス</span>
+          <span class="cat-n">7</span>
+        </span>
+      </a>
+      <a class="cat-card " href="launch/">
+        <span class="cat-media"><img src="../static/img/cat-launch.jpg" alt="" loading="lazy"></span>
+        <span class="cat-body">
+          <span class="cat-name">打ち上げ・ロケット</span>
+          <span class="cat-n">6</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="company-list">
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">ALE</h3>
+<span class="company-sub">ALE Co., Ltd.</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">衛星データ・サービス</span>        </div>
+<p class="company-summary">人工流れ星や大気データ取得など、衛星を用いた事業を展開する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://star-ale.com/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">ArkEdge Space</h3>
+<span class="company-sub">ArkEdge Space</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span>        </div>
+<p class="company-summary">超小型衛星の開発と衛星コンステレーション事業を手がける。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都中央区</dd>        </dl>
+        <a class="card-link" href="https://arkedgespace.com/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">ElevationSpace</h3>
+<span class="company-sub">ElevationSpace</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">探査・軌道上サービス</span>        </div>
+<p class="company-summary">宇宙環境利用と大気圏再突入・回収技術の開発を進める。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>宮城県仙台市</dd>        </dl>
+        <a class="card-link" href="https://elevation-space.com/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">GITAI</h3>
+<span class="company-sub">GITAI</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">探査・軌道上サービス</span>        </div>
+<p class="company-summary">宇宙用作業ロボットを開発し、軌道上・月面での作業自動化を目指す。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都</dd>        </dl>
+        <a class="card-link" href="https://gitai.tech/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">IHIエアロスペース</h3>
+<span class="company-sub">IHI Aerospace</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">打ち上げ・ロケット</span><span class="pill ghost">部品・素材・加工</span>        </div>
+<p class="company-summary">イプシロンロケットの開発・製造を担当。固体ロケットモータ、宇宙機推進系も手がける。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都江東区</dd>        </dl>
+        <a class="card-link" href="https://www.ihi.co.jp/ia/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">NEC</h3>
+<span class="company-sub">NEC Corporation</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">地上設備・通信</span><span class="pill">東証プライム 6701</span>        </div>
+<p class="company-summary">人工衛星のシステム設計・製造、地上システムを一貫して手がける。小惑星探査機はやぶさ2の開発にも参画。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://jpn.nec.com/solution/space/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">Pale Blue</h3>
+<span class="company-sub">Pale Blue</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span>        </div>
+<p class="company-summary">水を推進剤とする小型衛星用推進機を開発する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>千葉県柏市</dd>        </dl>
+        <a class="card-link" href="https://pale-blue.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">QPS研究所</h3>
+<span class="company-sub">iQPS</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">衛星データ・サービス</span><span class="pill">東証グロース 5595</span>        </div>
+<p class="company-summary">小型SAR衛星の開発・運用を行う。九州の製造業と連携した衛星開発体制を構築している。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>福岡県福岡市</dd>        </dl>
+        <a class="card-link" href="https://i-qps.net/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">Space Walker</h3>
+<span class="company-sub">SPACE WALKER</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">打ち上げ・ロケット</span>        </div>
+<p class="company-summary">有翼再使用型ロケットの開発を進める。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://space-walker.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">Synspective</h3>
+<span class="company-sub">Synspective</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">衛星データ・サービス</span><span class="pill">東証グロース 290A</span>        </div>
+<p class="company-summary">小型SAR衛星の開発・運用と、衛星データを用いたソリューション提供を行う。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都江東区</dd>        </dl>
+        <a class="card-link" href="https://synspective.com/jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">WARPSPACE</h3>
+<span class="company-sub">WARPSPACE</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">地上設備・通信</span><span class="pill ghost">衛星データ・サービス</span>        </div>
+<p class="company-summary">衛星間光通信ネットワークの構築を目指す。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>茨城県つくば市</dd>        </dl>
+        <a class="card-link" href="https://warpspace.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">ispace</h3>
+<span class="company-sub">ispace, inc.</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">探査・軌道上サービス</span><span class="pill">東証グロース 9348</span>        </div>
+<p class="company-summary">月面輸送サービスを手がける民間宇宙企業。月着陸船およびローバーを開発し、月面への物資輸送を目指す。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都中央区</dd>        </dl>
+        <a class="card-link" href="https://ispace-inc.com/jpn/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">アクセルスペース</h3>
+<span class="company-sub">Axelspace</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">衛星データ・サービス</span>        </div>
+<p class="company-summary">超小型衛星の開発・製造と、地球観測プラットフォームの運用を手がける。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都中央区</dd>        </dl>
+        <a class="card-link" href="https://www.axelspace.com/ja/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">アストロスケール</h3>
+<span class="company-sub">Astroscale</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">探査・軌道上サービス</span><span class="pill ghost">衛星データ・サービス</span><span class="pill">東証グロース 186A</span>        </div>
+<p class="company-summary">スペースデブリ除去および軌道上サービスを専門とする企業。デブリ捕獲・除去技術の実証を進める。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都墨田区</dd>        </dl>
+        <a class="card-link" href="https://astroscale.com/ja/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">アドバンテスト</h3>
+<span class="company-sub">Advantest</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">地上設備・通信</span><span class="pill">東証プライム 6857</span>        </div>
+<p class="company-summary">半導体試験装置を製造。宇宙用電子部品の試験・評価分野に関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都千代田区</dd>        </dl>
+        <a class="card-link" href="https://www.advantest.com/ja/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">イビデン</h3>
+<span class="company-sub">Ibiden</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 4062</span>        </div>
+<p class="company-summary">プリント配線板・セラミック製品を製造。宇宙用電子基板分野に関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>岐阜県大垣市</dd>        </dl>
+        <a class="card-link" href="https://www.ibiden.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">インターステラテクノロジズ</h3>
+<span class="company-sub">Interstellar Technologies</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">打ち上げ・ロケット</span>        </div>
+<p class="company-summary">観測ロケットMOMOおよび超小型衛星用ロケットZEROを開発。北海道大樹町に射場と生産拠点を持つ。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>北海道広尾郡大樹町</dd>        </dl>
+        <a class="card-link" href="https://www.istellartech.com/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">インフォステラ</h3>
+<span class="company-sub">Infostellar</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">地上設備・通信</span>        </div>
+<p class="company-summary">地上局シェアリングプラットフォームを運営する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都品川区</dd>        </dl>
+        <a class="card-link" href="https://www.infostellar.net/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">キヤノン電子</h3>
+<span class="company-sub">Canon Electronics</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 7739</span>        </div>
+<p class="company-summary">超小型衛星の開発・製造を手がける。民生部品を活用した低コスト衛星の実現に取り組む。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>埼玉県秩父市</dd>        </dl>
+        <a class="card-link" href="https://www.canon-elec.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">スカパーJSAT</h3>
+<span class="company-sub">SKY Perfect JSAT</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">地上設備・通信</span><span class="pill ghost">衛星データ・サービス</span><span class="pill">東証プライム 9412</span>        </div>
+<p class="company-summary">衛星通信・衛星放送事業を展開するアジア最大級の衛星オペレーター。宇宙事業と有料多チャンネル事業を運営。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://www.skyperfectjsat.space/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">スペースデータ</h3>
+<span class="company-sub">Space Data</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星データ・サービス</span>        </div>
+<p class="company-summary">衛星データとAIを用いたデジタルツイン構築を手がける。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都</dd>        </dl>
+        <a class="card-link" href="https://spacedata.ai/ja/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">スペースワン</h3>
+<span class="company-sub">Space One</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">打ち上げ・ロケット</span>        </div>
+<p class="company-summary">小型ロケット「カイロス」による小型衛星打ち上げサービスを手がける。和歌山県串本町に射場を持つ。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://www.space-one.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">ニコン</h3>
+<span class="company-sub">Nikon</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 7731</span>        </div>
+<p class="company-summary">光学技術を基盤に、宇宙用光学系・観測機器分野に関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://www.nikon.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">三井E&amp;S</h3>
+<span class="company-sub">Mitsui E&amp;S</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">地上設備・通信</span><span class="pill">東証プライム 7003</span>        </div>
+<p class="company-summary">射場設備・大型構造物の設計製造に関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都中央区</dd>        </dl>
+        <a class="card-link" href="https://www.mitsuiesmachinery.com/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">三菱マテリアル</h3>
+<span class="company-sub">Mitsubishi Materials</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 5711</span>        </div>
+<p class="company-summary">高機能材料・超硬工具を製造。航空宇宙部品の加工と素材供給に関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都千代田区</dd>        </dl>
+        <a class="card-link" href="https://www.mmc.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">三菱重工業</h3>
+<span class="company-sub">Mitsubishi Heavy Industries</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">打ち上げ・ロケット</span><span class="pill ghost">衛星製造・機器</span><span class="pill">東証プライム 7011</span>        </div>
+<p class="company-summary">H3ロケット・H-IIAロケットの製造と打ち上げ輸送サービスを担う。種子島宇宙センターでの打ち上げ運用も実施。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都千代田区</dd>        </dl>
+        <a class="card-link" href="https://www.mhi.com/jp/products/space/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">三菱電機</h3>
+<span class="company-sub">Mitsubishi Electric</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">地上設備・通信</span><span class="pill">東証プライム 6503</span>        </div>
+<p class="company-summary">通信・放送・観測衛星の製造、衛星測位システム、大型電波望遠鏡などを手がける。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都千代田区</dd>        </dl>
+        <a class="card-link" href="https://www.mitsubishielectric.co.jp/business/space/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">中島田鉄工所</h3>
+<span class="company-sub">Nakashimada Engineering</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span>        </div>
+<p class="company-summary">精密鍛造・成形機械の技術を持ち、九州の宇宙産業サプライチェーンに関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>福岡県八女郡</dd>        </dl>
+        <a class="card-link" href="https://www.nakashimada.com/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">京セラ</h3>
+<span class="company-sub">Kyocera</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 6971</span>        </div>
+<p class="company-summary">ファインセラミック部品・電子部品を製造。宇宙機搭載機器に用いられる。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>京都府京都市</dd>        </dl>
+        <a class="card-link" href="https://www.kyocera.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">住友精密工業</h3>
+<span class="company-sub">Sumitomo Precision Products</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span>        </div>
+<p class="company-summary">熱制御機器、油圧・空圧機器など航空宇宙向け精密機器を製造する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>兵庫県尼崎市</dd>        </dl>
+        <a class="card-link" href="https://www.spp.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">古河電気工業</h3>
+<span class="company-sub">Furukawa Electric</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 5801</span>        </div>
+<p class="company-summary">光ファイバ・電線・機能材料を製造。宇宙機の配線・熱制御材に関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都千代田区</dd>        </dl>
+        <a class="card-link" href="https://www.furukawa.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">多摩川精機</h3>
+<span class="company-sub">Tamagawa Seiki</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span>        </div>
+<p class="company-summary">角度センサ、ジャイロなど姿勢制御用センサを製造する。宇宙機の姿勢検出に用いられる。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>長野県飯田市</dd>        </dl>
+        <a class="card-link" href="https://www.tamagawa-seiki.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">大林組</h3>
+<span class="company-sub">Obayashi Corporation</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">地上設備・通信</span><span class="pill ghost">探査・軌道上サービス</span><span class="pill">東証プライム 1802</span>        </div>
+<p class="company-summary">宇宙エレベーター構想や月面建設など、宇宙分野の建設技術研究を進める。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://www.obayashi.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">天地人</h3>
+<span class="company-sub">Tenchijin</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星データ・サービス</span>        </div>
+<p class="company-summary">衛星データを用いた土地評価・農業分野のソリューションを提供する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都中央区</dd>        </dl>
+        <a class="card-link" href="https://tenchijin.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">島津製作所</h3>
+<span class="company-sub">Shimadzu Corporation</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 7701</span>        </div>
+<p class="company-summary">航空・宇宙向けの機器を手がける。計測・分析技術を基盤とした宇宙用機器を供給。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>京都府京都市</dd>        </dl>
+        <a class="card-link" href="https://www.shimadzu.co.jp/aero/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">川崎重工業</h3>
+<span class="company-sub">Kawasaki Heavy Industries</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">打ち上げ・ロケット</span><span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 7012</span>        </div>
+<p class="company-summary">ロケットフェアリング、衛星分離機構などの製造を担当。軌道上サービス関連技術の開発も進める。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://www.khi.co.jp/aerospace/space/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">新明和工業</h3>
+<span class="company-sub">ShinMaywa Industries</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 7224</span>        </div>
+<p class="company-summary">航空機構造部品を製造。宇宙機構造分野の技術基盤を持つ。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>兵庫県宝塚市</dd>        </dl>
+        <a class="card-link" href="https://www.shinmaywa.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">日本アビオニクス</h3>
+<span class="company-sub">Nippon Avionics</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill ghost">衛星製造・機器</span>        </div>
+<p class="company-summary">宇宙用電子機器、赤外線サーモグラフィなどを手がける。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>神奈川県横浜市</dd>        </dl>
+        <a class="card-link" href="https://www.avio.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">日機装</h3>
+<span class="company-sub">Nikkiso</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 6376</span>        </div>
+<p class="company-summary">航空宇宙向け複合材部品、精密ポンプなどを製造する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都渋谷区</dd>        </dl>
+        <a class="card-link" href="https://www.nikkiso.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">明星電気</h3>
+<span class="company-sub">Meisei Electric</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill ghost">衛星製造・機器</span>        </div>
+<p class="company-summary">宇宙観測機器・センサ類を手がける。気象観測機器で培った技術を宇宙分野に展開している。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>群馬県伊勢崎市</dd>        </dl>
+        <a class="card-link" href="https://www.meisei.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">村田製作所</h3>
+<span class="company-sub">Murata Manufacturing</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 6981</span>        </div>
+<p class="company-summary">電子部品を製造。高信頼性が要求される宇宙用電子機器分野に関与する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>京都府長岡京市</dd>        </dl>
+        <a class="card-link" href="https://www.murata.com/ja-jp" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">東レ</h3>
+<span class="company-sub">Toray Industries</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 3402</span>        </div>
+<p class="company-summary">炭素繊維複合材料を製造。ロケット構造材・圧力容器の主要素材となる。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都中央区</dd>        </dl>
+        <a class="card-link" href="https://www.toray.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">東芝</h3>
+<span class="company-sub">Toshiba</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">衛星製造・機器</span><span class="pill ghost">地上設備・通信</span><span class="pill">東証プライム 6502</span>        </div>
+<p class="company-summary">人工衛星搭載機器、地上局システム、宇宙用電源システムなどを供給する。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://www.global.toshiba/jp/products-solutions/space.html" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">浜松ホトニクス</h3>
+<span class="company-sub">Hamamatsu Photonics</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">部品・素材・加工</span><span class="pill">東証プライム 6965</span>        </div>
+<p class="company-summary">光検出器・光センサを製造。宇宙観測機器の検出素子に用いられる。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>静岡県浜松市</dd>        </dl>
+        <a class="card-link" href="https://www.hamamatsu.com/jp/ja.html" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">高砂熱学工業</h3>
+<span class="company-sub">Takasago Thermal Engineering</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">探査・軌道上サービス</span><span class="pill">東証プライム 1969</span>        </div>
+<p class="company-summary">月面での水電解装置など、宇宙環境向け熱・空調技術の開発を進める。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都新宿区</dd>        </dl>
+        <a class="card-link" href="https://www.tte-net.com/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+      <article class="company-card">
+        <div class="company-head">
+          <h3 class="company-name">鹿島建設</h3>
+<span class="company-sub">Kajima Corporation</span>        </div>
+        <div class="company-tags">
+<span class="pill ghost">地上設備・通信</span><span class="pill ghost">探査・軌道上サービス</span><span class="pill">東証プライム 1812</span>        </div>
+<p class="company-summary">月面建設・宇宙居住施設に関する研究開発をJAXA等と進める。</p>        <dl class="company-meta">
+<dt>本社</dt><dd>東京都港区</dd>        </dl>
+        <a class="card-link" href="https://www.kajima.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
+      </article>
+    </div>
+
+    <div class="db-note">
+      <p>本データベースは各社の公開情報をもとに編集部が整理したものです。事業内容は変更される場合があります。正確な情報は各社公式サイトをご確認ください。掲載・修正のご依頼はお問い合わせください。</p>
+      <p class="db-cta">掲載のご依頼・情報の修正は、お問い合わせよりご連絡ください。掲載は無料です。</p>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../companies/">企業DB</a>
+          <a href="../articles/">特集</a>
+          <a href="../news/">ニュース</a>
+          <a href="../launches/">打ち上げ</a>
+          <a href="../papers/">研究動向</a>
+          <a href="../topics/moon/">トピック</a>
+          <a href="../search/">検索</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-07-18 14:47 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../static/js/main.js?v=87149ef7" defer></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務 · UchUchU</title>
+  <meta name="description" content="宇宙機は打ち上げ前に地上で徹底的に試験される。どんな試験があり、部品メーカーは何を求められるのか。試験設備そのものが参入の入口にもなる。">
+  <link rel="canonical" href="https://uchuchu.tech/articles/space-testing-requirements/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/articles/space-testing-requirements/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/articles/space-testing-requirements/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務 · UchUchU">
+  <meta property="og:description" content="宇宙機は打ち上げ前に地上で徹底的に試験される。どんな試験があり、部品メーカーは何を求められるのか。試験設備そのものが参入の入口にもなる。">
+  <meta property="og:url" content="https://uchuchu.tech/articles/space-testing-requirements/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務 · UchUchU">
+  <meta name="twitter:description" content="宇宙機は打ち上げ前に地上で徹底的に試験される。どんな試験があり、部品メーカーは何を求められるのか。試験設備そのものが参入の入口にもなる。">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"特集","item":"https://uchuchu.tech/articles/"},{"@type":"ListItem","position":3,"name":"宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務","item":"https://uchuchu.tech/articles/space-testing-requirements/"}]},{"@type":"Article","headline":"宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務","description":"宇宙機は打ち上げ前に地上で徹底的に試験される。どんな試験があり、部品メーカーは何を求められるのか。試験設備そのものが参入の入口にもなる。","inLanguage":"ja-JP","mainEntityOfPage":{"@type":"WebPage","@id":"https://uchuchu.tech/articles/space-testing-requirements/"},"url":"https://uchuchu.tech/articles/space-testing-requirements/","publisher":{"@id":"https://uchuchu.tech/#organization"},"isAccessibleForFree":true,"author":{"@type":"Organization","name":"UchUchU 編集部"},"datePublished":"2026-07-19","dateModified":"2026-07-19","image":"cover-testing.jpg"}]}</script>
+  <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../static/css/style.css?v=87149ef7">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/articles/space-testing-requirements/" : "https://uchuchu.tech/en/articles/space-testing-requirements/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../" class="">ホーム</a>
+      <a href="../../companies/" class="">企業DB</a>
+      <a href="../../articles/" class="on">特集</a>
+      <a href="../../news/" class="">ニュース</a>
+      <a href="../../launches/" class="">打ち上げ</a>
+      <a href="../../papers/" class="">研究動向</a>
+      <a href="../../faq/" class="">よくある質問</a>
+      <a href="../../advertise/" class="">広告掲載</a>
+      <a href="../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/articles/space-testing-requirements/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/articles/space-testing-requirements/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<article class="article">
+  <header class="article-hero">
+<div class="article-hero-img" style="background-image:url('../../static/img/cover-testing.jpg')"></div>    <div class="wrap article-hero-inner">
+<span class="pill accent">参入ガイド</span>      <h1>宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務</h1>
+<p class="article-lead">宇宙機は打ち上げ前に地上で徹底的に試験される。どんな試験があり、部品メーカーは何を求められるのか。試験設備そのものが参入の入口にもなる。</p>      <div class="article-meta">
+<span>UchUchU 編集部</span><time>2026年7月19日</time>      </div>
+    </div>
+  </header>
+  <div class="wrap article-body prose">
+    <p>宇宙機は、一度打ち上げたら修理に行けない。だから打ち上げ前に、地上で徹底的に試験する。</p>
+<p>この「試験」は宇宙産業の中で大きな比重を占めており、部品を供給する側にとっては<strong>避けて通れない実務</strong>であると同時に、<strong>試験設備・治具そのものが参入の入口</strong>にもなる領域である。</p>
+<p>どんな試験があり、部品メーカーは何を求められるのかを整理する。</p>
+<h2 id="_1">なぜここまで試験するのか</h2>
+<p>理由は単純で、<strong>壊れても直しに行けない</strong>からだ。</p>
+<p>地上の製品なら、市場で不具合が出れば回収して修理できる。宇宙機ではそれができない。数百kmから数万km上空にあり、到達する手段がない。したがって「打ち上げる前に、起こりうることを地上で起こしてみる」しかない。</p>
+<p>もう一つの理由は、<strong>打ち上げが一度きりの機会</strong>だということだ。打ち上げ枠の確保にも費用にも時間がかかる。1個の部品の不良で機会全体を失うため、事前検証にコストをかける方が合理的になる。</p>
+<h2 id="_2">主な試験の種類</h2>
+<p>宇宙機・宇宙用部品が受ける試験は、大きく次のように分かれる。</p>
+<table>
+<thead>
+<tr>
+<th>試験</th>
+<th>何を模擬するか</th>
+<th>主に効く場面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>振動試験</td>
+<td>打ち上げ時の激しい振動</td>
+<td>構造・締結・実装</td>
+</tr>
+<tr>
+<td>衝撃試験</td>
+<td>段分離・展開時の衝撃</td>
+<td>機構・電子部品</td>
+</tr>
+<tr>
+<td>熱真空試験</td>
+<td>軌道上の真空と温度サイクル</td>
+<td>材料・熱設計・電子機器</td>
+</tr>
+<tr>
+<td>熱サイクル試験</td>
+<td>日照と日陰の温度差の繰り返し</td>
+<td>接合部・はんだ</td>
+</tr>
+<tr>
+<td>EMC試験</td>
+<td>電磁的な干渉</td>
+<td>電子機器全般</td>
+</tr>
+<tr>
+<td>アウトガス試験</td>
+<td>真空中での放出ガス</td>
+<td>樹脂・接着剤・塗料</td>
+</tr>
+</tbody>
+</table>
+<p>以下、部品メーカーに関わりの深いものを見ていく。</p>
+<h2 id="_3">振動試験 — 最も多くの部品が受ける</h2>
+<p>打ち上げ時、機体はロケットエンジンの燃焼と空力によって激しく振動する。<strong>この振動は地上の輸送とは比較にならない</strong>。</p>
+<p>試験は加振機（シェーカー）の上に対象を固定し、規定の周波数と加速度で揺らす形で行われる。目的は2つある。</p>
+<ul>
+<li><strong>設計の検証</strong> — 想定した振動に耐えるか</li>
+<li><strong>製造品質の確認</strong> — 締結の緩み、はんだ不良、内部の異物といった、外観検査では見つからない欠陥をあぶり出す</li>
+</ul>
+<p>部品メーカーにとって重要なのは、<strong>振動試験は「設計が正しいか」だけでなく「作り方が正しいか」も見ている</strong>という点だ。図面どおりでも、締め付けトルクの管理が甘ければここで落ちる。</p>
+<h2 id="_4">熱真空試験 — 宇宙特有の関門</h2>
+<p>真空チャンバーに入れ、内部を高真空にしたうえで温度を上下させる試験である。宇宙環境に最も近い条件を地上で作るもので、宇宙機の試験の中核をなす。</p>
+<p>ここで顕在化しやすい問題には次のようなものがある。</p>
+<ul>
+<li><strong>アウトガス</strong> — 材料から放出されたガスが、レンズやセンサに付着して性能を落とす</li>
+<li><strong>熱膨張差</strong> — 異なる材料の接合部が、温度変化の繰り返しで剥離・破断する</li>
+<li><strong>放熱の不足</strong> — 真空中では空気による放熱が効かない。地上で問題ない発熱が、宇宙では過熱になる</li>
+</ul>
+<p>3つ目は特に見落とされやすい。<strong>空冷を前提にした設計は宇宙では通用しない</strong>。熱は伝導と輻射でしか逃げないため、放熱経路の設計が地上製品とは根本的に違う。</p>
+<h2 id="_5">部品メーカーは何を求められるか</h2>
+<p>自社が部品を供給する立場では、実務上こうなる。</p>
+<p><strong>① 試験に出せる状態で納める</strong></p>
+<p>試験用の追加品、取り付け治具、測定用のインターフェースを求められることがある。量産品と同じ条件で作られた試験用サンプルであることの証明も必要になる。</p>
+<p><strong>② 試験結果への対応</strong></p>
+<p>試験で不具合が出たとき、原因の切り分けに協力が要る。ここで<strong>製造記録が効く</strong>。「そのロットの加工条件はこうだった」と即答できるかどうかで、対応の速さがまったく変わる。</p>
+<p><strong>③ 試験条件を前提にした設計</strong></p>
+<p>「振動でこれだけの加速度がかかる」「この温度範囲を何百サイクル」という条件が仕様として提示される。それを満たす設計・材料選定・工程が求められる。</p>
+<h2 id="_6">試験設備・治具は、それ自体が事業機会である</h2>
+<p>ここが本記事で最も伝えたい点になる。</p>
+<p>試験には、<strong>大量の地上設備と治具が必要になる</strong>。</p>
+<ul>
+<li>加振機に対象を固定する<strong>試験治具</strong>（案件ごとの特注品）</li>
+<li>真空チャンバーの<strong>内部構造物・保持具</strong></li>
+<li>温度計測用の<strong>センサ取り付け具</strong></li>
+<li>輸送用の<strong>専用容器・防振架台</strong></li>
+<li>クリーン環境で使う<strong>作業台・搬送台車</strong></li>
+</ul>
+<p>これらは宇宙空間に行くわけではないため、<strong>宇宙用部品ほど極端な要求はかからない</strong>。一方で、精度・剛性・清浄度についてはしっかりした要求がある。つまり、<strong>一般的な機械加工・板金・治具製作の技術がそのまま活きる領域</strong>である。</p>
+<p>宇宙機本体の部品はいきなり難易度が高い。<strong>試験設備・治具から入り、そこで取引実績と信頼を作ってから本体側に進む</strong>——これは現実的で、実際に多く採られている経路である。</p>
+<h2 id="_7">まとめ</h2>
+<ul>
+<li>宇宙機は修理に行けないため、<strong>地上での試験に大きな比重</strong>がかかる</li>
+<li>主要な試験は<strong>振動・衝撃・熱真空・熱サイクル・EMC・アウトガス</strong></li>
+<li>振動試験は設計だけでなく<strong>製造品質</strong>も見ている</li>
+<li>熱真空では<strong>放熱設計</strong>が地上製品と根本的に違う</li>
+<li>部品メーカーには、試験用サンプルと<strong>製造記録による原因究明への協力</strong>が求められる</li>
+<li><strong>試験治具・地上設備は要求が現実的で、参入の入口として有力</strong></li>
+</ul>
+<p>品質管理体制の要求については<a href="/articles/space-quality-requirements/">宇宙用部品の品質要求</a>、材料選定については<a href="/articles/space-materials-outgassing/">宇宙で使える材料、使えない材料</a>を参照されたい。自社の設備で対応できる範囲の相談は<a href="/contact/">お問い合わせ</a>から受け付けている。</p>
+<hr />
+<p><em>本記事は公開情報と一般的な実務慣行をもとに編集部が整理したものです。試験条件・要求水準はミッションおよび発注元により大きく異なります。</em></p>
+  </div>
+  <div class="wrap article-foot">
+    <a class="btn btn-ghost" href="../../articles/">← 特集一覧へ戻る</a>
+  </div>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../companies/">企業DB</a>
+          <a href="../../articles/">特集</a>
+          <a href="../../news/">ニュース</a>
+          <a href="../../launches/">打ち上げ</a>
+          <a href="../../papers/">研究動向</a>
+          <a href="../../topics/moon/">トピック</a>
+          <a href="../../search/">検索</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-07-18 14:47 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../static/js/main.js?v=87149ef7" defer></script>
+</body>
+</html>

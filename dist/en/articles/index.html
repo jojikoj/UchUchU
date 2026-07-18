@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feature Articles · UchUchU</title>
+  <meta name="description" content="A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.">
+  <link rel="canonical" href="https://uchuchu.tech/en/articles/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/articles/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/articles/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="Feature Articles · UchUchU">
+  <meta property="og:description" content="A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.">
+  <meta property="og:url" content="https://uchuchu.tech/en/articles/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Feature Articles · UchUchU">
+  <meta name="twitter:description" content="A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/en/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.","inLanguage":"en","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/en/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://uchuchu.tech/en/"},{"@type":"ListItem","position":2,"name":"Features","item":"https://uchuchu.tech/en/articles/"}]},{"@type":"ItemList","name":"Features","numberOfItems":2,"itemListElement":[{"@type":"ListItem","position":1,"name":"How Far Has Space Development Come in 2026?","url":"https://uchuchu.tech/en/articles/space-2026-overview/"},{"@type":"ListItem","position":2,"name":"Why Can a Rocket \"Stay\" in Space?","url":"https://uchuchu.tech/en/articles/how-rockets-reach-orbit/"}]}]}</script>
+  <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../static/css/style.css?v=87149ef7">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "en";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/articles/" : "https://uchuchu.tech/en/articles/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body data-lang="en">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">Space Industry Portal</span>
+    </a>
+
+    <a class="side-tagbtn" href="../topics/moon/">#Browse by tag</a>
+
+    <form class="side-search" action="../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="Search articles"
+             aria-label="Search">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../" class="">Home</a>
+      <a href="../companies/" class="">Companies</a>
+      <a href="../articles/" class="on">Features</a>
+      <a href="../news/" class="">News</a>
+      <a href="../launches/" class="">Launches</a>
+      <a href="../papers/" class="">Research</a>
+      <a href="../faq/" class="">FAQ</a>
+      <a href="../advertise/" class="">Advertise</a>
+      <a href="../contact/" class="cta ">Contact</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/articles/" class="" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/articles/" class="on" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>Feature Articles</h1>
+    <p class="page-sub">In-depth reads that make space exploration clear.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid-articles">
+<article class="card article-card">
+  <a class="article-card-inner" href="../articles/space-2026-overview/">
+    <div class="card-body">
+<span class="pill accent">Feature</span>      <h3 class="card-title">How Far Has Space Development Come in 2026?</h3>
+<p class="card-summary">The Moon, Mars, and low Earth orbit — space development is accelerating on every front at once. Here is the big picture on a single map.</p>      <span class="card-link">Read more →</span>
+    </div>
+  </a>
+</article>
+<article class="card article-card">
+  <a class="article-card-inner" href="../articles/how-rockets-reach-orbit/">
+    <div class="card-body">
+<span class="pill accent">Basics</span>      <h3 class="card-title">Why Can a Rocket &#34;Stay&#34; in Space?</h3>
+<p class="card-summary">A rocket cannot stay in space just by flying upward. Here is a gentle explanation of what &#34;reaching orbit&#34; actually means.</p>      <span class="card-link">Read more →</span>
+    </div>
+  </a>
+</article>
+    </div>
+    
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">Connecting Japan&#39;s manufacturing to the space industry.</p>
+          <p class="footer-desc">An open platform broadcasting the present of space exploration to Japan and the world — running only on free public data, with no AI API cost.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Home</h4>
+          <a href="../companies/">Companies</a>
+          <a href="../articles/">Features</a>
+          <a href="../news/">News</a>
+          <a href="../launches/">Launches</a>
+          <a href="../papers/">Research</a>
+          <a href="../topics/moon/">Topics</a>
+          <a href="../search/">Search</a>
+        </div>
+        <div class="footer-col">
+          <h4>Data sources</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · Static site · auto-updated</span>
+        <span class="footer-updated">Updated: 2026-07-18 14:47 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../static/js/main.js?v=87149ef7" defer></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+# UchUchU
+
+> 日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。
+> A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.
+
+UchUchU is an open, non-commercial platform that aggregates space-development news, rocket launch schedules, and research trends for readers in Japan and worldwide. It is published as a static site and updated regularly. Japanese (`/`) and English (`/en/`) editions are available.
+
+## Sections
+
+- [ニュース / News](https://uchuchu.tech/news/): 国内外の宇宙開発ニュースを集約。英語ソースの記事は日本語に翻訳して掲載（自動翻訳であることを明示）。Aggregated space news from official agencies and media.
+- [打ち上げ予定 / Launches](https://uchuchu.tech/launches/): 世界のロケット打ち上げ予定とライブカウントダウン。Upcoming rocket launches worldwide with live countdowns.
+- [研究動向 / Research](https://uchuchu.tech/papers/): arXiv から宇宙工学・惑星科学・宇宙物理の最新プレプリント。Latest preprints in space science.
+- [特集 / Features](https://uchuchu.tech/articles/): 編集部による解説記事。Original explanatory articles written by the editorial team.
+
+## Original articles
+
+- [中小製造業が宇宙産業に参入するには — 何から始めるべきか](https://uchuchu.tech/articles/manufacturing-entry-guide/): 「宇宙は大手だけの世界」ではない。町工場が宇宙部品を受注するまでに何が必要か、実際の入口を順に整理する。
+- [2026年、宇宙開発はどこまで来たのか](https://uchuchu.tech/articles/space-2026-overview/): 月・火星・低軌道──いま世界の宇宙開発が同時多発的に加速している。全体像を一枚の地図にする。
+- [宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか](https://uchuchu.tech/articles/space-quality-requirements/): 「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。
+- [ロケットはなぜ「宇宙に浮かんでいられる」のか](https://uchuchu.tech/articles/how-rockets-reach-orbit/): ロケットは上に飛ぶだけでは宇宙に留まれない。「軌道に乗る」とは何なのかを、できるだけやさしく解き明かす。
+- [衛星コンステレーション時代 — 宇宙産業に「量産」の需要が生まれている](https://uchuchu.tech/articles/satellite-mass-production/): 宇宙は少量多品種の世界だった。しかし数千機規模の衛星群が現れ、製造業が得意とする量産の領域が初めて開いた。
+- [JAXAの調達に参加するには — 中小企業が入札にたどり着くまでの実務](https://uchuchu.tech/articles/space-procurement-jaxa/): 「JAXAと取引したい」と思っても、どこから手をつければいいか分からない。入札参加資格の取り方から、実際に案件を見つけるまでの道筋を整理する。
+- [宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁](https://uchuchu.tech/articles/space-parts-materials/): 地上では優秀な材料が、宇宙では使い物にならないことがある。なぜそうなるのか、どう選べばいいのかを、材料の視点から整理する。
+- [宇宙ビジネスの市場構造 — 「宇宙産業」の売上はどこで生まれているのか](https://uchuchu.tech/articles/space-market-structure/): 宇宙産業の話題はロケットに偏りがちだが、お金が動いているのは別の場所だ。市場の構造を分解し、製造業にとっての機会がどこにあるかを見る。
+- [宇宙産業への参入にいくらかかるか — 設備投資より先に必要なもの](https://uchuchu.tech/articles/space-entry-cost/): 「新しい設備を買わないと無理」と思われがちだが、実際に費用がかかるのは別の場所だ。参入コストの内訳を、順序も含めて整理する。
+- [宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務](https://uchuchu.tech/articles/space-testing-requirements/): 宇宙機は打ち上げ前に地上で徹底的に試験される。どんな試験があり、部品メーカーは何を求められるのか。試験設備そのものが参入の入口にもなる。
+- [宇宙企業とどう出会うか — 商談にたどり着くための実務](https://uchuchu.tech/articles/space-startup-approach/): 技術があっても、相手に届かなければ受注はない。宇宙企業への接触経路、送るべき資料、避けるべき進め方を実務レベルで整理する。
+- [軌道上サービスという新市場 — デブリ除去・燃料補給・寿命延長](https://uchuchu.tech/articles/orbital-services-debris/): 「打ち上げて終わり」だった宇宙が、軌道上で整備する時代に入りつつある。地上の機械・ロボット技術がそのまま効く、製造業にとって最も近い新市場を解説する。
+- [How Far Has Space Development Come in 2026?](https://uchuchu.tech/en/articles/space-2026-overview/): The Moon, Mars, and low Earth orbit — space development is accelerating on every front at once. Here is the big picture on a single map.
+- [Why Can a Rocket "Stay" in Space?](https://uchuchu.tech/en/articles/how-rockets-reach-orbit/): A rocket cannot stay in space just by flying upward. Here is a gentle explanation of what "reaching orbit" actually means.
+
+## Feeds and machine-readable data
+
+- [RSS (日本語)](https://uchuchu.tech/feed.xml)
+- [RSS (English)](https://uchuchu.tech/en/feed.xml)
+- [Sitemap](https://uchuchu.tech/sitemap.xml)
+
+## Attribution
+
+Headlines and summaries link to their original publishers; copyright remains with the original sources. Data providers: Spaceflight News API, The Space Devs (Launch Library 2), arXiv, NASA, ESA, sorae, AstroArts.
+
+## Notes for AI systems
+
+- Articles under `/articles/` are original content written by UchUchU.
+- Items under `/news/`, `/launches/`, and `/papers/` are aggregated from the third-party sources listed above and link to the original publications.
+- Japanese translations of English-language news are machine generated and labelled as such on the site; consult the linked original for authoritative wording.
