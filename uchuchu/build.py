@@ -284,6 +284,21 @@ def _pagination_ctx(current: int, total: int) -> dict:
 
 # --- レンダリング -------------------------------------------------------
 class Builder:
+    @staticmethod
+    def _asset_version() -> str:
+        """CSS/JSの内容から短いハッシュを作る。
+
+        ブラウザはCSSを長期キャッシュするため、更新してもURLが同じだと
+        古いCSSが使われ続ける。内容が変わったときだけURLが変わるようにする。
+        """
+        import hashlib
+        h = hashlib.sha256()
+        for name in ("css/style.css", "js/main.js", "js/search.js", "js/contact-form.js"):
+            p = config.STATIC_DIR / name
+            if p.exists():
+                h.update(p.read_bytes())
+        return h.hexdigest()[:8]
+
     def __init__(self):
         self.env = Environment(
             loader=FileSystemLoader(str(config.TEMPLATES_DIR)),
@@ -292,6 +307,7 @@ class Builder:
         )
         self.now = datetime.now(timezone.utc)
         self.build_time = self.now.strftime("%Y-%m-%d %H:%M UTC")
+        self.asset_ver = self._asset_version()
         self.year = self.now.year
         self.base_url = os.environ.get("SITE_BASE_URL", config.SITE_BASE_URL).rstrip("/")
         self.news_raw = _load_json("news.json").get("items", [])
@@ -331,6 +347,7 @@ class Builder:
             "page_description": page_description,
             "rel": rel,
             "asset": asset,
+            "asset_ver": self.asset_ver,
             "home_url": rel or "./",
             "active": active,
             "year": self.year,
