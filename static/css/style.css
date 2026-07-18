@@ -782,3 +782,6 @@ h1, h2, h3, h4 {
 .guide-card > .guide-num, .guide-title, .guide-excerpt, .guide-card > .card-link { padding-inline: 22px; }
 .guide-title { padding-top: 16px; }
 .guide-card > .card-link { padding-bottom: 22px; }
+
+/* ボット対策のハニーポット。視覚的にもスクリーンリーダー上も隠す */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

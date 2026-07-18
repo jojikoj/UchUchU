@@ -57,7 +57,7 @@
     var subject = "[UchUchU] " + val("kind");
     var body = buildBody();
 
-    // --- 経路1: フォームサービスへ直接POST ---
+    // --- 経路1: 受信プログラムへ直接POST ---
     if (cfg.endpoint) {
       setStatus(cfg.strings.sending, "sending");
       var payload = {
@@ -69,18 +69,23 @@
         tel: val("tel"),
         site: val("site"),
         message: val("message"),
+        hp: val("hp"),          // ハニーポット（人間は空のまま）
+        _subject: subject,
+        _captcha: "false",
+        _template: "table"
       };
-      if (cfg.access_key) payload.access_key = cfg.access_key;
-      // FormSubmit 用のオプション（件名・キャプチャ無効・自動返信テンプレート）
-      payload._subject = subject;
-      payload._captcha = "false";
-      payload._template = "table";
 
-      fetch(cfg.endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(payload),
-      })
+      // Google Apps Script はCORSプリフライトに応答しないため、
+      // Content-Type を text/plain にして「単純リクエスト」として送る。
+      // これによりプリフライトが発生せず、追加設定なしで送信できる。
+      var isGas = cfg.endpoint.indexOf("script.google.com") !== -1;
+      var opts = isGas
+        ? { method: "POST", body: JSON.stringify(payload),
+            headers: { "Content-Type": "text/plain;charset=utf-8" } }
+        : { method: "POST", body: JSON.stringify(payload),
+            headers: { "Content-Type": "application/json", Accept: "application/json" } };
+
+      fetch(cfg.endpoint, opts)
         .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
         .then(function (j) {
           // FormSubmit は success を文字列で返すため両方を見る

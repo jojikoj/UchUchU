@@ -62,6 +62,12 @@
                   placeholder="{{ t('form.message_ph') }}"></textarea>
       </div>
 
+      {# ボット対策。人間には見えないので常に空。埋まっていたら破棄する #}
+      <div class="hp-field" aria-hidden="true">
+        <label for="f-hp">この欄は入力しないでください</label>
+        <input id="f-hp" name="hp" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
       <div class="form-foot">
         <button type="submit" class="btn btn-primary">{{ t('form.submit') }}</button>
         <p class="form-status" id="form-status"></p>
