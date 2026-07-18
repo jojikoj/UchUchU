@@ -101,7 +101,7 @@ order: 7
 - 部品メーカーには、試験用サンプルと**製造記録による原因究明への協力**が求められる
 - **試験治具・地上設備は要求が現実的で、参入の入口として有力**
 
-品質管理体制の要求については[宇宙用部品の品質要求](/articles/space-quality-requirements/)、材料選定については[宇宙で使える材料、使えない材料](/articles/space-materials-outgassing/)を参照されたい。自社の設備で対応できる範囲の相談は[お問い合わせ](/contact/)から受け付けている。
+品質管理体制の要求については[宇宙用部品の品質要求](/articles/space-quality-requirements/)、材料選定については[宇宙で使える材料、使えない材料](/articles/space-parts-materials/)を参照されたい。自社の設備で対応できる範囲の相談は[お問い合わせ](/contact/)から受け付けている。
 
 ---
 
