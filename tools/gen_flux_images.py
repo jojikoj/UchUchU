@@ -115,6 +115,21 @@ JOBS = [
      "blue sky, the trajectory arcing over rather than going straight up, "
      "thin exhaust trail, curvature of the horizon faintly visible, "
      + REALISM),
+    # --- 特集記事カバー（第4弾）---
+    ("cover-testing.jpg",
+     "A large thermal vacuum test chamber in an aerospace test facility, "
+     "heavy steel door open, cabling and instrumentation around it, "
+     "an engineer checking a control panel beside it, "
+     "industrial lighting, sense of scale, " + REALISM),
+    ("cover-approach.jpg",
+     "Two engineers from different companies talking over a metal part at a "
+     "trade show booth, technical drawings and samples on the table, "
+     "exhibition hall softly blurred in the background, natural candid moment, "
+     + REALISM),
+    ("cover-orbital.jpg",
+     "A robotic arm mechanism mounted on a test stand in a laboratory, "
+     "engineers adjusting its gripper, cables and sensors attached, "
+     "clean workshop lighting, precision engineering atmosphere, " + REALISM),
 ]
 
 
