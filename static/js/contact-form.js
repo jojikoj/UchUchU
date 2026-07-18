@@ -1,0 +1,113 @@
+/* 問い合わせフォーム。
+ *
+ * 静的サイトのためサーバー側でPOSTを受けられない。
+ * 2つの経路を用意し、設定に応じて切り替える:
+ *
+ *   1. FORM_ENDPOINT が設定されていれば、そこへ非同期POSTする
+ *      （Web3Forms / Formspree などのフォームサービスを想定）
+ *   2. 未設定なら、入力内容を整形してメーラーを開く
+ *      （確実に動くフォールバック。宛先・件名・本文が入力済みになる）
+ */
+(function () {
+  "use strict";
+  var cfg = window.UCHUCHU_FORM;
+  var form = document.getElementById("inquiry-form");
+  if (!cfg || !form) return;
+
+  var status = document.getElementById("form-status");
+
+  function val(name) {
+    var el = form.elements[name];
+    return el ? el.value.trim() : "";
+  }
+
+  function buildBody() {
+    var lines = [
+      cfg.labels.kind + "：" + val("kind"),
+      "",
+      cfg.labels.company + "：" + val("company"),
+      cfg.labels.name + "：" + val("name"),
+      cfg.labels.email + "：" + val("email"),
+      cfg.labels.tel + "：" + (val("tel") || "-"),
+      cfg.labels.site + "：" + (val("site") || "-"),
+      "",
+      cfg.labels.message + "：",
+      val("message"),
+      "",
+      "――――――――――",
+      cfg.labels.sent_from,
+    ];
+    return lines.join("\n");
+  }
+
+  function setStatus(msg, kind) {
+    status.textContent = msg;
+    status.className = "form-status" + (kind ? " is-" + kind : "");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // ブラウザ標準のバリデーションを使う
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    var subject = "[UchUchU] " + val("kind");
+    var body = buildBody();
+
+    // --- 経路1: フォームサービスへ直接POST ---
+    if (cfg.endpoint) {
+      setStatus(cfg.strings.sending, "sending");
+      var payload = {
+        subject: subject,
+        kind: val("kind"),
+        company: val("company"),
+        name: val("name"),
+        email: val("email"),
+        tel: val("tel"),
+        site: val("site"),
+        message: val("message"),
+      };
+      if (cfg.access_key) payload.access_key = cfg.access_key;
+
+      fetch(cfg.endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
+        .then(function (j) {
+          if (j.success !== false) {
+            form.reset();
+            setStatus(cfg.strings.sent, "ok");
+          } else {
+            setStatus(cfg.strings.failed, "error");
+          }
+        })
+        .catch(function () { setStatus(cfg.strings.failed, "error"); });
+      return;
+    }
+
+    // --- 経路2: メーラーを開く（フォールバック）---
+    var href =
+      "mailto:" + cfg.email +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+    window.location.href = href;
+    setStatus(cfg.strings.mail_opened, "ok");
+  });
+
+  // URLの ?kind= で用件を初期選択する（各所のCTAから遷移する用）
+  var m = location.search.match(/[?&]kind=([^&]*)/);
+  if (m) {
+    var want = decodeURIComponent(m[1].replace(/\+/g, " "));
+    var sel = form.elements["kind"];
+    if (sel) {
+      for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value === want) { sel.selectedIndex = i; break; }
+      }
+    }
+  }
+})();

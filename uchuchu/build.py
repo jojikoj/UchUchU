@@ -396,9 +396,16 @@ class Builder:
             for t in topics.TOPICS if tcounts.get(t["id"], 0) >= 3
         ]
         topic_nav.sort(key=lambda x: -x["count"])
+        # 独自資産（企業DB・参入ガイド）をトップに出す。
+        # 集約ニュースより先に置かないと、差別化要素が読者に伝わらない。
+        all_comp = companies.all_companies(lang)
         ctx.update(news=news, launches=launches, papers=papers, articles=articles,
                    featured=featured, latest=latest,
-                   next_launches=upcoming[:3], topic_nav=topic_nav)
+                   next_launches=upcoming[:3], topic_nav=topic_nav,
+                   company_cats=companies.categories(lang),
+                   featured_companies=all_comp[:14],
+                   guides=[a for a in articles
+                           if a.get("tag") in ("参入ガイド", "Entry Guide")][:3])
         ctx["jsonld"] = seo.build_jsonld(
             self.base_url, lang, "home",
             trail=[(home_label, self._url_for(lang, ""))])
@@ -575,6 +582,11 @@ class Builder:
                         page_description=_t("contact.subtitle", lang))
         ctx["contact_kinds"] = business.contact_kinds(lang)
         ctx["contact_email"] = config.CONTACT_EMAIL
+        ctx["google_form_url"] = config.GOOGLE_FORM_URL
+        ctx["google_form_height"] = config.GOOGLE_FORM_HEIGHT
+        ctx["form_kinds"] = [k["label"] for k in business.contact_kinds(lang)]
+        ctx["form_endpoint"] = ""
+        ctx["form_access_key"] = ""
         ctx["company_name"] = config.COMPANY_NAME
         ctx["company_url"] = config.COMPANY_URL
         ctx["jsonld"] = seo.build_jsonld(

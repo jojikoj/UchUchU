@@ -1,54 +1,99 @@
 {% extends "base.html" %}
-{% from "macros.html" import news_row, news_lead, launch_card, paper_card, article_card %}
+{% from "macros.html" import news_row, news_lead, paper_card, article_card %}
 {% block title %}{{ t('home.title') }}{% endblock %}
 {% block og_title %}{{ site_name }} — {{ site_tagline }}{% endblock %}
 
 {% block content %}
-{#
-  情報ポータル型のトップ。大きなキャッチコピーは置かない。
-  国内外の主要ニュースポータル5サイトを調査したところ、
-  ファーストビューにヒーローコピーを置くサイトは1つも無く、
-  いずれも2〜3ブロック目には実記事が出ていた。
-  代わりに最上部へ「次の打ち上げ」を置く。時間で必ず変化し、
-  読者が毎回確認しに来る情報だからで、日経がマーケット数値を
-  記事より先に置いているのと同じ役割を担わせる。
-#}
 
-{% if next_launches %}
-<section class="launchbar">
-  <div class="wrap">
-    <div class="launchbar-head">
-      <h2 class="launchbar-title">
-        <span class="live-dot" aria-hidden="true"></span>{{ t('home.next_launch') }}
-      </h2>
-      <a class="launchbar-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
+{#
+  立ち位置を1行で示す帯。巨大なヒーローは置かないが、
+  B2Bメディアとして「誰向けか」が伝わらないと読者も広告主も判断できない。
+  高さを抑えつつ、下に打ち上げデータを同居させて情報密度を保つ。
+#}
+<section class="topband">
+  <div class="wrap topband-inner">
+    <div class="topband-lead">
+      <p class="topband-eyebrow">{{ t('home.eyebrow') }}</p>
+      <h1 class="topband-title">{{ site_tagline }}</h1>
+      <p class="topband-desc">{{ t('home.positioning') }}</p>
+      <div class="topband-cta">
+        <a class="btn btn-primary" href="{{ rel }}companies/">{{ t('home.cta_db') }}</a>
+        <a class="btn btn-ghost" href="{{ rel }}articles/">{{ t('home.cta_guide') }}</a>
+      </div>
     </div>
-    <div class="launchbar-grid">
+    {% if next_launches %}
+    <aside class="topband-launch">
+      <div class="topband-launch-head">
+        <span class="live-dot" aria-hidden="true"></span>{{ t('home.next_launch') }}
+        <a class="topband-launch-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
+      </div>
       {% for l in next_launches %}
-      <article class="launchbar-item">
-        <div class="launchbar-cd">
+      <article class="mini-launch">
+        <div class="mini-launch-top">
           {% if l.countdown %}<span class="net-countdown" data-net="{{ l.net }}">{{ l.countdown }}</span>{% endif %}
           {% if l.status %}<span class="pill status-{{ l.status_class or 'tbd' }}">{{ l.status }}</span>{% endif %}
         </div>
-        <h3 class="launchbar-name">{{ l.name }}</h3>
-        <p class="launchbar-meta">
-          {% if l.net_display %}<time datetime="{{ l.net }}">{{ l.net_display }}</time>{% endif %}
-          {% if l.location %}<span class="dim">/ {{ l.location }}</span>{% endif %}
-        </p>
+        <h3 class="mini-launch-name">{{ l.name }}</h3>
+        <p class="mini-launch-meta">{{ l.net_display }}{% if l.location %} · {{ l.location }}{% endif %}</p>
       </article>
+      {% endfor %}
+    </aside>
+    {% endif %}
+  </div>
+</section>
+
+{# 独自資産その1: 企業DB。集約でない唯一のコンテンツなので目立たせる #}
+<section class="section section-db">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.db_title') }}</h2>
+      <a class="section-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
+    </div>
+    <p class="section-lead">{{ t('home.db_lead') }}</p>
+    <div class="db-cats">
+      {% for c in company_cats %}
+      <a class="db-cat" href="{{ rel }}companies/{{ c.id }}/">
+        <span class="db-cat-n">{{ c.count }}</span>
+        <span class="db-cat-name">{{ c.name }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% if featured_companies %}
+    <div class="db-preview">
+      {% for c in featured_companies %}
+      <a class="db-chip" href="{{ rel }}companies/">{{ c.display_name }}</a>
+      {% endfor %}
+      <a class="db-chip db-chip-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# 独自資産その2: 参入ガイド。AEOで引用される入口 #}
+{% if guides %}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.guide_title') }}</h2>
+      <a class="section-more" href="{{ rel }}articles/">{{ t('home.view_all') }} →</a>
+    </div>
+    <p class="section-lead">{{ t('home.guide_lead') }}</p>
+    <div class="guide-grid">
+      {% for a in guides %}
+      <a class="guide-card" href="{{ rel }}articles/{{ a.slug }}/">
+        <span class="guide-num">{{ '%02d'|format(loop.index) }}</span>
+        <h3 class="guide-title">{{ a.title }}</h3>
+        <p class="guide-excerpt">{{ a.excerpt }}</p>
+        <span class="card-link">{{ t('articles.read') }} →</span>
+      </a>
       {% endfor %}
     </div>
   </div>
 </section>
 {% endif %}
 
-{#
-  注目5本。本数を固定することで「これだけ読めば主要な動きは押さえた」
-  という完了感が生まれる（Yahoo!トピックスが8本固定である理由と同じ）。
-  強弱は画像サイズとリード文の有無だけで付け、バッジは増やさない。
-#}
 {% if featured %}
-<section class="section section-top">
+<section class="section section-alt">
   <div class="wrap">
     <div class="section-head">
       <h2>{{ t('home.featured') }}</h2>
@@ -65,11 +110,9 @@
 {% endif %}
 
 {% if topic_nav %}
-<section class="section section-alt">
+<section class="section">
   <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.by_topic') }}</h2>
-    </div>
+    <div class="section-head"><h2>{{ t('home.by_topic') }}</h2></div>
     <div class="topic-grid">
       {% for tp in topic_nav %}
       <a class="topic-card" href="{{ rel }}topics/{{ tp.id }}/">
@@ -83,30 +126,15 @@
 </section>
 {% endif %}
 
-{# 最新ニュースは一覧型。要約は出さない（スキャン速度を落とさないため） #}
 {% if latest %}
-<section class="section">
+<section class="section section-alt">
   <div class="wrap">
     <div class="section-head">
       <h2>{{ t('home.latest_news') }}</h2>
       <a class="section-more" href="{{ rel }}news/">{{ t('home.view_all') }} →</a>
     </div>
-    <div class="news-list">
+    <div class="news-cols">
       {% for n in latest %}{{ news_row(n, lang, t) }}{% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{% if articles %}
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ t('home.features') }}</h2>
-      <a class="section-more" href="{{ rel }}articles/">{{ t('home.view_all') }} →</a>
-    </div>
-    <div class="grid grid-articles">
-      {% for a in articles[:3] %}{{ article_card(a, lang, t, rel) }}{% endfor %}
     </div>
   </div>
 </section>
@@ -120,9 +148,25 @@
       <a class="section-more" href="{{ rel }}papers/">{{ t('home.view_all') }} →</a>
     </div>
     <div class="grid grid-papers">
-      {% for p in papers[:4] %}{{ paper_card(p, lang, t) }}{% endfor %}
+      {% for p in papers[:3] %}{{ paper_card(p, lang, t) }}{% endfor %}
     </div>
   </div>
 </section>
 {% endif %}
+
+{# 収益導線。目的は問い合わせ獲得なので、トップの末尾で必ず受ける #}
+<section class="section cta-band-wrap">
+  <div class="wrap">
+    <div class="cta-band">
+      <div class="cta-band-body">
+        <h2>{{ t('home.cta_title') }}</h2>
+        <p>{{ t('home.cta_body') }}</p>
+      </div>
+      <div class="cta-band-actions">
+        <a class="btn btn-primary" href="{{ rel }}contact/">{{ t('nav.contact') }}</a>
+        <a class="btn btn-ghost" href="{{ rel }}advertise/">{{ t('nav.advertise') }}</a>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}

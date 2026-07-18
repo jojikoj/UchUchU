@@ -647,3 +647,116 @@ h1, h2, h3, h4 {
 .ad-cta p { color: var(--text-2); margin: 0 0 20px; line-height: 1.8; }
 
 @media (max-width: 760px) { .nav-cta { margin: 10px 0 0; text-align: center; } }
+
+/* --- トップの立ち位置バー（左:主張 / 右:打ち上げデータ）--- */
+.topband {
+  background: linear-gradient(160deg, #f4f8ff 0%, var(--bg) 65%);
+  border-bottom: 1px solid var(--line);
+  padding: clamp(32px, 5vw, 56px) 0 clamp(28px, 4vw, 44px);
+}
+.topband-inner { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,.85fr); gap: 40px; align-items: start; }
+.topband-eyebrow {
+  font-family: var(--mono); font-size: .73rem; letter-spacing: .16em;
+  color: var(--accent-ink); margin: 0 0 12px; text-transform: uppercase;
+}
+.topband-title { font-size: clamp(1.7rem, 3.6vw, 2.6rem); letter-spacing: -.032em; margin: 0 0 14px; }
+.topband-desc { color: var(--text-2); font-size: 1rem; line-height: 1.85; margin: 0 0 22px; max-width: 46em; }
+.topband-cta { display: flex; gap: 11px; flex-wrap: wrap; }
+
+.topband-launch {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-lg); padding: 16px 18px; box-shadow: var(--sh-2);
+}
+.topband-launch-head {
+  display: flex; align-items: center; gap: 8px; font-size: .88rem;
+  font-weight: 700; margin-bottom: 12px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.topband-launch-more { margin-left: auto; font-size: .78rem; font-weight: 650; color: var(--accent); }
+.mini-launch { padding: 11px 0; border-bottom: 1px dashed var(--line); }
+.mini-launch:last-child { border-bottom: 0; padding-bottom: 0; }
+.mini-launch-top { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; }
+.mini-launch-top .net-countdown { font-size: .86rem; font-weight: 750; }
+.mini-launch-name {
+  font-size: .9rem; line-height: 1.42; margin: 0 0 3px;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.mini-launch-meta { margin: 0; font-size: .74rem; color: var(--text-3); font-family: var(--mono); }
+
+/* --- 企業DBセクション --- */
+.section-db { background: var(--surface-2); border-block: 1px solid var(--line); }
+.section-lead { color: var(--text-2); margin: -14px 0 22px; line-height: 1.8; max-width: 60em; }
+.db-cats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 11px; margin-bottom: 20px; }
+.db-cat {
+  display: flex; flex-direction: column; gap: 3px; padding: 16px 18px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-md); box-shadow: var(--sh-1); transition: .18s;
+}
+.db-cat:hover { border-color: rgba(47,95,224,.42); box-shadow: var(--sh-2); transform: translateY(-2px); }
+.db-cat-n { font-size: 1.6rem; font-weight: 750; letter-spacing: -.03em; color: var(--accent-ink); }
+.db-cat-name { font-size: .84rem; color: var(--text-2); font-weight: 600; }
+.db-preview { display: flex; gap: 7px; flex-wrap: wrap; }
+.db-chip {
+  font-size: .82rem; padding: 5px 12px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--line); color: var(--text-2);
+  transition: .16s;
+}
+.db-chip:hover { border-color: var(--accent); color: var(--accent-ink); }
+.db-chip-more { background: var(--accent-soft); border-color: rgba(47,95,224,.2); color: var(--accent-ink); font-weight: 650; }
+
+/* --- 参入ガイド --- */
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 16px; }
+.guide-card {
+  display: flex; flex-direction: column; gap: 9px; padding: 24px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-lg); box-shadow: var(--sh-1); transition: .2s;
+}
+.guide-card:hover { border-color: rgba(47,95,224,.42); box-shadow: var(--sh-3); transform: translateY(-3px); }
+.guide-num {
+  font-family: var(--mono); font-size: 1.5rem; font-weight: 750;
+  color: var(--accent); opacity: .32; line-height: 1;
+}
+.guide-title { font-size: 1.05rem; line-height: 1.5; margin: 0; letter-spacing: -.015em; }
+.guide-excerpt { margin: 0; font-size: .87rem; color: var(--text-2); line-height: 1.75; flex: 1; }
+
+/* 最新ニュースを2カラムにして密度を上げる */
+.news-cols { columns: 2; column-gap: 34px; }
+.news-cols .news-row { break-inside: avoid; }
+
+/* --- 末尾CTA帯 --- */
+.cta-band-wrap { padding-bottom: clamp(48px, 6vw, 76px); }
+.cta-band {
+  display: flex; align-items: center; justify-content: space-between; gap: 26px;
+  padding: 32px 36px; border-radius: var(--r-lg); flex-wrap: wrap;
+  background: linear-gradient(135deg, #eaf0ff, #f2edff);
+  border: 1px solid rgba(47,95,224,.18);
+}
+.cta-band h2 { font-size: 1.32rem; margin: 0 0 8px; letter-spacing: -.025em; }
+.cta-band p { margin: 0; color: var(--text-2); line-height: 1.8; max-width: 52em; }
+.cta-band-actions { display: flex; gap: 11px; flex-wrap: wrap; }
+
+/* --- フォーム --- */
+.inquiry-form { display: flex; flex-direction: column; gap: 18px; }
+.field { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.field-row { display: flex; gap: 16px; flex-wrap: wrap; }
+.field label { font-size: .87rem; font-weight: 650; color: var(--text); }
+.req { color: var(--rose); font-size: .8rem; }
+.field input, .field select, .field textarea {
+  padding: 11px 14px; font-size: .96rem; font-family: inherit; color: var(--text);
+  background: var(--surface); border: 1px solid var(--line-strong);
+  border-radius: var(--r-sm); transition: .16s; width: 100%;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(47,95,224,.13);
+}
+.field textarea { resize: vertical; line-height: 1.7; }
+.form-foot { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.form-status { margin: 0; font-size: .87rem; color: var(--text-3); }
+.form-status.is-ok { color: var(--teal); font-weight: 650; }
+.form-status.is-error { color: var(--rose); font-weight: 650; }
+.gform-wrap { border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; background: var(--surface); }
+
+@media (max-width: 900px) {
+  .topband-inner { grid-template-columns: 1fr; gap: 26px; }
+  .news-cols { columns: 1; }
+}

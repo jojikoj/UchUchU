@@ -11,6 +11,46 @@ STRINGS = {
     "hero.cta_news": {"ja": "最新ニュースを見る", "en": "Latest news"},
     "hero.cta_launches": {"ja": "打ち上げ予定", "en": "Upcoming launches"},
 
+    "home.eyebrow": {"ja": "宇宙産業 × 日本のものづくり", "en": "SPACE INDUSTRY × JAPANESE MANUFACTURING"},
+    "home.positioning": {
+        "ja": "宇宙産業に関わる企業データベース、参入の実務ガイド、国内外のニュースを集約。自社の技術が宇宙でどう活きるかを探す製造業のための媒体です。",
+        "en": "A company database, practical entry guides, and global news for manufacturers exploring how their technology fits the space industry."},
+    "home.cta_db": {"ja": "企業データベースを見る", "en": "Browse the database"},
+    "home.cta_guide": {"ja": "参入ガイドを読む", "en": "Read the entry guides"},
+    "home.db_title": {"ja": "宇宙産業 企業データベース", "en": "Space Industry Company Database"},
+    "home.db_lead": {
+        "ja": "日本の宇宙産業に関わる企業を事業領域別に整理しています。取引先探索・競合把握にお使いください。掲載は無料です。",
+        "en": "Japanese companies in the space industry, organised by business area. Listing is free."},
+    "home.db_more": {"ja": "すべての企業を見る", "en": "View all companies"},
+    "home.guide_title": {"ja": "宇宙産業 参入ガイド", "en": "Entry Guides"},
+    "home.guide_lead": {
+        "ja": "「うちの技術は宇宙で使えるのか」「何から始めればいいのか」に答える実務記事です。",
+        "en": "Practical answers to \"can our technology be used in space\" and \"where do we start\"."},
+    "home.cta_title": {"ja": "宇宙産業への参入・広告掲載のご相談", "en": "Talk to us"},
+    "home.cta_body": {
+        "ja": "自社技術が宇宙産業で活きるかのご相談、企業データベースへの掲載（無料）、広告掲載のご相談を承っています。",
+        "en": "We welcome inquiries about entering the space industry, free database listings, and advertising."},
+
+    "form.kind": {"ja": "ご用件", "en": "Inquiry type"},
+    "form.company": {"ja": "貴社名", "en": "Company"},
+    "form.name": {"ja": "ご担当者名", "en": "Your name"},
+    "form.email": {"ja": "メールアドレス", "en": "Email"},
+    "form.tel": {"ja": "電話番号（任意）", "en": "Phone (optional)"},
+    "form.site": {"ja": "貴社サイトURL（任意）", "en": "Website (optional)"},
+    "form.message": {"ja": "ご相談内容", "en": "Message"},
+    "form.message_ph": {
+        "ja": "例）金属加工を行っています。自社の技術が宇宙分野で活かせるか相談したい。",
+        "en": "e.g. We do metal machining and want to know if our technology fits the space sector."},
+    "form.submit": {"ja": "送信する", "en": "Send"},
+    "form.sending": {"ja": "送信中…", "en": "Sending…"},
+    "form.sent": {"ja": "送信しました。ありがとうございます。", "en": "Sent. Thank you."},
+    "form.failed": {"ja": "送信に失敗しました。お手数ですがメールでご連絡ください。", "en": "Failed to send. Please email us instead."},
+    "form.mail_opened": {"ja": "メールソフトを開きました。内容をご確認のうえ送信してください。", "en": "Your email client has opened. Please review and send."},
+    "form.sent_from": {"ja": "UchUchU 問い合わせフォームより送信", "en": "Sent from the UchUchU contact form"},
+    "form.privacy": {
+        "ja": "いただいた情報はお問い合わせへの対応のみに使用します。第三者へ提供することはありません。",
+        "en": "Your information is used only to respond to your inquiry and is never shared with third parties."},
+
     "home.title": {"ja": "宇宙開発ニュース・打ち上げ予定", "en": "Space News & Launch Schedule"},
     "home.next_launch": {"ja": "次の打ち上げ", "en": "Next Launches"},
     "home.featured": {"ja": "注目のニュース", "en": "Top Stories"},

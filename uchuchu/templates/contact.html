@@ -12,20 +12,63 @@
 
 <section class="section">
   <div class="wrap contact-wrap">
-    {#
-      用件を分けて提示する。「お問い合わせはこちら」だけだと
-      何を送ってよいか分からず送信されないため、
-      用件ごとに件名と本文を事前入力した mailto: を用意する。
-    #}
-    <div class="contact-grid">
-      {% for c in contact_kinds %}
-      <a class="contact-card" href="{{ c.href }}">
-        <span class="contact-kind">{{ c.label }}</span>
-        <span class="contact-desc">{{ c.desc }}</span>
-        <span class="card-link">{{ t('contact.send') }} →</span>
-      </a>
-      {% endfor %}
+    {% if google_form_url %}
+    {# Googleフォームが設定されていればそれを埋め込む。
+       送信・集計・通知をGoogle側に任せられ、静的サイトの制約を受けない。 #}
+    <div class="gform-wrap">
+      <iframe src="{{ google_form_url }}" width="100%" height="{{ google_form_height }}"
+              frameborder="0" marginheight="0" marginwidth="0"
+              title="{{ t('contact.title') }}" loading="lazy">読み込んでいます…</iframe>
     </div>
+    {% else %}
+    <form id="inquiry-form" class="inquiry-form" novalidate>
+      <div class="field">
+        <label for="f-kind">{{ t('form.kind') }} <span class="req">*</span></label>
+        <select id="f-kind" name="kind" required>
+          {% for k in form_kinds %}<option value="{{ k }}">{{ k }}</option>{% endfor %}
+        </select>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-company">{{ t('form.company') }} <span class="req">*</span></label>
+          <input id="f-company" name="company" type="text" required autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="f-name">{{ t('form.name') }} <span class="req">*</span></label>
+          <input id="f-name" name="name" type="text" required autocomplete="name">
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-email">{{ t('form.email') }} <span class="req">*</span></label>
+          <input id="f-email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-tel">{{ t('form.tel') }}</label>
+          <input id="f-tel" name="tel" type="tel" autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-site">{{ t('form.site') }}</label>
+        <input id="f-site" name="site" type="url" placeholder="https://">
+      </div>
+
+      <div class="field">
+        <label for="f-message">{{ t('form.message') }} <span class="req">*</span></label>
+        <textarea id="f-message" name="message" rows="7" required
+                  placeholder="{{ t('form.message_ph') }}"></textarea>
+      </div>
+
+      <div class="form-foot">
+        <button type="submit" class="btn btn-primary">{{ t('form.submit') }}</button>
+        <p class="form-status" id="form-status"></p>
+      </div>
+      <p class="contact-note">{{ t('form.privacy') }}</p>
+    </form>
+    {% endif %}
 
     <div class="contact-direct">
       <h2>{{ t('contact.direct') }}</h2>
@@ -35,12 +78,30 @@
 
     <div class="contact-operator">
       <h2>{{ t('contact.operator') }}</h2>
-      <p>
-        {{ company_name }}<br>
-        <a href="{{ company_url }}" target="_blank" rel="noopener">{{ company_url }}</a>
-      </p>
+      <p>{{ company_name }}<br>
+        <a href="{{ company_url }}" target="_blank" rel="noopener">{{ company_url }}</a></p>
       <p class="contact-note">{{ t('contact.operator_note') }}</p>
     </div>
   </div>
 </section>
+
+<script>
+  window.UCHUCHU_FORM = {
+    email: "{{ contact_email }}",
+    endpoint: {{ (form_endpoint or '')|tojson }},
+    access_key: {{ (form_access_key or '')|tojson }},
+    labels: {
+      kind: "{{ t('form.kind') }}", company: "{{ t('form.company') }}",
+      name: "{{ t('form.name') }}", email: "{{ t('form.email') }}",
+      tel: "{{ t('form.tel') }}", site: "{{ t('form.site') }}",
+      message: "{{ t('form.message') }}",
+      sent_from: "{{ t('form.sent_from') }}"
+    },
+    strings: {
+      sending: "{{ t('form.sending') }}", sent: "{{ t('form.sent') }}",
+      failed: "{{ t('form.failed') }}", mail_opened: "{{ t('form.mail_opened') }}"
+    }
+  };
+</script>
+<script src="{{ asset }}static/js/contact-form.js" defer></script>
 {% endblock %}

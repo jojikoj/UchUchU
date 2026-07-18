@@ -39,6 +39,13 @@ SITE_BASE_URL = "https://uchuchu.tech"
 # 静的サイトのためサーバー側フォーム処理を持てない。
 # mailto: で件名・本文を事前入力し、送信の手間を最小化する。
 CONTACT_EMAIL = "joe@gtoe.info"
+
+# Googleフォームの埋め込みURL。
+# 設定すると問い合わせページにフォームを埋め込む。
+# 空のあいだは、メーラーを開く自前フォームにフォールバックする。
+# 取得方法: Googleフォーム編集画面 → 送信 → < > タブ → src="..." の中身
+GOOGLE_FORM_URL = ""
+GOOGLE_FORM_HEIGHT = 1200
 COMPANY_NAME = "株式会社TOE"
 COMPANY_URL = "https://gtoe.info/"
 
