@@ -25,7 +25,7 @@ from datetime import datetime, timezone
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import companies, config, indexnow, seo, topics
+from . import business, companies, config, indexnow, seo, topics
 from .i18n import t as _t
 
 
@@ -569,6 +569,37 @@ class Builder:
             self._write(lang, path.rstrip("/"),
                         self.env.get_template("companies.html").render(**ctx))
             total_pages_built += 1
+
+        # 問い合わせ・広告ページ（収益導線。受け皿がなければ成果はゼロになる）
+        ctx = self._ctx(lang, depth=1, active="contact", path="contact/",
+                        page_description=_t("contact.subtitle", lang))
+        ctx["contact_kinds"] = business.contact_kinds(lang)
+        ctx["contact_email"] = config.CONTACT_EMAIL
+        ctx["company_name"] = config.COMPANY_NAME
+        ctx["company_url"] = config.COMPANY_URL
+        ctx["jsonld"] = seo.build_jsonld(
+            self.base_url, lang, "contact",
+            trail=[(home_label, self._url_for(lang, "")),
+                   (_t("contact.title", lang), self._url_for(lang, "contact/"))])
+        self._write(lang, "contact", self.env.get_template("contact.html").render(**ctx))
+
+        ctx = self._ctx(lang, depth=1, active="advertise", path="advertise/",
+                        page_description=_t("ad.subtitle", lang))
+        ctx["ad_audience"] = business.AD_AUDIENCE.get(lang, business.AD_AUDIENCE["ja"])
+        ctx["ad_menu"] = business.AD_MENU.get(lang, business.AD_MENU["ja"])
+        ctx["ad_mailto"] = business.ad_mailto()
+        ctx["ad_stats"] = [
+            {"n": companies.count(), "label": _t("nav.companies", lang)},
+            {"n": len(news), "label": _t("nav.news", lang)},
+            {"n": len(launches), "label": _t("nav.launches", lang)},
+            {"n": len(articles), "label": _t("nav.articles", lang)},
+        ]
+        ctx["jsonld"] = seo.build_jsonld(
+            self.base_url, lang, "advertise",
+            trail=[(home_label, self._url_for(lang, "")),
+                   (_t("ad.title", lang), self._url_for(lang, "advertise/"))])
+        self._write(lang, "advertise", self.env.get_template("advertise.html").render(**ctx))
+        total_pages_built += 2
 
         # RSSフィード
         feed = seo.build_feed(self.base_url, lang, articles, news, self.now)

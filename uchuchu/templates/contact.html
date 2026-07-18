@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ t('contact.title') }}{% endblock %}
+{% block og_title %}{{ t('contact.title') }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>{{ t('contact.title') }}</h1>
+    <p class="page-sub">{{ t('contact.subtitle') }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-wrap">
+    {#
+      用件を分けて提示する。「お問い合わせはこちら」だけだと
+      何を送ってよいか分からず送信されないため、
+      用件ごとに件名と本文を事前入力した mailto: を用意する。
+    #}
+    <div class="contact-grid">
+      {% for c in contact_kinds %}
+      <a class="contact-card" href="{{ c.href }}">
+        <span class="contact-kind">{{ c.label }}</span>
+        <span class="contact-desc">{{ c.desc }}</span>
+        <span class="card-link">{{ t('contact.send') }} →</span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="contact-direct">
+      <h2>{{ t('contact.direct') }}</h2>
+      <p class="contact-mail"><a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+      <p class="contact-note">{{ t('contact.note') }}</p>
+    </div>
+
+    <div class="contact-operator">
+      <h2>{{ t('contact.operator') }}</h2>
+      <p>
+        {{ company_name }}<br>
+        <a href="{{ company_url }}" target="_blank" rel="noopener">{{ company_url }}</a>
+      </p>
+      <p class="contact-note">{{ t('contact.operator_note') }}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

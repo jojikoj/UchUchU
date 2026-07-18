@@ -5,19 +5,40 @@
     "en": "This database is compiled by our editorial team from publicly available information. Business details may change. Please refer to each company's official website for accurate information."
   },
   "categories": {
-    "launch": {"ja": "打ち上げ・ロケット", "en": "Launch Vehicles"},
-    "satellite": {"ja": "衛星製造・機器", "en": "Satellite Manufacturing"},
-    "component": {"ja": "部品・素材・加工", "en": "Components & Materials"},
-    "ground": {"ja": "地上設備・通信", "en": "Ground Systems"},
-    "service": {"ja": "衛星データ・サービス", "en": "Data & Services"},
-    "exploration": {"ja": "探査・軌道上サービス", "en": "Exploration & In-orbit"}
+    "launch": {
+      "ja": "打ち上げ・ロケット",
+      "en": "Launch Vehicles"
+    },
+    "satellite": {
+      "ja": "衛星製造・機器",
+      "en": "Satellite Manufacturing"
+    },
+    "component": {
+      "ja": "部品・素材・加工",
+      "en": "Components & Materials"
+    },
+    "ground": {
+      "ja": "地上設備・通信",
+      "en": "Ground Systems"
+    },
+    "service": {
+      "ja": "衛星データ・サービス",
+      "en": "Data & Services"
+    },
+    "exploration": {
+      "ja": "探査・軌道上サービス",
+      "en": "Exploration & In-orbit"
+    }
   },
   "companies": [
     {
       "id": "mhi",
       "name": "三菱重工業",
       "name_en": "Mitsubishi Heavy Industries",
-      "categories": ["launch", "satellite"],
+      "categories": [
+        "launch",
+        "satellite"
+      ],
       "hq": "東京都千代田区",
       "url": "https://www.mhi.com/jp/products/space/",
       "listed": "東証プライム 7011",
@@ -28,7 +49,10 @@
       "id": "ihi-aerospace",
       "name": "IHIエアロスペース",
       "name_en": "IHI Aerospace",
-      "categories": ["launch", "component"],
+      "categories": [
+        "launch",
+        "component"
+      ],
       "hq": "東京都江東区",
       "url": "https://www.ihi.co.jp/ia/",
       "summary": "イプシロンロケットの開発・製造を担当。固体ロケットモータ、宇宙機推進系も手がける。",
@@ -38,7 +62,10 @@
       "id": "nec",
       "name": "NEC",
       "name_en": "NEC Corporation",
-      "categories": ["satellite", "ground"],
+      "categories": [
+        "satellite",
+        "ground"
+      ],
       "hq": "東京都港区",
       "url": "https://jpn.nec.com/solution/space/",
       "listed": "東証プライム 6701",
@@ -49,7 +76,10 @@
       "id": "mitsubishi-electric",
       "name": "三菱電機",
       "name_en": "Mitsubishi Electric",
-      "categories": ["satellite", "ground"],
+      "categories": [
+        "satellite",
+        "ground"
+      ],
       "hq": "東京都千代田区",
       "url": "https://www.mitsubishielectric.co.jp/business/space/",
       "listed": "東証プライム 6503",
@@ -60,7 +90,10 @@
       "id": "kawasaki",
       "name": "川崎重工業",
       "name_en": "Kawasaki Heavy Industries",
-      "categories": ["launch", "component"],
+      "categories": [
+        "launch",
+        "component"
+      ],
       "hq": "東京都港区",
       "url": "https://www.khi.co.jp/aerospace/space/",
       "listed": "東証プライム 7012",
@@ -71,7 +104,10 @@
       "id": "canon-electronics",
       "name": "キヤノン電子",
       "name_en": "Canon Electronics",
-      "categories": ["satellite", "component"],
+      "categories": [
+        "satellite",
+        "component"
+      ],
       "hq": "埼玉県秩父市",
       "url": "https://www.canon-elec.co.jp/",
       "listed": "東証プライム 7739",
@@ -82,7 +118,10 @@
       "id": "skyperfect-jsat",
       "name": "スカパーJSAT",
       "name_en": "SKY Perfect JSAT",
-      "categories": ["ground", "service"],
+      "categories": [
+        "ground",
+        "service"
+      ],
       "hq": "東京都港区",
       "url": "https://www.skyperfectjsat.space/",
       "listed": "東証プライム 9412",
@@ -93,7 +132,9 @@
       "id": "ispace",
       "name": "ispace",
       "name_en": "ispace, inc.",
-      "categories": ["exploration"],
+      "categories": [
+        "exploration"
+      ],
       "hq": "東京都中央区",
       "url": "https://ispace-inc.com/jpn/",
       "listed": "東証グロース 9348",
@@ -104,7 +145,10 @@
       "id": "astroscale",
       "name": "アストロスケール",
       "name_en": "Astroscale",
-      "categories": ["exploration", "service"],
+      "categories": [
+        "exploration",
+        "service"
+      ],
       "hq": "東京都墨田区",
       "url": "https://astroscale.com/ja/",
       "listed": "東証グロース 186A",
@@ -115,7 +159,9 @@
       "id": "interstellar",
       "name": "インターステラテクノロジズ",
       "name_en": "Interstellar Technologies",
-      "categories": ["launch"],
+      "categories": [
+        "launch"
+      ],
       "hq": "北海道広尾郡大樹町",
       "url": "https://www.istellartech.com/",
       "summary": "観測ロケットMOMOおよび超小型衛星用ロケットZEROを開発。北海道大樹町に射場と生産拠点を持つ。",
@@ -125,7 +171,10 @@
       "id": "synspective",
       "name": "Synspective",
       "name_en": "Synspective",
-      "categories": ["satellite", "service"],
+      "categories": [
+        "satellite",
+        "service"
+      ],
       "hq": "東京都江東区",
       "url": "https://synspective.com/jp/",
       "listed": "東証グロース 290A",
@@ -136,7 +185,10 @@
       "id": "axelspace",
       "name": "アクセルスペース",
       "name_en": "Axelspace",
-      "categories": ["satellite", "service"],
+      "categories": [
+        "satellite",
+        "service"
+      ],
       "hq": "東京都中央区",
       "url": "https://www.axelspace.com/ja/",
       "summary": "超小型衛星の開発・製造と、地球観測プラットフォームの運用を手がける。",
@@ -146,7 +198,10 @@
       "id": "qps",
       "name": "QPS研究所",
       "name_en": "iQPS",
-      "categories": ["satellite", "service"],
+      "categories": [
+        "satellite",
+        "service"
+      ],
       "hq": "福岡県福岡市",
       "url": "https://i-qps.net/",
       "listed": "東証グロース 5595",
@@ -157,7 +212,9 @@
       "id": "space-one",
       "name": "スペースワン",
       "name_en": "Space One",
-      "categories": ["launch"],
+      "categories": [
+        "launch"
+      ],
       "hq": "東京都港区",
       "url": "https://www.space-one.co.jp/",
       "summary": "小型ロケット「カイロス」による小型衛星打ち上げサービスを手がける。和歌山県串本町に射場を持つ。",
@@ -167,7 +224,9 @@
       "id": "shimadzu",
       "name": "島津製作所",
       "name_en": "Shimadzu Corporation",
-      "categories": ["component"],
+      "categories": [
+        "component"
+      ],
       "hq": "京都府京都市",
       "url": "https://www.shimadzu.co.jp/aero/",
       "listed": "東証プライム 7701",
@@ -178,11 +237,366 @@
       "id": "meisei",
       "name": "明星電気",
       "name_en": "Meisei Electric",
-      "categories": ["component", "satellite"],
+      "categories": [
+        "component",
+        "satellite"
+      ],
       "hq": "群馬県伊勢崎市",
       "url": "https://www.meisei.co.jp/",
       "summary": "宇宙観測機器・センサ類を手がける。気象観測機器で培った技術を宇宙分野に展開している。",
       "summary_en": "Produces space observation instruments and sensors, applying technology developed for meteorological equipment."
+    },
+    {
+      "id": "toshiba",
+      "name": "東芝",
+      "name_en": "Toshiba",
+      "categories": [
+        "satellite",
+        "ground"
+      ],
+      "hq": "東京都港区",
+      "url": "https://www.global.toshiba/jp/products-solutions/space.html",
+      "listed": "東証プライム 6502",
+      "summary": "人工衛星搭載機器、地上局システム、宇宙用電源システムなどを供給する。"
+    },
+    {
+      "id": "sumitomo-precision",
+      "name": "住友精密工業",
+      "name_en": "Sumitomo Precision Products",
+      "categories": [
+        "component"
+      ],
+      "hq": "兵庫県尼崎市",
+      "url": "https://www.spp.co.jp/",
+      "summary": "熱制御機器、油圧・空圧機器など航空宇宙向け精密機器を製造する。"
+    },
+    {
+      "id": "nippon-avionics",
+      "name": "日本アビオニクス",
+      "name_en": "Nippon Avionics",
+      "categories": [
+        "component",
+        "satellite"
+      ],
+      "hq": "神奈川県横浜市",
+      "url": "https://www.avio.co.jp/",
+      "summary": "宇宙用電子機器、赤外線サーモグラフィなどを手がける。"
+    },
+    {
+      "id": "tamagawa-seiki",
+      "name": "多摩川精機",
+      "name_en": "Tamagawa Seiki",
+      "categories": [
+        "component"
+      ],
+      "hq": "長野県飯田市",
+      "url": "https://www.tamagawa-seiki.co.jp/",
+      "summary": "角度センサ、ジャイロなど姿勢制御用センサを製造する。宇宙機の姿勢検出に用いられる。"
+    },
+    {
+      "id": "nikon",
+      "name": "ニコン",
+      "name_en": "Nikon",
+      "categories": [
+        "component"
+      ],
+      "hq": "東京都港区",
+      "url": "https://www.nikon.co.jp/",
+      "listed": "東証プライム 7731",
+      "summary": "光学技術を基盤に、宇宙用光学系・観測機器分野に関与する。"
+    },
+    {
+      "id": "hamamatsu",
+      "name": "浜松ホトニクス",
+      "name_en": "Hamamatsu Photonics",
+      "categories": [
+        "component"
+      ],
+      "hq": "静岡県浜松市",
+      "url": "https://www.hamamatsu.com/jp/ja.html",
+      "listed": "東証プライム 6965",
+      "summary": "光検出器・光センサを製造。宇宙観測機器の検出素子に用いられる。"
+    },
+    {
+      "id": "furukawa",
+      "name": "古河電気工業",
+      "name_en": "Furukawa Electric",
+      "categories": [
+        "component"
+      ],
+      "hq": "東京都千代田区",
+      "url": "https://www.furukawa.co.jp/",
+      "listed": "東証プライム 5801",
+      "summary": "光ファイバ・電線・機能材料を製造。宇宙機の配線・熱制御材に関与する。"
+    },
+    {
+      "id": "toray",
+      "name": "東レ",
+      "name_en": "Toray Industries",
+      "categories": [
+        "component"
+      ],
+      "hq": "東京都中央区",
+      "url": "https://www.toray.co.jp/",
+      "listed": "東証プライム 3402",
+      "summary": "炭素繊維複合材料を製造。ロケット構造材・圧力容器の主要素材となる。"
+    },
+    {
+      "id": "mitsubishi-materials",
+      "name": "三菱マテリアル",
+      "name_en": "Mitsubishi Materials",
+      "categories": [
+        "component"
+      ],
+      "hq": "東京都千代田区",
+      "url": "https://www.mmc.co.jp/",
+      "listed": "東証プライム 5711",
+      "summary": "高機能材料・超硬工具を製造。航空宇宙部品の加工と素材供給に関与する。"
+    },
+    {
+      "id": "shinmaywa",
+      "name": "新明和工業",
+      "name_en": "ShinMaywa Industries",
+      "categories": [
+        "component"
+      ],
+      "hq": "兵庫県宝塚市",
+      "url": "https://www.shinmaywa.co.jp/",
+      "listed": "東証プライム 7224",
+      "summary": "航空機構造部品を製造。宇宙機構造分野の技術基盤を持つ。"
+    },
+    {
+      "id": "nikkiso",
+      "name": "日機装",
+      "name_en": "Nikkiso",
+      "categories": [
+        "component"
+      ],
+      "hq": "東京都渋谷区",
+      "url": "https://www.nikkiso.co.jp/",
+      "listed": "東証プライム 6376",
+      "summary": "航空宇宙向け複合材部品、精密ポンプなどを製造する。"
+    },
+    {
+      "id": "mitsui-e-s",
+      "name": "三井E&S",
+      "name_en": "Mitsui E&S",
+      "categories": [
+        "ground"
+      ],
+      "hq": "東京都中央区",
+      "url": "https://www.mitsuiesmachinery.com/",
+      "listed": "東証プライム 7003",
+      "summary": "射場設備・大型構造物の設計製造に関与する。"
+    },
+    {
+      "id": "obayashi",
+      "name": "大林組",
+      "name_en": "Obayashi Corporation",
+      "categories": [
+        "ground",
+        "exploration"
+      ],
+      "hq": "東京都港区",
+      "url": "https://www.obayashi.co.jp/",
+      "listed": "東証プライム 1802",
+      "summary": "宇宙エレベーター構想や月面建設など、宇宙分野の建設技術研究を進める。"
+    },
+    {
+      "id": "kajima",
+      "name": "鹿島建設",
+      "name_en": "Kajima Corporation",
+      "categories": [
+        "ground",
+        "exploration"
+      ],
+      "hq": "東京都港区",
+      "url": "https://www.kajima.co.jp/",
+      "listed": "東証プライム 1812",
+      "summary": "月面建設・宇宙居住施設に関する研究開発をJAXA等と進める。"
+    },
+    {
+      "id": "takasago",
+      "name": "高砂熱学工業",
+      "name_en": "Takasago Thermal Engineering",
+      "categories": [
+        "exploration"
+      ],
+      "hq": "東京都新宿区",
+      "url": "https://www.tte-net.com/",
+      "listed": "東証プライム 1969",
+      "summary": "月面での水電解装置など、宇宙環境向け熱・空調技術の開発を進める。"
+    },
+    {
+      "id": "ale",
+      "name": "ALE",
+      "name_en": "ALE Co., Ltd.",
+      "categories": [
+        "satellite",
+        "service"
+      ],
+      "hq": "東京都港区",
+      "url": "https://star-ale.com/",
+      "summary": "人工流れ星や大気データ取得など、衛星を用いた事業を展開する。"
+    },
+    {
+      "id": "warpspace",
+      "name": "WARPSPACE",
+      "name_en": "WARPSPACE",
+      "categories": [
+        "ground",
+        "service"
+      ],
+      "hq": "茨城県つくば市",
+      "url": "https://warpspace.jp/",
+      "summary": "衛星間光通信ネットワークの構築を目指す。"
+    },
+    {
+      "id": "infostellar",
+      "name": "インフォステラ",
+      "name_en": "Infostellar",
+      "categories": [
+        "ground"
+      ],
+      "hq": "東京都品川区",
+      "url": "https://www.infostellar.net/",
+      "summary": "地上局シェアリングプラットフォームを運営する。"
+    },
+    {
+      "id": "pale-blue",
+      "name": "Pale Blue",
+      "name_en": "Pale Blue",
+      "categories": [
+        "component"
+      ],
+      "hq": "千葉県柏市",
+      "url": "https://pale-blue.co.jp/",
+      "summary": "水を推進剤とする小型衛星用推進機を開発する。"
+    },
+    {
+      "id": "elevationspace",
+      "name": "ElevationSpace",
+      "name_en": "ElevationSpace",
+      "categories": [
+        "exploration"
+      ],
+      "hq": "宮城県仙台市",
+      "url": "https://elevation-space.com/",
+      "summary": "宇宙環境利用と大気圏再突入・回収技術の開発を進める。"
+    },
+    {
+      "id": "gitai",
+      "name": "GITAI",
+      "name_en": "GITAI",
+      "categories": [
+        "exploration"
+      ],
+      "hq": "東京都",
+      "url": "https://gitai.tech/",
+      "summary": "宇宙用作業ロボットを開発し、軌道上・月面での作業自動化を目指す。"
+    },
+    {
+      "id": "space-data",
+      "name": "スペースデータ",
+      "name_en": "Space Data",
+      "categories": [
+        "service"
+      ],
+      "hq": "東京都",
+      "url": "https://spacedata.ai/ja/",
+      "summary": "衛星データとAIを用いたデジタルツイン構築を手がける。"
+    },
+    {
+      "id": "tenchijin",
+      "name": "天地人",
+      "name_en": "Tenchijin",
+      "categories": [
+        "service"
+      ],
+      "hq": "東京都中央区",
+      "url": "https://tenchijin.co.jp/",
+      "summary": "衛星データを用いた土地評価・農業分野のソリューションを提供する。"
+    },
+    {
+      "id": "arkedge",
+      "name": "ArkEdge Space",
+      "name_en": "ArkEdge Space",
+      "categories": [
+        "satellite"
+      ],
+      "hq": "東京都中央区",
+      "url": "https://arkedgespace.com/",
+      "summary": "超小型衛星の開発と衛星コンステレーション事業を手がける。"
+    },
+    {
+      "id": "space-walker",
+      "name": "Space Walker",
+      "name_en": "SPACE WALKER",
+      "categories": [
+        "launch"
+      ],
+      "hq": "東京都港区",
+      "url": "https://space-walker.co.jp/",
+      "summary": "有翼再使用型ロケットの開発を進める。"
+    },
+    {
+      "id": "nakashimada",
+      "name": "中島田鉄工所",
+      "name_en": "Nakashimada Engineering",
+      "categories": [
+        "component"
+      ],
+      "hq": "福岡県八女郡",
+      "url": "https://www.nakashimada.com/",
+      "summary": "精密鍛造・成形機械の技術を持ち、九州の宇宙産業サプライチェーンに関与する。"
+    },
+    {
+      "id": "kyocera",
+      "name": "京セラ",
+      "name_en": "Kyocera",
+      "categories": [
+        "component"
+      ],
+      "hq": "京都府京都市",
+      "url": "https://www.kyocera.co.jp/",
+      "listed": "東証プライム 6971",
+      "summary": "ファインセラミック部品・電子部品を製造。宇宙機搭載機器に用いられる。"
+    },
+    {
+      "id": "murata",
+      "name": "村田製作所",
+      "name_en": "Murata Manufacturing",
+      "categories": [
+        "component"
+      ],
+      "hq": "京都府長岡京市",
+      "url": "https://www.murata.com/ja-jp",
+      "listed": "東証プライム 6981",
+      "summary": "電子部品を製造。高信頼性が要求される宇宙用電子機器分野に関与する。"
+    },
+    {
+      "id": "ibiden",
+      "name": "イビデン",
+      "name_en": "Ibiden",
+      "categories": [
+        "component"
+      ],
+      "hq": "岐阜県大垣市",
+      "url": "https://www.ibiden.co.jp/",
+      "listed": "東証プライム 4062",
+      "summary": "プリント配線板・セラミック製品を製造。宇宙用電子基板分野に関与する。"
+    },
+    {
+      "id": "advantest",
+      "name": "アドバンテスト",
+      "name_en": "Advantest",
+      "categories": [
+        "ground"
+      ],
+      "hq": "東京都千代田区",
+      "url": "https://www.advantest.com/ja/",
+      "listed": "東証プライム 6857",
+      "summary": "半導体試験装置を製造。宇宙用電子部品の試験・評価分野に関与する。"
     }
   ]
 }

@@ -587,3 +587,63 @@ h1, h2, h3, h4 {
 .db-note p { margin: 0 0 8px; }
 .db-note p:last-child { margin: 0; }
 .db-cta { font-weight: 650; color: var(--text); }
+
+/* --- 問い合わせ・広告（収益導線）--- */
+.nav-cta {
+  padding: 8px 16px !important; border-radius: 9px;
+  background: var(--accent); color: #fff !important; font-weight: 650;
+  margin-left: 8px; box-shadow: var(--sh-1); transition: .18s;
+}
+.nav-cta:hover { background: var(--accent-ink) !important; }
+
+.contact-wrap, .ad-wrap { max-width: 800px; }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 14px; }
+.contact-card {
+  display: flex; flex-direction: column; gap: 8px; padding: 20px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-md); box-shadow: var(--sh-1); transition: .18s;
+}
+.contact-card:hover {
+  border-color: rgba(47,95,224,.4); box-shadow: var(--sh-2); transform: translateY(-2px);
+}
+.contact-kind { font-size: 1.03rem; font-weight: 700; letter-spacing: -.015em; }
+.contact-desc { font-size: .86rem; color: var(--text-2); line-height: 1.7; flex: 1; }
+
+.contact-direct, .contact-operator { margin-top: 38px; }
+.contact-direct h2, .contact-operator h2, .ad-block h2 {
+  font-size: 1.15rem; margin: 0 0 12px; letter-spacing: -.02em;
+}
+.contact-mail { font-size: 1.12rem; font-weight: 650; margin: 0 0 6px; }
+.contact-mail a { color: var(--accent); }
+.contact-note { font-size: .84rem; color: var(--text-3); line-height: 1.7; margin: 0; }
+
+.ad-block { margin-bottom: 42px; }
+.ad-lead { color: var(--text-2); margin: 0 0 14px; line-height: 1.8; }
+.ad-list { margin: 0; padding-left: 1.2em; color: var(--text-2); }
+.ad-list li { margin: .5em 0; line-height: 1.7; }
+.ad-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.ad-stat {
+  flex: 1 1 120px; padding: 16px 18px; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--r-md); box-shadow: var(--sh-1);
+  display: flex; flex-direction: column;
+}
+.ad-stat strong { font-size: 1.7rem; font-weight: 750; letter-spacing: -.02em; }
+.ad-stat span { font-size: .8rem; color: var(--text-3); }
+
+.ad-menu { display: flex; flex-direction: column; gap: 14px; margin-bottom: 12px; }
+.ad-plan {
+  padding: 20px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-md); box-shadow: var(--sh-1);
+}
+.ad-plan h3 { font-size: 1.06rem; margin: 0 0 4px; }
+.ad-plan-price { font-family: var(--mono); font-size: .95rem; color: var(--accent-ink); font-weight: 700; margin: 0 0 9px; }
+.ad-plan-desc { margin: 0; font-size: .89rem; color: var(--text-2); line-height: 1.78; }
+
+.ad-cta {
+  padding: 30px; background: var(--accent-soft);
+  border: 1px solid rgba(47,95,224,.2); border-radius: var(--r-lg); text-align: center;
+}
+.ad-cta h2 { font-size: 1.3rem; margin: 0 0 10px; }
+.ad-cta p { color: var(--text-2); margin: 0 0 20px; line-height: 1.8; }
+
+@media (max-width: 760px) { .nav-cta { margin: 10px 0 0; text-align: center; } }

@@ -15,6 +15,45 @@ STRINGS = {
     "home.next_launch": {"ja": "次の打ち上げ", "en": "Next Launches"},
     "home.featured": {"ja": "注目のニュース", "en": "Top Stories"},
     "home.by_topic": {"ja": "トピックから探す", "en": "Browse by Topic"},
+    "nav.contact": {"ja": "お問い合わせ", "en": "Contact"},
+    "nav.advertise": {"ja": "広告掲載", "en": "Advertise"},
+
+    "contact.title": {"ja": "お問い合わせ", "en": "Contact"},
+    "contact.subtitle": {
+        "ja": "ご用件をお選びください。件名と項目を入力済みのメールが開きます。",
+        "en": "Choose your inquiry type. An email with a prefilled subject will open."},
+    "contact.send": {"ja": "メールを作成", "en": "Compose email"},
+    "contact.direct": {"ja": "直接ご連絡", "en": "Direct contact"},
+    "contact.note": {
+        "ja": "通常2営業日以内にご返信します。",
+        "en": "We usually reply within two business days."},
+    "contact.operator": {"ja": "運営", "en": "Operator"},
+    "contact.operator_note": {
+        "ja": "UchUchUは株式会社TOEが運営する宇宙産業のサプライチェーン・メディアです。",
+        "en": "UchUchU is a space industry supply chain media operated by TOE Inc."},
+
+    "ad.title": {"ja": "広告掲載のご案内", "en": "Advertise with UchUchU"},
+    "ad.subtitle": {
+        "ja": "宇宙産業への参入を検討する製造業に、直接届く媒体です。",
+        "en": "Reach manufacturers evaluating entry into the space supply chain."},
+    "ad.audience": {"ja": "どなたに届くか", "en": "Who you reach"},
+    "ad.audience_lead": {
+        "ja": "UchUchUは一般の宇宙ファン向けメディアではありません。宇宙産業で事業機会を探す実務者に向けて編集しています。",
+        "en": "UchUchU is not a general space-enthusiast media. It is edited for professionals seeking business opportunities in the space industry."},
+    "ad.content": {"ja": "掲載コンテンツ", "en": "Content"},
+    "ad.stats_note": {
+        "ja": "2026年7月開設。掲載社数・記事数は随時拡充しています。アクセス実績はご要望に応じて開示します。",
+        "en": "Launched July 2026. Traffic figures available on request."},
+    "ad.menu": {"ja": "広告メニュー", "en": "Advertising options"},
+    "ad.menu_note": {
+        "ja": "掲載内容は編集部と協議のうえ決定します。事実と異なる内容・誇大な表現は掲載できません。",
+        "en": "Content is agreed with our editorial team. We cannot publish inaccurate or exaggerated claims."},
+    "ad.cta_title": {"ja": "まずはご相談ください", "en": "Get in touch"},
+    "ad.cta_body": {
+        "ja": "予算・目的をお聞かせいただければ、適した掲載方法をご提案します。媒体資料が必要な場合もお申し付けください。",
+        "en": "Tell us your budget and goals and we will propose a suitable format."},
+    "ad.cta_button": {"ja": "広告について問い合わせる", "en": "Contact us about advertising"},
+
     "nav.companies": {"ja": "企業DB", "en": "Companies"},
     "companies.title": {"ja": "宇宙産業 企業データベース", "en": "Space Industry Company Database"},
     "companies.subtitle": {
