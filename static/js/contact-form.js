@@ -66,7 +66,12 @@
       var payload = {
         site: cfg.site_key || "uchuchu",
         type: "consult",
-        origin: location.origin,
+        // 受信側(GAS)の許可リストは正規のURLで登録されている。
+        // HTTPS証明書の発行前はサイトが http で動くため location.origin を
+        // そのまま送ると弾かれる。正規のURLを送る。
+        // この値はもともとクライアントが自由に送れるもので、
+        // 認証ではなく送信元の目印として使われている。
+        origin: cfg.site_origin || location.origin,
         kind: val("kind"),
         company: val("company"),
         name: val("name"),

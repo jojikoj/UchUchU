@@ -18,6 +18,7 @@ RSSが配信する要約は50〜150字程度で、しかも途中で切れてい
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 import urllib.parse as up
@@ -38,6 +39,11 @@ FETCH_TIMEOUT = 20
 POLITE_INTERVAL = 1.5      # 同一ホストへの連続アクセス間隔（秒）
 MIN_BODY = 400             # これ未満なら要約に足る本文が取れていないと判断
 TARGET_CHARS = 600         # 生成する要約の最低文字数
+
+# 要約生成に使うモデル。数百件を回す定型処理なので軽量モデルを指定する。
+# 指定しないとCLIの既定モデル（＝対話と同じ上位モデル）が使われ、
+# 利用枠を食い潰して途中から全件失敗する。実際に414件が失敗した。
+BATCH_MODEL = os.environ.get("UCHUCHU_BATCH_MODEL", "haiku")
 
 _robots_cache: dict[str, rp.RobotFileParser | None] = {}
 _last_access: dict[str, float] = {}
@@ -127,7 +133,7 @@ def summarize(title: str, body: str) -> str:
     import subprocess
     try:
         proc = subprocess.run(
-            [translate.CLAUDE_BIN, "-p", prompt],
+            [translate.CLAUDE_BIN, "--model", BATCH_MODEL, "-p", prompt],
             capture_output=True, text=True, timeout=300)
     except Exception as e:
         print(f"    [summary] 呼び出し失敗: {type(e).__name__}", file=sys.stderr)
@@ -161,6 +167,9 @@ def enrich(items: list[dict], limit: int | None = None,
 
     print(f"  [fulltext] 本文取得＋要約生成: {len(targets)}件")
     done = skipped = 0
+    # 要約生成が連続で失敗する場合、claude CLI 側が使えなくなっている
+    # 可能性が高い。空振りを続けても意味がないので打ち切る。
+    consecutive_fail = 0
     for i, it in enumerate(targets, 1):
         body = fetch_body(it["url"])
         if not body or len(body) < MIN_BODY:
@@ -172,9 +181,19 @@ def enrich(items: list[dict], limit: int | None = None,
                 it["body_ja"] = summary
                 it["body_chars"] = len(summary)
                 done += 1
+                consecutive_fail = 0
             else:
-                it["body_skip"] = "no_summary"
+                # 一時的な失敗と恒久的な失敗を区別できないため、
+                # フラグは付けずに次回の再試行対象として残す
                 skipped += 1
+                consecutive_fail += 1
+                if consecutive_fail >= 8:
+                    print("    要約生成が8件連続で失敗。"
+                          "利用上限に達した可能性が高いため中断する。",
+                          file=sys.stderr)
+                    if save_cb:
+                        save_cb()
+                    return done
         # 途中経過を保存する（4時間かかる処理を最後まで抱え込まない）
         if save_cb and (i % save_every == 0 or i == len(targets)):
             save_cb()

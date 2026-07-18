@@ -48,6 +48,10 @@ CLAUDE_BIN = os.environ.get("UCHUCHU_CLAUDE_BIN") or shutil.which("claude")
 CLAUDE_BATCH = 12          # 1回のプロンプトに載せる記事数
 CLAUDE_TIMEOUT = 240       # 秒
 
+# 翻訳に使うモデル。数百件の定型処理なので軽量モデルで足りる。
+# 上位モデルを使うと利用枠を圧迫し、対話側が止まる。
+BATCH_MODEL = os.environ.get("UCHUCHU_BATCH_MODEL", "haiku")
+
 _PROMPT = """あなたは宇宙開発分野の専門翻訳者です。
 以下のJSONは英語の宇宙関連ニュースです。各記事の title と summary を、
 日本語のニュース記事として自然な文体に翻訳してください。
@@ -90,7 +94,7 @@ def _claude_call(payload: dict) -> dict | None:
     prompt = _PROMPT + json.dumps(payload, ensure_ascii=False, indent=1)
     try:
         proc = subprocess.run(
-            [CLAUDE_BIN, "-p", prompt],
+            [CLAUDE_BIN, "--model", BATCH_MODEL, "-p", prompt],
             capture_output=True, text=True, timeout=CLAUDE_TIMEOUT,
         )
     except (subprocess.TimeoutExpired, OSError) as e:
