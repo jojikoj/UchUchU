@@ -25,7 +25,17 @@
   </div>
   {% endif %}
 
-  {% if item.display_summary %}
+  {#
+    本文要約があればそれを出す。RSSの短い抜粋しかない記事は
+    従来どおり抜粋を出す（無い方がマシということはないため）。
+  #}
+  {% if item.body_ja %}
+  <div class="ndetail-body">
+    {% for para in item.body_ja.split('\n\n') %}
+    {% if para.strip() %}<p>{{ para.strip() }}</p>{% endif %}
+    {% endfor %}
+  </div>
+  {% elif item.display_summary %}
   <div class="ndetail-body">
     <p class="ndetail-summary">{{ item.display_summary }}</p>
   </div>

@@ -1075,3 +1075,9 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
   padding: 3px 9px; border-radius: 5px; color: #fff;
   background: rgba(13,21,38,.6); backdrop-filter: blur(4px);
 }
+
+/* 本文要約（複数段落） */
+.ndetail-body p {
+  font-size: 1.04rem; line-height: 1.95; color: #26314a; margin: 0 0 1.4em;
+}
+.ndetail-body p:last-child { margin-bottom: 0; }
