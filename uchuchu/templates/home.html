@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% from "macros.html" import news_card, launch_card, paper_card, article_card %}
+{% block title %}{{ site_tagline }}{% endblock %}
+{% block og_title %}{{ site_name }} — {{ site_tagline }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="hero-eyebrow">{{ 'SPACE DEVELOPMENT · JAPAN & THE WORLD' }}</p>
+    <h1 class="hero-title">{{ site_tagline }}</h1>
+    <p class="hero-lead">{{ site_description }}</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="{{ rel }}news/">{{ t('hero.cta_news') }}</a>
+      <a class="btn btn-ghost" href="{{ rel }}launches/">{{ t('hero.cta_launches') }}</a>
+    </div>
+    <ul class="hero-stats">
+      <li><strong>{{ news|length }}</strong><span>{{ t('nav.news') }}</span></li>
+      <li><strong>{{ launches|length }}</strong><span>{{ t('nav.launches') }}</span></li>
+      <li><strong>{{ papers|length }}</strong><span>{{ t('nav.papers') }}</span></li>
+    </ul>
+  </div>
+</section>
+
+{% if launches %}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.upcoming_launches') }}</h2>
+      <a class="section-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
+    </div>
+    <div class="grid grid-launches">
+      {% for l in launches[:3] %}{{ launch_card(l, lang, t) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if news %}
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.latest_news') }}</h2>
+      <a class="section-more" href="{{ rel }}news/">{{ t('home.view_all') }} →</a>
+    </div>
+    <div class="grid grid-news">
+      {% for n in news[:6] %}{{ news_card(n, lang, t) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if articles %}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.features') }}</h2>
+      <a class="section-more" href="{{ rel }}articles/">{{ t('home.view_all') }} →</a>
+    </div>
+    <div class="grid grid-articles">
+      {% for a in articles[:3] %}{{ article_card(a, lang, t, rel) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if papers %}
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ t('home.research') }}</h2>
+      <a class="section-more" href="{{ rel }}papers/">{{ t('home.view_all') }} →</a>
+    </div>
+    <div class="grid grid-papers">
+      {% for p in papers[:4] %}{{ paper_card(p, lang, t) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}
