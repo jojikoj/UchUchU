@@ -45,6 +45,12 @@ CONTACT_EMAIL = "joe@gtoe.info"
 # 空のあいだは、メーラーを開く自前フォームにフォールバックする。
 # 取得方法: Googleフォーム編集画面 → 送信 → < > タブ → src="..." の中身
 GOOGLE_FORM_URL = ""
+
+# フォーム送信先。FormSubmit を使うと、アカウント登録もAPIキーも不要で
+# 静的サイトのままフォーム送信を受け取れる。
+# 初回送信時に CONTACT_EMAIL 宛へ有効化リンクが届き、一度クリックすれば以降は直接届く。
+# 空にすると mailto フォールバック（訪問者のメーラーが開く）に戻る。
+FORM_ENDPOINT = "https://formsubmit.co/ajax/" + CONTACT_EMAIL
 GOOGLE_FORM_HEIGHT = 1200
 COMPANY_NAME = "株式会社TOE"
 COMPANY_URL = "https://gtoe.info/"

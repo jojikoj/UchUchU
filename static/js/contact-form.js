@@ -71,6 +71,10 @@
         message: val("message"),
       };
       if (cfg.access_key) payload.access_key = cfg.access_key;
+      // FormSubmit 用のオプション（件名・キャプチャ無効・自動返信テンプレート）
+      payload._subject = subject;
+      payload._captcha = "false";
+      payload._template = "table";
 
       fetch(cfg.endpoint, {
         method: "POST",
@@ -79,7 +83,9 @@
       })
         .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
         .then(function (j) {
-          if (j.success !== false) {
+          // FormSubmit は success を文字列で返すため両方を見る
+          var ok = j.success === true || j.success === "true";
+          if (ok) {
             form.reset();
             setStatus(cfg.strings.sent, "ok");
           } else {

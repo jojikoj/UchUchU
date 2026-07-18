@@ -62,8 +62,8 @@ STRINGS = {
 
     "contact.title": {"ja": "お問い合わせ", "en": "Contact"},
     "contact.subtitle": {
-        "ja": "ご用件をお選びください。件名と項目を入力済みのメールが開きます。",
-        "en": "Choose your inquiry type. An email with a prefilled subject will open."},
+        "ja": "下記フォームよりお送りください。通常2営業日以内にご返信します。",
+        "en": "Send us a message below. We usually reply within two business days."},
     "contact.send": {"ja": "メールを作成", "en": "Compose email"},
     "contact.direct": {"ja": "直接ご連絡", "en": "Direct contact"},
     "contact.note": {

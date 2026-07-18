@@ -587,7 +587,7 @@ class Builder:
         ctx["google_form_url"] = config.GOOGLE_FORM_URL
         ctx["google_form_height"] = config.GOOGLE_FORM_HEIGHT
         ctx["form_kinds"] = [k["label"] for k in business.contact_kinds(lang)]
-        ctx["form_endpoint"] = ""
+        ctx["form_endpoint"] = config.FORM_ENDPOINT
         ctx["form_access_key"] = ""
         ctx["company_name"] = config.COMPANY_NAME
         ctx["company_url"] = config.COMPANY_URL
