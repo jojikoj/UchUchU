@@ -1,0 +1,14 @@
+# ビルド生成物（Actions が毎回生成するのでコミットしない）
+dist/
+
+# ローカル確認用スクリーンショット
+.preview/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store

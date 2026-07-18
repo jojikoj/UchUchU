@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_name }}{% endblock %} · {{ site_name }}</title>
+  <meta name="description" content="{{ page_description or site_description }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <!-- Alternate languages -->
+  {% for l, href in alternates.items() %}
+  <link rel="alternate" hreflang="{{ l }}" href="{{ href }}">
+  {% endfor %}
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site_name }}">
+  <meta property="og:title" content="{% block og_title %}{{ site_name }}{% endblock %}">
+  <meta property="og:description" content="{{ page_description or site_description }}">
+  <meta property="og:locale" content="{{ 'ja_JP' if lang == 'ja' else 'en_US' }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="{{ asset }}static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ asset }}static/css/style.css">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "{{ lang }}";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "{{ alternates['ja'] }}" : "{{ alternates['en'] }}";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body data-lang="{{ lang }}">
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ home_url }}">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4.2" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-name">{{ site_name }}</span>
+      </a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav">
+        <a href="{{ rel }}{{ 'news/' }}" {{ 'class="active"' if active == 'news' }}>{{ t('nav.news') }}</a>
+        <a href="{{ rel }}{{ 'launches/' }}" {{ 'class="active"' if active == 'launches' }}>{{ t('nav.launches') }}</a>
+        <a href="{{ rel }}{{ 'papers/' }}" {{ 'class="active"' if active == 'papers' }}>{{ t('nav.papers') }}</a>
+        <a href="{{ rel }}{{ 'articles/' }}" {{ 'class="active"' if active == 'articles' }}>{{ t('nav.articles') }}</a>
+        <span class="lang-switch">
+          {% for l, href in alternates.items() %}
+          <a href="{{ href }}" class="{{ 'on' if l == lang }}" hreflang="{{ l }}">{{ l|upper }}</a>
+          {% endfor %}
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-name">{{ site_name }}</span></div>
+        <p class="footer-tagline">{{ site_tagline }}</p>
+        <p class="footer-desc">{{ t('footer.desc') }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>{{ t('nav.home') }}</h4>
+        <a href="{{ rel }}news/">{{ t('nav.news') }}</a>
+        <a href="{{ rel }}launches/">{{ t('nav.launches') }}</a>
+        <a href="{{ rel }}papers/">{{ t('nav.papers') }}</a>
+        <a href="{{ rel }}articles/">{{ t('nav.articles') }}</a>
+      </div>
+      <div class="footer-col">
+        <h4>{{ t('footer.sources') }}</h4>
+        <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+        <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+        <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+        <a href="https://sorae.info/" rel="noopener" target="_blank">sorae</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© {{ year }} {{ site_name }} · {{ t('footer.built') }}</span>
+      <span class="footer-updated">{{ t('meta.updated') }}: {{ build_time }}</span>
+    </div>
+  </footer>
+
+  <script src="{{ asset }}static/js/main.js" defer></script>
+</body>
+</html>

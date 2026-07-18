@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% from "macros.html" import news_card %}
+{% block title %}{{ t('news.title') }}{% endblock %}
+{% block og_title %}{{ t('news.title') }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>{{ t('news.title') }}</h1>
+    <p class="page-sub">{{ t('news.subtitle') }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    {% if news %}
+    {% if news | selectattr('is_translated') | first %}
+    <div class="mt-note">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="8" cy="8" r="6.6"/><path d="M8 7.4v4M8 4.9v.1" stroke-linecap="round"/>
+      </svg>
+      <span>{{ t('meta.mt_note') }}</span>
+    </div>
+    {% endif %}
+    <div class="filter-bar" data-filter-group="news">
+      <button class="chip on" data-filter="all">{{ t('news.filter_all') }}</button>
+      {% for s in news_sources %}<button class="chip" data-filter="{{ s.id }}">{{ s.name }}</button>{% endfor %}
+    </div>
+    <div class="grid grid-news">
+      {% for n in news %}
+      <div class="filter-item" data-source="{{ n.source_id }}">{{ news_card(n, lang, t) }}</div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="empty">{{ t('meta.no_data') }}</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

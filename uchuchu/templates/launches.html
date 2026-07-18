@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% from "macros.html" import launch_card %}
+{% block title %}{{ t('launches.title') }}{% endblock %}
+{% block og_title %}{{ t('launches.title') }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>{{ t('launches.title') }}</h1>
+    <p class="page-sub">{{ t('launches.subtitle') }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    {% if launches %}
+    <div class="grid grid-launches">
+      {% for l in launches %}{{ launch_card(l, lang, t) }}{% endfor %}
+    </div>
+    {% else %}
+    <p class="empty">{{ t('meta.no_data') }}</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

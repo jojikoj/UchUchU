@@ -1,0 +1,86 @@
+{# 再利用カード類 #}
+
+{% macro news_card(item, lang, t) %}
+<article class="card news-card">
+  {% set title = item.get('title_' ~ lang) or item.title %}
+  {% set summary = item.get('summary_' ~ lang) or item.summary %}
+  {% if item.image %}
+  <a class="card-media" href="{{ item.url }}" target="_blank" rel="noopener">
+    <img src="{{ item.image }}" alt="" loading="lazy" onerror="this.closest('.card-media').classList.add('no-img')">
+  </a>
+  {% endif %}
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="pill">{{ item.source }}</span>
+      {% if item.is_translated %}<span class="pill mt" title="{{ item.title }}">{{ t('meta.machine_translated') }}</span>{% endif %}
+      {% if item.published_display %}<time datetime="{{ item.published }}">{{ item.published_display }}</time>{% endif %}
+    </div>
+    <h3 class="card-title"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ title }}</a></h3>
+    {% if summary %}<p class="card-summary">{{ summary }}</p>{% endif %}
+    <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener">{{ t('news.read_source') }} →</a>
+  </div>
+</article>
+{% endmacro %}
+
+
+{% macro launch_card(item, lang, t) %}
+<article class="card launch-card" data-net="{{ item.net or '' }}">
+  {% if item.image %}
+  <div class="card-media"><img src="{{ item.image }}" alt="" loading="lazy" onerror="this.closest('.card-media').classList.add('no-img')"></div>
+  {% endif %}
+  <div class="card-body">
+    <div class="card-meta">
+      {% if item.status %}<span class="pill status-{{ (item.status_class or 'tbd') }}">{{ item.status }}</span>{% endif %}
+      {% if item.country %}<span class="pill ghost">{{ item.country }}</span>{% endif %}
+    </div>
+    <h3 class="card-title">{{ item.name }}</h3>
+    {% if item.net_display %}
+    <div class="launch-net">
+      <span class="net-abs">{{ item.net_display }}</span>
+      {% if item.countdown %}<span class="net-countdown" data-net="{{ item.net }}">{{ item.countdown }}</span>{% endif %}
+    </div>
+    {% endif %}
+    <dl class="launch-specs">
+      {% if item.provider %}<dt>{{ t('launches.provider') }}</dt><dd>{{ item.provider }}</dd>{% endif %}
+      {% if item.rocket %}<dt>{{ t('launches.rocket') }}</dt><dd>{{ item.rocket }}</dd>{% endif %}
+      {% if item.location %}<dt>{{ t('launches.site') }}</dt><dd>{{ item.location }}</dd>{% endif %}
+      {% if item.mission %}<dt>{{ t('launches.mission') }}</dt><dd>{{ item.mission }}{% if item.mission_type %} <span class="dim">({{ item.mission_type }})</span>{% endif %}</dd>{% endif %}
+    </dl>
+    {% if item.webcast %}<a class="card-link" href="{{ item.webcast }}" target="_blank" rel="noopener">▶ {{ t('launches.watch') }}</a>{% endif %}
+  </div>
+</article>
+{% endmacro %}
+
+
+{% macro paper_card(item, lang, t) %}
+<article class="card paper-card">
+  <div class="card-body">
+    <div class="card-meta">
+      {% for c in item.categories %}<span class="pill ghost mono">{{ c }}</span>{% endfor %}
+      {% if item.published_display %}<time datetime="{{ item.published }}">{{ item.published_display }}</time>{% endif %}
+    </div>
+    <h3 class="card-title"><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
+    {% if item.authors %}<p class="paper-authors">{{ item.authors|join(', ') }}{% if item.authors|length >= 8 %} et al.{% endif %}</p>{% endif %}
+    {% if item.summary %}<p class="card-summary">{{ item.summary }}</p>{% endif %}
+    <div class="card-actions">
+      <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener">arXiv →</a>
+      {% if item.pdf %}<a class="card-link ghost" href="{{ item.pdf }}" target="_blank" rel="noopener">{{ t('papers.pdf') }}</a>{% endif %}
+    </div>
+  </div>
+</article>
+{% endmacro %}
+
+
+{% macro article_card(a, lang, t, rel) %}
+<article class="card article-card">
+  <a class="article-card-inner" href="{{ rel }}articles/{{ a.slug }}/">
+    {% if a.hero %}<div class="card-media"><img src="{{ a.hero }}" alt="" loading="lazy"></div>{% endif %}
+    <div class="card-body">
+      {% if a.tag %}<span class="pill accent">{{ a.tag }}</span>{% endif %}
+      <h3 class="card-title">{{ a.title }}</h3>
+      {% if a.excerpt %}<p class="card-summary">{{ a.excerpt }}</p>{% endif %}
+      <span class="card-link">{{ t('articles.read') }} →</span>
+    </div>
+  </a>
+</article>
+{% endmacro %}
