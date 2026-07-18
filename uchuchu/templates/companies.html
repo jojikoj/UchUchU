@@ -12,12 +12,21 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="filter-bar">
-      <a class="chip {{ 'on' if not current_cat }}" href="{{ back_to_all }}">{{ t('news.filter_all') }}</a>
+    {# カテゴリを画像付きカードで見せる。文字だけのチップより領域が直感的に伝わる #}
+    <div class="cat-cards">
       {% for c in cats %}
-      <a class="chip {{ 'on' if current_cat == c.id }}" href="{{ c.href }}">{{ c.name }} <span class="chip-n">{{ c.count }}</span></a>
+      <a class="cat-card {{ 'on' if current_cat == c.id }}" href="{{ c.href }}">
+        <span class="cat-media"><img src="{{ asset }}static/img/cat-{{ c.id }}.svg" alt="" loading="lazy"></span>
+        <span class="cat-body">
+          <span class="cat-name">{{ c.name }}</span>
+          <span class="cat-n">{{ c.count }}</span>
+        </span>
+      </a>
       {% endfor %}
     </div>
+    {% if current_cat %}
+    <div class="filter-bar"><a class="chip" href="{{ back_to_all }}">← {{ t('news.filter_all') }}</a></div>
+    {% endif %}
 
     {% if companies %}
     <div class="company-list">
