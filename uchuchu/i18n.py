@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 STRINGS = {
+    "brand.tagline": {"ja": "宇宙産業ポータル", "en": "Space Industry Portal"},
+
     "nav.home": {"ja": "ホーム", "en": "Home"},
     "nav.news": {"ja": "ニュース", "en": "News"},
     "nav.launches": {"ja": "打ち上げ", "en": "Launches"},

@@ -5,7 +5,7 @@
 {% block content %}
 <article class="article">
   <header class="article-hero">
-    {% if article.hero %}<div class="article-hero-img" style="background-image:url('{{ article.hero }}')"></div>{% endif %}
+    {% if article.hero %}<div class="article-hero-img" style="background-image:url('{{ (asset ~ 'static/img/' ~ article.hero) if article.hero_is_local else article.hero }}')"></div>{% endif %}
     <div class="wrap article-hero-inner">
       {% if article.tag %}<span class="pill accent">{{ article.tag }}</span>{% endif %}
       <h1>{{ article.title }}</h1>

@@ -81,7 +81,12 @@
     <div class="guide-grid">
       {% for a in guides %}
       <a class="guide-card" href="{{ rel }}articles/{{ a.slug }}/">
-        <span class="guide-num">{{ '%02d'|format(loop.index) }}</span>
+        {% if a.hero %}
+        <span class="guide-media">
+          <img src="{{ asset }}static/img/{{ a.hero }}" alt="" loading="lazy">
+          <span class="guide-num">{{ '%02d'|format(loop.index) }}</span>
+        </span>
+        {% else %}<span class="guide-num">{{ '%02d'|format(loop.index) }}</span>{% endif %}
         <h3 class="guide-title">{{ a.title }}</h3>
         <p class="guide-excerpt">{{ a.excerpt }}</p>
         <span class="card-link">{{ t('articles.read') }} →</span>

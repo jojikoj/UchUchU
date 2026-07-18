@@ -204,6 +204,8 @@ def load_articles(lang: str) -> list[dict]:
             "tag": meta.get("tag", ""),
             "author": meta.get("author", ""),
             "hero": meta.get("hero", ""),
+            # hero がファイル名だけならサイト内の画像として解決する
+            "hero_is_local": bool(meta.get("hero")) and not meta.get("hero", "").startswith("http"),
             "date": meta.get("date", ""),
             "date_display": fmt_date(meta.get("date"), lang) if meta.get("date") else "",
             "order": int(meta.get("order", "100") or "100"),

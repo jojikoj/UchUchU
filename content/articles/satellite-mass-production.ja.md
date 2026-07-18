@@ -2,6 +2,7 @@
 title: 衛星コンステレーション時代 — 宇宙産業に「量産」の需要が生まれている
 excerpt: 宇宙は少量多品種の世界だった。しかし数千機規模の衛星群が現れ、製造業が得意とする量産の領域が初めて開いた。
 tag: 参入ガイド
+hero: cover-massprod.svg
 author: UchUchU 編集部
 date: 2026-07-18
 order: 2

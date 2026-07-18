@@ -63,16 +63,14 @@
           <svg viewBox="0 0 32 32" width="30" height="30"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4.2" fill="currentColor"/></svg>
         </span>
         <span class="brand-name">{{ site_name }}</span>
+        <span class="brand-tag">{{ t('brand.tagline') }}</span>
       </a>
       <button class="nav-toggle" aria-label="menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="site-nav">
         <a href="{{ rel }}{{ 'companies/' }}" {{ 'class="active"' if active == 'companies' }}>{{ t('nav.companies') }}</a>
         <a href="{{ rel }}{{ 'news/' }}" {{ 'class="active"' if active == 'news' }}>{{ t('nav.news') }}</a>
         <a href="{{ rel }}{{ 'launches/' }}" {{ 'class="active"' if active == 'launches' }}>{{ t('nav.launches') }}</a>
-        <a href="{{ rel }}{{ 'topics/moon/' }}" {{ 'class="active"' if active == 'topics' }}>{{ t('nav.topics') }}</a>
-        <a href="{{ rel }}{{ 'papers/' }}" {{ 'class="active"' if active == 'papers' }}>{{ t('nav.papers') }}</a>
         <a href="{{ rel }}{{ 'articles/' }}" {{ 'class="active"' if active == 'articles' }}>{{ t('nav.articles') }}</a>
-        <a href="{{ rel }}{{ 'faq/' }}" {{ 'class="active"' if active == 'faq' }}>{{ t('nav.faq') }}</a>
         <a class="nav-search" href="{{ rel }}{{ 'search/' }}" {{ 'class="active"' if active == 'search' }} aria-label="{{ t('nav.search') }}">
           <svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="9" r="6.2"/><path d="M13.5 13.5 L18 18" stroke-linecap="round"/></svg>
           <span class="nav-search-label">{{ t('nav.search') }}</span>
@@ -104,6 +102,7 @@
         <a href="{{ rel }}launches/">{{ t('nav.launches') }}</a>
         <a href="{{ rel }}papers/">{{ t('nav.papers') }}</a>
         <a href="{{ rel }}articles/">{{ t('nav.articles') }}</a>
+        <a href="{{ rel }}topics/moon/">{{ t('nav.topics') }}</a>
         <a href="{{ rel }}faq/">{{ t('nav.faq') }}</a>
         <a href="{{ rel }}search/">{{ t('nav.search') }}</a>
         <a href="{{ rel }}companies/">{{ t('nav.companies') }}</a>

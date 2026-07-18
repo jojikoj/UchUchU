@@ -74,7 +74,7 @@
 {% macro article_card(a, lang, t, rel) %}
 <article class="card article-card">
   <a class="article-card-inner" href="{{ rel }}articles/{{ a.slug }}/">
-    {% if a.hero %}<div class="card-media"><img src="{{ a.hero }}" alt="" loading="lazy"></div>{% endif %}
+    {% if a.hero %}<div class="card-media"><img src="{{ (rel ~ 'static/img/' ~ a.hero) if a.hero_is_local else a.hero }}" alt="" loading="lazy"></div>{% endif %}
     <div class="card-body">
       {% if a.tag %}<span class="pill accent">{{ a.tag }}</span>{% endif %}
       <h3 class="card-title">{{ a.title }}</h3>

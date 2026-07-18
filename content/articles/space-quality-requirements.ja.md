@@ -2,6 +2,7 @@
 title: 宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか
 excerpt: 「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。
 tag: 参入ガイド
+hero: cover-quality.svg
 author: UchUchU 編集部
 date: 2026-07-18
 order: 1
