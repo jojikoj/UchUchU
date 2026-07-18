@@ -10,13 +10,28 @@
   {% for l, href in alternates.items() %}
   <link rel="alternate" hreflang="{{ l }}" href="{{ href }}">
   {% endfor %}
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <!-- OGP -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ og_type or 'website' }}">
   <meta property="og:site_name" content="{{ site_name }}">
   <meta property="og:title" content="{% block og_title %}{{ site_name }}{% endblock %}">
   <meta property="og:description" content="{{ page_description or site_description }}">
+  <meta property="og:url" content="{{ canonical }}">
   <meta property="og:locale" content="{{ 'ja_JP' if lang == 'ja' else 'en_US' }}">
+  <meta property="og:locale:alternate" content="{{ 'en_US' if lang == 'ja' else 'ja_JP' }}">
+  <meta property="og:image" content="{{ site_base_url }}/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ self.og_title() }}">
+  <meta name="twitter:description" content="{{ page_description or site_description }}">
+  <meta name="twitter:image" content="{{ site_base_url }}/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="{{ site_name }}"
+        href="{{ site_base_url }}/{{ '' if lang == 'ja' else 'en/' }}feed.xml">
+  {% if jsonld %}
+  <script type="application/ld+json">{{ jsonld|safe }}</script>
+  {% endif %}
   <link rel="icon" href="{{ asset }}static/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{{ asset }}static/css/style.css">
   <!-- Language routing: Japanese browsers get /, everyone else gets /en/.

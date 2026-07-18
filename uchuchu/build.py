@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import config
+from . import config, seo
 from .i18n import t as _t
 
 
@@ -238,6 +238,8 @@ class Builder:
             "year": self.year,
             "build_time": self.build_time,
             "canonical": self._url_for(lang, path),
+            "site_base_url": self.base_url,
+            "og_type": "article" if path.startswith("articles/") and path != "articles/" else "website",
             "alternates": self._alternates(path),
             # フィルタに出すソース。英語サイトには英語ソースのみ
             # （日本語ソースの記事は英語サイトに載せないため）。
@@ -262,10 +264,14 @@ class Builder:
         launches = prepare_launches(self.launches_raw, lang, self.now)
         papers = prepare_papers(self.papers_raw, lang)
         articles = load_articles(lang)
+        home_label = _t("nav.home", lang)
 
         # トップ（depth: ja=0, en=1 だが rel は言語ルート基準なので 0）
         ctx = self._ctx(lang, depth=0, active="home", path="")
         ctx.update(news=news, launches=launches, papers=papers, articles=articles)
+        ctx["jsonld"] = seo.build_jsonld(
+            self.base_url, lang, "home",
+            trail=[(home_label, self._url_for(lang, ""))])
         self._write_root(lang, self.env.get_template("home.html").render(**ctx))
 
         # 一覧ページ（言語ルートから1階層 → rel="../"）
@@ -278,18 +284,35 @@ class Builder:
         for path, tpl, active, extra in pages:
             ctx = self._ctx(lang, depth=1, active=active, path=path)
             ctx.update(extra)
+            ctx["jsonld"] = seo.build_jsonld(
+                self.base_url, lang, active,
+                trail=[(home_label, self._url_for(lang, "")),
+                       (_t(f"nav.{active}", lang), self._url_for(lang, path))],
+                news=news, launches=launches, papers=papers, articles=articles)
             self._write(lang, path, self.env.get_template(tpl).render(**ctx))
 
         # 記事詳細（articles/<slug>/ → depth 2）
         for a in articles:
-            ctx = self._ctx(lang, depth=2, active="articles",
-                            path=f"articles/{a['slug']}/",
+            path = f"articles/{a['slug']}/"
+            page_url = self._url_for(lang, path)
+            ctx = self._ctx(lang, depth=2, active="articles", path=path,
                             page_description=a.get("excerpt", ""))
             ctx["article"] = a
+            ctx["jsonld"] = seo.build_jsonld(
+                self.base_url, lang, "article", article=a, page_url=page_url,
+                trail=[(home_label, self._url_for(lang, "")),
+                       (_t("nav.articles", lang), self._url_for(lang, "articles/")),
+                       (a["title"], page_url)])
             html = self.env.get_template("article.html").render(**ctx)
             self._write(lang, f"articles/{a['slug']}", html)
 
-        print(f"  [{lang}] home + {len(pages)} lists + {len(articles)} articles")
+        # RSSフィード
+        feed = seo.build_feed(self.base_url, lang, articles, news, self.now)
+        feed_dir = self._lang_root(lang)
+        feed_dir.mkdir(parents=True, exist_ok=True)
+        (feed_dir / "feed.xml").write_text(feed, encoding="utf-8")
+
+        print(f"  [{lang}] home + {len(pages)} lists + {len(articles)} articles + feed.xml")
 
     # --- 付随ファイル ---
     def write_extras(self) -> None:
@@ -307,31 +330,29 @@ class Builder:
             (config.DIST_DIR / "CNAME").write_text(
                 config.SITE_DOMAIN + "\n", encoding="utf-8")
 
-        # robots.txt
+        # robots.txt（検索エンジン＋AIクローラを明示許可）
         (config.DIST_DIR / "robots.txt").write_text(
-            f"User-agent: *\nAllow: /\nSitemap: {self.base_url}/sitemap.xml\n",
-            encoding="utf-8")
+            seo.build_robots(self.base_url), encoding="utf-8")
 
-        # sitemap.xml
-        urls = []
+        # sitemap.xml（lastmod + hreflang相互リンク）
         paths = ["", "news/", "launches/", "papers/", "articles/"]
-        for a in load_articles(config.DEFAULT_LANG):
+        articles_ja = load_articles(config.DEFAULT_LANG)
+        for a in articles_ja:
             paths.append(f"articles/{a['slug']}/")
-        for lang in config.LANGS:
-            for p in paths:
-                urls.append(self._url_for(lang, p))
-        sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-        for u in urls:
-            sm.append(f"  <url><loc>{u}</loc></url>")
-        sm.append("</urlset>")
-        (config.DIST_DIR / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
+        (config.DIST_DIR / "sitemap.xml").write_text(
+            seo.build_sitemap(self.base_url, paths, self.now), encoding="utf-8")
+
+        # llms.txt（AI検索にサイト構造を伝える）
+        articles_en = load_articles("en")
+        (config.DIST_DIR / "llms.txt").write_text(
+            seo.build_llms_txt(self.base_url, articles_ja, articles_en),
+            encoding="utf-8")
 
         # 404
         ctx = self._ctx(config.DEFAULT_LANG, depth=0, active="", path="404")
         four04 = self.env.from_string(_FOUR04_TPL).render(**ctx)
         (config.DIST_DIR / "404.html").write_text(four04, encoding="utf-8")
-        extras = "static/, .nojekyll, robots.txt, sitemap.xml, 404.html"
+        extras = "static/, .nojekyll, robots.txt, sitemap.xml, llms.txt, 404.html"
         if config.SITE_DOMAIN:
             extras += f", CNAME({config.SITE_DOMAIN})"
         print(f"  extras: {extras}")

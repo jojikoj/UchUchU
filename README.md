@@ -162,6 +162,23 @@ python3 -m uchuchu.collectors.translate
 
 ---
 
+## SEO / AI検索対策
+
+| 施策 | 内容 |
+|---|---|
+| 構造化データ | 全ページに JSON-LD（WebSite / Organization / BreadcrumbList）。打ち上げは `Event`、自作記事は `Article`、集約コンテンツは `ItemList` として出力 |
+| llms.txt | `/llms.txt` にAI向けのサイト構造・出典・翻訳の但し書きを記載（AI検索の新標準） |
+| robots.txt | 検索エンジンに加え GPTBot / ClaudeBot / PerplexityBot / Google-Extended など主要AIクローラを明示的に許可 |
+| RSS | `/feed.xml`（日本語）と `/en/feed.xml`（英語） |
+| sitemap.xml | `lastmod`・`priority`・hreflang相互リンク付き |
+| 多言語 | `hreflang` と `x-default`、ブラウザ言語による自動振り分け |
+| OGP | 1200×630 のSNS共有カードを同梱（`static/img/ogp.png`、元HTMLも同梱） |
+
+構造化データの方針として、**外部から集約した記事を自作記事に見せかけない**。
+集約コンテンツは `ItemList` として「リンク集」であることを明示し、`Article` は自作記事にのみ使う。
+
+---
+
 ## データ元へのクレジット
 
 - [Spaceflight News API](https://spaceflightnewsapi.net/)
