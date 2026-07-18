@@ -433,6 +433,7 @@ class Builder:
             "rel": rel,
             "asset": asset,
             "asset_ver": self.asset_ver,
+            "ga_id": config.GA_MEASUREMENT_ID,
             "home_url": rel or "./",
             "active": active,
             "year": self.year,

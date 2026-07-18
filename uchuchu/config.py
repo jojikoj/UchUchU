@@ -5,6 +5,7 @@
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 # --- パス ---------------------------------------------------------------
@@ -73,6 +74,12 @@ COMPANY_PROFILE = [
     ("事業内容", "Web制作／AI開発"),
     ("公式サイト", "https://gtoe.info/"),
 ]
+
+# --- アクセス解析 -------------------------------------------------------
+# GA4 の測定ID（G-XXXXXXXXXX）。空のあいだはタグを一切出力しない。
+# メディアごとに変わるためテンプレートに直書きせず、ここだけを差し替える。
+# 環境変数 UCHUCHU_GA_ID でも上書きできる（本番だけ計測したい場合に使う）。
+GA_MEASUREMENT_ID = os.environ.get("UCHUCHU_GA_ID", "")
 
 LANGS = ["ja", "en"]
 DEFAULT_LANG = "ja"

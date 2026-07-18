@@ -52,6 +52,18 @@
     } catch (e) {}
   })();
   </script>
+
+{# アクセス解析。測定IDが未設定のあいだは何も出力しない。
+   計測タグを常に出すと、ローカルの表示確認まで数値に混ざる。 #}
+{%- if ga_id %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ ga_id }}');
+</script>
+{%- endif %}
 </head>
 <body data-lang="{{ lang }}">
 
