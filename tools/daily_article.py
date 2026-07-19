@@ -335,6 +335,14 @@ def log(msg: str) -> None:
 
 def main() -> int:
     dry = "--dry" in sys.argv
+
+    # 同じ日に二度走らせても、その日の記事を上書きしない。
+    # cron の再実行や手動実行が重なると、先に書いた記事が消える。
+    today_path = ARTICLES / f"news-{datetime.date.today().isoformat()}.ja.md"
+    if today_path.exists() and not dry:
+        log(f"本日分は作成済み（{today_path.name}）— 何もしない")
+        return 0
+
     state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
     used = set(state.get("used_urls", []))
 
