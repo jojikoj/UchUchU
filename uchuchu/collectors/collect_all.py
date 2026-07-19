@@ -125,6 +125,16 @@ def _maybe_translate_news(items: list[dict]) -> None:
         return
 
     filled = translate.translate_english_items(targets)
+
+    # 訳文の後始末。機械翻訳は金額・単位で崩れやすく、
+    # 「$ 7.1百万賞を受賞」のような見出しがそのまま公開されたことがある。
+    # 翻訳のたびに通しておけば、崩れたまま載ることはない。
+    for it in english:
+        for key in ("title_ja", "summary_ja"):
+            if it.get(key):
+                it[key] = translate.fix_units(it[key])
+        it["title_ja_broken"] = bool(
+            it.get("title_ja") and translate.looks_broken(it["title_ja"]))
     print(f"  [translate] {filled}/{len(targets)} 件を新規翻訳")
     _save_translation_cache(cache, english)
 

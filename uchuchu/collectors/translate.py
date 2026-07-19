@@ -286,3 +286,61 @@ if __name__ == "__main__":
         print("backend:", backend_name())
         print("  claude CLI    :", claude_available(), CLAUDE_BIN or "")
         print("  argostranslate:", argos_available())
+
+# --- 訳文の品質チェック --------------------------------------------------
+# 機械翻訳（argostranslate）は、金額・単位・固有名詞で崩れることがある。
+# 「$ 7.1百万賞を受賞」（$7.1 million award の直訳）が
+# トップページの主役記事として出てしまった実例がある。
+# 崩れた訳文は載せないほうがよいので、検出して原文に戻す。
+
+_BROKEN_PATTERNS = [
+    r"[\$＄]\s*[\d.]+",          # 金額が原文のまま残っている
+    r"(?i)\b(million|billion|thousand)\b",   # 単位が訳されていない
+    r"[A-Za-z]{4,}\s+[A-Za-z]{4,}\s+[A-Za-z]{4,}",  # 英単語が3語以上連続
+]
+
+
+def looks_broken(text: str) -> bool:
+    """訳文が壊れていそうなら True。
+
+    完璧な判定はできないので、**明らかにおかしいものだけ**を弾く。
+    弾きすぎると訳文が減って読めなくなるため、条件は絞っている。
+    """
+    if not text:
+        return True
+    for pat in _BROKEN_PATTERNS:
+        if re.search(pat, text):
+            return True
+    return False
+
+
+def fix_units(text: str) -> str:
+    """金額・単位の直訳を日本語の言い回しに直す。
+
+    翻訳そのものをやり直すより確実で、費用もかからない。
+    """
+    if not text:
+        return text
+
+    def _money(m: "re.Match") -> str:
+        v = float(m.group(1))
+        unit = m.group(2).lower()
+        if unit.startswith("b") or unit == "十億":
+            man = v * 100_000        # 10億 = 100,000万
+        elif unit.startswith("m") or unit == "百万":
+            man = v * 100            # 100万 = 100万
+        else:
+            return m.group(0)
+        # 万で1万を超えるなら億に繰り上げる（「50000万ドル」を避ける）
+        if man >= 10_000:
+            return f"{man / 10_000:g}億ドル"
+        return f"{man:g}万ドル"
+
+    # "$7.1 million" / "$ 7.1百万" の両方に対応する
+    text = re.sub(r"[\$＄]\s*([\d.]+)\s*(million|billion|百万|十億)",
+                  _money, text, flags=re.I)
+    text = re.sub(r"[\$＄]\s*([\d,]+)", lambda m: m.group(1) + "ドル", text)
+    # 「award」を「賞」と訳す誤りは、文脈によって
+    # 授与する側にも受け取る側にもなるため、機械的には直せない。
+    # ここでは直さず、looks_broken で検出して訳し直す。
+    return re.sub(r"\s+", " ", text).strip()

@@ -318,12 +318,26 @@ _WEAK_TITLE = [
 _STRONG_TOPIC = ("rocket", "satellite", "japan", "business")
 
 
+# 訳文が崩れている見出しの兆候。金額や単位が原文のまま残ると起きやすい。
+_BROKEN_TITLE = re.compile(
+    r"[\$＄]\s*[\d.]+|(?i:\b(?:million|billion)\b)"
+    r"|[A-Za-z]{4,}\s+[A-Za-z]{4,}\s+[A-Za-z]{4,}")
+
+
+def _looks_broken_title(title: str) -> bool:
+    return bool(_BROKEN_TITLE.search(title or ""))
+
+
 def _featured_score(item: dict) -> int:
     """ヒーローのメイン適性を点数化する。高いほど主役向き。"""
     title = (item.get("display_title") or item.get("title") or "")
     score = 0
     if any(w in title for w in _WEAK_TITLE):
         score -= 5
+    # 機械翻訳が崩れた見出しは、サイトで最も目立つ位置に出さない。
+    # 「$ 7.1百万賞を受賞」がトップの主役になっていた実例がある。
+    if item.get("title_ja_broken") or _looks_broken_title(title):
+        score -= 20
     if len(title) < 14:            # 短すぎる見出しは大きく出すと間が持たない
         score -= 2
     for t in item.get("topics", []):
