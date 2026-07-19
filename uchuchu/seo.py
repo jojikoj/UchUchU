@@ -122,6 +122,22 @@ def _article(base: str, a: dict, url: str, lang: str) -> dict:
         node["dateModified"] = a["date"]
     if a.get("hero"):
         node["image"] = a["hero"]
+
+    # 本文の量と分類を明示する。
+    # 回答エンジンは「その記事が主題をどれだけ扱っているか」を見るため、
+    # 本文長と分類が取れる状態にしておくと引用の判断材料になる。
+    if a.get("tag"):
+        node["articleSection"] = a["tag"]
+    body = a.get("plain_text") or ""
+    if body:
+        node["wordCount"] = len(body)
+        # 冒頭は結論を書く方針にしているため、抜粋として妥当。
+        # 全文を入れるとページ本体と重複するので冒頭のみに留める。
+        node["backstory"] = body[:300]
+    node["about"] = {
+        "@type": "Thing",
+        "name": "宇宙産業" if lang == "ja" else "Space industry",
+    }
     return node
 
 

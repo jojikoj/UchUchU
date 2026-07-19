@@ -560,6 +560,8 @@ class Builder:
             ctx = self._ctx(lang, depth=2, active="articles", path=path,
                             page_description=a.get("excerpt", ""))
             ctx["article"] = a
+            # 構造化データで本文長を示すため、素の本文を渡す
+            a.setdefault("plain_text", article_plain_text(a.get("html", "")))
             ctx["jsonld"] = seo.build_jsonld(
                 self.base_url, lang, "article", article=a, page_url=page_url,
                 trail=[(home_label, self._url_for(lang, "")),

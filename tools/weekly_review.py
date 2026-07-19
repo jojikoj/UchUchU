@@ -101,6 +101,28 @@ def main() -> int:
     L += ["## 3. カバー画像のない記事", ""]
     L += ([f"- `{s}`" for s in noimg] if noimg else ["なし"]) + [""]
 
+    # --- 3.5 AEO要件 ---
+    # AI検索に引用されるかは「答えが構造として取り出せるか」で決まる。
+    # 表・箇条書き・まとめ・冒頭の結論は、その取り出し口になる。
+    import re as _re
+    aeo = []
+    for s_, a in arts.items():
+        md = (ARTICLES / f"{s_}.ja.md").read_text(encoding="utf-8")
+        body = _re.sub(r"^---\n.*?\n---\n", "", md, flags=_re.S)
+        lead = _re.sub(r"\s", "", _re.split(r"\n## ", body)[0])[:250]
+        lack = [n for n, ok in [
+            ("表", "|---|" in body),
+            ("箇条書き", body.count("\n- ") >= 3),
+            ("まとめ", "## まとめ" in body),
+            ("冒頭の結論", bool(_re.search(r"\*\*.+\*\*", lead))),
+            ("見出し4本", body.count("\n## ") >= 4),
+        ] if not ok]
+        if lack:
+            aeo.append((s_, lack))
+    L += ["## 3.5 AEO要件を満たしていない記事", ""]
+    L += ([f"- `{s_}` — {'/'.join(l)} が不足" for s_, l in aeo]
+          if aeo else ["なし（全記事が要件を満たす）"]) + [""]
+
     # --- 4. タグの分布 ---
     tags = collections.Counter(a["fm"].get("tag", "?") for a in arts.values())
     L += ["## 4. タグの分布", ""]
