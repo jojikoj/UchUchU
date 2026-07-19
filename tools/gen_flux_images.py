@@ -130,6 +130,13 @@ JOBS = [
      "A robotic arm mechanism mounted on a test stand in a laboratory, "
      "engineers adjusting its gripper, cables and sensors attached, "
      "clean workshop lighting, precision engineering atmosphere, " + REALISM),
+    # --- ニュース解説記事の共通カバー ---
+    # 毎日1本作るため記事ごとに生成すると費用が積み上がる。
+    # 解説記事は共通の1枚を使い、費用を固定にする。
+    ("cover-analysis.jpg",
+     "A Japanese engineer studying technical drawings and a laptop at a desk "
+     "in a small factory office, machine shop visible through the window, "
+     "morning light, thoughtful and analytical atmosphere, " + REALISM),
 ]
 
 

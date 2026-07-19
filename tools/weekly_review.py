@@ -87,7 +87,10 @@ def main() -> int:
     L += [""]
 
     # --- 2. 内部リンクの孤立 ---
-    orphan = [s for s in arts if inbound[s] < MIN_INBOUND]
+    # 日々のニュース解説は、記事一覧とトップから辿れる時系列コンテンツなので、
+    # 他記事から張られていなくても問題ない。孤立の対象から外す。
+    orphan = [s for s in arts
+              if inbound[s] < MIN_INBOUND and not s.startswith("news-")]
     L += ["## 2. 他記事から張られていない記事", ""]
     if orphan:
         L += ["孤立した記事は検索評価が伸びない。関連記事から言及を足す。", ""]
