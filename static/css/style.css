@@ -1105,3 +1105,10 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
   .about-table th { border-bottom: none; padding-bottom: 0; }
   .about-table td { padding-top: 2px; }
 }
+
+/* 集約ページの「続きは元記事で」注記 */
+.ndetail-more {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}

@@ -10,7 +10,15 @@
   {% for l, href in alternates.items() %}
   <link rel="alternate" hreflang="{{ l }}" href="{{ href }}">
   {% endfor %}
+  {# 集約ページ（他媒体の記事の紹介）は noindex にする。
+     他社記事の要約を大量にインデックスさせると、Googleの大量生成コンテンツと
+     判定され、サイト全体の評価が落ちて自作記事まで巻き添えになる。
+     follow は残し、サイト内の回遊とリンク評価の受け渡しは効かせたままにする。 #}
+  {%- if noindex %}
+  <meta name="robots" content="noindex, follow">
+  {%- else %}
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  {%- endif %}
   <!-- OGP -->
   <meta property="og:type" content="{{ og_type or 'website' }}">
   <meta property="og:site_name" content="{{ site_name }}">

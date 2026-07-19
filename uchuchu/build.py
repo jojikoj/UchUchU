@@ -168,6 +168,8 @@ def prepare_news(raw: list[dict], lang: str) -> list[dict]:
         it["slug"] = news_slug(it)
         it["display_title"] = it.get(f"title_{lang}") or it.get("title") or ""
         it["display_summary"] = it.get(f"summary_{lang}") or it.get("summary") or ""
+        # 表示する要約は引用の範囲にとどめる。続きは元記事で読んでもらう。
+        it["display_body"] = shorten_summary(it.get("body_ja") or "")
         # 画像のない記事にはトピックに応じたイメージ写真をあてる。
         # グレーの空欄が並ぶと一覧の見栄えが崩れ、記事も読まれにくくなるため。
         if not it.get("image"):
@@ -260,6 +262,28 @@ def load_faq(lang: str) -> tuple[dict, list[dict]]:
             faqs.append({"q": q, "a": line[2:].strip()})
             q = None
     return meta, faqs
+
+
+# 集約ページで表示する要約の上限。
+# 下限だけ決めて上限を決めなかった結果、元記事をほぼ全訳した
+# 1,000字前後の文章が並び、要約ではなく転載に近い状態になっていた。
+# 引用は必要最小限にとどめ、続きは元記事で読んでもらう。
+NEWS_SUMMARY_MAX = 300
+
+
+def shorten_summary(text: str, limit: int = NEWS_SUMMARY_MAX) -> str:
+    """要約を指定字数までに切り詰める。
+
+    文の途中で切ると意味が壊れるため、句点を探して手前で切る。
+    """
+    text = (text or "").strip()
+    if len(text) <= limit:
+        return text
+    head = text[:limit]
+    cut = max(head.rfind("。"), head.rfind("\n"))
+    if cut >= limit // 2:          # 極端に短くならない位置に句点があれば使う
+        return head[:cut + 1].strip()
+    return head.rstrip() + "…"
 
 
 def article_plain_text(html: str) -> str:
@@ -434,6 +458,8 @@ class Builder:
             "asset": asset,
             "asset_ver": self.asset_ver,
             "ga_id": config.GA_MEASUREMENT_ID,
+            # 集約ページ（/a/）はインデックスさせない
+            "noindex": path.startswith("a/"),
             "home_url": rel or "./",
             "active": active,
             "year": self.year,
@@ -471,7 +497,13 @@ class Builder:
         out_dir = self._lang_root(lang) / path
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(html, encoding="utf-8")
-        self.paths_by_lang[lang].append(path.rstrip("/") + "/")
+
+        # noindex のページを sitemap に載せると矛盾したシグナルになる。
+        # さらに薄いページが sitemap の大半を占めると、
+        # クロールバジェットが自作記事に回らなくなる。
+        # sitemap には「インデックスさせたいページだけ」を載せる。
+        if not path.startswith("a/"):
+            self.paths_by_lang[lang].append(path.rstrip("/") + "/")
 
     def _write_root(self, lang: str, html: str) -> None:
         out_dir = self._lang_root(lang)

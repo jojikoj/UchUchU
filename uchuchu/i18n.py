@@ -137,6 +137,9 @@ STRINGS = {
     "news.subtitle": {"ja": "国内外の公式発表とメディアを横断して集約。",
                       "en": "Aggregated from official and media sources worldwide."},
     "news.read_source": {"ja": "元記事を読む", "en": "Read source"},
+    "news.continue_at_source": {
+        "ja": "※ 内容の紹介はここまでです。続きは元記事をご覧ください。",
+        "en": "Introduction ends here. Please read the full article at the source."},
     "news.filter_by_source": {"ja": "配信元で絞り込む", "en": "Filter by source"},
     "news.filter_all": {"ja": "すべて", "en": "All"},
 
