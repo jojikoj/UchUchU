@@ -14,6 +14,14 @@
      他社記事の要約を大量にインデックスさせると、Googleの大量生成コンテンツと
      判定され、サイト全体の評価が落ちて自作記事まで巻き添えになる。
      follow は残し、サイト内の回遊とリンク評価の受け渡しは効かせたままにする。 #}
+  {# 見出し用の日本語フォント。本文はシステムフォントのまま（表示が速い）。
+     見出しだけ太いウェイトを当てて、情報の階層を明確にする。
+     preconnect を先に置くと接続の確立が早まり、文字が入れ替わる瞬間が短くなる。 #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
+
   {%- if noindex %}
   <meta name="robots" content="noindex, follow">
   {%- else %}

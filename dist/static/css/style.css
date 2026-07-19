@@ -44,6 +44,10 @@
   --sh-3: 0 14px 34px rgba(15,25,50,.10), 0 4px 10px rgba(15,25,50,.05);
 
   --maxw: 1180px;
+  /* 見出し用。Zen Kaku Gothic New の最も太いウェイト（900）を使う。
+     読み込み前はシステムフォントで表示され、揃った時点で入れ替わる。 */
+  --font-head: "Zen Kaku Gothic New", -apple-system, BlinkMacSystemFont,
+               "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
   --font: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
           "Noto Sans JP", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --mono: "SF Mono", ui-monospace, "Roboto Mono", Menlo, Consolas, monospace;
@@ -1112,3 +1116,27 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
   font-size: 13px;
   color: var(--muted);
 }
+
+
+/* ── 見出しのフォント ────────────────────────────────
+   タイトル類は Zen Kaku Gothic New の 900（最太）で統一する。
+   本文はシステムフォントのままにして、表示速度を落とさない。 */
+.hero-title,
+.sec-ja,
+.card-title,
+.guide-title,
+.strip-title,
+.db-cat-name,
+.page-head h1,
+.block-lead + .db-cats + .db-preview ~ h2,
+.prose h2,
+.prose h3,
+.side-name {
+  font-family: var(--font-head);
+  font-weight: 900;
+  /* 太いウェイトは字面が詰まって見えるため、わずかに字間を開ける */
+  letter-spacing: .002em;
+}
+
+/* セクション見出しの英字ラベルも同じ書体で揃える */
+.sec-en { font-family: var(--font-head); font-weight: 700; }
