@@ -7,6 +7,7 @@
   <div class="wrap">
     <h1>{{ t('companies.title') }}</h1>
     <p class="page-sub">{{ t('companies.subtitle') }}</p>
+    <p class="db-freebadge">{{ t('companies.list_free') }} · <a href="{{ rel }}contact/?kind={{ t('form.kind_listing') | urlencode }}">{{ t('companies.join_button') }}</a></p>
   </div>
 </section>
 
@@ -51,6 +52,14 @@
     {% else %}
     <p class="empty">{{ t('meta.no_data') }}</p>
     {% endif %}
+
+    {# 掲載募集。DBが育つほど、サプライヤーを探す宇宙企業にとっての価値が上がる。
+       製造業が自分で載りに来る導線を、一覧の直後に強く置く。 #}
+    <div class="db-join">
+      <h2>{{ t('companies.join_title') }}</h2>
+      <p>{{ t('companies.join_body') }}</p>
+      <a class="btn btn-primary" href="{{ rel }}contact/?kind={{ t('form.kind_listing') | urlencode }}">{{ t('companies.join_button') }}</a>
+    </div>
 
     <div class="db-note">
       <p>{{ disclaimer }}</p>

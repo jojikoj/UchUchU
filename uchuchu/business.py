@@ -108,44 +108,42 @@ AD_AUDIENCE = {
     ],
 }
 
+# 料金は載せない（サイトには出さず、問い合わせ時に個別提示する方針）。
+# メニューは「何ができるか」と「誰に効くか」で構成する。
 AD_MENU = {
     "ja": [
         {
             "name": "タイアップ記事",
-            "price": "20万円〜／本",
             "desc": "貴社の技術・製品を、宇宙産業の文脈で解説する記事を編集部が制作します。"
-                    "広告然としたPRではなく、読み物として成立する内容にすることで読了率を確保します。"
-                    "記事は掲載後も資産として残り、検索経由で継続的に読まれます。",
+                    "広告然としたPRではなく読み物として成立させ、読了率を確保します。"
+                    "記事は掲載後も資産として残り、検索経由で継続的に読まれます。"
+                    "サプライヤーを探す宇宙企業にも、参入を検討する製造業にも届きます。",
         },
         {
-            "name": "企業データベース PR枠",
-            "price": "月額1万円〜",
+            "name": "企業データベース 上位掲載",
             "desc": "企業データベースの上部に固定表示し、ロゴ・詳細説明・問い合わせ導線を付与します。"
-                    "参入検討中の製造業が取引先を探す場に、優先的に露出します。",
+                    "サプライヤーを探す宇宙企業と、取引先を探す製造業の双方が見る場に、優先的に露出します。",
         },
         {
             "name": "レポート・調査の共同制作",
-            "price": "個別見積",
             "desc": "宇宙産業に関する調査レポートを共同で制作し、貴社名義で公開します。"
-                    "リード獲得を目的とする場合に適します。",
+                    "見込み顧客の獲得（リードジェネレーション）を目的とする場合に適します。",
         },
     ],
     "en": [
         {
             "name": "Sponsored article",
-            "price": "From ¥200,000",
             "desc": "Our editorial team writes an article explaining your technology "
-                    "in the context of the space industry.",
+                    "in the context of the space industry — read by both suppliers "
+                    "and space companies.",
         },
         {
-            "name": "Database PR placement",
-            "price": "From ¥10,000/month",
+            "name": "Featured database placement",
             "desc": "Featured placement at the top of the company database with logo "
                     "and inquiry link.",
         },
         {
             "name": "Co-produced research",
-            "price": "On request",
             "desc": "We co-produce and publish research reports under your name.",
         },
     ],

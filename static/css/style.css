@@ -1140,3 +1140,33 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
 
 /* セクション見出しの英字ラベルも同じ書体で揃える */
 .sec-en { font-family: var(--font-head); font-weight: 700; }
+
+/* ── 広告・企業DBの導線 ──────────────────────── */
+/* 立場別の「なぜ出すのか」 */
+.ad-why { display: grid; gap: 14px; }
+.ad-why p {
+  margin: 0; padding: 16px 18px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  border-left: 3px solid var(--accent);
+  line-height: 1.75;
+}
+
+/* 企業DB上部の「掲載無料・随時受付」バッジ */
+.db-freebadge {
+  margin-top: 12px; font-size: .9rem; font-weight: 650;
+  color: var(--text-2);
+}
+.db-freebadge a { color: var(--accent); }
+
+/* 掲載募集ブロック。一覧の直後に置き、載りに来る導線にする */
+.db-join {
+  margin: 30px 0 18px; padding: 26px 24px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  text-align: center;
+}
+.db-join h2 { margin: 0 0 8px; }
+.db-join p { margin: 0 auto 16px; max-width: 620px; line-height: 1.8; color: var(--text-2); }

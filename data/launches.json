@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T21:31:22.305333+00:00",
+  "generated_at": "2026-07-19T21:37:54.766453+00:00",
   "count": 200,
   "items": [
     {
@@ -100,9 +100,9 @@
     {
       "id": "fa42624c-1e30-4b4b-a06b-59b6153bc4e5",
       "name": "Kinetica 1 | Unknown Payload",
-      "net": "2026-07-24T02:00:00Z",
-      "status": "TBC",
-      "status_name": "To Be Confirmed",
+      "net": "2026-07-23T23:30:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "CAS Space",
       "provider_country": "CHN",
       "rocket": "Kinetica 1",
@@ -1879,6 +1879,25 @@
       "mission": "SDA Tranche 2 Tracking Layer B",
       "mission_type": "Government/Top Secret",
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Tracking Layer.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "c703fab3-2ce4-4cf1-861d-754da3f3ad42",
+      "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer A",
+      "net": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "SpaceX",
+      "provider_country": "USA",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "location": "Vandenberg SFB, CA, USA",
+      "country": "USA",
+      "mission": "SDA Tranche 2 Transport Layer A",
+      "mission_type": "Government/Top Secret",
+      "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
       "upcoming": true
@@ -3781,25 +3800,6 @@
       "mission_description": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcast": "https://www.youtube.com/watch?v=eTdFBWJ8ot4",
-      "upcoming": false
-    },
-    {
-      "id": "41699701-2ef4-4b0c-ac9d-6757820cde87",
-      "name": "SLS Block 1 | Artemis II",
-      "net": "2026-04-01T22:35:12Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "National Aeronautics and Space Administration",
-      "provider_country": "USA",
-      "rocket": "Space Launch System Block 1",
-      "pad": "Launch Complex 39B",
-      "location": "Kennedy Space Center, FL, USA",
-      "country": "USA",
-      "mission": "Artemis II",
-      "mission_type": "Human Exploration",
-      "mission_description": "Artemis II is the first crewed mission as part of the Artemis program. Artemis II will send a crew of 4 - 3 Americans and 1 Canadian around the moon and return them back to Earth. The mission will test the core systems of NASA's Orion spacecraft including the critical life support system, among other systems which could not be tested during Artemis I due to the lack of crew onboard.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/space_launch_sy_image_20260405204639.jpg",
-      "webcast": "https://www.youtube.com/watch?v=Tf_UjBMIzNo",
       "upcoming": false
     }
   ]

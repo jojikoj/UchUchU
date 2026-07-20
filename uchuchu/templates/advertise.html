@@ -22,6 +22,15 @@
       </ul>
     </div>
 
+    {# 立場別に「なぜ出すのか」を示す。本命はサプライヤーを探す宇宙企業。 #}
+    <div class="ad-block">
+      <h2>{{ t('ad.why_title') }}</h2>
+      <div class="ad-why">
+        <p>{{ t('ad.why_space') }}</p>
+        <p>{{ t('ad.why_maker') }}</p>
+      </div>
+    </div>
+
     <div class="ad-block">
       <h2>{{ t('ad.content') }}</h2>
       <div class="ad-stats">
@@ -38,7 +47,6 @@
         {% for m in ad_menu %}
         <article class="ad-plan">
           <h3>{{ m.name }}</h3>
-          <p class="ad-plan-price">{{ m.price }}</p>
           <p class="ad-plan-desc">{{ m.desc }}</p>
         </article>
         {% endfor %}

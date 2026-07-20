@@ -39,6 +39,8 @@ STRINGS = {
         "en": "We welcome inquiries about entering the space industry, free database listings, and advertising."},
 
     "form.kind": {"ja": "ご用件", "en": "Inquiry type"},
+    # 企業DBの掲載申込リンクが選ぶ用件。問い合わせフォームの選択肢の値と一致させること。
+    "form.kind_listing": {"ja": "企業データベースへの掲載", "en": "Company database listing"},
     "form.company": {"ja": "貴社名", "en": "Company"},
     "form.name": {"ja": "ご担当者名", "en": "Your name"},
     "form.email": {"ja": "メールアドレス", "en": "Email"},
@@ -92,31 +94,52 @@ STRINGS = {
 
     "ad.title": {"ja": "広告掲載のご案内", "en": "Advertise with UchUchU"},
     "ad.subtitle": {
-        "ja": "宇宙産業への参入を検討する製造業に、直接届く媒体です。",
-        "en": "Reach manufacturers evaluating entry into the space supply chain."},
+        "ja": "宇宙産業でサプライヤーを探す企業と、宇宙に参入したい製造業。その両者が集まる場です。",
+        "en": "Where companies sourcing space suppliers meet manufacturers entering the industry."},
     "ad.audience": {"ja": "どなたに届くか", "en": "Who you reach"},
     "ad.audience_lead": {
         "ja": "UchUchUは一般の宇宙ファン向けメディアではありません。宇宙産業で事業機会を探す実務者に向けて編集しています。",
         "en": "UchUchU is not a general space-enthusiast media. It is edited for professionals seeking business opportunities in the space industry."},
+    # 広告主が「なぜここに出すのか」を、立場別に明示する。
+    # 本命は、サプライヤーを探す宇宙企業。
+    "ad.why_title": {"ja": "なぜUchUchUに出すのか", "en": "Why advertise here"},
+    "ad.why_space": {
+        "ja": "サプライヤーを探す宇宙企業へ — 部品・素材・加工・試験設備の作り手が読む媒体です。「こういう部品を作れる会社を探している」を、参入意欲の高い製造業に直接届けられます。",
+        "en": "For space companies sourcing suppliers — reach manufacturers of parts, materials, machining, and test equipment who are actively looking to enter the space supply chain."},
+    "ad.why_maker": {
+        "ja": "自社を売り込みたい製造業へ — 「宇宙で使える技術を持っている」ことを、発注側の宇宙企業や同業に見つけてもらえます。企業データベースへの掲載は無料です。",
+        "en": "For manufacturers — let space companies and peers discover that your technology can be used in space. Database listing is free."},
     "ad.content": {"ja": "掲載コンテンツ", "en": "Content"},
     "ad.stats_note": {
         "ja": "2026年7月開設。掲載社数・記事数は随時拡充しています。アクセス実績はご要望に応じて開示します。",
-        "en": "Launched July 2026. Traffic figures available on request."},
-    "ad.menu": {"ja": "広告メニュー", "en": "Advertising options"},
+        "en": "Launched July 2026. Listings and articles are growing. Traffic figures available on request."},
+    "ad.menu": {"ja": "掲載メニュー", "en": "Options"},
     "ad.menu_note": {
-        "ja": "掲載内容は編集部と協議のうえ決定します。事実と異なる内容・誇大な表現は掲載できません。",
-        "en": "Content is agreed with our editorial team. We cannot publish inaccurate or exaggerated claims."},
+        "ja": "料金は目的・内容に応じて個別にご案内します。掲載内容は編集部と協議のうえ決定し、事実と異なる内容・誇大な表現は掲載できません。",
+        "en": "Pricing is quoted individually. Content is agreed with our editorial team; we cannot publish inaccurate or exaggerated claims."},
     "ad.cta_title": {"ja": "まずはご相談ください", "en": "Get in touch"},
     "ad.cta_body": {
-        "ja": "予算・目的をお聞かせいただければ、適した掲載方法をご提案します。媒体資料が必要な場合もお申し付けください。",
-        "en": "Tell us your budget and goals and we will propose a suitable format."},
+        "ja": "目的をお聞かせいただければ、適した掲載方法と料金をご提案します。媒体資料が必要な場合もお申し付けください。",
+        "en": "Tell us your goal and we will propose a suitable format and price. Media kit available on request."},
     "ad.cta_button": {"ja": "広告について問い合わせる", "en": "Contact us about advertising"},
 
     "nav.companies": {"ja": "企業DB", "en": "Companies"},
     "companies.title": {"ja": "宇宙産業 企業データベース", "en": "Space Industry Company Database"},
     "companies.subtitle": {
-        "ja": "日本の宇宙産業に関わる企業を、事業領域別に整理しています。参入検討・取引先探索にお使いください。",
-        "en": "Japanese companies in the space industry, organised by business area."},
+        "ja": "宇宙産業に関わる企業を事業領域別に整理した一覧です。サプライヤーを探す宇宙企業の取引先探索に、また製造業が宇宙企業に見つけてもらう場としてお使いください。",
+        "en": "Companies in the space industry by business area. Use it to source suppliers, or to be found by space companies."},
+    "companies.list_free": {
+        "ja": "掲載は無料・随時受付中",
+        "en": "Free listing, open now"},
+    "companies.join_title": {
+        "ja": "貴社も掲載しませんか（無料）",
+        "en": "List your company (free)"},
+    "companies.join_body": {
+        "ja": "宇宙分野で使える技術をお持ちなら、業種を問わず掲載できます。宇宙での実績は必要ありません。掲載された企業は、サプライヤーを探す宇宙企業の目に留まります。",
+        "en": "If your technology can be used in space, you can be listed — no space track record required. Listed companies get found by space companies sourcing suppliers."},
+    "companies.join_button": {
+        "ja": "掲載を申し込む（無料）",
+        "en": "Apply to be listed (free)"},
     "companies.hq": {"ja": "本社", "en": "HQ"},
     "companies.official": {"ja": "公式サイト", "en": "Official site"},
     "companies.cta": {
