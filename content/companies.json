@@ -597,6 +597,82 @@
       "url": "https://www.advantest.com/ja/",
       "listed": "東証プライム 6857",
       "summary": "半導体試験装置を製造。宇宙用電子部品の試験・評価分野に関与する。"
+    },
+    {
+      "id": "takaratomy",
+      "name": "タカラトミー",
+      "name_en": "Takara Tomy",
+      "categories": [
+        "exploration",
+        "component"
+      ],
+      "hq": "東京都葛飾区",
+      "url": "https://www.takaratomy.co.jp/products/sora-q/",
+      "summary": "玩具開発で培った小型・軽量の機構技術を応用し、JAXA等と変形型月面ロボット「SORA-Q」（LEV-2）を共同開発。2024年に月面での展開・撮影に成功した。",
+      "summary_en": "Applied its compact toy-mechanism engineering to co-develop the transformable lunar robot SORA-Q (LEV-2) with JAXA and partners; it deployed and captured images on the Moon in 2024."
+    },
+    {
+      "id": "sony",
+      "name": "ソニーグループ",
+      "name_en": "Sony Group",
+      "categories": [
+        "satellite",
+        "component"
+      ],
+      "hq": "東京都港区",
+      "url": "https://starsphere.sony.com/",
+      "summary": "宇宙感動体験事業「STAR SPHERE」で超小型衛星「EYE」を運用。イメージセンサ・カメラ技術を宇宙分野に展開する。",
+      "summary_en": "Runs the STAR SPHERE space experience business with its micro-satellite EYE, extending its image-sensor and camera technology into space."
+    },
+    {
+      "id": "shimizu",
+      "name": "清水建設",
+      "name_en": "Shimizu Corporation",
+      "categories": [
+        "ground",
+        "exploration"
+      ],
+      "hq": "東京都中央区",
+      "url": "https://www.shimz.co.jp/space/",
+      "summary": "「総合宇宙企業」を掲げ、宇宙輸送インフラ・衛星データ活用・月面開発に取り組む。1987年から宇宙開発を続ける。",
+      "summary_en": "Positions itself as an integrated space company across launch infrastructure, satellite-data use, and lunar development; active in space since 1987."
+    },
+    {
+      "id": "minebea",
+      "name": "ミネベアミツミ",
+      "name_en": "MinebeaMitsumi",
+      "categories": [
+        "component"
+      ],
+      "hq": "長野県北佐久郡",
+      "url": "https://www.minebeamitsumi.com/",
+      "summary": "人工衛星の駆動部やロケットの姿勢制御などに使われる高精度ベアリング・小型モーター・センサを供給する。",
+      "summary_en": "Supplies precision bearings, small motors, and sensors used in satellite drive units and rocket attitude control."
+    },
+    {
+      "id": "yokogawa",
+      "name": "横河電機",
+      "name_en": "Yokogawa Electric",
+      "categories": [
+        "component",
+        "service"
+      ],
+      "hq": "東京都武蔵野市",
+      "url": "https://www.yokogawa.co.jp/industries/space/",
+      "summary": "計測・制御技術を宇宙に展開。国際宇宙ステーション実験棟「きぼう」への機器設置や、有人与圧ローバー向け機器の研究開発を進める。",
+      "summary_en": "Extends its measurement and control technology into space, including equipment installed in the ISS Kibo module and R&D for a crewed pressurised rover."
+    },
+    {
+      "id": "kanadevia",
+      "name": "Kanadevia（旧・日立造船）",
+      "name_en": "Kanadevia",
+      "categories": [
+        "component"
+      ],
+      "hq": "大阪府大阪市",
+      "url": "https://www.kanadevia.com/",
+      "summary": "JAXAと全固体リチウムイオン電池を共同開発し、宇宙空間での充放電に成功した。2024年に日立造船から社名を変更。",
+      "summary_en": "Co-developed an all-solid-state lithium-ion battery with JAXA and demonstrated charge/discharge in orbit. Renamed from Hitachi Zosen in 2024."
     }
   ]
 }
