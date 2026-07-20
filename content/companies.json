@@ -673,6 +673,30 @@
       "url": "https://www.kanadevia.com/",
       "summary": "JAXAと全固体リチウムイオン電池を共同開発し、宇宙空間での充放電に成功した。2024年に日立造船から社名を変更。",
       "summary_en": "Co-developed an all-solid-state lithium-ion battery with JAXA and demonstrated charge/discharge in orbit. Renamed from Hitachi Zosen in 2024."
+    },
+    {
+      "id": "yukiseimitsu",
+      "name": "由紀精密",
+      "name_en": "Yuki Precision",
+      "categories": [
+        "component"
+      ],
+      "hq": "神奈川県茅ヶ崎市",
+      "url": "https://www.yukiseimitsu.co.jp/",
+      "summary": "精密切削加工の技術を宇宙分野に展開。超小型衛星の構造部品を製造し、JAXAの補給船「こうのとり」回収カプセルの推進系部品開発などにも携わる。宇宙ベンチャーからの依頼にも対応する。",
+      "summary_en": "Applies precision machining to space, manufacturing micro-satellite structural parts and contributing to propulsion components for JAXA's HTV recovery capsule. Works with space start-ups."
+    },
+    {
+      "id": "cosmotec",
+      "name": "コスモテック",
+      "name_en": "Cosmotec",
+      "categories": [
+        "ground"
+      ],
+      "hq": "東京都千代田区",
+      "url": "https://www.cosmotec-hp.jp/service/space/",
+      "summary": "1975年の設立以来、JAXA各宇宙センターの設備保全・運用、ロケット打上げ設備や高圧ガス設備の維持管理、エンジン燃焼試験の支援などで日本の宇宙開発を基盤から支える。",
+      "summary_en": "Since 1975, supports Japan's space program through facility maintenance at JAXA centres, launch and high-pressure gas equipment, and engine firing-test support."
     }
   ]
 }
