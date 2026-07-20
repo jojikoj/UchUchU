@@ -47,7 +47,7 @@ from uchuchu.collectors import fulltext         # noqa: E402
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ARTICLES = ROOT / "content" / "articles"
 STATE = ROOT / "data" / "daily_article_state.json"
-LOG_DIR = (pathlib.Path.home() / "claude_AIR/TOEcompany/コンテンツ部"
+LOG_DIR = (pathlib.Path.home() / "claude_AIR/TOEcompany/メディア事業部"
            / "案件/UchUchU/ログ")
 
 # 記事生成に使うモデル。1日1回だけの呼び出しなので、

@@ -11,7 +11,7 @@ export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 export USER="${USER:-$(id -un)}"
 export LOGNAME="$USER"
 
-LOG="$HOME/claude_AIR/TOEcompany/コンテンツ部/案件/UchUchU/ログ/daily_article_$(date +%F).log"
+LOG="$HOME/claude_AIR/TOEcompany/メディア事業部/案件/UchUchU/ログ/daily_article_$(date +%F).log"
 mkdir -p "$(dirname "$LOG")"
 exec >> "$LOG" 2>&1
 echo "════════ $(date '+%F %T') 記事生成 開始 ════════"

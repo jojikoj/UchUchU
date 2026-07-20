@@ -28,7 +28,7 @@ if ! claude -p --model haiku "OK" >/dev/null 2>&1; then
   echo "⚠️ claude CLI が使えない（未ログイン/PATH）。要約はスキップされる。"
 fi
 
-LOG_DIR="$HOME/claude_AIR/TOEcompany/コンテンツ部/案件/UchUchU/ログ"
+LOG_DIR="$HOME/claude_AIR/TOEcompany/メディア事業部/案件/UchUchU/ログ"
 mkdir -p "$LOG_DIR"
 LOG="$LOG_DIR/daily_$(date +%F).log"
 exec >> "$LOG" 2>&1

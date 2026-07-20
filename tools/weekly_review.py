@@ -25,7 +25,7 @@ import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ARTICLES = ROOT / "content" / "articles"
-OUT_DIR = (pathlib.Path.home() / "claude_AIR/TOEcompany/コンテンツ部"
+OUT_DIR = (pathlib.Path.home() / "claude_AIR/TOEcompany/メディア事業部"
            / "案件/UchUchU/週次レポート")
 
 # 特集記事の目標文字数。これを下回ると検索でもAI回答でも引用されにくい。

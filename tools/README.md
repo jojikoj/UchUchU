@@ -4,11 +4,11 @@
 
 **このメディア専用のGASは置かない。**
 
-問い合わせ受付は**コンテンツ部の共通GAS**を使う。
+問い合わせ受付は**メディア事業部の共通GAS**を使う。
 メディアごとに同じ仕組みを作ると、デプロイもURL管理も二重になるため。
 
-- 実体: `claude_AIR/TOEcompany/コンテンツ部/共通/gas/受付.gs`
-- 手順: `claude_AIR/TOEcompany/コンテンツ部/共通/gas/設置手順.md`
+- 実体: `claude_AIR/TOEcompany/メディア事業部/共通/gas/受付.gs`
+- 手順: `claude_AIR/TOEcompany/メディア事業部/共通/gas/設置手順.md`
 
 かつてここに `form_receiver.gs` を置いていたが、共通版に統合して削除した（2026-07-18）。
 

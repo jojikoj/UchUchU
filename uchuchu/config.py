@@ -54,9 +54,9 @@ GOOGLE_FORM_URL = ""
 # 静的サイトのままフォーム送信を受け取れる。
 # 初回送信時に CONTACT_EMAIL 宛へ有効化リンクが届き、一度クリックすれば以降は直接届く。
 # 空にすると mailto フォールバック（訪問者のメーラーが開く）に戻る。
-# コンテンツ部 共通GAS（全メディアの問い合わせを1つのデプロイで受ける）。
+# メディア事業部 共通GAS（全メディアの問い合わせを1つのデプロイで受ける）。
 # 第三者サービスを経由せず、自社のGoogleアカウント内で完結する。
-# 実体: claude_AIR/TOEcompany/コンテンツ部/共通/gas/受付.gs
+# 実体: claude_AIR/TOEcompany/メディア事業部/共通/gas/受付.gs
 FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxqiGT4qGvWQf7Ip3IQyVLLSf8cfpBdl6ehGaIKucg8H0aMmywALYG24J0s58LneeBx/exec"
 GOOGLE_FORM_HEIGHT = 1200
 COMPANY_NAME = "株式会社TOE"
