@@ -41,16 +41,14 @@
   {% endif %}
 
   {#
-    出典は必ず明示する。要約は引用の範囲にとどめ、本文は転載しない。
-    元記事へのリンクは残すが、サイト内の回遊導線を先に置く。
+    出典は必ず明示する。ただし外部リンクは目立たせない。
+    読者を外に出すのが目的ではないため、本文末尾に小さなテキストで添えるだけにする。
+    要約は引用の範囲にとどめ、本文は転載しない。
   #}
-  <div class="ndetail-source">
-    <span class="ndetail-source-label">{{ t('meta.source') }}</span>
-    <a href="{{ item.url }}" target="_blank" rel="noopener nofollow">{{ item.source }}｜{{ t('news.read_source') }} →</a>
-    {% if item.is_translated %}
-    <p class="ndetail-note">{{ t('meta.mt_note') }}</p>
-    {% endif %}
-  </div>
+  <p class="ndetail-source">
+    {{ t('meta.source') }}：<a href="{{ item.url }}" target="_blank" rel="noopener nofollow">{{ item.source }}</a>
+    {% if item.is_translated %}<span class="ndetail-note">／ {{ t('meta.mt_note') }}</span>{% endif %}
+  </p>
 
   {# ここからが本題。読者を外に出さず、自サイトの資産へ送る #}
   {% if related %}

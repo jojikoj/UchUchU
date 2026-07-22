@@ -1032,14 +1032,14 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
 .ndetail-media img { width: 100%; height: auto; display: block; }
 .ndetail-summary { font-size: 1.04rem; line-height: 1.95; color: #26314a; margin: 0 0 22px; }
 
+/* 出典は控えめに。囲みボックスではなく本文末尾の小さな1行テキストにする。
+   読者を外部に送るのが目的ではないため、目立たせない。 */
 .ndetail-source {
-  padding: 16px 20px; background: var(--surface-2); border: 1px solid var(--line);
-  border-radius: var(--r-md); margin-bottom: 34px;
+  margin: 4px 0 30px; font-size: .82rem; color: var(--text-3); line-height: 1.7;
 }
-.ndetail-source-label { font-size: .78rem; font-weight: 700; color: var(--text-3); margin-right: 10px; }
-.ndetail-source a { color: var(--accent); font-weight: 650; font-size: .93rem; }
-.ndetail-source a:hover { color: var(--accent-ink); text-decoration: underline; }
-.ndetail-note { margin: 10px 0 0; font-size: .8rem; color: var(--text-3); line-height: 1.7; }
+.ndetail-source a { color: var(--text-2); text-decoration: underline; }
+.ndetail-source a:hover { color: var(--accent); }
+.ndetail-note { color: var(--text-3); }
 
 .ndetail-related h2, .ndetail-cta h2 { font-size: 1.12rem; margin: 0 0 14px; letter-spacing: -.02em; }
 .ndetail-related { margin-bottom: 34px; }

@@ -211,8 +211,8 @@ STRINGS = {
 
     "meta.machine_translated": {"ja": "自動翻訳", "en": "Machine translated"},
     "meta.mt_note": {
-        "ja": "海外ソースの記事は、この場で自動翻訳して掲載しています（機械翻訳のため訳文が不正確な場合があります）。正確な内容は各記事の元記事をご確認ください。",
-        "en": "Articles from non-English sources are machine translated. Please refer to the original article for accuracy.",
+        "ja": "自動翻訳のため訳文が不正確な場合があります",
+        "en": "Machine translated; wording may be inaccurate",
     },
     "detail.related": {"ja": "関連するニュース", "en": "Related news"},
     "detail.back": {"ja": "ニュース一覧へ戻る", "en": "Back to news"},
