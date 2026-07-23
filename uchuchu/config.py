@@ -161,12 +161,12 @@ ARXIV_QUERY_URL = (
     "http://export.arxiv.org/api/query?"
     "search_query=cat:astro-ph.IM+OR+cat:astro-ph.EP+OR+cat:physics.space-ph"
     "+OR+cat:astro-ph.SR+OR+cat:astro-ph.GA+OR+cat:astro-ph.HE"
-    "&sortBy=submittedDate&sortOrder=descending&max_results=250"
+    "&sortBy=submittedDate&sortOrder=descending&max_results=350"
 )
 
 # 保持する最大件数（アーカイブ蓄積の上限）
 NEWS_LIMIT = 600
-PAPERS_LIMIT = 250
+PAPERS_LIMIT = 350
 LAUNCHES_LIMIT = 200
 
 # 一覧ページの1ページあたり表示件数

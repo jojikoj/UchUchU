@@ -26,12 +26,14 @@
   {% endif %}
 
   {#
-    本文要約があればそれを出す。RSSの短い抜粋しかない記事は
-    従来どおり抜粋を出す（無い方がマシということはないため）。
+    元記事の事実にもとづく独自解説（1000字以上）があればそれを段落ごとに出す。
+    RSSの短い抜粋しかない記事は従来どおり抜粋を出す。
   #}
-  {% if item.display_body %}
+  {% if item.display_body_paras %}
   <div class="ndetail-body">
-    <p>{{ item.display_body }}</p>
+    {% for para in item.display_body_paras %}
+    <p>{{ para }}</p>
+    {% endfor %}
     <p class="ndetail-more">{{ t('news.continue_at_source') }}</p>
   </div>
   {% elif item.display_summary %}

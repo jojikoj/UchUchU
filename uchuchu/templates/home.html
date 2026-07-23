@@ -154,7 +154,7 @@
 <section class="block block-tint">
   {{ sec_head('RESEARCH', t('home.research'), rel ~ 'papers/', t('home.view_all')) }}
   <div class="grid grid-papers">
-    {% for p in papers[:3] %}{{ paper_card(p, lang, t) }}{% endfor %}
+    {% for p in papers[:3] %}{{ paper_card(p, lang, t, rel) }}{% endfor %}
   </div>
 </section>
 {% endif %}

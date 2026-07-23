@@ -128,14 +128,29 @@ def _maybe_translate_news(items: list[dict]) -> None:
 
     # 訳文の後始末。機械翻訳は金額・単位で崩れやすく、
     # 「$ 7.1百万賞を受賞」のような見出しがそのまま公開されたことがある。
-    # 翻訳のたびに通しておけば、崩れたまま載ることはない。
+    # また argostranslate は「揺るぐるるるるるる」のような繰り返し崩壊を
+    # 起こす。崩れた訳はフラグを立てるだけでは公開されてしまうため、
+    # ここで破棄して英語原文に戻し、次回の再翻訳対象に残す。
+    purged = 0
     for it in english:
         for key in ("title_ja", "summary_ja"):
             if it.get(key):
                 it[key] = translate.fix_units(it[key])
+        title_ja = it.get("title_ja", "")
+        if title_ja and translate.looks_broken(title_ja):
+            # 見出しが壊れているなら訳ごと捨てる。英語原文で表示され、
+            # translated_ja を落とすことで次回もう一度訳しにいく。
+            it.pop("title_ja", None)
+            it.pop("summary_ja", None)
+            it["translated_ja"] = False
+            purged += 1
+        elif it.get("summary_ja") and translate.looks_broken(it["summary_ja"]):
+            # 見出しは無事だが要約だけ壊れている場合は要約だけ捨てる。
+            it.pop("summary_ja", None)
         it["title_ja_broken"] = bool(
             it.get("title_ja") and translate.looks_broken(it["title_ja"]))
-    print(f"  [translate] {filled}/{len(targets)} 件を新規翻訳")
+    print(f"  [translate] {filled}/{len(targets)} 件を新規翻訳"
+          + (f"（崩壊{purged}件を破棄し英語原文に戻した）" if purged else ""))
     _save_translation_cache(cache, english)
 
 
@@ -150,19 +165,31 @@ def _load_translation_cache() -> dict:
 
 
 def _save_translation_cache(cache: dict, items: list[dict]) -> None:
-    """翻訳結果をURLキーで保存する。次回以降の再翻訳を防ぐ。"""
+    """翻訳結果をURLキーで保存する。次回以降の再翻訳を防ぐ。
+
+    品質が悪い訳（タイムアウト失敗など）はキャッシュに入れない。
+    """
+    skipped = 0
     for it in items:
         url = it.get("url")
-        if url and it.get("title_ja"):
-            cache[url] = {"title_ja": it["title_ja"],
-                          "summary_ja": it.get("summary_ja", "")}
+        title_ja = it.get("title_ja", "")
+        summary_ja = it.get("summary_ja", "")
+
+        if url and title_ja:
+            # キャッシュに保存する前に品質チェック
+            # 壊れた訳は載せず、次回再翻訳する
+            if not (translate.looks_broken(title_ja) or translate.looks_broken(summary_ja)):
+                cache[url] = {"title_ja": title_ja, "summary_ja": summary_ja}
+            else:
+                skipped += 1
+
     # 上限（アーカイブ上限の2倍まで保持）
     if len(cache) > config.NEWS_LIMIT * 2:
         cache = dict(list(cache.items())[-config.NEWS_LIMIT * 2:])
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
     (config.DATA_DIR / "translations.json").write_text(
         json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"  [translate] キャッシュ保存: {len(cache)}件")
+    print(f"  [translate] キャッシュ保存: {len(cache)}件" + (f" (品質チェックで{skipped}件スキップ)" if skipped else ""))
 
 
 def collect_launches() -> dict:

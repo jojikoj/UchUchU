@@ -177,12 +177,16 @@ STRINGS = {
     "launches.status": {"ja": "ステータス", "en": "Status"},
     "launches.countdown": {"ja": "まで", "en": "to launch"},
 
-    "papers.title": {"ja": "研究動向 (arXiv)", "en": "Research Trends (arXiv)"},
+    "papers.title": {"ja": "研究動向", "en": "Research Trends"},
     "papers.subtitle": {"ja": "宇宙工学・惑星科学・宇宙物理の最新プレプリント。",
                         "en": "Latest preprints in space engineering and astrophysics."},
     "papers.authors": {"ja": "著者", "en": "Authors"},
     "papers.pdf": {"ja": "PDF", "en": "PDF"},
     "papers.abstract": {"ja": "概要", "en": "Abstract"},
+    "papers.read": {"ja": "詳細を見る", "en": "Read"},
+    "papers.view_on_arxiv": {"ja": "arXivで全文を読む", "en": "Read full text on arXiv"},
+    "papers.original_title": {"ja": "原題", "en": "Original title"},
+    "papers.back": {"ja": "研究動向へ戻る", "en": "Back to research trends"},
 
     "articles.title": {"ja": "特集記事", "en": "Feature Articles"},
     "articles.subtitle": {"ja": "宇宙開発をわかりやすく掘り下げる読み物。",

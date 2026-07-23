@@ -130,18 +130,41 @@ def translate_items_claude(items: list[dict]) -> int:
                 continue
             title = (got.get("title") or "").strip()
             summary = (got.get("summary") or "").strip()
-            if title:
+            if title and not looks_broken(title):
                 # 元要約が字数で切り詰められている場合、訳文も途中で終わるため
                 # 省略記号を補って「続きがある」ことを示す。
                 if summary and it.get("summary", "").rstrip().endswith("…") \
                         and not summary.endswith(("…", "。", "！", "？")):
                     summary = summary.rstrip("、,.") + "…"
-                it["title_ja"] = title
-                it["summary_ja"] = summary or it.get("summary_ja") or ""
-                it["translated_ja"] = True
-                filled += 1
+                # 訳文の品質チェック：壊れたテキストなら保存しない
+                if not looks_broken(summary):
+                    it["title_ja"] = title
+                    it["summary_ja"] = summary or it.get("summary_ja") or ""
+                    it["translated_ja"] = True
+                    filled += 1
+                else:
+                    print(f"    [claude] ⚠️  {n}: 訳文が破損（品質検査で却下）", file=sys.stderr)
         print(f"    [claude] {min(i + CLAUDE_BATCH, len(items))}/{len(items)} 翻訳済み")
     return filled
+
+
+def looks_broken(text: str) -> bool:
+    """日本語として異常な特徴を検出。破損した翻訳の保存を防ぐ。"""
+    if not text:
+        return False
+    # パターン1: 同じ音の繰り返し（「るるるる」など）
+    if re.search(r'([あ-ん])\1{3,}', text):
+        return True
+    # パターン2: 不自然な長音の繰り返し
+    if re.search(r'[゛゜゛゜]{3,}', text):
+        return True
+    # パターン3: 句読点だけ
+    if re.match(r'^[。、！？\s]+$', text):
+        return True
+    # パターン4: 明らかに翻訳失敗のシグナル語
+    if any(sig in text for sig in ['地球が太陽', 'うるるる', 'ッッッ']):
+        return True
+    return False
 
 
 # =====================================================================
@@ -299,6 +322,21 @@ _BROKEN_PATTERNS = [
     r"[A-Za-z]{4,}\s+[A-Za-z]{4,}\s+[A-Za-z]{4,}",  # 英単語が3語以上連続
 ]
 
+# 機械翻訳（特に argostranslate）は、同じ語を延々と繰り返す「崩壊」を
+# 起こすことがある。「揺るぐるるるるるる」「衛星衛星衛星…」のような出力で、
+# 上の英字・金額チェックでは捕まらない。日本語の崩壊を別に検出する。
+_JA_DEGEN = [
+    re.compile(r"(.)\1{4,}"),        # 同一文字が5回以上連続（るるるるる）
+    re.compile(r"(.{2,4}?)\1{2,}"),  # 2〜4字の並びが3回以上連続（衛星衛星衛星）
+]
+
+
+def looks_degenerate_ja(text: str) -> bool:
+    """日本語訳が繰り返し崩壊を起こしていれば True。"""
+    if not text:
+        return False
+    return any(p.search(text) for p in _JA_DEGEN)
+
 
 def looks_broken(text: str) -> bool:
     """訳文が壊れていそうなら True。
@@ -307,6 +345,8 @@ def looks_broken(text: str) -> bool:
     弾きすぎると訳文が減って読めなくなるため、条件は絞っている。
     """
     if not text:
+        return True
+    if looks_degenerate_ja(text):
         return True
     for pat in _BROKEN_PATTERNS:
         if re.search(pat, text):

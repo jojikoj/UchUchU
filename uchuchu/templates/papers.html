@@ -14,7 +14,7 @@
   <div class="wrap">
     {% if papers %}
     <div class="grid grid-papers">
-      {% for p in papers %}{{ paper_card(p, lang, t) }}{% endfor %}
+      {% for p in papers %}{{ paper_card(p, lang, t, rel) }}{% endfor %}
     </div>
     {{ pager(pagination, t) }}
     {% else %}

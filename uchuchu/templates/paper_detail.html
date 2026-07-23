@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}{{ item.title }}{% endblock %}
+{% block og_title %}{{ item.title }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<article class="ndetail">
+
+  <div class="ndetail-head">
+    <div class="ndetail-meta">
+      {% for c in item.categories or [] %}<span class="pill-tag src">{{ c }}</span>{% endfor %}
+      {% if item.published_short %}<time datetime="{{ item.published }}">{{ item.published_short }}</time>{% endif %}
+    </div>
+    <h1>{{ item.title }}</h1>
+    {% if item.authors %}
+    <p class="paper-authors">{{ item.authors|join(', ') }}{% if item.authors|length >= 8 %} et al.{% endif %}</p>
+    {% endif %}
+  </div>
+
+  {#
+    論文の概要（arXivの英語アブストラクト）を引用の範囲で掲載する。
+    本文は転載せず、全文は出典（arXiv）で読んでもらう。
+  #}
+  {% if item.summary %}
+  <div class="ndetail-body">
+    <h2 class="paper-abstract-label">{{ t('papers.abstract') }}</h2>
+    <p>{{ item.summary }}</p>
+  </div>
+  {% endif %}
+
+  <p class="ndetail-source">
+    {{ t('meta.source') }}：<a href="{{ item.url }}" target="_blank" rel="noopener nofollow">arXiv</a>
+    {% if item.pdf %}／ <a href="{{ item.pdf }}" target="_blank" rel="noopener nofollow">{{ t('papers.pdf') }}</a>{% endif %}
+  </p>
+
+  {% if related %}
+  <section class="ndetail-related">
+    <h2>{{ t('detail.related') }}</h2>
+    <div class="rel-list">
+      {% for r in related %}
+      <a class="rel-item" href="{{ rel }}{{ r.slug }}/">
+        <span class="rel-body">
+          <span class="rel-title">{{ r.title }}</span>
+          <span class="rel-meta">{% for c in r.categories[:1] %}{{ c }}{% endfor %}{% if r.published_short %} · {{ r.published_short }}{% endif %}</span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="ndetail-cta">
+    <div class="ndetail-cta-inner">
+      <h2>{{ t('detail.cta_title') }}</h2>
+      <p>{{ t('detail.cta_body') }}</p>
+      <div class="ndetail-cta-actions">
+        <a class="btn btn-primary" href="{{ rel }}../companies/">{{ t('home.cta_db') }}</a>
+        <a class="btn btn-ghost" href="{{ rel }}../articles/">{{ t('home.cta_guide') }}</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ndetail-back">
+    <a href="{{ rel }}../papers/">← {{ t('papers.back') }}</a>
+  </div>
+
+</article>
+{% endblock %}

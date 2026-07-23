@@ -168,8 +168,11 @@ def prepare_news(raw: list[dict], lang: str) -> list[dict]:
         it["slug"] = news_slug(it)
         it["display_title"] = it.get(f"title_{lang}") or it.get("title") or ""
         it["display_summary"] = it.get(f"summary_{lang}") or it.get("summary") or ""
-        # 表示する要約は引用の範囲にとどめる。続きは元記事で読んでもらう。
-        it["display_body"] = shorten_summary(it.get("body_ja") or "")
+        # 本文は元記事の事実にもとづく独自解説（body_ja, 1000字以上）。
+        # 切り詰めず全文を段落ごとに表示する。段落は空行区切りで分ける。
+        body_ja = (it.get("body_ja") or "").strip()
+        it["display_body"] = body_ja
+        it["display_body_paras"] = _paragraphs(body_ja)
         # 画像のない記事にはトピックに応じたイメージ写真をあてる。
         # グレーの空欄が並ぶと一覧の見栄えが崩れ、記事も読まれにくくなるため。
         if not it.get("image"):
@@ -193,11 +196,25 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
     return out
 
 
+def paper_slug(item: dict) -> str:
+    """論文1件の安定したURLスラッグ。arXiv ID を使う。"""
+    url = item.get("url") or item.get("pdf") or ""
+    m = re.search(r"(\d{4}\.\d{4,5}(?:v\d+)?)", url)
+    if m:
+        return "arxiv-" + m.group(1).replace(".", "-")
+    import hashlib
+    return "paper-" + hashlib.sha1(url.encode("utf-8")).hexdigest()[:10]
+
+
 def prepare_papers(raw: list[dict], lang: str) -> list[dict]:
     out = []
     for it in raw:
         it = dict(it)
         it["published_display"] = fmt_date(it.get("published"), lang)
+        it["published_short"] = fmt_date_short(it.get("published"), lang)
+        it["slug"] = paper_slug(it)
+        # 一覧・詳細で外部へ直接飛ばさず、自サイトの詳細ページへ誘導する
+        it["detail_href"] = it["slug"]
         out.append(it)
     return out
 
@@ -269,6 +286,33 @@ def load_faq(lang: str) -> tuple[dict, list[dict]]:
 # 1,000字前後の文章が並び、要約ではなく転載に近い状態になっていた。
 # 引用は必要最小限にとどめ、続きは元記事で読んでもらう。
 NEWS_SUMMARY_MAX = 300
+
+
+def _paragraphs(text: str) -> list[str]:
+    """本文を段落のリストにする。
+
+    空行（\\n\\n）区切りがあればそれを尊重する。
+    区切りが無い一塊の本文（旧データはこの形）は、句点で文に割り、
+    3文ごとにまとめて読みやすい段落にする。
+    """
+    text = (text or "").strip()
+    if not text:
+        return []
+    blocks = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+    if len(blocks) > 1:
+        return blocks
+    # 一塊の本文を句点で文に分け、3文ずつまとめる
+    sentences = [s for s in re.split(r"(?<=。)", text) if s.strip()]
+    if len(sentences) <= 3:
+        return [text]
+    paras, buf = [], ""
+    for i, s in enumerate(sentences, 1):
+        buf += s
+        if i % 3 == 0:
+            paras.append(buf.strip()); buf = ""
+    if buf.strip():
+        paras.append(buf.strip())
+    return paras
 
 
 def shorten_summary(text: str, limit: int = NEWS_SUMMARY_MAX) -> str:
@@ -561,7 +605,7 @@ class Builder:
                    company_cats=companies.categories(lang),
                    featured_companies=all_comp[:14],
                    guides=[a for a in articles
-                           if a.get("tag") in ("参入ガイド", "Entry Guide")][:3])
+                           if a.get("tag") in ("参入ガイド", "Entry Guide")][:6])
         ctx["jsonld"] = seo.build_jsonld(
             self.base_url, lang, "home",
             trail=[(home_label, self._url_for(lang, ""))])
@@ -749,6 +793,41 @@ class Builder:
             self._write(lang, path.rstrip("/"),
                         self.env.get_template("news_detail.html").render(**ctx))
         total_pages_built += len(news)
+
+        # 論文詳細ページ（p/<slug>/）
+        # 一覧から arXiv へ直接飛ばさず、自サイトの詳細ページを経由させる。
+        # 概要は引用の範囲にとどめ、全文は出典（arXiv）で読んでもらう。
+        by_cat: dict[str, list[dict]] = {}
+        for p in papers:
+            for c in p.get("categories", []):
+                by_cat.setdefault(c, []).append(p)
+        for p in papers:
+            rel_items: list[dict] = []
+            seen = {p["slug"]}
+            for c in p.get("categories", []):
+                for cand in by_cat.get(c, []):
+                    if cand["slug"] in seen:
+                        continue
+                    seen.add(cand["slug"])
+                    rel_items.append(cand)
+                    if len(rel_items) >= 6:
+                        break
+                if len(rel_items) >= 6:
+                    break
+            path = f"p/{p['slug']}/"
+            ctx = self._ctx(lang, depth=2, active="papers", path=path,
+                            page_description=(p.get("summary") or "")[:150])
+            ctx["item"] = p
+            ctx["related"] = rel_items
+            ctx["jsonld"] = seo.build_jsonld(
+                self.base_url, lang, "papers",
+                trail=[(home_label, self._url_for(lang, "")),
+                       (_t("nav.papers", lang), self._url_for(lang, "papers/")),
+                       (p["title"][:60], self._url_for(lang, path))],
+                papers=[p])
+            self._write(lang, path.rstrip("/"),
+                        self.env.get_template("paper_detail.html").render(**ctx))
+        total_pages_built += len(papers)
 
         # 企業DBページ（このサイト唯一の独自資産。集約でないためSEO評価が付く）
         comp_cats = companies.categories(lang)
