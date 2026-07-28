@@ -43,9 +43,11 @@ step() {   # step <名前> <コマンド...>
 step "収集" python3 -m uchuchu.collectors.collect_all
 
 # 2. 本文取得と日本語要約
-#    1回あたりの件数を絞る。全件を一度に回すと数時間かかるため、
-#    毎日少しずつ消化して未処理を減らす設計にしている。
-step "本文要約" python3 -m uchuchu.collectors.fulltext --limit=40
+#    1回あたりの件数を絞る。本文取得はネットワーク律速で1件あたり最大2分ほど
+#    かかるため、多く回すと runner のタイムアウト（既定900秒）を超えて途中で
+#    殺され、収集も公開も巻き添えで止まる。確実に完走する件数に抑える。
+#    残りは翌日に持ち越して少しずつ消化する（jobs.yaml でtimeoutも延長済み）。
+step "本文要約" python3 -m uchuchu.collectors.fulltext --limit=20
 
 # 3. 内部リンク検査 → ビルド → 公開 → IndexNow
 step "公開" ./tools/deploy.sh

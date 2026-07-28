@@ -67,11 +67,37 @@ MIN_CHARS = 2000
 
 # --- 候補の選定 ---------------------------------------------------------
 
+# --- 旬ブースト（無料・課金ゼロ・1日1回だけ取得） -----------------------
+_TREND_CACHE: list | None = None
+
+
+def _trend_terms() -> list[str]:
+    """今日のGoogleトレンド(JP)から語を取得。失敗しても記事生成は止めない。"""
+    global _TREND_CACHE
+    if _TREND_CACHE is not None:
+        return _TREND_CACHE
+    terms: list[str] = []
+    try:
+        import sys, pathlib
+        sys.path.insert(0, str(pathlib.Path.home()
+                               / "claude_AIR/TOEcompany/メディア事業部/共通/旬ネタ"))
+        from trend_signals import daily_trends  # noqa
+        for phrase in daily_trends("JP"):
+            terms += [w for w in phrase.split() if len(w) >= 2]
+    except Exception:
+        terms = []
+    _TREND_CACHE = terms
+    return terms
+
+
 def score(item: dict) -> int:
     text = " ".join(str(item.get(k) or "") for k in
                     ("title_ja", "title", "summary_ja", "body_ja"))
     s = sum(2 for w in STRONG if w in text)
     s += sum(1 for w in WEAK if w in text)
+    # 旬ブースト: 今日世の中が検索している語に、この宇宙ニュースが触れていれば加点
+    if any(t in text for t in _trend_terms()):
+        s += 3
     return s
 
 
