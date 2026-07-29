@@ -175,6 +175,8 @@ _PROMPT = """あなたは、日本の製造業に向けた宇宙産業メディ�
 1行目にタイトルのみを書き、2行目以降に本文を書いてください。
 タイトルは問いの形か、「A — B」の形にする。40字以内。
 front matter（---で囲む部分）は書かないでください。
+**前置きを書かないこと。** 「承知しました」「全要件クリアしました」のような
+要件の確認・自己申告・挨拶は一切不要です。1行目は必ず記事タイトルにしてください。
 
 ---
 
@@ -238,6 +240,58 @@ def allowed_numbers(source: str) -> str:
     return "、".join(uniq[:25])
 
 
+# モデルは時々、本文の前に「全要件クリア（見出し6・表1…）」のような
+# 自己申告や挨拶を1行返す。1行目を無条件にタイトルとして使うと、それが
+# そのまま公開される（2026-07-29に実際に発生）。ここで機械的に弾く。
+_META_TITLE = re.compile(
+    r"全要件|要件を?(クリア|満た|確認)|承知|了解|以下[のにが]|作成しました|"
+    r"書きました|字程度|本文約|文字数|見出し\d|箇条書き\d|内部リンク\d|"
+    r"指定リスト|ご確認|^(タイトル|本文|記事)$")
+
+
+def _clean_title(line: str) -> str:
+    """1行をタイトル候補に整える（見出し記号・ラベル・装飾を落とす）。"""
+    t = line.strip().lstrip("#").strip()
+    t = re.sub(r"^(タイトル|title)\s*[:：]\s*", "", t, flags=re.I)
+    return t.strip(" 　*「」『』\"'")
+
+
+def bad_title(t: str) -> str:
+    """タイトルとして使えない理由を返す（問題なければ空文字）。"""
+    if not t or set(t) <= set("-—–=＝*_ 　"):
+        return "空か区切り線"
+    if len(t) < 8:
+        return "短すぎる"
+    if len(t) > 60:
+        return "長すぎる"
+    if _META_TITLE.search(t):
+        return "指示への返答文が混ざっている"
+    if t.count("・") >= 3:
+        return "要件の列挙になっている"
+    return ""
+
+
+def split_output(out: str) -> tuple[str, str] | None:
+    """モデル出力をタイトルと本文に分ける。
+
+    先頭の前置き・区切り線は読み飛ばし、最初に「タイトルとして通る行」を
+    採用する。採用した行より前は本文からも捨てる（記事の頭に見出しが
+    二重に出るのを防ぐため）。
+    """
+    lines = out.split("\n")
+    for i, line in enumerate(lines):
+        cand = _clean_title(line)
+        if not cand or bad_title(cand):
+            continue
+        rest = "\n".join(lines[i + 1:]).strip()
+        # front matter と紛らわしいので、本文頭の区切り線は落とす
+        rest = re.sub(r"\A(?:[-—–=＝*_]{3,}[ 　]*\n)+", "", rest).strip()
+        if len(rest) < 500:     # 本文が残らないなら候補を取り違えている
+            continue
+        return cand, rest
+    return None
+
+
 def generate(item: dict, body: str, retry_note: str = "") -> tuple[str, str] | None:
     prompt = retry_note + _PROMPT.format(
         title=item.get("title_ja") or item.get("title", ""),
@@ -259,8 +313,10 @@ def generate(item: dict, body: str, retry_note: str = "") -> tuple[str, str] | N
         print(f"  生成が空: rc={p.returncode} out={len(out)}字 "
               f"err={(p.stderr or '')[:200]}")
         return None
-    title, rest = out.split("\n", 1)
-    return title.strip().lstrip("#").strip(), rest.strip()
+    gen = split_output(out)
+    if not gen:
+        print(f"  タイトルを取り出せない: 先頭={out[:80]!r}")
+    return gen
 
 
 # --- 検査 ---------------------------------------------------------------
@@ -404,6 +460,10 @@ def main() -> int:
         gen = generate(item, body, note)
         if not gen:
             log(f"  生成に失敗（{attempt}回目）")
+            # 前置きが原因のことが多いので、書き直しでは明示的に禁じる
+            note = ("前回の出力は1行目がタイトルになっていませんでした。\n"
+                    "前置き（要件の確認・挨拶・自己申告）を書かず、"
+                    "1行目に記事タイトルだけを書いてください。\n\n")
             continue
         title, article = gen
 
@@ -433,7 +493,9 @@ def main() -> int:
 
     slug = "news-" + datetime.date.today().isoformat()
     path = ARTICLES / f"{slug}.ja.md"
-    excerpt = re.sub(r"[*#\n]", "", article)[:100].strip() + "…"
+    # 区切り線や記号が残ると一覧の抜粋が読めなくなる（2026-07-29に発生）
+    plain = re.sub(r"^[ 　]*[-—–=＝*_]{3,}[ 　]*$", "", article, flags=re.M)
+    excerpt = re.sub(r"[*#>`\n]", "", plain).strip()[:100] + "…"
     fm = (f"---\ntitle: {title}\nexcerpt: {excerpt}\n"
           f"tag: ニュース解説\nhero: cover-analysis.jpg\n"
           f"author: UchUchU 編集部\ndate: {datetime.date.today()}\norder: 100\n---\n\n")
