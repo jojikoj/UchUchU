@@ -209,12 +209,18 @@ def fetch_launches() -> list[dict]:
             "id": l.get("id"),
             "name": l.get("name", ""),
             "net": l.get("net"),  # ISO打ち上げ予定時刻(UTC)
+            # 打ち上げウィンドウの終了時刻。構造化データの endDate に使う。
+            "window_end": l.get("window_end"),
             "status": (l.get("status") or {}).get("abbrev") or (l.get("status") or {}).get("name"),
             "status_name": (l.get("status") or {}).get("name"),
             "provider": provider.get("name"),
             "provider_country": provider.get("country_code"),
+            # 運営者の公式サイト。無ければ Wikipedia（どちらも API 提供の実データ）
+            "provider_url": provider.get("info_url") or provider.get("wiki_url"),
             "rocket": rocket.get("full_name") or rocket.get("name"),
             "pad": pad.get("name"),
+            "pad_lat": pad.get("latitude"),
+            "pad_lon": pad.get("longitude"),
             "location": location.get("name"),
             "country": location.get("country_code"),
             "mission": mission.get("name"),

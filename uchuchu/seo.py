@@ -78,8 +78,43 @@ def _item_list(name: str, items: list[dict], url_key="url", name_key="title") ->
     }
 
 
+def _launch_place(l: dict) -> dict | None:
+    """射場を Place にする。address は API の実データだけで組む（推測しない）。
+
+    location は "Wenchang Space Launch Site, People's Republic of China" の形で
+    「施設名, 国名」になっている。カンマ以降を国名として addressCountry に使う。
+    国コード(country)は ISO 3166-1 alpha-3 で来るため addressCountry には使わない
+    （Google の推奨は alpha-2。変換して誤る位なら API 表記の国名をそのまま使う）。
+    """
+    loc = l.get("location")
+    if not loc:
+        return None
+    place = {"@type": "Place", "name": loc}
+    parts = [p.strip() for p in loc.split(",") if p.strip()]
+    address = {"@type": "PostalAddress"}
+    if len(parts) >= 2:
+        address["addressLocality"] = ", ".join(parts[:-1])
+        address["addressCountry"] = parts[-1]
+    else:
+        address["addressLocality"] = parts[0]
+    if l.get("pad"):
+        address["streetAddress"] = l["pad"]
+    place["address"] = address
+    if l.get("pad_lat") and l.get("pad_lon"):
+        place["geo"] = {
+            "@type": "GeoCoordinates",
+            "latitude": l["pad_lat"],
+            "longitude": l["pad_lon"],
+        }
+    return place
+
+
 def _launch_events(base: str, launches: list[dict]) -> list[dict]:
-    """打ち上げ予定は Event として表現できる（実体のあるイベントのため）。"""
+    """打ち上げ予定は Event として表現できる（実体のあるイベントのため）。
+
+    値はすべて Launch Library 2 の実データに由来する。データが無い項目は
+    埋めずに省略する（endDate や offers を推測で作らない）。
+    """
     events = []
     for l in launches[:20]:
         if not l.get("net") or not l.get("name"):
@@ -89,12 +124,37 @@ def _launch_events(base: str, launches: list[dict]) -> list[dict]:
             "name": l["name"],
             "startDate": l["net"],
             "eventStatus": "https://schema.org/EventScheduled",
-            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            # 配信がある打ち上げは現地＋オンラインの両方で見られる。
+            "eventAttendanceMode": (
+                "https://schema.org/MixedEventAttendanceMode" if l.get("webcast")
+                else "https://schema.org/OfflineEventAttendanceMode"
+            ),
         }
-        if l.get("location"):
-            ev["location"] = {"@type": "Place", "name": l["location"]}
+        # 打ち上げウィンドウの終了時刻（API にある場合のみ）
+        if l.get("window_end"):
+            ev["endDate"] = l["window_end"]
+        place = _launch_place(l)
+        if place:
+            ev["location"] = place
         if l.get("provider"):
-            ev["organizer"] = {"@type": "Organization", "name": l["provider"]}
+            org = {"@type": "Organization", "name": l["provider"]}
+            if l.get("provider_url"):
+                org["url"] = l["provider_url"]
+            ev["organizer"] = org
+            # 打ち上げを実行するのは運営会社そのもの。
+            ev["performer"] = dict(org)
+        if l.get("webcast"):
+            # チケット販売はない。実在するのは「無料のライブ配信」だけなので
+            # それを offer として書く。有料の観覧券があるかのように書かない。
+            ev["offers"] = {
+                "@type": "Offer",
+                "url": l["webcast"],
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "category": "free",
+                "validFrom": l["net"],
+            }
         if l.get("image"):
             ev["image"] = l["image"]
         if l.get("mission_description"):
