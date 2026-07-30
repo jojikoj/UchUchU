@@ -942,6 +942,17 @@ class Builder:
         (config.DIST_DIR / indexnow.key_filename()).write_text(
             indexnow.KEY, encoding="utf-8")
 
+        # Bing Webmaster Tools の所有者確認ファイル（2026-07-30 追加）。
+        # Copilot / ChatGPT検索 は Bing のインデックスを使うため、Bing側の
+        # 表示回数・クロール状況を計測できるようにしておく。
+        # 確認後もこのファイルを消すと所有者確認が外れるので、ビルド出力に含め続ける。
+        (config.DIST_DIR / "BingSiteAuth.xml").write_text(
+            '<?xml version="1.0"?>\n<users>\n  <user>'
+            "718C5ECC89904D3E06AE85EA7FBA31D6"
+            "</user>\n</users>\n",
+            encoding="utf-8",
+        )
+
         # llms.txt（AI検索にサイト構造を伝える）
         articles_en = load_articles("en")
         (config.DIST_DIR / "llms.txt").write_text(
