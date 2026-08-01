@@ -39,6 +39,37 @@ step() {   # step <名前> <コマンド...>
   if "${@:2}"; then echo "   ✅ $1"; else echo "   ⚠️ $1 で失敗（続行）"; fi
 }
 
+# 0. コードの取り込み
+#
+#    ⚠️ 2026-08-01 に AIの鬼で起きた事故と同型の穴がこちらにもあった。
+#    このスクリプトは git を触っておらず、実行機（Mac mini）は自分の
+#    チェックアウトのまま毎日ビルドする。別マシンで直してpushしたコードが
+#    永久に本番へ出ない。AIの鬼では7/30のSEO改修が2日間反映されず、
+#    /papers/N が8位前後・CTR 0% のまま表示を吸い続けていた。
+#    ビルドも公開も「成功」するので watchdog も朝の運用チェックも気づけない。
+#
+#    運用ブランチは main ではなく gh-pages-tmp なので、現在のブランチに対して pull する。
+#    衝突しても日次自体は止めない。ローカルの状態で続行してログに残す。
+sync_code() {
+  git remote get-url origin >/dev/null 2>&1 || return 0
+  local br
+  br=$(git rev-parse --abbrev-ref HEAD)
+  git fetch origin "$br" --quiet 2>/dev/null || { echo "   ⚠️ fetch失敗（ローカルのまま続行）"; return 1; }
+  local behind
+  behind=$(git rev-list --count "HEAD..origin/$br" 2>/dev/null || echo 0)
+  [ "$behind" = "0" ] && { echo "   最新（取り込むものなし）"; return 0; }
+  echo "   origin/$br に未取込 ${behind} 件 → 取り込む"
+  if git -c user.name=daily -c user.email=noreply@anthropic.com \
+       pull --rebase --autostash --quiet origin "$br" 2>/dev/null; then
+    echo "   取り込み完了: $(git log --oneline -1)"
+  else
+    git rebase --abort 2>/dev/null || true
+    echo "   ⚠️ 取り込みが衝突。ローカルの状態で続行（要手動解消）"
+    return 1
+  fi
+}
+step "コード同期" sync_code
+
 # 1. 収集（RSS/API。無料ソースのみ）
 step "収集" python3 -m uchuchu.collectors.collect_all
 
