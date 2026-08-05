@@ -27,7 +27,10 @@
            onerror="this.closest('.hero-media').classList.add('no-img')">{% endif %}
     </a>
     <div class="hero-body">
-      <h2 class="hero-title"><a href="{{ rel }}a/{{ f.slug }}/">{{ ftitle }}</a></h2>
+      {# トップに h1 が1つも無い状態が続いていた（2026-08-05 実測）。
+         ヒーローがトップの主役なので、ここを h1 にする。見た目は
+         .hero-title のクラス指定で決まるため、タグを変えても変化しない。 #}
+      <h1 class="hero-title"><a href="{{ rel }}a/{{ f.slug }}/">{{ ftitle }}</a></h1>
       <div class="hero-meta">
         {% for tp in f.topic_labels or [] %}<span class="pill-tag">#{{ tp }}</span>{% endfor %}
         <span class="pill-tag src">{{ f.source }}</span>

@@ -819,12 +819,14 @@ class Builder:
                             page_description=(p.get("summary") or "")[:150])
             ctx["item"] = p
             ctx["related"] = rel_items
+            # 一覧と同じ "papers"（ItemList）を個別ページにも出していたため、
+            # ページ単体では記事型の構造化データが1つも無かった（2026-08-05 修正）。
             ctx["jsonld"] = seo.build_jsonld(
-                self.base_url, lang, "papers",
+                self.base_url, lang, "paper",
                 trail=[(home_label, self._url_for(lang, "")),
                        (_t("nav.papers", lang), self._url_for(lang, "papers/")),
                        (p["title"][:60], self._url_for(lang, path))],
-                papers=[p])
+                paper=p, page_url=self._url_for(lang, path))
             self._write(lang, path.rstrip("/"),
                         self.env.get_template("paper_detail.html").render(**ctx))
         total_pages_built += len(papers)

@@ -201,6 +201,48 @@ def _article(base: str, a: dict, url: str, lang: str) -> dict:
     return node
 
 
+def _scholarly_article(base: str, p: dict, url: str, lang: str) -> dict:
+    """論文の紹介ページ（/p/<slug>/）。
+
+    2026-08-05 の点検で、論文個別ページに記事型の構造化データが1つも
+    無いことが分かった。一覧用の ItemList をそのまま個別ページにも出して
+    いたためで、ページ単体では「これが何のページなのか」を機械に伝えて
+    いなかった（サイトマップ934件のうち論文が大半を占める）。
+
+    中身は arXiv の原論文なので Article ではなく ScholarlyArticle にし、
+    著者と原典を明示する。要旨は原文なので isAccessibleForFree は付けず、
+    翻訳・要約した紹介であることが分かる形にとどめる。
+    """
+    node = {
+        "@type": "ScholarlyArticle",
+        "headline": (p.get("title") or "").strip(),
+        "description": (p.get("summary") or "")[:300],
+        "inLanguage": "ja-JP" if lang == "ja" else "en",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "url": url,
+        "publisher": {"@id": f"{base}/#organization"},
+    }
+    authors = p.get("authors") or []
+    if isinstance(authors, str):
+        authors = [authors]
+    if authors:
+        node["author"] = [{"@type": "Person", "name": a} for a in authors[:12]]
+    if p.get("published"):
+        node["datePublished"] = p["published"]
+    # 原典。ここを出しておかないと、紹介ページが原論文の複製に見える
+    if p.get("url"):
+        node["sameAs"] = p["url"]
+        node["isBasedOn"] = p["url"]
+    cats = p.get("categories") or []
+    if cats:
+        node["articleSection"] = ", ".join(cats[:3])
+    node["about"] = {
+        "@type": "Thing",
+        "name": "宇宙開発の研究動向" if lang == "ja" else "Space research",
+    }
+    return node
+
+
 def _faq_page(faqs: list[dict]) -> dict:
     """FAQPage 構造化データ。
 
@@ -249,7 +291,7 @@ TOPIC_ENTITIES = [
 
 
 def build_jsonld(base: str, lang: str, page: str, *, trail=None,
-                 news=None, launches=None, papers=None,
+                 news=None, launches=None, papers=None, paper=None,
                  articles=None, article=None, page_url="", faqs=None) -> str:
     """ページ種別に応じた JSON-LD を1つの @graph にまとめて返す。"""
     website = _website(base, lang)
@@ -271,6 +313,8 @@ def build_jsonld(base: str, lang: str, page: str, *, trail=None,
         graph.append(_item_list(label["news"], news))
     elif page == "launches" and launches:
         graph.extend(_launch_events(base, launches))
+    elif page == "paper" and paper:
+        graph.append(_scholarly_article(base, paper, page_url, lang))
     elif page == "papers" and papers:
         graph.append(_item_list(label["papers"], papers))
     elif page == "articles" and articles:
