@@ -372,11 +372,22 @@ def check_numbers(article: str, source: str) -> list[str]:
     return sorted(set(bad))
 
 
+# Markdown の表の区切り行。
+#
+# 2026-08-05 まで `"|---|" not in body and "| --- |" not in body` で見ていたが、
+# これは詰めて書いた形しか拾えない。`|------|------|`（ダッシュ長め）、
+# `|:---|`（左寄せ）、`|---:|`（右寄せ）はどれも正しい表なのに「表がない」と
+# 判定していた。8/5 は表を含む記事を3回書かせて3回とも捨て、その日の記事が
+# ゼロになった（生成は成功しているのに検査だけが落ちる型の故障）。
+_TABLE_SEP = re.compile(
+    r"^[ \t]*\|?[ \t]*:?-{3,}:?[ \t]*(\|[ \t]*:?-{3,}:?[ \t]*)+\|?[ \t]*$", re.M)
+
+
 def check_aeo(body: str) -> list[str]:
     lead = re.sub(r"\s", "", re.split(r"\n## ", body)[0])[:300]
     chars = len(re.sub(r"\s", "", re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", body)))
     lack = []
-    if "|---|" not in body and "| --- |" not in body:
+    if not _TABLE_SEP.search(body):
         lack.append("表がない")
     if body.count("\n- ") < 3:
         lack.append("箇条書きが少ない")
