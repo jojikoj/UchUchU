@@ -37,6 +37,41 @@ def _load_json(name: str) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _display_width(s: str) -> float:
+    """全角を1、半角を0.5として数えた表示幅。"""
+    return sum(0.5 if (" " <= c <= "ÿ" or "｡" <= c <= "ﾟ") else 1
+               for c in s)
+
+
+def head_title(title: str, limit: float = 46) -> str:
+    """<title> 用に題を丸める。h1 と OGP には使わない。
+
+    論文ページ（/p/）は arXiv の英語原題をそのまま <title> に入れていて、
+    2026-08-05 の実測では半角90〜130字（全角換算45〜65字）あった。
+    検索結果はこの長さを表示しないので、後ろに付くサイト名まで含めて
+    まるごと切られていた。h1 には原題を全文残す（正式名称なので省略しない）。
+
+    英語は単語の途中で切ると読めなくなるため、空白で区切れる位置を優先する。
+    """
+    title = re.sub(r"\s+", " ", (title or "")).strip()
+    if _display_width(title) <= limit:
+        return title
+    out = []
+    w = 0.0
+    for ch in title:
+        cw = 0.5 if (" " <= ch <= "ÿ" or "｡" <= ch <= "ﾟ") else 1
+        if w + cw > limit - 1:
+            break
+        out.append(ch)
+        w += cw
+    cut = "".join(out)
+    # 単語の途中で終わったら、直前の区切りまで戻す（短くなりすぎない範囲で）
+    pos = max(cut.rfind(" "), cut.rfind("："), cut.rfind(":"), cut.rfind("、"))
+    if pos >= len(cut) // 2:
+        cut = cut[:pos]
+    return cut.rstrip(" ,:;-—–") + "…"
+
+
 # --- 日付整形 -----------------------------------------------------------
 _EN_MONTHS = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -819,6 +854,8 @@ class Builder:
                             page_description=(p.get("summary") or "")[:150])
             ctx["item"] = p
             ctx["related"] = rel_items
+            # <title> だけ丸める。h1 は原題の全文のまま
+            ctx["head_title"] = head_title(p.get("title") or "")
             # 一覧と同じ "papers"（ItemList）を個別ページにも出していたため、
             # ページ単体では記事型の構造化データが1つも無かった（2026-08-05 修正）。
             ctx["jsonld"] = seo.build_jsonld(
