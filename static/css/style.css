@@ -315,7 +315,7 @@ h1, h2, h3, h4 {
 
 /* --- フッター ------------------------------------------------ */
 .site-footer { border-top: 1px solid var(--line); margin-top: 32px; background: var(--surface); }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding: 52px 24px 32px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding: 52px 24px 32px; }
 .footer-brand .brand-name { font-size: 1.28rem; }
 .footer-tagline { color: var(--text); font-weight: 650; margin: 12px 0 8px; }
 .footer-desc { color: var(--text-3); font-size: .88rem; max-width: 44ch; margin: 0; line-height: 1.7; }

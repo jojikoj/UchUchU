@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>ロケットはなぜ「宇宙に浮かんでいられる」のか · UchUchU</title>
   <meta name="description" content="ロケットは上に飛ぶだけでは宇宙に留まれない。「軌道に乗る」とは何なのかを、できるだけやさしく解き明かす。">
   <link rel="canonical" href="https://uchuchu.tech/articles/how-rockets-reach-orbit/">
@@ -32,7 +33,7 @@
         href="https://uchuchu.tech/feed.xml">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"特集","item":"https://uchuchu.tech/articles/"},{"@type":"ListItem","position":3,"name":"ロケットはなぜ「宇宙に浮かんでいられる」のか","item":"https://uchuchu.tech/articles/how-rockets-reach-orbit/"}]},{"@type":"Article","headline":"ロケットはなぜ「宇宙に浮かんでいられる」のか","description":"ロケットは上に飛ぶだけでは宇宙に留まれない。「軌道に乗る」とは何なのかを、できるだけやさしく解き明かす。","inLanguage":"ja-JP","mainEntityOfPage":{"@type":"WebPage","@id":"https://uchuchu.tech/articles/how-rockets-reach-orbit/"},"url":"https://uchuchu.tech/articles/how-rockets-reach-orbit/","publisher":{"@id":"https://uchuchu.tech/#organization"},"isAccessibleForFree":true,"author":{"@type":"Organization","name":"UchUchU 編集部"},"datePublished":"2026-07-10","dateModified":"2026-07-10","image":"cover-orbit.jpg","articleSection":"入門","wordCount":2393,"backstory":"「ロケットで宇宙に行く」と聞くと、まっすぐ上に飛んでいく姿を想像しがちだ。でも実際には、宇宙に 留まり続ける ために最も大事なのは「上に上がること」ではなく「横に猛烈な速さで動くこと」だ。どういうことか、順を追って見ていこう。 \n 「宇宙」はそんなに遠くない \n 宇宙とのおおまかな境界は、高度およそ100km（カーマン・ライン）とされる。これは意外と近い。時速100kmの車で走り続ければ、1時間で着いてしまう距離だ。 \n つまり「高く上がること」自体は、実はそれほど難しくない。本当の難所はその先にある。 \n 落ち続けることが「軌道」 \n 地球のまわりを回る物体は、実は常に地球へ向かって 落ち続","about":{"@type":"Thing","name":"宇宙産業"}}]}</script>
   <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../static/css/style.css?v=a33b15f6">
+  <link rel="stylesheet" href="../../static/css/style.css?v=720a2a2f">
   <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
        Runs before paint to avoid a flash. A manual choice always wins. -->
   <script>
@@ -111,7 +112,7 @@
 <div class="article-hero-img" style="background-image:url('../../static/img/cover-orbit.jpg')"></div>    <div class="wrap article-hero-inner">
 <span class="pill accent">入門</span>      <h1>ロケットはなぜ「宇宙に浮かんでいられる」のか</h1>
 <p class="article-lead">ロケットは上に飛ぶだけでは宇宙に留まれない。「軌道に乗る」とは何なのかを、できるだけやさしく解き明かす。</p>      <div class="article-meta">
-<span>UchUchU 編集部</span><time>2026年7月10日</time>      </div>
+<span>UchUchU 編集部</span><time datetime="2026-07-10">2026年7月10日</time>      </div>
     </div>
   </header>
   <div class="wrap article-body prose">
@@ -223,15 +224,20 @@
           <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
           <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
         </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+        </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 UchUchU · 静的サイト・自動更新</span>
-        <span class="footer-updated">更新: 2026-07-30 07:09 UTC</span>
+        <span class="footer-updated">更新: 2026-08-13 06:26 UTC</span>
       </div>
     </footer>
   </div>
 </div>
 
-<script src="../../static/js/main.js?v=a33b15f6" defer></script>
+<script src="../../static/js/main.js?v=720a2a2f" defer></script>
 </body>
 </html>

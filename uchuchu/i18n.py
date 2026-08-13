@@ -239,6 +239,11 @@ STRINGS = {
     "footer.sources": {"ja": "データ提供", "en": "Data sources"},
     "footer.built": {"ja": "静的サイト・自動更新", "en": "Static site · auto-updated"},
     "footer.lang": {"ja": "言語", "en": "Language"},
+    # 運営元と、同じ仕組み（無料の公開データ＋自動更新）で動かしている姉妹メディア。
+    "footer.network": {"ja": "運営元", "en": "Who runs this"},
+    "footer.toe": {"ja": "株式会社TOE", "en": "TOE Inc."},
+    "footer.aioni": {"ja": "AIの鬼 — AI実践・実測ラボ",
+                     "en": "AI Oni — AI practice & measurement lab"},
 }
 
 
