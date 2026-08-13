@@ -50,25 +50,8 @@ step() {   # step <名前> <コマンド...>
 #
 #    運用ブランチは main ではなく gh-pages-tmp なので、現在のブランチに対して pull する。
 #    衝突しても日次自体は止めない。ローカルの状態で続行してログに残す。
-sync_code() {
-  git remote get-url origin >/dev/null 2>&1 || return 0
-  local br
-  br=$(git rev-parse --abbrev-ref HEAD)
-  git fetch origin "$br" --quiet 2>/dev/null || { echo "   ⚠️ fetch失敗（ローカルのまま続行）"; return 1; }
-  local behind
-  behind=$(git rev-list --count "HEAD..origin/$br" 2>/dev/null || echo 0)
-  [ "$behind" = "0" ] && { echo "   最新（取り込むものなし）"; return 0; }
-  echo "   origin/$br に未取込 ${behind} 件 → 取り込む"
-  if git -c user.name=daily -c user.email=noreply@anthropic.com \
-       pull --rebase --autostash --quiet origin "$br" 2>/dev/null; then
-    echo "   取り込み完了: $(git log --oneline -1)"
-  else
-    git rebase --abort 2>/dev/null || true
-    echo "   ⚠️ 取り込みが衝突。ローカルの状態で続行（要手動解消）"
-    return 1
-  fi
-}
-step "コード同期" sync_code
+. "$(dirname "$0")/lib-git.sh"
+step "コード同期" git_sync_pull
 
 # 1. 収集（RSS/API。無料ソースのみ）
 step "収集" python3 -m uchuchu.collectors.collect_all
@@ -82,6 +65,11 @@ step "本文要約" python3 -m uchuchu.collectors.fulltext --limit=20
 
 # 3. 内部リンク検査 → ビルド → 公開 → IndexNow
 step "公開" ./tools/deploy.sh
+
+# 3.5 収集したデータをリポジトリへ戻す。
+#     deploy.sh は dist/ を gh-pages へ送るだけなので、data/ を送らないと
+#     翻訳キャッシュや収集結果が実行機の中だけで育ち、別のMacで再現できなくなる。
+step "データをリポジトリへ反映" git_sync_push "収集データを更新（$(date +%F)・自動）"
 
 # 4. 状況を1行で残す（週次の振り返りで読む）
 python3 - <<'PY'
