@@ -179,7 +179,8 @@ def _article(base: str, a: dict, url: str, lang: str) -> dict:
         node["author"] = {"@type": "Organization", "name": a["author"]}
     if a.get("date"):
         node["datePublished"] = a["date"]
-        node["dateModified"] = a["date"]
+        # 加筆した記事は updated を進める。無ければ公開日のまま
+        node["dateModified"] = a.get("updated") or a["date"]
     if a.get("hero"):
         node["image"] = a["hero"]
 

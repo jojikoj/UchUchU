@@ -112,9 +112,12 @@ def main() -> int:
     for s_, a in arts.items():
         md = (ARTICLES / f"{s_}.ja.md").read_text(encoding="utf-8")
         body = _re.sub(r"^---\n.*?\n---\n", "", md, flags=_re.S)
-        lead = _re.sub(r"\s", "", _re.split(r"\n## ", body)[0])[:250]
+        # 結論は最初の見出しまで。ニュース解説はリードが長めなので幅を持たせる
+        lead = _re.sub(r"\s", "", _re.split(r"\n## ", body)[0])[:450]
         lack = [n for n, ok in [
-            ("表", "|---|" in body),
+            # 表の区切り行は「|---|」とは限らない（|------|や|:---:|も書ける）。
+            # 文字列一致で見ていたため、表のある記事を「表なし」と誤検出していた。
+            ("表", bool(_re.search(r"^\|[\s\-:|]+\|\s*$", body, _re.M))),
             ("箇条書き", body.count("\n- ") >= 3),
             ("まとめ", "## まとめ" in body),
             ("冒頭の結論", bool(_re.search(r"\*\*.+\*\*", lead))),

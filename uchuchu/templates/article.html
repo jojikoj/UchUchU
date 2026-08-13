@@ -12,7 +12,9 @@
       {% if article.excerpt %}<p class="article-lead">{{ article.excerpt }}</p>{% endif %}
       <div class="article-meta">
         {% if article.author %}<span>{{ article.author }}</span>{% endif %}
-        {% if article.date_display %}<time>{{ article.date_display }}</time>{% endif %}
+        {% if article.date_display %}<time datetime="{{ article.date }}">{{ article.date_display }}</time>{% endif %}
+        {# 加筆した記事は、読者にも更新日が見えるようにする #}
+        {% if article.updated_display %}<time datetime="{{ article.updated }}">{{ t('article.updated') }} {{ article.updated_display }}</time>{% endif %}
       </div>
     </div>
   </header>

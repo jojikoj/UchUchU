@@ -193,6 +193,7 @@ STRINGS = {
                           "en": "In-depth reads that make space exploration clear."},
     "articles.read": {"ja": "続きを読む", "en": "Read more"},
     "articles.back": {"ja": "特集一覧へ戻る", "en": "Back to features"},
+    "article.updated": {"ja": "更新", "en": "Updated"},
 
     "nav.faq": {"ja": "よくある質問", "en": "FAQ"},
     "nav.search": {"ja": "検索", "en": "Search"},

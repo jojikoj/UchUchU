@@ -292,6 +292,13 @@ def load_articles(lang: str) -> list[dict]:
             "hero_is_local": bool(meta.get("hero")) and not meta.get("hero", "").startswith("http"),
             "date": meta.get("date", ""),
             "date_display": fmt_date(meta.get("date"), lang) if meta.get("date") else "",
+            # front matter の updated（YYYY-MM-DD）。加筆したらここを進める。
+            # 無いと構造化データの dateModified が公開日のまま固定され、
+            # 中身を直しても「更新されていない記事」として扱われる。
+            "updated": meta.get("updated", ""),
+            "updated_display": (
+                fmt_date(meta.get("updated"), lang) if meta.get("updated") else ""
+            ),
             "order": int(meta.get("order", "100") or "100"),
             "html": html,
         })
