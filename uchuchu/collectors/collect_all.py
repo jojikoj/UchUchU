@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import json
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from .. import config
 from . import sources, translate
@@ -203,10 +203,27 @@ def collect_launches() -> dict:
     # 打ち上げは id で統合（予定→実績へ状態が変わるため上書き更新）
     old = _load_existing("launches.json")
     by_id = {l["id"]: l for l in old if l.get("id")}
+    fetched_ids = set()
     for l in items:
         if l.get("id"):
             by_id[l["id"]] = l
+            fetched_ids.add(l["id"])
     merged = list(by_id.values())
+
+    # 今回のAPI応答に含まれず、予定時刻を24時間以上過ぎた「予定」は降格する。
+    # 中止・無期限延期になった打ち上げが upcoming のまま残り、
+    # 一覧の先頭に「まもなく」として居座り続けるため（実測あり）。
+    # 末尾が Z と +00:00 で混在するため、秒までの19文字だけで比較する。
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=24)).isoformat()[:19]
+    demoted = 0
+    for l in merged:
+        if (l.get("upcoming") and l.get("id") not in fetched_ids
+                and (l.get("net") or "")[:19] < cutoff):
+            l["upcoming"] = False
+            l["stale"] = True
+            demoted += 1
+    if demoted:
+        print(f"  更新の止まった予定 {demoted}件を実績側へ降格")
     upcoming = sorted([l for l in merged if l.get("upcoming")],
                       key=lambda x: x.get("net") or "")
     past = sorted([l for l in merged if not l.get("upcoming")],

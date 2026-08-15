@@ -20,7 +20,7 @@ import json
 import os
 import re
 import shutil
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -122,6 +122,14 @@ def fmt_date_short(iso: str | None, lang: str) -> str | None:
     return f"{dt.year}.{dt.month:02d}.{dt.day:02d}"
 
 
+# 予定時刻をこれ以上過ぎても「予定」のままの記録は、元データの更新漏れと見なす。
+# Launch Library は打ち上げ後に実績へ移すが、中止・無期限延期になった打ち上げは
+# 予定のまま残り続ける。実際に 7/31 の Glonass-K1 が2週間「まもなく」として
+# 打ち上げ一覧の先頭に居座っていた（2026-08-15 実測）。
+# 毎日見る読者は、一度でも古い情報を見せられた時点で来なくなる。
+LAUNCH_STALE_AFTER = timedelta(hours=6)
+
+
 def countdown_label(iso: str | None, now: datetime, lang: str) -> str | None:
     dt = _parse_iso(iso)
     if dt is None:
@@ -129,7 +137,11 @@ def countdown_label(iso: str | None, now: datetime, lang: str) -> str | None:
     delta = dt - now
     secs = int(delta.total_seconds())
     if secs <= 0:
-        return "T-0" if lang == "en" else "まもなく"
+        # 予定時刻を過ぎた直後だけ「まもなく」。それ以降は表示しない
+        # （過ぎた打ち上げに「まもなく」と出すのが最も信用を落とす）。
+        if -secs <= LAUNCH_STALE_AFTER.total_seconds():
+            return "T-0" if lang == "en" else "まもなく"
+        return None
     days, rem = divmod(secs, 86400)
     hours, rem = divmod(rem, 3600)
     mins = rem // 60
@@ -217,18 +229,72 @@ def prepare_news(raw: list[dict], lang: str) -> list[dict]:
     return out
 
 
+# 打ち上げ結果の判定。実績側の status_name をそのまま日本語にせず、
+# 「成功したのか否か」だけが一目で分かる3分類に落とす。
+_RESULT_CLASS = {
+    "success": "success",
+    "launch successful": "success",
+    "failure": "failure",
+    "launch failure": "failure",
+    "partial failure": "partial",
+}
+
+
 def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
+    """打ち上げを表示用に整形し、予定→実績の順に並べ直す。
+
+    元データの `upcoming` をそのまま信じない。予定時刻を過ぎたまま
+    更新されない記録が「まもなく」として先頭に残り続けるため、
+    こちら側で時刻を見て判定する（LAUNCH_STALE_AFTER）。
+    """
+    jst = timezone(timedelta(hours=9))
+    today = now.astimezone(jst).date()
     out = []
     for it in raw:
         it = dict(it)
+        dt = _parse_iso(it.get("net"))
+        upcoming = bool(it.get("upcoming", True))
+        # 予定時刻を大きく過ぎた「予定」は、こちらのデータが古いだけ。
+        stale = bool(upcoming and dt is not None
+                     and (now - dt) > LAUNCH_STALE_AFTER)
+        if stale:
+            upcoming = False
+        it["upcoming"] = upcoming
+        it["stale"] = stale
         it["net_display"] = fmt_date(it.get("net"), lang, with_time=True)
+        it["net_short"] = fmt_date_short(it.get("net"), lang)
         # カウントダウンは予定の打ち上げのみ。実績に「まもなく」と出さない。
-        it["countdown"] = (countdown_label(it.get("net"), now, lang)
-                           if it.get("upcoming", True) else None)
+        it["countdown"] = countdown_label(it.get("net"), now, lang) if upcoming else None
         st = (it.get("status_name") or it.get("status") or "").lower()
         it["status_class"] = _STATUS_CLASS.get(st, "tbd")
+        it["result_class"] = _RESULT_CLASS.get(st) if not upcoming else None
+        # 「今日」「今週」の仕分け。日本の読者が見るので日本時間で切る。
+        if dt is not None:
+            days = (dt.astimezone(jst).date() - today).days
+            it["days_from_today"] = days
+            it["is_today"] = days == 0
+            it["is_this_week"] = 0 <= days <= 6
+        else:
+            it["days_from_today"] = None
+            it["is_today"] = False
+            it["is_this_week"] = False
+        # 一覧の見出し分け。並び順と一致するので、切り替わった所に見出しを出す。
+        if not upcoming:
+            it["group"] = "results"
+        elif it["is_today"]:
+            it["group"] = "today"
+        elif it["is_this_week"]:
+            it["group"] = "this_week"
+        else:
+            it["group"] = "later"
         out.append(it)
-    return out
+
+    # 予定は近い順、実績は新しい順。stale を降格した結果を必ず並べ直す。
+    upcoming_list = sorted([l for l in out if l["upcoming"]],
+                           key=lambda x: x.get("net") or "")
+    past_list = sorted([l for l in out if not l["upcoming"]],
+                       key=lambda x: x.get("net") or "", reverse=True)
+    return upcoming_list + past_list
 
 
 def paper_slug(item: dict) -> str:
@@ -576,17 +642,25 @@ class Builder:
             ],
         }
 
-    def _source_chips(self, lang: str, up: int, current: str | None) -> list[dict]:
+    def _source_chips(self, lang: str, up: int, current: str | None,
+                      available: set[str] | None = None) -> list[dict]:
         """ニュースのソース別絞り込みチップ。
 
         up はそのページから news/ まで戻る階層数。
         ページ分割後も絞り込みが機能するよう、実ページへのリンクとして出す。
+
+        available には「実際にページが生成されるソース」を渡す。
+        ニュースは直近600件で入れ替わるため、設定に載っていても記事が1件も
+        残っていないソースがある。そこへリンクすると 404 になり、
+        実際に NASA・ESA・SpaceNews など8ソースが常時リンク切れだった。
         """
         back = "../" * up
         chips = [{"id": None, "name": _t("news.filter_all", lang),
                   "href": back or "./", "current": current is None}]
         for s in config.NEWS_SOURCES:
             if lang == "en" and s["lang"] != "en":
+                continue
+            if available is not None and s["id"] not in available:
                 continue
             chips.append({"id": s["id"], "name": s["name"],
                           "href": f"{back}source/{s['id']}/",
@@ -611,6 +685,56 @@ class Builder:
         (out_dir / "index.html").write_text(html, encoding="utf-8")
         self.paths_by_lang[lang].append("")
 
+    def _today_board(self, lang: str, launches: list[dict],
+                     news: list[dict]) -> dict:
+        """「今日の宇宙」ブロックの材料。
+
+        毎日見る理由になるのは、毎日変わり・時刻という締切があり・
+        当事者が実際に確認する情報だけ。この媒体でそれに当たるのは打ち上げ。
+        次のT-0、今日と今週の本数、24時間以内の結果、今日のニュース本数を
+        1画面にまとめ、「今日ここに来れば分かる」状態を作る。
+        """
+        jst = timezone(timedelta(hours=9))
+        today = self.now.astimezone(jst).date()
+        upcoming = [l for l in launches if l.get("upcoming")]
+        past = [l for l in launches if not l.get("upcoming")]
+
+        # 直近24時間に完了した打ち上げ。結果が分かっているものだけ出す
+        # （status が Go のまま止まっている記録を「結果」と偽らない）。
+        since = self.now - timedelta(hours=24)
+        results = []
+        for l in past:
+            dt = _parse_iso(l.get("net"))
+            if dt is None or dt < since or dt > self.now:
+                continue
+            if not l.get("result_class"):
+                continue
+            results.append(l)
+        results.sort(key=lambda x: x.get("net") or "", reverse=True)
+
+        # 24時間以内に完了した打ち上げが無い日もある（実際そちらが多い）。
+        # 空欄のまま出すと「動いていない媒体」に見えるので、
+        # そのときは直近の完了分に切り替える。ラベルも変えて偽らない。
+        recent_fallback = []
+        if not results:
+            recent_fallback = [l for l in past if l.get("result_class")][:3]
+
+        news_today = 0
+        for n in news:
+            dt = _parse_iso(n.get("published"))
+            if dt is not None and dt.astimezone(jst).date() == today:
+                news_today += 1
+
+        return {
+            "next": upcoming[0] if upcoming else None,
+            "today_launches": [l for l in upcoming if l.get("is_today")],
+            "week_count": sum(1 for l in upcoming if l.get("is_this_week")),
+            "results": results,
+            "recent_results": recent_fallback,
+            "news_count": news_today,
+            "date_display": fmt_date(self.now.isoformat(), lang),
+        }
+
     def build_lang(self, lang: str) -> None:
         news = prepare_news(self.news_raw, lang)
         launches = prepare_launches(self.launches_raw, lang, self.now)
@@ -631,6 +755,7 @@ class Builder:
         used = {id(n) for n in featured}
         latest = [n for n in news if id(n) not in used][:12]
         upcoming = [l for l in launches if l.get("upcoming")]
+        today_board = self._today_board(lang, launches, news)
         tcounts = topics.counts(news)
         topic_nav = [
             {"id": t["id"], "name": topics.name(t["id"], lang),
@@ -643,7 +768,7 @@ class Builder:
         all_comp = companies.all_companies(lang)
         ctx.update(news=news, launches=launches, papers=papers, articles=articles,
                    featured=featured, latest=latest,
-                   next_launches=upcoming[:3], topic_nav=topic_nav,
+                   next_launches=upcoming[:3], today=today_board, topic_nav=topic_nav,
                    company_cats=companies.categories(lang),
                    featured_companies=all_comp[:14],
                    guides=[a for a in articles
@@ -652,6 +777,13 @@ class Builder:
             self.base_url, lang, "home",
             trail=[(home_label, self._url_for(lang, ""))])
         self._write_root(lang, self.env.get_template("home.html").render(**ctx))
+
+        # ソース別ページを持つソース。絞り込みチップのリンク先に使う。
+        # 実ページの生成と同じ集計を使い、リンクと実体をずらさない。
+        by_source: dict[str, list[dict]] = {}
+        for n in news:
+            by_source.setdefault(n.get("source_id", "other"), []).append(n)
+        live_sources = set(by_source)
 
         # 一覧ページ（言語ルートから1階層 → rel="../"）
         # 件数が多いものはページ分割する。1ページ目は news/、2ページ目以降は news/2/。
@@ -672,7 +804,7 @@ class Builder:
                 ctx["pagination"] = _pagination_ctx(pno, len(chunks))
                 if active == "news":
                     ctx["source_chips"] = self._source_chips(
-                        lang, up=depth - 1, current=None)
+                        lang, up=depth - 1, current=None, available=live_sources)
                 ctx["jsonld"] = seo.build_jsonld(
                     self.base_url, lang, active,
                     trail=[(home_label, self._url_for(lang, "")),
@@ -705,9 +837,6 @@ class Builder:
         # ソース別ニュースページ（news/source/<id>/）
         # ページ分割によりチップの絞り込みが現在ページ内に限定されてしまうため、
         # ソースごとに実ページを持たせる。検索インデックス上も有利。
-        by_source: dict[str, list[dict]] = {}
-        for n in news:
-            by_source.setdefault(n.get("source_id", "other"), []).append(n)
         source_pages = 0
         for sid, items in by_source.items():
             src_name = next((s["name"] for s in config.NEWS_SOURCES if s["id"] == sid), sid)
@@ -720,7 +849,8 @@ class Builder:
                                 page_description=f"{src_name} — {_t('news.subtitle', lang)}")
                 ctx["news"] = chunk
                 ctx["pagination"] = _pagination_ctx(pno, len(chunks))
-                ctx["source_chips"] = self._source_chips(lang, up=depth - 1, current=sid)
+                ctx["source_chips"] = self._source_chips(
+                    lang, up=depth - 1, current=sid, available=live_sources)
                 ctx["source_name"] = src_name
                 ctx["jsonld"] = seo.build_jsonld(
                     self.base_url, lang, "news",

@@ -14,6 +14,84 @@
 {% block content %}
 
 {#
+  「今日の宇宙」。トップの最上部に置く唯一のブロック。
+  毎日見る理由になるのは「今日変わったこと」だけなので、
+  次のT-0・今日と今週の本数・24時間以内の結果を1画面にまとめる。
+  ニュースのヒーローより上に置くのは、ニュース自体は他媒体でも読めるが、
+  この盤面は毎日ここを開く理由になるため。
+#}
+{% if today %}
+<section class="today-board">
+  <div class="today-head">
+    <span class="live-dot" aria-hidden="true"></span>
+    <h2 class="today-title">{{ t('today.title') }}</h2>
+    <span class="today-date">{{ today.date_display }}</span>
+    <a class="today-more" href="{{ rel }}launches/">{{ t('nav.launches') }} →</a>
+  </div>
+
+  <div class="today-grid">
+    {% if today.next %}
+    <article class="today-next">
+      <span class="today-label">{{ t('today.next') }}</span>
+      <div class="today-cd">
+        {% if today.next.countdown %}
+        <span class="net-countdown today-cd-num" data-net="{{ today.next.net }}">{{ today.next.countdown }}</span>
+        {% endif %}
+        {% if today.next.status %}
+        <span class="pill status-{{ today.next.status_class or 'tbd' }}">{{ today.next.status }}</span>
+        {% endif %}
+      </div>
+      <h3 class="today-next-name">{{ today.next.name }}</h3>
+      <p class="today-next-meta">
+        {{ today.next.net_display }}{% if today.next.location %} · {{ today.next.location }}{% endif %}
+      </p>
+      {% if today.next.webcast %}
+      <a class="today-watch" href="{{ today.next.webcast }}" target="_blank" rel="noopener">▶ {{ t('launches.watch') }}</a>
+      {% endif %}
+    </article>
+    {% endif %}
+
+    <div class="today-stats">
+      <a class="today-stat" href="{{ rel }}launches/">
+        <span class="today-stat-n">{{ today.today_launches|length }}</span>
+        <span class="today-stat-l">{{ t('today.launches_today') }}</span>
+      </a>
+      <a class="today-stat" href="{{ rel }}launches/">
+        <span class="today-stat-n">{{ today.week_count }}</span>
+        <span class="today-stat-l">{{ t('today.launches_week') }}</span>
+      </a>
+      <a class="today-stat" href="{{ rel }}news/">
+        <span class="today-stat-n">{{ today.news_count }}</span>
+        <span class="today-stat-l">{{ t('today.news_today') }}</span>
+      </a>
+    </div>
+
+    {# 24時間以内に完了した打ち上げが無い日は、直近の完了分に切り替える。
+       空欄を出すと動いていない媒体に見えるため。ラベルを変えて偽らない #}
+    {% set res = today.results or today.recent_results %}
+    <div class="today-results">
+      <span class="today-label">
+        {{ t('today.results_24h') if today.results else t('launches.results') }}
+      </span>
+      {% if res %}
+      <ul class="today-result-list">
+        {% for r in res[:4] %}
+        <li>
+          <span class="res-mark res-{{ r.result_class }}">{{ t('today.' ~ r.result_class) }}</span>
+          <span class="res-name">{{ r.name }}</span>
+          {% if not today.results %}<time class="res-date">{{ r.net_short }}</time>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="today-empty">{{ t('today.no_result') }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{#
   ヒーロー: 左に大きな注目記事、右に縦積みリスト。
   1画面に「主役1本＋選択肢4本」を出せる、情報メディアの定番構成。
 #}

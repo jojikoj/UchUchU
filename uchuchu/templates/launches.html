@@ -13,9 +13,27 @@
 <section class="section">
   <div class="wrap">
     {% if launches %}
-    <div class="grid grid-launches">
-      {% for l in launches %}{{ launch_card(l, lang, t) }}{% endfor %}
-    </div>
+    {#
+      並びは「今日 → 今週 → 以降 → 直近の結果」で固定されているので、
+      群が変わった所に見出しを差し込むだけでよい。
+      毎日見る人が最初に知りたいのは「今日あるのか」なので、
+      今日が0件のときはその事実を明示する。
+    #}
+    {% set ns = namespace(group=None) %}
+    {% if launches[0].group != 'today' and pagination.current|default(1) == 1 %}
+    <h2 class="launch-group">{{ t('launches.today') }}</h2>
+    <p class="launch-none">{{ t('launches.none_today') }}</p>
+    {% endif %}
+    {% for l in launches %}
+      {% if l.group != ns.group %}
+        {% if not loop.first %}</div>{% endif %}
+        {% set ns.group = l.group %}
+        <h2 class="launch-group">{{ t('launches.' ~ l.group) }}</h2>
+        <div class="grid grid-launches">
+      {% endif %}
+      {{ launch_card(l, lang, t) }}
+      {% if loop.last %}</div>{% endif %}
+    {% endfor %}
     {{ pager(pagination, t) }}
     {% else %}
     <p class="empty">{{ t('meta.no_data') }}</p>

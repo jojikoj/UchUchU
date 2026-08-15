@@ -30,7 +30,13 @@
   {% endif %}
   <div class="card-body">
     <div class="card-meta">
-      {% if item.status %}<span class="pill status-{{ (item.status_class or 'tbd') }}">{{ item.status }}</span>{% endif %}
+      {# 終わった打ち上げは「予定の状態」ではなく結果を出す。
+         予定と実績で同じバッジを出すと、済んだのか未了なのか読み取れない #}
+      {% if item.result_class %}
+      <span class="pill res-{{ item.result_class }}">{{ t('today.' ~ item.result_class) }}</span>
+      {% elif item.status %}
+      <span class="pill status-{{ (item.status_class or 'tbd') }}">{{ item.status }}</span>
+      {% endif %}
       {% if item.country %}<span class="pill ghost">{{ item.country }}</span>{% endif %}
     </div>
     <h3 class="card-title">{{ item.name }}</h3>

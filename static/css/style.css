@@ -825,7 +825,11 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
 .tile-src { display: flex; align-items: center; gap: 7px; font-size: .74rem; color: var(--text-3); }
 
 @media (max-width: 560px) {
-  .tile-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 14px; }
+  /* 1fr は minmax(auto,1fr) と同じで、中身の min-content 幅までトラックが広がる。
+     長い見出しや画像があると画面幅を超え、スマホで横スクロールが出る。
+     minmax(0,1fr) にして必ず画面内に収める。 */
+  .tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 14px; }
+  .news-tile { min-width: 0; }
   .tile-title { font-size: .87rem; }
 }
 
@@ -942,6 +946,119 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
 .pill-tag.sm { padding: 2px 8px; font-size: .68rem; }
 .pill-tag.src { background: var(--surface-2); color: var(--text-2); border: 1px solid var(--line); }
 
+/* --- 今日の宇宙 ---
+   トップ最上部。毎日ここだけ見れば今日の状況が分かる、が狙い。
+   数字を主役にし、装飾は足さない（毎日見る面ほど、飾りは邪魔になる）。 */
+.today-board {
+  padding: 20px 28px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.today-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+.today-title { font-family: var(--font-head); font-size: 1.05rem; font-weight: 900; margin: 0; }
+.today-date { font-family: var(--mono); font-size: .78rem; color: var(--text-3); }
+.today-more { margin-left: auto; font-size: .8rem; font-weight: 650; color: var(--accent); }
+
+.today-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: 14px;
+  align-items: stretch;
+}
+.today-label {
+  display: block; font-size: .68rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--text-3); margin-bottom: 7px;
+}
+
+.today-next {
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: var(--r-md); padding: 14px 16px;
+}
+.today-cd { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; margin-bottom: 8px; }
+/* カウントダウンは秒まで動く。ここが動いていることが「生きている媒体」の証拠になる */
+.today-cd-num {
+  font-family: var(--mono); font-size: 1.6rem; font-weight: 700;
+  color: var(--accent-ink); line-height: 1.1; font-variant-numeric: tabular-nums;
+}
+.today-next-name { font-size: .95rem; margin: 0 0 5px; line-height: 1.4; }
+.today-next-meta { margin: 0; font-family: var(--mono); font-size: .74rem; color: var(--text-3); }
+.today-watch {
+  display: inline-block; margin-top: 9px; font-size: .8rem;
+  font-weight: 650; color: var(--accent);
+}
+
+.today-stats { display: grid; grid-template-rows: repeat(3, 1fr); gap: 8px; }
+.today-stat {
+  display: flex; align-items: baseline; gap: 9px;
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: var(--r-sm); padding: 8px 12px; color: inherit;
+}
+.today-stat:hover { border-color: var(--line-strong); }
+.today-stat-n {
+  font-family: var(--mono); font-size: 1.25rem; font-weight: 700;
+  color: var(--text); font-variant-numeric: tabular-nums; min-width: 1.6em;
+}
+.today-stat-l { font-size: .78rem; color: var(--text-2); }
+
+.today-results {
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: var(--r-md); padding: 14px 16px;
+}
+.today-result-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+/* グリッド項目は既定で min-width:auto のため、長いミッション名で
+   枠からはみ出す。min-width:0 を入れて内側で省略させる */
+.today-result-list li {
+  display: flex; align-items: baseline; gap: 8px;
+  font-size: .82rem; min-width: 0;
+}
+.today-result-list .res-name {
+  flex: 1 1 auto; min-width: 0;
+  color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.today-result-list .res-mark { flex: 0 0 auto; }
+.today-result-list .res-date {
+  flex: 0 0 auto; font-family: var(--mono); font-size: .7rem;
+  color: var(--text-3); white-space: nowrap;
+}
+.today-empty { margin: 0; font-size: .8rem; color: var(--text-3); }
+
+/* 結果バッジ。成功か否かだけが一目で分かればよい */
+.res-mark, .pill.res-success, .pill.res-failure, .pill.res-partial {
+  font-size: .7rem; font-weight: 700; padding: 2px 8px;
+  border-radius: 999px; white-space: nowrap; border: 1px solid transparent;
+}
+.res-success, .pill.res-success { background: var(--teal-soft); color: var(--teal); border-color: rgba(14,157,138,.2); }
+.res-failure, .pill.res-failure { background: var(--rose-soft); color: var(--rose); border-color: rgba(208,69,94,.2); }
+.res-partial, .pill.res-partial { background: var(--amber-soft); color: var(--amber); border-color: rgba(180,118,26,.2); }
+
+/* 打ち上げ一覧の群見出し（今日 / 今週 / 以降 / 直近の結果） */
+.launch-group {
+  font-family: var(--font-head); font-size: 1rem; font-weight: 900;
+  margin: 26px 0 12px; padding-bottom: 7px; border-bottom: 1px solid var(--line);
+}
+.launch-group:first-of-type { margin-top: 0; }
+/* 「今日は無い」は事実として1行で伝えるだけでよい。
+   大きな空白を作ると、毎日開く人の最初の1画面が空虚になる */
+.launch-none { margin: 0; color: var(--text-3); font-size: .88rem; }
+
+@media (max-width: 900px) {
+  .today-grid { grid-template-columns: 1fr; }
+  .today-stats { grid-template-rows: none; grid-template-columns: repeat(3, 1fr); }
+  .today-stat { flex-direction: column; align-items: flex-start; gap: 2px; min-width: 0; }
+  .today-stat-l { font-size: .72rem; }
+}
+
+@media (max-width: 640px) {
+  .today-board { padding: 16px 16px 18px; }
+  /* グリッド項目の既定 min-width:auto を打ち消さないと、
+     長いミッション名や射場名で横スクロールが発生する */
+  .today-grid > * { min-width: 0; }
+  .today-cd-num { font-size: 1.4rem; }
+  .today-next-name { font-size: .9rem; }
+  .today-next-meta { white-space: normal; word-break: break-word; }
+  .today-stat-n { font-size: 1.1rem; }
+}
+
 /* --- 打ち上げ帯 --- */
 .launch-strip { padding: 18px 28px 22px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
 .strip-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
@@ -989,9 +1106,11 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
   .mb-brand { font-size: 1.15rem; font-weight: 800; }
   .nav-toggle { display: block; background: none; border: 0; cursor: pointer; padding: 6px; }
   .nav-toggle span { display: block; width: 21px; height: 2px; background: var(--text); border-radius: 2px; margin: 4px 0; }
-  .hero-block { grid-template-columns: 1fr; }
+  /* 1fr のままだと中身の min-content 幅でトラックが広がり、横スクロールが出る */
+  .hero-block { grid-template-columns: minmax(0, 1fr); }
+  .hero-main, .hero-side { min-width: 0; }
   .hero-main { border-right: 0; border-bottom: 1px solid var(--line); }
-  .strip-items { grid-template-columns: 1fr; }
+  .strip-items { grid-template-columns: minmax(0, 1fr); }
   .strip-item:nth-child(n+3) { display: none; }
   .block, .section, .page-head, .wrap { padding-left: 18px; padding-right: 18px; }
 }

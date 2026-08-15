@@ -37,7 +37,8 @@
     <h2>{{ t('detail.related') }}</h2>
     <div class="rel-list">
       {% for r in related %}
-      <a class="rel-item" href="{{ rel }}{{ r.slug }}/">
+      {# p/ を付け忘れると /<slug>/ を指し、関連論文が全ページで 404 になる #}
+      <a class="rel-item" href="{{ rel }}p/{{ r.slug }}/">
         <span class="rel-body">
           <span class="rel-title">{{ r.title }}</span>
           <span class="rel-meta">{% for c in r.categories[:1] %}{{ c }}{% endfor %}{% if r.published_short %} · {{ r.published_short }}{% endif %}</span>
