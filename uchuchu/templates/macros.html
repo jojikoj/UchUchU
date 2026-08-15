@@ -43,7 +43,9 @@
     {% if item.net_display %}
     <div class="launch-net">
       <span class="net-abs">{{ item.net_display }}</span>
-      {% if item.countdown %}<span class="net-countdown" data-net="{{ item.net }}">{{ item.countdown }}</span>{% endif %}
+      {# 時刻未定のものは data-net を付けない。JSで秒まで刻むと、
+         決まっていない精度を主張することになる #}
+      {% if item.countdown %}<span class="net-countdown"{% if not item.time_tbd %} data-net="{{ item.net }}"{% endif %}>{{ item.countdown }}</span>{% endif %}
     </div>
     {% endif %}
     <dl class="launch-specs">

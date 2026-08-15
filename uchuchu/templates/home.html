@@ -35,7 +35,7 @@
       <span class="today-label">{{ t('today.next') }}</span>
       <div class="today-cd">
         {% if today.next.countdown %}
-        <span class="net-countdown today-cd-num" data-net="{{ today.next.net }}">{{ today.next.countdown }}</span>
+        <span class="net-countdown today-cd-num"{% if not today.next.time_tbd %} data-net="{{ today.next.net }}"{% endif %}>{{ today.next.countdown }}</span>
         {% endif %}
         {% if today.next.status %}
         <span class="pill status-{{ today.next.status_class or 'tbd' }}">{{ today.next.status }}</span>

@@ -563,12 +563,18 @@ def build_robots(base: str) -> str:
 #  sitemap.xml — lastmod + hreflang相互リンク
 # =====================================================================
 def build_sitemap(base: str, paths_by_lang: dict[str, list[str]],
-                  build_dt: datetime) -> str:
+                  build_dt: datetime,
+                  lastmod_by_lang: dict[str, dict[str, str]] | None = None) -> str:
     """言語ごとの生成済みパス一覧から sitemap を作る。
 
     ページ分割やソース別ページも含め、実際に出力したURLだけを載せる。
+
+    lastmod は中身が変わった日を入れる。全URLに毎日ビルド日を入れていたが、
+    それでは「昨日から何が変わったか」の信号にならず、検索側に無視される。
+    論文・記事など内容が固定のページは、その公開日を使う。
     """
-    lastmod = build_dt.astimezone(timezone.utc).strftime("%Y-%m-%d")
+    default_lastmod = build_dt.astimezone(timezone.utc).strftime("%Y-%m-%d")
+    lastmod_by_lang = lastmod_by_lang or {}
     out = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
@@ -588,10 +594,11 @@ def build_sitemap(base: str, paths_by_lang: dict[str, list[str]],
 
     for lang, paths in paths_by_lang.items():
         prefix = "" if lang == config.DEFAULT_LANG else f"{lang}/"
+        per_path = lastmod_by_lang.get(lang, {})
         for p in sorted(paths):
             out.append("  <url>")
             out.append(f"    <loc>{base}/{prefix}{p}</loc>")
-            out.append(f"    <lastmod>{lastmod}</lastmod>")
+            out.append(f"    <lastmod>{per_path.get(p, default_lastmod)}</lastmod>")
             out.append(f"    <priority>{prio(p)}</priority>")
             # 相手言語にも同じパスが存在するときだけ hreflang を張る
             for alt, alt_paths in paths_by_lang.items():

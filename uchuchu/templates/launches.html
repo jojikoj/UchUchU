@@ -7,7 +7,19 @@
 <section class="page-head">
   <div class="wrap">
     <h1>{{ t('launches.title') }}</h1>
-    <p class="page-sub">{{ t('launches.subtitle') }}</p>
+    <p class="page-sub">{{ t('launches.subtitle') }} {{ t('launches.tz_note') }}</p>
+    {#
+      カレンダー購読。毎日サイトを開かせるより、相手のカレンダーに
+      予定を置いてもらう方が強い。打ち上げのたびに向こうから戻ってくる。
+      webcal: はカレンダーアプリが直接開くスキーム。
+    #}
+    <p class="ics-line">
+      <a class="btn btn-ghost btn-sm"
+         href="webcal://{{ site_base_url|replace('https://','')|replace('http://','') }}{{ '/en' if lang == 'en' else '' }}/launches.ics">
+        {{ t('launches.ics') }}
+      </a>
+      <span class="ics-note">{{ t('launches.ics_note') }}</span>
+    </p>
   </div>
 </section>
 <section class="section">
@@ -19,6 +31,15 @@
       毎日見る人が最初に知りたいのは「今日あるのか」なので、
       今日が0件のときはその事実を明示する。
     #}
+    {# 日本の打ち上げは件数が少なく、世界の予定に埋もれる。
+       日本の宇宙開発に関わる人が最初に確認する対象なので先頭に出す #}
+    {% if jp_launches %}
+    <h2 class="launch-group">{{ t('launches.japan') }}</h2>
+    <div class="grid grid-launches">
+      {% for l in jp_launches %}{{ launch_card(l, lang, t) }}{% endfor %}
+    </div>
+    {% endif %}
+
     {% set ns = namespace(group=None) %}
     {% if launches[0].group != 'today' and pagination.current|default(1) == 1 %}
     <h2 class="launch-group">{{ t('launches.today') }}</h2>

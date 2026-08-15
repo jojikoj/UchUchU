@@ -90,14 +90,25 @@ def _parse_iso(s: str | None) -> datetime | None:
         return None
 
 
+JST = timezone(timedelta(hours=9))
+
+
 def fmt_date(iso: str | None, lang: str, with_time: bool = False) -> str | None:
+    """日付の表示。日本語サイトの時刻は日本時間で出す。
+
+    打ち上げ時刻を UTC だけで出していたが、日本の読者は毎回9時間を
+    足して読む必要があり、予定として使えない。日本語サイトは JST を主、
+    UTC を従にする（海外ソースとの照合のため UTC も残す）。
+    """
     dt = _parse_iso(iso)
     if dt is None:
         return None
     if lang == "ja":
-        base = f"{dt.year}年{dt.month}月{dt.day}日"
+        local = dt.astimezone(JST)
+        base = f"{local.year}年{local.month}月{local.day}日"
         if with_time:
-            base += f" {dt.hour:02d}:{dt.minute:02d} UTC"
+            base += (f" {local.hour:02d}:{local.minute:02d} JST"
+                     f"（{dt.hour:02d}:{dt.minute:02d} UTC）")
         return base
     base = f"{_EN_MONTHS[dt.month]} {dt.day}, {dt.year}"
     if with_time:
@@ -110,14 +121,17 @@ _EN_WDAY = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 
 def fmt_date_short(iso: str | None, lang: str) -> str | None:
-    """一覧用の短い絶対表記。曜日を入れる。
+    """一覧用の短い絶対表記。
 
     「2時間前」のような相対表記は使わない。宇宙開発では打ち上げ日など
     日付そのものが情報価値を持ち、相対表記では予定と照合できないため。
+    日本語サイトは日本時間で切る（日付がずれると予定表として使えない）。
     """
     dt = _parse_iso(iso)
     if dt is None:
         return None
+    if lang == "ja":
+        dt = dt.astimezone(JST)
     # メディアで一般的な YYYY.MM.DD 表記。桁が揃い一覧で読みやすい。
     return f"{dt.year}.{dt.month:02d}.{dt.day:02d}"
 
@@ -247,8 +261,10 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
     更新されない記録が「まもなく」として先頭に残り続けるため、
     こちら側で時刻を見て判定する（LAUNCH_STALE_AFTER）。
     """
-    jst = timezone(timedelta(hours=9))
-    today = now.astimezone(jst).date()
+    # 「今日」の境目は読者のいる時間帯で切る。日本語サイトは日本時間、
+    # 英語サイトは表示に合わせて UTC。
+    tz = JST if lang == "ja" else timezone.utc
+    today = now.astimezone(tz).date()
     out = []
     for it in raw:
         it = dict(it)
@@ -261,16 +277,28 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
             upcoming = False
         it["upcoming"] = upcoming
         it["stale"] = stale
-        it["net_display"] = fmt_date(it.get("net"), lang, with_time=True)
+        # 日程が未確定の打ち上げは 00:00 UTC が「日付だけ決まっている」印として
+        # 入ってくる。これを JST に直すと 09:00 という決まっていない時刻を
+        # 断言してしまうので、時刻は出さず未定と明示する。
+        time_tbd = bool(dt is not None and dt.hour == 0 and dt.minute == 0
+                        and (it.get("status") or "").upper() in ("TBD", "TBC"))
+        it["time_tbd"] = time_tbd
+        it["net_display"] = fmt_date(it.get("net"), lang, with_time=not time_tbd)
+        if time_tbd:
+            it["net_display"] += f"　{_t('launches.time_tbd', lang)}"
         it["net_short"] = fmt_date_short(it.get("net"), lang)
         # カウントダウンは予定の打ち上げのみ。実績に「まもなく」と出さない。
         it["countdown"] = countdown_label(it.get("net"), now, lang) if upcoming else None
+        if upcoming and time_tbd and dt is not None:
+            # 時刻が決まっていないものを秒まで刻むと、無い精度を主張することになる。
+            days = max((dt - now).days, 0)
+            it["countdown"] = f"T-{days}日" if lang == "ja" else f"T-{days}d"
         st = (it.get("status_name") or it.get("status") or "").lower()
         it["status_class"] = _STATUS_CLASS.get(st, "tbd")
         it["result_class"] = _RESULT_CLASS.get(st) if not upcoming else None
         # 「今日」「今週」の仕分け。日本の読者が見るので日本時間で切る。
         if dt is not None:
-            days = (dt.astimezone(jst).date() - today).days
+            days = (dt.astimezone(tz).date() - today).days
             it["days_from_today"] = days
             it["is_today"] = days == 0
             it["is_this_week"] = 0 <= days <= 6
@@ -278,6 +306,9 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
             it["days_from_today"] = None
             it["is_today"] = False
             it["is_this_week"] = False
+        # 日本の打ち上げ。日本の宇宙開発に関わる人が最も追う対象なので、
+        # 世界の予定に埋もれさせず別枠で出す（射場が海外でも運用者が日本なら含む）。
+        it["is_japan"] = "JPN" in (it.get("country"), it.get("provider_country"))
         # 一覧の見出し分け。並び順と一致するので、切り替わった所に見出しを出す。
         if not upcoming:
             it["group"] = "results"
@@ -590,6 +621,9 @@ class Builder:
         self.papers_raw = _load_json("papers.json").get("items", [])
         # 言語ごとに実際に出力したパスを記録（sitemap生成に使う）
         self.paths_by_lang: dict[str, list[str]] = {l: [] for l in config.LANGS}
+        # sitemap の lastmod。内容が固定のページは公開日を入れる。
+        # 全URLに毎日ビルド日を入れると更新シグナルとして無効になるため。
+        self.lastmod_by_lang: dict[str, dict[str, str]] = {l: {} for l in config.LANGS}
 
     # 相対パス prefix（dist直下=ルート、ページ深さに応じて ../ を積む）
     @staticmethod
@@ -694,8 +728,8 @@ class Builder:
         次のT-0、今日と今週の本数、24時間以内の結果、今日のニュース本数を
         1画面にまとめ、「今日ここに来れば分かる」状態を作る。
         """
-        jst = timezone(timedelta(hours=9))
-        today = self.now.astimezone(jst).date()
+        tz = JST if lang == "ja" else timezone.utc
+        today = self.now.astimezone(tz).date()
         upcoming = [l for l in launches if l.get("upcoming")]
         past = [l for l in launches if not l.get("upcoming")]
 
@@ -722,7 +756,7 @@ class Builder:
         news_today = 0
         for n in news:
             dt = _parse_iso(n.get("published"))
-            if dt is not None and dt.astimezone(jst).date() == today:
+            if dt is not None and dt.astimezone(tz).date() == today:
                 news_today += 1
 
         return {
@@ -741,6 +775,16 @@ class Builder:
         papers = prepare_papers(self.papers_raw, lang)
         articles = load_articles(lang)
         home_label = _t("nav.home", lang)
+
+        # 内容が変わらないページの lastmod。論文は公開日、記事は更新日。
+        lm = self.lastmod_by_lang[lang]
+        for p in papers:
+            if p.get("published"):
+                lm[f"p/{p['slug']}/"] = str(p["published"])[:10]
+        for a in articles:
+            d = a.get("updated") or a.get("date")
+            if d:
+                lm[f"articles/{a['slug']}/"] = str(d)[:10]
 
         # トップ（depth: ja=0, en=1 だが rel は言語ルート基準なので 0）
         ctx = self._ctx(lang, depth=0, active="home", path="")
@@ -802,6 +846,11 @@ class Builder:
                 ctx = self._ctx(lang, depth=depth, active=active, path=path)
                 ctx[var] = chunk
                 ctx["pagination"] = _pagination_ctx(pno, len(chunks))
+                # 日本の打ち上げは1ページ目に別枠で出す（件数が少なく埋もれるため）
+                if active == "launches" and pno == 1:
+                    ctx["jp_launches"] = [
+                        l for l in all_items
+                        if l.get("upcoming") and l.get("is_japan")][:4]
                 if active == "news":
                     ctx["source_chips"] = self._source_chips(
                         lang, up=depth - 1, current=None, available=live_sources)
@@ -1084,8 +1133,66 @@ class Builder:
         feed_dir.mkdir(parents=True, exist_ok=True)
         (feed_dir / "feed.xml").write_text(feed, encoding="utf-8")
 
+        # 打ち上げカレンダー（.ics）。
+        # 毎日サイトを開かせるより、相手のカレンダーに予定を置いてもらう方が
+        # 強い。打ち上げが近づくたびに向こうから戻ってくる導線になる。
+        (feed_dir / "launches.ics").write_text(
+            self._launch_ics(lang, launches), encoding="utf-8")
+
         print(f"  [{lang}] home + {total_pages_built} 一覧ページ "
-              f"+ {len(articles)} articles + feed.xml")
+              f"+ {len(articles)} articles + feed.xml + launches.ics")
+
+    @staticmethod
+    def _ics_escape(s: str) -> str:
+        return (str(s or "").replace("\\", "\\\\").replace(";", r"\;")
+                .replace(",", r"\,").replace("\n", r"\n"))
+
+    def _launch_ics(self, lang: str, launches: list[dict]) -> str:
+        """予定の打ち上げをカレンダー購読用の iCalendar にする。
+
+        時刻未定（TBD）は分単位の精度が無いが、予定として押さえたい需要が
+        あるので出す。確度は STATUS と本文で伝え、勝手に確定扱いしない。
+        """
+        def stamp(dt: datetime) -> str:
+            return dt.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+        lines = [
+            "BEGIN:VCALENDAR", "VERSION:2.0",
+            "PRODID:-//UchUchU//Launch Schedule//" + lang.upper(),
+            "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+            "X-WR-CALNAME:" + self._ics_escape(
+                "UchUchU 打ち上げ予定" if lang == "ja" else "UchUchU Launch Schedule"),
+            "X-WR-TIMEZONE:" + ("Asia/Tokyo" if lang == "ja" else "UTC"),
+            # 購読側が再取得する間隔。日次更新なので12時間で足りる
+            "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
+            "X-PUBLISHED-TTL:PT12H",
+        ]
+        now_stamp = stamp(self.now)
+        for l in launches:
+            if not l.get("upcoming"):
+                continue
+            dt = _parse_iso(l.get("net"))
+            if dt is None or not l.get("id"):
+                continue
+            desc = " / ".join(x for x in (
+                l.get("provider"), l.get("rocket"), l.get("mission"),
+                l.get("status_name")) if x)
+            lines += [
+                "BEGIN:VEVENT",
+                f"UID:{l['id']}@uchuchu.tech",
+                f"DTSTAMP:{now_stamp}",
+                f"DTSTART:{stamp(dt)}",
+                f"DTEND:{stamp(dt + timedelta(hours=1))}",
+                "SUMMARY:" + self._ics_escape(l.get("name")),
+                "LOCATION:" + self._ics_escape(l.get("location")),
+                "DESCRIPTION:" + self._ics_escape(desc),
+                "URL:" + self._url_for(lang, "launches/"),
+                # 予定は動く。確定扱いにせず TENTATIVE を明示する
+                "STATUS:" + ("CONFIRMED" if l.get("status_class") == "go" else "TENTATIVE"),
+                "END:VEVENT",
+            ]
+        lines.append("END:VCALENDAR")
+        return "\r\n".join(lines) + "\r\n"
 
     # --- 付随ファイル ---
     def write_extras(self) -> None:
@@ -1110,7 +1217,8 @@ class Builder:
         # sitemap.xml（実際に生成したページのみ / lastmod + hreflang）
         articles_ja = load_articles(config.DEFAULT_LANG)
         (config.DIST_DIR / "sitemap.xml").write_text(
-            seo.build_sitemap(self.base_url, self.paths_by_lang, self.now),
+            seo.build_sitemap(self.base_url, self.paths_by_lang, self.now,
+                              self.lastmod_by_lang),
             encoding="utf-8")
 
         # IndexNow の鍵ファイル。検索エンジンがこれを取得して

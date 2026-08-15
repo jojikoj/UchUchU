@@ -182,6 +182,15 @@ STRINGS = {
     "launches.results": {"ja": "直近の結果", "en": "Recent results"},
     "launches.none_today": {"ja": "今日の打ち上げ予定はありません。",
                             "en": "No launches scheduled today."},
+    "launches.ics": {"ja": "カレンダーに登録（購読）",
+                     "en": "Subscribe in your calendar"},
+    "launches.ics_note": {
+        "ja": "カレンダーアプリに購読登録すると、打ち上げ予定が自動で更新されます。日程は変更されることがあります。",
+        "en": "Subscribe once and the schedule updates automatically. Dates are subject to change."},
+    "launches.tz_note": {"ja": "時刻は日本時間（括弧内はUTC）。",
+                         "en": "Times are in UTC."},
+    "launches.japan": {"ja": "日本の打ち上げ", "en": "Japanese launches"},
+    "launches.time_tbd": {"ja": "時刻未定", "en": "time TBD"},
 
     # 「今日の宇宙」— 毎日ここだけ見れば今日の状況が分かる、が狙い。
     "today.title": {"ja": "今日の宇宙", "en": "Space Today"},

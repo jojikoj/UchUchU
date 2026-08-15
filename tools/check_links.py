@@ -21,6 +21,47 @@ STATIC_PATHS = {
 }
 
 
+def check_dist() -> list[str]:
+    """生成物 dist/ の内部リンクが実在するか、全ページ分を検査する。
+
+    記事の markdown だけを見ていたため、テンプレート側のリンクの誤りに
+    気づけなかった。実際、関連記事・関連論文のリンクが a/ p/ の欠落で
+    全ページ404、記事が0件になったソースへのリンクも404のまま
+    数週間公開されていた（2026-08-15 発見、131本）。
+    ここで生成物そのものを見れば、同じ壊れ方は二度と出荷されない。
+    """
+    dist = ROOT / "dist"
+    if not (dist / "index.html").exists():
+        return []
+    href = re.compile(r'href="([^"#?]+)"')
+    broken: dict[str, int] = {}
+    for f in dist.rglob("index.html"):
+        base = "/" + str(f.parent.relative_to(dist)).replace("\\", "/")
+        if base == "/.":
+            base = "/"
+        for link in href.findall(f.read_text(encoding="utf-8", errors="ignore")):
+            if link.startswith(("http", "mailto:", "//", "javascript:", "webcal:")):
+                continue
+            path = link if link.startswith("/") else base.rstrip("/") + "/" + link
+            # ブラウザと同じくルートより上には行けない
+            parts: list[str] = []
+            for seg in path.split("/"):
+                if seg in ("", "."):
+                    continue
+                if seg == "..":
+                    if parts:
+                        parts.pop()
+                else:
+                    parts.append(seg)
+            target = dist.joinpath(*parts)
+            ok = target.exists() if target.suffix else (target / "index.html").exists()
+            if not ok:
+                key = "/" + "/".join(parts)
+                broken[key] = broken.get(key, 0) + 1
+    return [f"{url}（{n}箇所から参照）" for url, n in
+            sorted(broken.items(), key=lambda kv: -kv[1])]
+
+
 def main() -> int:
     slugs = {f.name.replace(".ja.md", "") for f in ARTICLES.glob("*.ja.md")}
     bad = []
@@ -38,7 +79,17 @@ def main() -> int:
     if bad:
         print(f"\n壊れた内部リンク {len(bad)}件", file=sys.stderr)
         return 1
-    print(f"内部リンク OK（記事{len(slugs)}本）")
+
+    dist_bad = check_dist()
+    if dist_bad:
+        print("生成物の内部リンクが壊れています:", file=sys.stderr)
+        for line in dist_bad[:20]:
+            print(f"  NG {line}", file=sys.stderr)
+        if len(dist_bad) > 20:
+            print(f"  ... 他 {len(dist_bad) - 20}件", file=sys.stderr)
+        return 1
+
+    print(f"内部リンク OK（記事{len(slugs)}本 / 生成物も検査済み）")
     return 0
 
 
