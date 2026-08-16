@@ -30,7 +30,17 @@
         var net = Date.parse(el.getAttribute("data-net"));
         if (isNaN(net)) return;
         var s = Math.floor((net - now) / 1000);
-        if (s <= 0) { el.textContent = lang === "ja" ? "まもなく" : "T-0"; return; }
+        if (s <= 0) {
+          // 予定時刻を過ぎた直後の6時間だけ「まもなく」。
+          // それ以降は元データの更新漏れなので、何も出さない。
+          if (-s <= 6 * 3600) {
+            el.textContent = lang === "ja" ? "まもなく" : "T-0";
+          } else {
+            el.textContent = "";
+            el.classList.add("is-stale");
+          }
+          return;
+        }
         var d = Math.floor(s / 86400); s -= d * 86400;
         var h = Math.floor(s / 3600); s -= h * 3600;
         var m = Math.floor(s / 60); var sec = s - m * 60;
