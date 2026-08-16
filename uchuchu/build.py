@@ -753,19 +753,27 @@ class Builder:
         if not results:
             recent_fallback = [l for l in past if l.get("result_class")][:3]
 
-        news_today = 0
+        # 「今日」ではなく直近24時間で数える。収集は1日1回なので、
+        # 日付が変わった直後は「今日 0件」になり、止まった媒体に見えるため。
+        news_recent = 0
         for n in news:
             dt = _parse_iso(n.get("published"))
-            if dt is not None and dt.astimezone(tz).date() == today:
-                news_today += 1
+            if dt is not None and since <= dt <= self.now:
+                news_recent += 1
+
+        # 「次の」打ち上げは、まだ時刻が来ていないものを指す。
+        # 予定時刻を過ぎた（保留中かもしれない）ものを先頭に据えると、
+        # 次に何があるのかという肝心の問いに答えられない。
+        nxt = next((l for l in upcoming
+                    if (_parse_iso(l.get("net")) or self.now) > self.now), None)
 
         return {
-            "next": upcoming[0] if upcoming else None,
+            "next": nxt or (upcoming[0] if upcoming else None),
             "today_launches": [l for l in upcoming if l.get("is_today")],
             "week_count": sum(1 for l in upcoming if l.get("is_this_week")),
             "results": results,
             "recent_results": recent_fallback,
-            "news_count": news_today,
+            "news_count": news_recent,
             "date_display": fmt_date(self.now.isoformat(), lang),
         }
 

@@ -198,7 +198,7 @@ STRINGS = {
     "today.launches_today": {"ja": "今日の打ち上げ", "en": "Launches today"},
     "today.launches_week": {"ja": "今週の打ち上げ", "en": "Launches this week"},
     "today.results_24h": {"ja": "24時間以内の結果", "en": "Results in 24h"},
-    "today.news_today": {"ja": "今日のニュース", "en": "News today"},
+    "today.news_today": {"ja": "24時間のニュース", "en": "News in 24h"},
     "today.unit": {"ja": "件", "en": ""},
     "today.success": {"ja": "成功", "en": "Success"},
     "today.failure": {"ja": "失敗", "en": "Failure"},
