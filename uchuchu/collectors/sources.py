@@ -19,9 +19,15 @@ import requests
 from .. import config
 
 
-def _get(url: str) -> requests.Response:
+def _get(url: str, verify: str | bool = True) -> requests.Response:
+    """共通のHTTP取得。
+
+    verify に PEM を渡すと、そのファイルだけを信頼して検証する。
+    中間証明書を正しく送らないサーバ（官公需情報ポータル）向け。
+    検証を切るのではなく、正しい鎖を与えて通す。
+    """
     r = requests.get(
-        url, timeout=config.HTTP_TIMEOUT,
+        url, timeout=config.HTTP_TIMEOUT, verify=verify,
         headers={"User-Agent": config.USER_AGENT, "Accept": "application/json, text/xml, */*"},
     )
     r.raise_for_status()
@@ -262,3 +268,59 @@ def fetch_papers() -> list[dict]:
             "published": _parse_feed_date(e),
         })
     return papers
+
+
+# --- 調達情報 -----------------------------------------------------------
+def fetch_procurement() -> list[dict]:
+    """官公需情報ポータルサイトの公告から、宇宙分野の案件を集める。
+
+    参入したい製造業には「どこが何を発注しているか」、サプライヤーを
+    探す宇宙ベンチャーには「業界が何を外に出しているか」が分かる。
+    集約ニュースと違い、この一覧は他所に存在しない。
+
+    XMLはUTF-8固定・1クエリ最大100件。取りこぼしを減らすため複数語で引く。
+    """
+    import urllib.parse
+    import xml.etree.ElementTree as ET
+
+    seen: dict[str, dict] = {}
+    for q in config.PROCUREMENT_QUERIES:
+        url = (f"{config.PROCUREMENT_API}?Query={urllib.parse.quote(q)}"
+               f"&Count=100&CFT=1")
+        try:
+            resp = _get(url, verify=str(config.KKJ_CA_BUNDLE))
+            root = ET.fromstring(resp.content)
+        except Exception as e:
+            # 1語落ちても他の語で拾えるので、ここでは止めない
+            print(f"  FAIL procurement[{q}] {type(e).__name__}: {e}", file=sys.stderr)
+            continue
+
+        for r in root.findall(".//SearchResult"):
+            key = (r.findtext("Key") or "").strip()
+            name = (r.findtext("ProjectName") or "").strip()
+            org = (r.findtext("OrganizationName") or "").strip()
+            if not key or not name:
+                continue
+            # 他省庁の無関係な工事を弾く。宇宙分野の機関からの発注は
+            # 案件名に語が無くても残す（「〜の購入」等が多いため）。
+            # 判定に概要は使わない（定型文の語で誤ヒットするため）。
+            if not (any(o in org for o in config.PROCUREMENT_ORGS)
+                    or any(k in name for k in config.PROCUREMENT_KEYWORDS)):
+                continue
+            seen[key] = {
+                "id": key,
+                "name": name,
+                "org": org,
+                "url": (r.findtext("ExternalDocumentURI") or "").strip(),
+                "issued": (r.findtext("CftIssueDate") or "").strip(),
+                "prefecture": (r.findtext("PrefectureName") or "").strip(),
+                "city": (r.findtext("CityName") or "").strip(),
+                "description": clean_text(r.findtext("ProjectDescription") or "", limit=300),
+                "file_type": (r.findtext("FileType") or "").strip(),
+                "is_jaxa": "宇宙航空研究開発機構" in org,
+            }
+        time.sleep(1)   # 公共APIなので間隔を空ける
+
+    items = list(seen.values())
+    items.sort(key=lambda x: x.get("issued") or "", reverse=True)
+    return items

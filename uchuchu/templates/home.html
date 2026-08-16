@@ -160,6 +160,32 @@
   </div>
 </section>
 
+{#
+  独自資産2: 調達情報。
+  読者を「参入したい製造業」と「サプライヤーを探す宇宙企業」に絞ったとき、
+  両者が毎日確認する実務情報はこれ。ニュースは他媒体でも読めるが、
+  宇宙分野の調達だけを集めた一覧は他に無い。企業DBの直後に置く。
+#}
+{% if procurement %}
+<section class="block">
+  {{ sec_head('TENDERS', t('procurement.recent'), rel ~ 'procurement/', t('home.view_all')) }}
+  <p class="block-lead">{{ t('procurement.subtitle') }}</p>
+  <div class="proc-list proc-list-home">
+    {% for p in procurement %}
+    <a class="proc-row" href="{{ rel }}procurement/">
+      <span class="proc-row-meta">
+        {% if p.is_jaxa %}<span class="pill accent">{{ t('procurement.jaxa_only') }}</span>{% endif %}
+        {% if p.kind %}<span class="pill status-{{ p.kind_class }}">{{ p.kind }}</span>{% endif %}
+        <time datetime="{{ p.issued }}">{{ p.issued_display }}</time>
+        <span class="proc-org">{{ p.org }}</span>
+      </span>
+      <span class="proc-row-name">{{ p.name }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 {# 打ち上げ帯。時間で変化する固有データ。
    独自資産である企業DBを先に見せたいので、その下に置く #}
 {% if next_launches %}
@@ -231,7 +257,9 @@
 </section>
 {% endif %}
 
-{% if papers %}
+{# 研究動向は絞った2者の仕事に直結しないので、日本語トップには出さない。
+   ページと検索流入は残す（英語サイトの流入はここが主なので英語側には出す）#}
+{% if papers and lang != 'ja' %}
 <section class="block block-tint">
   {{ sec_head('RESEARCH', t('home.research'), rel ~ 'papers/', t('home.view_all')) }}
   <div class="grid grid-papers">

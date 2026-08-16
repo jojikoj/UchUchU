@@ -110,13 +110,24 @@
              aria-label="{{ t('nav.search') }}">
     </form>
 
+    {#
+      並びは読者の2者（宇宙産業に参入したい製造業／サプライヤーを探す宇宙企業）が
+      使う順。両者の接点である企業DBを先頭に、次に毎日確認する調達情報を置く。
+      研究動向（arXiv）はこの2者の仕事に直結しないのでナビから外す
+      （ページと検索流入は残す）。
+    #}
     <nav class="side-nav">
       <a href="{{ home_url }}" class="{{ 'on' if active == 'home' }}">{{ t('nav.home') }}</a>
       <a href="{{ rel }}companies/" class="{{ 'on' if active == 'companies' }}">{{ t('nav.companies') }}</a>
+      {% if lang == 'ja' %}
+      <a href="{{ rel }}procurement/" class="{{ 'on' if active == 'procurement' }}">{{ t('nav.procurement') }}</a>
+      {% endif %}
       <a href="{{ rel }}articles/" class="{{ 'on' if active == 'articles' }}">{{ t('nav.articles') }}</a>
-      <a href="{{ rel }}news/" class="{{ 'on' if active == 'news' }}">{{ t('nav.news') }}</a>
       <a href="{{ rel }}launches/" class="{{ 'on' if active == 'launches' }}">{{ t('nav.launches') }}</a>
+      <a href="{{ rel }}news/" class="{{ 'on' if active == 'news' }}">{{ t('nav.news') }}</a>
+      {% if lang != 'ja' %}
       <a href="{{ rel }}papers/" class="{{ 'on' if active == 'papers' }}">{{ t('nav.papers') }}</a>
+      {% endif %}
       <a href="{{ rel }}faq/" class="{{ 'on' if active == 'faq' }}">{{ t('nav.faq') }}</a>
       <a href="{{ rel }}advertise/" class="{{ 'on' if active == 'advertise' }}">{{ t('nav.advertise') }}</a>
       <a href="{{ rel }}contact/" class="cta {{ 'on' if active == 'contact' }}">{{ t('nav.contact') }}</a>
@@ -151,9 +162,10 @@
         <div class="footer-col">
           <h4>{{ t('nav.home') }}</h4>
           <a href="{{ rel }}companies/">{{ t('nav.companies') }}</a>
+          {% if lang == 'ja' %}<a href="{{ rel }}procurement/">{{ t('nav.procurement') }}</a>{% endif %}
           <a href="{{ rel }}articles/">{{ t('nav.articles') }}</a>
-          <a href="{{ rel }}news/">{{ t('nav.news') }}</a>
           <a href="{{ rel }}launches/">{{ t('nav.launches') }}</a>
+          <a href="{{ rel }}news/">{{ t('nav.news') }}</a>
           <a href="{{ rel }}papers/">{{ t('nav.papers') }}</a>
           <a href="{{ rel }}topics/moon/">{{ t('nav.topics') }}</a>
           <a href="{{ rel }}search/">{{ t('nav.search') }}</a>

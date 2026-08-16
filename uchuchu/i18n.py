@@ -12,6 +12,24 @@ STRINGS = {
     "nav.launches": {"ja": "打ち上げ", "en": "Launches"},
     "nav.papers": {"ja": "研究動向", "en": "Research"},
     "nav.articles": {"ja": "特集", "en": "Features"},
+    "nav.procurement": {"ja": "調達情報", "en": "Procurement"},
+
+    # 調達情報。読者を「参入したい製造業」と「サプライヤーを探す宇宙企業」に
+    # 絞ったとき、両者が毎日確認する唯一の実務情報。
+    "procurement.title": {"ja": "宇宙分野の調達・入札情報",
+                          "en": "Space Sector Procurement (Japan)"},
+    "procurement.subtitle": {
+        "ja": "JAXA・内閣府・省庁が公告した宇宙関連の調達案件。官公需情報ポータルサイト（中小企業庁）から毎日集めています。",
+        "en": "Space-related public tenders in Japan, collected daily from the government procurement portal."},
+    "procurement.org": {"ja": "発注機関", "en": "Organisation"},
+    "procurement.issued": {"ja": "公告日", "en": "Issued"},
+    "procurement.area": {"ja": "所在地", "en": "Area"},
+    "procurement.doc": {"ja": "公告文書を見る", "en": "View the notice"},
+    "procurement.jaxa_only": {"ja": "JAXA", "en": "JAXA"},
+    "procurement.note": {
+        "ja": "掲載期間を過ぎた案件は、発注機関側で文書が削除されている場合があります。応札の可否・期限は必ず発注機関の公告でご確認ください。",
+        "en": "Notices may be removed by the issuing organisation after their posting period. Always verify details with the original notice."},
+    "procurement.recent": {"ja": "新着の調達", "en": "Recent tenders"},
 
     "hero.cta_news": {"ja": "最新ニュースを見る", "en": "Latest news"},
     "hero.cta_launches": {"ja": "打ち上げ予定", "en": "Upcoming launches"},

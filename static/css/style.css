@@ -1041,6 +1041,42 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
    大きな空白を作ると、毎日開く人の最初の1画面が空虚になる */
 .launch-none { margin: 0; color: var(--text-3); font-size: .88rem; }
 
+/* --- 調達情報 ---
+   応札を検討する人が見る一覧なので、装飾より走査しやすさを優先する。
+   案件名を最も強く、発注機関と公告日をその上に小さく置く。 */
+.proc-list { display: grid; gap: 14px; }
+.proc-item {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-md); padding: 16px 18px; box-shadow: var(--sh-1);
+}
+.proc-meta, .proc-row-meta {
+  display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
+  font-size: .74rem; color: var(--text-3); margin-bottom: 7px;
+}
+.proc-meta time, .proc-row-meta time { font-family: var(--mono); }
+.proc-org { color: var(--text-2); font-weight: 650; }
+.proc-name { font-size: 1rem; line-height: 1.5; margin: 0 0 8px; font-weight: 700; }
+.proc-desc {
+  margin: 0 0 10px; font-size: .84rem; color: var(--text-2); line-height: 1.7;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+}
+.proc-link { font-size: .82rem; font-weight: 650; color: var(--accent); }
+.proc-note {
+  margin: 22px 0 0; font-size: .76rem; color: var(--text-3); line-height: 1.8;
+  padding: 12px 14px; background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: var(--r-sm);
+}
+
+/* トップの新着調達。1行1件で本数を稼ぐ */
+.proc-list-home { gap: 0; }
+.proc-row {
+  display: block; padding: 13px 2px; border-bottom: 1px solid var(--line); color: inherit;
+}
+.proc-row:first-child { border-top: 1px solid var(--line); }
+.proc-row:hover .proc-row-name { color: var(--accent); }
+.proc-row-meta { margin-bottom: 4px; }
+.proc-row-name { font-size: .92rem; font-weight: 650; line-height: 1.5; }
+
 /* カレンダー購読の導線 */
 .ics-line { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 14px 0 0; }
 .btn.btn-sm { padding: 7px 14px; font-size: .82rem; }

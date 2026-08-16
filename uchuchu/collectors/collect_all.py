@@ -233,6 +233,30 @@ def collect_launches() -> dict:
     return {"generated_at": _now_iso(), "count": len(merged), "items": merged}
 
 
+def collect_procurement() -> dict:
+    """宇宙分野の調達公告。参入したい製造業が毎日確認する実務情報。
+
+    公告は掲載期間が過ぎると元URLから消えるが、こちらは記録として残す
+    （どこが何を発注しているかの傾向は、過ぎた案件からしか読めない）。
+    """
+    print("[procurement] collecting...")
+    try:
+        items = sources.fetch_procurement()
+        print(f"  ok  {len(items)} 件（うちJAXA {sum(1 for i in items if i.get('is_jaxa'))}件）")
+    except Exception as e:
+        items = []
+        print(f"  FAIL procurement {type(e).__name__}: {e}", file=sys.stderr)
+
+    old = _load_existing("procurement.json")
+    by_id = {p["id"]: p for p in old if p.get("id")}
+    for p in items:
+        by_id[p["id"]] = p
+    merged = sorted(by_id.values(), key=lambda x: x.get("issued") or "",
+                    reverse=True)[: config.PROCUREMENT_LIMIT]
+    print(f"  統合後 {len(merged)}件")
+    return {"generated_at": _now_iso(), "count": len(merged), "items": merged}
+
+
 def collect_papers() -> dict:
     print("[papers] collecting...")
     try:
@@ -252,14 +276,17 @@ def main() -> int:
     news = collect_news()
     launches = collect_launches()
     papers = collect_papers()
+    procurement = collect_procurement()
 
     _save("news.json", news)
     _save("launches.json", launches)
     _save("papers.json", papers)
+    _save("procurement.json", procurement)
 
     total = news["count"] + launches["count"] + papers["count"]
     print(f"=== done: news={news['count']} launches={launches['count']} "
-          f"papers={papers['count']} (total {total}) ===")
+          f"papers={papers['count']} procurement={procurement['count']} "
+          f"(total {total + procurement['count']}) ===")
     # 全滅なら失敗扱い（CIで気付けるように）
     return 0 if total > 0 else 1
 

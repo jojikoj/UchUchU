@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% from "macros.html" import pager %}
+{% block title %}{{ t('procurement.title') }}{% endblock %}
+{% block og_title %}{{ t('procurement.title') }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>{{ t('procurement.title') }}</h1>
+    <p class="page-sub">{{ t('procurement.subtitle') }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    {% if procurement %}
+    <div class="proc-list">
+      {% for p in procurement %}
+      <article class="proc-item">
+        <div class="proc-meta">
+          {% if p.is_jaxa %}<span class="pill accent">{{ t('procurement.jaxa_only') }}</span>{% endif %}
+          {# 随意契約は相手方が決まっており参入の機会にならない。
+             応札を検討する人には、この差が案件名より先に要る #}
+          {% if p.kind %}<span class="pill status-{{ p.kind_class }}">{{ p.kind }}</span>{% endif %}
+          <time datetime="{{ p.issued }}">{{ p.issued_display }}</time>
+          <span class="proc-org">{{ p.org }}</span>
+          {% if p.prefecture %}<span class="proc-area">{{ p.prefecture }}{{ p.city }}</span>{% endif %}
+        </div>
+        <h2 class="proc-name">{{ p.name }}</h2>
+        {% if p.description %}<p class="proc-desc">{{ p.description }}</p>{% endif %}
+        {% if p.url %}
+        {# 公告文書は発注機関のサイトにある。原文を必ず確認してもらう #}
+        <a class="proc-link" href="{{ p.url }}" target="_blank" rel="noopener nofollow">
+          {{ t('procurement.doc') }}{% if p.file_type %}（{{ p.file_type|upper }}）{% endif %} →
+        </a>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {{ pager(pagination, t) }}
+    <p class="proc-note">{{ t('procurement.note') }}</p>
+    {% else %}
+    <p class="empty">{{ t('meta.no_data') }}</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

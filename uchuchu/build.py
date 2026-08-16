@@ -328,6 +328,40 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
     return upcoming_list + past_list
 
 
+def prepare_procurement(raw: list[dict], lang: str) -> list[dict]:
+    """調達公告を表示用に整形する。
+
+    日本の官公庁の公告なので日本語サイトにのみ出す。英語に機械翻訳すると
+    案件名の正確さが失われ、応札の判断材料として使えなくなる。
+    """
+    if lang != "ja":
+        return []
+    out = []
+    for it in raw:
+        it = dict(it)
+        it["issued_display"] = fmt_date(it.get("issued"), lang)
+        # 概要は案件名の再掲から始まることが多いので落とす
+        desc = (it.get("description") or "").strip()
+        name = (it.get("name") or "").strip()
+        if name and desc.startswith(name):
+            desc = desc[len(name):].lstrip("　 、。・-—")
+        it["description"] = desc
+        # 入札か随意契約かは応札を検討する側にとって決定的な差なので明示する。
+        # 随意契約の公示は相手方が決まっており、参入の機会にはならない。
+        body = name + " " + desc
+        if "随意契約" in body:
+            it["kind"] = "随意契約"
+            it["kind_class"] = "tbd"
+        elif "入札" in body or "公募" in body or "プロポーザル" in body:
+            it["kind"] = "入札・公募"
+            it["kind_class"] = "go"
+        else:
+            it["kind"] = ""
+            it["kind_class"] = ""
+        out.append(it)
+    return out
+
+
 def paper_slug(item: dict) -> str:
     """論文1件の安定したURLスラッグ。arXiv ID を使う。"""
     url = item.get("url") or item.get("pdf") or ""
@@ -619,6 +653,7 @@ class Builder:
         self.news_raw = _load_json("news.json").get("items", [])
         self.launches_raw = _load_json("launches.json").get("items", [])
         self.papers_raw = _load_json("papers.json").get("items", [])
+        self.procurement_raw = _load_json("procurement.json").get("items", [])
         # 言語ごとに実際に出力したパスを記録（sitemap生成に使う）
         self.paths_by_lang: dict[str, list[str]] = {l: [] for l in config.LANGS}
         # sitemap の lastmod。内容が固定のページは公開日を入れる。
@@ -781,6 +816,7 @@ class Builder:
         news = prepare_news(self.news_raw, lang)
         launches = prepare_launches(self.launches_raw, lang, self.now)
         papers = prepare_papers(self.papers_raw, lang)
+        procurement = prepare_procurement(self.procurement_raw, lang)
         articles = load_articles(lang)
         home_label = _t("nav.home", lang)
 
@@ -821,6 +857,7 @@ class Builder:
         ctx.update(news=news, launches=launches, papers=papers, articles=articles,
                    featured=featured, latest=latest,
                    next_launches=upcoming[:3], today=today_board, topic_nav=topic_nav,
+                   procurement=procurement[:5],
                    company_cats=companies.categories(lang),
                    featured_companies=all_comp[:14],
                    guides=[a for a in articles
@@ -845,6 +882,10 @@ class Builder:
             ("papers/", "papers.html", "papers", "papers", papers),
             ("articles/", "articles.html", "articles", "articles", articles),
         ]
+        # 調達情報は日本語サイトのみ（日本の官公庁の公告のため）
+        if procurement:
+            paged.append(("procurement/", "procurement.html",
+                          "procurement", "procurement", procurement))
         total_pages_built = 0
         for base_path, tpl, active, var, all_items in paged:
             chunks = _paginate(all_items, config.PAGE_SIZE)
