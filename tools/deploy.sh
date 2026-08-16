@@ -8,8 +8,11 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 ROOT=$(pwd)
 
-python3 tools/check_links.py            # リンク切れがあればここで止める
+# 検査はビルドの後に回す。check_links は dist/ の中身も見るため、
+# 先に走らせると前回の（＝これから作り直す）生成物を検査してしまい、
+# 直したはずの不具合で毎回止まる（2026-08-16、a/ 欠落の残骸で1735件の誤検知）。
 python3 -m uchuchu.build
+python3 tools/check_links.py            # リンク切れがあればここで止める
 
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
