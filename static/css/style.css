@@ -1041,6 +1041,25 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
    大きな空白を作ると、毎日開く人の最初の1画面が空虚になる */
 .launch-none { margin: 0; color: var(--text-3); font-size: .88rem; }
 
+/* --- 企業DBの絞り込み --- */
+.company-filter { margin-bottom: 22px; }
+.cf-input {
+  width: 100%; padding: 11px 14px; font-size: .92rem;
+  border: 1px solid var(--line-strong); border-radius: var(--r-sm);
+  background: var(--surface); color: var(--text);
+}
+.cf-input:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+.cf-areas { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 11px; }
+.cf-areas .chip {
+  font: inherit; font-size: .8rem; cursor: pointer;
+  padding: 6px 12px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--text-2);
+}
+.cf-areas .chip:hover { border-color: var(--line-strong); }
+.cf-areas .chip.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-ink); font-weight: 650; }
+.cf-n { margin-left: 6px; font-family: var(--mono); font-size: .72rem; opacity: .7; }
+.cf-result { margin: 11px 0 0; font-size: .8rem; color: var(--text-3); }
+
 /* --- 調達情報 ---
    応札を検討する人が見る一覧なので、装飾より走査しやすさを優先する。
    案件名を最も強く、発注機関と公告日をその上に小さく置く。 */
@@ -1060,11 +1079,38 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
   margin: 0 0 10px; font-size: .84rem; color: var(--text-2); line-height: 1.7;
   overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
 }
+/* 締切。応札を検討する人が案件名の次に見るので、本文より前に置く */
+.proc-deadline {
+  margin: 0 0 9px; font-size: .84rem; color: var(--text-2);
+  display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap;
+}
+.proc-deadline strong { font-family: var(--mono); font-weight: 700; color: var(--text); }
+.proc-deadline.is-open strong { color: var(--teal); }
+.proc-left {
+  font-size: .74rem; font-weight: 700; color: var(--teal);
+  background: var(--teal-soft); border-radius: 999px; padding: 2px 9px;
+}
 .proc-link { font-size: .82rem; font-weight: 650; color: var(--accent); }
 .proc-note {
   margin: 22px 0 0; font-size: .76rem; color: var(--text-3); line-height: 1.8;
   padding: 12px 14px; background: var(--surface-2);
   border: 1px solid var(--line); border-radius: var(--r-sm);
+}
+
+/* 調達一覧から参入ガイドへ渡す導線 */
+.proc-guides { margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line); }
+.proc-guides h2 { font-family: var(--font-head); font-size: 1.05rem; font-weight: 900; margin: 0 0 14px; }
+.proc-guide-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.proc-guide {
+  display: flex; flex-direction: column; gap: 6px; min-width: 0;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-md); padding: 14px 16px; color: inherit;
+}
+.proc-guide:hover { border-color: rgba(47,95,224,.42); box-shadow: var(--sh-2); }
+.proc-guide-title { font-size: .9rem; font-weight: 700; line-height: 1.5; }
+.proc-guide-ex {
+  font-size: .78rem; color: var(--text-3); line-height: 1.7;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
 }
 
 /* トップの新着調達。1行1件で本数を稼ぐ */

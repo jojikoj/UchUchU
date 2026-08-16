@@ -34,6 +34,10 @@ media_step "収集" python3 -m uchuchu.collectors.collect_all
 #    残りは翌日に持ち越して少しずつ消化する（jobs.yaml でtimeoutも延長済み）。
 media_step "本文要約" python3 -m uchuchu.collectors.fulltext --limit=20
 
+# 調達公告の提出期限はPDFにしか書かれていないので、別段で読みに行く。
+# 一度読んだものは再取得しないため、日々の負荷は新着分だけで済む。
+media_step "調達の締切" python3 -m uchuchu.collectors.procurement_detail --limit=40
+
 # 3. 内部リンク検査 → ビルド → 公開 → IndexNow
 media_step "公開" ./tools/deploy.sh
 

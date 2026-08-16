@@ -29,10 +29,30 @@
     <div class="filter-bar"><a class="chip" href="{{ back_to_all }}">← {{ t('news.filter_all') }}</a></div>
     {% endif %}
 
+    {#
+      絞り込み。サプライヤーを探す宇宙企業が「関東で衛星の部品を作れる会社」
+      のように探せないと、このDBは名簿でしかない。
+      件数が54社なのでページを増やさず、この場で絞る（JSが無効でも一覧は出る）。
+    #}
     {% if companies %}
+    <div class="company-filter" data-company-filter>
+      <input type="search" class="cf-input" data-cf-q
+             placeholder="{{ t('companies.filter_ph') }}" aria-label="{{ t('companies.filter_ph') }}">
+      <div class="cf-areas">
+        <button class="chip on" data-cf-area="">{{ t('news.filter_all') }}</button>
+        {% for a in areas %}
+        <button class="chip" data-cf-area="{{ a.id }}">{{ a.name }}<span class="cf-n">{{ a.count }}</span></button>
+        {% endfor %}
+      </div>
+      <p class="cf-result" data-cf-result hidden
+         data-hit="{{ t('companies.filter_hit') }}"
+         data-none="{{ t('companies.filter_none') }}"></p>
+    </div>
     <div class="company-list">
       {% for c in companies %}
-      <article class="company-card">
+      {# 絞り込みの対象。data-* に入れておけば、検索用の別データを持たずに済む #}
+      <article class="company-card" data-area="{{ c.area_id }}"
+               data-text="{{ (c.display_name ~ ' ' ~ (c.sub_name or '') ~ ' ' ~ (c.display_summary or '') ~ ' ' ~ (c.category_labels | join(' ')) ~ ' ' ~ (c.hq or '')) | lower }}">
         <div class="company-head">
           <h3 class="company-name">{{ c.display_name }}</h3>
           {% if c.sub_name %}<span class="company-sub">{{ c.sub_name }}</span>{% endif %}

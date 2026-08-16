@@ -336,10 +336,26 @@ def prepare_procurement(raw: list[dict], lang: str) -> list[dict]:
     """
     if lang != "ja":
         return []
+    today = datetime.now(JST).date()
     out = []
     for it in raw:
         it = dict(it)
         it["issued_display"] = fmt_date(it.get("issued"), lang)
+        # 締切は公告PDFから抜いた実データ。取れなかったものは空のまま
+        # （推測で埋めない）。まず知りたいのは「まだ間に合うか」。
+        dl = it.get("deadline")
+        it["deadline_display"] = None
+        it["is_open"] = None
+        it["days_left"] = None
+        if dl:
+            try:
+                d = datetime.strptime(dl, "%Y-%m-%d").date()
+            except ValueError:
+                d = None
+            if d:
+                it["deadline_display"] = f"{d.year}年{d.month}月{d.day}日"
+                it["days_left"] = (d - today).days
+                it["is_open"] = it["days_left"] >= 0
         # 概要は案件名の再掲から始まることが多いので落とす
         desc = (it.get("description") or "").strip()
         name = (it.get("name") or "").strip()
@@ -359,7 +375,57 @@ def prepare_procurement(raw: list[dict], lang: str) -> list[dict]:
             it["kind"] = ""
             it["kind_class"] = ""
         out.append(it)
+
+    # 受付中を先に、締切が近い順。応札を検討する人が最初に知りたいのは
+    # 「今から出せる案件はどれか」であって、公告された順ではない。
+    def sort_key(p: dict) -> tuple:
+        if p.get("is_open"):
+            return (0, p.get("deadline") or "", "")
+        return (1, "", _neg_str(p.get("issued") or ""))
+
+    out.sort(key=sort_key)
     return out
+
+
+# 本社所在地から地域を割り出すための対応表。都道府県だけを見る。
+_AREA_DEFS = [
+    ("hokkaido_tohoku", "北海道・東北",
+     ("北海道", "青森", "岩手", "宮城", "秋田", "山形", "福島")),
+    ("kanto", "関東", ("茨城", "栃木", "群馬", "埼玉", "千葉", "東京", "神奈川")),
+    ("chubu", "中部", ("新潟", "富山", "石川", "福井", "山梨", "長野",
+                       "岐阜", "静岡", "愛知")),
+    ("kinki", "近畿", ("三重", "滋賀", "京都", "大阪", "兵庫", "奈良", "和歌山")),
+    ("chugoku_shikoku", "中国・四国",
+     ("鳥取", "島根", "岡山", "広島", "山口", "徳島", "香川", "愛媛", "高知")),
+    ("kyushu", "九州・沖縄", ("福岡", "佐賀", "長崎", "熊本", "大分",
+                              "宮崎", "鹿児島", "沖縄")),
+]
+
+
+def company_area(hq: str | None) -> tuple[str, str] | None:
+    """本社所在地から (地域ID, 地域名) を返す。判定できなければ None。"""
+    hq = hq or ""
+    for aid, name, prefs in _AREA_DEFS:
+        if any(p in hq for p in prefs):
+            return aid, name
+    return None
+
+
+def _company_areas(items: list[dict]) -> list[dict]:
+    """絞り込みに出す地域。該当0件の地域は出さない。"""
+    counts: dict[str, int] = {}
+    for c in items:
+        a = company_area(c.get("hq"))
+        if a:
+            counts[a[0]] = counts.get(a[0], 0) + 1
+        c["area_id"], c["area_name"] = (a or ("", ""))
+    return [{"id": aid, "name": name, "count": counts[aid]}
+            for aid, name, _ in _AREA_DEFS if counts.get(aid)]
+
+
+def _neg_str(s: str) -> str:
+    """文字列の降順を昇順ソートの中で表すための反転キー。"""
+    return "".join(chr(0x10FFFF - ord(c)) if ord(c) < 0x10FFFF else c for c in s)
 
 
 def paper_slug(item: dict) -> str:
@@ -896,6 +962,14 @@ class Builder:
                 ctx[var] = chunk
                 ctx["pagination"] = _pagination_ctx(pno, len(chunks))
                 # 日本の打ち上げは1ページ目に別枠で出す（件数が少なく埋もれるため）
+                # 公告を見た人が次に要るのは「どうやって入るのか」。
+                # 参入ガイドは検索から見つけてもらえていないので、
+                # 文脈の合うこのページから確実に渡す。
+                if active == "procurement":
+                    want = ("space-procurement-jaxa", "manufacturing-entry-guide",
+                            "space-quality-requirements")
+                    by_slug = {a["slug"]: a for a in articles}
+                    ctx["guides"] = [by_slug[s] for s in want if s in by_slug]
                 if active == "launches" and pno == 1:
                     ctx["jp_launches"] = [
                         l for l in all_items
@@ -1118,6 +1192,9 @@ class Builder:
             ]
             ctx["current_cat"] = cid
             ctx["back_to_all"] = "../" if cid else "./"
+            # 地域での絞り込み。サプライヤーを探す側は「近さ」で候補を絞る。
+            # 本社所在地から機械的に作るので、事実以上のことを言わない。
+            ctx["areas"] = _company_areas(ctx["companies"])
             ctx["disclaimer"] = companies.disclaimer(lang)
             ctx["jsonld"] = seo.build_jsonld(
                 self.base_url, lang, "companies",

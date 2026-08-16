@@ -21,11 +21,26 @@
           {# 随意契約は相手方が決まっており参入の機会にならない。
              応札を検討する人には、この差が案件名より先に要る #}
           {% if p.kind %}<span class="pill status-{{ p.kind_class }}">{{ p.kind }}</span>{% endif %}
+          {# 締切は公告PDFから抜いた実データ。取れた案件にだけ出す #}
+          {% if p.is_open is not none %}
+          <span class="pill {{ 'status-go' if p.is_open else 'ghost' }}">
+            {{ t('procurement.open') if p.is_open else t('procurement.closed') }}
+          </span>
+          {% endif %}
           <time datetime="{{ p.issued }}">{{ p.issued_display }}</time>
           <span class="proc-org">{{ p.org }}</span>
           {% if p.prefecture %}<span class="proc-area">{{ p.prefecture }}{{ p.city }}</span>{% endif %}
         </div>
         <h2 class="proc-name">{{ p.name }}</h2>
+        {% if p.deadline_display %}
+        <p class="proc-deadline{{ ' is-open' if p.is_open }}">
+          {{ p.deadline_label or t('procurement.deadline') }}：<strong>{{ p.deadline_display }}</strong>
+          {% if p.is_open %}
+            {% if p.days_left == 0 %}<span class="proc-left">{{ t('procurement.today_due') }}</span>
+            {% else %}<span class="proc-left">{{ t('procurement.days_left')|replace('{n}', p.days_left) }}</span>{% endif %}
+          {% endif %}
+        </p>
+        {% endif %}
         {% if p.description %}<p class="proc-desc">{{ p.description }}</p>{% endif %}
         {% if p.url %}
         {# 公告文書は発注機関のサイトにある。原文を必ず確認してもらう #}
@@ -38,6 +53,25 @@
     </div>
     {{ pager(pagination, t) }}
     <p class="proc-note">{{ t('procurement.note') }}</p>
+
+    {#
+      公告を見て「で、どうやって入るのか」となった人の行き先。
+      参入ガイドは検索から見つけてもらえていないので、
+      文脈の合うここから確実に渡す。
+    #}
+    {% if guides %}
+    <div class="proc-guides">
+      <h2>{{ t('procurement.guide_title') }}</h2>
+      <div class="proc-guide-list">
+        {% for g in guides %}
+        <a class="proc-guide" href="{{ rel }}articles/{{ g.slug }}/">
+          <span class="proc-guide-title">{{ g.title }}</span>
+          {% if g.excerpt %}<span class="proc-guide-ex">{{ g.excerpt }}</span>{% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
     {% else %}
     <p class="empty">{{ t('meta.no_data') }}</p>
     {% endif %}
