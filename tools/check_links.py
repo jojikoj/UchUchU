@@ -32,6 +32,12 @@ def check_dist() -> list[str]:
     """
     dist = ROOT / "dist"
     if not (dist / "index.html").exists():
+        # 「まだビルドしていない」と「トップが欠けたまま出来上がった」を
+        # 同じ扱いにしていたため、トップ無しの dist が3日ぶん無検査で
+        # 出荷された（2026-08-16〜18、uchuchu.tech のトップが404）。
+        # 生成物が一つでもあるならビルド済みとみなし、欠落として落とす。
+        if any(dist.glob("*")):
+            return ["/  (トップページ dist/index.html が生成されていません)"]
         return []
     href = re.compile(r'href="([^"#?]+)"')
     broken: dict[str, int] = {}
