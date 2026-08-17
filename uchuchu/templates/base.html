@@ -184,6 +184,11 @@
           <h4>{{ t('footer.network') }}</h4>
           <a href="https://gtoe.info/" rel="noopener" target="_blank">{{ t('footer.toe') }}</a>
           <a href="https://ai-oni.com/" rel="noopener" target="_blank">{{ t('footer.aioni') }}</a>
+          {# 補助金の鬼はどこからもリンクされておらず、新規ドメインのため
+             Googleがサイトマップを取りに来ていない。ここから経路を作る #}
+          {% if lang == 'ja' %}
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">{{ t('footer.hojokin') }}</a>
+          {% endif %}
         </div>
       </div>
       <div class="footer-bottom">

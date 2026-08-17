@@ -306,6 +306,8 @@ STRINGS = {
     "footer.toe": {"ja": "株式会社TOE", "en": "TOE Inc."},
     "footer.aioni": {"ja": "AIの鬼 — AI実践・実測ラボ",
                      "en": "AI Oni — AI practice & measurement lab"},
+    "footer.hojokin": {"ja": "補助金の鬼 — 補助金・助成金の実務メディア",
+                       "en": "Hojokin Oni — Japanese subsidy guide"},
 }
 
 
