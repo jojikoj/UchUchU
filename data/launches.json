@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:37:13.171876+00:00",
+  "generated_at": "2026-08-18T09:33:55.950575+00:00",
   "count": 200,
   "items": [
     {
@@ -28,7 +28,7 @@
     {
       "id": "f6958a77-37bb-4559-a108-40ba0ff9e34a",
       "name": "Falcon 9 Block 5 | Starlink Group 17-50",
-      "net": "2026-08-19T02:00:00Z",
+      "net": "2026-08-19T03:45:08Z",
       "window_end": "2026-08-19T06:00:00Z",
       "status": "Go",
       "status_name": "Go for Launch",
@@ -45,7 +45,7 @@
       "mission_type": "Communications",
       "mission_description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcast": "https://x.com/i/broadcasts/1RJjppgNbXwKw",
+      "webcast": "https://www.youtube.com/watch?v=Nsw6vYpjtaw",
       "upcoming": true
     },
     {
@@ -2391,6 +2391,29 @@
       "upcoming": true
     },
     {
+      "id": "b94b49fc-5784-4dfd-92e7-07e57f50edcd",
+      "name": "Firefly Alpha Block 2 | TacSat",
+      "net": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Firefly Aerospace",
+      "provider_country": "USA",
+      "provider_url": "https://firefly.com/",
+      "rocket": "Firefly Alpha Block 2",
+      "pad": "Space Launch Complex 2W",
+      "pad_lat": "34.7556",
+      "pad_lon": "-120.6224",
+      "location": "Vandenberg SFB, CA, USA",
+      "country": "USA",
+      "mission": "TacSat",
+      "mission_type": "Technology",
+      "mission_description": "First of up to 25 launches of Low Earth Orbit technology demonstration satellites to be built and operated by Lockheed Martin. TacSat is an intelligence, surveillance and reconnaissance spacecraft with a mission to prove specialized sensing and communications capabilities on orbit. The satellite will participate in exercises that highlight cross-domain kill-web connectivity, enabling timely execut…",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/firefly_alpha_l_image_20240605174156.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "cb6f4df1-c045-423b-904c-e63bf1ee5168",
       "name": "Long March 2C | Satellite for Earth Observation (SEO)",
       "net": "2026-08-17T03:02:00Z",
@@ -4570,29 +4593,6 @@
       "mission_description": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcast": "https://www.youtube.com/watch?v=IcZeELuvo3g",
-      "upcoming": false
-    },
-    {
-      "id": "74b3aa8f-dc54-43dd-b8dd-1dc62ccccfc4",
-      "name": "Soyuz-5 | Demo Flight",
-      "net": "2026-04-30T18:00:00Z",
-      "window_end": "2026-04-30T21:00:00Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "RKK Energiya",
-      "provider_country": "RUS",
-      "provider_url": "https://www.energia.ru/english/",
-      "rocket": "Soyuz-5",
-      "pad": "45/1",
-      "pad_lat": "45.943492",
-      "pad_lon": "63.653014",
-      "location": "Baikonur Cosmodrome, Republic of Kazakhstan",
-      "country": "KAZ",
-      "mission": "Demo Flight",
-      "mission_type": "Test Flight",
-      "mission_description": "Demonstration Flight for Russia's new Soyuz-5 launch vehicle, with a mass simulator on board. The launch was suborbital with the simulator splashing down in the Pacific Ocean.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz-5_at_baik_image_20260501030446.png",
-      "webcast": "https://www.youtube.com/watch?v=eeyJIut4NNA",
       "upcoming": false
     }
   ]
