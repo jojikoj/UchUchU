@@ -57,6 +57,46 @@
     setInterval(render, 1000);
   }
 
+  // --- 企業DBの絞り込み ---
+  // サプライヤーを探す側が「関東で推進系」のように絞れないと、DBは名簿でしかない。
+  // 54社なのでページを増やさず、この場で絞る（JSが無効でも一覧はそのまま出る）。
+  var cf = document.querySelector("[data-company-filter]");
+  if (cf) {
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".company-card[data-text]"));
+    var qEl = cf.querySelector("[data-cf-q]");
+    var resEl = cf.querySelector("[data-cf-result]");
+    var areaBtns = Array.prototype.slice.call(cf.querySelectorAll("[data-cf-area]"));
+    var area = "";
+
+    function apply() {
+      var q = (qEl && qEl.value || "").trim().toLowerCase();
+      var hit = 0;
+      cards.forEach(function (el) {
+        var okArea = !area || el.getAttribute("data-area") === area;
+        var okText = !q || (el.getAttribute("data-text") || "").indexOf(q) !== -1;
+        var show = okArea && okText;
+        el.hidden = !show;
+        if (show) hit++;
+      });
+      if (!resEl) return;
+      if (!q && !area) { resEl.hidden = true; return; }
+      resEl.hidden = false;
+      resEl.textContent = hit
+        ? (resEl.getAttribute("data-hit") || "{n}").replace("{n}", hit)
+        : (resEl.getAttribute("data-none") || "");
+    }
+
+    if (qEl) qEl.addEventListener("input", apply);
+    areaBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        area = b.getAttribute("data-cf-area") || "";
+        areaBtns.forEach(function (x) { x.classList.remove("on"); });
+        b.classList.add("on");
+        apply();
+      });
+    });
+  }
+
   // --- 言語スイッチ: 手動で選んだ言語を記憶し、以後は自動振り分けしない ---
   var langLinks = document.querySelectorAll(".lang-switch a[hreflang]");
   Array.prototype.forEach.call(langLinks, function (a) {

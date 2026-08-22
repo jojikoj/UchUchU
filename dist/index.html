@@ -33,7 +33,7 @@
         href="https://uchuchu.tech/feed.xml">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"}]}]}</script>
   <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="static/css/style.css?v=95adeec8">
+  <link rel="stylesheet" href="static/css/style.css?v=1d897ec5">
   <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
        Runs before paint to avoid a flash. A manual choice always wins. -->
   <script>
@@ -83,10 +83,10 @@
     <nav class="side-nav">
       <a href="./" class="on">ホーム</a>
       <a href="companies/" class="">企業DB</a>
+      <a href="procurement/" class="">調達情報</a>
       <a href="articles/" class="">特集</a>
-      <a href="news/" class="">ニュース</a>
       <a href="launches/" class="">打ち上げ</a>
-      <a href="papers/" class="">研究動向</a>
+      <a href="news/" class="">ニュース</a>
       <a href="faq/" class="">よくある質問</a>
       <a href="advertise/" class="">広告掲載</a>
       <a href="contact/" class="cta ">お問い合わせ</a>
@@ -112,7 +112,7 @@
   <div class="today-head">
     <span class="live-dot" aria-hidden="true"></span>
     <h2 class="today-title">今日の宇宙</h2>
-    <span class="today-date">2026年8月16日</span>
+    <span class="today-date">2026年8月22日</span>
     <a class="today-more" href="launches/">打ち上げ →</a>
   </div>
 
@@ -120,12 +120,13 @@
     <article class="today-next">
       <span class="today-label">次の打ち上げ</span>
       <div class="today-cd">
-        <span class="net-countdown today-cd-num" data-net="2026-08-17T03:00:00Z">T-18時間 53分</span>
+        <span class="net-countdown today-cd-num" data-net="2026-08-22T07:25:09Z">T-5時間 58分</span>
         <span class="pill status-tbd">Go</span>
       </div>
-      <h3 class="today-next-name">Long March 2C | Unknown Payload</h3>
+      <h3 class="today-next-name">Falcon 9 Block 5 | Starlink Group 15-20</h3>
       <p class="today-next-meta">
-        2026年8月17日 12:00 JST（03:00 UTC） · Taiyuan Satellite Launch Center, People&#39;s Republic of China      </p>
+        2026年8月22日 16:25 JST（07:25 UTC） · Vandenberg SFB, CA, USA      </p>
+      <a class="today-watch" href="https://www.youtube.com/watch?v=PE3fVHlNxko" target="_blank" rel="noopener">▶ 中継を見る</a>
     </article>
 
     <div class="today-stats">
@@ -138,28 +139,20 @@
         <span class="today-stat-l">今週の打ち上げ</span>
       </a>
       <a class="today-stat" href="news/">
-        <span class="today-stat-n">1</span>
+        <span class="today-stat-n">46</span>
         <span class="today-stat-l">24時間のニュース</span>
       </a>
     </div>
 
     <div class="today-results">
       <span class="today-label">
-        直近の結果
+        24時間以内の結果
       </span>
       <ul class="today-result-list">
         <li>
           <span class="res-mark res-success">成功</span>
-          <span class="res-name">Falcon 9 Block 5 | Starlink Group 17-49</span>
-<time class="res-date">2026.08.12</time>        </li>
-        <li>
-          <span class="res-mark res-success">成功</span>
-          <span class="res-name">Falcon 9 Block 5 | Starlink Group 10-19</span>
-<time class="res-date">2026.08.12</time>        </li>
-        <li>
-          <span class="res-mark res-success">成功</span>
-          <span class="res-name">H3-22 | Michibiki 7 (QZS-7)</span>
-<time class="res-date">2026.08.11</time>        </li>
+          <span class="res-name">Falcon 9 Block 5 | Starlink Group 10-39</span>
+        </li>
       </ul>
     </div>
   </div>
@@ -167,56 +160,56 @@
 
 <section class="hero-block">
   <div class="hero-main">
-    <a class="hero-media" href="a/spaceflightnews-ea60dcff31/">
-<img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2026/08/260814-X-X0813-1001.png?fit=768%2C1024&amp;ssl=1" alt="" loading="eager"
+    <a class="hero-media" href="a/spaceflightnews-48c769da48/">
+<img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2025/04/novaspace-square-1-scaled.png?fit=1024%2C1024&amp;ssl=1" alt="" loading="eager"
            onerror="this.closest('.hero-media').classList.add('no-img')">    </a>
     <div class="hero-body">
-      <h1 class="hero-title"><a href="a/spaceflightnews-ea60dcff31/">米宇宙軍、日本の準天頂衛星システムに2番目の監視センサーを搭載</a></h1>
+      <h1 class="hero-title"><a href="a/spaceflightnews-48c769da48/">New Novaspace forecast: 6,500+ EO satellites to launch by 2035</a></h1>
       <div class="hero-meta">
 <span class="pill-tag">#衛星・地球観測</span>        <span class="pill-tag src">SpaceNews</span>
-<time datetime="2026-08-14T22:26:27Z">2026.08.15</time>      </div>
+<time datetime="2026-08-21T19:48:14Z">2026.08.22</time>      </div>
     </div>
   </div>
 
   <div class="hero-side">
     <article class="hero-item">
-      <a class="hero-item-media" href="a/space_com-4e3a7975b3/">
-<img src="https://cdn.mos.cms.futurecdn.net/PzSi4SRiVZY2G2v52KKXoQ-1280-80.jpg" alt="" loading="lazy"
+      <a class="hero-item-media" href="a/spaceflightnews-dca13c9f40/">
+<img src="http://spaceflightnow.com/wp-content/uploads/2026/04/20260414-Falcon-9-File.jpg" alt="" loading="lazy"
              onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
       <div class="hero-item-body">
-        <h3><a href="a/space_com-4e3a7975b3/">ニコンの可変ズーム双眼鏡が携帯性に優れた選択肢として評価</a></h3>
+        <h3><a href="a/spaceflightnews-dca13c9f40/">Live coverage: SpaceX to launch 100th orbital mission of 2026</a></h3>
         <div class="hero-item-meta">
-<time datetime="2026-08-15T09:00:00+00:00">2026.08.15</time>        </div>
+<span class="pill-tag sm">#ロケット</span><time datetime="2026-08-21T18:53:18Z">2026.08.22</time>        </div>
       </div>
     </article>
     <article class="hero-item">
-      <a class="hero-item-media" href="a/spaceflightnews-3cdb18f63f/">
-<img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/august/PerseidsAPOD_P-MHeden.jpg" alt="" loading="lazy"
+      <a class="hero-item-media" href="a/spaceflightnews-e2a9dace92/">
+<img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2023/09/Yaogan39-02-CZ2D-XSLC-17sept2023-ourspace1.jpg?fit=1024%2C681&amp;ssl=1" alt="" loading="lazy"
              onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
       <div class="hero-item-body">
-        <h3><a href="a/spaceflightnews-3cdb18f63f/">APOD 2026年8月15日 - スウェーデンで撮影された明るいペルセウス流星群</a></h3>
+        <h3><a href="a/spaceflightnews-e2a9dace92/">Chinese radio-frequency intelligence startup StarRF closes new funding round</a></h3>
         <div class="hero-item-meta">
-<span class="pill-tag sm">#有人宇宙</span><time datetime="2026-08-15T04:05:00Z">2026.08.15</time>        </div>
+<span class="pill-tag sm">#宇宙ビジネス</span><time datetime="2026-08-21T20:08:59Z">2026.08.22</time>        </div>
       </div>
     </article>
     <article class="hero-item">
-      <a class="hero-item-media" href="a/phys_space-7fa189b41b/">
-<img src="https://scx1.b-cdn.net/csz/news/tmb/2026/space-launch.jpg" alt="" loading="lazy"
+      <a class="hero-item-media" href="a/space_com-228e91b08d/">
+<img src="https://cdn.mos.cms.futurecdn.net/P75y7FqGqB9aSePBGFZqJH-1280-80.jpg" alt="" loading="lazy"
              onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
       <div class="hero-item-body">
-        <h3><a href="a/phys_space-7fa189b41b/">「スターウォッシング」：宇宙企業がグリーンウォッシング戦略を転用し環境被害を軽視</a></h3>
+        <h3><a href="a/space_com-228e91b08d/">Trump signs new national space policy to enable 1,000 US rocket launches per year</a></h3>
         <div class="hero-item-meta">
-<span class="pill-tag sm">#宇宙科学</span><time datetime="2026-08-15T01:00:01+00:00">2026.08.15</time>        </div>
+<span class="pill-tag sm">#ロケット</span><time datetime="2026-08-21T20:00:46+00:00">2026.08.22</time>        </div>
       </div>
     </article>
     <article class="hero-item">
-      <a class="hero-item-media" href="a/spaceflightnews-5cb4ef0f40/">
-<img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2026/08/wallops-vaspace.jpeg?fit=1024%2C576&amp;ssl=1" alt="" loading="lazy"
+      <a class="hero-item-media" href="a/space_com-a1f5cce677/">
+<img src="https://cdn.mos.cms.futurecdn.net/PaSCzFdpMCcU4U2mw6DXhU-1280-80.jpg" alt="" loading="lazy"
              onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
       <div class="hero-item-body">
-        <h3><a href="a/spaceflightnews-5cb4ef0f40/">ウォロップス、ロケット打ち上げ増加に向けインフラ強化を推進</a></h3>
+        <h3><a href="a/space_com-a1f5cce677/">Trump to award NASA&#39;s Artemis II astronauts the Congressional Space Medal of Honor</a></h3>
         <div class="hero-item-meta">
-<time datetime="2026-08-14T22:02:28Z">2026.08.15</time>        </div>
+<span class="pill-tag sm">#月</span><time datetime="2026-08-21T19:30:51+00:00">2026.08.22</time>        </div>
       </div>
     </article>
   </div>
@@ -278,6 +271,52 @@
   </div>
 </section>
 
+<section class="block">
+  <div class="sec-head">
+  <span class="sec-en">TENDERS</span>
+  <span class="sec-ja">新着の調達</span>
+<a class="sec-more" href="procurement/">すべて見る →</a></div>
+
+  <p class="block-lead">JAXA・内閣府・省庁が公告した宇宙関連の調達案件。官公需情報ポータルサイト（中小企業庁）から毎日集めています。</p>
+  <div class="proc-list proc-list-home">
+    <a class="proc-row" href="procurement/">
+      <span class="proc-row-meta">
+<span class="pill accent">JAXA</span><span class="pill status-go">入札・公募</span>        <time datetime="2026-07-10T00:00:00+09:00">2026年7月10日</time>
+        <span class="proc-org">国立研究開発法人宇宙航空研究開発機構</span>
+      </span>
+      <span class="proc-row-name">マルチGNSSコードバイアス／グローバル電離層マップ生成ツールの開発（一式）</span>
+    </a>
+    <a class="proc-row" href="procurement/">
+      <span class="proc-row-meta">
+<span class="pill accent">JAXA</span><span class="pill status-go">入札・公募</span>        <time datetime="2026-07-13T00:00:00+09:00">2026年7月13日</time>
+        <span class="proc-org">国立研究開発法人宇宙航空研究開発機構</span>
+      </span>
+      <span class="proc-row-name">グループ専用サーバの調達（整備及び保守一式）</span>
+    </a>
+    <a class="proc-row" href="procurement/">
+      <span class="proc-row-meta">
+<span class="pill accent">JAXA</span><span class="pill status-tbd">随意契約</span>        <time datetime="2026-08-07T00:00:00+09:00">2026年8月7日</time>
+        <span class="proc-org">国立研究開発法人宇宙航空研究開発機構</span>
+      </span>
+      <span class="proc-row-name">JAXAスーパーコンピュータシステム(JSS3)ファイルシステム増強(その4)</span>
+    </a>
+    <a class="proc-row" href="procurement/">
+      <span class="proc-row-meta">
+<span class="pill accent">JAXA</span><span class="pill status-tbd">随意契約</span>        <time datetime="2026-07-17T00:00:00+09:00">2026年7月17日</time>
+        <span class="proc-org">国立研究開発法人宇宙航空研究開発機構</span>
+      </span>
+      <span class="proc-row-name">電力情報管理システム計算機の換装・移植作業（２０２６）</span>
+    </a>
+    <a class="proc-row" href="procurement/">
+      <span class="proc-row-meta">
+<span class="pill status-go">入札・公募</span>        <time datetime="2026-07-08T00:00:00+09:00">2026年7月8日</time>
+        <span class="proc-org">国土交通省国土技術政策総合研究所</span>
+      </span>
+      <span class="proc-row-name">光学衛星データによる熱異常検出モジュール等開発業務</span>
+    </a>
+  </div>
+</section>
+
 <section class="launch-strip">
   <div class="strip-head">
     <span class="live-dot" aria-hidden="true"></span>
@@ -287,21 +326,21 @@
   <div class="strip-items">
     <article class="strip-item">
       <div class="strip-cd">
-<span class="net-countdown" data-net="2026-08-16T04:10:00Z">まもなく</span><span class="pill status-tbd">Go</span>      </div>
-      <h3>Long March 12 | Unknown Payload</h3>
-      <p>2026年8月16日 13:10 JST（04:10 UTC） · Wenchang Space Launch Site, People&#39;s Republic of China</p>
+<span class="net-countdown" data-net="2026-08-22T07:25:09Z">T-5時間 58分</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Falcon 9 Block 5 | Starlink Group 15-20</h3>
+      <p>2026年8月22日 16:25 JST（07:25 UTC） · Vandenberg SFB, CA, USA</p>
     </article>
     <article class="strip-item">
       <div class="strip-cd">
-<span class="net-countdown" data-net="2026-08-17T03:00:00Z">T-18時間 53分</span><span class="pill status-tbd">Go</span>      </div>
-      <h3>Long March 2C | Unknown Payload</h3>
-      <p>2026年8月17日 12:00 JST（03:00 UTC） · Taiyuan Satellite Launch Center, People&#39;s Republic of China</p>
+<span class="net-countdown" data-net="2026-08-24T00:05:00Z">T-1日 22時間</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Long March 5 | Chang&#39;e 7</h3>
+      <p>2026年8月24日 09:05 JST（00:05 UTC） · Wenchang Space Launch Site, People&#39;s Republic of China</p>
     </article>
     <article class="strip-item">
       <div class="strip-cd">
-<span class="net-countdown" data-net="2026-08-18T23:35:00Z">T-2日 15時間</span><span class="pill status-tbd">Go</span>      </div>
-      <h3>Zhuque-3 | Flight 2</h3>
-      <p>2026年8月19日 08:35 JST（23:35 UTC） · Jiuquan Satellite Launch Center, People&#39;s Republic of China</p>
+<span class="net-countdown" data-net="2026-08-25T03:20:00Z">T-3日 1時間</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Long March 6C | Unknown Payload</h3>
+      <p>2026年8月25日 12:20 JST（03:20 UTC） · Taiyuan Satellite Launch Center, People&#39;s Republic of China</p>
     </article>
   </div>
 </section>
@@ -379,171 +418,171 @@
 
   <div class="tile-grid">
 <article class="news-tile">
-  <a class="tile-media" href="a/karapaia-6d80331606/">
-    <img src="../static/img/fallback-research.jpg" alt="" loading="lazy">
-    <span class="stock-mark">イメージ</span>
+  <a class="tile-media" href="a/space_com-0f7196bfff/">
+    <img src="https://cdn.mos.cms.futurecdn.net/N4KjDwUNdhrNKGZmaM7pLH-1280-80.png" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
   </a>
   <div class="tile-body">
-    <h3 class="tile-title"><a href="a/karapaia-6d80331606/">【続報】Googleマップの謎の穴、正体は3億9000万年前のクレーターだった（カナダ）</a></h3>
+    <h3 class="tile-title"><a href="a/space_com-0f7196bfff/">What happens when a galaxy&#39;s supermassive black hole turns off? These dying radio galaxies could show us</a></h3>
     <div class="tile-meta">
-<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-15T07:00:00+00:00">2026.08.15</time>    </div>
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-21T21:00:00+00:00">2026.08.22</time>    </div>
     <div class="tile-src">
-      <span class="src">カラパイア</span>
+      <span class="src">Space.com</span>
     </div>
   </div>
 </article>
 <article class="news-tile">
-  <a class="tile-media" href="a/spaceflightnews-19a0df4767/">
-    <img src="https://www.nasaspaceflight.com/wp-content/uploads/2026/08/NSF-2026-08-15-04-32-28-725.jpg" alt="" loading="lazy"
+  <a class="tile-media" href="a/space_com-4457f30c43/">
+    <img src="https://cdn.mos.cms.futurecdn.net/CkWeTbyZ3WurG2H4mtsYTY-1280-80.jpg" alt="" loading="lazy"
          onerror="this.closest('.tile-media').classList.add('no-img')">
   </a>
   <div class="tile-body">
-    <h3 class="tile-title"><a href="a/spaceflightnews-19a0df4767/">ロケットラボが一連の発表で事業拡大を推進</a></h3>
+    <h3 class="tile-title"><a href="a/space_com-4457f30c43/">&#39;Star Trek: Strange New Worlds&#39; cast talks losing sleep, living up to their character&#39;s legacy, and learning to ride a horse for season 4 (interview)</a></h3>
     <div class="tile-meta">
-<span class="tag-hash">#ロケット</span><time datetime="2026-08-15T03:42:01Z">2026.08.15</time>    </div>
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-21T20:00:00+00:00">2026.08.22</time>    </div>
     <div class="tile-src">
-      <span class="src">NASASpaceflight</span>
-<span class="mt-mark">自動翻訳</span>    </div>
+      <span class="src">Space.com</span>
+    </div>
   </div>
 </article>
 <article class="news-tile">
-  <a class="tile-media" href="a/universetoday-bca0a9f13e/">
+  <a class="tile-media" href="a/universetoday-1570bda560/">
+    <img src="../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/universetoday-1570bda560/">Strange Signals Called Long-period Radio Transits Come From Cataclysmic Variables</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-21T19:59:01+00:00">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-09400ddd8b/">
+    <img src="https://www.nasaspaceflight.com/wp-content/uploads/2026/08/Ship-41-Six-Engine-Static-Fire-scaled.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-09400ddd8b/">Ship 41 Completes Engine Testing Ahead of Flight 14</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-21T18:45:52Z">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASASpaceflight</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-48ab015d81/">
+    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/hpd/eclipse/NHQ202608120208.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-48ab015d81/">NASA Shares Views of August Solar Eclipse from Ground, Air, Space</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-21T18:43:40Z">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/space_com-1d5f9e7920/">
+    <img src="https://cdn.mos.cms.futurecdn.net/ftDXUJyfR54cZnfALyAP6b-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/space_com-1d5f9e7920/">Japan unveils Mars moon sample-return spacecraft ahead of Oct. 19 launch (photos)</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-21T18:00:00+00:00">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/teslarati-bba3e9a364/">
     <img src="../static/img/fallback-space.jpg" alt="" loading="lazy">
     <span class="stock-mark">イメージ</span>
   </a>
   <div class="tile-body">
-    <h3 class="tile-title"><a href="a/universetoday-bca0a9f13e/">誰も望まなかった夜空の明度上昇 - 軌道上鏡群の光害が深刻</a></h3>
+    <h3 class="tile-title"><a href="a/teslarati-bba3e9a364/">Tesla will resolve massive China recall with stickers and a software update</a></h3>
     <div class="tile-meta">
-<span class="tag-hash">#衛星・地球観測</span><time datetime="2026-08-15T00:22:31+00:00">2026.08.15</time>    </div>
+<span class="tag-hash">#有人宇宙</span><time datetime="2026-08-21T17:54:14+00:00">2026.08.22</time>    </div>
     <div class="tile-src">
-      <span class="src">Universe Today</span>
-<span class="mt-mark">自動翻訳</span>    </div>
+      <span class="src">Teslarati</span>
+    </div>
   </div>
 </article>
 <article class="news-tile">
-  <a class="tile-media" href="a/universetoday-6fa3f02e33/">
-    <img src="../static/img/fallback-research.jpg" alt="" loading="lazy">
-    <span class="stock-mark">イメージ</span>
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/universetoday-6fa3f02e33/">ハッブル、アンドロメダ銀河の星形成減速を確認</a></h3>
-    <div class="tile-meta">
-<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-14T23:58:06+00:00">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">Universe Today</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/spaceflightnews-788ff81664/">
-    <img src="http://spaceflightnow.com/wp-content/uploads/2026/08/20260814_max_power_jared_SFN_AB-1.jpeg" alt="" loading="lazy"
+  <a class="tile-media" href="a/spaceflightnews-3af38d7cf1/">
+    <img src="https://blogs.nasa.gov/spacestation/wp-content/uploads/sites/240/2023/01/nasa-logo-web-rgb.png" alt="" loading="lazy"
          onerror="this.closest('.tile-media').classList.add('no-img')">
   </a>
   <div class="tile-body">
-    <h3 class="tile-title"><a href="a/spaceflightnews-788ff81664/">NASA長官、アルテミス3ミッションの2027年実現に「極めて確信」</a></h3>
+    <h3 class="tile-title"><a href="a/spaceflightnews-3af38d7cf1/">TB 26-04 Updates and Modernization of NASA’s Chemical Equilibrium with Applications (CEA) Code</a></h3>
     <div class="tile-meta">
-<span class="tag-hash">#月</span><time datetime="2026-08-14T23:51:47Z">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">Spaceflight Now</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/universetoday-70ef2f6e9b/">
-    <img src="../static/img/fallback-research.jpg" alt="" loading="lazy">
-    <span class="stock-mark">イメージ</span>
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/universetoday-70ef2f6e9b/">タランチュラ星雲の謎が複合画像解析により解明</a></h3>
-    <div class="tile-meta">
-<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-14T23:41:08+00:00">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">Universe Today</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/universetoday-8e3da6a3c3/">
-    <img src="../static/img/fallback-research.jpg" alt="" loading="lazy">
-    <span class="stock-mark">イメージ</span>
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/universetoday-8e3da6a3c3/">アップグレードされたサルデーニャ電波望遠鏡、高速電波バースト解明を継続</a></h3>
-    <div class="tile-meta">
-<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-14T23:32:00+00:00">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">Universe Today</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/phys_space-d31eeb1d00/">
-    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/swri-led-mission-obser.jpg" alt="" loading="lazy"
-         onerror="this.closest('.tile-media').classList.add('no-img')">
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/phys_space-d31eeb1d00/">航空観測所、雲に覆われた日食時の太陽コロナ観察に成功</a></h3>
-    <div class="tile-meta">
-<span class="tag-hash">#月</span><time datetime="2026-08-14T22:40:03+00:00">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">Phys.org</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/space_com-b6d159782e/">
-    <img src="https://cdn.mos.cms.futurecdn.net/UpNJHehRGuVkeXwbvJRs2R-1280-80.jpg" alt="" loading="lazy"
-         onerror="this.closest('.tile-media').classList.add('no-img')">
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/space_com-b6d159782e/">NASA、「マックス・パワー」航空宇宙エキスポを11月開催へ</a></h3>
-    <div class="tile-meta">
-<time datetime="2026-08-14T22:00:00+00:00">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">Space.com</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/spaceflightnews-5577c60cc4/">
-    <img src="https://spacepolicyonline.com/wp-content/uploads/2026/06/Artemis-3-crew-Robt-Markowitz.webp-300x198.jpg" alt="" loading="lazy"
-         onerror="this.closest('.tile-media').classList.add('no-img')">
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/spaceflightnews-5577c60cc4/">NASA長官、アルテミス3は2027年打ち上げと確信</a></h3>
-    <div class="tile-meta">
-<span class="tag-hash">#月</span><time datetime="2026-08-14T21:37:50Z">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">SpacePolicyOnline.com</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/space_com-36e1239906/">
-    <img src="https://cdn.mos.cms.futurecdn.net/5bi8AGL5Fzx2YTAEvfqtFD-1280-80.jpg" alt="" loading="lazy"
-         onerror="this.closest('.tile-media').classList.add('no-img')">
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/space_com-36e1239906/">磁星が90年来の謎を解く可能性</a></h3>
-    <div class="tile-meta">
-<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-14T21:00:00+00:00">2026.08.15</time>    </div>
-    <div class="tile-src">
-      <span class="src">Space.com</span>
-<span class="mt-mark">自動翻訳</span>    </div>
-  </div>
-</article>
-<article class="news-tile">
-  <a class="tile-media" href="a/spaceflightnews-b39226baad/">
-    <img src="https://www.nasa.gov/wp-content/uploads/2026/05/liveenable-im3-sustainabilitylogistics-withastros-1.png" alt="" loading="lazy"
-         onerror="this.closest('.tile-media').classList.add('no-img')">
-  </a>
-  <div class="tile-body">
-    <h3 class="tile-title"><a href="a/spaceflightnews-b39226baad/">NASA、月面技術を活用した未来構想で学生募集</a></h3>
-    <div class="tile-meta">
-<span class="tag-hash">#月</span><time datetime="2026-08-14T20:00:38Z">2026.08.15</time>    </div>
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-21T17:41:00Z">2026.08.22</time>    </div>
     <div class="tile-src">
       <span class="src">NASA</span>
-<span class="mt-mark">自動翻訳</span>    </div>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-fc25df3b72/">
+    <img src="https://www.nasa.gov/wp-content/uploads/2026/08/55457472091-12a8c7edb0-o.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-fc25df3b72/">Webb Opens Treasure Chest</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-21T17:35:11Z">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/spaceflightnews-05d912a7bd/">
+    <img src="https://www.nasa.gov/wp-content/uploads/2026/08/artemis-ii-crew-at-wh-aug-19.webp" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/spaceflightnews-05d912a7bd/">NASA’s Artemis II Crew Set to Receive Congressional Space Medal of Honor</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-21T17:06:36Z">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/phys_space-e8023f27d6/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/stellar-eruptions-in-t.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/phys_space-e8023f27d6/">Stellar eruptions in the laboratory: First experimental evidence for their suppression in strong magnetic fields</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-21T16:20:10+00:00">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/phys_space-fee6187178/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/the-spin-behind-fading.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/phys_space-fee6187178/">Stellar spin may explain why repeated black hole flares grow dimmer</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙ビジネス</span><time datetime="2026-08-21T16:00:01+00:00">2026.08.22</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+    </div>
   </div>
 </article>
   </div>
@@ -558,86 +597,47 @@
   <div class="topic-grid">
     <a class="topic-card" href="topics/science/">
       <span class="topic-card-name">#宇宙科学</span>
-      <span class="topic-card-count">210</span>
+      <span class="topic-card-count">224</span>
       <span class="topic-card-desc">天体観測・惑星科学・宇宙物理</span>
     </a>
     <a class="topic-card" href="topics/moon/">
       <span class="topic-card-name">#月</span>
-      <span class="topic-card-count">139</span>
+      <span class="topic-card-count">146</span>
       <span class="topic-card-desc">月探査・月着陸・アルテミス計画</span>
     </a>
     <a class="topic-card" href="topics/human/">
       <span class="topic-card-name">#有人宇宙</span>
-      <span class="topic-card-count">115</span>
+      <span class="topic-card-count">126</span>
       <span class="topic-card-desc">宇宙飛行士・国際宇宙ステーション・宇宙滞在</span>
-    </a>
-    <a class="topic-card" href="topics/satellite/">
-      <span class="topic-card-name">#衛星・地球観測</span>
-      <span class="topic-card-count">110</span>
-      <span class="topic-card-desc">人工衛星・通信コンステレーション・地球観測</span>
     </a>
     <a class="topic-card" href="topics/business/">
       <span class="topic-card-name">#宇宙ビジネス</span>
-      <span class="topic-card-count">107</span>
+      <span class="topic-card-count">104</span>
       <span class="topic-card-desc">資金調達・契約・宇宙産業の動向</span>
+    </a>
+    <a class="topic-card" href="topics/satellite/">
+      <span class="topic-card-name">#衛星・地球観測</span>
+      <span class="topic-card-count">99</span>
+      <span class="topic-card-desc">人工衛星・通信コンステレーション・地球観測</span>
     </a>
     <a class="topic-card" href="topics/rocket/">
       <span class="topic-card-name">#ロケット</span>
-      <span class="topic-card-count">100</span>
+      <span class="topic-card-count">89</span>
       <span class="topic-card-desc">打ち上げ機・エンジン・再使用技術</span>
     </a>
     <a class="topic-card" href="topics/mars/">
       <span class="topic-card-name">#火星</span>
-      <span class="topic-card-count">40</span>
+      <span class="topic-card-count">38</span>
       <span class="topic-card-desc">火星探査・火星探査車・有人火星計画</span>
     </a>
     <a class="topic-card" href="topics/japan/">
       <span class="topic-card-name">#日本の宇宙開発</span>
-      <span class="topic-card-count">24</span>
+      <span class="topic-card-count">21</span>
       <span class="topic-card-desc">JAXA・国内企業・日本の宇宙政策</span>
     </a>
   </div>
 </section>
 
-<section class="block block-tint">
-  <div class="sec-head">
-  <span class="sec-en">RESEARCH</span>
-  <span class="sec-ja">最新の研究動向</span>
-<a class="sec-more" href="papers/">すべて見る →</a></div>
-
-  <div class="grid grid-papers">
-<article class="card paper-card">
-  <div class="card-body">
-    <div class="card-meta">
-<span class="pill ghost mono">astro-ph.EP</span><span class="pill ghost mono">astro-ph.SR</span><time datetime="2026-08-13T17:46:14+00:00">2026年8月14日</time>    </div>
-    <h3 class="card-title"><a href="p/arxiv-2608-13527v1/">The sensitivity of TESS to transiting planets in TOIs with close-in stellar companions</a></h3>
-<p class="paper-authors">Colin Littlefield, Kathryn V. Lester, David R. Ciardi, Steve B. Howell</p><p class="card-summary">High resolution imaging with optical speckle interferometry has revealed that many transiting exoplanet host stars possess close-in stellar companions. The objective of this study is to quantify how the presence of these companions impacts the ability of TESS to detect the transits of small planets. We accomplish this by examining 2052 TESS Objects of Interest (TOIs) that appear to be single-star systems based on speckle interferometric observations as well as 188 TOIs in unresolved ($&lt; 1.2\arcs…</p>    <div class="card-actions">
-      <a class="card-link" href="p/arxiv-2608-13527v1/">詳細を見る →</a>
-    </div>
-  </div>
-</article>
-<article class="card paper-card">
-  <div class="card-body">
-    <div class="card-meta">
-<span class="pill ghost mono">astro-ph.IM</span><time datetime="2026-08-13T17:37:02+00:00">2026年8月14日</time>    </div>
-    <h3 class="card-title"><a href="p/arxiv-2608-13516v1/">Numerical Model Simulation of the Carruthers GCI Images</a></h3>
-<p class="paper-authors">Heather Filippini, Alex Zhang, Evan Widloski, Jason McPhate, Lara Waldrop, Thomas Immel, John Clarke, Pratik Joshi et al.</p><p class="card-summary">The Carruthers Geocorona Observatory, launched in September 2025, is NASA&#39;s first mission devoted to investigating the fundamental nature of Earth&#39;s exosphere from its distant vantage in halo orbit around the Earth-Sun Lagrange (L1) point. Its primary payload, the GeoCoronal Imager, consists of two coaligned photometric imagers that measure the radiance of ultraviolet emission at 121.6 nm (Lyman-$α$, or Ly-$α$) from exospheric hydrogen atoms simultaneously at wide and narrow fields of view. In o…</p>    <div class="card-actions">
-      <a class="card-link" href="p/arxiv-2608-13516v1/">詳細を見る →</a>
-    </div>
-  </div>
-</article>
-<article class="card paper-card">
-  <div class="card-body">
-    <div class="card-meta">
-<span class="pill ghost mono">astro-ph.EP</span><time datetime="2026-08-13T16:58:27+00:00">2026年8月14日</time>    </div>
-    <h3 class="card-title"><a href="p/arxiv-2608-13473v1/">No Helium Detected in LHS 1140 b from Four JWST NIRISS/SOSS Transits</a></h3>
-<p class="paper-authors">Katherine A. Bennett, Carlos Gascón, Jacob Lustig-Yaeger, Guangwei Fu, David K. Sing, Kevin B. Stevenson, Jonathan Brande, Munazza K. Alam et al.</p><p class="card-summary">In the effort to determine which low-mass exoplanets have atmospheres, LHS 1140 b remains one of the most favorable targets. Its large size (5.6 $\rm M_{\oplus}$ and 1.7 $\rm R_{\oplus}$) and relatively long orbital period (24.7 days) imply an atmosphere may be likely, and notably, recent interior models favor either a hydrogen-dominated &#34;mini-Neptune&#34; or a &#34;water world&#34; over a true terrestrial planet. Another possibility is that it has a helium-rich atmosphere. This hypothesis is supported by r…</p>    <div class="card-actions">
-      <a class="card-link" href="p/arxiv-2608-13473v1/">詳細を見る →</a>
-    </div>
-  </div>
-</article>
-  </div>
-</section>
 
 <section class="block">
   <div class="cta-band">
@@ -663,9 +663,9 @@
         <div class="footer-col">
           <h4>ホーム</h4>
           <a href="companies/">企業DB</a>
-          <a href="articles/">特集</a>
-          <a href="news/">ニュース</a>
+<a href="procurement/">調達情報</a>          <a href="articles/">特集</a>
           <a href="launches/">打ち上げ</a>
+          <a href="news/">ニュース</a>
           <a href="papers/">研究動向</a>
           <a href="topics/moon/">トピック</a>
           <a href="search/">検索</a>
@@ -683,16 +683,17 @@
           <h4>運営元</h4>
           <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
           <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 UchUchU · 静的サイト・自動更新</span>
-        <span class="footer-updated">更新: 2026-08-16 08:06 UTC</span>
+        <span class="footer-updated">更新: 2026-08-22 01:26 UTC</span>
       </div>
     </footer>
   </div>
 </div>
 
-<script src="static/js/main.js?v=95adeec8" defer></script>
+<script src="static/js/main.js?v=1d897ec5" defer></script>
 </body>
 </html>

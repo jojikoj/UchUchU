@@ -33,7 +33,7 @@
         href="https://uchuchu.tech/feed.xml">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"宇宙産業 企業データベース","item":"https://uchuchu.tech/companies/"}]}]}</script>
   <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../static/css/style.css?v=95adeec8">
+  <link rel="stylesheet" href="../static/css/style.css?v=1d897ec5">
   <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
        Runs before paint to avoid a flash. A manual choice always wins. -->
   <script>
@@ -83,10 +83,10 @@
     <nav class="side-nav">
       <a href="../" class="">ホーム</a>
       <a href="../companies/" class="on">企業DB</a>
+      <a href="../procurement/" class="">調達情報</a>
       <a href="../articles/" class="">特集</a>
-      <a href="../news/" class="">ニュース</a>
       <a href="../launches/" class="">打ち上げ</a>
-      <a href="../papers/" class="">研究動向</a>
+      <a href="../news/" class="">ニュース</a>
       <a href="../faq/" class="">よくある質問</a>
       <a href="../advertise/" class="">広告掲載</a>
       <a href="../contact/" class="cta ">お問い合わせ</a>
@@ -162,8 +162,24 @@
       </a>
     </div>
 
+    <div class="company-filter" data-company-filter>
+      <input type="search" class="cf-input" data-cf-q
+             placeholder="社名・技術・地域で絞り込む（例：推進、九州、SAR）" aria-label="社名・技術・地域で絞り込む（例：推進、九州、SAR）">
+      <div class="cf-areas">
+        <button class="chip on" data-cf-area="">すべて</button>
+        <button class="chip" data-cf-area="hokkaido_tohoku">北海道・東北<span class="cf-n">2</span></button>
+        <button class="chip" data-cf-area="kanto">関東<span class="cf-n">40</span></button>
+        <button class="chip" data-cf-area="chubu">中部<span class="cf-n">4</span></button>
+        <button class="chip" data-cf-area="kinki">近畿<span class="cf-n">6</span></button>
+        <button class="chip" data-cf-area="kyushu">九州・沖縄<span class="cf-n">2</span></button>
+      </div>
+      <p class="cf-result" data-cf-result hidden
+         data-hit="{n}社を表示中"
+         data-none="条件に合う企業がありません。"></p>
+    </div>
     <div class="company-list">
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="ale ale co., ltd. 人工流れ星や大気データ取得など、衛星を用いた事業を展開する。 衛星製造・機器 衛星データ・サービス 東京都港区">
         <div class="company-head">
           <h3 class="company-name">ALE</h3>
 <span class="company-sub">ALE Co., Ltd.</span>        </div>
@@ -173,7 +189,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://star-ale.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="arkedge space arkedge space 超小型衛星の開発と衛星コンステレーション事業を手がける。 衛星製造・機器 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">ArkEdge Space</h3>
 <span class="company-sub">ArkEdge Space</span>        </div>
@@ -183,7 +200,8 @@
 <dt>本社</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://arkedgespace.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="hokkaido_tohoku"
+               data-text="elevationspace elevationspace 宇宙環境利用と大気圏再突入・回収技術の開発を進める。 探査・軌道上サービス 宮城県仙台市">
         <div class="company-head">
           <h3 class="company-name">ElevationSpace</h3>
 <span class="company-sub">ElevationSpace</span>        </div>
@@ -193,7 +211,8 @@
 <dt>本社</dt><dd>宮城県仙台市</dd>        </dl>
         <a class="card-link" href="https://elevation-space.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="gitai gitai 宇宙用作業ロボットを開発し、軌道上・月面での作業自動化を目指す。 探査・軌道上サービス 東京都">
         <div class="company-head">
           <h3 class="company-name">GITAI</h3>
 <span class="company-sub">GITAI</span>        </div>
@@ -203,7 +222,8 @@
 <dt>本社</dt><dd>東京都</dd>        </dl>
         <a class="card-link" href="https://gitai.tech/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="ihiエアロスペース ihi aerospace イプシロンロケットの開発・製造を担当。固体ロケットモータ、宇宙機推進系も手がける。 打ち上げ・ロケット 部品・素材・加工 東京都江東区">
         <div class="company-head">
           <h3 class="company-name">IHIエアロスペース</h3>
 <span class="company-sub">IHI Aerospace</span>        </div>
@@ -213,7 +233,8 @@
 <dt>本社</dt><dd>東京都江東区</dd>        </dl>
         <a class="card-link" href="https://www.ihi.co.jp/ia/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kinki"
+               data-text="kanadevia（旧・日立造船） kanadevia jaxaと全固体リチウムイオン電池を共同開発し、宇宙空間での充放電に成功した。2024年に日立造船から社名を変更。 部品・素材・加工 大阪府大阪市">
         <div class="company-head">
           <h3 class="company-name">Kanadevia（旧・日立造船）</h3>
 <span class="company-sub">Kanadevia</span>        </div>
@@ -223,7 +244,8 @@
 <dt>本社</dt><dd>大阪府大阪市</dd>        </dl>
         <a class="card-link" href="https://www.kanadevia.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="nec nec corporation 人工衛星のシステム設計・製造、地上システムを一貫して手がける。小惑星探査機はやぶさ2の開発にも参画。 衛星製造・機器 地上設備・通信 東京都港区">
         <div class="company-head">
           <h3 class="company-name">NEC</h3>
 <span class="company-sub">NEC Corporation</span>        </div>
@@ -233,7 +255,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://jpn.nec.com/solution/space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="pale blue pale blue 水を推進剤とする小型衛星用推進機を開発する。 部品・素材・加工 千葉県柏市">
         <div class="company-head">
           <h3 class="company-name">Pale Blue</h3>
 <span class="company-sub">Pale Blue</span>        </div>
@@ -243,7 +266,8 @@
 <dt>本社</dt><dd>千葉県柏市</dd>        </dl>
         <a class="card-link" href="https://pale-blue.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kyushu"
+               data-text="qps研究所 iqps 小型sar衛星の開発・運用を行う。九州の製造業と連携した衛星開発体制を構築している。 衛星製造・機器 衛星データ・サービス 福岡県福岡市">
         <div class="company-head">
           <h3 class="company-name">QPS研究所</h3>
 <span class="company-sub">iQPS</span>        </div>
@@ -253,7 +277,8 @@
 <dt>本社</dt><dd>福岡県福岡市</dd>        </dl>
         <a class="card-link" href="https://i-qps.net/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="space walker space walker 有翼再使用型ロケットの開発を進める。 打ち上げ・ロケット 東京都港区">
         <div class="company-head">
           <h3 class="company-name">Space Walker</h3>
 <span class="company-sub">SPACE WALKER</span>        </div>
@@ -263,7 +288,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://space-walker.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="synspective synspective 小型sar衛星の開発・運用と、衛星データを用いたソリューション提供を行う。 衛星製造・機器 衛星データ・サービス 東京都江東区">
         <div class="company-head">
           <h3 class="company-name">Synspective</h3>
 <span class="company-sub">Synspective</span>        </div>
@@ -273,7 +299,8 @@
 <dt>本社</dt><dd>東京都江東区</dd>        </dl>
         <a class="card-link" href="https://synspective.com/jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="warpspace warpspace 衛星間光通信ネットワークの構築を目指す。 地上設備・通信 衛星データ・サービス 茨城県つくば市">
         <div class="company-head">
           <h3 class="company-name">WARPSPACE</h3>
 <span class="company-sub">WARPSPACE</span>        </div>
@@ -283,7 +310,8 @@
 <dt>本社</dt><dd>茨城県つくば市</dd>        </dl>
         <a class="card-link" href="https://warpspace.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="ispace ispace, inc. 月面輸送サービスを手がける民間宇宙企業。月着陸船およびローバーを開発し、月面への物資輸送を目指す。 探査・軌道上サービス 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">ispace</h3>
 <span class="company-sub">ispace, inc.</span>        </div>
@@ -293,7 +321,8 @@
 <dt>本社</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://ispace-inc.com/jpn/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="アクセルスペース axelspace 超小型衛星の開発・製造と、地球観測プラットフォームの運用を手がける。 衛星製造・機器 衛星データ・サービス 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">アクセルスペース</h3>
 <span class="company-sub">Axelspace</span>        </div>
@@ -303,7 +332,8 @@
 <dt>本社</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://www.axelspace.com/ja/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="アストロスケール astroscale スペースデブリ除去および軌道上サービスを専門とする企業。デブリ捕獲・除去技術の実証を進める。 探査・軌道上サービス 衛星データ・サービス 東京都墨田区">
         <div class="company-head">
           <h3 class="company-name">アストロスケール</h3>
 <span class="company-sub">Astroscale</span>        </div>
@@ -313,7 +343,8 @@
 <dt>本社</dt><dd>東京都墨田区</dd>        </dl>
         <a class="card-link" href="https://astroscale.com/ja/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="アドバンテスト advantest 半導体試験装置を製造。宇宙用電子部品の試験・評価分野に関与する。 地上設備・通信 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">アドバンテスト</h3>
 <span class="company-sub">Advantest</span>        </div>
@@ -323,7 +354,8 @@
 <dt>本社</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.advantest.com/ja/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="chubu"
+               data-text="イビデン ibiden プリント配線板・セラミック製品を製造。宇宙用電子基板分野に関与する。 部品・素材・加工 岐阜県大垣市">
         <div class="company-head">
           <h3 class="company-name">イビデン</h3>
 <span class="company-sub">Ibiden</span>        </div>
@@ -333,7 +365,8 @@
 <dt>本社</dt><dd>岐阜県大垣市</dd>        </dl>
         <a class="card-link" href="https://www.ibiden.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="hokkaido_tohoku"
+               data-text="インターステラテクノロジズ interstellar technologies 観測ロケットmomoおよび超小型衛星用ロケットzeroを開発。北海道大樹町に射場と生産拠点を持つ。 打ち上げ・ロケット 北海道広尾郡大樹町">
         <div class="company-head">
           <h3 class="company-name">インターステラテクノロジズ</h3>
 <span class="company-sub">Interstellar Technologies</span>        </div>
@@ -343,7 +376,8 @@
 <dt>本社</dt><dd>北海道広尾郡大樹町</dd>        </dl>
         <a class="card-link" href="https://www.istellartech.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="インフォステラ infostellar 地上局シェアリングプラットフォームを運営する。 地上設備・通信 東京都品川区">
         <div class="company-head">
           <h3 class="company-name">インフォステラ</h3>
 <span class="company-sub">Infostellar</span>        </div>
@@ -353,7 +387,8 @@
 <dt>本社</dt><dd>東京都品川区</dd>        </dl>
         <a class="card-link" href="https://www.infostellar.net/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="キヤノン電子 canon electronics 超小型衛星の開発・製造を手がける。民生部品を活用した低コスト衛星の実現に取り組む。 衛星製造・機器 部品・素材・加工 埼玉県秩父市">
         <div class="company-head">
           <h3 class="company-name">キヤノン電子</h3>
 <span class="company-sub">Canon Electronics</span>        </div>
@@ -363,7 +398,8 @@
 <dt>本社</dt><dd>埼玉県秩父市</dd>        </dl>
         <a class="card-link" href="https://www.canon-elec.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="コスモテック cosmotec 1975年の設立以来、jaxa各宇宙センターの設備保全・運用、ロケット打上げ設備や高圧ガス設備の維持管理、エンジン燃焼試験の支援などで日本の宇宙開発を基盤から支える。 地上設備・通信 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">コスモテック</h3>
 <span class="company-sub">Cosmotec</span>        </div>
@@ -373,7 +409,8 @@
 <dt>本社</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.cosmotec-hp.jp/service/space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="スカパーjsat sky perfect jsat 衛星通信・衛星放送事業を展開するアジア最大級の衛星オペレーター。宇宙事業と有料多チャンネル事業を運営。 地上設備・通信 衛星データ・サービス 東京都港区">
         <div class="company-head">
           <h3 class="company-name">スカパーJSAT</h3>
 <span class="company-sub">SKY Perfect JSAT</span>        </div>
@@ -383,7 +420,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.skyperfectjsat.space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="スペースデータ space data 衛星データとaiを用いたデジタルツイン構築を手がける。 衛星データ・サービス 東京都">
         <div class="company-head">
           <h3 class="company-name">スペースデータ</h3>
 <span class="company-sub">Space Data</span>        </div>
@@ -393,7 +431,8 @@
 <dt>本社</dt><dd>東京都</dd>        </dl>
         <a class="card-link" href="https://spacedata.ai/ja/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="スペースワン space one 小型ロケット「カイロス」による小型衛星打ち上げサービスを手がける。和歌山県串本町に射場を持つ。 打ち上げ・ロケット 東京都港区">
         <div class="company-head">
           <h3 class="company-name">スペースワン</h3>
 <span class="company-sub">Space One</span>        </div>
@@ -403,7 +442,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.space-one.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="ソニーグループ sony group 宇宙感動体験事業「star sphere」で超小型衛星「eye」を運用。イメージセンサ・カメラ技術を宇宙分野に展開する。 衛星製造・機器 部品・素材・加工 東京都港区">
         <div class="company-head">
           <h3 class="company-name">ソニーグループ</h3>
 <span class="company-sub">Sony Group</span>        </div>
@@ -413,7 +453,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://starsphere.sony.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="タカラトミー takara tomy 玩具開発で培った小型・軽量の機構技術を応用し、jaxa等と変形型月面ロボット「sora-q」（lev-2）を共同開発。2024年に月面での展開・撮影に成功した。 探査・軌道上サービス 部品・素材・加工 東京都葛飾区">
         <div class="company-head">
           <h3 class="company-name">タカラトミー</h3>
 <span class="company-sub">Takara Tomy</span>        </div>
@@ -423,7 +464,8 @@
 <dt>本社</dt><dd>東京都葛飾区</dd>        </dl>
         <a class="card-link" href="https://www.takaratomy.co.jp/products/sora-q/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="ニコン nikon 光学技術を基盤に、宇宙用光学系・観測機器分野に関与する。 部品・素材・加工 東京都港区">
         <div class="company-head">
           <h3 class="company-name">ニコン</h3>
 <span class="company-sub">Nikon</span>        </div>
@@ -433,7 +475,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.nikon.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="chubu"
+               data-text="ミネベアミツミ minebeamitsumi 人工衛星の駆動部やロケットの姿勢制御などに使われる高精度ベアリング・小型モーター・センサを供給する。 部品・素材・加工 長野県北佐久郡">
         <div class="company-head">
           <h3 class="company-name">ミネベアミツミ</h3>
 <span class="company-sub">MinebeaMitsumi</span>        </div>
@@ -443,7 +486,8 @@
 <dt>本社</dt><dd>長野県北佐久郡</dd>        </dl>
         <a class="card-link" href="https://www.minebeamitsumi.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="三井e&amp;s mitsui e&amp;s 射場設備・大型構造物の設計製造に関与する。 地上設備・通信 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">三井E&amp;S</h3>
 <span class="company-sub">Mitsui E&amp;S</span>        </div>
@@ -453,7 +497,8 @@
 <dt>本社</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://www.mitsuiesmachinery.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="三菱マテリアル mitsubishi materials 高機能材料・超硬工具を製造。航空宇宙部品の加工と素材供給に関与する。 部品・素材・加工 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">三菱マテリアル</h3>
 <span class="company-sub">Mitsubishi Materials</span>        </div>
@@ -463,7 +508,8 @@
 <dt>本社</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.mmc.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="三菱重工業 mitsubishi heavy industries h3ロケット・h-iiaロケットの製造と打ち上げ輸送サービスを担う。種子島宇宙センターでの打ち上げ運用も実施。 打ち上げ・ロケット 衛星製造・機器 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">三菱重工業</h3>
 <span class="company-sub">Mitsubishi Heavy Industries</span>        </div>
@@ -473,7 +519,8 @@
 <dt>本社</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.mhi.com/jp/products/space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="三菱電機 mitsubishi electric 通信・放送・観測衛星の製造、衛星測位システム、大型電波望遠鏡などを手がける。 衛星製造・機器 地上設備・通信 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">三菱電機</h3>
 <span class="company-sub">Mitsubishi Electric</span>        </div>
@@ -483,7 +530,8 @@
 <dt>本社</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.mitsubishielectric.co.jp/business/space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kyushu"
+               data-text="中島田鉄工所 nakashimada engineering 精密鍛造・成形機械の技術を持ち、九州の宇宙産業サプライチェーンに関与する。 部品・素材・加工 福岡県八女郡">
         <div class="company-head">
           <h3 class="company-name">中島田鉄工所</h3>
 <span class="company-sub">Nakashimada Engineering</span>        </div>
@@ -493,7 +541,8 @@
 <dt>本社</dt><dd>福岡県八女郡</dd>        </dl>
         <a class="card-link" href="https://www.nakashimada.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kinki"
+               data-text="京セラ kyocera ファインセラミック部品・電子部品を製造。宇宙機搭載機器に用いられる。 部品・素材・加工 京都府京都市">
         <div class="company-head">
           <h3 class="company-name">京セラ</h3>
 <span class="company-sub">Kyocera</span>        </div>
@@ -503,7 +552,8 @@
 <dt>本社</dt><dd>京都府京都市</dd>        </dl>
         <a class="card-link" href="https://www.kyocera.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kinki"
+               data-text="住友精密工業 sumitomo precision products 熱制御機器、油圧・空圧機器など航空宇宙向け精密機器を製造する。 部品・素材・加工 兵庫県尼崎市">
         <div class="company-head">
           <h3 class="company-name">住友精密工業</h3>
 <span class="company-sub">Sumitomo Precision Products</span>        </div>
@@ -513,7 +563,8 @@
 <dt>本社</dt><dd>兵庫県尼崎市</dd>        </dl>
         <a class="card-link" href="https://www.spp.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="古河電気工業 furukawa electric 光ファイバ・電線・機能材料を製造。宇宙機の配線・熱制御材に関与する。 部品・素材・加工 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">古河電気工業</h3>
 <span class="company-sub">Furukawa Electric</span>        </div>
@@ -523,7 +574,8 @@
 <dt>本社</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.furukawa.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="chubu"
+               data-text="多摩川精機 tamagawa seiki 角度センサ、ジャイロなど姿勢制御用センサを製造する。宇宙機の姿勢検出に用いられる。 部品・素材・加工 長野県飯田市">
         <div class="company-head">
           <h3 class="company-name">多摩川精機</h3>
 <span class="company-sub">Tamagawa Seiki</span>        </div>
@@ -533,7 +585,8 @@
 <dt>本社</dt><dd>長野県飯田市</dd>        </dl>
         <a class="card-link" href="https://www.tamagawa-seiki.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="大林組 obayashi corporation 宇宙エレベーター構想や月面建設など、宇宙分野の建設技術研究を進める。 地上設備・通信 探査・軌道上サービス 東京都港区">
         <div class="company-head">
           <h3 class="company-name">大林組</h3>
 <span class="company-sub">Obayashi Corporation</span>        </div>
@@ -543,7 +596,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.obayashi.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="天地人 tenchijin 衛星データを用いた土地評価・農業分野のソリューションを提供する。 衛星データ・サービス 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">天地人</h3>
 <span class="company-sub">Tenchijin</span>        </div>
@@ -553,7 +607,8 @@
 <dt>本社</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://tenchijin.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kinki"
+               data-text="島津製作所 shimadzu corporation 航空・宇宙向けの機器を手がける。計測・分析技術を基盤とした宇宙用機器を供給。 部品・素材・加工 京都府京都市">
         <div class="company-head">
           <h3 class="company-name">島津製作所</h3>
 <span class="company-sub">Shimadzu Corporation</span>        </div>
@@ -563,7 +618,8 @@
 <dt>本社</dt><dd>京都府京都市</dd>        </dl>
         <a class="card-link" href="https://www.shimadzu.co.jp/aero/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="川崎重工業 kawasaki heavy industries ロケットフェアリング、衛星分離機構などの製造を担当。軌道上サービス関連技術の開発も進める。 打ち上げ・ロケット 部品・素材・加工 東京都港区">
         <div class="company-head">
           <h3 class="company-name">川崎重工業</h3>
 <span class="company-sub">Kawasaki Heavy Industries</span>        </div>
@@ -573,7 +629,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.khi.co.jp/aerospace/space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kinki"
+               data-text="新明和工業 shinmaywa industries 航空機構造部品を製造。宇宙機構造分野の技術基盤を持つ。 部品・素材・加工 兵庫県宝塚市">
         <div class="company-head">
           <h3 class="company-name">新明和工業</h3>
 <span class="company-sub">ShinMaywa Industries</span>        </div>
@@ -583,7 +640,8 @@
 <dt>本社</dt><dd>兵庫県宝塚市</dd>        </dl>
         <a class="card-link" href="https://www.shinmaywa.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="日本アビオニクス nippon avionics 宇宙用電子機器、赤外線サーモグラフィなどを手がける。 部品・素材・加工 衛星製造・機器 神奈川県横浜市">
         <div class="company-head">
           <h3 class="company-name">日本アビオニクス</h3>
 <span class="company-sub">Nippon Avionics</span>        </div>
@@ -593,7 +651,8 @@
 <dt>本社</dt><dd>神奈川県横浜市</dd>        </dl>
         <a class="card-link" href="https://www.avio.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="日機装 nikkiso 航空宇宙向け複合材部品、精密ポンプなどを製造する。 部品・素材・加工 東京都渋谷区">
         <div class="company-head">
           <h3 class="company-name">日機装</h3>
 <span class="company-sub">Nikkiso</span>        </div>
@@ -603,7 +662,8 @@
 <dt>本社</dt><dd>東京都渋谷区</dd>        </dl>
         <a class="card-link" href="https://www.nikkiso.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="明星電気 meisei electric 宇宙観測機器・センサ類を手がける。気象観測機器で培った技術を宇宙分野に展開している。 部品・素材・加工 衛星製造・機器 群馬県伊勢崎市">
         <div class="company-head">
           <h3 class="company-name">明星電気</h3>
 <span class="company-sub">Meisei Electric</span>        </div>
@@ -613,7 +673,8 @@
 <dt>本社</dt><dd>群馬県伊勢崎市</dd>        </dl>
         <a class="card-link" href="https://www.meisei.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kinki"
+               data-text="村田製作所 murata manufacturing 電子部品を製造。高信頼性が要求される宇宙用電子機器分野に関与する。 部品・素材・加工 京都府長岡京市">
         <div class="company-head">
           <h3 class="company-name">村田製作所</h3>
 <span class="company-sub">Murata Manufacturing</span>        </div>
@@ -623,7 +684,8 @@
 <dt>本社</dt><dd>京都府長岡京市</dd>        </dl>
         <a class="card-link" href="https://www.murata.com/ja-jp" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="東レ toray industries 炭素繊維複合材料を製造。ロケット構造材・圧力容器の主要素材となる。 部品・素材・加工 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">東レ</h3>
 <span class="company-sub">Toray Industries</span>        </div>
@@ -633,7 +695,8 @@
 <dt>本社</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://www.toray.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="東芝 toshiba 人工衛星搭載機器、地上局システム、宇宙用電源システムなどを供給する。 衛星製造・機器 地上設備・通信 東京都港区">
         <div class="company-head">
           <h3 class="company-name">東芝</h3>
 <span class="company-sub">Toshiba</span>        </div>
@@ -643,7 +706,8 @@
 <dt>本社</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.global.toshiba/jp/products-solutions/space.html" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="横河電機 yokogawa electric 計測・制御技術を宇宙に展開。国際宇宙ステーション実験棟「きぼう」への機器設置や、有人与圧ローバー向け機器の研究開発を進める。 部品・素材・加工 衛星データ・サービス 東京都武蔵野市">
         <div class="company-head">
           <h3 class="company-name">横河電機</h3>
 <span class="company-sub">Yokogawa Electric</span>        </div>
@@ -653,7 +717,8 @@
 <dt>本社</dt><dd>東京都武蔵野市</dd>        </dl>
         <a class="card-link" href="https://www.yokogawa.co.jp/industries/space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="chubu"
+               data-text="浜松ホトニクス hamamatsu photonics 光検出器・光センサを製造。宇宙観測機器の検出素子に用いられる。 部品・素材・加工 静岡県浜松市">
         <div class="company-head">
           <h3 class="company-name">浜松ホトニクス</h3>
 <span class="company-sub">Hamamatsu Photonics</span>        </div>
@@ -663,7 +728,8 @@
 <dt>本社</dt><dd>静岡県浜松市</dd>        </dl>
         <a class="card-link" href="https://www.hamamatsu.com/jp/ja.html" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="清水建設 shimizu corporation 「総合宇宙企業」を掲げ、宇宙輸送インフラ・衛星データ活用・月面開発に取り組む。1987年から宇宙開発を続ける。 地上設備・通信 探査・軌道上サービス 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">清水建設</h3>
 <span class="company-sub">Shimizu Corporation</span>        </div>
@@ -673,7 +739,8 @@
 <dt>本社</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://www.shimz.co.jp/space/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="由紀精密 yuki precision 精密切削加工の技術を宇宙分野に展開。超小型衛星の構造部品を製造し、jaxaの補給船「こうのとり」回収カプセルの推進系部品開発などにも携わる。宇宙ベンチャーからの依頼にも対応する。 部品・素材・加工 神奈川県茅ヶ崎市">
         <div class="company-head">
           <h3 class="company-name">由紀精密</h3>
 <span class="company-sub">Yuki Precision</span>        </div>
@@ -683,7 +750,8 @@
 <dt>本社</dt><dd>神奈川県茅ヶ崎市</dd>        </dl>
         <a class="card-link" href="https://www.yukiseimitsu.co.jp/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="高砂熱学工業 takasago thermal engineering 月面での水電解装置など、宇宙環境向け熱・空調技術の開発を進める。 探査・軌道上サービス 東京都新宿区">
         <div class="company-head">
           <h3 class="company-name">高砂熱学工業</h3>
 <span class="company-sub">Takasago Thermal Engineering</span>        </div>
@@ -693,7 +761,8 @@
 <dt>本社</dt><dd>東京都新宿区</dd>        </dl>
         <a class="card-link" href="https://www.tte-net.com/" target="_blank" rel="noopener">公式サイト →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="鹿島建設 kajima corporation 月面建設・宇宙居住施設に関する研究開発をjaxa等と進める。 地上設備・通信 探査・軌道上サービス 東京都港区">
         <div class="company-head">
           <h3 class="company-name">鹿島建設</h3>
 <span class="company-sub">Kajima Corporation</span>        </div>
@@ -729,9 +798,9 @@
         <div class="footer-col">
           <h4>ホーム</h4>
           <a href="../companies/">企業DB</a>
-          <a href="../articles/">特集</a>
-          <a href="../news/">ニュース</a>
+<a href="../procurement/">調達情報</a>          <a href="../articles/">特集</a>
           <a href="../launches/">打ち上げ</a>
+          <a href="../news/">ニュース</a>
           <a href="../papers/">研究動向</a>
           <a href="../topics/moon/">トピック</a>
           <a href="../search/">検索</a>
@@ -749,16 +818,17 @@
           <h4>運営元</h4>
           <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
           <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 UchUchU · 静的サイト・自動更新</span>
-        <span class="footer-updated">更新: 2026-08-16 08:06 UTC</span>
+        <span class="footer-updated">更新: 2026-08-22 01:26 UTC</span>
       </div>
     </footer>
   </div>
 </div>
 
-<script src="../static/js/main.js?v=95adeec8" defer></script>
+<script src="../static/js/main.js?v=1d897ec5" defer></script>
 </body>
 </html>

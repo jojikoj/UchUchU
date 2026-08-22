@@ -33,7 +33,7 @@
         href="https://uchuchu.tech/en/feed.xml">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.","inLanguage":"en","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/en/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://uchuchu.tech/en/"},{"@type":"ListItem","position":2,"name":"Space Industry Company Database","item":"https://uchuchu.tech/en/companies/"}]}]}</script>
   <link rel="icon" href="../../../static/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../static/css/style.css?v=95adeec8">
+  <link rel="stylesheet" href="../../../static/css/style.css?v=1d897ec5">
   <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
        Runs before paint to avoid a flash. A manual choice always wins. -->
   <script>
@@ -84,8 +84,8 @@
       <a href="../../" class="">Home</a>
       <a href="../../companies/" class="on">Companies</a>
       <a href="../../articles/" class="">Features</a>
-      <a href="../../news/" class="">News</a>
       <a href="../../launches/" class="">Launches</a>
+      <a href="../../news/" class="">News</a>
       <a href="../../papers/" class="">Research</a>
       <a href="../../faq/" class="">FAQ</a>
       <a href="../../advertise/" class="">Advertise</a>
@@ -163,8 +163,21 @@
     </div>
     <div class="filter-bar"><a class="chip" href="../">← All</a></div>
 
+    <div class="company-filter" data-company-filter>
+      <input type="search" class="cf-input" data-cf-q
+             placeholder="Filter by name, technology or area" aria-label="Filter by name, technology or area">
+      <div class="cf-areas">
+        <button class="chip on" data-cf-area="">All</button>
+        <button class="chip" data-cf-area="kanto">関東<span class="cf-n">12</span></button>
+        <button class="chip" data-cf-area="kyushu">九州・沖縄<span class="cf-n">1</span></button>
+      </div>
+      <p class="cf-result" data-cf-result hidden
+         data-hit="Showing {n} companies"
+         data-none="No companies match."></p>
+    </div>
     <div class="company-list">
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="ale co., ltd. ale 人工流れ星や大気データ取得など、衛星を用いた事業を展開する。 satellite manufacturing data &amp; services 東京都港区">
         <div class="company-head">
           <h3 class="company-name">ALE Co., Ltd.</h3>
 <span class="company-sub">ALE</span>        </div>
@@ -174,7 +187,8 @@
 <dt>HQ</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://star-ale.com/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="arkedge space arkedge space 超小型衛星の開発と衛星コンステレーション事業を手がける。 satellite manufacturing 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">ArkEdge Space</h3>
 <span class="company-sub">ArkEdge Space</span>        </div>
@@ -184,7 +198,8 @@
 <dt>HQ</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://arkedgespace.com/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="axelspace アクセルスペース develops and manufactures microsatellites and operates an earth observation platform. satellite manufacturing data &amp; services 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">Axelspace</h3>
 <span class="company-sub">アクセルスペース</span>        </div>
@@ -194,7 +209,8 @@
 <dt>HQ</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://www.axelspace.com/ja/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="canon electronics キヤノン電子 develops and manufactures microsatellites, pursuing low-cost designs using commercial off-the-shelf components. satellite manufacturing components &amp; materials 埼玉県秩父市">
         <div class="company-head">
           <h3 class="company-name">Canon Electronics</h3>
 <span class="company-sub">キヤノン電子</span>        </div>
@@ -204,7 +220,8 @@
 <dt>HQ</dt><dd>埼玉県秩父市</dd>        </dl>
         <a class="card-link" href="https://www.canon-elec.co.jp/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="meisei electric 明星電気 produces space observation instruments and sensors, applying technology developed for meteorological equipment. components &amp; materials satellite manufacturing 群馬県伊勢崎市">
         <div class="company-head">
           <h3 class="company-name">Meisei Electric</h3>
 <span class="company-sub">明星電気</span>        </div>
@@ -214,7 +231,8 @@
 <dt>HQ</dt><dd>群馬県伊勢崎市</dd>        </dl>
         <a class="card-link" href="https://www.meisei.co.jp/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="mitsubishi electric 三菱電機 manufactures communication, broadcasting, and observation satellites, satellite positioning systems, and large radio telescopes. satellite manufacturing ground systems 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">Mitsubishi Electric</h3>
 <span class="company-sub">三菱電機</span>        </div>
@@ -224,7 +242,8 @@
 <dt>HQ</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.mitsubishielectric.co.jp/business/space/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="mitsubishi heavy industries 三菱重工業 manufactures and operates the h3 and h-iia launch vehicles, including launch services from tanegashima space center. launch vehicles satellite manufacturing 東京都千代田区">
         <div class="company-head">
           <h3 class="company-name">Mitsubishi Heavy Industries</h3>
 <span class="company-sub">三菱重工業</span>        </div>
@@ -234,7 +253,8 @@
 <dt>HQ</dt><dd>東京都千代田区</dd>        </dl>
         <a class="card-link" href="https://www.mhi.com/jp/products/space/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="nec corporation nec provides end-to-end satellite system design and manufacturing, plus ground systems. participated in the hayabusa2 asteroid mission. satellite manufacturing ground systems 東京都港区">
         <div class="company-head">
           <h3 class="company-name">NEC Corporation</h3>
 <span class="company-sub">NEC</span>        </div>
@@ -244,7 +264,8 @@
 <dt>HQ</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://jpn.nec.com/solution/space/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="nippon avionics 日本アビオニクス 宇宙用電子機器、赤外線サーモグラフィなどを手がける。 components &amp; materials satellite manufacturing 神奈川県横浜市">
         <div class="company-head">
           <h3 class="company-name">Nippon Avionics</h3>
 <span class="company-sub">日本アビオニクス</span>        </div>
@@ -254,7 +275,8 @@
 <dt>HQ</dt><dd>神奈川県横浜市</dd>        </dl>
         <a class="card-link" href="https://www.avio.co.jp/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="sony group ソニーグループ runs the star sphere space experience business with its micro-satellite eye, extending its image-sensor and camera technology into space. satellite manufacturing components &amp; materials 東京都港区">
         <div class="company-head">
           <h3 class="company-name">Sony Group</h3>
 <span class="company-sub">ソニーグループ</span>        </div>
@@ -264,7 +286,8 @@
 <dt>HQ</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://starsphere.sony.com/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="synspective synspective develops and operates small sar satellites and provides solutions based on satellite data. satellite manufacturing data &amp; services 東京都江東区">
         <div class="company-head">
           <h3 class="company-name">Synspective</h3>
 <span class="company-sub">Synspective</span>        </div>
@@ -274,7 +297,8 @@
 <dt>HQ</dt><dd>東京都江東区</dd>        </dl>
         <a class="card-link" href="https://synspective.com/jp/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="toshiba 東芝 人工衛星搭載機器、地上局システム、宇宙用電源システムなどを供給する。 satellite manufacturing ground systems 東京都港区">
         <div class="company-head">
           <h3 class="company-name">Toshiba</h3>
 <span class="company-sub">東芝</span>        </div>
@@ -284,7 +308,8 @@
 <dt>HQ</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.global.toshiba/jp/products-solutions/space.html" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kyushu"
+               data-text="iqps qps研究所 develops and operates small sar satellites, building its supply chain with manufacturers in the kyushu region. satellite manufacturing data &amp; services 福岡県福岡市">
         <div class="company-head">
           <h3 class="company-name">iQPS</h3>
 <span class="company-sub">QPS研究所</span>        </div>
@@ -321,8 +346,8 @@
           <h4>Home</h4>
           <a href="../../companies/">Companies</a>
           <a href="../../articles/">Features</a>
-          <a href="../../news/">News</a>
           <a href="../../launches/">Launches</a>
+          <a href="../../news/">News</a>
           <a href="../../papers/">Research</a>
           <a href="../../topics/moon/">Topics</a>
           <a href="../../search/">Search</a>
@@ -344,12 +369,12 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 UchUchU · Static site · auto-updated</span>
-        <span class="footer-updated">Updated: 2026-08-16 08:06 UTC</span>
+        <span class="footer-updated">Updated: 2026-08-22 01:26 UTC</span>
       </div>
     </footer>
   </div>
 </div>
 
-<script src="../../../static/js/main.js?v=95adeec8" defer></script>
+<script src="../../../static/js/main.js?v=1d897ec5" defer></script>
 </body>
 </html>

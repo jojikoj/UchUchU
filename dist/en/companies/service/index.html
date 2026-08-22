@@ -33,7 +33,7 @@
         href="https://uchuchu.tech/en/feed.xml">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.","inLanguage":"en","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/en/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://uchuchu.tech/en/"},{"@type":"ListItem","position":2,"name":"Space Industry Company Database","item":"https://uchuchu.tech/en/companies/"}]}]}</script>
   <link rel="icon" href="../../../static/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../static/css/style.css?v=95adeec8">
+  <link rel="stylesheet" href="../../../static/css/style.css?v=1d897ec5">
   <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
        Runs before paint to avoid a flash. A manual choice always wins. -->
   <script>
@@ -84,8 +84,8 @@
       <a href="../../" class="">Home</a>
       <a href="../../companies/" class="on">Companies</a>
       <a href="../../articles/" class="">Features</a>
-      <a href="../../news/" class="">News</a>
       <a href="../../launches/" class="">Launches</a>
+      <a href="../../news/" class="">News</a>
       <a href="../../papers/" class="">Research</a>
       <a href="../../faq/" class="">FAQ</a>
       <a href="../../advertise/" class="">Advertise</a>
@@ -163,8 +163,21 @@
     </div>
     <div class="filter-bar"><a class="chip" href="../">← All</a></div>
 
+    <div class="company-filter" data-company-filter>
+      <input type="search" class="cf-input" data-cf-q
+             placeholder="Filter by name, technology or area" aria-label="Filter by name, technology or area">
+      <div class="cf-areas">
+        <button class="chip on" data-cf-area="">All</button>
+        <button class="chip" data-cf-area="kanto">関東<span class="cf-n">9</span></button>
+        <button class="chip" data-cf-area="kyushu">九州・沖縄<span class="cf-n">1</span></button>
+      </div>
+      <p class="cf-result" data-cf-result hidden
+         data-hit="Showing {n} companies"
+         data-none="No companies match."></p>
+    </div>
     <div class="company-list">
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="ale co., ltd. ale 人工流れ星や大気データ取得など、衛星を用いた事業を展開する。 satellite manufacturing data &amp; services 東京都港区">
         <div class="company-head">
           <h3 class="company-name">ALE Co., Ltd.</h3>
 <span class="company-sub">ALE</span>        </div>
@@ -174,7 +187,8 @@
 <dt>HQ</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://star-ale.com/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="astroscale アストロスケール specializes in space debris removal and on-orbit servicing, demonstrating capture and removal technologies. exploration &amp; in-orbit data &amp; services 東京都墨田区">
         <div class="company-head">
           <h3 class="company-name">Astroscale</h3>
 <span class="company-sub">アストロスケール</span>        </div>
@@ -184,7 +198,8 @@
 <dt>HQ</dt><dd>東京都墨田区</dd>        </dl>
         <a class="card-link" href="https://astroscale.com/ja/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="axelspace アクセルスペース develops and manufactures microsatellites and operates an earth observation platform. satellite manufacturing data &amp; services 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">Axelspace</h3>
 <span class="company-sub">アクセルスペース</span>        </div>
@@ -194,7 +209,8 @@
 <dt>HQ</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://www.axelspace.com/ja/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="sky perfect jsat スカパーjsat one of asia&#39;s largest satellite operators, running satellite communications, broadcasting, and pay-tv businesses. ground systems data &amp; services 東京都港区">
         <div class="company-head">
           <h3 class="company-name">SKY Perfect JSAT</h3>
 <span class="company-sub">スカパーJSAT</span>        </div>
@@ -204,7 +220,8 @@
 <dt>HQ</dt><dd>東京都港区</dd>        </dl>
         <a class="card-link" href="https://www.skyperfectjsat.space/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="space data スペースデータ 衛星データとaiを用いたデジタルツイン構築を手がける。 data &amp; services 東京都">
         <div class="company-head">
           <h3 class="company-name">Space Data</h3>
 <span class="company-sub">スペースデータ</span>        </div>
@@ -214,7 +231,8 @@
 <dt>HQ</dt><dd>東京都</dd>        </dl>
         <a class="card-link" href="https://spacedata.ai/ja/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="synspective synspective develops and operates small sar satellites and provides solutions based on satellite data. satellite manufacturing data &amp; services 東京都江東区">
         <div class="company-head">
           <h3 class="company-name">Synspective</h3>
 <span class="company-sub">Synspective</span>        </div>
@@ -224,7 +242,8 @@
 <dt>HQ</dt><dd>東京都江東区</dd>        </dl>
         <a class="card-link" href="https://synspective.com/jp/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="tenchijin 天地人 衛星データを用いた土地評価・農業分野のソリューションを提供する。 data &amp; services 東京都中央区">
         <div class="company-head">
           <h3 class="company-name">Tenchijin</h3>
 <span class="company-sub">天地人</span>        </div>
@@ -234,7 +253,8 @@
 <dt>HQ</dt><dd>東京都中央区</dd>        </dl>
         <a class="card-link" href="https://tenchijin.co.jp/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="warpspace warpspace 衛星間光通信ネットワークの構築を目指す。 ground systems data &amp; services 茨城県つくば市">
         <div class="company-head">
           <h3 class="company-name">WARPSPACE</h3>
 <span class="company-sub">WARPSPACE</span>        </div>
@@ -244,7 +264,8 @@
 <dt>HQ</dt><dd>茨城県つくば市</dd>        </dl>
         <a class="card-link" href="https://warpspace.jp/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kanto"
+               data-text="yokogawa electric 横河電機 extends its measurement and control technology into space, including equipment installed in the iss kibo module and r&amp;d for a crewed pressurised rover. components &amp; materials data &amp; services 東京都武蔵野市">
         <div class="company-head">
           <h3 class="company-name">Yokogawa Electric</h3>
 <span class="company-sub">横河電機</span>        </div>
@@ -254,7 +275,8 @@
 <dt>HQ</dt><dd>東京都武蔵野市</dd>        </dl>
         <a class="card-link" href="https://www.yokogawa.co.jp/industries/space/" target="_blank" rel="noopener">Official site →</a>
       </article>
-      <article class="company-card">
+      <article class="company-card" data-area="kyushu"
+               data-text="iqps qps研究所 develops and operates small sar satellites, building its supply chain with manufacturers in the kyushu region. satellite manufacturing data &amp; services 福岡県福岡市">
         <div class="company-head">
           <h3 class="company-name">iQPS</h3>
 <span class="company-sub">QPS研究所</span>        </div>
@@ -291,8 +313,8 @@
           <h4>Home</h4>
           <a href="../../companies/">Companies</a>
           <a href="../../articles/">Features</a>
-          <a href="../../news/">News</a>
           <a href="../../launches/">Launches</a>
+          <a href="../../news/">News</a>
           <a href="../../papers/">Research</a>
           <a href="../../topics/moon/">Topics</a>
           <a href="../../search/">Search</a>
@@ -314,12 +336,12 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 UchUchU · Static site · auto-updated</span>
-        <span class="footer-updated">Updated: 2026-08-16 08:06 UTC</span>
+        <span class="footer-updated">Updated: 2026-08-22 01:26 UTC</span>
       </div>
     </footer>
   </div>
 </div>
 
-<script src="../../../static/js/main.js?v=95adeec8" defer></script>
+<script src="../../../static/js/main.js?v=1d897ec5" defer></script>
 </body>
 </html>

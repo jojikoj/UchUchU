@@ -271,6 +271,18 @@ def fetch_papers() -> list[dict]:
 
 
 # --- 調達情報 -----------------------------------------------------------
+def _external_url(raw: str | None) -> str:
+    """公告の外部リンク。
+
+    調達APIは ExternalDocumentURI を相対パスで返すことがある
+    （実例: "search2/geps2/2021/04/2021...")。そのまま出すと自サイトの
+    内部リンクとして解釈され、リンク検査が落ちて公開が止まる（2026-08-22）。
+    基底URLは公告ごとに違って復元できないので、絶対URLのものだけ載せる。
+    """
+    u = (raw or "").strip()
+    return u if u.startswith(("http://", "https://")) else ""
+
+
 def fetch_procurement() -> list[dict]:
     """官公需情報ポータルサイトの公告から、宇宙分野の案件を集める。
 
@@ -311,7 +323,7 @@ def fetch_procurement() -> list[dict]:
                 "id": key,
                 "name": name,
                 "org": org,
-                "url": (r.findtext("ExternalDocumentURI") or "").strip(),
+                "url": _external_url(r.findtext("ExternalDocumentURI")),
                 "issued": (r.findtext("CftIssueDate") or "").strip(),
                 "prefecture": (r.findtext("PrefectureName") or "").strip(),
                 "city": (r.findtext("CityName") or "").strip(),
