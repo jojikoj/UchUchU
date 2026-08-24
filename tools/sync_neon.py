@@ -44,6 +44,14 @@ def _iso(raw):
 
 
 def news_rows() -> list[dict]:
+    """news.json の各件を行にする。
+
+    ⚠️ `raw` に元の1件を丸ごと残す（AIoniと同じ理由）。列だけだと
+       image（サムネイル）等が漏れて、DB読みに切り替えた瞬間に消える。
+       `seq` は元の並び順。published が同時刻の記事のタイブレークを
+       Postgres任せにすると、ファイル読みと順序が変わる実害がある
+       （2026-08-24、AIoniの本移行検証で実際に発見）。
+    """
     try:
         data = json.loads(NEWS.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as e:
@@ -51,7 +59,7 @@ def news_rows() -> list[dict]:
         return []
     items = data.get("items", data if isinstance(data, list) else [])
     rows = []
-    for it in items:
+    for seq, it in enumerate(items):
         url = (it.get("url") or "").strip()
         if not url:
             continue
@@ -63,6 +71,8 @@ def news_rows() -> list[dict]:
             "source": it.get("source"),
             "lang": it.get("lang"),
             "published": _iso(it.get("published")),
+            "seq": seq,
+            "raw": neon.as_json(dict(it)),
         })
     return rows
 

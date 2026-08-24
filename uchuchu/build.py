@@ -20,7 +20,9 @@ import json
 import os
 import re
 import shutil
+import sys
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -28,8 +30,33 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from . import business, companies, config, indexnow, seo, topics
 from .i18n import t as _t
 
+sys.path.insert(0, str(Path.home() / "claude_AIR/TOEcompany/メディア事業部/共通/運用"))
+try:
+    import neon  # noqa: E402
+except ImportError:
+    neon = None
+
 
 # --- データ読み込み -----------------------------------------------------
+#
+# ⚠️ 2026-08-24、AIoniと同じ方式でNeonを読み出し先に加えた。
+#    正本は今までどおりファイル。DBが読めない・空・件数がおかしければ
+#    必ずファイルへフォールバックする（無言のフォールバックはしない）。
+_NEWS_SANITY_MIN = 50
+
+
+def load_news() -> list[dict]:
+    if neon is not None:
+        rows = neon.fetch_or_none(
+            "select raw from uchuchu.news where raw is not null order by seq nulls last")
+        if rows is not None and len(rows) >= _NEWS_SANITY_MIN:
+            return [r[0] for r in rows]
+        if rows is not None:
+            print(f"⚠️ Neonのニュースが{len(rows)}件しかありません"
+                  f"（{_NEWS_SANITY_MIN}件未満）。ファイルにフォールバックします", file=sys.stderr)
+    return _load_json("news.json").get("items", [])
+
+
 def _load_json(name: str) -> dict:
     path = config.DATA_DIR / name
     if not path.exists():
@@ -467,15 +494,40 @@ def _parse_frontmatter(text: str) -> tuple[dict, str]:
     return meta, m.group(2)
 
 
-def load_articles(lang: str) -> list[dict]:
-    """content/articles/<slug>.<lang>.md を読み込む。"""
+_ARTICLES_SANITY_MIN = 10
+
+
+def _iter_article_sources(lang: str):
+    """(slug, meta, body) を返す。日本語版はNeon優先、駄目ならファイル。
+
+    英語版(*.en.md)はNeonに同期していない（記事数がごく少ないため）ので
+    常にファイルから読む。
+    """
+    if lang == "ja" and neon is not None:
+        rows = neon.fetch_or_none(
+            "select slug, frontmatter, body from uchuchu.articles "
+            "where frontmatter is not null order by slug")
+        if rows is not None and len(rows) >= _ARTICLES_SANITY_MIN:
+            for slug, meta, body in rows:
+                yield slug, meta, body or ""
+            return
+        if rows is not None:
+            print(f"⚠️ Neonの記事が{len(rows)}件しかありません"
+                  f"（{_ARTICLES_SANITY_MIN}件未満）。ファイルにフォールバックします", file=sys.stderr)
+
     if not config.ARTICLES_DIR.exists():
-        return []
-    md = markdown.Markdown(extensions=["extra", "toc", "sane_lists"])
-    articles = []
+        return
     for path in sorted(config.ARTICLES_DIR.glob(f"*.{lang}.md")):
         slug = path.name[: -len(f".{lang}.md")]
         meta, body = _parse_frontmatter(path.read_text(encoding="utf-8"))
+        yield slug, meta, body
+
+
+def load_articles(lang: str) -> list[dict]:
+    """記事の一覧を組み立てる。中身は Neon かファイルのどちらか（上を参照）。"""
+    md = markdown.Markdown(extensions=["extra", "toc", "sane_lists"])
+    articles = []
+    for slug, meta, body in _iter_article_sources(lang):
         md.reset()
         html = md.convert(body)
         articles.append({
@@ -716,7 +768,7 @@ class Builder:
         self.asset_ver = self._asset_version()
         self.year = self.now.year
         self.base_url = os.environ.get("SITE_BASE_URL", config.SITE_BASE_URL).rstrip("/")
-        self.news_raw = _load_json("news.json").get("items", [])
+        self.news_raw = load_news()
         self.launches_raw = _load_json("launches.json").get("items", [])
         self.papers_raw = _load_json("papers.json").get("items", [])
         self.procurement_raw = _load_json("procurement.json").get("items", [])
