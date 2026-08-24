@@ -46,6 +46,13 @@ media_step "公開" ./tools/deploy.sh
 #    翻訳キャッシュや収集結果が実行機の中だけで育ち、別のMacで再現できなくなる。
 media_step "データをリポジトリへ反映" media_push "収集データを更新（自動）"
 
+# 4b. データを Neon へ写す（2026-08-24 追加）
+#
+#     ⚠️ 写しであって正本ではない。サイトが読むのは今までどおりファイルのまま。
+#     ここが失敗しても収集・生成・公開は影響を受けない。
+#     接続先（~/.config/media/neon_url）が無い実行機では何もせず素通りする。
+media_step "Neonへ同期" python3 tools/sync_neon.py
+
 # 5. 状況を1行で残す（週次の振り返りで読む）
 python3 - <<'PY'
 import json, pathlib, datetime
