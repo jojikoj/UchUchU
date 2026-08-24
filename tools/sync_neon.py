@@ -77,6 +77,9 @@ def article_rows() -> list[dict]:
             "excerpt": meta.get("excerpt"),
             "published": neon.as_date(meta.get("date")),
             "body": body,
+            # 列に切り出すだけでなく丸ごと残す。hero（見出し画像）・order・author は
+            # 列に無いので、これが無いとDBから記事を戻せない
+            "frontmatter": neon.as_json(meta),
         })
     return rows
 
