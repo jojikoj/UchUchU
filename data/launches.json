@@ -1,30 +1,7 @@
 {
-  "generated_at": "2026-08-24T21:36:32.705719+00:00",
+  "generated_at": "2026-08-25T09:33:15.280087+00:00",
   "count": 200,
   "items": [
-    {
-      "id": "48c449c2-3c09-4d36-9c2a-d853b3a39289",
-      "name": "Long March 6C | Unknown Payload",
-      "net": "2026-08-25T03:20:00Z",
-      "window_end": "2026-08-25T03:40:00Z",
-      "status": "Go",
-      "status_name": "Go for Launch",
-      "provider": "China Aerospace Science and Technology Corporation",
-      "provider_country": "CHN",
-      "provider_url": "https://english.spacechina.com/",
-      "rocket": "Long March 6C",
-      "pad": "Launch Complex 9A",
-      "pad_lat": "38.8583",
-      "pad_lon": "111.5802",
-      "location": "Taiyuan Satellite Launch Center, People's Republic of China",
-      "country": "CHN",
-      "mission": "Unknown Payload",
-      "mission_type": "Unknown",
-      "mission_description": "Details TBD.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-6c_on_the_la_image_20240507065151.jpg",
-      "webcast": null,
-      "upcoming": true
-    },
     {
       "id": "ad501ebd-a357-4305-90c1-c46c6feb2ecf",
       "name": "Falcon 9 Block 5 | Starlink Group 10-49",
@@ -91,7 +68,7 @@
       "mission_type": "Earth Science",
       "mission_description": "Third of EUMETSAT's third generation of weather satellite.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
-      "webcast": null,
+      "webcast": "https://www.youtube.com/watch?v=CLTbPdGfMJw",
       "upcoming": true
     },
     {
@@ -114,7 +91,7 @@
       "mission_type": "Astrophysics",
       "mission_description": "The Nancy Grace Roman Space Telescope is a NASA infrared space telescope with a 2.4 m (7.9 ft) wide field of view primary mirror and two scientific instruments. The Wide-Field Instrument (WFI) is a 300.8-megapixel multi-band visible and near-infrared camera, providing a sharpness of images comparable to that achieved by the Hubble Space Telescope over a 0.28 square degree field of view, 100 times…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
-      "webcast": "https://x.com/i/broadcasts/1jxXgBanvZeJZ",
+      "webcast": "https://www.youtube.com/watch?v=9wq3VHsL_bE",
       "upcoming": true
     },
     {
@@ -2412,6 +2389,29 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gaganyaan_abort_image_20231021132156.jpeg",
       "webcast": null,
       "upcoming": true
+    },
+    {
+      "id": "48c449c2-3c09-4d36-9c2a-d853b3a39289",
+      "name": "Long March 6C | 7 satellites",
+      "net": "2026-08-25T03:21:00Z",
+      "window_end": "2026-08-25T03:40:00Z",
+      "status": "Success",
+      "status_name": "Launch Successful",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "provider_country": "CHN",
+      "provider_url": "https://english.spacechina.com/",
+      "rocket": "Long March 6C",
+      "pad": "Launch Complex 9A",
+      "pad_lat": "38.8583",
+      "pad_lon": "111.5802",
+      "location": "Taiyuan Satellite Launch Center, People's Republic of China",
+      "country": "CHN",
+      "mission": "7 satellites",
+      "mission_type": "Technology",
+      "mission_description": "Share ride of 7 satellites to sun-synchronous orbit, including the ham radio satellite BY70-4. Details TBD.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-6c_on_the_la_image_20240507065151.jpg",
+      "webcast": null,
+      "upcoming": false
     },
     {
       "id": "458e2e52-87b0-4707-96d8-6899f92e53ee",
