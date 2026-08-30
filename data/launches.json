@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T21:33:26.627683+00:00",
+  "generated_at": "2026-08-30T09:32:56.543896+00:00",
   "count": 200,
   "items": [
     {
@@ -229,29 +229,6 @@
       "upcoming": true
     },
     {
-      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
-      "name": "Falcon 9 Block 5 | Crew-13",
-      "net": "2026-09-12T22:34:00Z",
-      "window_end": "2026-09-12T22:34:00Z",
-      "status": "Go",
-      "status_name": "Go for Launch",
-      "provider": "SpaceX",
-      "provider_country": "USA",
-      "provider_url": "https://www.spacex.com/",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "pad_lat": "28.56194122",
-      "pad_lon": "-80.57735736",
-      "location": "Cape Canaveral SFS, FL, USA",
-      "country": "USA",
-      "mission": "Crew-13",
-      "mission_type": "Human Exploration",
-      "mission_description": "SpaceX Crew-13 is the thirteenth crewed operational flight of a Crew Dragon spacecraft to the International Space Station as part of NASA's Commercial Crew Program.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
-      "webcast": null,
-      "upcoming": true
-    },
-    {
       "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
       "name": "Vega-C | Sentinel-3C & FLEX",
       "net": "2026-09-15T01:21:07Z",
@@ -271,6 +248,29 @@
       "mission_type": "Earth Science",
       "mission_description": "Sentinel-3C is the third satellite in the Sentinel-3 constellation, which provides high-accuracy optical, radar and altimetry data for marine and land services. The Fluorescence Explorer (FLEX) satellite is a part of ESA's Earth Explorer program. The satellite will map vegetation fluorescence to quantify photosynthetic activity.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vega-c_image_20220713154437.jpg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
+      "name": "Falcon 9 Block 5 | Crew-13",
+      "net": "2026-09-30T00:00:00Z",
+      "window_end": "2026-09-30T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "SpaceX",
+      "provider_country": "USA",
+      "provider_url": "https://www.spacex.com/",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "pad_lat": "28.56194122",
+      "pad_lon": "-80.57735736",
+      "location": "Cape Canaveral SFS, FL, USA",
+      "country": "USA",
+      "mission": "Crew-13",
+      "mission_type": "Human Exploration",
+      "mission_description": "SpaceX Crew-13 is the thirteenth crewed operational flight of a Crew Dragon spacecraft to the International Space Station as part of NASA's Commercial Crew Program.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
       "webcast": null,
       "upcoming": true
     },
