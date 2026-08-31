@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T21:34:37.214764+00:00",
+  "generated_at": "2026-08-31T09:32:50.680951+00:00",
   "count": 200,
   "items": [
     {
@@ -781,6 +781,29 @@
       "upcoming": true
     },
     {
+      "id": "22e117bf-041c-49d5-9d09-7b180036e143",
+      "name": "Ariane 62 | Metop-SG B1",
+      "net": "2026-11-30T00:00:00Z",
+      "window_end": "2026-11-30T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Arianespace",
+      "provider_country": "FRA",
+      "provider_url": "https://www.arianespace.com",
+      "rocket": "Ariane 62",
+      "pad": "Ariane Launch Area 4",
+      "pad_lat": "5.256319",
+      "pad_lon": "-52.786838",
+      "location": "Guiana Space Centre, French Guiana",
+      "country": "GUF",
+      "mission": "Metop-SG B1",
+      "mission_type": "Earth Science",
+      "mission_description": "Second of EUMETSAT's second generation of Metop weather satellites.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
       "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
       "net": "2026-12-31T00:00:00Z",
@@ -1444,29 +1467,6 @@
       "mission_type": "Technology",
       "mission_description": "Third test flight of the Isar Spectrum launch vehicle. This launch will carry various satellites including R-Space’s AT-Astra/IOD-01, which will perform in-orbit demonstrations for ENPULSION, SUNBOOSTER GmbH, and Synopsis Planet.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcast": null,
-      "upcoming": true
-    },
-    {
-      "id": "22e117bf-041c-49d5-9d09-7b180036e143",
-      "name": "Ariane 62 | Metop-SG B1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "Arianespace",
-      "provider_country": "FRA",
-      "provider_url": "https://www.arianespace.com",
-      "rocket": "Ariane 62",
-      "pad": "Ariane Launch Area 4",
-      "pad_lat": "5.256319",
-      "pad_lon": "-52.786838",
-      "location": "Guiana Space Centre, French Guiana",
-      "country": "GUF",
-      "mission": "Metop-SG B1",
-      "mission_type": "Earth Science",
-      "mission_description": "Second of EUMETSAT's second generation of Metop weather satellites.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcast": null,
       "upcoming": true
     },
