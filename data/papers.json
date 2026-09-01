@@ -1,7 +1,2098 @@
 {
-  "generated_at": "2026-08-31T21:36:13.746921+00:00",
-  "count": 2460,
+  "generated_at": "2026-09-01T09:33:08.108552+00:00",
+  "count": 2580,
   "items": [
+    {
+      "title": "Agentic research is oxymoronic",
+      "url": "https://arxiv.org/abs/2608.31161v1",
+      "pdf": "https://arxiv.org/pdf/2608.31161v1",
+      "summary": "The use of agentic large language models obviates human interpretation of scientific results, and will lead to substantial distrust in the literature.",
+      "authors": [
+        "Natalie B. Hogg"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T17:57:43+00:00"
+    },
+    {
+      "title": "Ad Astra White Paper: A Pitch for the Next 25 Years of NASA's Physics of the Cosmos Program",
+      "url": "https://arxiv.org/abs/2608.31160v1",
+      "pdf": "https://arxiv.org/pdf/2608.31160v1",
+      "summary": "Astrophysical observations of our universe have been key to our understanding of how the universe works. Shortly after the turn of the millennium, the National Research Council delivered \\textit{Connecting Quarks with the Cosmos: Eleven Science Questions for the New Century}. In the subsequent quarter-century, we have made substantial progress in answering each question. These advancements have, in part, arisen because of the success of major US facilities across several domains of physics, guid…",
+      "authors": [
+        "Eric Burns",
+        "Ivan Agullo",
+        "Igor Andreoni",
+        "Catherine M. Deibel",
+        "Christopher L. Fryer",
+        "Natasha Latouf",
+        "M. Coleman Miller",
+        "Jillian C. Rastinejad"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.CO",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-31T17:57:00+00:00"
+    },
+    {
+      "title": "Slysh haloes: the waste heat of cold computing as a submillimetre technosignature",
+      "url": "https://arxiv.org/abs/2608.31153v1",
+      "pdf": "https://arxiv.org/pdf/2608.31153v1",
+      "summary": "Searches for Dysonian waste heat have operated almost exclusively in the mid-infrared and are therefore sensitive primarily to technology radiating at 100-600K. We argue that mature, computation-dominated civilisations may instead dissipate much of their energy at far lower temperatures. The Landauer cost of irreversible computation scales linearly with temperature, while ambient temperatures at large circumstellar radii approach the 2.7K cosmic microwave background floor. Cold computation is th…",
+      "authors": [
+        "Michael Garrett"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "physics.pop-ph"
+      ],
+      "published": "2026-08-31T17:52:34+00:00"
+    },
+    {
+      "title": "The Analysis, not the Aperture: End-to-End Transformer Reconstruction for Imaging Atmospheric Cherenkov Telescopes",
+      "url": "https://arxiv.org/abs/2608.31148v1",
+      "pdf": "https://arxiv.org/pdf/2608.31148v1",
+      "summary": "Imaging Atmospheric Cherenkov Telescopes (IACTs) detect very-high-energy gamma rays by imaging the nanosecond Cherenkov flash of the air shower they initiate in the Earth's atmosphere. For four decades the first steps of IACT event reconstruction have been essentially unchanged, relying on a heavy parameterisation and dimensionality reduction of the recorded images. This is reasonable when the image is bright, but discards important information when only a few tens of Cherenkov photons are recor…",
+      "authors": [
+        "Elli Jobst",
+        "Lea Heckmann",
+        "Lukas Heinrich",
+        "David Paneque"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-31T17:50:34+00:00"
+    },
+    {
+      "title": "The impact of hot mode accretion and angular momentum conservation on metallicity gradients of galactic discs",
+      "url": "https://arxiv.org/abs/2608.31144v1",
+      "pdf": "https://arxiv.org/pdf/2608.31144v1",
+      "summary": "The hot circumgalactic medium (CGM) of a galaxy inevitably rotates more slowly than the cold gas in the disc it surrounds, due to a higher pressure support against gravity. If it accretes vertically onto the disc, angular momentum conservation leads to radial flows, advection of metals inwards and the steepening of a metallicity gradient. The observed gradient hence carries information on the kinematics of the accreting gas. Previous models built on this premise parametrised the angular momentum…",
+      "authors": [
+        "Jennifer K. S. Friske",
+        "Filippo Fraternali",
+        "Gabriele Pezzulli"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T17:49:08+00:00"
+    },
+    {
+      "title": "Accretion Rates and Thermohaline Convection in Polluted White Dwarfs",
+      "url": "https://arxiv.org/abs/2608.31110v1",
+      "pdf": "https://arxiv.org/pdf/2608.31110v1",
+      "summary": "Polluted white dwarfs provide a unique window into the composition of exoplanetary material, but interpreting their surface abundances requires a quantitative understanding of the mixing processes in their envelopes. Accretion of metal-rich debris onto hydrogen-rich white dwarfs drives thermohaline (fingering) convection in the underlying radiative zone. Previous studies have modeled this as enhanced diffusive transport, often inferring mass accretion rates, $\\dot{M}_{\\rm acc}$, that exceed cons…",
+      "authors": [
+        "J. R. Fuentes",
+        "Matias Castro-Tapia",
+        "Jim Fuller",
+        "Marcus King"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.EP",
+        "physics.flu-dyn"
+      ],
+      "published": "2026-08-31T17:14:47+00:00"
+    },
+    {
+      "title": "Feasibility of Capillary-Driven Orbital Liquid Mirror Telescopes",
+      "url": "https://arxiv.org/abs/2608.31042v1",
+      "pdf": "https://arxiv.org/pdf/2608.31042v1",
+      "summary": "Magnetically-shaped ferrofluid liquid mirror telescopes offer a promising alternative to conventional solid mirrors in applications such as adaptive optics and large-scale space-based telescopes. However, the concept critically depends on the ability to precisely configure the magnetic field driving the ferrofluid. For Halbach-array-driven mirrors, the surface smoothness requirements translate to a uniformity requirement of the Kelvin body force field. Because permanent magnets vary unit-to-unit…",
+      "authors": [
+        "Janoad Dietrich",
+        "Álvaro Romero-Calvo"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "physics.flu-dyn",
+        "physics.space-ph"
+      ],
+      "published": "2026-08-31T16:20:03+00:00"
+    },
+    {
+      "title": "Bekenstein--Hod Bound: A $3.3σ$ Confirmation from GW250114",
+      "url": "https://arxiv.org/abs/2608.31039v1",
+      "pdf": "https://arxiv.org/pdf/2608.31039v1",
+      "summary": "Black holes link gravity, thermodynamics and information via limits on the relaxation rate of a perturbed system. The Bekenstein-Hod bound imposes a minimum relaxation time at fixed temperature, but its observational test demands both black hole thermodynamic characterization and decay time measurement. Here we test this bound with GW250114, the loudest gravitational-wave signal yet observed from a binary black-hole merger. We infer the remnant temperature from pre-merger data truncated at least…",
+      "authors": [
+        "Hai-Tian Wang",
+        "Shao-Peng Tang",
+        "Yi-Zhong Fan"
+      ],
+      "categories": [
+        "gr-qc",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-31T16:15:41+00:00"
+    },
+    {
+      "title": "The Auger Radio Infill SKALA Extension (ARISE): Science Case and Instrumentation (ARENA 2026)",
+      "url": "https://arxiv.org/abs/2608.31031v1",
+      "pdf": "https://arxiv.org/pdf/2608.31031v1",
+      "summary": "The Auger Radio Infill SKALA Extension (ARISE) at the Pierre Auger Observatory in Argentina was deployed in 2025 and measures cosmic-ray air showers in the energy region of the Galactic-to-extragalactic transition. ARISE is comprised of 18 SKALA-2 antennas featuring two polarization channels each, deployed within $100\\,$m of a surface detector station in the enhancement area of the Pierre Auger Observatory. This area of the surface array features a denser spacing of $433\\,$m between surface stat…",
+      "authors": [
+        "Frank G. Schröder for the Pierre Auger Collaboration"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-31T16:10:38+00:00"
+    },
+    {
+      "title": "ALMA CO(2-1) Gas Dynamics in NGC 315: A Multi-Method Benchmark for Supermassive Black Hole Mass Measurement",
+      "url": "https://arxiv.org/abs/2608.31015v1",
+      "pdf": "https://arxiv.org/pdf/2608.31015v1",
+      "summary": "We present ALMA Cycle~7 \\cotwo\\ observations of the circumnuclear disk in NGC~315 at an angular resolution of $0\\farcs230\\times0\\farcs175$, improving on past measurements and resolving the sphere of influence (SOI) of the supermassive black hole (SMBH), whose mass has previously been estimated of $M_{\\rm BH}= \\left(2.08^{+0.33}_{-0.15}\\right) \\times 10^9$~M$_\\odot$ The high spatial resolution and sensitivity enable robust full-cube forward modeling of the molecular gas kinematics and a direct co…",
+      "authors": [
+        "Dieu D. Nguyen",
+        "Benjamin D. Boizelle",
+        "Hai N. Ngo",
+        "Elena Gallo",
+        "Tuan N. Le",
+        "Sabine Thater",
+        "Tien H. T. Ho",
+        "Tinh Q. T. Le"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T15:58:44+00:00"
+    },
+    {
+      "title": "Constraining equation of state of neutron star using neutron star-black hole mergers",
+      "url": "https://arxiv.org/abs/2608.30995v1",
+      "pdf": "https://arxiv.org/pdf/2608.30995v1",
+      "summary": "In this work, we study tidal effects that can be observed in gravitational wave transient from neutron star-black hole (NSBH) mergers. It has been well known that neutron star's tidal deformation has imprint of equation of state and hence composition of neutron star matter. Compared to binary neutron star mergers, where we observe a combined effect of two neutron stars by measuring the parameter known as lambda tilde. In neutron star black hole mergers, we measure the tidal deformability of the…",
+      "authors": [
+        "Vasudev Dubey",
+        "Rahul Kashyap",
+        "Yugesh Bhoge"
+      ],
+      "categories": [
+        "gr-qc",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-31T15:46:53+00:00"
+    },
+    {
+      "title": "The First Array-Wide Diffuse Flux Search for UHE Neutrinos with the Askaryan Radio Array",
+      "url": "https://arxiv.org/abs/2608.30989v1",
+      "pdf": "https://arxiv.org/pdf/2608.30989v1",
+      "summary": "The Askaryan Radio Array (ARA) is an ultrahigh energy (UHE) neutrino detector at the South Pole that searches for impulsive broadband radio signals from neutrino-induced particle showers in glacial ice. ARA consists of five autonomous stations with receiving antennas deployed up to 200 m deep and has accumulated the largest livetime of any in-ice radio array. We present the first array-wide diffuse UHE neutrino search using data collected from January 2013 to December 2023, incorporating improve…",
+      "authors": [
+        "Alan Salcedo-Gomez",
+        "Marco Stein Muzio",
+        "for the ARA Collaboration"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T15:44:48+00:00"
+    },
+    {
+      "title": "METIS high-contrast imaging simulations: From instrument modelling to science readiness",
+      "url": "https://arxiv.org/abs/2608.30988v1",
+      "pdf": "https://arxiv.org/pdf/2608.30988v1",
+      "summary": "The Mid-infrared Extremely Large Telescope (ELT) Imager and Spectrograph (METIS) instrument, expected to see first light in early 2030, aims to detect and characterise exoplanets and circumstellar disks through high- contrast imaging (HCI) and spectroscopy. The High-contrast End-to-End Performance Simulator (HEEPS), initially developed to support the design of the METIS HCI modes, has evolved into a crucial tool for the METIS science team to prepare and optimize observations. HEEPS is an open-so…",
+      "authors": [
+        "Gilles Orban de Xivry",
+        "Olivier Absil",
+        "Iain Hammond",
+        "Thomas Bertram",
+        "Roy van Boekel",
+        "André Boné",
+        "Gaël Chauvin",
+        "Valentin Christiaens"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T15:44:13+00:00"
+    },
+    {
+      "title": "Öpik-type collision frequency for Kozai-driven projectiles: Target bodies on eccentric and inclined orbits",
+      "url": "https://arxiv.org/abs/2608.30972v1",
+      "pdf": "https://arxiv.org/pdf/2608.30972v1",
+      "summary": "For high-inclination projectiles undergoing Lidov--Kozai secular evolution, coupled variations in eccentricity and inclination complicate estimates of long-term collision frequencies with a target body. Previous collision-frequency studies for Kozai-driven projectiles have considered target-body orbits that are either circular or confined to the reference plane. The present study considers the general case in which the target body's orbit has both non-zero eccentricity and non-zero inclination.…",
+      "authors": [
+        "Youpeng Liang",
+        "Xiaodong Liu"
+      ],
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-31T15:35:01+00:00"
+    },
+    {
+      "title": "From spectroscopic abundances to evolutionary [$α$/Fe] in stellar models",
+      "url": "https://arxiv.org/abs/2608.30958v1",
+      "pdf": "https://arxiv.org/pdf/2608.30958v1",
+      "summary": "Large-scale, high-resolution spectroscopic surveys map detailed chemical abundance patterns for millions of stars. However, libraries of stellar evolution models and isochrones still rely on a simplified description of chemical abundances, generally assuming either solar-scaled compositions or a constant enrichment for all $α$-elements. Moreover, the definition of $α$-enrichment is survey-dependent and is not necessarily the most relevant quantity for stellar structure and evolution. In the era…",
+      "authors": [
+        "Pedro Diaz Reeve",
+        "Aldo Serenelli"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T15:25:16+00:00"
+    },
+    {
+      "title": "The DSA/Chronoscope fast radio burst survey: forecasts and science overview",
+      "url": "https://arxiv.org/abs/2608.30943v1",
+      "pdf": "https://arxiv.org/pdf/2608.30943v1",
+      "summary": "Fast radio bursts (FRBs) are bright extragalactic transients with several mysteries surrounding their origins. Large FRB samples enable accurate measurements of the cosmic matter distribution, in particular on scales $\\lesssim 10$ Mpc. These measurements will impact cosmological inference and our understanding of astrophysical feedback, from the circumgalactic medium to cluster scales. Here we forecast the expected yields, redshifts, and host galaxies of FRBs as observed by the Deep Synoptic Arr…",
+      "authors": [
+        "Liam Connor",
+        "Kaitlyn Shin",
+        "Vikram Ravi",
+        "Stella Koch Ocker",
+        "Casey J. Law",
+        "Kritti Sharma",
+        "Samuel McCarty",
+        "Gregg Hallinan"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.CO",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T15:15:40+00:00"
+    },
+    {
+      "title": "Beyond $X_\\mathrm{max}$ : Reconstructing Air Shower Profiles with Information Field Theory with SKA-Low",
+      "url": "https://arxiv.org/abs/2608.30887v1",
+      "pdf": "https://arxiv.org/pdf/2608.30887v1",
+      "summary": "While radio measurements of extensive air showers have shown to achieve a high precision of $X_\\mathrm{max}$ sensitivity, it has been shown that parameters beyond $X_\\mathrm{max}$ can also be reconstructed. These shape parameters contain additional sensitivity to the hadronic physics in the shower as well as its mass composition. In this work, we showcase a reconstruction framework to recover the full longitudinal profile from realistic radio measurements. The framework is based on Information F…",
+      "authors": [
+        "Keito Watanabe",
+        "Tim Huege",
+        "Torsten Enßlin",
+        "Vincent Eberle",
+        "Sjoerd Bouma",
+        "Justin Bray",
+        "Stijn Buitink",
+        "Arthur Corstanje"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T14:43:16+00:00"
+    },
+    {
+      "title": "Extremes of solar spectral irradiance in the SORCE/XPS record",
+      "url": "https://arxiv.org/abs/2608.30878v1",
+      "pdf": "https://arxiv.org/pdf/2608.30878v1",
+      "summary": "Extreme and rare changes in space mission solar irradiance records are scientifically relevant but difficult to quantify because these records are finite, instrument dependent, and affected by observational gaps and time varying measurement quality. We evaluated extreme daily logarithmic changes in the band integrated 0.1-7.0 nm irradiance measured by photodiode 7 of the Solar Radiation and Climate Experiment/X-Ray Photometer System (SORCE/XPS) from 2005 to 2019. After constructing a regular dai…",
+      "authors": [
+        "Enzo Brasil",
+        "Cira E. G. Otiniano",
+        "Carolyne Brito",
+        "Beatriz Albernaz",
+        "Fidel Morales"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.IM",
+        "stat.AP"
+      ],
+      "published": "2026-08-31T14:36:32+00:00"
+    },
+    {
+      "title": "Study of Butterfly-Shaped Coronal Hole Evolution Across the Solar Disk",
+      "url": "https://arxiv.org/abs/2608.30812v1",
+      "pdf": "https://arxiv.org/pdf/2608.30812v1",
+      "summary": "We studied the evolution of a butterfly-shaped coronal hole (CH) observed from 2025 September 8 to 14 using SDO/AIA 193~Å images and SDO/HMI line-of-sight magnetograms. The CH boundary was identified using a fixed 100~DN intensity threshold, and its area, mean EUV intensity, and total unsigned magnetic flux were tracked across the solar disk. As the CH approached the central meridian, its area increased from approximately $7.70\\times10^{16}$ to $1.63\\times10^{17}$~m$^{2}$ and its unsigned magnet…",
+      "authors": [
+        "Bhairab Ale",
+        "Khagendra Katuwal",
+        "Shiv Narayan Yadav"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-31T13:59:06+00:00"
+    },
+    {
+      "title": "Stellar streams around dwarf galaxies are observationally rare in the local Universe",
+      "url": "https://arxiv.org/abs/2608.30806v1",
+      "pdf": "https://arxiv.org/pdf/2608.30806v1",
+      "summary": "The frequency and properties of stellar streams around dwarf galaxies remain observationally under-explored. Building a statistically significant sample is challenging because dwarf galaxies are smaller, fainter, and far more numerous than massive galaxies. We present the first results from a systematic survey for stellar streams around dwarf galaxies. We first introduce a classification metric for satellite accretion features (streams, shells, and asymmetric stellar haloes) using DECam imaging…",
+      "authors": [
+        "Joanna D. Sakowska",
+        "David Martíınez-Delgado",
+        "Sarah Pearson",
+        "Francisco J. Riquel-Castilla",
+        "Tjitske K. Starkenburg",
+        "Giuseppe Donatiello",
+        "Alis Deason",
+        "Denis Erkal"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T13:55:28+00:00"
+    },
+    {
+      "title": "Radio measurements of air showers with the IceCube-Gen2 surface prototype station at the Pierre Auger Observatory",
+      "url": "https://arxiv.org/abs/2608.30781v1",
+      "pdf": "https://arxiv.org/pdf/2608.30781v1",
+      "summary": "The design of the IceCube-Gen2 observatory, proposed as a next-generation extension of IceCube, includes a surface array consisting of scintillators and radio antennas. In addition to several such detectors already deployed at IceCube's surface array at the South Pole, a complete prototype station including three SKALA antennas has been operating at the Pierre Auger Observatory for several years. This setup has been used to successfully observe radio signals from air showers, demonstrated throug…",
+      "authors": [
+        "Stef Verpoest",
+        "or the IceCube-Gen2 Collaboration",
+        "for the Pierre Auger Collaboration"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-31T13:39:54+00:00"
+    },
+    {
+      "title": "Magnetohydrodynamics of charged interstellar dust. Multifluid models and study of the linear modes",
+      "url": "https://arxiv.org/abs/2608.30711v1",
+      "pdf": "https://arxiv.org/pdf/2608.30711v1",
+      "summary": "Interstellar grains play key roles in star and planet formation, including the coupling of the gas to the magnetic field during the protostellar collapse. These roles depend on the local grain size distribution, which requires a multifluid treatment of charged dust. We aim to understand the fundamental physics of the dynamics of a dust distribution in interaction with the gas and the magnetic field. In particular, the purpose is to characterize the (de)coupling conditions of these different comp…",
+      "authors": [
+        "Gabriel Verrier",
+        "Patrick Hennebelle",
+        "Ugo Lebreuilly",
+        "Valentin Vallucci-Goy"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR",
+        "physics.plasm-ph"
+      ],
+      "published": "2026-08-31T12:49:36+00:00"
+    },
+    {
+      "title": "The umbrella effect: Magnetic canopy topology modulates spatially averaged chromospheric three-minute power",
+      "url": "https://arxiv.org/abs/2608.30707v1",
+      "pdf": "https://arxiv.org/pdf/2608.30707v1",
+      "summary": "Three-minute ($\\sim$5 mHz) oscillations are a prominent signature of wave propagation in the solar chromosphere, but their measured power can vary substantially between full-disc observations and small, high-resolution fields of view. We investigate whether chromospheric magnetic canopy topology, particularly its lateral continuity and areal filling, modulates field-of-view-averaged three-minute power. We analyse H$α$ and Ca II 8542 Å spectral imaging from the Swedish 1-m Solar Telescope, compar…",
+      "authors": [
+        "Shahin Jafarzadeh",
+        "David B. Jess",
+        "Marco Stangalini",
+        "Bernhard Fleck",
+        "Richard J. Morton",
+        "Samuel D. T. Grant",
+        "Peter H. Keys",
+        "Luc Rouppe van der Voort"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-31T12:44:41+00:00"
+    },
+    {
+      "title": "Constraining Baryonic Feedback at $z\\sim 1$ with the H$α$ Luminosity Function",
+      "url": "https://arxiv.org/abs/2608.30698v1",
+      "pdf": "https://arxiv.org/pdf/2608.30698v1",
+      "summary": "Baryonic feedback remains one of the primary uncertainties in galaxy formation models because of its impact on the interstellar medium (ISM) and star formation. We investigate its effect on the H$α$ luminosity function (LF) using the Illustris and IllustrisTNG simulations, incorporating direction-dependent dust attenuation and a physically motivated treatment of the propagation of Lyman-series photons. We model three sources of H$α$ emission: star-forming H II regions, collisional excitation and…",
+      "authors": [
+        "Ivan Rapoport",
+        "Vincent Desjacques",
+        "Ehud Behar",
+        "Shmuel Bialy"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T12:38:35+00:00"
+    },
+    {
+      "title": "STOKES tables and KY codes",
+      "url": "https://arxiv.org/abs/2608.30677v1",
+      "pdf": "https://arxiv.org/pdf/2608.30677v1",
+      "summary": "The family of KY codes is an XSPEC-compatible package of fully relativistic models for spectro-polarimetric modeling of X-ray binary systems and active galactic nuclei. Within Kerr space-time, they compute accretion disc line profiles, reflection spectra from discs illuminated by Comptonized coronal radiation, and thermal disc emission including disc-corona interaction and disc self-irradiation. Many of these models include polarimetric computations, and more advanced timing variants compute X-r…",
+      "authors": [
+        "Jakub Podgorný",
+        "Michal Dovčiak"
+      ],
+      "categories": [
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-31T12:19:47+00:00"
+    },
+    {
+      "title": "On-sky demonstration of a vector Zernike wavefront sensor in a cascaded adaptive optics system",
+      "url": "https://arxiv.org/abs/2608.30666v1",
+      "pdf": "https://arxiv.org/pdf/2608.30666v1",
+      "summary": "To directly image and characterise Earth-like exoplanets, future high-contrast instruments will require adaptive-optics systems operating at increasingly high loop frequencies to reduce temporal errors. Increasing the loop frequency reduces the signal-to-noise ratio per wavefront-sensor frame, making highly sensitive wavefront sensors, such as the Zernike wavefront sensor (ZWFS), attractive candidates. However, the limited dynamic range of the classical ZWFS makes on-sky operation challenging. W…",
+      "authors": [
+        "M. Motte",
+        "V. Chambouleyron",
+        "R. Fétick",
+        "F. Oyarzun",
+        "M. A. Alagao",
+        "A. Striffling",
+        "E. Vinerskas",
+        "J. -F. Sauvage"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T12:04:58+00:00"
+    },
+    {
+      "title": "Astrometric modeling of unresolved variable binary systems. II. Application to Gaia epoch astrometry of nearby pulsating and convective red giants",
+      "url": "https://arxiv.org/abs/2608.30641v1",
+      "pdf": "https://arxiv.org/pdf/2608.30641v1",
+      "summary": "(Abbreviated) The interpretation of high-precision astrometry for intrinsically variable stars remains challenging, particularly for unresolved binary systems containing asymptotic giant branch (AGB) stars. In such systems, large-amplitude pulsations and evolving convective surface structures induce time-dependent photocentre displacements that perturb the observed orbital motion. At the same time, Gaia DR4 epoch astrometry offers the prospect of deriving accurate orbital solutions and parallaxe…",
+      "authors": [
+        "L. Decin",
+        "K. Sivkova",
+        "P. Kervella",
+        "A. Chiavassa",
+        "E. Beguin"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-31T11:47:24+00:00"
+    },
+    {
+      "title": "TeV Gamma Rays and Neutrinos from Winds Driven by Radiatively Inefficient Accretion Flows of Low-Luminosity Active Galactic Nuclei",
+      "url": "https://arxiv.org/abs/2608.30596v1",
+      "pdf": "https://arxiv.org/pdf/2608.30596v1",
+      "summary": "Recently, the Large High Altitude Air Shower Observatory (LHAASO) reported the first TeV gamma-ray detection from a low-luminosity active galactic nucleus (LLAGN) lacking a strong jet. This source, NGC 4278, is one of the nearest LLAGNs that can be studied in detail as a template for more distant objects. Most previous studies have focused on the month-scale-variable gamma-ray activities, seeking to explain them with weak jets. We focus instead on NGC 4278's quiet-period emission, proposing a di…",
+      "authors": [
+        "Nobuyuki Sakai",
+        "John F. Beacom",
+        "Kohta Murase"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T11:11:29+00:00"
+    },
+    {
+      "title": "Learning Radio Astronomical Representations with LeJEPA and Very Small Models",
+      "url": "https://arxiv.org/abs/2608.30594v1",
+      "pdf": "https://arxiv.org/pdf/2608.30594v1",
+      "summary": "Representations learned by vision foundation models pretrained on natural images have been shown to be useful for out-of-domain astronomical images. Performance on scientific downstream tasks increases with model size, which both carries higher inference costs and limits scalability, even when considering parameter-efficient adaptation. An alternative is to learn representations directly from astronomical observations rather than natural images, through self-supervised pretraining. We evaluate L…",
+      "authors": [
+        "Erica Lastufka",
+        "Mariia Drozdova",
+        "Vitaliy Kinakh",
+        "Taras Holotyak",
+        "Miroslava Dessuages-Zavadsky",
+        "Daniel Schaerer",
+        "Svyatoslav Voloshynovskiy"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T11:08:40+00:00"
+    },
+    {
+      "title": "NS-UNO: Neutron Star EoS Inference from an Unconstrained Number of Observations",
+      "url": "https://arxiv.org/abs/2608.30573v1",
+      "pdf": "https://arxiv.org/pdf/2608.30573v1",
+      "summary": "Future multimessenger observations of neutron stars (NS) are expected to substantially increase both the number and precision of astrophysical constraints on the equation of state (EoS) of dense matter. This motivates inference frameworks capable of accommodating a variable, non fixed number of observations while preserving the posterior information associated with each measurement. In this work, we introduce NS-UNO, a Neural Posterior Estimation framework for NS EoS inference designed to accomm…",
+      "authors": [
+        "Valéria Carvalho",
+        "Márcio Ferreira",
+        "Michał Bejger",
+        "Constança Providência"
+      ],
+      "categories": [
+        "nucl-th",
+        "astro-ph.HE",
+        "astro-ph.IM",
+        "hep-ph"
+      ],
+      "published": "2026-08-31T10:47:51+00:00"
+    },
+    {
+      "title": "Cascades from ultra-high-energy neutrinos",
+      "url": "https://arxiv.org/abs/2608.30562v1",
+      "pdf": "https://arxiv.org/pdf/2608.30562v1",
+      "summary": "Neutrinos produced at the highest energies can interact with cosmic neutrino and radiation backgrounds during their propagation to Earth. The many available $νν$, $ν\\barν$, and $νγ$ channels can lead to their absorption or energy redistribution, whilst the leptonic and hadronic final states may feed secondary fluxes of neutrinos, protons, and electromagnetic particles through the decay or hadronisation of the heavy leptons, bosons, and quarks produced. We present a framework to characterise thes…",
+      "authors": [
+        "Gaetano Di Marco",
+        "Rhorry Gauld",
+        "Rafael Alves Batista",
+        "Alfonso García-Soto",
+        "Miguel Á. Sánchez-Conde"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "hep-ph"
+      ],
+      "published": "2026-08-31T10:38:25+00:00"
+    },
+    {
+      "title": "Interferometric Survey of Stellar Parameters: Towards homogeneous FGK stars parameters and surface-brightness color relation in the context of PLATO space mission",
+      "url": "https://arxiv.org/abs/2608.30557v1",
+      "pdf": "https://arxiv.org/pdf/2608.30557v1",
+      "summary": "The estimation of stellar angular diameters can be performed from the surface brightness - color relation (SBCR) and photometry. The SBCR have been considered by the PLATO space mission as an independent empirical alternative for estimating stellar radii of FGK stars. In this context, we have implemented an homogeneous approach not only for calibrating the SBCR for FGK-IV/V stars but, also for determining their fundamental parameters in order to place the stars reliably on the HR diagram and to…",
+      "authors": [
+        "Romina V. Ibañez Bustos",
+        "Denis Mourard",
+        "Nicolas Nardetto",
+        "Jeremy Jones",
+        "Nayeem Ebrahimkutty",
+        "Juraj Jonák",
+        "Hugo Nowacki",
+        "Mathieu Vrard"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T10:33:56+00:00"
+    },
+    {
+      "title": "Joint Observations of PTPS Targets (JOTA). Combined spectroscopic and photometric analysis of 16 SB1 systems",
+      "url": "https://arxiv.org/abs/2608.30546v1",
+      "pdf": "https://arxiv.org/pdf/2608.30546v1",
+      "summary": "Context. The Pennsylvania-Toruń Planet Search, which operates on a sample of $\\sim$1000 northern-hemisphere stars, has been underway since 2004. Stars with radial velocity (RV) amplitudes exceeding 2 km s$^{-1}$ represent a backup subprogram sample dedicated to monitoring binary stars with multiple instruments. Aims. We used almost 21 years of combined RV measurements to search for Doppler signals consistent with stellar or brown dwarf companions and to produce a catalog of both known and previo…",
+      "authors": [
+        "Robert Jaros",
+        "Andrzje Niedzielski",
+        "Sohaib Ali",
+        "Divyansh Srivastava",
+        "Julia Sierzputowska",
+        "Monika Adamów",
+        "Jorge Lillo-Box",
+        "Dmytro Orikhovskyi"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-31T10:16:46+00:00"
+    },
+    {
+      "title": "Equilibrium \\(\\mathrm{H}_2^+/\\mathrm{H}^-\\) Abundance Ratios in MARCS Atmosphere Models",
+      "url": "https://arxiv.org/abs/2608.30529v1",
+      "pdf": "https://arxiv.org/pdf/2608.30529v1",
+      "summary": "We investigate the equilibrium abundance ratio of the molecular hydrogen ion \\(\\mathrm{H}_2^+\\) and the negative hydrogen ion \\(\\mathrm{H}^-\\) in stellar atmospheres using compact Saha-type equilibrium expressions and layer-by-layer partial pressures from MARCS model atmospheres. The analysis distinguishes the temperature-dependent coefficient ratio \\(K_{\\mathrm{H}_2^+}(T)/K_{\\mathrm{H}^-}(T)\\) from the full abundance ratio, which also depends on the local ionisation factor \\(N_{\\mathrm{H}^+}/N_…",
+      "authors": [
+        "Aiganym Sarsembayeva",
+        "Hernando Quevedo"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-31T10:00:07+00:00"
+    },
+    {
+      "title": "DINOspec: Efficient Multimodal Alignment of Vision and Spectral Foundation Models for Astronomy",
+      "url": "https://arxiv.org/abs/2608.30503v1",
+      "pdf": "https://arxiv.org/pdf/2608.30503v1",
+      "summary": "Astronomical observations provide multimodal views of physical systems, with images and spectra capturing complementary properties of celestial objects. Scientific foundation models can learn powerful representations from these observations, but representations learned by separate models remain difficult to combine. We investigate whether physical representations learned by separate vision and spectral models can be aligned without retraining their encoders. We introduce DINOspec, a multimodal f…",
+      "authors": [
+        "Erica Lastufka",
+        "Mariia Drozdova",
+        "Daniel Schaerer",
+        "Svyatoslav Voloshynovskiy"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T09:36:35+00:00"
+    },
+    {
+      "title": "Photometric redshifts for active galactic nuclei with LePHARE for the Vera C. Rubin Observatory",
+      "url": "https://arxiv.org/abs/2608.30494v1",
+      "pdf": "https://arxiv.org/pdf/2608.30494v1",
+      "summary": "Active Galactic Nuclei (AGN) play a crucial role in galaxy evolution, but they are a minority of extragalactic sources with diverse Spectral Energy Distributions (SEDs), which depend on their means of selection. Upcoming large-scale surveys such as LSST will identify many AGN, but analysis tools are not optimized for them. The limited number of photometric bands in these surveys impacts the calculation of photometric redshifts for AGN, which are essential for scientific advancement. We use LePHA…",
+      "authors": [
+        "R. Shirley",
+        "M. Salvato",
+        "J. Cohen-Tanugi",
+        "O. Ilbert",
+        "S. Arnouts",
+        "R. Ansari",
+        "R. Assef",
+        "M. Banerji"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T09:25:31+00:00"
+    },
+    {
+      "title": "ALMA Observations of DEM L241/LMC P3 in the Large Magellanic Cloud: Evidence for the Formation of Cool Molecular Jets Driven by a Microquasar",
+      "url": "https://arxiv.org/abs/2608.30489v1",
+      "pdf": "https://arxiv.org/pdf/2608.30489v1",
+      "summary": "We present ALMA observations of DEML 241/LMC P3, the most luminous $γ$-ray binary consisting of a compact object and an O star, in CO emission. We have found an one-sided jet-like CO feature of 8 pc length and 1 pc width, which accompanies another weaker CO jet candidate with slightly different orientation. The one-sided CO jet exhibits striking alignment with LMC P3, suggesting that the jet was driven by LMC P3. We have determined kinetic temperature of the CO jet to be significantly high at 33…",
+      "authors": [
+        "Yasuo Fukui",
+        "Bhuvana G. R.",
+        "Hidetoshi Sano",
+        "Kisetsu Tsuge",
+        "Rami Z. E. Alsaberi",
+        "Rin Yamada",
+        "Yuya Asano",
+        "Aya Bamba"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T09:14:05+00:00"
+    },
+    {
+      "title": "Phosphorus abundances and multi-element co-enrichment in nearby FGK stars",
+      "url": "https://arxiv.org/abs/2608.30484v1",
+      "pdf": "https://arxiv.org/pdf/2608.30484v1",
+      "summary": "The distribution of bio-essential elements is key to assessing the chemical fertility of galactic environments. We analyse phosphorus abundances for 233 nearby FGK stars from the Hypatia Catalog, separating thin- and thick-disk populations. We study [P/Fe] as a function of [Fe/H] and other elemental abundances using non-parametric tests and bootstrap resampling, and we examine residual correlations at fixed [Fe/H] together with molar ratios involving P. We find a [P/Fe]-[Fe/H] trend broadly simi…",
+      "authors": [
+        "Dario Esposito",
+        "Giovanni Covone",
+        "Donato Giovannelli",
+        "Paola Manini",
+        "Christian Magliano",
+        "Laura Inno",
+        "Luca Cacciapuoti",
+        "Víctor M. Rivilla"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T09:10:01+00:00"
+    },
+    {
+      "title": "SNAD: enabling discovery in the era of big data",
+      "url": "https://arxiv.org/abs/2608.30477v1",
+      "pdf": "https://arxiv.org/pdf/2608.30477v1",
+      "summary": "In the era of wide-field surveys and big data in astronomy, the SNAD team is exploiting the potential of modern datasets for discovering new, unforeseen, or rare astrophysical objects and phenomena with machine learning (ML). The SNAD pipeline was built under the hypothesis that, although automatic ML algorithms have a crucial role to play in this task, the scientific discovery is only completely realized when such systems are designed to boost the impact of domain knowledge experts. Our key con…",
+      "authors": [
+        "Maria Pruzhinskaya",
+        "Emille E. O. Ishida",
+        "Konstantin Malanchev",
+        "Anastasia Lavrukhina",
+        "Etienne Russeil",
+        "Timofey Semenikhin",
+        "Sreevarsha Sreejith",
+        "Emmanuel Gangler"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T09:03:26+00:00"
+    },
+    {
+      "title": "Broad-band host measurements of little red dots and similar compact nuclei require source-conditioned polychromatic PSFs",
+      "url": "https://arxiv.org/abs/2608.30459v1",
+      "pdf": "https://arxiv.org/pdf/2608.30459v1",
+      "summary": "Characterizing compact sources in the early Universe is difficult because light from physically distinct components can overlap within the same diffraction-limited image. A common method uses field stars to model how a single point of light appears and from this estimates the intrinsic structure and contributions of the physical components of the distant object under study. Many important properties inferred for high-redshift objects depend on the accuracy of this method. Using the little red do…",
+      "authors": [
+        "Sergio Bonaque-González"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-31T08:47:22+00:00"
+    },
+    {
+      "title": "Planar Three-Body Problem: theoretical predictions and simulation results",
+      "url": "https://arxiv.org/abs/2608.30414v1",
+      "pdf": "https://arxiv.org/pdf/2608.30414v1",
+      "summary": "We investigate the statistical properties of the non-hierarchical planar three-body problem, relevant to astrophysical systems with nearly planar dynamics, including protoplanetary disks and AGN disks. Using the Flux-based statistical theory of the three-body problem, previously studied in three dimensions, we derive theoretical predictions for several statistical observables in the planar case. Focusing on ergodic disintegration outcomes, we compare these predictions directly with numerical sim…",
+      "authors": [
+        "Yogesh Dandekar",
+        "Ethan Springer",
+        "Shoval Zard",
+        "Alessandro Alberto Trani",
+        "Barak Kol",
+        "Ofek Birnholtz"
+      ],
+      "categories": [
+        "astro-ph.EP",
+        "astro-ph.GA",
+        "nlin.CD",
+        "physics.class-ph"
+      ],
+      "published": "2026-08-31T08:13:38+00:00"
+    },
+    {
+      "title": "Hunting the nature of the Seyfert 1 galaxy GRS 1734-292: can it be a gamma-ray emitter?",
+      "url": "https://arxiv.org/abs/2608.30358v1",
+      "pdf": "https://arxiv.org/pdf/2608.30358v1",
+      "summary": "It has been proposed that the radio-weak Seyfert galaxy GRS 1734-292 is the counterpart of 3EG J1736-2908 and of the nearby Fermi/LAT source. I examine this identification, considering that the radio weakness could result from free-free absorption of a relativistic jet. An association with the EGRET detections is plausible, whereas the latest Fermi/LAT localization no longer favors GRS 1734-292. New observations, especially at radio frequencies of tens of GHz, would help to settle the issue.",
+      "authors": [
+        "Luigi Foschini"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T07:17:12+00:00"
+    },
+    {
+      "title": "Testing SALT Approximations with Numerical Radiative Transfer Code. II. Thermal and Microturbulent Line Broadening",
+      "url": "https://arxiv.org/abs/2608.30312v1",
+      "pdf": "https://arxiv.org/pdf/2608.30312v1",
+      "summary": "Forward models that connect galactic winds to their predicted spectral-line profiles have proved effective for inferring wind properties in controlled settings, but important limitations remain. In particular, many models rely on the Sobolev approximation to solve the radiative transfer equation and neglect line broadening caused by thermal and turbulent motions within the wind. In the first paper of this series, we demonstrated that neglecting this broadening in Semi-Analytical Line Transfer (S…",
+      "authors": [
+        "Cody Carr",
+        "Renyue Cen",
+        "Leo Michel-Dansac",
+        "Claudia Scarlata",
+        "Alaina Henry"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T06:28:13+00:00"
+    },
+    {
+      "title": "SN 2019cqc: A Hydrogen-rich Superluminous Supernova Showing Electron-Scattering Signatures",
+      "url": "https://arxiv.org/abs/2608.30309v1",
+      "pdf": "https://arxiv.org/pdf/2608.30309v1",
+      "summary": "Hydrogen-rich superluminous supernovae without narrow emission lines (SLSNe-II) are rare transients whose powering mechanisms remain debated, particularly the role of circumstellar medium (CSM) interaction. We present photometric and spectroscopic observations of SN 2019cqc to investigate its power source and progenitor mass loss. We model the lightcurve using MOSFiT with the csm and csmni models to constrain the explosion and CSM parameters. SN 2019cqc peaked at $M_g = -20.21 \\pm 0.07$ and emit…",
+      "authors": [
+        "Dinesh Hebbar",
+        "Rupak Roy",
+        "Matt Nicholl",
+        "Jesper Sollerman",
+        "Joseph P Anderson",
+        "Mariusz Gromadzki",
+        "D. Andrew Howell",
+        "Tuomas Kangas"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-31T06:26:08+00:00"
+    },
+    {
+      "title": "Systematic and Statistical Properties of Prominence Eruptions on the M-dwarf YZ CMi",
+      "url": "https://arxiv.org/abs/2608.30243v1",
+      "pdf": "https://arxiv.org/pdf/2608.30243v1",
+      "summary": "M-dwarfs produce frequent flares, and their associated mass ejections are expected to significantly affect the habitability of close-in exoplanets. Recent spectroscopic observations have revealed several prominence eruptions-indicative of stellar mass ejections-on M-dwarfs through Doppler shifts of the H$α$ line. However, systematic and statistical studies, particularly regarding their association with white-light flares, have been limited due to the lack of intensive and continuous simultaneous…",
+      "authors": [
+        "Yuto Kajikiya",
+        "Kosuke Namekata",
+        "Yuta Notsu",
+        "Kai Ikuta",
+        "Hiroyuki Maehara",
+        "Bunei Sato",
+        "Daisaku Nogami"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-31T04:54:25+00:00"
+    },
+    {
+      "title": "OB stars identified in LAMOST Data Release 10",
+      "url": "https://arxiv.org/abs/2608.30200v1",
+      "pdf": "https://arxiv.org/pdf/2608.30200v1",
+      "summary": "A large sample of OB stars plays an important role in studying the stellar parameters of massive stars, as well as the formation and evolution of the Milky Way. With the help of the Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST) Data Release 10 (DR10), we are able to construct a large sample of OB stars with spectroscopic data. In this study, we identify 48,463 spectra of 34,550 OB stars from LAMOST DR10, based on the Hertzsprung-Russell (H-R) diagram constructed with Gaia DR…",
+      "authors": [
+        "Guang Yang",
+        "Zhicun Liu",
+        "Xiao-Long Wang",
+        "Yanjun Guo",
+        "Wenyuan Cui"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-31T03:31:09+00:00"
+    },
+    {
+      "title": "Empirical Constraints on the CO Snowline Transition in HD 163296: The Local CO Column and $^{13}$C$^{18}$O Optical Depth",
+      "url": "https://arxiv.org/abs/2608.30140v1",
+      "pdf": "https://arxiv.org/pdf/2608.30140v1",
+      "summary": "CO isotopologue emission is widely used to infer gas masses and volatile carbon abundances in protoplanetary disks, but converting line emission into a CO column depends on optical depth, temperature structure, linewidth, and isotope ratios. Inferring CO/H$_2$ additionally requires an independent constraint on the local hydrogen column. We use high-resolution $^{13}$C$^{18}$O $2$-$1$ observations of HD 163296 to derive a spatially localized empirical constraint on the CO column at the resolved C…",
+      "authors": [
+        "Chunhua Qi",
+        "Takahiro Ueda",
+        "David J. Wilner",
+        "Catherine C. Espaillat"
+      ],
+      "categories": [
+        "astro-ph.EP",
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-31T01:46:03+00:00"
+    },
+    {
+      "title": "Moment-based formulas for the transport coefficients",
+      "url": "https://arxiv.org/abs/2608.30116v1",
+      "pdf": "https://arxiv.org/pdf/2608.30116v1",
+      "summary": "The coefficients of the transport equations, describing the propagation features, are particularly important in astrophysics, interplanetary physics, and experimental plasma physics. In this paper, the variable-dependent diffusion coefficients are investigated. For the momentum transport equations, we find that the coefficients are related to statistical quantities, some of which are new. In addition, these coefficients take logarithmic forms, which are different from the results derived in prev…",
+      "authors": [
+        "J. -F. Wang",
+        "G. Qin"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "physics.flu-dyn"
+      ],
+      "published": "2026-08-31T01:06:26+00:00"
+    },
+    {
+      "title": "Atmospheric escape fractionates secondary but not primary atmospheres",
+      "url": "https://arxiv.org/abs/2608.30106v1",
+      "pdf": "https://arxiv.org/pdf/2608.30106v1",
+      "summary": "A planet's atmosphere, heated by starlight, can flow off as a wind, taking some gases and leaving others in unknown proportions. Yet this selection wrote the noble-gas records of the terrestrial planets, and decides which gases hot exoplanets keep. We solve this fractionated escape problem for arbitrary composition: a wind sorts gases only for secondary, hydrogen-poor atmospheres, and removes primary, hydrogen-rich atmospheres wholesale. The algebraic solution recovers every published formula as…",
+      "authors": [
+        "Mara Attia",
+        "Tim Lichtenberg"
+      ],
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-31T00:41:26+00:00"
+    },
+    {
+      "title": "CRUX: A topology-aware load balancer for mesh-based fluid dynamics codes on GPU clusters",
+      "url": "https://arxiv.org/abs/2608.30080v1",
+      "pdf": "https://arxiv.org/pdf/2608.30080v1",
+      "summary": "The rapid growth of computational power has revolutionized numerical simulations, profoundly enhancing our understanding of fluids and plasmas. Computational fluid dynamics (CFD) simulations, which solve partial differential equations governing fluid or plasma motion on discretized grids, have been central to this progress. Recent advances have pushed the resolution and runtime of legacy numerical models to unprecedented levels while enabling newer codes to incorporate increasingly sophisticated…",
+      "authors": [
+        "M. T. P. Liska",
+        "C. Crozier"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-30T23:00:57+00:00"
+    },
+    {
+      "title": "Intermediate-mass runaway and hypervelocity star candidates in DESI DR1",
+      "url": "https://arxiv.org/abs/2608.30063v1",
+      "pdf": "https://arxiv.org/pdf/2608.30063v1",
+      "summary": "Runaway stars ejected from the Galactic disc span a range of velocities, with two extreme regimes of particular interest. Hyper-runaway stars reach velocities approaching the local Galactic escape speed while remaining gravitationally bound to the Galaxy, while hypervelocity stars (HVS) have speeds which exceed the escape speed, leaving them formally unbound. Studying both populations places stringent constraints on star cluster formation, supernova explosions in massive binaries, and the shape…",
+      "authors": [
+        "Aakash Bhat",
+        "Matti Dorsch",
+        "Ulrich Heber",
+        "Stephan Geier",
+        "Harry Dawson"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-30T22:10:09+00:00"
+    },
+    {
+      "title": "Advancing Fundamental Physics and Cosmology with high-resolution X-ray imaging",
+      "url": "https://arxiv.org/abs/2608.30042v1",
+      "pdf": "https://arxiv.org/pdf/2608.30042v1",
+      "summary": "Black Holes are the key to solving many unanswered questions in fundamental physics: in particular, the very extreme properties shown by supermassive black holes at the centers of galaxies make them obvious candidates for testing gravity theories in the strong-field regime. Since X-rays are generated by matter under extreme physical conditions, ultra-high resolution X-ray imaging (uXRI) will directly image the region near the event horizon of black holes in X-rays, similar to the Event Horizon T…",
+      "authors": [
+        "Sara Turriziani",
+        "Herman L. Marshall",
+        "Daryl Haggard",
+        "Scott Randall",
+        "Mayura Balakrishnan",
+        "Tom Maccarone",
+        "Nicole Ford"
+      ],
+      "categories": [
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-30T21:02:22+00:00"
+    },
+    {
+      "title": "The $γ$ Cephei System: Updated Orbits, Dynamical Architecture, and Limits on Additional Companions",
+      "url": "https://arxiv.org/abs/2608.30030v1",
+      "pdf": "https://arxiv.org/pdf/2608.30030v1",
+      "summary": "The $γ$ Cephei system hosts one of the first exoplanets discovered and is orbited by one of the closest known stellar companions to a planet-hosting star. Here, we derive updated orbital fits for $γ$ Cep AB, the stellar binary, and Ab, the planet, by combining literature data with \\textit{Hipparcos-Gaia} astrometry, new radial velocities (RVs), and adaptive optics imaging. We acquired 328 RVs of $γ$ Cep A with Keck/HIRES, AFP/Levy, McDonald/Tull, and Whipple/TRES, and eight adaptive optics imagi…",
+      "authors": [
+        "Judah Van Zandt",
+        "Brendan P. Bowler",
+        "Michael Endl",
+        "William D. Cochran",
+        "Phillip MacQueen",
+        "Artie Hatzes",
+        "Guillermo Torres",
+        "David W. Latham"
+      ],
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-30T20:37:32+00:00"
+    },
+    {
+      "title": "Vortex pinning and the elastic response of neutron-star crusts - I. Axisymmetric loading",
+      "url": "https://arxiv.org/abs/2608.30029v1",
+      "pdf": "https://arxiv.org/pdf/2608.30029v1",
+      "summary": "Vortex pinning is central to the standard interpretation of pulsar glitches, but the mechanical load exerted by a pinned vortex array on the solid crust has received less attention than the angular-momentum reservoir itself. We calculate the axisymmetric elastic response of a continuously stratified neutron-star crust to this load using realistic SLy4 and BSk21 stellar backgrounds and composition-dependent Coulomb shear moduli. The superfluid-crust lag sets the Magnus force, while the mesoscopic…",
+      "authors": [
+        "Elia Giliberti",
+        "Gabriele Cambiotti"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-30T20:33:14+00:00"
+    },
+    {
+      "title": "Caught Napping by JWST UNCOVER+MegaScience: Constraining bursty star formation histories and number densities of mini-quenched galaxies at redshifts 4-7",
+      "url": "https://arxiv.org/abs/2608.30011v1",
+      "pdf": "https://arxiv.org/pdf/2608.30011v1",
+      "summary": "We explore the prevalence of mini-quenched or ``napping'' galaxies selected from spectroscopic and photometric samples in the UNCOVER/MegaScience survey. These galaxies are empirically identified by the presence of moderate Balmer breaks, weak emission lines ($EW(Hα) < 100$A) and relatively blue UV continua. We infer the star formation histories (SFHs) of our sample using flexible non-parametric models with Prospector optimized to capture recent episodes of bursty star formation and quenching, a…",
+      "authors": [
+        "Gourav Khullar",
+        "Rachel Bezanson",
+        "Katherine A. Suess",
+        "Ikki Mitsuhashi",
+        "David J. Setton",
+        "Joel Leja",
+        "Sedona H. Price",
+        "Katherine E. Whitaker"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-30T20:08:40+00:00"
+    },
+    {
+      "title": "Multiscale Synthetic observations of Polarized dust emission: On the origin of Depolarization effect from Molecular clouds to Starless cores and Constraints on Dust Physics",
+      "url": "https://arxiv.org/abs/2608.30009v1",
+      "pdf": "https://arxiv.org/pdf/2608.30009v1",
+      "summary": "Submillimeter observations of polarized dust emission from molecular clouds to starless cores frequently report a decrease in polarization fraction (p) with increasing dust emission intensity (I). This feature is commonly attributed to the alignment loss of dust grains or the geometrical effects of magnetic fields, yet, the detailed contributions remain unclear. To investigate the mechanism responsible for the depolarization, we use POLARIS to perform the multiscale synthetic dust polarization o…",
+      "authors": [
+        "Nguyen Chau Giang",
+        "Thiem Hoang",
+        "Blakesley Burkhart",
+        "Doris Arzoumanian",
+        "Nguyen Bich Ngoc",
+        "Jihye Hwang",
+        "Aran Lyo"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-30T20:05:21+00:00"
+    },
+    {
+      "title": "The Structural Abundance Crisis of Massive Galaxies in Current Cosmological Simulations",
+      "url": "https://arxiv.org/abs/2608.29893v1",
+      "pdf": "https://arxiv.org/pdf/2608.29893v1",
+      "summary": "The internal structure of galaxies encodes the complex baryon cycle driven by gas accretion, star formation, and feedback, together with secular evolution and environmentally driven processes such as mergers and tidal interactions. We present a population-level census of massive nearby galaxies ($\\log(M_\\star/M_\\odot) > 10$) by comparing Hyper Suprime-Cam Subaru Strategic Program observations with matched mock images from IllustrisTNG, EAGLE, and SIMBA. Using a consistent, like-for-like imaging…",
+      "authors": [
+        "Hassen M. Yesuf",
+        "Connor Bottrell",
+        "Luis C. Ho",
+        "Aaron S. G. Robotham",
+        "Sabine Bellstedt",
+        "Robin H. W. Cook",
+        "Lei Hao",
+        "Fengshan Liu"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO"
+      ],
+      "published": "2026-08-30T16:41:32+00:00"
+    },
+    {
+      "title": "Probing Triton's Space Environment and Internal Structure: An Integrated Detection-and-Interpretation Framework",
+      "url": "https://arxiv.org/abs/2608.29784v1",
+      "pdf": "https://arxiv.org/pdf/2608.29784v1",
+      "summary": "Triton, Neptune's largest moon, is a prime ocean-world target. Constraining ocean thickness, composition, and conductivity is essential for habitability assessment, but magnetic induction alone cannot resolve the thickness-conductivity degeneracy, and magnetic perturbations from Triton's space currents can obscure the internal induction signal. We present an integrated detection-and-interpretation concept linking four physically consistent calculations. Using `PlanetProfile', we construct a comm…",
+      "authors": [
+        "Jiansen He",
+        "Chuanpeng Hou",
+        "Haoen Xie",
+        "Jiaqi Li",
+        "Tianhang Chen",
+        "Hong Zou",
+        "Xuzhi Zhou",
+        "Hui Li"
+      ],
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-30T13:24:00+00:00"
+    },
+    {
+      "title": "A generalized likelihood model for segmented muon counters",
+      "url": "https://arxiv.org/abs/2608.29760v1",
+      "pdf": "https://arxiv.org/pdf/2608.29760v1",
+      "summary": "Measurements of the muonic component of extensive air showers constrain cosmic-ray mass composition and hadronic interactions at energies beyond those accessible at accelerators. Arrays of segmented detectors with binary readout are widely used for this purpose: they sample the muon density at different distances from the shower core to reconstruct the muon lateral distribution function (LDF). Each detector response is summarized by the number of activated segments, $k$, whose probability distri…",
+      "authors": [
+        "Joaquín de Jesús",
+        "Juan Manuel Figueira",
+        "Federico Sanchez",
+        "Darko Veberic"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "physics.data-an"
+      ],
+      "published": "2026-08-30T12:45:03+00:00"
+    },
+    {
+      "title": "Ion-Scale Waves Regulated by Plasma Beta and Cross Helicity: Observational Evidence for the Helicity Barrier in Imbalanced Solar Wind Turbulence",
+      "url": "https://arxiv.org/abs/2608.29752v1",
+      "pdf": "https://arxiv.org/pdf/2608.29752v1",
+      "summary": "Ion-scale waves are believed to play an important role in heating of the solar corona and wind, though their generation mechanism remains unclear. Based on Parker Solar Probe observations, this Letter investigates the occurrence of ion-scale waves in the near-Sun solar wind with heliocentric distances between 0.1 and 0.2 au. Results show that the occurrence rate of left-handed polarized waves significantly depends on the plasma beta ($β$) and cross helicity ($σ_c$). The occurrence rate rapidly i…",
+      "authors": [
+        "G. Q. Zhao",
+        "R. Meyrand",
+        "H. Q. Feng",
+        "H. F. Yang",
+        "L. Xiang",
+        "Z. Wang"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "physics.space-ph"
+      ],
+      "published": "2026-08-30T12:30:50+00:00"
+    },
+    {
+      "title": "Type I Solar Radio Bursts Modulated by Solar Flares",
+      "url": "https://arxiv.org/abs/2608.29744v1",
+      "pdf": "https://arxiv.org/pdf/2608.29744v1",
+      "summary": "Type I solar radio bursts (noise storms) are persistent meter-wave nonthermal emissions above active regions, with their occurrence and proper?ties closely related to the local magnetic configuration and nonthermal electron acceleration. This study examines a type I noise storm on 24 December 2023 and its relation to flare activity. The noise-storm source was co-spatial with active region AR 3529 and showed frequency-dependent spatial dispersion. The associated M2.9 flare strongly modulated the…",
+      "authors": [
+        "Yutong Li",
+        "Chuanyang Li",
+        "Yanke Tang",
+        "Ning Gai",
+        "Zichuan Li",
+        "Zhe Cui",
+        "Yang Gao",
+        "Yifan Wang"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-30T12:15:29+00:00"
+    },
+    {
+      "title": "Soft proton experiments supporting the development of astronomical X-ray instrumentation",
+      "url": "https://arxiv.org/abs/2608.29743v1",
+      "pdf": "https://arxiv.org/pdf/2608.29743v1",
+      "summary": "Orbital soft protons can severely degrade the performance of astronomical X-ray observatories. On the one hand, they may cause permanent radiation damage to X-ray detectors; on the other hand, they introduce an irreducible background component. Our low-energy grazing-incidence scattering setup provides experimental data for the validation of radiation transport simulations used in the assessment of future X-ray missions. Recent measurements indicate that a significant fraction of protons scatter…",
+      "authors": [
+        "S. J. Diebold",
+        "B. Heß",
+        "F. Pfeifle",
+        "L. Ph. H. Schmidt",
+        "C. Tenzer",
+        "T. Wildfang",
+        "D. Ferreira",
+        "M. Freyberg"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-30T12:12:36+00:00"
+    },
+    {
+      "title": "Primordial Black Hole Seeds for Little Red Dots in $f(R)$ Gravity",
+      "url": "https://arxiv.org/abs/2608.29727v1",
+      "pdf": "https://arxiv.org/pdf/2608.29727v1",
+      "summary": "The discovery by the James Webb Space Telescope (JWST) of an abundant population of compact little red dots (LRDs) and supermassive black holes at high redshifts poses a severe timing challenge for standard Eddington-limited growth from stellar remnants. In this work, we present a unified hybrid assembly framework in which intermediate-mass seed black holes are formed via hierarchical primordial black hole (PBH) mergers within dense clusters in Hu-Sawicki $f(R)$ gravity, followed by galactic gas…",
+      "authors": [
+        "Saeed Fakhry"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "published": "2026-08-30T11:33:11+00:00"
+    },
+    {
+      "title": "Gemini and Apache Point Multi-band Optical Imaging Characterization of Fragmenting Long-period Comet C/2025 K1 (ATLAS)",
+      "url": "https://arxiv.org/abs/2608.29698v1",
+      "pdf": "https://arxiv.org/pdf/2608.29698v1",
+      "summary": "We present results from multi-band g, r, and i, observations of C/2025 K1 (ATLAS) taken with the Gemini North 8.1-m/GMOS imager on 2025 December 6 and December 24, and u, g, r, i, and z observations with the Astrophysical Research Consortium (ARC) 3.5-m/ARCTIC imager on 2025 December 8. We identify at least four distinct fragments in the Gemini and ARC images, designated as A, C, D, and E in these data taken between 2025 December 6 and 24. Color indices are determined from the December 8 ARC obs…",
+      "authors": [
+        "Carl Ingebretsen",
+        "Bryce T. Bolin",
+        "Meredith A. MacGregor",
+        "Carey M. Lisse",
+        "Matthew Belyakov",
+        "Gracyn Jewett",
+        "Mukremin Kilic",
+        "Marco Micheli"
+      ],
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-30T10:10:21+00:00"
+    },
+    {
+      "title": "Imaging Stars at the Quantum Compatibility Limit",
+      "url": "https://arxiv.org/abs/2608.29689v1",
+      "pdf": "https://arxiv.org/pdf/2608.29689v1",
+      "summary": "Imaging astrophysical sources with a multi-station interferometer is intrinsically a multiparameter quantum-estimation problem. {Using tools from multiparameter quantum metrology,} we show that time-resolved repetitive or adaptive measurements in an \\(N\\)-station array suffer a fundamental array-level incompatibility among visibility estimators. Collective measurements, {which coherently process the received starlight across multiple time bins in a single joint readout}, remove the array-size pe…",
+      "authors": [
+        "Xinyao Guo",
+        "Haixing Miao",
+        "Zheng Cai",
+        "Huan Yang"
+      ],
+      "categories": [
+        "quant-ph",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-30T09:54:37+00:00"
+    },
+    {
+      "title": "Spheroidal Resampling Analysis of High-Redshift Gamma-Ray Burst Spatial Densities",
+      "url": "https://arxiv.org/abs/2608.29687v1",
+      "pdf": "https://arxiv.org/pdf/2608.29687v1",
+      "summary": "Gamma-ray bursts (GRBs) are bright transient sources that can be observed at high redshift. They can therefore be used as tracers of the distant large-scale structure, although the GRB redshift sample is sparse and affected by strong selection effects. We analyze the three-dimensional distribution of 542 GRBs with spectroscopic redshifts. The method extends our earlier spherical-window search by replacing spherical counting volumes with axisymmetric spheroids. The angular positions of the observ…",
+      "authors": [
+        "Istvan Horvath",
+        "Zsolt Bagoly",
+        "Lajos G. Balazs",
+        "Jon Hakkila",
+        "Janos Horvath",
+        "Sandor Pinter",
+        "Istvan I. Racz",
+        "Peter Veres"
+      ],
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-30T09:47:42+00:00"
+    },
+    {
+      "title": "The multi-frequency radio light curve of the sub-pc SMBH binary candidate PG 1302-102",
+      "url": "https://arxiv.org/abs/2608.29682v1",
+      "pdf": "https://arxiv.org/pdf/2608.29682v1",
+      "summary": "Supermassive black hole binary (SMBHB) candidates with sub-parsec (sub-pc) orbital separations are rare, high-value systems, thought to be the dominant sources of the recently detected nanoHertz (nHz) gravitational wave (GW) background. Alongside pulsar-timing-array searches for localized nHz GW sources from SMBHBs, an increasing number of candidates have been identified from synoptic surveys of large quasar optical light curves over increasingly long baselines. The optical light curve of the qu…",
+      "authors": [
+        "Sayan Basu",
+        "Roger P. Deane",
+        "Keith W. Bannister"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-30T09:30:36+00:00"
+    },
+    {
+      "title": "Microchannel plate detector development for ultraviolet astronomy",
+      "url": "https://arxiv.org/abs/2608.29668v1",
+      "pdf": "https://arxiv.org/pdf/2608.29668v1",
+      "summary": "Observational data from the UV wavelength range is crucial to solve several astrophysical puzzles. Consequently, there are a number of upcoming UV missions from CubeSats up to the future flagship Habitable Worlds Observatory. Besides novel instrument concepts and improved coatings, advanced detectors are key for the success of these missions. The microchannel plate (MCP) detector technology offers a unique asset in the UV: the combination of single-photon counting and visible-blindness. The UV h…",
+      "authors": [
+        "S. Diebold",
+        "J. Barnstedt",
+        "J. Bayer",
+        "L. Conti",
+        "H. R. Elsener",
+        "C. Kalkuhl",
+        "D. Rau",
+        "D. Schaadt"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-30T09:05:21+00:00"
+    },
+    {
+      "title": "Origin of small-scale evaporation flows deep in the chromosphere during a solar flare",
+      "url": "https://arxiv.org/abs/2608.29649v1",
+      "pdf": "https://arxiv.org/pdf/2608.29649v1",
+      "summary": "Flares are caused by an abrupt release of magnetic energy in the solar atmosphere. Plasma heated to well over 10 MK filling the post-flare corona originates from a rapid heating and ablation of the cooler chromospheric material. This chromospheric evaporation is thought to be facilitated primarily by nonthermal electrons impinging on to the lower atmosphere. Questions on when and where in the chromosphere these upflows originate, however, are not fully resolved. Here we report on unprecedented h…",
+      "authors": [
+        "L. P. Chitta",
+        "H. N. Smitha",
+        "F. A. Iglesias",
+        "T. L. Riethmüller",
+        "A. Feller",
+        "W. Chen",
+        "A. Lagg",
+        "A. Gandorfer"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "physics.plasm-ph",
+        "physics.space-ph"
+      ],
+      "published": "2026-08-30T08:19:56+00:00"
+    },
+    {
+      "title": "Tracing Radial Migration in the Outer Disk: A Comprehensive Analysis of the Old Open Cluster Berkeley 36",
+      "url": "https://arxiv.org/abs/2608.29637v1",
+      "pdf": "https://arxiv.org/pdf/2608.29637v1",
+      "summary": "We present a chemo-kinematical, structural, and photometric analysis of the old open cluster Berkeley 36 using Gaia DR3 astrometry and photometry together with high-resolution spectroscopy from the Gaia-ESO Survey DR5.1. Applying a Gaussian Mixture Model to Gaia astrometry, we identify 946 high-probability cluster members. We derive a core radius of 2.63 +/- 0.21 arcmin and a tidal radius of 14.84 +/- 0.47 arcmin, indicating a moderately concentrated and dynamically relaxed system. By fixing the…",
+      "authors": [
+        "Deniz Cennet Çınar",
+        "D. Bisht",
+        "Ing-Guey Jiang",
+        "K. Belwal",
+        "Selçuk Bilir"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-30T07:58:44+00:00"
+    },
+    {
+      "title": "Self-calibration of adaptive optics systems. Application to the THEMIS solar telescope",
+      "url": "https://arxiv.org/abs/2608.29593v1",
+      "pdf": "https://arxiv.org/pdf/2608.29593v1",
+      "summary": "The interaction matrix models the effects of deformable mirror (DM) commands as perceived by the wavefront sensor (WFS) and is the cornerstone of the Adaptive Optics (AO) control. Difficulties to calibrate this matrix arise due to the number of degrees of freedom, the non-linearity, and temporal evolution of the AO system. An affine approximation of the unknown mapping between the DM commands and the WFS measurements is considered. Optimal estimators of the parameters of this affine model are ob…",
+      "authors": [
+        "Clementine Bechet",
+        "Eric Thiebaut",
+        "Michel Tallon",
+        "Isabelle Tallon-Bosc",
+        "Bernard Gelly",
+        "Richard Douet"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-30T06:27:36+00:00"
+    },
+    {
+      "title": "AO3k + SCExAO: on-sky wavefront quality and demonstration of novel WFS techniques with the double XAO system",
+      "url": "https://arxiv.org/abs/2608.29572v1",
+      "pdf": "https://arxiv.org/pdf/2608.29572v1",
+      "summary": "The Subaru Coronagraphic Extreme Adaptive Optics (SCExAO) system, fed by its upstream 3000-actuator \"woofer\" (AO3k), serves both as a platform for high contrast imaging (HCI) technology maturation and as a science instrument for imaging, spectroscopy, and polarimetry of exoplanets and disks. SCExAO operates in the visible and near-IR and offers a wide choice of instrument configurations. Over the last year, AO3k/SCExAO underwent significant upgrades to bring improved capabilities and support new…",
+      "authors": [
+        "Julien Lozi",
+        "Kyohoon Ahn",
+        "Vincent Deo",
+        "Olivier Guyon",
+        "Sandrine Juillard",
+        "Yoshito Ono",
+        "Garima Singh",
+        "Sébastien Vievard"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-30T05:36:47+00:00"
+    },
+    {
+      "title": "Photon--Dark Matter Elastic Scattering: An Effective-Operator Scan and First Operator-Resolved Sensitivity Estimates from the Galactic Halo",
+      "url": "https://arxiv.org/abs/2608.29546v1",
+      "pdf": "https://arxiv.org/pdf/2608.29546v1",
+      "summary": "Elastic photon--dark matter scattering attenuates gamma-ray spectra along a line of sight, probing the same operators as dark matter annihilation to photons but at a rate linear, rather than quadratic, in dark matter density. We consider Standard Model gauge-invariant effective operators of mass-dimension 5 to 7, suppressed by a cutoff scale $Λ$, coupling scalar, Majorana or Dirac dark matter to the photon. The leading operators with non-vanishing real-photon amplitudes enter at dimension-5 for…",
+      "authors": [
+        "Trinity Rosebud Stenhouse",
+        "Asli Acar",
+        "Mikhail Bashkanov",
+        "Frank F. Deppisch",
+        "Chamkaur Ghag",
+        "Dan P. Watts"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "hep-ex"
+      ],
+      "published": "2026-08-30T04:31:44+00:00"
+    },
+    {
+      "title": "How much of the black hole ringdown is sourced within the light ring?",
+      "url": "https://arxiv.org/abs/2608.29466v1",
+      "pdf": "https://arxiv.org/pdf/2608.29466v1",
+      "summary": "Not much. It has been proposed that applying a rational filter to a black hole ringdown gravitational waveform reveals a direct wave component sourced near the event horizon. By solving the Teukolsky equation for a point particle plunging into a Kerr black hole, I show that the maximum amplitude of the waves sourced within the prograde light ring is $\\lesssim 10\\%$ that of those sourced by the full trajectory no matter if the waves are filtered or not. This agrees with the interpretation of quas…",
+      "authors": [
+        "Mark Ho-Yeuk Cheung"
+      ],
+      "categories": [
+        "gr-qc",
+        "astro-ph.CO",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-29T23:26:32+00:00"
+    },
+    {
+      "title": "MEGARA Stellar Spectral Library. Second Release",
+      "url": "https://arxiv.org/abs/2608.29437v1",
+      "pdf": "https://arxiv.org/pdf/2608.29437v1",
+      "summary": "We present the second release of the MEGARA spectral library, MEGASTAR, which now includes all spectra collected during ten observing semesters at the Gran Telescopio CANARIAS. This new release supersedes our first release and incorporates a substantial number of additional observations (2000 new spectra), obtained at high spectral resolution, R(FWHM)$\\sim$20000, in two wavelength ranges centred on H$α$ (6420 - 6790 A) and on the CaII triplet (8370 - 8885 A). The aim of this paper is to introduc…",
+      "authors": [
+        "E. Carrasco",
+        "M. Lira-Franco",
+        "M. L. García-Vargas",
+        "M. Mollá",
+        "N. Cardiel",
+        "A. Gil de Paz",
+        "P. Gómez-Alvarez",
+        "S. R. Berlanas"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-29T20:54:18+00:00"
+    },
+    {
+      "title": "A semi-analytical surrogate model for giant planet evolution: bypassing ordinary differential equation solvers with localised thermodynamics, softplus asymptotes, and B-spline photometry",
+      "url": "https://arxiv.org/abs/2608.29421v1",
+      "pdf": "https://arxiv.org/pdf/2608.29421v1",
+      "summary": "Context. Evolutionary models translate the observable luminosity, temperature, and colours of giant planets and brown dwarfs into mass and age. Generating their cooling tracks normally requires integrating the internal energy over time with an ordinary differential equation (ODE) solver coupled to pre-computed atmospheric grids, which becomes numerically stiff at sharp transitions such as cloud condensation and the onset of electron degeneracy, and is fragile inside Bayesian retrievals. Aims. We…",
+      "authors": [
+        "Christian Wilkinson",
+        "Jonas Wehrung-Montpezat",
+        "Benjamin Charnay",
+        "Mathilde Mâlin",
+        "Lukas Delaye",
+        "Anne-Marie Lagrange",
+        "Vito Squicciarini",
+        "Johan Mazoyer"
+      ],
+      "categories": [
+        "astro-ph.EP",
+        "astro-ph.IM",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-29T19:58:21+00:00"
+    },
+    {
+      "title": "BSN-VII: Photometric Light Curve Study of Three Cool, Large-Amplitude, Low Mass, W-Subtype Contact Binaries",
+      "url": "https://arxiv.org/abs/2608.29393v1",
+      "pdf": "https://arxiv.org/pdf/2608.29393v1",
+      "summary": "We present a comprehensive photometric study of three W UMa-type contact binary systems, V1104 Her, V1284 Her, and V2822 Ori, based on a combination of ground-based observations and space-based TESS photometry. The light curves were modeled using the BSN application under a contact configuration, with parameters and their uncertainties estimated through the Markov Chain Monte Carlo (MCMC) approach. The derived solutions indicate that the target systems are in a shallow-contact configuration. The…",
+      "authors": [
+        "Atila Poro",
+        "Raul Michel",
+        "Diana Zadkhosh",
+        "Ava Ekrami Fard",
+        "Kian Farhadi Sangdehi",
+        "Anica Lekic",
+        "Maxime Cellier",
+        "Chloé Da Graca Baptista"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-29T18:21:27+00:00"
+    },
+    {
+      "title": "Characterization of the stabilized nulling interferometry testbed PERSÉE",
+      "url": "https://arxiv.org/abs/2608.29370v1",
+      "pdf": "https://arxiv.org/pdf/2608.29370v1",
+      "summary": "Observing exoplanets is hindered by high stellar contrast and tiny angular separation. Nulling interferometry addresses this by recombining two pupils for destructive interference on the star and constructive interference on the planet. However, maintaining deep nulls despite external disturbances requires sub-nanometer optical path difference (OPD) stability and sub-hundredth Airy disk pointing control. To validate this technology for a space mission, the PERSEE laboratory demonstrator bench wa…",
+      "authors": [
+        "Julien Lozi"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-29T17:10:11+00:00"
+    },
+    {
+      "title": "Rapid Energy Dissipation by Colliding Waves in Strongly Magnetized Plasmas",
+      "url": "https://arxiv.org/abs/2608.29365v1",
+      "pdf": "https://arxiv.org/pdf/2608.29365v1",
+      "summary": "Rapid dissipation of magnetic energy in highly magnetized environments around neutron stars and black holes is a key open question in high-energy astrophysics. We develop a general kinetic picture of counter-propagating wave collisions in magnetized pair plasmas for arbitrary polarizations and find that magnetic energy can be dissipated on the wave-crossing timescale. The two magnetohydrodynamical conditions on the field invariants, $I_1\\equiv B^2-E^2>0$ and $I_2\\equiv \\mathbf{E}\\cdot\\mathbf{B}=…",
+      "authors": [
+        "Tianshu Wu",
+        "Xinyu Li",
+        "Yangyang Cai"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "physics.plasm-ph"
+      ],
+      "published": "2026-08-29T16:57:13+00:00"
+    },
+    {
+      "title": "On the Effect of Large Scale Structures and Turbulence on Solar Eruptive Events: The Cross-Scale Challenge for Space Weather",
+      "url": "https://arxiv.org/abs/2608.29334v1",
+      "pdf": "https://arxiv.org/pdf/2608.29334v1",
+      "summary": "Coronal Mass Ejections (CMEs) are among the most powerful drivers of space weather, yet their prediction remains elusive. A fundamental obstacle is the problem's multiscale nature: large-scale magnetohydrodynamic models do not resolve the turbulent fluctuations that govern particle transport and magnetic connectivity. We present a new model that combines a MICroscopic diffusion approach of turbulence with MACroscopic EUHFORIA simulations (MICMAC) to address the cross-scale challenge of space wea…",
+      "authors": [
+        "Alessandro Ippolito",
+        "Giuseppe Prete",
+        "Nicolas Wijsen",
+        "Gaetano Zimbardo",
+        "Anwesha Maharana",
+        "Stefaan Poedts",
+        "Sergio Servidio"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-29T15:38:05+00:00"
+    },
+    {
+      "title": "Automated identification and subtraction of gravitational-wave glitches using boundary refinement",
+      "url": "https://arxiv.org/abs/2608.29295v1",
+      "pdf": "https://arxiv.org/pdf/2608.29295v1",
+      "summary": "Transient noise artifacts, or glitches, in gravitational wave strain data elevate the false alarm rate of astrophysical searches and degrade parameter estimation when overlapping a signal. No method previously identified a glitch's time boundary: existing detection and classification tools flag and label glitches without resolving their extent, forcing subtraction to run over padded windows that cost time and erase signal beyond the glitch itself. We present three boundary identification methods…",
+      "authors": [
+        "Mohammad Abu Thaher Chowdhury",
+        "Soumya D Mohanty"
+      ],
+      "categories": [
+        "gr-qc",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-29T14:31:06+00:00"
+    },
+    {
+      "title": "The refractory fraction of phosphorus in planet-forming discs",
+      "url": "https://arxiv.org/abs/2608.29254v1",
+      "pdf": "https://arxiv.org/pdf/2608.29254v1",
+      "summary": "Context. Phosphorus (P) is an essential element for life on Earth and a potential tracer of planet formation history. However, there has been no detection of P-bearing molecules in protoplanetary discs so far. Herbig Ae/Be stars constantly accrete matter from their pro- toplanetary disc, which alters the composition of the stellar photosphere due to their shallow convective, or fully radiative, envelope. The altered surface composition reflects the composition of the accreting matter, and thus t…",
+      "authors": [
+        "Sandipan P. D. Borthakur",
+        "Mihkel Kama",
+        "Luca Fossati",
+        "Colin P. Folsom",
+        "Anna Aret",
+        "Christiane Helling"
+      ],
+      "categories": [
+        "astro-ph.EP",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-29T13:14:09+00:00"
+    },
+    {
+      "title": "Evolution of Stellar Activity and Habitable Zone (EATEN): III. X-ray Activity of Dwarfs in Open Clusters and Field Stars",
+      "url": "https://arxiv.org/abs/2608.29248v1",
+      "pdf": "https://arxiv.org/pdf/2608.29248v1",
+      "summary": "Stellar X-ray emission serves as a direct diagnostic of coronal activity, which is fundamentally linked to coronal heating processes. It also strongly influences the atmospheres and long-term habitability of orbiting exoplanets. Investigating how this high-energy emission evolves is therefore essential for understanding the evolution of stellar magnetic dynamos and planetary atmospheres and habitability. In this work, we investigate the evolution of X-ray activity and XUV irradiation for a sampl…",
+      "authors": [
+        "Xue Li",
+        "Song Wang",
+        "Henggeng Han",
+        "Jun Ma",
+        "Yang Huang",
+        "Jifeng Liu"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-29T13:07:36+00:00"
+    },
+    {
+      "title": "The Cygnus Allscale Survey of Chemistry and Dynamical Environments: CASCADE: VI. Molecular outflows in the DR21 ridge",
+      "url": "https://arxiv.org/abs/2608.29190v1",
+      "pdf": "https://arxiv.org/pdf/2608.29190v1",
+      "summary": "Star formation takes place in varied environments, from isolated clumps to massive molecular cloud complexes. However, whether the environment in which a star forms has any effect on the formation process remains a matter of debate. The molecular outflows, launched during the formation of protostars present a more easily accessible way to study star formation in different environments. The DR21 ridge, in the Cygnus-X high-mass star-forming complex, hosts a high number of massive dense cores and…",
+      "authors": [
+        "I. M. Skretas",
+        "A. Karska",
+        "F. Wyrowski",
+        "H. Beuther",
+        "W. -J. Kim",
+        "C. Gieser",
+        "D. A. Semenov",
+        "A. Hernández-Gómez"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-29T10:55:05+00:00"
+    },
+    {
+      "title": "How nanoscale physics shapes ice formation in the Universe: Rethinking gas freeze-out on dust grains",
+      "url": "https://arxiv.org/abs/2608.29161v1",
+      "pdf": "https://arxiv.org/pdf/2608.29161v1",
+      "summary": "In cold molecular clouds, gas freeze-out onto dust grains initiates interstellar ice formation, yet sticking probabilities of heavy species are often assumed to be near unity at low temperature. Recent laboratory measurements on realistic grain analogues show that this assumption can fail. Using CO as a prototype, we investigate how nanoscale surface morphology controls adsorption and ice growth at 10 K on highly oriented pyrolytic graphite and carbon soot. X-ray photoelectron spectroscopy, low-…",
+      "authors": [
+        "Philippe Parent",
+        "Carine Laffon",
+        "Stefano Curiotto",
+        "Daniel Ferry",
+        "Caroline Stadler",
+        "Frederik Granzow Doktor"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-29T09:22:51+00:00"
+    },
+    {
+      "title": "Dynamical Mass Demography of Single S-type Planets Shaped by Stellar Companions",
+      "url": "https://arxiv.org/abs/2608.29140v1",
+      "pdf": "https://arxiv.org/pdf/2608.29140v1",
+      "summary": "More than 700 S-type planets have been identified from Gaia and TESS observations, including over 150 transiting targets, enabling the precise dynamical orbits and planetary mass characterization in binary environments. Here we present the first systematic N-body dynamical mass determination for 40 single S-type (Satellite-type orbit) planets in close binaries using an improved Markov Chain Monte Carlo (MCMC) framework with Gaussian priors to model stellar companion perturbations. {For binary sy…",
+      "authors": [
+        "Xiumin Huang",
+        "Jianghui Ji"
+      ],
+      "categories": [
+        "astro-ph.EP",
+        "astro-ph.SR",
+        "physics.space-ph"
+      ],
+      "published": "2026-08-29T08:30:38+00:00"
+    },
+    {
+      "title": "Evidence for an accretion-driven subpopulation of black holes in GWTC-5.0",
+      "url": "https://arxiv.org/abs/2608.29072v1",
+      "pdf": "https://arxiv.org/pdf/2608.29072v1",
+      "summary": "We report Bayesian evidence for a subpopulation of black holes, grown via accretion during the gaseous birth-stage of star clusters, in the cumulative GWTC-5.0 released by the LIGO-Virgo-KAGRA collaboration. This accretion channel predicts a saturating spin--mass relation, with low spins at low masses, rising continuously with mass through all intermediate spin values, to high spins at high masses. We test this prediction directly against the component spins of the catalogue. We single out 10 ev…",
+      "authors": [
+        "Zacharias Roupas"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-29T05:55:12+00:00"
+    },
+    {
+      "title": "First overnight balloon flight of the GRAINE 2023 emulsion gamma-ray telescope enabled by a large-scale pressure-vessel gondola",
+      "url": "https://arxiv.org/abs/2608.29050v1",
+      "pdf": "https://arxiv.org/pdf/2608.29050v1",
+      "summary": "The Gamma-Ray Astro Imager with Nuclear Emulsion (GRAINE) project conducts precision observations of sub-GeV--GeV cosmic gamma rays using a balloon-borne nuclear-emulsion telescope with high angular resolution. In GRAINE 2023, a 2.5-m$^{2}$ telescope was flown in the project's first overnight balloon flight, including observation periods for the Vela pulsar and Galactic center region. To operate the telescope under the low-pressure and low-temperature stratospheric environment, the balloon-style…",
+      "authors": [
+        "Hiroki Rokujo",
+        "Shigeki Aoki",
+        "Takashi Azuma",
+        "Hirotaka Hayashi",
+        "Yudai Isayama",
+        "Atsushi Iyono",
+        "Takumi Kato",
+        "Tsuyoshi Kawahara"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-29T04:53:20+00:00"
+    },
+    {
+      "title": "Can Little Red Dots Contribute To The Early Universe Cosmic Dust Budget?",
+      "url": "https://arxiv.org/abs/2608.29011v1",
+      "pdf": "https://arxiv.org/pdf/2608.29011v1",
+      "summary": "The origin of dust in the early Universe remains uncertain. We explore whether Little Red Dots (LRDs) could provide a high-redshift dust-production channel. Motivated by an analogy with Type IIn supernovae, we investigate whether LRDs may share the efficient dust-forming conditions. We consider dust formation in outer winds and later in a shielded cold dense shell after the central source fades. Such dust may avoid a global remnant-phase reverse shock, while longer LRD lifetimes may promote grai…",
+      "authors": [
+        "Chris Ashall",
+        "Rohan P. Naidu",
+        "Alberto Torralba",
+        "Irene Shivaei",
+        "John Chisholm",
+        "Hanpu Liu",
+        "Zhaoran Liu",
+        "Jorryt Matthee"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-29T02:45:20+00:00"
+    },
+    {
+      "title": "Estimation of Dust Mass from Infrared Emission and Extinction of Supernova Remnants: G93.7-0.2, G109.1-1.0, G156.2+5.7, and G166.0+4.3",
+      "url": "https://arxiv.org/abs/2608.28987v1",
+      "pdf": "https://arxiv.org/pdf/2608.28987v1",
+      "summary": "Supernova remnants (SNRs) are major sites for both the production and destruction of interstellar dust, and quantifying their dust budget is essential for understanding the life cycle of cosmic dust. In this work, the dust masses of four Galactic SNRs (G93.7$-$0.2, G109.1$-$1.0, G156.2+5.7, and G166.0+4.3) are estimated using two complementary methods: the three-dimensional (3D) interstellar extinction map and infrared (IR) spectral energy distribution (SED) fitting based on photometry from WISE…",
+      "authors": [
+        "Zhe Zhang",
+        "Jun Li",
+        "Biwei Jiang",
+        "He Zhao"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-29T01:46:32+00:00"
+    },
+    {
+      "title": "Little Red Dots as Shock-Powered High-Energy Neutrino Sources",
+      "url": "https://arxiv.org/abs/2608.28975v1",
+      "pdf": "https://arxiv.org/pdf/2608.28975v1",
+      "summary": "Little Red Dots (LRDs) are compact, high-redshift sources whose physical nature remains uncertain. Their optical spectra bear many similarities to Type IIn supernovae (SNe IIn), motivating a scenario in which their emission is powered by shocks interacting with dense surrounding material. We investigate whether such interactions can power LRDs and contribute to the diffuse high-energy neutrino intensity measured by IceCube. In our simplified model, a fast central-engine outflow drives a shock th…",
+      "authors": [
+        "Tyco Mera",
+        "Chris Ashall",
+        "Shunsaku Horiuchi",
+        "Rohan Naidu",
+        "Kyle Medler",
+        "Peter Hoeflich"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-29T00:53:41+00:00"
+    },
+    {
+      "title": "Anomalous horizontal track-like events at the HAWC observatory: candidate neutrino-induced charged leptons from the Pico de Orizaba volcano",
+      "url": "https://arxiv.org/abs/2608.28951v1",
+      "pdf": "https://arxiv.org/pdf/2608.28951v1",
+      "summary": "Two track-like events with exceptionally large charge deposits, pointing back to the region of maximum overburden ($>18$ km.w.e.) of the Pico de Orizaba volcano, were reported by the HAWC Collaboration in a search for Earth-skimming neutrinos. Using exclusively published information, including the published Monte Carlo charge distributions and the scattered-muon background model, we show that these events are kinematically inconsistent with all identified backgrounds. A conservative energy-conse…",
+      "authors": [
+        "Hermes León Vargas",
+        "Andrés Sandoval"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "hep-ex",
+        "hep-ph"
+      ],
+      "published": "2026-08-28T23:40:42+00:00"
+    },
+    {
+      "title": "A Self-Sustaining Black Hole Engine Powered by the Tidal Disruptions of Stars",
+      "url": "https://arxiv.org/abs/2608.28947v1",
+      "pdf": "https://arxiv.org/pdf/2608.28947v1",
+      "summary": "Tidal disruption events (TDEs) strongly prefer host galaxies undergoing, or recovering from, a burst of star formation, implying that a rare minority of galaxy types produces most events. The required per-galaxy rates, as high as $10^{-2}$ gal$^{-1}$ yr$^{-1}$, are hard to achieve through stellar relaxation alone. Molecular clouds surrounding nuclear clusters help set the relaxation rate, offering a path to higher rates. We show that (post-)starburst galaxies, whose nearby prototypes contain lar…",
+      "authors": [
+        "James Guillochon",
+        "Avi Loeb"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-28T23:35:11+00:00"
+    },
+    {
+      "title": "Magnitude of stable iron isotope fractionation limited by multiple stages of terrestrial core formation",
+      "url": "https://arxiv.org/abs/2608.28936v1",
+      "pdf": "https://arxiv.org/pdf/2608.28936v1",
+      "summary": "One proposed mechanism for generating iron isotopic differences between planetary mantles and chondrites is metal-silicate equilibration during terrestrial core formation. Prior studies of this isotopic fractionation effect employ single-stage core formation models that are inconsistent with reproducing the siderophile element budget of the Earth's mantle. Here, we model iron isotopic evolution of the Earth's mantle in a multistage core formation scenario that is consistent with dynamic models o…",
+      "authors": [
+        "Gabriel Nathan",
+        "Seth A. Jacobson"
+      ],
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-28T23:11:05+00:00"
+    },
+    {
+      "title": "Pre-shipment optical characterization of the SCALES instrument",
+      "url": "https://arxiv.org/abs/2608.28918v1",
+      "pdf": "https://arxiv.org/pdf/2608.28918v1",
+      "summary": "The Slicer Combined with an Array of Lenslets for Exoplanet Spectroscopy (SCALES) instrument is a 1-5 micron imager and 2-5 micron integral field spectrograph, currently being commissioned on the Keck II Telescope. SCALES is optimized for exoplanet high-contrast imaging and spectroscopic characterization, and will be sensitive to older, colder exoplanets than existing instrumentation. The 12.3\" x 12.3\" imaging channel is designed to replicate the capabilities of NIRC2, and the low (R~35-200, 2.2…",
+      "authors": [
+        "Isabel J. Kain",
+        "Reni Kupke",
+        "Daren Dillon",
+        "R. Deno Stelter",
+        "Rosalie McGurk",
+        "Gwendolin Weber-Stover",
+        "Athira Unni",
+        "Marc Kassis"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-28T22:33:18+00:00"
+    },
+    {
+      "title": "A Terrestrial Gamma-ray Flash with an Asymmetric Footprint Observed at the Pierre Auger Observatory",
+      "url": "https://arxiv.org/abs/2608.28885v1",
+      "pdf": "https://arxiv.org/pdf/2608.28885v1",
+      "summary": "The Pierre Auger Observatory, a $3000km^2$ detector array that sits 1400m above sea level in Argentina, has the ability to map the entire footprint of Terrestrial Gamma-ray Flashes (TGFs), which are short, intense bursts of gamma rays associated with lightning. This is in contrast to the vast majority of TGF detections that only occur in a single detector in space. In this paper we leverage this capability to perform two important analyses on an event from 2007, chosen for its large footprint an…",
+      "authors": [
+        "The Pierre Auger Collaboration",
+        "John Ortberg",
+        "David M. Smith",
+        "Joseph Dwyer"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.EP",
+        "physics.ao-ph"
+      ],
+      "published": "2026-08-28T21:39:37+00:00"
+    },
+    {
+      "title": "Strongly coupled quark matter in neutron stars and their mergers",
+      "url": "https://arxiv.org/abs/2608.28879v1",
+      "pdf": "https://arxiv.org/pdf/2608.28879v1",
+      "summary": "The discovery of the strongly-coupled quark-gluon plasma (sQGP) in high-energy heavy-ion collisions has revealed remarkable properties of matter at high temperature, with transport coefficients close to conjectured bounds from quantum field theory at strong coupling. The high sQGP collision rates imply very large energy uncertainties and the melting of quasiparticle structures. Deploying quantum many-body theory based on the self-consistent $T$-matrix approach for the sQGP at high temperature, w…",
+      "authors": [
+        "Konstantin Maslov",
+        "Ralf Rapp",
+        "Joaquin Grefa",
+        "Veronica Dexheimer",
+        "Claudia Ratti"
+      ],
+      "categories": [
+        "nucl-th",
+        "astro-ph.HE",
+        "cond-mat.quant-gas",
+        "hep-ph"
+      ],
+      "published": "2026-08-28T21:31:48+00:00"
+    },
+    {
+      "title": "Statistical Energy Budget of the Solar Wind with Parker Solar Probe and Solar Orbiter : 1 - Unbalanced Total Energy Radial Evolution",
+      "url": "https://arxiv.org/abs/2608.28873v1",
+      "pdf": "https://arxiv.org/pdf/2608.28873v1",
+      "summary": "The magneto-hydrodynamic (MHD) description of the solar wind has long been regarded as one of the most successful frameworks for investigating solar wind heating and acceleration. Under a set of simplifying assumptions, it provides a reduced large-scale description that is widely used to study the energetic role of electromagnetic fluctuations in the solar wind energy budget. In practice, applying simplification to MHD can result in the loss of some physics compared to an exact set of equations.…",
+      "authors": [
+        "Jean-Baptiste Dakeyo",
+        "Pascal Démoulin",
+        "Victor Réville",
+        "Stuart Bale",
+        "Tamar Ervin",
+        "Milan Maksimovic",
+        "Olga Alexandrova",
+        "Mingzhe Liu"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-28T21:17:59+00:00"
+    },
+    {
+      "title": "96 kHz on-sky imaging on an adaptive optics system with a single-photon avalanche diode",
+      "url": "https://arxiv.org/abs/2608.28858v1",
+      "pdf": "https://arxiv.org/pdf/2608.28858v1",
+      "summary": "Astronomical observations requiring extremely high angular resolution necessitate advanced adaptive optics (AO) systems to overcome blurring caused by the atmosphere. In addition to obtaining much sharper point-spread functions (PSFs) with these systems, it is beneficial to be able to characterize the behaviour of the resulting PSF across time and wavelength. We have installed a commercially-available Single-photon avalanche diode (SPAD) array on the focal plane of the REVOLT AO testbench at the…",
+      "authors": [
+        "Theodore A. Grosson",
+        "Maaike A. M. van Kooten",
+        "Kathryn Jackson",
+        "Jean-Pierre Veran",
+        "Simon Carrier"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-28T20:59:13+00:00"
+    },
+    {
+      "title": "Exploring the trade-space of distributed aperture telescopes for faint-object spectroscopy",
+      "url": "https://arxiv.org/abs/2608.28857v1",
+      "pdf": "https://arxiv.org/pdf/2608.28857v1",
+      "summary": "Scientific programs targeting the faintest objects push modern telescopes to increasingly large sizes, high costs and complex designs. Obtaining spectra of low surface brightness galaxies, for example, requires hours of observations on state-of-the art instruments. Increasing telescope diameters beyond 40 m raises potentially insurmountable challenges for design and funding. An innovative strategy for combating these costs is to use many small telescopes in place of a single large aperture. For…",
+      "authors": [
+        "Theodore A. Grosson",
+        "Deborah M. Lokhorst",
+        "Alan W. McConnachie"
+      ],
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-28T20:59:12+00:00"
+    },
+    {
+      "title": "The Hot, Continuum-compact State of the Yellow Hypergiant V509 Cassiopeiae: CHARA Diameters, CO-band Angular-extension Constraints, and Companion Limits",
+      "url": "https://arxiv.org/abs/2608.28829v1",
+      "pdf": "https://arxiv.org/pdf/2608.28829v1",
+      "summary": "Yellow hypergiants are rare, evolved massive stars generally interpreted as post-red-supergiant objects evolving blueward through or near the dynamically unstable Yellow Evolutionary Void. V509~Cassiopeiae is a remarkable example: its spectroscopically inferred effective temperature increased from approximately 5000~K in the mid-1980s to about 7900~K by the late 1990s and has since remained near this value during its post-heating state. We use simultaneous six-telescope CHARA observations obtain…",
+      "authors": [
+        "Narsireddy Anugu",
+        "Gail H. Schaefer",
+        "Douglas R. Gies",
+        "Anni Kasikov",
+        "John D. Monnier",
+        "Stefan Kraus",
+        "Karolina Kubiak"
+      ],
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-28T20:00:26+00:00"
+    },
+    {
+      "title": "Geochemical Hazard Assessment of Martian Regolith for Future Human Exploration",
+      "url": "https://arxiv.org/abs/2608.28805v1",
+      "pdf": "https://arxiv.org/pdf/2608.28805v1",
+      "summary": "As human missions to Mars move from concept to planning to reality, a systematic quantitative health risk assessment of martian regolith exposure has become critically important. This study presents a comprehensive multi-element, multi-pathway health hazard analysis of martian regolith for a 70 kg adult astronaut on an 18-month surface mission, using bulk silicate Mars geochemical data and Earth Upper Continental Crust reference values as baseline comparators. We computed Average Daily Dose, Haz…",
+      "authors": [
+        "Mavia Anjum",
+        "Gwendolyn D. Bart"
+      ],
+      "categories": [
+        "q-bio.OT",
+        "astro-ph.EP",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-28T19:17:54+00:00"
+    },
+    {
+      "title": "X-ray grating spectroscopy as a mission enhancement",
+      "url": "https://arxiv.org/abs/2608.28804v1",
+      "pdf": "https://arxiv.org/pdf/2608.28804v1",
+      "summary": "We propose to add instruments to any potential future X-ray mission with focussing optics that is considered in NASA's ASTRA framework. Such an instrument is a necessity to study AGN wind outflows and feedback, find the missing baryons, study the intergalactic medium, and analyze abundances and chemical bonds in dust grains throughout the Milky Way. We conclude that those science goals can be achieved with a spectral resolving power > 3000 in the soft X-ray band (about 10-40 Ang) and an effectiv…",
+      "authors": [
+        "Hans Moritz Guenther",
+        "Ehud Behar",
+        "Joel N. Bregman",
+        "Laura W. Brenneman",
+        "Alexander R. Bruccoleri",
+        "Lía Corrales",
+        "Elisa Costantini",
+        "Thomas Dauser"
+      ],
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-28T19:17:25+00:00"
+    },
+    {
+      "title": "Probing the Taxonomic Diversity of the Small Near-Earth Object Population",
+      "url": "https://arxiv.org/abs/2608.28779v1",
+      "pdf": "https://arxiv.org/pdf/2608.28779v1",
+      "summary": "Small near-Earth objects (NEOs) represent the immediate source population of meteors and meteorites and provide a direct window into the compositional and dynamical evolution of the inner Solar System. However, their small sizes, rapid rotation rates, and short observability windows have historically limited systematic compositional characterization. We present results from a multi-year rapid-response near-infrared spectrophotometric survey of recently discovered NEOs conducted with the UKIRT-WF…",
+      "authors": [
+        "Andy J. López-Oquendo",
+        "David E. Trilling",
+        "Michael Mommert",
+        "Michaël Marsset"
+      ],
+      "categories": [
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-28T18:35:55+00:00"
+    },
+    {
+      "title": "Radio-dust connection in quasars driven by powerful ionised outflows",
+      "url": "https://arxiv.org/abs/2608.28775v1",
+      "pdf": "https://arxiv.org/pdf/2608.28775v1",
+      "summary": "Feedback from dusty quasars is thought to be a key driver in galaxy evolution. Multiple studies have reported a link between dust extinction and radio emission in quasars, possibly attributed to winds or jets interacting with the interstellar medium. We use optical spectra from the Dark Energy Spectroscopic Instrument (DESI) to test whether ionised outflows could be driving the observed radio-dust connection and to determine whether dust and/or colour play a role in producing high-velocity ionis…",
+      "authors": [
+        "V. A. Fawcett",
+        "C. M. Harrison",
+        "T. Costa2",
+        "D. M. Alexander",
+        "C. Andonie",
+        "H. Haidar",
+        "R. D. Shepherd",
+        "C. L. Sargent"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-28T18:31:36+00:00"
+    },
+    {
+      "title": "Decisive evidence for a global cosmic-ray feature in gamma-ray data",
+      "url": "https://arxiv.org/abs/2608.28757v1",
+      "pdf": "https://arxiv.org/pdf/2608.28757v1",
+      "summary": "We analyze 17 years of Fermi-LAT data to study the diffuse $γ$-ray emission along the Galactic plane and its connection to cosmic-ray (CR) propagation. Accounting for correlated instrumental systematics, we find decisive evidence for a spectral break at $\\sim20-30$ GeV, present across the inner Galactic disk, with a preference of $Δχ^2=39.78$ ($4.44 σ$ global). The energy and amplitude of this feature are in striking agreement with the spectral feature observed in local CR nuclei, indicating tha…",
+      "authors": [
+        "Fernando Valenciano",
+        "Pedro De la Torre Luque",
+        "Daniele Gaggero",
+        "Jorge Martin Camalich"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-28T18:03:03+00:00"
+    },
+    {
+      "title": "Internal heating in rapidly rotating convection is not a shortcut to geostrophic turbulence",
+      "url": "https://arxiv.org/abs/2608.28756v1",
+      "pdf": "https://arxiv.org/pdf/2608.28756v1",
+      "summary": "Convective turbulence in planets and stars is often driven by internal heating. This forcing mechanism has also been proposed as a means of accessing the diffusion-free scalings of the geostrophic turbulence (GT) regime at modest forcing. We test this with the asymptotically reduced quasi-geostrophic model, which is formally valid in the limit of vanishing Ekman number, $Ek \\rightarrow 0$, and retains the Prandtl number as an independent parameter. We find no such shortcut: the Nusselt and Reyno…",
+      "authors": [
+        "Justin A. Nicoski",
+        "Tobias G. Oliver",
+        "Stefano Maffei",
+        "Michael A. Calkins"
+      ],
+      "categories": [
+        "physics.flu-dyn",
+        "astro-ph.EP",
+        "astro-ph.SR"
+      ],
+      "published": "2026-08-28T18:02:19+00:00"
+    },
+    {
+      "title": "Impacts of Correlated Noise on Retrievals of Exo-Earth Atmospheres",
+      "url": "https://arxiv.org/abs/2608.28749v1",
+      "pdf": "https://arxiv.org/pdf/2608.28749v1",
+      "summary": "The Habitable Worlds Observatory (HWO) aims to accomplish high-contrast imaging and spectroscopy of true Earth analogs for the first time. However, high-contrast spectroscopy with HWO may be limited by residual speckles which persist after deformable mirror correction and post-processing, hindering atmospheric characterization. Previous studies of self-luminous giant planets showed that neglecting spectrally correlated errors due to speckles results in biased inferences of planetary parameters.…",
+      "authors": [
+        "Nicole Wolff",
+        "Bruce Macintosh",
+        "Tyler D. Robinson",
+        "Sarah Blunt",
+        "Jean-Baptiste Ruffio",
+        "Beck Dacus",
+        "Alex Madurowicz",
+        "Marshall Perrin"
+      ],
+      "categories": [
+        "astro-ph.EP",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-28T18:00:03+00:00"
+    },
+    {
+      "title": "On the Impact of Correlated Noise and Spectral Resolution on the Retrieval Analysis of the Habitable World Observatory",
+      "url": "https://arxiv.org/abs/2608.28748v1",
+      "pdf": "https://arxiv.org/pdf/2608.28748v1",
+      "summary": "Finding signs of life elsewhere in the universe is the holy grail of the field of exoplanets. Future space missions such as the Habitable World Observatory (HWO) are under development to search for biosignatures in exoplanets. We investigate the impact of correlated noise and spectral resolution on the retrieved biosignature chemical abundances. At the nominal spectral resolving power R=140 for HWO, we show that in 40\\% of the simulated runs the retrieved biosignature (H$_2$O and O$_2$) abundanc…",
+      "authors": [
+        "Ji Wang",
+        "Philipp A. Huber",
+        "Sascha P. Quanz"
+      ],
+      "categories": [
+        "astro-ph.EP",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-28T18:00:02+00:00"
+    },
+    {
+      "title": "Shock-heated Away: The Impact of Radiative Cooling on Gas-Phase Transitions in Supernova Remnants",
+      "url": "https://arxiv.org/abs/2608.28747v1",
+      "pdf": "https://arxiv.org/pdf/2608.28747v1",
+      "summary": "Supernova (SN) feedback plays a central role in regulating the structure of the interstellar medium (ISM) through the injection of energy and momentum. The amount of hot gas produced by a supernova is a key quantity that determines how efficiently SN feedback heats the ISM and drives mass exchange between its different gas phases, here defined as cold ($T 2\\times10^4\\, \\mathrm{K}$) gas. However, previous studies have reported discrepant amounts of hot gas formed under otherwise similar ambient c…",
+      "authors": [
+        "Zuzanna Kocjan",
+        "Benedikt Diemer",
+        "Vadim A. Semenov",
+        "Shmuel Bialy",
+        "Uri Malamud"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-28T18:00:02+00:00"
+    },
+    {
+      "title": "Galactic Science with Ultra-High Angular Resolution X-ray Imaging",
+      "url": "https://arxiv.org/abs/2608.28746v1",
+      "pdf": "https://arxiv.org/pdf/2608.28746v1",
+      "summary": "Milli- to micro-arcsecond X-ray imaging will open a new observational regime for Galactic astrophysics by resolving physical scales that are inaccessible to current X-ray observatories. This white paper highlights the science enabled by such capabilities across four broad questions: how particles are accelerated, how stars die, how accretion is fueled, and what populations of X-ray sources inhabit the Galaxy. Ultra-high angular resolution will enable many new studies, such as resolving shocks an…",
+      "authors": [
+        "Paul A. Draghis",
+        "Jeremy Hare",
+        "Mayura Balakrishnan",
+        "Poshak Gandhi",
+        "Tyler Holland-Ashford",
+        "Margarita Karovska",
+        "Thomas Maccarone",
+        "Herman L. Marshall"
+      ],
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-28T18:00:01+00:00"
+    },
+    {
+      "title": "Super-Eddington Little Blue Dots May Reionize Helium Too Early",
+      "url": "https://arxiv.org/abs/2608.28745v1",
+      "pdf": "https://arxiv.org/pdf/2608.28745v1",
+      "summary": "The James Webb Space Telescope (JWST) has identified an abundant population of faint Active Galactic Nuclei (AGN) at $z \\gtrsim 4$ which display broad emission lines, compact morphologies, and blue ultraviolet--optical continua. These ``Little Blue Dots' (LBDs) have been suggested to belong to the same family of objects as the more controversial ``Little Red Dots' (LRDs), with differences between the two largely owing to viewing angle effects. In this scenario, super-Eddington accretion resultin…",
+      "authors": [
+        "Christopher Cain",
+        "Brent Smith",
+        "Gibson B. Bowling",
+        "Yongda Zhu",
+        "Lily Whitler",
+        "Rafael Ortiz",
+        "Anson D'Aloisio",
+        "Rogier Windhorst"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO"
+      ],
+      "published": "2026-08-28T18:00:01+00:00"
+    },
+    {
+      "title": "The GECKOS survey: Assembly history of the lenticular galaxy NGC 3957",
+      "url": "https://arxiv.org/abs/2608.28744v1",
+      "pdf": "https://arxiv.org/pdf/2608.28744v1",
+      "summary": "We analyse the assembly history of the edge-on lenticular galaxy NGC 3957 using deep integral-field spectroscopic MUSE data from the GECKOS survey. By applying a dust-corrected Multi-Gaussian Expansion and a population-orbit superposition model, we disentangle the galaxy's stellar kinematics, age, and metallicity. We dynamically decompose the galaxy and identify three distinct components: a dynamically-cold main disc, a compact Nuclear Stellar Disc (NSD), and a hot component. The NSD emerges as…",
+      "authors": [
+        "Yuchen Ding",
+        "Marie Martig",
+        "Ling Zhu",
+        "Amelia Fraser-McKelvie",
+        "Ryan Leaman",
+        "Glenn van de Ven",
+        "Jesse van de Sande",
+        "Francesca Pinna"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-28T18:00:01+00:00"
+    },
+    {
+      "title": "AXIS Could Have Accessed Dark Matter Decays",
+      "url": "https://arxiv.org/abs/2608.28738v1",
+      "pdf": "https://arxiv.org/pdf/2608.28738v1",
+      "summary": "The Advanced X-ray Imaging Satellite (AXIS) was a mission concept designed to improve upon the sensitivity and spatial resolution of the Chandra X-ray Observatory and XMM-Newton. Although AXIS was not selected for implementation, the concept study defined a mature instrument design with low-background, arcsecond imaging over the $0.3$-$10$ keV energy range, a large effective area, and a wide field of view. These capabilities provide a useful benchmark for the dark matter decay sensitivity of fut…",
+      "authors": [
+        "Joshua W. Foster",
+        "Inci Karaaslan",
+        "Gordan Krnjaic",
+        "Nimrod Shapir"
+      ],
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.GA",
+        "astro-ph.HE",
+        "hep-ex",
+        "hep-ph"
+      ],
+      "published": "2026-08-28T18:00:00+00:00"
+    },
+    {
+      "title": "Spatially-Resolved Spectra of Diffuse Galactic Light using 10.8 M DESI Sky Fibers",
+      "url": "https://arxiv.org/abs/2608.28740v1",
+      "pdf": "https://arxiv.org/pdf/2608.28740v1",
+      "summary": "Using 10.8 million ``blank'' sky spectra from the DESI Year 3 dataset, we measure the diffuse galactic light (DGL) spectrum in the optical at spectral resolution $R \\sim 4000$ by correlating with far-infrared emission from IRAS. Subdividing the sky into 54 deg$^2$ pixels (HEALPix, NSIDE = 8), we map the variation of the DGL correlation spectrum and nebular emission lines across the DESI footprint in the high-Galactic-latitude sky. The increased data volume over previous SDSS-based analyses enabl…",
+      "authors": [
+        "Andrew K. Saydjari",
+        "Bruce T. Draine",
+        "Timothy D. Brandt",
+        "Edward F. Schlafly",
+        "Arjun Dey",
+        "Douglas P. Finkbeiner",
+        "J. Aguilar",
+        "S. Ahlen"
+      ],
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.IM"
+      ],
+      "published": "2026-08-28T18:00:00+00:00"
+    },
+    {
+      "title": "Magnetic destabilisation in disc galaxies: Filament/feather formation",
+      "url": "https://arxiv.org/abs/2608.28737v1",
+      "pdf": "https://arxiv.org/pdf/2608.28737v1",
+      "summary": "Gas gravitational instability plays a crucial role in secular galactic evolution, but the role played by magnetic fields in mediating this instability - despite their dynamical relevance and ubiquity - is still not understood. To investigate this question we conduct a parameter study using numerical simulations of 3D isolated disc galaxies that are initialized in equilibrium, but have a range of initial magnetisation, quantified by $β\\in \\{0.1, 0.5, 1, 10, 100, \\infty\\}$, where $β$ is the ratio…",
+      "authors": [
+        "Raghav Arora",
+        "Oscar Agertz",
+        "Christoph Federrath",
+        "Mark R. Krumholz"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-28T18:00:00+00:00"
+    },
     {
       "title": "A Similarity Theorem and Its Breakdown in Atomic Black Hole Accretion",
       "url": "https://arxiv.org/abs/2608.28587v1",
@@ -866,6 +2957,27 @@
       "title": "Dynamically driven collapse of a thermally stable accretion disk in a nova-like system",
       "url": "https://arxiv.org/abs/2608.27878v1",
       "pdf": "https://arxiv.org/pdf/2608.27878v1",
+      "summary": "While standard disk instability theory predicts thermal-steady, outburst-free disks in nova-like variables due to their high mass transfer rates, mass transfer variations are prevailingly invoked to explain the occasional flaring/fading phenomena observed in these systems. Here we report the observational evidence for a dynamical collapse of a thermally stable accretion disk, captured serendipitously by TESS during a fading episode of the VY Scl-type nova-like system MASTER OT J072703.91-631952.…",
+      "authors": [
+        "Wentao Li",
+        "Jie Lin",
+        "Tinggui Wang",
+        "Yongkang Sun",
+        "Chengyuan Wu",
+        "Heran Xiong",
+        "Krystian Iłkiewicz",
+        "Luca Casagrande"
+      ],
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-28T03:35:53+00:00"
+    },
+    {
+      "title": "Dynamically driven collapse of a thermally stable accretion disk in a nova-like system",
+      "url": "https://arxiv.org/abs/2608.27878v2",
+      "pdf": "https://arxiv.org/pdf/2608.27878v2",
       "summary": "While standard disk instability theory predicts thermal-steady, outburst-free disks in nova-like variables due to their high mass transfer rates, mass transfer variations are prevailingly invoked to explain the occasional flaring/fading phenomena observed in these systems. Here we report the observational evidence for a dynamical collapse of a thermally stable accretion disk, captured serendipitously by TESS during a fading episode of the VY Scl-type nova-like system MASTER OT J072703.91-631952.…",
       "authors": [
         "Wentao Li",
@@ -1791,6 +3903,26 @@
       "title": "The solitary star cluster of the Andromeda XXV dwarf spheroidal",
       "url": "https://arxiv.org/abs/2608.26959v1",
       "pdf": "https://arxiv.org/pdf/2608.26959v1",
+      "summary": "We present Hubble Space Telescope Advanced Camera for Surveys observations of Gep I, a globular cluster (GC) candidate in the low-mass ($M_{\\star}\\sim 6.5 \\times 10^5\\,M_{\\odot}$) M31 dwarf spheroidal (dSph) satellite Andromeda XXV (And XXV). We confirm the nature of this object and provide the first detailed characterisation of its resolved stellar populations using a colour-magnitude diagram (CMD) that reaches 2 magnitudes below the horizontal branch. We compare Gep I's metallicity and distanc…",
+      "authors": [
+        "Chiara Crociati",
+        "Annette M. N. Ferguson",
+        "Gracie McGill",
+        "Raffaele Pascale",
+        "Anna Genina",
+        "Pete B. Kuzma",
+        "Dougal Mackey",
+        "Alan W. McConnachie"
+      ],
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "published": "2026-08-27T11:00:16+00:00"
+    },
+    {
+      "title": "The solitary star cluster of the Andromeda XXV dwarf spheroidal",
+      "url": "https://arxiv.org/abs/2608.26959v2",
+      "pdf": "https://arxiv.org/pdf/2608.26959v2",
       "summary": "We present Hubble Space Telescope Advanced Camera for Surveys observations of Gep I, a globular cluster (GC) candidate in the low-mass ($M_{\\star}\\sim 6.5 \\times 10^5\\,M_{\\odot}$) M31 dwarf spheroidal (dSph) satellite Andromeda XXV (And XXV). We confirm the nature of this object and provide the first detailed characterisation of its resolved stellar populations using a colour-magnitude diagram (CMD) that reaches 2 magnitudes below the horizontal branch. We compare Gep I's metallicity and distanc…",
       "authors": [
         "Chiara Crociati",
@@ -3034,6 +5166,19 @@
       "published": "2026-08-26T14:29:13+00:00"
     },
     {
+      "title": "G(2) Glueball Boson Stars as Restricted Kerr Mimickers in the Thomas--Fermi Limit",
+      "url": "https://arxiv.org/abs/2608.28688v1",
+      "pdf": "https://arxiv.org/pdf/2608.28688v1",
+      "summary": "We investigate whether horizonless compact stars made of dark glueball matter from a broken exceptional $G(2)$ gauge sector can reproduce selected Kerr observables within a Thomas--Fermi effective-fluid description. We introduce GC9, a scale-separated $G(2)$-inspired positive nonic-density closure whose high-density stiffness, bag-free surface and Q-ball safety make it a useful compact-star benchmark. After Thomas--Fermi rescaling, reduced stellar observables are independent of the microscopic g…",
+      "authors": [
+        "Nicolò Masi"
+      ],
+      "categories": [
+        "astro-ph.HE"
+      ],
+      "published": "2026-08-26T14:23:54+00:00"
+    },
+    {
       "title": "STXM-XANES and TEM analysis of UltraCarbonaceous Antarctic MicroMeteorites (UCAMMs)",
       "url": "https://arxiv.org/abs/2608.25795v1",
       "pdf": "https://arxiv.org/pdf/2608.25795v1",
@@ -3488,6 +5633,21 @@
         "astro-ph.HE"
       ],
       "published": "2026-08-26T06:28:29+00:00"
+    },
+    {
+      "title": "Fluxes through a uniform double-diffusive staircase at low Prandtl number",
+      "url": "https://arxiv.org/abs/2608.28679v1",
+      "pdf": "https://arxiv.org/pdf/2608.28679v1",
+      "summary": "Double-diffusive convection in the diffusive regime is often observed to be in a long-lived layered state, well-known in the Arctic ocean and in volcanic lakes, and thought to exist in the interiors of giant planets. The density profile resembles a `staircase', with stacks of convective layers of uniform density separated by strongly stratified interfaces. The governing parameters are the Prandtl number $\\mathrm{Pr}$, diffusivity ratio $τ$, density ratio $R_ρ$, and Rayleigh number $\\mathrm{Ra}$.…",
+      "authors": [
+        "Arstanbek Tulekeyev",
+        "Pascale Garaud"
+      ],
+      "categories": [
+        "physics.flu-dyn",
+        "astro-ph.EP"
+      ],
+      "published": "2026-08-26T06:16:22+00:00"
     },
     {
       "title": "Broadband 12-26 GHz Radio Radiation Reveals Evidence for Micro-flares on AU Mic",
