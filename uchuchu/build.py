@@ -863,7 +863,9 @@ class Builder:
         # さらに薄いページが sitemap の大半を占めると、
         # クロールバジェットが自作記事に回らなくなる。
         # sitemap には「インデックスさせたいページだけ」を載せる。
-        if not path.startswith("a/"):
+        # p/（論文の抄録ページ）はサイトマップの86%を占めてクロール予算を
+        # 吸っていた実測があるため外す（2026-09-03。ページ自体は残る）。
+        if not (path.startswith("a/") or path.startswith("p/")):
             self.paths_by_lang[lang].append(path.rstrip("/") + "/")
 
     def _write_root(self, lang: str, html: str) -> None:
