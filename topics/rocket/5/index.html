@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ロケット · UchUchU</title>
+  <meta name="description" content="打ち上げ機・エンジン・再使用技術">
+  <link rel="canonical" href="https://uchuchu.tech/topics/rocket/5/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/topics/rocket/5/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/topics/rocket/5/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="ロケット · UchUchU">
+  <meta property="og:description" content="打ち上げ機・エンジン・再使用技術">
+  <meta property="og:url" content="https://uchuchu.tech/topics/rocket/5/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ロケット · UchUchU">
+  <meta name="twitter:description" content="打ち上げ機・エンジン・再使用技術">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"ロケット","item":"https://uchuchu.tech/topics/rocket/"}]},{"@type":"ItemList","name":"宇宙開発ニュース","numberOfItems":30,"itemListElement":[{"@type":"ListItem","position":1,"name":"Letara Raises ¥2.6B to Build its Hybrid Rocket Engine Tech","url":"https://payloadspace.com/letara-raises-%c2%a52-6b-to-build-its-hybrid-rocket-engine-tech/"},{"@type":"ListItem","position":2,"name":"Rocket Report: SpaceX makes its mark on the Moon; ULA names new boss","url":"https://arstechnica.com/space/2026/08/rocket-report-spacex-makes-a-mark-on-the-moon-ula-names-new-boss/"},{"@type":"ListItem","position":3,"name":"ロケットラボ、QPS研究所の小型SAR衛星「スサノオ-II」の打ち上げに成功","url":"https://sorae.info/ssn/20260821-the-lightning-god-defends.html"},{"@type":"ListItem","position":4,"name":"Landspace aims to refly recovered Zhuque-3 booster within six months","url":"https://spacenews.com/landspace-aims-to-refly-recovered-zhuque-3-booster-within-six-months/"},{"@type":"ListItem","position":5,"name":"スペースX「ファルコン9」上段が月面に衝突 形成されたクレーターをNASA月周回衛星が撮影","url":"https://sorae.info/space/20260821-f9-upper-stage-impact-site.html"},{"@type":"ListItem","position":6,"name":"JAXAが火星衛星探査機「MMX」を搭載する「H3」ロケット10号機の打ち上げ予定日を発表","url":"https://sorae.info/space/20260821-mmx.html"},{"@type":"ListItem","position":7,"name":"Europe cancels planned upgrades for Ariane 6 rocket","url":"https://arstechnica.com/space/2026/08/europe-cancels-planned-upgrades-for-ariane-6-rocket/"},{"@type":"ListItem","position":8,"name":"NASA's Lunar Reconnaissance Orbiter Images Falcon 9 Crater on Moon, With Some Help From a Korean Spacecraft","url":"https://www.universetoday.com/articles/nasas-lunar-reconnaissance-orbiter-images-falcon-9-crater-on-moon-with-some-help-from-a-korean-space"},{"@type":"ListItem","position":9,"name":"SpaceX will try for 1st Starship tower catch 'in a few months,' Elon Musk says","url":"https://www.space.com/space-exploration/launches-spacecraft/spacex-will-try-for-1st-starship-tower-catch-in-a-few-months-elon-musk-says"},{"@type":"ListItem","position":10,"name":"Rocket Lab launches 9th satellite for iQPS","url":"https://spacenews.com/rocket-lab-launches-9th-satellite-for-iqps/"},{"@type":"ListItem","position":11,"name":"Elon Musk gives a timeline for SpaceX’s first Starship catch attempt","url":"https://www.teslarati.com/elon-musk-spacex-starship-catch-timeline/"},{"@type":"ListItem","position":12,"name":"ESA Confirms Ariane 6 Block 3 Upgrades Have Been Shelved","url":"https://europeanspaceflight.com/esa-confirms-ariane-6-block-3-upgrades-have-been-shelved/"},{"@type":"ListItem","position":13,"name":"Portal Space Systems to include rideshare payloads on Falcon 9 launch of Supernova","url":"https://spacenews.com/portal-space-systems-to-include-rideshare-payloads-on-falcon-9-launch-of-supernova/"},{"@type":"ListItem","position":14,"name":"Portal Books Dedicated Falcon 9 Amid Constrained Launch Market","url":"https://payloadspace.com/portal-books-dedicated-falcon-9-amid-constrained-launch-market/"},{"@type":"ListItem","position":15,"name":"原子力バッテリーが宇宙にも心臓にも進出する日","url":"https://www.gizmodo.jp/article/tritium_nuclear_battery/"},{"@type":"ListItem","position":16,"name":"中国の月探査機「嫦娥7号」打ち上げ迫る 月の南極で水の氷を探査へ","url":"https://sorae.info/space/20260820-change-7-long-march-5-launch-preparation.html"},{"@type":"ListItem","position":17,"name":"[プレスリリース・記者会見等] H3ロケット10号機による火星衛星探査機（MMX）の打上げ","url":"https://www.jaxa.jp/press/2026/08/20260820-1_j.html"},{"@type":"ListItem","position":18,"name":"Rocket Lab launches private Japanese Earth-observing satellite to orbit (video)","url":"https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-launch-private-japanese-earth-observing-sar-satellite-lightning-god-defends"},{"@type":"ListItem","position":19,"name":"Stoke Space conducts second stage fit checks, completes first stage engines ahead of Nova debut","url":"https://www.nasaspaceflight.com/2026/08/stoke-update-081926/"},{"@type":"ListItem","position":20,"name":"LandSpace becomes first commercial Chinese company to land an orbital-class booster","url":"https://spaceflightnow.com/2026/08/19/landspace-becomes-first-commercial-chinese-company-to-land-an-orbital-class-booster/"},{"@type":"ListItem","position":21,"name":"ATMOS Moves Forward with Phoenix 3 as Phoenix 2 Launch Slips","url":"https://europeanspaceflight.com/atmos-moves-forward-with-phoenix-3-as-phoenix-2-launch-slips/"},{"@type":"ListItem","position":22,"name":"The floodgates are open after another Chinese company lands a reusable rocket","url":"https://arstechnica.com/space/2026/08/the-floodgates-are-open-after-another-chinese-company-lands-a-reusable-rocket/"},{"@type":"ListItem","position":23,"name":"SpaceX achieves incredible milestone with Starlink program","url":"https://www.teslarati.com/spacex-achieves-incredible-milestone-starlink-program/"},{"@type":"ListItem","position":24,"name":"A SpaceX rocket slammed into the moon this month — and a NASA spacecraft has spotted its lunar grave (photos)","url":"https://www.space.com/astronomy/moon/a-spacex-rocket-slammed-into-the-moon-this-month-and-a-nasa-spacecraft-has-spotted-its-lunar-grave-photos"},{"@type":"ListItem","position":25,"name":"Replay: MTG-I2 pre-launch media briefing","url":"https://www.esa.int/ESA_Multimedia/Videos/2026/08/Replay_MTG-I2_pre-launch_media_briefing"},{"@type":"ListItem","position":26,"name":"LandSpace Scores First Booster Landing","url":"https://www.spacescout.info/2026/08/landspace-scores-first-booster-landing/"},{"@type":"ListItem","position":27,"name":"Career Spotlight: Mechanic (Ages 14-18)","url":"https://www.nasa.gov/learning-resources/career-spotlight-mechanic-ages-14-18/"},{"@type":"ListItem","position":28,"name":"China successfully recovers rocket stage on land for the first time","url":"https://phys.org/news/2026-08-china-recovers-rocket-stage-earlier.html"},{"@type":"ListItem","position":29,"name":"【G17-50】スペースXがスターリンク衛星24機を軌道投入 ファルコン9の第1段は12回目の飛行","url":"https://sorae.info/ssn/20260819-starlink-g17-50.html"},{"@type":"ListItem","position":30,"name":"Zhuque-3 Completes Second Flight with Successful First-Stage Landing","url":"https://www.nasaspaceflight.com/2026/08/zhuque-3-second-flight-successful-landing/"}]}]}</script>
+  <link rel="icon" href="../../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../static/css/style.css?v=1d897ec5">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/topics/rocket/5/" : "https://uchuchu.tech/en/topics/rocket/5/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../../" class="">ホーム</a>
+      <a href="../../../companies/" class="">企業DB</a>
+      <a href="../../../procurement/" class="">調達情報</a>
+      <a href="../../../articles/" class="">特集</a>
+      <a href="../../../launches/" class="">打ち上げ</a>
+      <a href="../../../news/" class="">ニュース</a>
+      <a href="../../../faq/" class="">よくある質問</a>
+      <a href="../../../advertise/" class="">広告掲載</a>
+      <a href="../../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/topics/rocket/5/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/topics/rocket/5/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>ロケット</h1>
+    <p class="page-sub">打ち上げ機・エンジン・再使用技術</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="filter-bar">
+      <a class="chip " href="../../moon/">#月</a>
+      <a class="chip " href="../../mars/">#火星</a>
+      <a class="chip on" href="../../rocket/">#ロケット</a>
+      <a class="chip " href="../../satellite/">#衛星・地球観測</a>
+      <a class="chip " href="../../human/">#有人宇宙</a>
+      <a class="chip " href="../../science/">#宇宙科学</a>
+      <a class="chip " href="../../business/">#宇宙ビジネス</a>
+      <a class="chip " href="../../japan/">#日本の宇宙開発</a>
+    </div>
+    <div class="tile-grid">
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/payloadspace-2201485105/">
+    <img src="../../../../static/img/fallback-space.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/payloadspace-2201485105/">日本企業レタラ、26億円調達してハイブリッドロケットエンジン開発へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙ビジネス</span><time datetime="2026-08-21T12:45:00+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Payload</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/arstechnica-4030365be6/">
+    <img src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/04_4panel_enlarge_2x-500x500.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/arstechnica-4030365be6/">ロケットレポート スペースXが月に足跡、ULAが新会長任命</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-21T11:00:36+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Ars Technica</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-243a989e9f/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-243a989e9f/">ロケットラボ、QPS研究所の小型SAR衛星「スサノオ-II」の打ち上げに成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-21T09:45:56+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-f05b5d5f8c/">
+    <img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2026/08/Zhuque-3-Y2-land-burn.jpg?fit=1024%2C596&amp;ssl=1" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-f05b5d5f8c/">ランドスペース、回収したZhuque-3第1段を6ヶ月以内に再利用へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-21T08:54:11Z">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">SpaceNews</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-b44b38afbd/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-b44b38afbd/">スペースX「ファルコン9」上段が月面に衝突 形成されたクレーターをNASA月周回衛星が撮影</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-21T08:04:17+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-902900f877/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-902900f877/">JAXAが火星衛星探査機「MMX」を搭載する「H3」ロケット10号機の打ち上げ予定日を発表</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-21T01:13:42+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-6a6c4f1575/">
+    <img src="https://cdn.arstechnica.net/wp-content/uploads/2025/03/GlYHDKoWQAAxQiG.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-6a6c4f1575/">欧州、アリアン6ロケットのアップグレード計画をキャンセル</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T21:40:52Z">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Arstechnica</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/universetoday-6740650851/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/universetoday-6740650851/">NASAの月周回衛星、月面のファルコン9クレーターを撮影 韓国機の協力で</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-20T21:16:02+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-9f31ebd78e/">
+    <img src="https://cdn.mos.cms.futurecdn.net/2Bd2iSfNPm9ugmCJu55V3P-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-9f31ebd78e/">SpaceX、Starship上段の初キャッチを「数ヶ月以内に試行」 イーロン・マスク</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T20:30:00+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-ecfd51155b/">
+    <img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2026/08/electron93.jpeg?fit=1024%2C755&amp;ssl=1" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-ecfd51155b/">ロケット・ラボが日本のiQPS向け衛星9号機を打ち上げ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#日本の宇宙開発</span><time datetime="2026-08-20T16:38:31Z">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">SpaceNews</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/teslarati-8c10624186/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/teslarati-8c10624186/">スペースX、スターシップ上段キャッチを数ヶ月内に試行へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T16:06:19+00:00">2026.08.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Teslarati</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-36dd795b91/">
+    <img src="https://europeanspaceflight.com/wp-content/uploads/2026/08/ESA-Confirms-Ariane-6-Block-3-Upgrades-Have-Been-Shelved.webp" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-36dd795b91/">ESA、アリアン6ブロック3の改良計画を中止</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T14:58:48Z">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">European Spaceflight</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-45876d1136/">
+    <img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2026/04/portal-supernova-starburst.jpeg?fit=1024%2C576&amp;ssl=1" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-45876d1136/">ポータルスペースシステムズ、ファルコン9によるスーパーノバ衛星打ち上げで相乗り搭載物を搭載</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T13:00:00Z">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">SpaceNews</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/payloadspace-e0b18e8dd3/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/payloadspace-e0b18e8dd3/">ポータルスペース、逼迫する打ち上げ市場の中で専用ファルコン9を確保</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T13:00:00+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Payload</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-b4baf9443f/">
+    <img src="https://media.loom-app.com/loom/2026/08/17/fe2883ba-d6f1-485f-afa7-9d5c756c2038/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-b4baf9443f/">原子力バッテリーが宇宙にも心臓にも進出する日</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-20T11:00:00+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-73002569e3/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-73002569e3/">中国の月探査機「嫦娥7号」打ち上げ迫る 月の南極で水の氷を探査へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T07:41:15+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/jaxa-7cffa408f2/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/jaxa-7cffa408f2/">[プレスリリース・記者会見等] H3ロケット10号機による火星衛星探査機（MMX）の打上げ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-20T05:00:00+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">JAXA</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-d1f57ae9f8/">
+    <img src="https://cdn.mos.cms.futurecdn.net/hJS6zDr8MpVsVJ6yYyGLv3-1280-80.png" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-d1f57ae9f8/">ロケットラボ、日本企業の地球観測衛星を打ち上げ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#日本の宇宙開発</span><time datetime="2026-08-20T04:05:00+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-112efdd4a6/">
+    <img src="https://www.nasaspaceflight.com/wp-content/uploads/2026/08/AE14D6E5-F897-4488-A5CC-150A3985FC1C.jpeg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-112efdd4a6/">Stoke Space、Nova 初号機向け第 2 段階の適合試験完了・第 1 段階エンジン完成</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T20:52:07Z">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASASpaceflight</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-4f6f485e62/">
+    <img src="http://spaceflightnow.com/wp-content/uploads/2026/08/20260819_LandSpace_booster_landing.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-4f6f485e62/">ランドスペース、中国民間企業初のランディングレグ着陸に成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T20:35:51Z">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Spaceflight Now</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-2e06bf57b2/">
+    <img src="https://europeanspaceflight.com/wp-content/uploads/2026/08/Phoenix-2-Launch-Slips-as-ATMOS-Moves-Forward-with-Phoenix-3.webp" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-2e06bf57b2/">ATMOS、フェニックス3開発を進展 フェニックス2打上げは延期へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T19:32:14Z">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">European Spaceflight</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/arstechnica-6db556d8d1/">
+    <img src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/zq3_landing1-500x500.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/arstechnica-6db556d8d1/">中国企業、再利用型ロケット着陸に成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T18:41:02+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Ars Technica</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/teslarati-d5e87e1312/">
+    <img src="../../../../static/img/fallback-space.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/teslarati-d5e87e1312/">スペースX、スターリンク衛星11,000機達成</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#衛星・地球観測</span><time datetime="2026-08-19T18:31:37+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Teslarati</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-6df8c0e268/">
+    <img src="https://cdn.mos.cms.futurecdn.net/r59sVWQbaKh5oj9ewj5XrL-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-6df8c0e268/">スペースXロケット月面衝突、NASAが衛星画像で確認</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-19T17:00:00+00:00">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-1120988885/">
+    <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/08/replay_mtg-i2_pre-launch_media_briefing/27423525-2-eng-GB/Replay_MTG-I2_pre-launch_media_briefing_card_full.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-1120988885/">MTG-I2打ち上げ前メディアブリーフィング</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T15:00:00Z">2026.08.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">ESA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-b0e2a3bfd9/">
+    <img src="https://i0.wp.com/www.spacescout.info/wp-content/uploads/2026/08/landed-booster.png" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-b0e2a3bfd9/">ランドスペース、初のブースター着陸に成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T14:23:41Z">2026.08.19</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space Scout</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-653c582e28/">
+    <img src="https://images-assets.nasa.gov/image/KSC-20190326-PH_KLS01_0047/KSC-20190326-PH_KLS01_0047~large.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-653c582e28/">キャリア特集：メカニック（14～18歳向け）</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T13:48:20Z">2026.08.19</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/phys_space-9d8aa1c3d1/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/china-recovers-rocket.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/phys_space-9d8aa1c3d1/">中国、ロケット第1段階の陸上回収に初成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T08:30:01+00:00">2026.08.19</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-b5e3e31c25/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-b5e3e31c25/">【G17-50】スペースXがスターリンク衛星24機を軌道投入 ファルコン9の第1段は12回目の飛行</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T05:33:07+00:00">2026.08.19</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-946f705bb5/">
+    <img src="https://www.nasaspaceflight.com/wp-content/uploads/2026/08/NSF-2026-08-19-04-15-16-283.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-946f705bb5/">朱雀3号、第2回飛行で第1段着陸に成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-19T03:23:54Z">2026.08.19</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASASpaceflight</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+    </div>
+    <nav class="pager" aria-label="pagination">
+<a class="pager-btn" href="../4/" rel="prev">← 前へ</a>
+  <span class="pager-nums">
+<a class="pager-num" href="../">1</a><span class="pager-gap">…</span>
+<a class="pager-num" href="../3/">3</a><a class="pager-num" href="../4/">4</a><span class="pager-num on" aria-current="page">5</span>
+<a class="pager-num" href="../6/">6</a><a class="pager-num" href="../7/">7</a><span class="pager-gap">…</span>
+<a class="pager-num" href="../18/">18</a>  </span>
+<a class="pager-btn" href="../6/" rel="next">次へ →</a>
+</nav>
+
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../../companies/">企業DB</a>
+<a href="../../../procurement/">調達情報</a>          <a href="../../../articles/">特集</a>
+          <a href="../../../launches/">打ち上げ</a>
+          <a href="../../../news/">ニュース</a>
+          <a href="../../../papers/">研究動向</a>
+          <a href="../../../topics/moon/">トピック</a>
+          <a href="../../../search/">検索</a>
+          <a href="../../../about/">運営会社</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-09-05 09:52 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../../static/js/main.js?v=1d897ec5" defer></script>
+</body>
+</html>

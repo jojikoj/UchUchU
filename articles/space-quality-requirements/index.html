@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか · UchUchU</title>
+  <meta name="description" content="「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。">
+  <link rel="canonical" href="https://uchuchu.tech/articles/space-quality-requirements/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/articles/space-quality-requirements/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/articles/space-quality-requirements/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか · UchUchU">
+  <meta property="og:description" content="「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。">
+  <meta property="og:url" content="https://uchuchu.tech/articles/space-quality-requirements/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか · UchUchU">
+  <meta name="twitter:description" content="「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"特集","item":"https://uchuchu.tech/articles/"},{"@type":"ListItem","position":3,"name":"宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか","item":"https://uchuchu.tech/articles/space-quality-requirements/"}]},{"@type":"Article","headline":"宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか","description":"「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。","inLanguage":"ja-JP","mainEntityOfPage":{"@type":"WebPage","@id":"https://uchuchu.tech/articles/space-quality-requirements/"},"url":"https://uchuchu.tech/articles/space-quality-requirements/","publisher":{"@id":"https://uchuchu.tech/#organization"},"isAccessibleForFree":true,"author":{"@type":"Organization","name":"UchUchU 編集部"},"datePublished":"2026-07-18","dateModified":"2026-07-18","image":"cover-quality.jpg","articleSection":"参入ガイド","wordCount":3116,"backstory":"宇宙産業への参入を検討する製造業から最も多く聞かれるのが、認証に関する質問だ。「JIS Q 9100を取らないと話にならないのか」「ISO 9001だけでは駄目なのか」。 \n 結論から言えば、 法的に必須の資格は存在しない 。ただし実務上、品質管理体制の要求は自動車部品や一般産業機械とは明確に異なる。何がどう違うのかを整理する。 \n ISO 9001 は「土台」であって「宇宙対応」ではない \n ISO 9001は品質マネジメントシステムの国際規格で、業種を問わない汎用規格である。「顧客要求を満たす製品を安定して供給する仕組みがあるか」を問うもので、宇宙分野に固有の要求は含まない。 \n 多くの発","about":{"@type":"Thing","name":"宇宙産業"}}]}</script>
+  <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../static/css/style.css?v=1d897ec5">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/articles/space-quality-requirements/" : "https://uchuchu.tech/en/articles/space-quality-requirements/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../" class="">ホーム</a>
+      <a href="../../companies/" class="">企業DB</a>
+      <a href="../../procurement/" class="">調達情報</a>
+      <a href="../../articles/" class="on">特集</a>
+      <a href="../../launches/" class="">打ち上げ</a>
+      <a href="../../news/" class="">ニュース</a>
+      <a href="../../faq/" class="">よくある質問</a>
+      <a href="../../advertise/" class="">広告掲載</a>
+      <a href="../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/articles/space-quality-requirements/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/articles/space-quality-requirements/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<article class="article">
+  <header class="article-hero">
+<div class="article-hero-img" style="background-image:url('../../static/img/cover-quality.jpg')"></div>    <div class="wrap article-hero-inner">
+<span class="pill accent">参入ガイド</span>      <h1>宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか</h1>
+<p class="article-lead">「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。</p>      <div class="article-meta">
+<span>UchUchU 編集部</span><time datetime="2026-07-18">2026年7月18日</time>      </div>
+    </div>
+  </header>
+  <div class="wrap article-body prose">
+    <p>宇宙産業への参入を検討する製造業から最も多く聞かれるのが、認証に関する質問だ。「JIS Q 9100を取らないと話にならないのか」「ISO 9001だけでは駄目なのか」。</p>
+<p>結論から言えば、<strong>法的に必須の資格は存在しない</strong>。ただし実務上、品質管理体制の要求は自動車部品や一般産業機械とは明確に異なる。何がどう違うのかを整理する。</p>
+<h2 id="iso-9001">ISO 9001 は「土台」であって「宇宙対応」ではない</h2>
+<p>ISO 9001は品質マネジメントシステムの国際規格で、業種を問わない汎用規格である。「顧客要求を満たす製品を安定して供給する仕組みがあるか」を問うもので、宇宙分野に固有の要求は含まない。</p>
+<p>多くの発注元はISO 9001の取得を前提としているが、それは<strong>最低ラインであって差別化要因ではない</strong>。</p>
+<h2 id="jis-q-9100">JIS Q 9100 が追加で求めるもの</h2>
+<p>JIS Q 9100は、ISO 9001をベースに航空宇宙・防衛分野の要求を追加した規格である（国際規格AS9100に対応する）。ISO 9001の要求をすべて含んだうえで、主に次の点が上乗せされる。</p>
+<p><strong>構成管理（Configuration Management）</strong></p>
+<p>設計・部品構成・変更履歴を厳密に管理し、「この製品はどの設計版で作られたか」を常に特定できる状態を保つ要求。航空宇宙では設計変更が安全に直結するため、変更の追跡が独立した管理項目になっている。</p>
+<p><strong>特殊工程の管理</strong></p>
+<p>熱処理、溶接、表面処理、非破壊検査など、<strong>完成後の検査では品質を確認できない工程</strong>を「特殊工程」として区別し、工程条件と作業者の資格を個別に管理する要求。</p>
+<p>これが一般産業との実務上の最大の差になりやすい。「検査で良品を選別する」という発想が通用せず、「工程が正しかったことを記録で示す」ことが求められる。</p>
+<p><strong>リスクマネジメントと不適合品の管理</strong></p>
+<p>不適合が発生した際の是正処置に加え、<strong>流出した場合の影響範囲を特定して遡及調査する</strong>ことが求められる。ロット単位でどこに納入したかを追跡できなければ、この要求は満たせない。</p>
+<p><strong>製品安全と模倣品の防止</strong></p>
+<p>近年の改訂で、製品安全と模倣部品（Counterfeit Parts）の混入防止が明示的な要求項目になっている。調達先の管理まで含めた仕組みが必要になる。</p>
+<h2 id="_1">宇宙特有の「環境要求」も別にある</h2>
+<p>品質マネジメント規格とは別に、宇宙分野には<strong>部品そのものに課される環境要求</strong>がある。認証の話と混同されやすいので、区別して押さえておきたい。</p>
+<p><strong>アウトガス</strong> — 真空中では材料から気体成分が抜け出す。それがレンズやセンサに付着すると性能が落ちるため、樹脂・接着剤・塗料には低アウトガス性が求められる。地上では何の問題もない材料が、宇宙では使えないことがある。</p>
+<p><strong>熱サイクル</strong> — 軌道上では日照と日陰を繰り返し、数十分ごとに大きな温度差にさらされる。異なる材料を組み合わせた部位は、熱膨張差で繰り返し応力を受ける。</p>
+<p><strong>振動・衝撃</strong> — 打ち上げ時の振動は地上の輸送とは比較にならない。分離時の衝撃も加わる。</p>
+<p><strong>放射線</strong> — 電子部品では、地上では起こらない誤動作や劣化が発生する。</p>
+<p>これらは「認証を取れば満たせる」ものではなく、<strong>設計と材料選定で対応する領域</strong>である。詳細は<a href="/articles/space-parts-materials/">宇宙で使える材料、使えない材料</a>で扱っている。</p>
+<p>2つの規格の関係を整理すると次のようになる。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ISO 9001</th>
+<th>JIS Q 9100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>適用範囲</td>
+<td>全業種</td>
+<td>航空宇宙・防衛</td>
+</tr>
+<tr>
+<td>構成管理</td>
+<td>一般的な要求のみ</td>
+<td><strong>独立した管理項目</strong></td>
+</tr>
+<tr>
+<td>特殊工程</td>
+<td>明示的な区分なし</td>
+<td><strong>条件と作業者資格を個別管理</strong></td>
+</tr>
+<tr>
+<td>遡及調査</td>
+<td>是正処置まで</td>
+<td><strong>流出範囲の特定まで</strong></td>
+</tr>
+<tr>
+<td>模倣品対策</td>
+<td>規定なし</td>
+<td><strong>明示的な要求</strong></td>
+</tr>
+<tr>
+<td>取得の必要性</td>
+<td>事実上の前提</td>
+<td>受注が見えてから</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">実務で最初に詰まるのはどこか</h2>
+<p>技術力のある企業でも、参入時に詰まるのは加工技術そのものではなく、次の3点であることが多い。</p>
+<ol>
+<li><strong>トレーサビリティの記録</strong> — 材料ロット、加工日時、作業者、設備、検査結果を紐づけて保存し、後から追跡できるか</li>
+<li><strong>特殊工程の条件管理</strong> — 熱処理炉の温度履歴や溶接条件を記録として残しているか</li>
+<li><strong>変更管理</strong> — 図面や工程を変えた際、いつ・誰が・なぜ変えたかを記録しているか</li>
+</ol>
+<p>いずれも「良い物を作る能力」ではなく「作ったことを証明する能力」に関わる。</p>
+<p><strong>多くの町工場は1〜3を実質的に行っているが、記録として残していない。</strong> 参入準備の中身は、新しい技術の習得ではなく、既に行っていることを記録化する作業になることが多い。</p>
+<h2 id="_3">記録を残すとは、具体的に何をすることか</h2>
+<p>「トレーサビリティ」という言葉は抽象的なので、実務レベルに落としておく。</p>
+<p>求められているのは、<strong>納品した製品について後から次の問いに答えられる状態</strong>である。</p>
+<ol>
+<li>この部品は、どの材料ロットから作られたか</li>
+<li>いつ、どの設備で、誰が加工したか</li>
+<li>そのときの工程条件（温度・時間・圧力など）は何だったか</li>
+<li>検査の結果はどうだったか。誰が判定したか</li>
+<li>同じ条件で作った他の製品は、どこに何個納入したか</li>
+</ol>
+<p>5番目が特に重要になる。不具合が判明したとき、<strong>影響範囲を特定できなければ全数回収するしかない</strong>。ロットで追跡できれば、対象を絞り込める。発注元が記録を求める最大の理由はここにある。</p>
+<p>始め方としては、いきなりシステムを導入する必要はない。</p>
+<ul>
+<li>記録すべき項目を決め、<strong>紙かExcelで確実に残す</strong>運用から始める</li>
+<li>ロット番号を製品と記録に紐づける仕組みを作る</li>
+<li>保存期間を決める（宇宙分野では長期保存を求められることがある）</li>
+</ul>
+<p>受注が増えてから生産管理システムを検討すればよい。<strong>先に仕組みを作るより、まず残す習慣を作る方が先</strong>である。</p>
+<h2 id="jis-q-9100_1">いきなりJIS Q 9100を目指す必要はあるか</h2>
+<p>必要ない。理由は3つある。</p>
+<ul>
+<li>認証取得には費用と工数がかかり、<strong>受注の見込みがない段階で取得しても回収できない</strong></li>
+<li>二次・三次サプライヤーの立場では、一次サプライヤーがJIS Q 9100を持ち、その管理下に入る形で十分な場合がある</li>
+<li>地上設備・試験装置分野では、そもそも要求されないことがある</li>
+</ul>
+<p>現実的な順序はこうなる。</p>
+<ol>
+<li>ISO 9001の運用を確認する</li>
+<li>トレーサビリティの記録体制を整える（認証と無関係に、まずここ）</li>
+<li>実際に引き合いを受け、要求される品質水準を確認する</li>
+<li>継続的な受注が見込める段階で、JIS Q 9100の取得を検討する</li>
+</ol>
+<h2 id="_4">まとめ</h2>
+<ul>
+<li>参入に<strong>必須の国家資格はない</strong></li>
+<li>ISO 9001は土台。JIS Q 9100は構成管理・特殊工程・遡及調査を上乗せしたもの</li>
+<li>実務で詰まるのは技術ではなく<strong>記録</strong>である</li>
+<li>認証は「受注が見えてから」で遅くない</li>
+</ul>
+<p>自社の技術が宇宙産業のどこに当てはまるかは、<a href="/companies/">企業データベース</a>で同じ領域の企業を見ると掴みやすい。参入の全体像は<a href="/articles/manufacturing-entry-guide/">中小製造業が宇宙産業に参入するには</a>を参照されたい。</p>
+<hr />
+<p><em>本記事は公開情報をもとに編集部が整理したものです。規格の要求事項は改訂される場合があります。認証取得の詳細は認証機関にご確認ください。</em></p>
+  </div>
+  <div class="wrap article-foot">
+    <a class="btn btn-ghost" href="../../articles/">← 特集一覧へ戻る</a>
+  </div>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../companies/">企業DB</a>
+<a href="../../procurement/">調達情報</a>          <a href="../../articles/">特集</a>
+          <a href="../../launches/">打ち上げ</a>
+          <a href="../../news/">ニュース</a>
+          <a href="../../papers/">研究動向</a>
+          <a href="../../topics/moon/">トピック</a>
+          <a href="../../search/">検索</a>
+          <a href="../../about/">運営会社</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-09-05 09:52 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../static/js/main.js?v=1d897ec5" defer></script>
+</body>
+</html>

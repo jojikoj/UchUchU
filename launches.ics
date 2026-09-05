@@ -1,0 +1,1176 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU 打ち上げ予定
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:1b23eb18-e06e-4058-9b42-e95ca0980511@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260905T200000Z
+DTEND:20260905T210000Z
+SUMMARY:Spectrum | Onward and Upward
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / Onward and Upward / To Be Confirmed
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:153ef8ef-b12b-43f4-a4bf-05b225c0cd37@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260906T105900Z
+DTEND:20260906T115900Z
+SUMMARY:Falcon 9 Block 5 | Starlink Group 15-24
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Starlink Group 15-24 / Go for Launch
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:95eb9265-bdbe-43ad-b08c-6be7eb4e58f4@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260909T090000Z
+DTEND:20260909T100000Z
+SUMMARY:Long March 2D/YZ-3 | Unknown Payload
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 2D/YZ-3 / Unknown Payload / Go for Launch
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d793ba47-faf5-4bab-a386-39a9ccc49c90@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260909T161503Z
+DTEND:20260909T171503Z
+SUMMARY:Soyuz 2.1b | Progress MS-35 (96P)
+LOCATION:Baikonur Cosmodrome\, Republic of Kazakhstan
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1b / Progress MS-35 (96P) / Go for Launch
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3e0456da-14b1-4ac3-b59e-35fefb1d1530@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260910T153700Z
+DTEND:20260910T163700Z
+SUMMARY:Falcon 9 Block 5 | USSF-153
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / USSF-153 / Go for Launch
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:63063b9d-ade9-4448-8717-6f910aa81188@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260911T160000Z
+DTEND:20260911T170000Z
+SUMMARY:Long March 8A | Unknown Payload
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 8A / Unknown Payload / To Be Confirmed
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ad358a4d-c541-409b-9366-9c2f2da4aeb9@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260913T185000Z
+DTEND:20260913T195000Z
+SUMMARY:Falcon 9 Block 5 | O3b mPower 11-13
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / O3b mPower 11-13 / To Be Confirmed
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:8effc13a-c658-4d2e-9f15-8dba4d7fe2dd@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260915T012107Z
+DTEND:20260915T022107Z
+SUMMARY:Vega-C | Sentinel-3C & FLEX
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Avio S.p.A / Vega-C / Sentinel-3C & FLEX / Go for Launch
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:18441371-8b2e-457c-afb5-1ec1b11ab630@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Falcon 9 Block 5 | Crew-13
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Crew-13 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dc570565-4dcf-4ab9-8174-bf88efef477f@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Long March 12A | Flight 2
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 12A / Flight 2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:599ba2df-7483-4b2f-a083-2b5ddc06e069@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Electron | LOXSAT 1
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / LOXSAT 1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:9d402fb6-9115-424d-b6f0-bd3b13ee310e@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Long March 5 | Chang'e 7
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 5 / Chang'e 7 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ef9850ad-1096-425b-9d27-f7bbd186e61a@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Vulcan VC6L | Amazon Leo (LV-01)
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:United Launch Alliance / Vulcan VC6L / Amazon Leo (LV-01) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Transport Layer A / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3b94ad50-3505-496e-8a95-b0bc4c0dadc6@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Themis Demonstrator | T1H-1
+LOCATION:Esrange Space Center
+DESCRIPTION:European Space Agency / Themis Demonstrator / T1H-1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7d1afb26-6f9c-429b-9ccf-29012fd1e519@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Starship | Flight 14
+LOCATION:SpaceX Starbase\, TX\, USA
+DESCRIPTION:SpaceX / Starship V3 / Flight 14 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7766f3bb-674c-4c71-b986-963bd633fcfe@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Electron | 6x HawkEye 360
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / 6x HawkEye 360 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b81156da-c0b8-46c8-aebd-8af8d2be83cd@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Electron | BlackSky Gen-3 5
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 5 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:548df42c-ae26-4cc9-921a-f0042941911a@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Electron | BlackSky Gen-3 6
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 6 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7bdc412b-c965-4517-a131-f57a01189803@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261007T000000Z
+DTEND:20261007T010000Z
+SUMMARY:Ariane 64 Block 2 | Amazon Leo (LE-04)
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 64 Block 2 / Amazon Leo (LE-04) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:e0741415-6c63-4236-9736-24a6c04485bc@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261007T032300Z
+DTEND:20261007T042300Z
+SUMMARY:Nuri | NeonSat-2 to 6
+LOCATION:Naro Space Center\, South Korea
+DESCRIPTION:Korea Aerospace Research Institute / KSLV-2 Nuri / NeonSat-2 to 6 / Go for Launch
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:69ebbcd2-b257-4070-9ef9-21e7d1f8a883@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261019T194103Z
+DTEND:20261019T204103Z
+SUMMARY:H3-24 | Martian Moon eXplorer (MMX)
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / Martian Moon eXplorer (MMX) / Go for Launch
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f4c720ce-0cfd-43e6-b8dd-00273073bc01@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Electron | StriX Launch 12
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / StriX Launch 12 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:67213393-7983-4c06-8b44-b8c785a5ed79@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Transporter 18 (Dedicated SSO Rideshare) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bf2c3027-a314-403e-a416-2bfd5d165ad1@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Falcon 9 Block 5 | Dragon CRS-2 SpX-35
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Dragon CRS-2 SpX-35 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3b430f81-0ff1-4d85-8a1a-cef0de326198@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Bandwagon 5 (Dedicated Mid-Inclination Rideshare) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bff2fc91-eddd-4dfc-af26-ac0674cfab4d@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261119T000000Z
+DTEND:20261119T010000Z
+SUMMARY:Soyuz 2.1a/Fregat-M | MKA Kinosputnik\, KOEN and others
+LOCATION:Vostochny Cosmodrome\, Siberia\, Russian Federation
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1a Fregat-M / MKA Kinosputnik\, KOEN and others / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:8dd5de11-831b-445f-86f0-bffefe0550d9@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261124T050300Z
+DTEND:20261124T060300Z
+SUMMARY:Soyuz 2.1b | Progress MS-36 (97P)
+LOCATION:Baikonur Cosmodrome\, Republic of Kazakhstan
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1b / Progress MS-36 (97P) / To Be Confirmed
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7c891a0b-7194-4425-8cfd-2e8c75af2924@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:HANBIT-Nano | InnoSat-0
+LOCATION:Alcântara Space Center\, Federative Republic of Brazil
+DESCRIPTION:Innospace / HANBIT-Nano / InnoSat-0 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d3bd7fb2-fac6-49fc-ae52-cee07d2fde67@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Falcon Heavy | Griffin Mission One
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:SpaceX / Falcon Heavy / Griffin Mission One / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:22e117bf-041c-49d5-9d09-7b180036e143@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Ariane 62 | Metop-SG B1
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 62 / Metop-SG B1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:20d5676e-111b-40e3-8923-b218c3665ca2@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:GSLV Mk II | IRNSS-1L (NVS-03)
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / IRNSS-1L (NVS-03) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Angara 1.2 | Kosmos (Unknown Payload)
+LOCATION:Plesetsk Cosmodrome\, Russian Federation
+DESCRIPTION:Russian Space Forces / Angara 1.2 / Kosmos (Unknown Payload) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2d0472b9-463d-49c8-afb1-7925e49a3368@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer A
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Tracking Layer A / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dca8749f-1552-485a-8061-f1ad79055b8d@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer C
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Tracking Layer C / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer E
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Tracking Layer E / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:4541ce85-0e38-42ac-a9a0-20474bb5f2cd@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Transport Layer D
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Transport Layer D / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c5783e2b-d458-4b99-9936-4043c236190b@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Transport Layer F
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Transport Layer F / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d1a3807e-f304-467c-a095-e08b86924347@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | QuickSounder
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / QuickSounder / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:875ba957-be5f-42bd-8a6e-ed98254f572a@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | ConnectedCosmos Launch 1
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / ConnectedCosmos Launch 1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d47cbca4-48c1-455a-b357-f156833b189e@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | ConnectedCosmos Launch 2
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / ConnectedCosmos Launch 2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dfac5ab7-7017-454f-b6cf-eeed277a97b5@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:LVM-3 | Gaganyaan-1
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / Launch Vehicle Mark-3 (GSLV Mk III) / Gaganyaan-1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:9e24bef7-c44b-4fdc-ba52-68545ce9457e@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | StriX Launch 13
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / StriX Launch 13 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:387aadc6-68ca-4090-9be7-d57603ad7c79@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Blue Ghost Lunar Lander Mission 2
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Blue Ghost Lunar Lander Mission 2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:71df1dd0-d658-4762-b0bc-0fca6886aea7@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 2 Transport Layer D
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 2 Transport Layer D / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:71ed4649-8d71-42e8-8548-d42ffa2c5a6e@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 2 Transport Layer E
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 2 Transport Layer E / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ce1317de-ec94-4479-9b28-38ebf11f13ae@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Telesat Lightspeed 1
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Telesat Lightspeed 1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0b85fcca-5252-48d7-9ccb-c10b1da9d183@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Ariane 62 | Galileo L15 (FOC FM28 & FM31)
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 62 / Galileo L15 (FOC FM28 & FM31) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0d6ad64c-3aed-4041-b095-e1d951bc6d29@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | Aspera
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / Aspera / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:8bf5f61e-a7e1-41e6-aede-7b87e4beebab@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | CHORUS
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / CHORUS / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Cygnus CRS-2 NG-25
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Cygnus CRS-2 NG-25 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:01ca3653-126a-4c01-94fb-a9467b39cdac@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Inmarsat-7 F1 (GX-7)
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Inmarsat-7 F1 (GX-7) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0c26b3d4-43e3-4c1a-8976-592ff319bc51@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Nova-C IM-3
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Nova-C IM-3 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a96ece1c-c745-43cc-a08a-b623e7b93957@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Neutron | Maiden Flight
+LOCATION:Wallops Flight Facility\, Virginia\, USA
+DESCRIPTION:Rocket Lab / Neutron / Maiden Flight / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:60f4ba6c-4201-4727-94aa-0015a5a0023f@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Spectrum | 1 x Pelican satellite
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / 1 x Pelican satellite / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b48e32c5-3776-4684-a956-5ea4df032e90@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Spectrum | ΣYNDEO-3
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / ΣYNDEO-3 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a67b40f9-cfcc-4614-a355-a156280b4bb3@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Vulcan VC4L | Dream Chaser CRS 2 Flight 1
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:United Launch Alliance / Vulcan VC4L / Dream Chaser CRS 2 Flight 1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:e61d353c-db55-4a57-8184-0fab187231e6@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Globalstar 2-R Mission 2 (x 9) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c9605b67-8a53-4239-a8ae-577fe3b79799@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Long March 2F/G | Shenzhou 24
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 2F/G / Shenzhou 24 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dff42a2e-f047-48d7-b260-3888d3a4fe33@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Spectrum | AT-Astra and Others (Spectrum Flight 3)
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / AT-Astra and Others (Spectrum Flight 3) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b78857c4-3b8d-4462-929e-bc76f39c0e6d@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Ariane 64 | GO-1
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 64 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3ac1bd74-bf9a-4afe-ae00-3e1d180142dd@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Astra Rocket 4 | Maiden Flight
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:Astra Space / Astra Rocket 4 / Maiden Flight / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:07e945c1-2ec6-4d29-a500-1afbe920440f@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Atlas V N22 | Starliner-1
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:United Launch Alliance / Atlas V N22 / Starliner-1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:5aa3575e-f3ff-48ec-969f-e7e4c669f866@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | BlackSky Gen-3 7
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 7 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:280fba47-8e6e-4a4f-8bdd-b9687d99a9c5@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | BlackSky Gen-3 8
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 8 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:54e907ad-f988-488b-ab35-cd86f63edf8d@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | BlackSky Gen-3 9
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 9 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:db3500ac-965b-4ad8-b417-cb8d8d005586@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | iQPS Launch 10
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / iQPS Launch 10 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f9a8c9f6-5dc4-4e83-9876-2a51140ec806@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | iQPS Launch 11
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / iQPS Launch 11 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:426bd2a5-02dd-4fbd-9f4d-2b8439c3a1ff@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | iQPS Launch 9
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / iQPS Launch 9 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:cb0c27fd-496c-4f74-aa04-9c0e5af33e3c@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Epsilon S | JV-LOTUSat-1
+LOCATION:Uchinoura Space Center\, Japan
+DESCRIPTION:Japan Aerospace Exploration Agency / Epsilon S / JV-LOTUSat-1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:4d3943e9-c894-46c4-a318-84d526d0ef40@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Cygnus CRS-2 NG-22
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Cygnus CRS-2 NG-22 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dfd444f9-ddda-4b35-8f51-cda7cd801809@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 1
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:511a3ef8-799e-4723-9293-b954d9d2eb83@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 10
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 10 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d08d8b46-353b-4eee-ab5e-e1385b329008@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 11
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 11 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bf5c6fa2-3add-49ff-aad6-c6450148cd89@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 12
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 12 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:20fa8dc4-8cab-41cf-b452-98a2620f7e86@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 2
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ab932c60-d808-4825-ab71-b6fe0a745f15@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 3
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 3 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2f31a7f0-968a-448d-b447-333bf0341078@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 4
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 4 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:fa895702-687b-4ba3-95fb-9462a2c9844b@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 5
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 5 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:46d6822b-82aa-452c-aa34-80b6f052de84@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 6
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 6 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:1fa3741c-3339-4954-a026-2cd9d36161c0@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 7
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 7 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7d77bd89-af23-4a5a-b632-de0034003a64@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 8
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 8 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:5ce7e9b6-b471-4a88-891f-2a6f21cb369f@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 9
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 9 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0a07a23e-606a-4589-bf3e-c3e41bd4de51@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 2 Tracking Layer A
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 2 Tracking Layer A / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:cb1762f0-90f4-4902-a5f6-655a7ade25bf@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 2 Tracking Layer B
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 2 Tracking Layer B / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c703fab3-2ce4-4cf1-861d-754da3f3ad42@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 2 Transport Layer A
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 2 Transport Layer A / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:428edcbe-bbd7-4475-8eb1-3dd90b39ad75@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Telesat Lightspeed 2
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Telesat Lightspeed 2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d6615c37-dcef-45d1-96c1-3d1a5250bf13@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Telesat Lightspeed 3
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Telesat Lightspeed 3 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:adfc829a-6704-4d9e-b2ca-1068c38b2b83@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Telesat Lightspeed 4
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Telesat Lightspeed 4 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:98b905bb-4060-40a2-b299-2773b6883203@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Telesat Lightspeed 5
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Telesat Lightspeed 5 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ad00f137-39e4-4780-be30-443020b2a5aa@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Telesat Lightspeed 6
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Telesat Lightspeed 6 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:1ce39fa1-5f79-4d7b-9aa9-9a5aad74a46a@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Telesat Lightspeed 7
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Telesat Lightspeed 7 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:4c78e865-8f03-4f47-a081-b507da270d19@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | USSF-31
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / USSF-31 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:fc1bd321-e502-4d0f-81f4-1926dece81c6@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | VICTUS SURGO
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / VICTUS SURGO / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c1bd775a-2fff-45bb-9726-765b69817c19@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon Heavy | USSF-75
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:SpaceX / Falcon Heavy / USSF-75 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b94b49fc-5784-4dfd-92e7-07e57f50edcd@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | TacSat
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / TacSat / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:05864985-e660-4723-b489-32a78d4b53fc@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Gaganyaan Abort Test Booster | TV-D2
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / Gaganyaan Abort Test Booster / TV-D2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:4ca86de3-2ff8-4fd3-a22c-35b7fc618610@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Gravity-2 | Demo Flight
+LOCATION:Haiyang Oriental Spaceport
+DESCRIPTION:Orienspace Technology / Gravity-2 / Demo Flight / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c101b9da-2165-4d7b-aa9e-12a965ef8cd2@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:GSLV Mk II | IDRSS-1
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / IDRSS-1 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:220e6d9f-33dc-4533-8a48-535ba4c559e2@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:GSLV Mk II | IDRSS-2
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / IDRSS-2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0cf92611-82a8-4095-a0b4-dda2e74b1fff@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:GSLV Mk II | GSAT-32
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ac02da00-6e8b-45a0-b829-09d614891e6a@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-22 | ETS-9
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-22 / ETS-9 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a2234679-5efe-4a00-9aff-cf82dbac22b0@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-24 | HTV-X2
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / HTV-X2 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:be50d3a3-1385-4371-a4dd-d7ab4969be59@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-24 | HTV-X3
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / HTV-X3 / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3a4dc969-d264-48a1-b113-bf69a798a5c4@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-24 | Lunar Polar Exploration Mission (LUPEX)
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / Lunar Polar Exploration Mission (LUPEX) / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:04522dea-1450-48f5-bc9d-2d7f1e637f9b@uchuchu.tech
+DTSTAMP:20260905T095215Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:HASTE | Leidos-3
+LOCATION:Wallops Flight Facility\, Virginia\, USA
+DESCRIPTION:Rocket Lab / Electron / To Be Determined
+URL:https://uchuchu.tech/launches/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

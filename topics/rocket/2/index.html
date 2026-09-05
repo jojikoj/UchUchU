@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ロケット · UchUchU</title>
+  <meta name="description" content="打ち上げ機・エンジン・再使用技術">
+  <link rel="canonical" href="https://uchuchu.tech/topics/rocket/2/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/topics/rocket/2/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/topics/rocket/2/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="ロケット · UchUchU">
+  <meta property="og:description" content="打ち上げ機・エンジン・再使用技術">
+  <meta property="og:url" content="https://uchuchu.tech/topics/rocket/2/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ロケット · UchUchU">
+  <meta name="twitter:description" content="打ち上げ機・エンジン・再使用技術">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"ロケット","item":"https://uchuchu.tech/topics/rocket/"}]},{"@type":"ItemList","name":"宇宙開発ニュース","numberOfItems":30,"itemListElement":[{"@type":"ListItem","position":1,"name":"PLD Space Adds €108 million to Series C Funding Round","url":"https://europeanspaceflight.com/pld-space-adds-e108-million-to-series-c-funding-round/"},{"@type":"ListItem","position":2,"name":"中国Galactic Energy、新型ロケット「Pallas-1（智神星1号）」の初飛行に成功","url":"https://sorae.info/ssn/20260901-galactic-energy-pallas-1.html"},{"@type":"ListItem","position":3,"name":"SpaceX、米ルイジアナ州に約16兆円投資し宇宙港建設へ 年数千回の打上げ可能に","url":"https://spacemedia.jp/news/20581"},{"@type":"ListItem","position":4,"name":"NASA「アルテミスIII」ミッションのSLSコアステージにエンジンを取り付ける作業が開始","url":"https://sorae.info/space/20260901-artemis-iii.html"},{"@type":"ListItem","position":5,"name":"'No guts, no glory': How I captured NASA's Roman Space Telescope cross the sun on a picture-perfect SpaceX Falcon Heavy launch","url":"https://www.space.com/space-exploration/launches-spacecraft/no-guts-no-glory-how-i-captured-nasas-roman-space-telescope-cross-the-sun-on-a-picture-perfect-spacex-falcon-heavy-launch"},{"@type":"ListItem","position":6,"name":"Manganese's emission lines shine a light on galactic evolution","url":"https://phys.org/news/2026-08-manganese-emission-lines-galactic-evolution.html"},{"@type":"ListItem","position":7,"name":"Interstellar travel V: Warp drives, wormholes, and halo drives","url":"https://phys.org/news/2026-08-interstellar-warp-wormholes-halo.html"},{"@type":"ListItem","position":8,"name":"Commercial Space Federation (CSF) Welcomes Two New Associate Members","url":"https://spacenews.com/commercial-space-federation-csf-welcomes-two-new-associate-members-2/"},{"@type":"ListItem","position":9,"name":"NASA’s Nancy Grace Roman Space Telescope Launches","url":"https://www.nasa.gov/image-article/nasas-nancy-grace-roman-space-telescope-launches/"},{"@type":"ListItem","position":10,"name":"Roman telescope leaves its rocket behind | Space photo of the day for Aug. 31, 2026","url":"https://www.space.com/space-exploration/launches-spacecraft/roman-telescope-leaves-its-rocket-behind-space-photo-of-the-day-for-aug-31-2026"},{"@type":"ListItem","position":11,"name":"Roman lifts off on a mission to survey the infrared sky","url":"https://www.esa.int/ESA_Multimedia/Images/2026/08/Roman_lifts_off_on_a_mission_to_survey_the_infrared_sky"},{"@type":"ListItem","position":12,"name":"SpaceXのロケット、月に激突して穴を開ける","url":"https://www.gizmodo.jp/article/spacex-falcon9-moon-crater/"},{"@type":"ListItem","position":13,"name":"カイロス3号機の失敗原因は静電気による通信途絶 スペースワン発表","url":"https://spacemedia.jp/news/20568"},{"@type":"ListItem","position":14,"name":"Rocket Lab launches Japanese radar satellite to orbit on 'Owl Around the World' mission (video)","url":"https://www.space.com/space-exploration/launches-spacecraft/watch-rocket-lab-launch-japanese-radar-satellite-to-orbit-early-aug-31"},{"@type":"ListItem","position":15,"name":"スペースワンが「カイロス」3号機の飛行中断について原因究明結果を報告","url":"https://sorae.info/space/20260831-kairos-3.html"},{"@type":"ListItem","position":16,"name":"「ナンシー・グレース・ローマン宇宙望遠鏡」について知っておくべきこと","url":"https://wired.jp/article/nasa-roman-space-telescope/"},{"@type":"ListItem","position":17,"name":"Roman Space Telescope Begins Its Journey to L2","url":"https://payloadspace.com/roman-space-telescope-begins-its-journey-to-l2/"},{"@type":"ListItem","position":18,"name":"New method tests magnet-powered braking for safer, more reusable spacecraft reentry","url":"https://phys.org/news/2026-08-method-magnet-powered-safer-reusable.html"},{"@type":"ListItem","position":19,"name":"スペースXがNASAの「ローマン宇宙望遠鏡」をファルコンヘビーで打ち上げ","url":"https://sorae.info/ssn/20260830-roman-space-telescope.html"},{"@type":"ListItem","position":20,"name":"NASA’s Dark Universe-Seeking Nancy Grace Roman Space Telescope Launches","url":"https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/"},{"@type":"ListItem","position":21,"name":"Liftoff! NASA's Roman Space Telescope soars to the stars on a SpaceX Falcon Heavy rocket in spectacular launch (video)","url":"https://www.space.com/space-exploration/launches-spacecraft/nasa-roman-space-telescope-launch-success-on-a-spacex-falcon-heavy-rocket-spectacular-launch-video"},{"@type":"ListItem","position":22,"name":"「はやぶさ2」トリフネ接近通過の成功を音楽で祝うイベント 山梨で9月5日開催","url":"https://sorae.info/news/20260830-no-space-no-life.html"},{"@type":"ListItem","position":23,"name":"ライブ配信あり。NASAの新型宇宙望遠鏡打ち上げは日本時間30日の夜に","url":"https://www.gizmodo.jp/article/nasa-is-launching-a-4-billion-space-telescope-sunday-heres-why-you-should-care/"},{"@type":"ListItem","position":24,"name":"NASA's Roman Space Telescope is ready for launch aboard SpaceX Falcon Heavy rocket","url":"https://www.space.com/space-exploration/launches-spacecraft/nasas-roman-space-telescope-is-ready-for-launch-aboard-spacex-falcon-heavy-rocket"},{"@type":"ListItem","position":25,"name":"Roman Space Telescope, NASA’s next ‘great observatory,’ poised for Sunday launch","url":"https://spaceflightnow.com/2026/08/29/roman-space-telescope-nasas-next-great-observatory-poised-for-sunday-launch/"},{"@type":"ListItem","position":26,"name":"NASA’s Roman Space Telescope Go for Launch, Five Years of Discovery","url":"https://www.spacescout.info/2026/08/nasas-roman-space-telescope-go-for-launch/"},{"@type":"ListItem","position":27,"name":"SpaceX test-fires Starship Super Heavy booster ahead of critical Flight 14 (video)","url":"https://www.space.com/space-exploration/launches-spacecraft/spacex-test-fires-starship-super-heavy-booster-ahead-of-key-test-flight"},{"@type":"ListItem","position":28,"name":"NASA「ローマン宇宙望遠鏡」打ち上げへゴーサイン 日本時間8月30日夜","url":"https://sorae.info/space/20260829-roman-space-telescope.html"},{"@type":"ListItem","position":29,"name":"What time will SpaceX launch NASA's Roman Space Telescope today? (Full mission timeline)","url":"https://www.space.com/space-exploration/launches-spacecraft/spacex-roman-space-telescope-falcon-heavy-launch-what-time"},{"@type":"ListItem","position":30,"name":"SpaceX recovers Starship from the Indian Ocean a month after launch and is shipping it back to Texas","url":"https://phys.org/news/2026-08-spacex-recovers-starship-indian-ocean.html"}]}]}</script>
+  <link rel="icon" href="../../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../static/css/style.css?v=1d897ec5">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/topics/rocket/2/" : "https://uchuchu.tech/en/topics/rocket/2/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../../" class="">ホーム</a>
+      <a href="../../../companies/" class="">企業DB</a>
+      <a href="../../../procurement/" class="">調達情報</a>
+      <a href="../../../articles/" class="">特集</a>
+      <a href="../../../launches/" class="">打ち上げ</a>
+      <a href="../../../news/" class="">ニュース</a>
+      <a href="../../../faq/" class="">よくある質問</a>
+      <a href="../../../advertise/" class="">広告掲載</a>
+      <a href="../../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/topics/rocket/2/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/topics/rocket/2/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>ロケット</h1>
+    <p class="page-sub">打ち上げ機・エンジン・再使用技術</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="filter-bar">
+      <a class="chip " href="../../moon/">#月</a>
+      <a class="chip " href="../../mars/">#火星</a>
+      <a class="chip on" href="../../rocket/">#ロケット</a>
+      <a class="chip " href="../../satellite/">#衛星・地球観測</a>
+      <a class="chip " href="../../human/">#有人宇宙</a>
+      <a class="chip " href="../../science/">#宇宙科学</a>
+      <a class="chip " href="../../business/">#宇宙ビジネス</a>
+      <a class="chip " href="../../japan/">#日本の宇宙開発</a>
+    </div>
+    <div class="tile-grid">
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-3aa30ff8de/">
+    <img src="https://europeanspaceflight.com/wp-content/uploads/2026/09/PLD-Space-Adds-E108-million-to-Series-C-Funding-Round-.webp" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-3aa30ff8de/">PLD宇宙、シリーズC資金調達に1億800万ユーロを追加</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙ビジネス</span><time datetime="2026-09-01T11:03:12Z">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">European Spaceflight</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-64bcffef92/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-64bcffef92/">中国Galactic Energy、新型ロケット「Pallas-1（智神星1号）」の初飛行に成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-09-01T07:11:35+00:00">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spacemedia-284bdcb762/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spacemedia-284bdcb762/">SpaceX、米ルイジアナ州に約16兆円投資し宇宙港建設へ 年数千回の打上げ可能に</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-09-01T03:35:36+00:00">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space Media</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-cebe6b10bd/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-cebe6b10bd/">NASA「アルテミスIII」ミッションのSLSコアステージにエンジンを取り付ける作業が開始</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-09-01T02:36:56+00:00">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-811752572e/">
+    <img src="https://cdn.mos.cms.futurecdn.net/g9UK3jncfgzqaP9TgoCaAh-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-811752572e/">ローマン宇宙望遠鏡が太陽を横切る瞬間をキャッチ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T19:48:16+00:00">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/phys_space-3f8de01eab/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2023/galaxy.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/phys_space-3f8de01eab/">マンガンの発光線が銀河進化を照らす</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T17:00:07+00:00">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/phys_space-60f55aeb23/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/interstellar-travel-v.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/phys_space-60f55aeb23/">星間旅行の実現へ ワープドライブやワームホール、ハロードライブを検討</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T15:40:04+00:00">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-8910cc185f/">
+    <img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2026/05/Anniversary-Logo.jpg?fit=1024%2C883&amp;ssl=1" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-8910cc185f/">商用宇宙連盟、新規加盟企業2社を発表</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T15:00:00Z">2026.09.01</time>    </div>
+    <div class="tile-src">
+      <span class="src">SpaceNews</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-403d6e497f/">
+    <img src="https://www.nasa.gov/wp-content/uploads/2026/08/nhq20260830-admin-0001orig.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-403d6e497f/">ローマン宇宙望遠鏡が打ち上げ成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T14:10:31Z">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-115acd8ab8/">
+    <img src="https://cdn.mos.cms.futurecdn.net/3ezNDd6niGyc53LaT4m9iB-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-115acd8ab8/">ローマン宇宙望遠鏡がロケットから分離 打ち上げ直後</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T14:00:00+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-155c01416a/">
+    <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/08/roman_lifts_off_on_a_mission_to_survey_the_infrared_sky/27439669-7-eng-GB/Roman_lifts_off_on_a_mission_to_survey_the_infrared_sky_card_full.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-155c01416a/">ナンシー・グレース・ロマン宇宙望遠鏡、ファルコン・ヘビーで打上げ成功</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T07:00:00Z">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">ESA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-696b193060/">
+    <img src="https://media.loom-app.com/loom/2026/08/31/2d1a17a6-0ec4-4a7b-a997-ad6d0bf68660/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-696b193060/">SpaceXのロケット、月に激突して穴を開ける</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-31T06:15:00+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spacemedia-003348db83/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spacemedia-003348db83/">カイロス3号機の失敗原因は静電気による通信途絶 スペースワン発表</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T05:08:26+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space Media</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-9b9b41a022/">
+    <img src="https://cdn.mos.cms.futurecdn.net/FwsVFGRwCtPwvELqTfwZ5h-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-9b9b41a022/">ロケット・ラボ、日本の地球観測レーダー衛星を9月1日未明に打上げ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#日本の宇宙開発</span><time datetime="2026-08-31T04:05:00+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-ff6f243c39/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-ff6f243c39/">スペースワンが「カイロス」3号機の飛行中断について原因究明結果を報告</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-31T02:16:49+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/wired_jp-55f57fc102/">
+    <img src="https://media.wired.jp/photos/69f542df02476e084f20d29c/master/pass/RST_2020_Still.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/wired_jp-55f57fc102/">「ナンシー・グレース・ローマン宇宙望遠鏡」について知っておくべきこと</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-31T00:00:00+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">WIRED.jp</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/payloadspace-eb71fcc754/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/payloadspace-eb71fcc754/">ローマン宇宙望遠鏡がラグランジュポイント2への旅を開始</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-30T21:29:29+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">Payload</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/phys_space-79ed57b18b/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/magnetohydrodynamic-mh-1.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/phys_space-79ed57b18b/">磁場を使った新型制動システムを試験 再突入時の安全性と再利用性向上へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-30T15:22:20+00:00">2026.08.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-a1ae8ee1da/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-a1ae8ee1da/">スペースXがNASAの「ローマン宇宙望遠鏡」をファルコンヘビーで打ち上げ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-30T14:37:18+00:00">2026.08.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-a310aabd66/">
+    <img src="https://images-assets.nasa.gov/image/NHQ20260830_admin_0002/NHQ20260830_admin_0002~large.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-a310aabd66/">NASAのナンシー・グレース・ローマン宇宙望遠鏡が打ち上げ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-30T13:18:06Z">2026.08.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-becdebedf0/">
+    <img src="https://cdn.mos.cms.futurecdn.net/g9UK3jncfgzqaP9TgoCaAh-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-becdebedf0/">打ち上げ成功、NASAのローマン宇宙望遠鏡がファルコン・ヘビーで星へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-30T12:56:57+00:00">2026.08.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-487c28742b/">
+    <img src="../../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-487c28742b/">「はやぶさ2」トリフネ接近通過の成功を音楽で祝うイベント 山梨で9月5日開催</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-30T09:17:46+00:00">2026.08.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-10cef41acf/">
+    <img src="https://media.loom-app.com/loom/2026/08/29/ad73a71f-6896-497e-85f9-ee517d675577/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-10cef41acf/">ライブ配信あり。NASAの新型宇宙望遠鏡打ち上げは日本時間30日の夜に</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-30T01:15:00+00:00">2026.08.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-57227b62b8/">
+    <img src="https://cdn.mos.cms.futurecdn.net/wisdPU8c2rGWaphW6ARWHM-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-57227b62b8/">ローマン宇宙望遠鏡、ファルコン・ヘビーで打ち上げへ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-29T22:44:18+00:00">2026.08.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-f4057af5ca/">
+    <img src="http://spaceflightnow.com/wp-content/uploads/2022/07/20220719roman.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-f4057af5ca/">ローマン宇宙望遠鏡、次期『大型観測機』として日曜日打ち上げへ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-08-29T22:17:36Z">2026.08.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">Spaceflight Now</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/spaceflightnews-036e55a09c/">
+    <img src="https://i0.wp.com/www.spacescout.info/wp-content/uploads/2026/08/image-19.png" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/spaceflightnews-036e55a09c/">ローマン宇宙望遠鏡、打ち上げ準備完了 宇宙の謎解明へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-29T14:25:58Z">2026.08.29</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space Scout</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-b305adbfab/">
+    <img src="https://cdn.mos.cms.futurecdn.net/zksFrFdvpXLTuDDenfXBCo-1280-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-b305adbfab/">スターシップ・スーパーヘビー、試験点火実施 飛行14号に向けて</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-29T14:00:00+00:00">2026.08.29</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/sorae-3d5d46d439/">
+    <img src="../../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/sorae-3d5d46d439/">NASA「ローマン宇宙望遠鏡」打ち上げへゴーサイン 日本時間8月30日夜</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-08-29T01:04:32+00:00">2026.08.29</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/space_com-01b8961813/">
+    <img src="https://cdn.mos.cms.futurecdn.net/7Bo7yYCRBoFR7Ah8jTJEAY-1280-80.png" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/space_com-01b8961813/">SpaceX、NASAローマン宇宙望遠鏡を8月30日打ち上げへ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-28T22:31:45+00:00">2026.08.29</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/phys_space-835e13ffd4/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/spacex-recovers-starsh.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/phys_space-835e13ffd4/">スペースX、インド洋からスターシップを回収し本国へ輸送</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-08-28T17:34:56+00:00">2026.08.29</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+    </div>
+    <nav class="pager" aria-label="pagination">
+<a class="pager-btn" href="../" rel="prev">← 前へ</a>
+  <span class="pager-nums">
+<a class="pager-num" href="../">1</a><span class="pager-num on" aria-current="page">2</span>
+<a class="pager-num" href="../3/">3</a><a class="pager-num" href="../4/">4</a><span class="pager-gap">…</span>
+<a class="pager-num" href="../18/">18</a>  </span>
+<a class="pager-btn" href="../3/" rel="next">次へ →</a>
+</nav>
+
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../../companies/">企業DB</a>
+<a href="../../../procurement/">調達情報</a>          <a href="../../../articles/">特集</a>
+          <a href="../../../launches/">打ち上げ</a>
+          <a href="../../../news/">ニュース</a>
+          <a href="../../../papers/">研究動向</a>
+          <a href="../../../topics/moon/">トピック</a>
+          <a href="../../../search/">検索</a>
+          <a href="../../../about/">運営会社</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-09-05 09:52 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../../static/js/main.js?v=1d897ec5" defer></script>
+</body>
+</html>
