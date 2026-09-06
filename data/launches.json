@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-05T21:34:09.922656+00:00",
+  "generated_at": "2026-09-06T09:32:58.153346+00:00",
   "count": 200,
   "items": [
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
       "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-      "net": "2026-09-06T11:13:47Z",
+      "net": "2026-09-06T14:26:28Z",
       "window_end": "2026-09-06T14:59:00Z",
       "status": "Go",
       "status_name": "Go for Launch",
@@ -22,7 +22,7 @@
       "mission_type": "Communications",
       "mission_description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcast": "https://x.com/i/broadcasts/1NxaroyrEngKj",
+      "webcast": "https://www.youtube.com/watch?v=pykl4k7D0GQ",
       "upcoming": true
     },
     {
@@ -68,7 +68,7 @@
       "mission_type": "Resupply",
       "mission_description": "Progress resupply mission to the International Space Station.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
-      "webcast": "https://plus.nasa.gov/scheduled-video/progress-96-cargo-ship-launch/",
+      "webcast": "https://www.youtube.com/watch?v=cCpf0BOjlLE",
       "upcoming": true
     },
     {
@@ -2422,8 +2422,8 @@
       "name": "Spectrum | Onward and Upward",
       "net": "2026-09-05T20:12:00Z",
       "window_end": "2026-09-05T21:00:00Z",
-      "status": "In Flight",
-      "status_name": "Launch in Flight",
+      "status": "Success",
+      "status_name": "Launch Successful",
       "provider": "Isar Aerospace",
       "provider_country": "DEU",
       "provider_url": "https://www.isaraerospace.com/",

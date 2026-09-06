@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T21:34:04.721362+00:00",
-  "count": 3002,
+  "generated_at": "2026-09-06T09:32:50.812029+00:00",
+  "count": 3007,
   "sources": {
     "jaxa": 20,
     "naoj": 15,
@@ -8,7 +8,7 @@
     "spacemedia": 20,
     "sorabatake": 10,
     "astroarts": 0,
-    "wired_jp": 5,
+    "wired_jp": 3,
     "gizmodo_jp": 0,
     "karapaia": 1,
     "nasa": 10,
@@ -29,6 +29,61 @@
   },
   "items": [
     {
+      "title": "星空や景色に情報を重ねて表示！ ユニステラがAR搭載スマート双眼鏡「ENVISION」の国内予約を開始",
+      "url": "https://sorae.info/news/20260906-unistellar-envision.html",
+      "summary": "スマート天体望遠鏡などを手がけるフランスのUNISTELLAR（ユニステラ）は、AR（拡張現実）表示機能を搭載したスマート双眼鏡「ENVISION（エンビジョン）」の日本国内での予約受付を、2026年9月4日に開始しまし…",
+      "image": null,
+      "published": "2026-09-06T08:29:16+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "Germany's Isar Aerospace launches rocket into orbit from Norway",
+      "url": "https://phys.org/news/2026-09-germany-isar-aerospace-rocket-orbit.html",
+      "summary": "Germany's Isar Aerospace launched a rocket into orbit from Norway on Saturday as Europe races to boost its ability to economically send satellites into space independently of the United States.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2025/orbit.jpg",
+      "published": "2026-09-06T08:00:01+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "独イザー・エアロスペース、ノルウェーからロケットを軌道投入",
+      "summary_ja": "ドイツのイザー・エアロスペースは土曜日にノルウェーからロケットを軌道投入した。米国に依存しない独立した衛星打ち上げ能力の経済的強化を目指すヨーロッパの競争の一環である。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Isar Aerospace Completes First Successful Spectrum Flight",
+      "url": "https://europeanspaceflight.com/isar-aerospace-completes-first-successful-spectrum-flight/",
+      "summary": "German launch services provider Isar Aerospace has completed the first successful launch of its Spectrum rocket, deploying five CubeSats into low Earth orbit. The mission marked the first time a privately funded European orbital rocket had successfully reached orbit and the first successful orbital launch from continen…",
+      "image": "https://europeanspaceflight.com/wp-content/uploads/2026/09/Isar-Aerospace-Completes-First-Successful-Spectrum-Flight-hero.webp",
+      "published": "2026-09-06T05:40:14Z",
+      "source": "European Spaceflight",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "独イザー・エアロスペース、スペクトラムロケットの初号機を軌道投入",
+      "summary_ja": "独ロケット打ち上げサービス企業イザー・エアロスペースは、スペクトラムロケットの初打ち上げに成功し、5つのキューブサットを地球低軌道に投入した。民間企業による欧州製軌道ロケットの初の軌道到達であり、欧州大陸からの初の成功軌道打ち上げとなった。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "ドイツの打ち上げサービス企業Isar Aerospaceが、自社開発のSpectrumロケットの初打ち上げに成功した。低軌道へ5つのCubeSatsを配備したこの飛行は、民間資金で開発された軌道ロケットがヨーロッパで初めて軌道到達を果たした例であり、大陸ヨーロッパからの実質的なロケット打ち上げとしても初めての成功事例となった。ロケット開発競争がいよいよヨーロッパにも本格化することを示す重要な成果である。\n\nSpectrumロケットは9月5日、ノルウェーのAndøya Spaceportから打ち上げられた。飛行中にはステージ分離、上段エンジン点火、フェアリング放出、上段エンジンカットオフなど、軌道到達に必要な主要なシーケンスがすべて正常に実行された。ライブ配信は打ち上げから18分後に通信喪失で終了したが、その前までに主要なイベントシーケンスが完了していたことが確認されていた。その後の軌道周回軌道化バーンを経て、5つのCubeSatsがすべて正常に配備されたことが確認された。これまで数ヶ月間にわたって重ねられた失敗と改善の過程の末に、ようやく獲得した成功である。\n\n成功に至るまでの道のりは決して順調ではなかった。1月から6月にかけて、圧力弁の問題、悪天候、排他的区域への不正侵入、複合材製圧力容器の漏れ、流体システムの異常など、実に多様な理由で打ち上げが中止に追い込まれている。これほど多くの失敗を重ねたことは、ロケット開発がいかに複雑であり、多くの要素を確実に動作させる必要があるか、また設計だけでなく製造側での品質確保がいかに重要であるかを示唆していると考えられる。部品や材料の信頼性が全体のミッション成功を左右する宇宙開発の現実が明らかになっている。\n\nIsar Aerospaceは今回の成功を、ヨーロッパの宇宙産業にとって象徴的な転換点と位置付けている。同社CEOは「ヨーロッパは宇宙への主権的アクセスを獲得した」とコメントしており、これは米国や中国といった有力国に対する対抗軸を示す重要な意味を持つ。同社は新たな本社施設での生産体制を立ち上げ、年間最大40機のロケット製造を目指す計画を明らかにしており、既に抱える大きな受注残に対応する準備を進めている。こうした打ち上げサービスの競争激化と多元化は、衛星事業者に新たな打ち上げ手段の選択肢をもたらし、グローバルな衛星打ち上げ需要の拡大に対応する市場構図の変化を意味する。\n\n日本の部品・装置・素材メーカーにとって、この動きは複数の接点を持つと考えられる。第一に、Isar Aerospaceのような新規参入企業が短期間で軌道到達を成し遂げるには、信頼性の高い部品や素材の調達が必須であり、ヨーロッパ企業のサプライチェーン構築に日本企業が参加する可能性がある。圧力容器やエンジン部品、制御システムなど、多くの領域で日本の高度な技術が求められる可能性は十分に考えられる。第二に、打ち上げサービスの競争が加速することで、小型衛星市場の拡大が促進される傾向にあり、結果として日本の衛星やそれに搭載される部品の打ち上げ機会が増えることで、国内メーカーにとって新たなビジネスチャンスが生まれる可能性がある。",
+      "body_chars": 1334
+    },
+    {
+      "title": "Live coverage: SpaceX to launch 80th Starlink mission of 2026",
+      "url": "https://spaceflightnow.com/2026/09/05/live-coverage-spacex-to-launch-80th-starlink-mission-of-2026/",
+      "summary": "SpaceX decided to shift all Starlink missions flying on Falcon 9 rockets to the West Coast as it pushes towards the debut of its Starship-Super Heavy in Florida. Liftoff of the Starlink 15-24 mission from Vandenberg Space Force Base is scheduled during a window that opens at 3:59 a.m. PDT (6:59 a.m. EDT / 1059 UTC).",
+      "image": "http://spaceflightnow.com/wp-content/uploads/2026/04/20260414-Falcon-9-File.jpg",
+      "published": "2026-09-05T22:06:47Z",
+      "source": "Spaceflight Now",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "SpaceX、スターリンク第80次打ち上げ",
+      "summary_ja": "SpaceXはフロリダでのスターシップ・スーパーヘビー初打ち上げに向けた準備を推し進める中、ファルコン9で運用されるスターリンク全ミッションを西海岸にシフトすることを決定した。ヴァンデンバーグ宇宙軍基地からのスターリンク15-24ミッション打ち上げは、太平洋夏時間午前3時59分（東部夏時間午前6時59分／1059 UTC）開始のウィンドウで予定されている。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
       "title": "",
       "url": "https://www.nasaspaceflight.com/2026/09/114908/",
       "summary": "Cape neighbors Stoke and Relativity advance LC-14 and LC-16 toward first flights Along Missile Row… The post appeared first on NASASpaceFlight.com .",
@@ -42,6 +97,20 @@
       "translated_ja": true,
       "title_ja_broken": false,
       "body_skip": "no_body"
+    },
+    {
+      "title": "Isar Aerospace achieves first launch to orbit from continental Europe",
+      "url": "https://www.esa.int/Enabling_Support/Space_Transportation/Boost/Isar_Aerospace_achieves_first_launch_to_orbit_from_continental_Europe",
+      "summary": "From the ESA Blogs.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/09/spectrum_launches_to_orbit/27452129-2-eng-GB/Spectrum_launches_to_orbit_card_full.jpg",
+      "published": "2026-09-05T20:24:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "イザー・エアロスペース、欧州大陸初の軌道打ち上げ達成",
+      "summary_ja": "ESAブログから",
+      "translated_ja": true,
+      "title_ja_broken": false
     },
     {
       "title": "FAST finds two mysterious hydrogen clouds with no visible stars",
@@ -109,7 +178,7 @@
       "title": "Private German rocket makes history, reaches orbit from European soil",
       "url": "https://www.space.com/space-exploration/launches-spacecraft/isar-aerospace-second-launch-norway-andoya-spaceport-spectrum-rocket",
       "summary": "Isar Aerospace's Spectrum rocket made history today (Sept. 5), becoming the first vehicle ever to reach orbit from European soil.",
-      "image": "https://cdn.mos.cms.futurecdn.net/K5YFiwFEXDGQeTecwrNxcY-1280-80.jpg",
+      "image": "https://cdn.mos.cms.futurecdn.net/CQvDAjNriBWKJva9TUiy4Z-1280-80.jpg",
       "published": "2026-09-05T14:00:00+00:00",
       "source": "Space.com",
       "source_id": "space_com",
@@ -669,7 +738,9 @@
       "title_ja": "週の写真：2026年8月31日～9月4日",
       "summary_ja": "週の写真：2026年8月31日～9月4日",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_ja": "欧州宇宙機関（ESA）が複数の衛星ミッションで重要な段階を同時進行させている。FLEX衛星とSentinel-3C衛星が打ち上げ準備の最終工程へと進み、SambaとTango衛星の再突入が記録され、MAGPIEという新たな枠組みの署名式が行われるなど、欧州の宇宙活動が多くの側面で展開している。この数日間の記録に見られるのは、新しい衛星の投入準備、衛星ライフサイクルの終了段階の管理、そして国際協力体制の構築が並行して進む、宇宙活動の多面的な構図である。\n\nFLEXとSentinel-3Cがシーリングの処理を受けている段階は、これらが打ち上げロケットやペイロードフェアリングへの搭載準備を進めていることを示唆している。Sentinel-3Cはコペルニクス計画に基づく地球観測衛星であり、欧州が継続的な衛星観測データの供給を目指していることが分かる。複数の観測衛星の打ち上げ準備が同時進行している状況は、欧州が衛星観測への投資を強化し、安定的な運用サイクルを構築しようとしていることを示唆する。一方、SambaとTangoの再突入が記録されたという報告から見えるのは、衛星の使用終了後の廃棄処理が追跡・管理されているという実態である。かつての宇宙活動では廃棄後の追跡が十分ではなかった面があるのに対し、デブリ対策が実務レベルでの運用に組み込まれ、衛星ライフサイクルの最終段階まで監視される傾向が強まってきたと考えられる。\n\nこうした複層的な衛星活動の展開は、宇宙産業のサプライチェーンに複数の影響を与える。衛星の投入ペースが維持されることで、衛星本体・搭載機器・部品群への継続的な需要が生まれる。また、衛星の廃棄処理と追跡が標準化されるにつれ、デブリ低減機能や追跡システムといった新しい技術要件がサプライヤーに課される可能性が高まる。さらにMAGPIEの署名式が行われたことは、参加国・機関間での技術基準や仕様の調整が進む可能性を示唆している。こうした国際協力体制の強化は、結果として国際宇宙プロジェクトにおける部品の相互運用性要件を高める可能性を持つ。Sentinel-2による自然災害観測（ネパール洪水の前後撮影記録）に見られるのは、衛星観測が防災・環境監視といった実用的な分野での活用がさらに進むということであり、これは観測ペイロードと処理システムの開発・改善需要が継続することを示唆する。\n\n日本の部品・装置メーカーにとって、欧州の衛星活動の多面的な展開は複数の関わりをもたらす可能性がある。ESAや欧州の宇宙産業と協力する企業のサプライチェーンに参加する道は依然として開かれており、部品供給や製造受託を通じた貢献の機会がある。特にデブリ対策や追跡システムといった新興領域では要件定義が進行中であり、設計段階での参入による差別化が可能な窓口が存在する可能性がある。また国際協力協定による仕様の透明性向上や技術基準の近接化は、日本企業が欧州プログラムへのアクセスを円滑にする可能性を持つ。欧州の衛星フェーズの進展を早期に把握し、要件変化に先制的に対応することで、日本のサプライヤーは受注機会を開拓する立場にあると考えられる。",
+      "body_chars": 1315
     },
     {
       "title": "We played 'Exodus', a sci-fi RPG that should please 'Mass Effect' fans, even if you can't romance the talking octopus",
@@ -771,7 +842,9 @@
       "title_ja": "30億マイル先で彗星誕生を観測",
       "summary_ja": "セントーア族が彗星へと変わる過程を珍しく観測でき、小型氷天体の進化における欠けた環が埋まりつつある。",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_ja": "太陽系の外側を公転する小さな氷の天体が彗星へと変わる過程が、天文学者によって初めて詳細に観測された。このセントウリと呼ばれる非活動的な天体が、活動する彗星へと移行する瞬間を捉えた発見により、太陽系の進化の歴史における長年の謎に光が当たった。\n\n観測対象は450P/LONEOSという天体である。木星とネプチューンの間の軌道を公転するセントウリは、太陽系外部のカイパーベルト領域から過去に放出され、巨大惑星の重力相互作用や通りすがりの恒星からの摂動により現在の軌道に至ったと考えられている。セントウリの軌道は木星、土星、天王星、海王星のいずれかと交差するため、数百万年単位で不安定であり、巨大惑星によって太陽に近づけられたり、太陽系外へ放出されたりする可能性がある。長年にわたり、太陽に近づいたセントウリは周期20年未満の「木星族彗星」へと変化するのではないかと疑われてきたが、その変換過程を直接観測した例はこれまでなかった。\n\nフロリダ大学セントラル校の惑星科学者チャールズ・シャンボーらの研究チームは、ハワイのジェミニ・ノース望遠鏡を用いて450Pの観測を実施した。2019年から2024年にかけて450Pが近日点（太陽に最も近い軌道上の地点）に到達する時期に、固体の核の周りにガスと塵からなる「コマ」が形成される過程を検出したのである。重要なのは、1992年に450Pが土星に接近（距離は約290万マイル）したことで、その軌道が大きく短縮された点である。近日点が木星の軌道のすぐ外側まで移動し、太陽への平均距離が減少した。2024年8月の最後の近日点に到達する際、450Pは以前より大幅に多くの太陽熱を受け、表面と地下の層が加熱されることで、揮発性の氷や閉じ込められたガスが放出され、表面の塵を引き上げてコマを形成したと考えられる。\n\nジェームズ・ウェッブ宇宙望遠鏡（JWST）による詳細な分析から、450Pのコマに二酸化炭素ガスが含まれていることが確認された。450Pのような太陽系外側の天体では、太陽からの距離が遠いため通常の水氷昇華が活動の主因とはならず、むしろ二酸化炭素こそが彗星的活動を駆動する主要な物質なのである。さらに興味深いのは、結晶状の水氷が検出されたことである。太陽系形成初期の原始的な彗星やカイパーベルト天体の氷は通常、分子配置が不規則な非晶質状態であり、多孔質の構造を持つ。450Pが太陽に近づくにつれ、受熱により非晶質氷が規則的な構造を持つ結晶氷へと変化し、その過程で閉じ込められたガスが放出される。つまり結晶氷の存在は、450Pが太陽系誕生45億年前に遡る原始的な状態から、熱による物理的変成を受けていることを示しているのである。\n\nセントウリの中で活動を示すものは極めて稀であり、450Pの観測例はセントウリから木星族彗星への変換という進化段階の初期の過程を研究する上で極めて貴重である。この発見は、太陽系外部からやってきた原始的な物質がいかに太陽系内側へ移動しながら進化していくのか、また長期間にわたってどの程度原始的な氷を保持するのか、さらにはどのような物理プロセスが静かな氷の天体を活動的な彗星へと変えるのかを理解する鍵となる。日本の宇宙観測機器メーカーや部品サプライヤーにとって、こうした天体観測ミッションに用いられる高感度の分光計測センサーや超低温環境での精密計測技術の開発は、今後の需要が高まる重要な領域と考えられる。",
+      "body_chars": 1432
     },
     {
       "title": "若い星々が形作った巨大な空洞 ハッブル宇宙望遠鏡が捉えた大マゼラン雲の星形成領域「N44」",
