@@ -404,16 +404,73 @@ def check_aeo(body: str) -> list[str]:
     return lack
 
 
-def is_duplicate(title: str) -> str | None:
-    """既存記事と主題が重なっていないか。単純な語の重なりで見る。"""
-    words = set(re.findall(r"[ぁ-んァ-ヶ一-龥A-Za-z]{2,}", title))
+def _subject(title: str) -> str:
+    """タイトルの主題部分。「主題 — 製造業への問い」の形なので、副題は捨てる。
+
+    副題は毎回「製造業に何を問うか」「何が求められるか」の言い換えで、
+    ここを比べると全記事が似て見える。主題だけを見る。
+    """
+    t = re.split(r"\s*[—–―\-:：|｜]\s*", title, maxsplit=1)[0]
+    return t.strip(" 　「」『』")
+
+
+def _bigrams(text: str) -> set[str]:
+    """ひらがな・記号を落とし、漢字・カタカナ・英数の並びを2文字ずつ切る。
+
+    語で切ると「欧州初の民間軌道ロケット」が1語になってしまい（旧実装）、
+    「欧州民間ロケットが軌道に達した」と1語も一致せず、同じ出来事の記事が
+    3日続けて通った（2026-09-06〜08）。文字の並びで比べれば、言い換えても
+    「欧州」「民間」「ロケット」「軌道」が残るので拾える。
+    """
+    core = re.sub(r"[^一-龥ァ-ヶーA-Za-z0-9]", "", _subject(text))
+    core = core.replace("ー", "")
+    return {core[i:i + 2] for i in range(len(core) - 1)}
+
+
+def same_topic(a: str, b: str) -> bool:
+    """2つのタイトルが同じ出来事を扱っているか。"""
+    A, B = _bigrams(a), _bigrams(b)
+    if not A or not B:
+        return False
+    inter = A & B
+    return len(inter) >= 3 and len(inter) / min(len(A), len(B)) >= 0.5
+
+
+def recent_titles(days: int = 30) -> list[tuple[str, str]]:
+    """直近N日に公開した記事の (ファイル名, タイトル)。"""
+    today = datetime.date.today()
+    out = []
     for f in ARTICLES.glob("*.ja.md"):
-        m = re.search(r"title: (.+)", f.read_text(encoding="utf-8"))
+        t = f.read_text(encoding="utf-8")
+        m = re.search(r"^title:\s*(.+)$", t, re.M)
+        d = re.search(r"^date:\s*['\"]?(\d{4}-\d{2}-\d{2})", t, re.M)
         if not m:
             continue
-        other = set(re.findall(r"[ぁ-んァ-ヶ一-龥A-Za-z]{2,}", m.group(1)))
-        if words and len(words & other) / len(words) >= 0.6:
+        if d and (today - datetime.date.fromisoformat(d.group(1))).days > days:
+            continue
+        out.append((f.name, m.group(1).strip()))
+    return out
+
+
+def is_duplicate(title: str) -> str | None:
+    """既存記事と同じ出来事を扱っていないか。全記事と比べる。"""
+    for f in ARTICLES.glob("*.ja.md"):
+        m = re.search(r"^title:\s*(.+)$", f.read_text(encoding="utf-8"), re.M)
+        if m and same_topic(title, m.group(1)):
             return f.name
+    return None
+
+
+def covered_recently(item: dict, days: int = 30) -> str | None:
+    """このニュースの出来事を、直近N日の記事で既に書いていないか（生成前に見る）。
+
+    生成してから重複に気づくと、その日は何も出せずに終わる。
+    候補の段階で落とせば、次の候補に進める。
+    """
+    cand = item.get("title_ja") or item.get("title") or ""
+    for name, t in recent_titles(days):
+        if same_topic(cand, t):
+            return name
     return None
 
 
@@ -450,6 +507,11 @@ def main() -> int:
     item = body = None
     for c in cands:
         log(f"候補: {(c.get('title_ja') or c.get('title'))[:56]}")
+        dup = covered_recently(c)
+        if dup:
+            log(f"  同じ出来事を最近書いている（{dup}）ため次の候補へ")
+            state.setdefault("used_urls", []).append(c.get("url"))
+            continue
         b = fulltext.fetch_body(c.get("url", ""))
         if b and len(b) >= 600:
             item, body = c, b
