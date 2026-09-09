@@ -39,7 +39,7 @@ media_step "本文要約" python3 -m uchuchu.collectors.fulltext --limit=20
 media_step "調達の締切" python3 -m uchuchu.collectors.procurement_detail --limit=40
 
 # 3. 内部リンク検査 → ビルド → 公開 → IndexNow
-media_step "公開" ./tools/deploy.sh
+media_step_required "公開" ./tools/deploy.sh
 
 # 4. 収集したデータをリポジトリへ戻す。
 #    deploy.sh は dist/ を gh-pages へ送るだけなので、ここで戻さないと
