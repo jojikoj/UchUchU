@@ -20,6 +20,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -1447,8 +1448,10 @@ class Builder:
         print(f"  data: news={len(self.news_raw)} launches={len(self.launches_raw)} "
               f"papers={len(self.papers_raw)}")
         # dist をクリーン
+        # macOS Python 3.9 では shutil.rmtree が拡張属性付きディレクトリで
+        # os.rmdir ENOTEMPTY を起こすため、システムの rm -rf を使う
         if config.DIST_DIR.exists():
-            shutil.rmtree(config.DIST_DIR)
+            subprocess.run(['rm', '-rf', str(config.DIST_DIR)], check=True)
         config.DIST_DIR.mkdir(parents=True)
         for lang in config.LANGS:
             self.build_lang(lang)
