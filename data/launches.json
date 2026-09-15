@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T09:35:23.315391+00:00",
+  "generated_at": "2026-09-15T21:37:58.206160+00:00",
   "count": 200,
   "items": [
     {
@@ -28,7 +28,7 @@
     {
       "id": "17c71937-dd80-406f-bb47-0c9ee9a24276",
       "name": "Falcon 9 Block 5 | USSF-259",
-      "net": "2026-09-16T01:00:00Z",
+      "net": "2026-09-16T02:18:38Z",
       "window_end": "2026-09-16T05:00:00Z",
       "status": "Go",
       "status_name": "Go for Launch",
@@ -45,7 +45,7 @@
       "mission_type": "Government/Top Secret",
       "mission_description": "USSF-259 is a classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcast": "https://x.com/i/broadcasts/1nGeLMWbkpaKX",
+      "webcast": "https://www.youtube.com/watch?v=X0Rc1uf_6nw",
       "upcoming": true
     },
     {
@@ -167,9 +167,9 @@
       "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
       "name": "Starship | Flight 14",
       "net": "2026-09-22T12:15:00Z",
-      "window_end": "2026-09-22T14:14:00Z",
-      "status": "TBC",
-      "status_name": "To Be Confirmed",
+      "window_end": "2026-09-22T13:30:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "SpaceX",
       "provider_country": "USA",
       "provider_url": "https://www.spacex.com/",
@@ -180,9 +180,32 @@
       "location": "SpaceX Starbase, TX, USA",
       "country": "USA",
       "mission": "Flight 14",
-      "mission_type": "Test Flight",
-      "mission_description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3 and the first Starship flight to deploy satellites (a group of Starlink satellites) into stable Low Earth Orbit.",
+      "mission_type": "Communications",
+      "mission_description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3 and the first Starship flight to deploy satellites (a group of Starlink satellites) into stable Low Earth Orbit. The ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 6 orbits around the planet for nearly 10 hours, with splashdown targeted in the Pacific Ocean west…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "7330d83b-c478-426c-8859-f9e3a335876d",
+      "name": "Falcon 9 Block 5 | USSF-xxx (\"R-3\")",
+      "net": "2026-09-27T11:42:00Z",
+      "window_end": "2026-09-27T15:25:00Z",
+      "status": "TBC",
+      "status_name": "To Be Confirmed",
+      "provider": "SpaceX",
+      "provider_country": "USA",
+      "provider_url": "https://www.spacex.com/",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "pad_lat": "34.632",
+      "pad_lon": "-120.611",
+      "location": "Vandenberg SFB, CA, USA",
+      "country": "USA",
+      "mission": "USSF-xxx (\"R-3\")",
+      "mission_type": "Government/Top Secret",
+      "mission_description": "Note: Official USSF designation to be confirmed. A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcast": null,
       "upcoming": true
     },
@@ -4575,29 +4598,6 @@
       "mission_description": "A pair of demonstration satellites for Direct-To-Cell (DTC) communications from Low Earth Orbit for SpaceSail and China Mobile: * SpaceSail DTC 01 * CMCC-02",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhuque-2e_y6_la_image_20260609122825.jpeg",
       "webcast": null,
-      "upcoming": false
-    },
-    {
-      "id": "114577dc-7617-461c-aaeb-9bd0f64b5a4b",
-      "name": "Falcon 9 Block 5 | Starlink Group 10-35",
-      "net": "2026-06-08T10:13:50Z",
-      "window_end": "2026-06-08T14:07:00Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "SpaceX",
-      "provider_country": "USA",
-      "provider_url": "https://www.spacex.com/",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "pad_lat": "28.56194122",
-      "pad_lon": "-80.57735736",
-      "location": "Cape Canaveral SFS, FL, USA",
-      "country": "USA",
-      "mission": "Starlink Group 10-35",
-      "mission_type": "Communications",
-      "mission_description": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcast": "https://www.youtube.com/watch?v=oCtjRao7f0k",
       "upcoming": false
     }
   ]
