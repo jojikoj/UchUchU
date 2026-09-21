@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:33:35.715360+00:00",
+  "generated_at": "2026-09-21T21:35:20.239381+00:00",
   "count": 200,
   "items": [
     {
@@ -210,6 +210,29 @@
       "upcoming": true
     },
     {
+      "id": "67213393-7983-4c06-8b44-b8c785a5ed79",
+      "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
+      "net": "2026-10-01T18:08:00Z",
+      "window_end": "2026-10-01T20:09:00Z",
+      "status": "TBC",
+      "status_name": "To Be Confirmed",
+      "provider": "SpaceX",
+      "provider_country": "USA",
+      "provider_url": "https://www.spacex.com/",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "pad_lat": "34.632",
+      "pad_lon": "-120.611",
+      "location": "Vandenberg SFB, CA, USA",
+      "country": "USA",
+      "mission": "Transporter 18 (Dedicated SSO Rideshare)",
+      "mission_type": "Dedicated Rideshare",
+      "mission_description": "Dedicated rideshare flight to a sun-synchronous orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "6b89cfc8-8880-4b5b-856c-0e547d45b639",
       "name": "SR75 | Flight 2",
       "net": "2026-10-05T00:00:00Z",
@@ -366,29 +389,6 @@
       "mission": "SDA Tranche 1 Transport Layer A",
       "mission_type": "Government/Top Secret",
       "mission_description": "Tranche 1 Transport Layer A is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites. The constellation w…",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcast": null,
-      "upcoming": true
-    },
-    {
-      "id": "67213393-7983-4c06-8b44-b8c785a5ed79",
-      "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
-      "net": "2026-10-31T00:00:00Z",
-      "window_end": "2026-10-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "SpaceX",
-      "provider_country": "USA",
-      "provider_url": "https://www.spacex.com/",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "pad_lat": "34.632",
-      "pad_lon": "-120.611",
-      "location": "Vandenberg SFB, CA, USA",
-      "country": "USA",
-      "mission": "Transporter 18 (Dedicated SSO Rideshare)",
-      "mission_type": "Dedicated Rideshare",
-      "mission_description": "Dedicated rideshare flight to a sun-synchronous orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
       "upcoming": true
