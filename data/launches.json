@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T21:35:20.239381+00:00",
+  "generated_at": "2026-09-22T09:37:32.988431+00:00",
   "count": 200,
   "items": [
     {
@@ -164,29 +164,6 @@
       "upcoming": true
     },
     {
-      "id": "97c6f5e1-299e-4652-b72d-9618ac047076",
-      "name": "Falcon 9 Block 5 | Starlink Group 15-25",
-      "net": "2026-09-30T16:00:00Z",
-      "window_end": "2026-09-30T20:00:00Z",
-      "status": "Go",
-      "status_name": "Go for Launch",
-      "provider": "SpaceX",
-      "provider_country": "USA",
-      "provider_url": "https://www.spacex.com/",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "pad_lat": "34.632",
-      "pad_lon": "-120.611",
-      "location": "Vandenberg SFB, CA, USA",
-      "country": "USA",
-      "mission": "Starlink Group 15-25",
-      "mission_type": "Communications",
-      "mission_description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcast": "https://x.com/i/broadcasts/1yKAPwdemygxb",
-      "upcoming": true
-    },
-    {
       "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
       "name": "Falcon 9 Block 5 | Crew-13",
       "net": "2026-10-01T15:10:06Z",
@@ -299,6 +276,29 @@
       "mission_description": "NeonSat-2 to 6 are part of the South Korean government's Earth observation micro-satellite constellation NeonSat (New-space Earth Observation Satellite). The NeonSat constellation is the first satellite system developed by the government using a mass-production approach for precise monitoring of the Korean Peninsula.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/nuri_liftoff_2_image_20240820080542.jpeg",
       "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "97c6f5e1-299e-4652-b72d-9618ac047076",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-25",
+      "net": "2026-10-10T16:00:00Z",
+      "window_end": "2026-10-10T20:00:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
+      "provider": "SpaceX",
+      "provider_country": "USA",
+      "provider_url": "https://www.spacex.com/",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "pad_lat": "34.632",
+      "pad_lon": "-120.611",
+      "location": "Vandenberg SFB, CA, USA",
+      "country": "USA",
+      "mission": "Starlink Group 15-25",
+      "mission_type": "Communications",
+      "mission_description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcast": "https://x.com/i/broadcasts/1yKAPwdemygxb",
       "upcoming": true
     },
     {
