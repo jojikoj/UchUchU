@@ -1293,6 +1293,21 @@ class Builder:
                 {**c, "href": f"{'../' * (depth - 1)}{c['id']}/"} for c in comp_cats
             ]
             ctx["current_cat"] = cid
+            # カテゴリ別ページの title と description。カテゴリ名を入れないと
+            # 7カテゴリが全部「宇宙産業 企業データベース」で重複する（2026-09-22）。
+            if cid:
+                cname = next((c["name"] for c in comp_cats if c["id"] == cid), cid)
+                ncomp = len(ctx["companies"])
+                if lang == "en":
+                    ctx["cat_label"] = f"Space Companies — {cname}"
+                    ctx["page_description"] = (
+                        f"{ncomp} Japanese companies in {cname} for the space industry. "
+                        f"Business area, location and contact, organised for sourcing.")
+                else:
+                    ctx["cat_label"] = f"{cname}の宇宙関連企業"
+                    ctx["page_description"] = (
+                        f"{cname}を手がける宇宙関連企業{ncomp}社の一覧。"
+                        f"事業領域・所在地・連絡先を、発注先を探す側から見て整理しています。")
             ctx["back_to_all"] = "../" if cid else "./"
             # 地域での絞り込み。サプライヤーを探す側は「近さ」で候補を絞る。
             # 本社所在地から機械的に作るので、事実以上のことを言わない。
