@@ -7,8 +7,11 @@
      GitHub Pages は HTTPヘッダを設定できないので、ヘッダ相当を meta で指定する。
      nosniff と X-Frame-Options は meta では効かず、GitHub Pages では打つ手がない。 #}
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>{% block title %}{{ site_name }}{% endblock %} · {{ site_name }}</title>
-  <meta name="description" content="{{ page_description or site_description }}">
+  {# 分割ページは title と description にページ番号を入れる。
+     入れないと news/ が255ページ、papers/ が131ページ、まったく同じ title で並び、
+     検索側から中身の違わない重複として扱われる（2026-09-22 実測・修正）。 #}
+  <title>{% block title %}{{ site_name }}{% endblock %}{{ page_label }} · {{ site_name }}</title>
+  <meta name="description" content="{{ page_description or site_description }}{{ page_label_desc }}">
   <link rel="canonical" href="{{ canonical }}">
   <!-- Alternate languages -->
   {% for l, href in alternates.items() %}

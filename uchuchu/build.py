@@ -699,6 +699,25 @@ def _order_featured(items: list[dict]) -> list[dict]:
 
 
 # --- ページ分割 ---------------------------------------------------------
+def _chunk_lastmod(chunk: list) -> str:
+    """そのページに実際に載っている項目のうち、いちばん新しい日付（YYYY-MM-DD）。
+
+    一覧ページの lastmod に毎日のビルド日を入れると、1,100件が毎日
+    「更新された」と名乗ることになり、検索側は lastmod ごと信用しなくなる。
+    ページ10に載っているのは数か月前の項目なので、その日付を入れる。
+    """
+    best = ""
+    for it in chunk:
+        for key in ("published", "updated", "date", "issued", "net"):
+            v = it.get(key)
+            if v:
+                d = str(v)[:10]
+                if len(d) == 10 and d > best:
+                    best = d
+                break
+    return best
+
+
 def _paginate(items: list, size: int) -> list[list]:
     """items を size 件ずつに分割する。空でも1ページは返す（空表示のため）。"""
     if not items:
@@ -808,6 +827,9 @@ class Builder:
             "site_tagline": config.SITE_TAGLINE[lang],
             "site_description": config.SITE_DESCRIPTION[lang],
             "page_description": page_description,
+            # 分割ページだけ _mark_page が上書きする（「（3ページ目）」）。
+            "page_label": "",
+            "page_label_desc": "",
             "rel": rel,
             "asset": asset,
             "asset_ver": self.asset_ver,
@@ -829,6 +851,28 @@ class Builder:
                 if lang != "en" or s["lang"] == "en"
             ],
         }
+
+    def _mark_page(self, lang: str, ctx: dict, path: str,
+                   pno: int, total: int, chunk: list) -> None:
+        """分割ページに「何ページ目か」を持たせ、lastmod を実際の内容に合わせる。
+
+        2026-09-22 まで、ニュース255ページ・論文131ページ・トピック184ページが
+        すべて同じ title（「宇宙開発ニュース · UchUchU」）で、lastmod も全部
+        その日のビルド日だった。検索側から見ると中身の違わないページが
+        毎日更新されていることになり、実測で「検出 - インデックス未登録」が並んでいた。
+        ページを消すのではなく、1ページずつ別物だと分かる形にする。
+        """
+        if pno > 1:
+            ctx["page_no"] = pno
+            ctx["page_total"] = total
+            ctx["page_label"] = (f"（{pno}ページ目）" if lang != "en"
+                                 else f" (Page {pno})")
+            ctx["page_label_desc"] = (
+                f" ／ {pno}ページ目（全{total}ページ）" if lang != "en"
+                else f" / Page {pno} of {total}")
+        d = _chunk_lastmod(chunk)
+        if d:
+            self.lastmod_by_lang[lang][path.rstrip("/") + "/"] = d
 
     def _source_chips(self, lang: str, up: int, current: str | None,
                       available: set[str] | None = None) -> list[dict]:
@@ -1016,6 +1060,7 @@ class Builder:
                 ctx = self._ctx(lang, depth=depth, active=active, path=path)
                 ctx[var] = chunk
                 ctx["pagination"] = _pagination_ctx(pno, len(chunks))
+                self._mark_page(lang, ctx, path, pno, len(chunks), chunk)
                 # 日本の打ち上げは1ページ目に別枠で出す（件数が少なく埋もれるため）
                 # 公告を見た人が次に要るのは「どうやって入るのか」。
                 # 参入ガイドは検索から見つけてもらえていないので、
@@ -1076,6 +1121,7 @@ class Builder:
                                 page_description=f"{src_name} — {_t('news.subtitle', lang)}")
                 ctx["news"] = chunk
                 ctx["pagination"] = _pagination_ctx(pno, len(chunks))
+                self._mark_page(lang, ctx, path, pno, len(chunks), chunk)
                 ctx["source_chips"] = self._source_chips(
                     lang, up=depth - 1, current=sid, available=live_sources)
                 ctx["source_name"] = src_name
@@ -1134,6 +1180,7 @@ class Builder:
                                 page_description=topics.desc(tp["id"], lang))
                 ctx["news"] = chunk
                 ctx["pagination"] = _pagination_ctx(pno, len(chunks))
+                self._mark_page(lang, ctx, path, pno, len(chunks), chunk)
                 ctx["topic_name"] = topics.name(tp["id"], lang)
                 ctx["topic_desc"] = topics.desc(tp["id"], lang)
                 ctx["topic_id"] = tp["id"]
