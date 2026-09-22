@@ -586,6 +586,8 @@ def build_sitemap(base: str, paths_by_lang: dict[str, list[str]],
     def prio(p: str) -> str:
         if p in priority:
             return priority[p]
+        if p.startswith("launches/") and not p.rstrip("/").rsplit("/", 1)[-1].isdigit():
+            return "0.8"     # 打ち上げの絞り込み（日本・事業者・射場・月）
         if p.startswith("articles/"):
             return "0.7"     # 自作記事は価値が高い
         if "/source/" in p:

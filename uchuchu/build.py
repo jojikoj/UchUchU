@@ -28,7 +28,7 @@ from pathlib import Path
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import business, companies, config, indexnow, seo, topics
+from . import business, companies, config, indexnow, launch_pages, seo, topics
 from .i18n import t as _t
 
 sys.path.insert(0, str(Path.home() / "claude_AIR/TOEcompany/メディア事業部/共通/運用"))
@@ -870,7 +870,12 @@ class Builder:
             ctx["page_label_desc"] = (
                 f" ／ {pno}ページ目（全{total}ページ）" if lang != "en"
                 else f" / Page {pno} of {total}")
-        d = _chunk_lastmod(chunk)
+        # 打ち上げ一覧は「載っている項目の最新日付」が未来（予定時刻）になり、
+        # lastmod に未来日を申告してしまう。予定の集合が変わった日を使う。
+        if ctx.get("active") == "launches":
+            d = self._sig_lastmod(lang, path, chunk)
+        else:
+            d = _chunk_lastmod(chunk)
         if d:
             self.lastmod_by_lang[lang][path.rstrip("/") + "/"] = d
 
@@ -984,6 +989,10 @@ class Builder:
         procurement = prepare_procurement(self.procurement_raw, lang)
         articles = load_articles(lang)
         home_label = _t("nav.home", lang)
+        # 打ち上げの絞り込みページ（日本・事業者別・射場別・月別）。
+        # /launches/ の1ページ目と各絞り込みページに同じ入口を出す。
+        filter_pages = launch_pages.build_filter_pages(launches, lang, self.now)
+        launch_nav_all = launch_pages.nav_for(filter_pages, lang, "launches/")
 
         # 内容が変わらないページの lastmod。論文は公開日、記事は更新日。
         lm = self.lastmod_by_lang[lang]
@@ -1074,6 +1083,7 @@ class Builder:
                     ctx["jp_launches"] = [
                         l for l in all_items
                         if l.get("upcoming") and l.get("is_japan")][:4]
+                    ctx["launch_nav"] = launch_nav_all
                 if active == "news":
                     ctx["source_chips"] = self._source_chips(
                         lang, up=depth - 1, current=None, available=live_sources)
@@ -1088,6 +1098,9 @@ class Builder:
                 self._write(lang, path.rstrip("/"),
                             self.env.get_template(tpl).render(**ctx))
                 total_pages_built += 1
+
+        total_pages_built += self._build_launch_filter_pages(
+            lang, filter_pages, home_label)
 
         # 記事詳細（articles/<slug>/ → depth 2）
         for a in articles:
@@ -1390,7 +1403,87 @@ class Builder:
         return (str(s or "").replace("\\", "\\\\").replace(";", r"\;")
                 .replace(",", r"\,").replace("\n", r"\n"))
 
-    def _launch_ics(self, lang: str, launches: list[dict]) -> str:
+    # --- 打ち上げの絞り込みページ -------------------------------------------
+    _LP_STATE = "launch_pages_state.json"
+
+    def _lp_state(self) -> dict:
+        if not hasattr(self, "_lp_state_cache"):
+            path = config.DATA_DIR / self._LP_STATE
+            try:
+                self._lp_state_cache = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                self._lp_state_cache = {}
+        return self._lp_state_cache
+
+    def _sig_lastmod(self, lang: str, path: str, items: list[dict]) -> str:
+        """打ち上げ一覧の lastmod。載っている予定の集合が変わった日を返す。
+
+        カウントダウンは毎日変わるが、それは「ページの更新」ではない。
+        予定の追加・延期・結果の確定があった日だけ進める。指紋と日付は
+        data/launch_pages_state.json に持ち、日次のコミットで引き継ぐ。
+        （以前は載っている項目の最新日付＝未来の予定時刻を lastmod にしていた）
+        """
+        key = f"{lang}:{path.rstrip('/')}/"
+        sig = launch_pages.signature(items)
+        today = self.now.astimezone(launch_pages.JST).strftime("%Y-%m-%d")
+        st = self._lp_state()
+        cur = st.get(key)
+        if not cur or cur.get("sig") != sig:
+            st[key] = {"sig": sig, "lastmod": today}
+        return st[key]["lastmod"]
+
+    def _save_lp_state(self) -> None:
+        if hasattr(self, "_lp_state_cache"):
+            (config.DATA_DIR / self._LP_STATE).write_text(
+                json.dumps(self._lp_state_cache, ensure_ascii=False,
+                           indent=1, sort_keys=True) + "\n",
+                encoding="utf-8")
+
+    def _build_launch_filter_pages(self, lang: str, pages: list[dict],
+                                   home_label: str) -> int:
+        """日本・事業者別・射場別・月別の打ち上げ一覧を書き出す。件数を返す。
+
+        なぜ分けるか: Search Console の実測で付いていた検索語は
+        「jaxa launch schedule」「tanegashima launch schedule」
+        「rocket lab next launch date」で、受け皿が /launches/ 1枚しか無く
+        48〜86位だった（2026-09-09 実測）。同じ実データを、読者の探し方
+        （誰が・どこから・いつ）に合わせた入口に切り直す。中身の定義は
+        launch_pages.py。
+        """
+        host = self.base_url.replace("https://", "").replace("http://", "")
+        prefix = "" if lang == config.DEFAULT_LANG else f"{lang}/"
+        n = 0
+        for fp in pages:
+            path = fp["path"]
+            depth = path.count("/")
+            ctx = self._ctx(lang, depth=depth, active="launches", path=path,
+                            page_description=fp["desc"])
+            ctx["fp"] = fp
+            ctx["page_title"] = fp["title"]
+            ctx["launch_nav"] = launch_pages.nav_for(pages, lang, path)
+            ctx["ics_href"] = f"webcal://{host}/{prefix}{path}launches.ics"
+            ctx["jsonld"] = seo.build_jsonld(
+                self.base_url, lang, "launches",
+                trail=[(home_label, self._url_for(lang, "")),
+                       (_t("nav.launches", lang), self._url_for(lang, "launches/")),
+                       (fp["name"], self._url_for(lang, path))],
+                launches=fp["launches"])
+            self.lastmod_by_lang[lang][path] = self._sig_lastmod(lang, path, fp["launches"])
+            self._write(lang, path.rstrip("/"),
+                        self.env.get_template("launches_filter.html").render(**ctx))
+            # このページに載っている打ち上げだけのカレンダー
+            (self._lang_root(lang) / path / "launches.ics").write_text(
+                self._launch_ics(lang, fp["launches"],
+                                 calname=(f"UchUchU {fp['name']}の打ち上げ" if lang == "ja"
+                                          else f"UchUchU {fp['name']} launches"),
+                                 url_path=path),
+                encoding="utf-8")
+            n += 1
+        self._save_lp_state()
+        return n
+
+    def _launch_ics(self, lang: str, launches: list[dict],
+                    calname: str | None = None, url_path: str = "launches/") -> str:
         """予定の打ち上げをカレンダー購読用の iCalendar にする。
 
         時刻未定（TBD）は分単位の精度が無いが、予定として押さえたい需要が
@@ -1404,7 +1497,7 @@ class Builder:
             "PRODID:-//UchUchU//Launch Schedule//" + lang.upper(),
             "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
             "X-WR-CALNAME:" + self._ics_escape(
-                "UchUchU 打ち上げ予定" if lang == "ja" else "UchUchU Launch Schedule"),
+                calname or ("UchUchU 打ち上げ予定" if lang == "ja" else "UchUchU Launch Schedule")),
             "X-WR-TIMEZONE:" + ("Asia/Tokyo" if lang == "ja" else "UTC"),
             # 購読側が再取得する間隔。日次更新なので12時間で足りる
             "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
@@ -1429,7 +1522,7 @@ class Builder:
                 "SUMMARY:" + self._ics_escape(l.get("name")),
                 "LOCATION:" + self._ics_escape(l.get("location")),
                 "DESCRIPTION:" + self._ics_escape(desc),
-                "URL:" + self._url_for(lang, "launches/"),
+                "URL:" + self._url_for(lang, url_path),
                 # 予定は動く。確定扱いにせず TENTATIVE を明示する
                 "STATUS:" + ("CONFIRMED" if l.get("status_class") == "go" else "TENTATIVE"),
                 "END:VEVENT",

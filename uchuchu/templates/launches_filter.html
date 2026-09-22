@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% from "macros.html" import launch_card %}
+{% block title %}{{ page_title }}{% endblock %}
+{% block og_title %}{{ page_title }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>{{ fp.h1 }}</h1>
+    <p class="page-sub">{{ fp.lead }} {{ t('launches.tz_note') }}</p>
+    {#
+      このページに載っている打ち上げだけのカレンダー。
+      「日本の打ち上げだけ」「SpaceXだけ」を購読したい人に、全件のカレンダーを
+      渡すと予定表が埋まって解除される。絞り込みと同じ粒度で出す。
+    #}
+    <p class="ics-line">
+      <a class="btn btn-ghost btn-sm" href="{{ ics_href }}">{{ fp.ics_label }}</a>
+      <span class="ics-note">{{ t('launches.ics_note') }}</span>
+    </p>
+  </div>
+</section>
+{% include "_launch_nav.html" %}
+<section class="section">
+  <div class="wrap">
+    {% if fp.launches %}
+    {% set ns = namespace(group=None) %}
+    {% if fp.upcoming and fp.launches[0].group != 'today' %}
+    <h2 class="launch-group">{{ t('launches.today') }}</h2>
+    <p class="launch-none">{{ t('launches.none_today') }}</p>
+    {% endif %}
+    {% for l in fp.launches %}
+      {% if l.group != ns.group %}
+        {% if not loop.first %}</div>{% endif %}
+        {% set ns.group = l.group %}
+        <h2 class="launch-group">{{ t('launches.' ~ l.group) }}</h2>
+        <div class="grid grid-launches">
+      {% endif %}
+      {{ launch_card(l, lang, t) }}
+      {% if loop.last %}</div>{% endif %}
+    {% endfor %}
+    {% else %}
+    <p class="empty">{{ t('meta.no_data') }}</p>
+    {% endif %}
+    <p class="launch-back"><a href="{{ rel }}launches/">← {{ t('launches.all_launches') }}</a></p>
+  </div>
+</section>
+{% endblock %}

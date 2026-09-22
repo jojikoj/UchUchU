@@ -1,0 +1,19 @@
+{#
+  打ち上げ予定の絞り込み（日本・事業者別・射場別・月別）。
+  /launches/ と各絞り込みページの両方に出す。検索から絞り込みページに
+  着地した人が、隣の入口へ移れるようにするため。
+#}
+{% if launch_nav %}
+<section class="launch-nav-wrap">
+  <div class="wrap launch-nav">
+    {% for row in launch_nav.rows %}
+    <div class="launch-nav-row">
+      {% if row.label %}<span class="launch-nav-label">{{ row.label }}</span>{% endif %}
+      {% for it in row.entries %}
+      <a class="chip {{ 'on' if it.current }}" href="{{ rel }}{{ it.href }}">{{ it.name }}{% if it.n is not none and it.n > 0 %}<span class="chip-n">{{ it.n }}</span>{% endif %}</a>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

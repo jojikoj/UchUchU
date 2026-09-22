@@ -219,6 +219,7 @@ STRINGS = {
     "launches.ics_note": {
         "ja": "カレンダーアプリに購読登録すると、打ち上げ予定が自動で更新されます。日程は変更されることがあります。",
         "en": "Subscribe once and the schedule updates automatically. Dates are subject to change."},
+    "launches.all_launches": {"ja": "すべての打ち上げ予定へ", "en": "All launches"},
     "launches.tz_note": {"ja": "時刻は日本時間（括弧内はUTC）。",
                          "en": "Times are in UTC."},
     "launches.japan": {"ja": "日本の打ち上げ", "en": "Japanese launches"},
