@@ -493,6 +493,28 @@ def main() -> int:
         log(f"本日分は作成済み（{today_path.name}）— 何もしない")
         return 0
 
+    # 生成を始める前に認証を確認する。
+    # 認証切れのまま generate() を呼ぶと、claude CLI が
+    # "Not logged in · Please run /login"（rc=1）を返し、
+    # 3回リトライしてすべて失敗した後に「基準未達のため公開しない」と記録される。
+    # これは誤診（品質の問題ではなく認証の問題）なので、ここで早期に検出する。
+    # タイムアウトは「確認できなかった」として生成を続ける（対話セッション内など）。
+    try:
+        _probe = subprocess.run(
+            ["claude", "-p", "--model", "haiku", "OK"],
+            capture_output=True, text=True, timeout=30,
+            stdin=subprocess.DEVNULL)
+        if _probe.returncode != 0:
+            _probe_msg = (_probe.stdout or _probe.stderr or "").strip()[:120] or f"rc={_probe.returncode}"
+            log(f"⚠️ claude CLI に接続できません（{_probe_msg}）。"
+                f"今日は記事を作れません。"
+                f"Mac mini で claude を起動し /login してください。")
+            return 1
+    except subprocess.TimeoutExpired:
+        log("⚠️ claude CLI の応答確認がタイムアウト（30秒）。生成を続行します。")
+    except Exception as e:
+        log(f"⚠️ claude CLI の応答確認に失敗（{type(e).__name__}: {e}）。生成を続行します。")
+
     state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
     used = set(state.get("used_urls", []))
 
