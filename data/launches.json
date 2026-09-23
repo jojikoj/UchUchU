@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:35:10.449555+00:00",
+  "generated_at": "2026-09-23T09:33:26.676117+00:00",
   "count": 200,
   "items": [
     {
@@ -168,8 +168,8 @@
       "name": "Falcon 9 Block 5 | Crew-13",
       "net": "2026-10-01T15:10:06Z",
       "window_end": "2026-10-01T15:10:06Z",
-      "status": "TBC",
-      "status_name": "To Be Confirmed",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "SpaceX",
       "provider_country": "USA",
       "provider_url": "https://www.spacex.com/",
@@ -183,7 +183,7 @@
       "mission_type": "Human Exploration",
       "mission_description": "SpaceX Crew-13 is the thirteenth crewed operational flight of a Crew Dragon spacecraft to the International Space Station as part of NASA's Commercial Crew Program.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
-      "webcast": null,
+      "webcast": "https://x.com/i/broadcasts/1qxvvepEVdRxB",
       "upcoming": true
     },
     {
