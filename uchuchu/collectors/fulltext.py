@@ -151,7 +151,7 @@ def summarize(title: str, body: str) -> str:
     import subprocess
     try:
         proc = subprocess.run(
-            [translate.CLAUDE_BIN, "--model", BATCH_MODEL, "-p", prompt],
+            [translate.CLAUDE_BIN, "--tools", "", "--model", BATCH_MODEL, "-p", prompt],
             capture_output=True, text=True, timeout=300)
     except Exception as e:
         print(f"    [summary] 呼び出し失敗: {type(e).__name__}", file=sys.stderr)

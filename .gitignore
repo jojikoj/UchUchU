@@ -17,3 +17,9 @@ venv/
 # 実行機(mini)と作業機(MBAir)の両方が別々に生成するため、追跡していると
 # 毎回 pull で衝突する（AIの鬼で 2026-08-21 に日次の commit が丸ごと止まった）。
 static/search-*.json
+
+# claude -p の副作用で吐かれる JSON（--tools "" を付け忘れた生成が直下に書く）
+/article_bodies*.json
+/output_*.json
+/generated_*.json
+/*_generated.json
