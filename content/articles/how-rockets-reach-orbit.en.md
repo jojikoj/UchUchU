@@ -33,6 +33,13 @@ Watch a launch closely: the rocket points straight up at liftoff, then gradually
 
 This maneuver is called a "gravity turn." The path a rocket traces to space is not a straight arrow but a long, laid-over curve.
 
+| Feature | Value |
+|---|---|
+| Edge of space (Kármán line) | 100 km |
+| Typical low Earth orbit altitude | ~200–2,000 km |
+| Orbital speed at LEO | 7.9 km/s (28,000 km/h) |
+| Speed ratio vs. airliner | ~30× faster |
+
 ## Summary
 
 - The edge of space (100 km) is closer than you think.
@@ -41,3 +48,5 @@ This maneuver is called a "gravity turn." The path a rocket traces to space is n
 - That's why rockets ultimately accelerate sideways, not up.
 
 Next time you watch a launch stream, notice *when* the vehicle starts to tilt. That moment is the real battle for reaching space.
+
+Learn more about how orbital mechanics fit into the broader landscape in our [2026 space development overview](/en/articles/space-2026-overview/).

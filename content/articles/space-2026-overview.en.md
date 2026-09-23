@@ -19,11 +19,19 @@ Today's space activity concentrates in three broad regions.
 
 Think of LEO as the "economic zone," the Moon as the "next frontier," and Mars as the "long-term vision." Frame the headlines this way and they suddenly fall into place.
 
+| Region | Altitude | Role | Economic Focus |
+|---|---|---|---|
+| Low Earth Orbit (LEO) | Below ~2,000 km | Economic zone | Satellites, communications, human stations — high activity |
+| Cislunar space | ~384,000 km | Next frontier | Resource exploration, building sustained presence |
+| Mars and deep space | Beyond cislunar | Long-term vision | Science missions, future human exploration |
+
 ## It All Started With Collapsing Launch Costs
 
 The single biggest change of the past decade is **the price of getting mass to orbit**. With reusable rockets in routine service, the cost per kilogram has dropped by an order of magnitude.
 
 When costs fall, businesses that never closed the books before all launch at once — constellations of thousands of satellites, small-satellite ventures, space tourism. Much of what is happening now cascades from this one shift.
+
+To understand why reaching orbit is so demanding and how reusable rockets have transformed access to space, see [Why Can a Rocket "Stay" in Space?](/en/articles/how-rockets-reach-orbit/)
 
 > Technological breakthroughs usually reach society in the form of a price.
 
@@ -38,3 +46,12 @@ On the private side, startups tackling lunar landers and on-orbit servicing are 
 At UchUchU we track these developments through three lenses: **news, launch schedules, and research trends**. Rather than just chasing breaking stories, ask "which of the three theaters does this launch serve?" — and fragmented headlines start to line up into a single thread.
 
 Space is one of the fastest-moving frontiers we have. Let's watch where it stands, together, from here.
+
+## Summary
+
+- Space development has shifted from an exclusive national endeavor to a self-sustaining industry
+- Three geographic regions now dominate: Low Earth Orbit (economic), the Moon (next frontier), and Mars (long-term vision)
+- Reusable rockets have collapsed launch costs, triggering cascading business opportunities in satellites, communications, and space services
+- Private capital now flows alongside government funding, making space ventures economically sustainable
+- Japan holds distinctive strengths in precision landing, deep-space operations, and manufacturing infrastructure
+- Manufacturing access points exist across satellite production, on-orbit services, and ground support equipment
