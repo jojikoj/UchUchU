@@ -246,22 +246,17 @@ def _page(lang: str, path: str, kind: str, key: str, name: str,
 
     # リード文は実データからだけ作る（件数・次回・射場）。
     # description（検索結果の説明文）は同じ材料で短く別に作る（120字前後）。
+    nxt_s = next_phrase(nxt, lang, with_site=kind != "site")
     if ja:
-        loc = _site_meta(nxt["location"])["ja"] if nxt and nxt.get("location") else ""
-        where = f"、{loc}" if loc and kind != "site" else ""
         head = (f"{name}の打ち上げ予定{len(upcoming)}件と直近の結果{len(past)}件を日本時間で掲載。"
                 if kind != "month" else
                 f"{name}に予定・実施されたロケット打ち上げ{len(items)}件を日本時間で一覧。")
-        nxt_s = f"次回は{nxt.get('name')}（{nxt.get('net_short')}{where}）。" if nxt else ""
         lead = head + nxt_s + "時刻が決まっていない打ち上げは「時刻未定」と明示し、毎日更新しています。"
         desc = head + nxt_s + "カレンダー購読可。"
     else:
-        loc = nxt.get("location") if nxt else ""
-        where = f" from {loc}" if loc and kind != "site" else ""
         head = (f"{len(upcoming)} upcoming launches and {len(past)} recent results for {name}, times in UTC."
                 if kind != "month" else
                 f"All {len(items)} rocket launches scheduled or flown in {name}, times in UTC.")
-        nxt_s = f" Next: {nxt.get('name')} ({nxt.get('net_short')}{where})." if nxt else ""
         lead = head + nxt_s + " Launches without a fixed time are marked TBD. Updated daily."
         desc = head + nxt_s + " Calendar subscription available."
 
@@ -271,6 +266,56 @@ def _page(lang: str, path: str, kind: str, key: str, name: str,
         "title": title, "h1": h1, "lead": lead, "desc": desc, "ics_label": ics,
         "always": always,
     }
+
+
+def next_phrase(nxt: dict | None, lang: str, *, with_site: bool = True,
+                label: str | None = None) -> str:
+    """「次回は<名前>（<日付>、<射場>）。」の1文。実データからだけ作る。
+
+    絞り込みページのリード文・description と、本体 /launches/ の description が
+    同じ型になるよう、ここ1か所で組む。次回が無ければ空文字。
+    """
+    if not nxt:
+        return ""
+    loc = nxt.get("location") or ""
+    if lang == "ja":
+        loc = _site_meta(loc)["ja"] if loc else ""
+        where = f"、{loc}" if loc and with_site else ""
+        return f"{label or '次回'}は{nxt.get('name')}（{nxt.get('net_short')}{where}）。"
+    where = f" from {loc}" if loc and with_site else ""
+    return f" {label or 'Next'}: {nxt.get('name')} ({nxt.get('net_short')}{where})."
+
+
+def main_page_meta(lang: str, launches: list[dict]) -> dict:
+    """本体 /launches/（と /en/launches/）の title・h1・description。
+
+    なぜ別に組むか（2026-09-23）: Search Console で付いている検索語は
+    「jaxa launch schedule」「tanegashima launch schedule」
+    「rocket lab next launch date」。9/22 に足した絞り込みページは検索語入りに
+    したが、内部リンクと sitemap の priority が集中する本体だけが
+    「ロケット打ち上げ予定 · UchUchU」＋サイト共通の description のままだった。
+    title は検索語を前に置き、h1 は短く、description は絞り込みページと同じ型で
+    実データ（件数・次回・日本の次回）から作る。
+    """
+    upcoming = [l for l in launches if l.get("upcoming")]
+    past = [l for l in launches if not l.get("upcoming")]
+    nxt = upcoming[0] if upcoming else None
+    jp = next((l for l in upcoming if l.get("is_japan")), None)
+    if lang == "ja":
+        title = "ロケット打ち上げ予定【日本時間】JAXA・H3・SpaceX・Rocket Lab の次回はいつ"
+        h1 = "ロケット打ち上げ予定（日本時間）"
+        desc = (f"今後の打ち上げ予定{len(upcoming)}件と直近の結果{len(past)}件を日本時間で掲載。"
+                + next_phrase(nxt, "ja")
+                + next_phrase(jp, "ja", label="日本の次回")
+                + "射場別・事業者別・月別の一覧とカレンダー購読（.ics）あり。")
+    else:
+        title = "Rocket Launch Schedule — Next Launch Dates (JAXA, SpaceX, Rocket Lab)"
+        h1 = "Rocket Launch Schedule"
+        desc = (f"{len(upcoming)} upcoming rocket launches and {len(past)} recent results, times in UTC."
+                + next_phrase(nxt, "en")
+                + next_phrase(jp, "en", label="Next from Japan")
+                + " Browse by launch site, provider or month, and subscribe to the calendar (.ics).")
+    return {"title": title, "h1": h1, "desc": desc}
 
 
 def nav_for(pages: list[dict], lang: str, current: str | None) -> dict:

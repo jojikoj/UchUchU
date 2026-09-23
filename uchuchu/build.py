@@ -1079,6 +1079,13 @@ class Builder:
                             "space-quality-requirements")
                     by_slug = {a["slug"]: a for a in articles}
                     ctx["guides"] = [by_slug[s] for s in want if s in by_slug]
+                if active == "launches":
+                    # 本体の title/h1/description は検索語入りにし、実データから組む
+                    # （絞り込みページと同じ型。理由は launch_pages.main_page_meta）。
+                    meta = launch_pages.main_page_meta(lang, all_items)
+                    ctx["page_title"] = meta["title"]
+                    ctx["page_h1"] = meta["h1"]
+                    ctx["page_description"] = meta["desc"]
                 if active == "launches" and pno == 1:
                     ctx["jp_launches"] = [
                         l for l in all_items
@@ -1413,6 +1420,8 @@ class Builder:
                 self._lp_state_cache = json.loads(path.read_text(encoding="utf-8"))
             except (OSError, ValueError):
                 self._lp_state_cache = {}
+            # 今回のビルドで参照した key。保存時にこれ以外（消えた slug の残骸）を捨てる。
+            self._lp_state_used: set[str] = set()
         return self._lp_state_cache
 
     def _sig_lastmod(self, lang: str, path: str, items: list[dict]) -> str:
@@ -1427,6 +1436,7 @@ class Builder:
         sig = launch_pages.signature(items)
         today = self.now.astimezone(launch_pages.JST).strftime("%Y-%m-%d")
         st = self._lp_state()
+        self._lp_state_used.add(key)
         cur = st.get(key)
         if not cur or cur.get("sig") != sig:
             st[key] = {"sig": sig, "lastmod": today}
@@ -1434,8 +1444,12 @@ class Builder:
 
     def _save_lp_state(self) -> None:
         if hasattr(self, "_lp_state_cache"):
+            # 今回生成した key だけ残す。slug が変わった旧 key
+            # （provider/orienspace-technology/ 等）が二重に残り続けていた（2026-09-23）。
+            # キャッシュ自体は削らない（後続の言語がまだ参照するため）。
+            kept = {k: v for k, v in self._lp_state_cache.items() if k in self._lp_state_used}
             (config.DATA_DIR / self._LP_STATE).write_text(
-                json.dumps(self._lp_state_cache, ensure_ascii=False,
+                json.dumps(kept, ensure_ascii=False,
                            indent=1, sort_keys=True) + "\n",
                 encoding="utf-8")
 

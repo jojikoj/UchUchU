@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% from "macros.html" import pager, launch_card %}
-{% block title %}{{ t('launches.title') }}{% endblock %}
-{% block og_title %}{{ t('launches.title') }} · {{ site_name }}{% endblock %}
+{% block title %}{{ page_title or t('launches.title') }}{% endblock %}
+{% block og_title %}{{ page_title or t('launches.title') }} · {{ site_name }}{% endblock %}
 
 {% block content %}
 <section class="page-head">
   <div class="wrap">
-    <h1>{{ t('launches.title') }}</h1>
+    <h1>{{ page_h1 or t('launches.title') }}</h1>
     <p class="page-sub">{{ t('launches.subtitle') }} {{ t('launches.tz_note') }}</p>
     {#
       カレンダー購読。毎日サイトを開かせるより、相手のカレンダーに
