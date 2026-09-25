@@ -525,8 +525,12 @@ def main() -> int:
         log("題材なし — 基準を満たすニュースが無いため今日は書かない")
         return 0
 
-    # 本文を取得できた最初の候補を使う
+    # pick() は上位5件を返す。1件しか見ないと、その1件が本文取得できない日・
+    # 生成しても重複や品質基準を満たせない日に、控えがあるのに何も出さず
+    # 終わっていた（2026-09-23〜25に3日連続で発生）。ここでは候補を
+    # 1件ずつ試し、どこかで通れば採用、全滅して初めて今日は書かないとする。
     item = body = None
+    title = article = ""
     for c in cands:
         log(f"候補: {(c.get('title_ja') or c.get('title'))[:56]}")
         dup = covered_recently(c)
@@ -535,55 +539,63 @@ def main() -> int:
             state.setdefault("used_urls", []).append(c.get("url"))
             continue
         b = fulltext.fetch_body(c.get("url", ""))
-        if b and len(b) >= 600:
-            item, body = c, b
-            break
-        log("  出典の本文を取得できないため次の候補へ（推測で書かない）")
-        state.setdefault("used_urls", []).append(c.get("url"))
+        if not b or len(b) < 600:
+            log("  出典の本文を取得できないため次の候補へ（推測で書かない）")
+            state.setdefault("used_urls", []).append(c.get("url"))
+            continue
+        log(f"題材に決定: {(c.get('title_ja') or c.get('title'))[:56]}")
+
+        # 検査に落ちたら、何が悪かったかを伝えて書き直させる。
+        # 一発で通ることは少ないが、指摘を返せばたいてい2回目で通る。
+        # 3回試して駄目なら、この候補は諦めて次の候補へ（今日は書かない、ではない）。
+        note = ""
+        c_title = c_article = ""
+        for attempt in range(1, 4):
+            gen = generate(c, b, note)
+            if not gen:
+                log(f"  生成に失敗（{attempt}回目）")
+                # 前置きが原因のことが多いので、書き直しでは明示的に禁じる
+                note = ("前回の出力は1行目がタイトルになっていませんでした。\n"
+                        "前置き（要件の確認・挨拶・自己申告）を書かず、"
+                        "1行目に記事タイトルだけを書いてください。\n\n")
+                continue
+            c_title, c_article = gen
+
+            dup2 = is_duplicate(c_title)
+            if dup2:
+                log(f"  既存記事と重複（{dup2}）のため見送り")
+                c_title = ""
+                break
+
+            lack = check_aeo(c_article)
+            bad = check_numbers(c_article, b)
+            if not lack and not bad:
+                break
+
+            problems = []
+            if bad:
+                problems.append(
+                    "次の数値は出典に存在しません。**削除するか、"
+                    "出典にある数値に置き換えてください**: " + "、".join(bad[:8]))
+            if lack:
+                problems.append("構成の不足: " + "、".join(lack))
+            log(f"  {attempt}回目は不合格 — " + " / ".join(problems)[:120])
+            note = ("前回の原稿には次の問題がありました。必ず直してください。\n"
+                    + "\n".join(f"- {x}" for x in problems) + "\n\n")
+        else:
+            log("  3回試しても基準を満たさないため、この候補は諦める")
+            c_title = ""
+
+        if not c_title:
+            state.setdefault("used_urls", []).append(c.get("url"))
+            continue
+
+        item, body, title, article = c, b, c_title, c_article
+        break
+
     if not item:
         STATE.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
-        log("  どの候補も本文を取得できないため今日は書かない")
-        return 0
-    log(f"題材に決定: {(item.get('title_ja') or item.get('title'))[:56]}")
-
-    # 検査に落ちたら、何が悪かったかを伝えて書き直させる。
-    # 一発で通ることは少ないが、指摘を返せばたいてい2回目で通る。
-    # 3回試して駄目な日は諦める（無理に出さない）。
-    note = ""
-    title = article = ""
-    for attempt in range(1, 4):
-        gen = generate(item, body, note)
-        if not gen:
-            log(f"  生成に失敗（{attempt}回目）")
-            # 前置きが原因のことが多いので、書き直しでは明示的に禁じる
-            note = ("前回の出力は1行目がタイトルになっていませんでした。\n"
-                    "前置き（要件の確認・挨拶・自己申告）を書かず、"
-                    "1行目に記事タイトルだけを書いてください。\n\n")
-            continue
-        title, article = gen
-
-        dup = is_duplicate(title)
-        if dup:
-            log(f"  既存記事と重複（{dup}）のため見送り")
-            return 0
-
-        lack = check_aeo(article)
-        bad = check_numbers(article, body)
-        if not lack and not bad:
-            break
-
-        problems = []
-        if bad:
-            problems.append(
-                "次の数値は出典に存在しません。**削除するか、"
-                "出典にある数値に置き換えてください**: " + "、".join(bad[:8]))
-        if lack:
-            problems.append("構成の不足: " + "、".join(lack))
-        log(f"  {attempt}回目は不合格 — " + " / ".join(problems)[:120])
-        note = ("前回の原稿には次の問題がありました。必ず直してください。\n"
-                + "\n".join(f"- {x}" for x in problems) + "\n\n")
-    else:
-        log("  3回試しても基準を満たさないため、今日は公開しない")
+        log("  どの候補も基準を満たさないため今日は書かない")
         return 0
 
     slug = "news-" + datetime.date.today().isoformat()
