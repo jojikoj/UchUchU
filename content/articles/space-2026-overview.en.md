@@ -13,7 +13,7 @@ Space is no longer the exclusive domain of a few superpowers. National agencies,
 
 Today's space activity concentrates in three broad regions.
 
-- **Low Earth Orbit (LEO)**: Below roughly 2,000 km. Home to communication constellations, Earth observation, and crewed outposts — by far the most economically active zone.
+- **Low Earth Orbit (LEO)**: Below roughly 2,000 km. Home to communication constellations, Earth observation, and crewed outposts — by far the most economically active zone. Getting there [is not about flying straight up](/en/articles/how-rockets-reach-orbit/).
 - **The Moon (cislunar space)**: The region between Earth and the Moon, and the lunar surface itself. Resource prospecting and building a base for sustained human activity are now in full swing.
 - **Mars and deep space**: The stage for robotic science missions and technology demonstrations aimed at eventual human arrival.
 
@@ -25,6 +25,8 @@ Think of LEO as the "economic zone," the Moon as the "next frontier," and Mars a
 | Cislunar space | ~384,000 km | Next frontier | Resource exploration, building sustained presence |
 | Mars and deep space | Beyond cislunar | Long-term vision | Science missions, future human exploration |
 
+These three theaters now operate simultaneously, each driven by distinct economics and timescales.
+
 ## It All Started With Collapsing Launch Costs
 
 The single biggest change of the past decade is **the price of getting mass to orbit**. With reusable rockets in routine service, the cost per kilogram has dropped by an order of magnitude.
@@ -35,11 +37,15 @@ To understand why reaching orbit is so demanding and how reusable rockets have t
 
 > Technological breakthroughs usually reach society in the form of a price.
 
+This price collapse is the reason every region — from LEO to the Moon to Mars — is active at once.
+
 ## Where Japan Stands
 
 Japan is modernizing its flagship launch vehicles while holding distinctive strengths in lunar exploration and asteroid sample return. Its pinpoint-landing technology and deep-space operations expertise are recognized worldwide.
 
-On the private side, startups tackling lunar landers and on-orbit servicing are maturing. The division of roles between government and industry will take concrete shape over the next few years.
+On the private side, startups tackling lunar landers and on-orbit servicing are maturing. The division of roles between government and industry will take concrete shape over the next few years. The transformation in [how easily we reach orbit](/en/articles/how-rockets-reach-orbit/) now applies to Japan's programs as well.
+
+Japan's focus on precision and depth — rather than launching first — positions it as a steady contributor to the three theaters outlined above.
 
 ## What to Watch From Here
 

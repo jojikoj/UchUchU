@@ -7,13 +7,15 @@ date: 2026-07-10
 order: 2
 ---
 
-When we picture "going to space in a rocket," we imagine flying straight up. But in reality, the key to **staying** in space is not going up — it is moving sideways, insanely fast. Let's unpack that step by step.
+When we picture "going to space in a rocket," we imagine flying straight up. But in reality, the key to **staying** in space is not going up — it is moving sideways, insanely fast. This principle underpins everything from [the economics of satellite constellations to lunar exploration](/en/articles/space-2026-overview/). Let's unpack that step by step.
 
 ## Space Is Not That Far
 
 The rough boundary of space sits at about 100 km altitude — the Kármán line. That is surprisingly close. Drive a car at 100 km/h straight up and you'd arrive in an hour.
 
 So getting *high* is not actually the hard part. The real challenge lies beyond it.
+
+Altitude alone does not keep you in space — you need to keep moving. This is why the most economically active zone remains [Low Earth Orbit — the region where this speed is most easily reached](/en/articles/space-2026-overview/).
 
 ## Orbit Is Just Falling Forever
 
@@ -22,6 +24,8 @@ An object circling Earth is, in fact, constantly **falling** toward it. The reas
 > Throw a ball horizontally and it lands a little way off. Throw it harder and it lands farther. Now remember the Earth is round. Throw it hard enough and the ground keeps curving away — the ball never finds the surface and loops all the way around. That is an orbit.
 
 In low Earth orbit, this "keep-looping" speed is about 7.9 km per second — roughly 28,000 km/h, some 30 times faster than an airliner. Most of a rocket's engine power is spent building up this **sideways velocity**, not altitude.
+
+This is why reaching orbit — and thus [opening up the economic engines of modern space development](/en/articles/space-2026-overview/) — demands such ferocious speed.
 
 ## That's Why Rockets Tilt
 
@@ -32,6 +36,8 @@ Watch a launch closely: the rocket points straight up at liftoff, then gradually
 3. Eventually it flies almost sideways, reaching orbital speed.
 
 This maneuver is called a "gravity turn." The path a rocket traces to space is not a straight arrow but a long, laid-over curve.
+
+Every rocket follows this same principle — up first, then tilt, then sideways to orbit.
 
 | Feature | Value |
 |---|---|
