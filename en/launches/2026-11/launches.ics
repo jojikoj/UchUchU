@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU November 2026 launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:bff2fc91-eddd-4dfc-af26-ac0674cfab4d@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261119T000000Z
+DTEND:20261119T010000Z
+SUMMARY:Soyuz 2.1a/Fregat-M | MKA Kinosputnik\, KOEN and others
+LOCATION:Vostochny Cosmodrome\, Siberia\, Russian Federation
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1a Fregat-M / MKA Kinosputnik\, KOEN and others / To Be Determined
+URL:https://uchuchu.tech/en/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:8dd5de11-831b-445f-86f0-bffefe0550d9@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261124T050300Z
+DTEND:20261124T060300Z
+SUMMARY:Soyuz 2.1b | Progress MS-36 (97P)
+LOCATION:Baikonur Cosmodrome\, Republic of Kazakhstan
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1b / Progress MS-36 (97P) / To Be Confirmed
+URL:https://uchuchu.tech/en/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7c891a0b-7194-4425-8cfd-2e8c75af2924@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:HANBIT-Nano | InnoSat-0
+LOCATION:Alcântara Space Center\, Federative Republic of Brazil
+DESCRIPTION:Innospace / HANBIT-Nano / InnoSat-0 / To Be Determined
+URL:https://uchuchu.tech/en/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d3bd7fb2-fac6-49fc-ae52-cee07d2fde67@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Falcon Heavy | Griffin Mission One
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:SpaceX / Falcon Heavy / Griffin Mission One / To Be Determined
+URL:https://uchuchu.tech/en/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:22e117bf-041c-49d5-9d09-7b180036e143@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Ariane 62 | Metop-SG B1
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 62 / Metop-SG B1 / To Be Determined
+URL:https://uchuchu.tech/en/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

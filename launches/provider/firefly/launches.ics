@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU ファイアフライ・エアロスペースの打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:d1a3807e-f304-467c-a095-e08b86924347@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | QuickSounder
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / QuickSounder / To Be Determined
+URL:https://uchuchu.tech/launches/provider/firefly/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:875ba957-be5f-42bd-8a6e-ed98254f572a@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | ConnectedCosmos Launch 1
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / ConnectedCosmos Launch 1 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/firefly/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d47cbca4-48c1-455a-b357-f156833b189e@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | ConnectedCosmos Launch 2
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / ConnectedCosmos Launch 2 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/firefly/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b94b49fc-5784-4dfd-92e7-07e57f50edcd@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | TacSat
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / TacSat / To Be Determined
+URL:https://uchuchu.tech/launches/provider/firefly/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

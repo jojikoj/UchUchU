@@ -1,0 +1,307 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU ヴァンデンバーグ宇宙軍基地（米国）の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:7330d83b-c478-426c-8859-f9e3a335876d@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20260926T140054Z
+DTEND:20260926T150054Z
+SUMMARY:Falcon 9 Block 5 | USSF-385
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / USSF-385 / Go for Launch
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:67213393-7983-4c06-8b44-b8c785a5ed79@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261001T181800Z
+DTEND:20261001T191800Z
+SUMMARY:Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Transporter 18 (Dedicated SSO Rideshare) / Go for Launch
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261005T080600Z
+DTEND:20261005T090600Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Transport Layer A / To Be Confirmed
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:97c6f5e1-299e-4652-b72d-9618ac047076@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261010T160000Z
+DTEND:20261010T170000Z
+SUMMARY:Falcon 9 Block 5 | Starlink Group 15-25
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Starlink Group 15-25 / Go for Launch
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2d0472b9-463d-49c8-afb1-7925e49a3368@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer A
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Tracking Layer A / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dca8749f-1552-485a-8061-f1ad79055b8d@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer C
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Tracking Layer C / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer E
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Tracking Layer E / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:4541ce85-0e38-42ac-a9a0-20474bb5f2cd@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Transport Layer D
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Transport Layer D / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c5783e2b-d458-4b99-9936-4043c236190b@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 1 Transport Layer F
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 1 Transport Layer F / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d1a3807e-f304-467c-a095-e08b86924347@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | QuickSounder
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / QuickSounder / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:875ba957-be5f-42bd-8a6e-ed98254f572a@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | ConnectedCosmos Launch 1
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / ConnectedCosmos Launch 1 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d47cbca4-48c1-455a-b357-f156833b189e@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | ConnectedCosmos Launch 2
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / ConnectedCosmos Launch 2 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:71ed4649-8d71-42e8-8548-d42ffa2c5a6e@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 2 Transport Layer E
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 2 Transport Layer E / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dfd444f9-ddda-4b35-8f51-cda7cd801809@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 1
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 1 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:511a3ef8-799e-4723-9293-b954d9d2eb83@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 10
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 10 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d08d8b46-353b-4eee-ab5e-e1385b329008@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 11
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 11 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bf5c6fa2-3add-49ff-aad6-c6450148cd89@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 12
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 12 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:20fa8dc4-8cab-41cf-b452-98a2620f7e86@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 2
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 2 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ab932c60-d808-4825-ab71-b6fe0a745f15@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 3
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 3 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2f31a7f0-968a-448d-b447-333bf0341078@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 4
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 4 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:fa895702-687b-4ba3-95fb-9462a2c9844b@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 5
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 5 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:46d6822b-82aa-452c-aa34-80b6f052de84@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 6
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 6 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:1fa3741c-3339-4954-a026-2cd9d36161c0@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 7
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 7 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7d77bd89-af23-4a5a-b632-de0034003a64@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 8
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 8 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:5ce7e9b6-b471-4a88-891f-2a6f21cb369f@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | Rivada 9
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Rivada 9 / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c703fab3-2ce4-4cf1-861d-754da3f3ad42@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon 9 Block 5 | SDA Tranche 2 Transport Layer A
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / SDA Tranche 2 Transport Layer A / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b94b49fc-5784-4dfd-92e7-07e57f50edcd@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Firefly Alpha Block 2 | TacSat
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:Firefly Aerospace / Firefly Alpha Block 2 / TacSat / To Be Determined
+URL:https://uchuchu.tech/launches/site/vandenberg/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

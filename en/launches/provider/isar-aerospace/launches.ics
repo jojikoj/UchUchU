@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Isar Aerospace launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:60f4ba6c-4201-4727-94aa-0015a5a0023f@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Spectrum | 1 x Pelican satellite
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / 1 x Pelican satellite / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/isar-aerospace/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b48e32c5-3776-4684-a956-5ea4df032e90@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Spectrum | ΣYNDEO-3
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / ΣYNDEO-3 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/isar-aerospace/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dff42a2e-f047-48d7-b260-3888d3a4fe33@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Spectrum | AT-Astra and Others (Spectrum Flight 3)
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / AT-Astra and Others (Spectrum Flight 3) / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/isar-aerospace/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e3fa8"/><stop offset="1" stop-color="#0e9d8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g3)"/>
+  <g fill="#fff">
+    <g fill-opacity=".92"><rect x="70" y="80" width="52" height="34" rx="4"/><rect x="70" y="128" width="52" height="34" rx="4"/><rect x="70" y="176" width="52" height="34" rx="4"/></g>
+    <g fill-opacity=".7"><rect x="140" y="80" width="52" height="34" rx="4"/><rect x="140" y="128" width="52" height="34" rx="4"/><rect x="140" y="176" width="52" height="34" rx="4"/></g>
+    <g fill-opacity=".5"><rect x="210" y="80" width="52" height="34" rx="4"/><rect x="210" y="128" width="52" height="34" rx="4"/><rect x="210" y="176" width="52" height="34" rx="4"/></g>
+    <g fill-opacity=".3"><rect x="280" y="80" width="52" height="34" rx="4"/><rect x="280" y="128" width="52" height="34" rx="4"/><rect x="280" y="176" width="52" height="34" rx="4"/></g>
+    <g fill-opacity=".16"><rect x="350" y="80" width="52" height="34" rx="4"/><rect x="350" y="128" width="52" height="34" rx="4"/><rect x="350" y="176" width="52" height="34" rx="4"/></g>
+  </g>
+  <g stroke="#fff" stroke-opacity=".55" stroke-width="2" fill="none">
+    <ellipse cx="470" cy="250" rx="130" ry="42" transform="rotate(-16 470 250)"/>
+  </g>
+  <circle cx="470" cy="250" r="16" fill="#fff" fill-opacity=".9"/>
+  <g fill="#fff" fill-opacity=".6">
+    <circle cx="560" cy="66" r="2.5"/><circle cx="600" cy="130" r="2"/><circle cx="524" cy="100" r="1.8"/>
+  </g>
+</svg>

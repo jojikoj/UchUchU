@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU 日本の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:69ebbcd2-b257-4070-9ef9-21e7d1f8a883@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261019T194103Z
+DTEND:20261019T204103Z
+SUMMARY:H3-24 | Martian Moon eXplorer (MMX)
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / Martian Moon eXplorer (MMX) / Go for Launch
+URL:https://uchuchu.tech/launches/japan/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:cb0c27fd-496c-4f74-aa04-9c0e5af33e3c@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Epsilon S | JV-LOTUSat-1
+LOCATION:Uchinoura Space Center\, Japan
+DESCRIPTION:Japan Aerospace Exploration Agency / Epsilon S / JV-LOTUSat-1 / To Be Determined
+URL:https://uchuchu.tech/launches/japan/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ac02da00-6e8b-45a0-b829-09d614891e6a@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-22 | ETS-9
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-22 / ETS-9 / To Be Determined
+URL:https://uchuchu.tech/launches/japan/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a2234679-5efe-4a00-9aff-cf82dbac22b0@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-24 | HTV-X2
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / HTV-X2 / To Be Determined
+URL:https://uchuchu.tech/launches/japan/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:be50d3a3-1385-4371-a4dd-d7ab4969be59@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-24 | HTV-X3
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / HTV-X3 / To Be Determined
+URL:https://uchuchu.tech/launches/japan/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3a4dc969-d264-48a1-b113-bf69a798a5c4@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:H3-24 | Lunar Polar Exploration Mission (LUPEX)
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-24 / Lunar Polar Exploration Mission (LUPEX) / To Be Determined
+URL:https://uchuchu.tech/launches/japan/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Kennedy Space Center launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:4651fd8a-43de-4166-bf8f-c168b3bd1d2c@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261002T035300Z
+DTEND:20261002T045300Z
+SUMMARY:Falcon Heavy | NROL-97
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:SpaceX / Falcon Heavy / NROL-97 / Go for Launch
+URL:https://uchuchu.tech/en/launches/site/kennedy/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d3bd7fb2-fac6-49fc-ae52-cee07d2fde67@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Falcon Heavy | Griffin Mission One
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:SpaceX / Falcon Heavy / Griffin Mission One / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kennedy/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3ac1bd74-bf9a-4afe-ae00-3e1d180142dd@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Astra Rocket 4 | Maiden Flight
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:Astra Space / Astra Rocket 4 / Maiden Flight / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kennedy/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c1bd775a-2fff-45bb-9726-765b69817c19@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Falcon Heavy | USSF-75
+LOCATION:Kennedy Space Center\, FL\, USA
+DESCRIPTION:SpaceX / Falcon Heavy / USSF-75 / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kennedy/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

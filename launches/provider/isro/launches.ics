@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU インド宇宙研究機関（ISRO）の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:20d5676e-111b-40e3-8923-b218c3665ca2@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261015T000000Z
+DTEND:20261015T010000Z
+SUMMARY:GSLV Mk II | IRNSS-1L (NVS-03)
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / IRNSS-1L (NVS-03) / To Be Determined
+URL:https://uchuchu.tech/launches/provider/isro/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dfac5ab7-7017-454f-b6cf-eeed277a97b5@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:LVM-3 | Gaganyaan-1
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / Launch Vehicle Mark-3 (GSLV Mk III) / Gaganyaan-1 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/isro/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:05864985-e660-4723-b489-32a78d4b53fc@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Gaganyaan Abort Test Booster | TV-D2
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / Gaganyaan Abort Test Booster / TV-D2 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/isro/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c101b9da-2165-4d7b-aa9e-12a965ef8cd2@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:GSLV Mk II | IDRSS-1
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / IDRSS-1 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/isro/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:220e6d9f-33dc-4533-8a48-535ba4c559e2@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:GSLV Mk II | IDRSS-2
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / IDRSS-2 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/isro/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0cf92611-82a8-4095-a0b4-dda2e74b1fff@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:LVM-3 | GSAT-32
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / Launch Vehicle Mark-3 (GSLV Mk III) / GSAT-32 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/isro/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Roscosmos launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:bff2fc91-eddd-4dfc-af26-ac0674cfab4d@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261119T000000Z
+DTEND:20261119T010000Z
+SUMMARY:Soyuz 2.1a/Fregat-M | MKA Kinosputnik\, KOEN and others
+LOCATION:Vostochny Cosmodrome\, Siberia\, Russian Federation
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1a Fregat-M / MKA Kinosputnik\, KOEN and others / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/roscosmos/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:8dd5de11-831b-445f-86f0-bffefe0550d9@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261124T050300Z
+DTEND:20261124T060300Z
+SUMMARY:Soyuz 2.1b | Progress MS-36 (97P)
+LOCATION:Baikonur Cosmodrome\, Republic of Kazakhstan
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1b / Progress MS-36 (97P) / To Be Confirmed
+URL:https://uchuchu.tech/en/launches/provider/roscosmos/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU 海陽東方航天港（中国・海上発射）の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:4ca86de3-2ff8-4fd3-a22c-35b7fc618610@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Gravity-2 | Demo Flight
+LOCATION:Haiyang Oriental Spaceport
+DESCRIPTION:Orienspace Technology / Gravity-2 / Demo Flight / To Be Determined
+URL:https://uchuchu.tech/launches/site/haiyang/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a8d8d683-3ab0-40ab-beb0-e66bb55afd91@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Nebula-1 | Demo Flight
+LOCATION:Haiyang Oriental Spaceport
+DESCRIPTION:Deep Blue Aerospace / Nebula-1 / Demo Flight / To Be Determined
+URL:https://uchuchu.tech/launches/site/haiyang/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

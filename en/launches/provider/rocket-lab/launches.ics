@@ -1,0 +1,164 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Rocket Lab launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:599ba2df-7483-4b2f-a083-2b5ddc06e069@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | LOXSAT 1
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / LOXSAT 1 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7766f3bb-674c-4c71-b986-963bd633fcfe@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | 6x HawkEye 360
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / 6x HawkEye 360 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:548df42c-ae26-4cc9-921a-f0042941911a@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | BlackSky Gen-3 6
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 6 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0d6ad64c-3aed-4041-b095-e1d951bc6d29@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | Aspera
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / Aspera / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a96ece1c-c745-43cc-a08a-b623e7b93957@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Neutron | Maiden Flight
+LOCATION:Wallops Flight Facility\, Virginia\, USA
+DESCRIPTION:Rocket Lab / Neutron / Maiden Flight / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:5aa3575e-f3ff-48ec-969f-e7e4c669f866@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | BlackSky Gen-3 7
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 7 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:280fba47-8e6e-4a4f-8bdd-b9687d99a9c5@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | BlackSky Gen-3 8
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 8 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:54e907ad-f988-488b-ab35-cd86f63edf8d@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | BlackSky Gen-3 9
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / BlackSky Gen-3 9 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:db3500ac-965b-4ad8-b417-cb8d8d005586@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | iQPS Launch 10
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / iQPS Launch 10 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f9a8c9f6-5dc4-4e83-9876-2a51140ec806@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | iQPS Launch 11
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / iQPS Launch 11 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:426bd2a5-02dd-4fbd-9f4d-2b8439c3a1ff@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Electron | iQPS Launch 9
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / iQPS Launch 9 / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:04522dea-1450-48f5-bc9d-2d7f1e637f9b@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:HASTE | Leidos-3
+LOCATION:Wallops Flight Facility\, Virginia\, USA
+DESCRIPTION:Rocket Lab / Electron / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0196fba7-dd6c-4ba0-bf71-e1460930ffde@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:HASTE | Leidos-4
+LOCATION:Wallops Flight Facility\, Virginia\, USA
+DESCRIPTION:Rocket Lab / Electron / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:71489c66-8ecd-4610-9847-3620a543fd75@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:HASTE | Leidos-5
+LOCATION:Wallops Flight Facility\, Virginia\, USA
+DESCRIPTION:Rocket Lab / Electron / To Be Determined
+URL:https://uchuchu.tech/en/launches/provider/rocket-lab/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Jiuquan Satellite Launch Center launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:dc570565-4dcf-4ab9-8174-bf88efef477f@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Long March 12A | Flight 2
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 12A / Flight 2 / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/jiuquan/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c9605b67-8a53-4239-a8ae-577fe3b79799@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Long March 2F/G | Shenzhou 24
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 2F/G / Shenzhou 24 / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/jiuquan/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

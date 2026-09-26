@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Guiana Space Centre (Kourou) launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:7bdc412b-c965-4517-a131-f57a01189803@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Ariane 64 Block 2 | Amazon Leo (LE-04)
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 64 Block 2 / Amazon Leo (LE-04) / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kourou/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:22e117bf-041c-49d5-9d09-7b180036e143@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Ariane 62 | Metop-SG B1
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 62 / Metop-SG B1 / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kourou/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0b85fcca-5252-48d7-9ccb-c10b1da9d183@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Ariane 62 | Galileo L15 (FOC FM28 & FM31)
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 62 / Galileo L15 (FOC FM28 & FM31) / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kourou/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b78857c4-3b8d-4462-929e-bc76f39c0e6d@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Ariane 64 | GO-1
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 64 / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kourou/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a8c191e1-b231-4b2e-aefd-5e8ad55c7a82@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Miura 5 | Maiden Flight
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Payload Aerospace S.L. / Miura 5 / Maiden Flight / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/kourou/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

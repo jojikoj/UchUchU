@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU 中国航天科技集団（CASC）の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:9d402fb6-9115-424d-b6f0-bd3b13ee310e@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20260930T000000Z
+DTEND:20260930T010000Z
+SUMMARY:Long March 5 | Chang'e 7
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 5 / Chang'e 7 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/casc/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dc570565-4dcf-4ab9-8174-bf88efef477f@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Long March 12A | Flight 2
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 12A / Flight 2 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/casc/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c9605b67-8a53-4239-a8ae-577fe3b79799@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Long March 2F/G | Shenzhou 24
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 2F/G / Shenzhou 24 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/casc/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:8d2a11e2-51e3-4841-a616-d41589373025@uchuchu.tech
+DTSTAMP:20260926T094807Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Long March 10A | Demo Flight
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 10A / Demo Flight / To Be Determined
+URL:https://uchuchu.tech/launches/provider/casc/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
