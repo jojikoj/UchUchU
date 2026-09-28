@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T09:21:15.057647+00:00",
-  "count": 3880,
+  "generated_at": "2026-09-28T10:08:11.343147+00:00",
+  "count": 3882,
   "sources": {
     "jaxa": 20,
     "naoj": 16,
@@ -28,6 +28,37 @@
     "spaceflightnews": 300
   },
   "items": [
+    {
+      "title": "Reliable Robots: Meet Johnson’s Dexterous Robotics Team",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team/",
+      "summary": "The idea of humans and robots working side-by-side in space was once the stuff of science fiction, but with NASA launching increasingly complex missions deeper into space, human-robot collaboration could become reality. Advanced robotic systems are critical for human spaceflight because they can enhance a crew’s perfor…",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/09/sa-and-valkyrie.png",
+      "published": "2026-09-28T10:00:00Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "人間とロボット、宇宙で協働へ",
+      "summary_ja": "人間とロボットが宇宙で肩を並べて働く構想はかつてSF小説の題材でしかなかったが、NASAがより複雑な任務を深宇宙へ展開する中で、人間とロボットの協働が現実化する可能性が高まっている。高度なロボットシステムは乗組員のパフォーマンス向上に貢献できるため、有人宇宙飛行に不可欠だ。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "NASAのジョンソン宇宙センターに設置されたデキストラス・ロボティクス・チームが、月面基地や火星ミッションに向けた高度なロボット技術の開発を加速させている。このチームは人間の手作業に相当する複雑な操作を宇宙空間で実行できるロボットシステムを作り上げることで、宇宙探査の安全性と持続性を高めようとしている。\n\nチームは16人の技術者で構成されており、機械制御と制御ソフトウェアの専門性を持つメンバーが多くを占める。これまでの開発経験は、国際宇宙ステーションで7年間の技術実証を行ったロボノート2と、NASAが開発した二足歩行型ロボット「ヴァルキリー」の両プロジェクトで培われてきた。これらの経験を持つエンジニアが現在のチームの中核を形成し、ロボット技術の蓄積を次世代プロジェクトへと受け継いでいる状況だ。\n\nチームの活動を支える大きな柱が、iMETRO（統合型モバイル評価テストベッド）という実験施設である。この施設は、地上で実用化されているロボット技術を宇宙環境向けに応用するための試験プラットフォームとして機能している。オープンソースのソフトウェア、宇宙船と居住モジュールの模型、複数の小型ロボット、屋外試験ヤードなどが備えられており、NASA内部のプログラムだけでなく、民間企業や外部のパートナーにも利用が開放されている。実際にロボット企業のピックニック・インクがこの施設を使用して、ロボット腕が宇宙船のハッチを認識し、ラッチを回して、ハンドルをつかみ、ドアを開けるソフトウェアを検証した例がある。iMETROが果たす役割は、技術提供者と宇宙システム設計者の間にあるギャップを埋めることだ。ロボット製造企業は、月面居住モジュールやローバーの運用で実際に何が求められるかを具体的に理解でき、一方、ハビタット設計者はロボットの知覚能力と物体への相互作用の制約を学ぶことができる。この相互理解により、ハンドルのサイズや照明の改善といった工夫が、人間にとっても作業効率を高める可能性があると考えられる。\n\n今後のロボット技術開発は、月面での持続的な人間活動を支えることに重点が置かれているが、同時に火星ミッションへの応用も視野に入れられている。サプライチェーン全体で見ると、宇宙環境で信頼性の高い動作を実現するロボットシステムの需要が増えることが想定される。各種のセンサ、アクチュエータ、制御機器、耐環境性部品を提供する製造業者にとって、過酷な環境下での長期動作保証、故障検出と自己修復機能、そして地上試験施設での厳格な検証といった要件が一層強まる傾向にあり、これは国内の部品・装置メーカーがより高度な技術を磨き、国際的なプロジェクトへの参画を検討する契機となる可能性がある。",
+      "body_chars": 1136
+    },
+    {
+      "title": "A 1,000°C Lunar Microreactor Could Power the Next Era of Moon Bases",
+      "url": "https://www.universetoday.com/articles/a-1000c-lunar-microreactor-could-power-the-next-era-of-moon-bases",
+      "summary": "As humanity continues to move towards a permanent settlement on the Moon, we still have at least one big hurdle to face - the lunar night, which lasts for roughly fourteen days straight and can drop temperatures to a bone-chilling -223°C. In order to survive those conditions, we need a power source that doesn’t come an…",
+      "image": null,
+      "published": "2026-09-28T09:46:40+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "次世代月基地の電源に、1,000°C級マイクロ原子炉",
+      "summary_ja": "人類が月への恒久的な居住を目指す中で、なお克服すべき大きな課題が残っている。月の夜は約14日間続き、気温が-223°Cにまで低下するのだ。こうした極限環境下での生存には、新たな電源が必要となる。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
     {
       "title": "SpaceX aims to put Starship in orbit for the first time",
       "url": "https://phys.org/news/2026-09-spacex-aims-starship-orbit.html",
@@ -158,7 +189,8 @@
       "published": "2026-09-28T01:00:00+00:00",
       "source": "Space Media",
       "source_id": "spacemedia",
-      "lang": "ja"
+      "lang": "ja",
+      "body_skip": "no_body"
     },
     {
       "title": "Live coverage: SpaceX to launch first Starlink V3 satellites to orbit on Starship",
@@ -230,7 +262,8 @@
       "title_ja": "FAA、スターシップの承認を正式決定",
       "summary_ja": "FAAはスターシップ14号機を承認し、SpaceXが月曜日の初軌道投入試行の準備が整った。",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_skip": "no_body"
     },
     {
       "title": "Astronomers discover a radio galaxy with evidence of four separate jet outbursts",
@@ -311,7 +344,8 @@
       "title_ja": "APOD：アンドロメダ銀河の処理前後",
       "summary_ja": "APOD（天体写真の日）は毎日、興味深い天文画像を特徴づけ、専門家による簡潔な説明を添えて提供している。",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_skip": "no_body"
     },
     {
       "title": "ロケットラボ、シンスペクティブの小型SAR衛星「StriX」13機目の打ち上げに成功",
@@ -321,7 +355,8 @@
       "published": "2026-09-27T03:25:35+00:00",
       "source": "sorae",
       "source_id": "sorae",
-      "lang": "ja"
+      "lang": "ja",
+      "body_skip": "no_body"
     },
     {
       "title": "天の川銀河で「マイクロブレーザー」の有力候補を発見 超高エネルギー宇宙線の発生源の可能性も？",
@@ -331,7 +366,8 @@
       "published": "2026-09-27T00:08:36+00:00",
       "source": "sorae",
       "source_id": "sorae",
-      "lang": "ja"
+      "lang": "ja",
+      "body_skip": "no_body"
     },
     {
       "title": "Carbon Rocks Deep Underground Could Hold the Evidence of Mars' Watery Past.",
@@ -345,7 +381,8 @@
       "title_ja": "火星の水の痕跡は地下炭素岩に保存か",
       "summary_ja": "JAXAと東京大学の研究者が主導する地球化学モデリング研究が、火星の「欠落」した炭酸塩岩の蓄積問題に対処している。",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_skip": "no_body"
     },
     {
       "title": "Black hole jets reach far beyond galaxies' visible edges, potentially deciding their fate",
@@ -458,7 +495,8 @@
       "published": "2026-09-26T07:00:00+00:00",
       "source": "WIRED.jp",
       "source_id": "wired_jp",
-      "lang": "ja"
+      "lang": "ja",
+      "body_skip": "no_body"
     },
     {
       "title": "APOD: 2026 September 26 – Mirrored Meteor and Milky Way",
@@ -527,7 +565,8 @@
       "title_ja": "NASA・ボーイング、スターライナー開発の進捗を説明",
       "summary_ja": "9月28日月曜日午後3時EDT、NASAとボーイングの指導部がスターライナーの開発及び国際宇宙ステーションへの定期的な乗員輸送飛行計画について説明会を開く。nasa.govでライブ配信視聴可能。",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_skip": "no_body"
     },
     {
       "title": "SpaceX Falcon 9 to launch classified mission for U.S. Space Force from West Coast",
@@ -667,7 +706,8 @@
       "title_ja": "2026-2027年DWU高等学校エンジニアリングチャレンジ開始",
       "summary_ja": "2026-2027年のチャレンジテーマは『飛行燃料設計チャレンジ：新エネルギーシステム』である。米国国家空域システム(NAS)に組み込まれる航空機が増加する中、NASAはFAA、大学、航空業界のパートナーとともに新しいエネルギーシステムの開発を模索している。",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_skip": "no_body"
     },
     {
       "title": "Webb detects ammonia and unexpected chill on a distant giant planet",
