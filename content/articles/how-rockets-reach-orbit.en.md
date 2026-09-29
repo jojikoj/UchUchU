@@ -52,7 +52,3 @@ Every rocket follows this same principle — up first, then tilt, then sideways 
 - The hard part is not *height* but ferocious *sideways speed*.
 - An orbit is the state of falling forever without ever reaching the ground.
 - That's why rockets ultimately accelerate sideways, not up.
-
-Next time you watch a launch stream, notice *when* the vehicle starts to tilt. That moment is the real battle for reaching space.
-
-Learn more about how orbital mechanics fit into the broader landscape in our [2026 space development overview](/en/articles/space-2026-overview/).
