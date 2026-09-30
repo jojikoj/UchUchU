@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T21:38:23.875236+00:00",
+  "generated_at": "2026-09-30T09:33:37.927371+00:00",
   "count": 200,
   "items": [
     {
@@ -183,6 +183,29 @@
       "mission_type": "Earth Science",
       "mission_description": "NeonSat-2 to 6 are part of the South Korean government's Earth observation micro-satellite constellation NeonSat (New-space Earth Observation Satellite). The NeonSat constellation is the first satellite system developed by the government using a mass-production approach for precise monitoring of the Korean Peninsula.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/nuri_liftoff_2_image_20240820080542.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "a1bb0984-19d4-4b47-9bba-706d225573e2",
+      "name": "Long March 12 | Unknown Payload",
+      "net": "2026-10-09T19:25:00Z",
+      "window_end": "2026-10-09T19:49:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "provider_country": "CHN",
+      "provider_url": "https://english.spacechina.com/",
+      "rocket": "Long March 12",
+      "pad": "Commercial LC-2",
+      "pad_lat": "19.59755",
+      "pad_lon": "110.936481",
+      "location": "Wenchang Space Launch Site, People's Republic of China",
+      "country": "CHN",
+      "mission": "Unknown Payload",
+      "mission_type": "Unknown",
+      "mission_description": "Details TBD.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
       "webcast": null,
       "upcoming": true
     },
@@ -4577,29 +4600,6 @@
       "mission_description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcast": "https://www.youtube.com/watch?v=y2TZ_KGcyZ4",
-      "upcoming": false
-    },
-    {
-      "id": "04154b70-045b-4e3a-bb5a-e5436091ba37",
-      "name": "Electron | VICTUS HAZE Puma",
-      "net": "2026-06-19T10:19:00Z",
-      "window_end": "2026-06-19T10:19:00Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "Rocket Lab",
-      "provider_country": "USA",
-      "provider_url": "https://rocketlabcorp.com",
-      "rocket": "Electron",
-      "pad": "Rocket Lab Launch Complex 1A",
-      "pad_lat": "-39.262833",
-      "pad_lon": "177.864469",
-      "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-      "country": "NZL",
-      "mission": "VICTUS HAZE Puma",
-      "mission_type": "Government/Top Secret",
-      "mission_description": "VICTUS HAZE will see Rocket Lab design, build, launch, and operate a rendezvous proximity operation (RPO) capable spacecraft. U.S. Space Force Space Systems Command (SSC)’s Space Safari’s VICTUS HAZE mission will be an exercise of a realistic threat-response scenario and on-orbit space domain awareness (SDA) demonstration. Once the spacecraft build is complete, Rocket Lab will be entered into a Ho…",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcast": "https://www.youtube.com/watch?v=jfFnNC0NG2Y",
       "upcoming": false
     }
   ]
