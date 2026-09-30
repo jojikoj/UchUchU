@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T09:33:37.927371+00:00",
+  "generated_at": "2026-09-30T21:36:37.718804+00:00",
   "count": 200,
   "items": [
     {
@@ -68,7 +68,7 @@
       "mission_type": "Human Exploration",
       "mission_description": "SpaceX Crew-13 is the thirteenth crewed operational flight of a Crew Dragon spacecraft to the International Space Station as part of NASA's Commercial Crew Program.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
-      "webcast": "https://x.com/i/broadcasts/1qxvvepEVdRxB",
+      "webcast": "https://www.youtube.com/watch?v=7ZiUbT1-djA",
       "upcoming": true
     },
     {
@@ -91,7 +91,7 @@
       "mission_type": "Dedicated Rideshare",
       "mission_description": "Dedicated rideshare flight to a sun-synchronous orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcast": "https://x.com/i/broadcasts/1RJjpbyQpOBKw",
+      "webcast": "https://www.youtube.com/watch?v=9tmgAlQ33AM",
       "upcoming": true
     },
     {
@@ -114,7 +114,7 @@
       "mission_type": "Government/Top Secret",
       "mission_description": "Classified payload for the US National Reconnaissance Office.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
-      "webcast": "https://x.com/i/broadcasts/1oJMvNkPPXlxQ",
+      "webcast": "https://www.youtube.com/watch?v=0ugtQtSNh4w",
       "upcoming": true
     },
     {
@@ -143,10 +143,10 @@
     {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-      "net": "2026-10-05T08:06:00Z",
-      "window_end": "2026-10-05T09:11:00Z",
-      "status": "TBC",
-      "status_name": "To Be Confirmed",
+      "net": "2026-10-05T08:16:00Z",
+      "window_end": "2026-10-05T08:28:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "SpaceX",
       "provider_country": "USA",
       "provider_url": "https://www.spacex.com/",
@@ -160,7 +160,7 @@
       "mission_type": "Government/Top Secret",
       "mission_description": "Tranche 1 Transport Layer A is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites. The constellation w…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcast": null,
+      "webcast": "https://x.com/i/broadcasts/1oJMvNEQewoxQ",
       "upcoming": true
     },
     {
