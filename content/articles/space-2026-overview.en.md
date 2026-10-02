@@ -55,9 +55,6 @@ Space is one of the fastest-moving frontiers we have. Let's watch where it stand
 
 ## Summary
 
-- Space development has shifted from an exclusive national endeavor to a self-sustaining industry
-- Three geographic regions now dominate: Low Earth Orbit (economic), the Moon (next frontier), and Mars (long-term vision)
-- Reusable rockets have collapsed launch costs, triggering cascading business opportunities in satellites, communications, and space services
-- Private capital now flows alongside government funding, making space ventures economically sustainable
-- Japan holds distinctive strengths in precision landing, deep-space operations, and manufacturing infrastructure
-- Manufacturing access points exist across satellite production, on-orbit services, and ground support equipment
+- **Three Main Theaters**: Space activity now concentrates in Low Earth Orbit (economic hub), cislunar space (next frontier), and Mars (long-term vision) — each with distinct timescales and drivers.
+- **It All Started With Collapsing Launch Costs**: Reusable rockets have cut the cost-per-kilogram to orbit by an order of magnitude, unlocking waves of new businesses from constellations to space tourism.
+- **Where Japan Stands**: Japan leads in precision landing, deep-space operations, and manufacturing — positioning itself as a steady contributor across all three theaters while maturing private ventures in lunar landers and on-orbit servicing.

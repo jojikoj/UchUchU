@@ -48,7 +48,6 @@ Every rocket follows this same principle — up first, then tilt, then sideways 
 
 ## Summary
 
-- The edge of space (100 km) is closer than you think.
-- The hard part is not *height* but ferocious *sideways speed*.
-- An orbit is the state of falling forever without ever reaching the ground.
-- That's why rockets ultimately accelerate sideways, not up.
+- **Space Is Not That Far**: The edge of space (100 km) is closer than you think — the real challenge is reaching the sideways speed to stay there.
+- **Orbit Is Just Falling Forever**: An orbit is the state of falling forever without ever reaching the ground, requiring ~28,000 km/h of sideways speed.
+- **That's Why Rockets Tilt**: Rockets point up first to punch through the atmosphere, then tilt over in a "gravity turn" to accelerate sideways toward orbital velocity.
