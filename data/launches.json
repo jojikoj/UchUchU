@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T09:34:46.206567+00:00",
+  "generated_at": "2026-10-04T21:34:19.600398+00:00",
   "count": 200,
   "items": [
     {
@@ -440,6 +440,29 @@
       "upcoming": true
     },
     {
+      "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
+      "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
+      "net": "2026-11-30T00:00:00Z",
+      "window_end": "2026-11-30T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "SpaceX",
+      "provider_country": "USA",
+      "provider_url": "https://www.spacex.com/",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "pad_lat": "28.56194122",
+      "pad_lon": "-80.57735736",
+      "location": "Cape Canaveral SFS, FL, USA",
+      "country": "USA",
+      "mission": "Cygnus CRS-2 NG-25",
+      "mission_type": "Resupply",
+      "mission_description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
       "name": "Falcon Heavy | Griffin Mission One",
       "net": "2026-12-31T00:00:00Z",
@@ -872,29 +895,6 @@
       "mission": "CHORUS",
       "mission_type": "Earth Science",
       "mission_description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Eart…",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcast": null,
-      "upcoming": true
-    },
-    {
-      "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
-      "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
-      "net": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "SpaceX",
-      "provider_country": "USA",
-      "provider_url": "https://www.spacex.com/",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "pad_lat": "28.56194122",
-      "pad_lon": "-80.57735736",
-      "location": "Cape Canaveral SFS, FL, USA",
-      "country": "USA",
-      "mission": "Cygnus CRS-2 NG-25",
-      "mission_type": "Resupply",
-      "mission_description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
       "upcoming": true
