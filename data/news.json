@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T09:36:47.655829+00:00",
-  "count": 4261,
+  "generated_at": "2026-10-07T21:39:41.744435+00:00",
+  "count": 4283,
   "sources": {
     "jaxa": 20,
     "naoj": 16,
@@ -9,12 +9,12 @@
     "sorabatake": 10,
     "astroarts": 0,
     "wired_jp": 3,
-    "gizmodo_jp": 1,
+    "gizmodo_jp": 2,
     "karapaia": 1,
     "nasa": 10,
     "esa": 9,
     "esa_science": 15,
-    "spacenews": 17,
+    "spacenews": 16,
     "spaceflightnow": 10,
     "nasaspaceflight": 10,
     "payloadspace": 13,
@@ -29,6 +29,312 @@
   },
   "items": [
     {
+      "title": "Undergraduate student may have solved puzzle regarding isolated galaxies that have stopped producing stars",
+      "url": "https://phys.org/news/2026-10-undergraduate-student-puzzle-isolated-galaxies.html",
+      "summary": "An undergraduate astrophysics student at UC Berkeley has found three unusual galaxies—cataloged as Shapiro Dwarf Galaxies I, II and III. Each galaxy is far from other galaxies and has stopped making stars, a combination that is extremely rare. The discovery, published in The Astrophysical Journal, provides compelling o…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/undergraduate-student.jpg",
+      "published": "2026-10-07T21:20:11+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "孤立銀河が星生成停止する謎を解く、米大学部生の発見",
+      "summary_ja": "UC バークレー校の天体物理学の学部生が、3つの珍しい銀河—シャピロ小型銀河 I、II、III と分類されている—を発見した。各銀河は他の銀河から遠く離れており、星の生成を停止している。この極めて稀な組み合わせが天体物理学誌に掲載され、重要な手がかりをもたらしている。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "UC Berkeleyの学部生Julian Shapiroが発見した3つの隔離された矮小銀河は、宇宙論の長年の謎を解くための重要な手がかりを提供する。星の生成を停止した「クエンチド」状態にありながら、近くに他の銀河がない孤立した環境に存在するこれら3つの銀河は、きわめてまれな存在である。この発見は、宇宙の進化に関する基本的な理論を支持する、重要な観測的証拠となっている。\n\n矮小銀河は一般的に、その周辺環境によって2つの異なった運命をたどるとされている。銀河系のような大きな銀河の衛星として存在する場合、その強い重力と圧力によって星形成に必要なガスが激しく剥ぎ取られ、新しい星の生成が停止する。一方、宇宙の低密度領域に孤立して存在する矮小銀河は、その周囲に大きな銀河がなく、環境からの圧力を受けないため、冷たいガスを保有し続けることができ、星生成を活発に続けるはずだと予測されてきた。ところがShapiroが発見した3つの銀河は、この常識を覆している。孤立した環境に存在しながら、星生成が停止しているという矛盾した状態にあるのだ。その謎を解く鍵が、バックスプラッシュ銀河仮説である。\n\nShapiroが提唱するバックスプラッシュ銀河説によれば、これらの銀河は遠い過去に、大質量銀河の近くを通過する際に、その銀河の重力と流体力学的な環境的力によって、星形成ガスが激しく剥ぎ取られた。その後、当該の大きな銀河の重力圏から外側に放出され、現在のような孤立した位置に到達したと考えられるのだ。主な候補として挙げられているのはM101（ピンホイール銀河）である。この仮説は、宇宙の標準模型（ラムダ冷たい暗黒物質モデル）が予測してきたバックスプラッシュ銀河の存在を、初めて観測的に支持する証拠となる。理論上は宇宙に多く存在するはずだが、これまで実際の例を見つけることが困難だったため、この発見は宇宙進化論の重要な検証点になるとともに、銀河がいかに進化したかを理解する上で極めて重要な手がかりとなっている。\n\nShapiroの研究成果が示すのは、銀河の形成と進化に関する我々の理解が、宇宙全体のスケールで妥当であることである。彼が採用した数値シミュレーション技術とアーカイブデータの解析手法は、将来のVera C. Rubin Observatoryのような高性能な新型望遠鏡によって、同様のバックスプラッシュ銀河がさらに多数発見される可能性を示している。こうした先端的な天文観測装置への光学部品や観測機器の供給は、日本の精密製造業にとって重要な役割である。基礎研究の進展に伴い、次世代の衛星観測技術と観測機器への需要も拡大することが予想され、サプライチェーン全体に波及する機会が生まれる可能性がある。若き研究者による地道な発見の積み重ねが、やがては宇宙産業全体の競争力強化につながる側面を示唆する事例といえるだろう。",
+      "body_chars": 1203
+    },
+    {
+      "title": "NASA Sets Coverage for SpaceX 35th Station Resupply Launch, Arrival",
+      "url": "https://www.nasa.gov/news-release/nasa-sets-coverage-for-spacex-35th-station-resupply-launch-arrival/",
+      "summary": "NASA and SpaceX are targeting 6:33 a.m. EDT, Tuesday, Oct. 13, for the next launch to deliver science investigations, supplies, and equipment, including the final set of International Space Station Roll-Out Solar Arrays, to the space station. This is the 35th SpaceX commercial resupply services mission to the orbital c…",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/spacex-35.jpg",
+      "published": "2026-10-07T21:16:42Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASA、SpaceX 第35回国際宇宙ステーション補給ミッションの中継方針を発表",
+      "summary_ja": "NASA と SpaceX は10月13日火曜日午前6時33分 EDT に、科学実験機器、補給物資、最終太陽電池パネル設置セットなど国際宇宙ステーション向けの搭載物を打ち上げる予定だ。これは SpaceX による35番目の商用補給ミッションとなる。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "NASA’s SpaceX 35th Commercial Resupply Mission Overview",
+      "url": "https://www.nasa.gov/general/nasas-spacex-35th-commercial-resupply-mission-overview/",
+      "summary": "NASA and SpaceX are targeting no earlier than Tuesday, Oct. 13 to launch scientific investigations, supplies, and equipment to the International Space Station.",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/1-falcon9-dragon.png",
+      "published": "2026-10-07T20:17:16Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASA の SpaceX 第35回商用補給ミッション概要",
+      "summary_ja": "NASA と SpaceX は10月13日火曜日以降に科学実験機器、補給物資、機器を国際宇宙ステーションに打ち上げる予定だ。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "NASAとSpaceXの商用補給ミッションCRS-35は、国際宇宙ステーション（ISS）の定期的な物資運送と宇宙での科学実験を支える重要な作業である。2026年10月13日以降の打ち上げを予定するこのミッションは、ファルコン9ロケットで6,300ポンド以上の補給物資と複数の新しい科学実験を搭載する。ドラゴン宇宙船はISSのハーモニー・モジュールに自動ドッキングし、約1ヶ月間係留される。\n\nISSは25年以上にわたって110ヶ国以上の研究者によって利用され、4,000以上の微小重力実験が実施されてきた。今回搭載される実験は、この継続的な科学活動の一環をなしている。LambdaVision-1は、微小重力環境での人工網膜製造技術を検証するもので、地上より均一で安定した層構造を実現でき、視覚障害患者の治療に応用できる可能性がある。Stellar Spheroidsは、微小重力が3次元の心臓組織モデルの成長と機能に与える影響を研究し、より現実的な疾患研究用組織の開発に寄与すると考えられる。ELF-Unconventional Glass 2は、通常の地上製造では得られない特性を持つガラスの成形メカニズムを観察し、強度と耐久性に優れた宇宙機器・探査機器向け材料の開発につながる可能性がある。MINDSは脳オルガノイドを用いてアルツハイマー病やパーキンソン病などの神経変性疾患と炎症の関係を研究する実験だ。\n\n同時にこのミッションはISSの機器更新・保全作業も担当する。太陽電池パネルの最終セットが搭載され、ISSの電力系統拡張プロジェクトが完成に向かっている。この電力強化はステーションの安全で制御されたデオービット実施を支える。また前回の船外活動で交換されたロボットアーム（Canadarm2）の故障部品が地上に帰還し、詳細な分析と再利用準備が進められるほか、トイレ関連の制御機器や水処理装置の部品も回収される。このような定期的な部品交換と保全は、ISSの長期運用を可能にするために不可欠だ。\n\nこうした定期的な補給・整備ミッションの継続は、日本の部品・装置・素材メーカーにも意味を持つ。ISSの機器保全に必要とされる精密部品、センサー、制御装置といった技術は、国際的なサプライチェーンに組み込まれており、日本企業も直接・間接的にこのエコシステムに関わっている。さらに、微小重力環境での材料製造・生物実験の継続的な実施は、将来的な宇宙産業向けの高精度部品や機能性材料への需要拡大につながる可能性がある。ISSの継続運用と技術開発の蓄積は、長期的には宇宙産業全体の成熟度を高め、地上の製造業にとって新たなビジネス機会をもたらす基盤となると考えられる。",
+      "body_chars": 1128
+    },
+    {
+      "title": "NASA’s PRIMA Spacecraft (Artist’s Concept)",
+      "url": "https://science.nasa.gov/photojournal/nasas-prima-spacecraft-artists-concept/",
+      "summary": "Description This artist’s concept depicts the proposed design for NASA’s PRobe far-Infrared Mission for Astrophysics (PRIMA), which was selected by the agency in September 2026. The PRIMA observatory is the first in a new class of NASA astrophysics missions, called Probe Explorers, within the agency’s longstanding Expl…",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26355/PIA26355.jpg",
+      "published": "2026-10-07T20:15:49Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASA の PRIMA 宇宙船（想像図）",
+      "summary_ja": "2026年9月に NASA に選定された遠赤外線天体物理観測ミッション（PRIMA）の提案された設計を示した想像図だ。PRIMA は NASA の科学探査ミッション内の探査機クラスという新しいカテゴリの初号機となる。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "NASA が 2026 年 9 月に選定した遠赤外線観測衛星「PRIMA」（プローブ・ファー・インフラレッド・ミッション・フォー・アストロフィジクス）が、2033 年の打ち上げを目指して開発されることになった。これは新しいタイプの宇宙天文学ミッション「Probe Explorers」の第一号であり、今後の宇宙観測プログラムの方向性を示す重要な決定である。\n\nPRIMA が観測対象とする遠赤外線領域の光は、宇宙空間に漂う塵を貫通しやすいという物理的特性を持つ。このため、通常の可視光望遠鏡では捉えられない、塵に厚く覆われた天体の真の姿を明らかにすることが可能になる。惑星や星、さらには超大質量ブラックホールといった宇宙の根本的な現象の形成過程を観測し、地球上の水の起源がどこにあるのかという生命科学にまで関わる疑問に答えることを目指している。NASA の長年続く Explorers Program は、比較的小規模で機動的な宇宙ミッションの枠組みである。今回新たに設置された Probe Explorers というカテゴリーは、その中でも特に野心的で革新的な科学目標を追求するミッション向けの支援体制であり、このクラスの認定は NASA が中規模の天文学衛星開発に対して長期にわたる投資を行う方針を示している。\n\n遠赤外線観測衛星の開発・製造には、極めて高度な技術が結集する必要がある。感度の高い遠赤外線検出器、観測機器を極低温に保つための断熱・冷却システム、微小な変形も許さない精密な光学部品といった、最先端の技術を要する部品・装置の供給が不可欠である。PRIMA のプロジェクトが確定したことで、設計・開発・製造・試験という長期間にわたるプロセスが確実に進行することが保証され、これに関連する宇宙用部品メーカーと装置供給企業には、継続的で安定した受注機会がもたらされる。宇宙観測機器の開発サイクルは通常数年から 10 年近くに及ぶため、今後のプロジェクト期間にわたって、各段階での部品調達と技術支援が求められることになる。\n\n日本の製造業にとって、PRIMA のような国際的な大型ミッションの立ち上げは、高い技術力を示す世界市場での競争の場である。精密機械加工技術、極低温環境での材料挙動に関する知見、高度な光学素材の製造といった分野で、日本企業が保有する強みを活かした部品・装置の受注獲得が期待される。米国の主要な航空宇宙企業や NASA 関連の部品供給ネットワークへの参画を通じて、次世代の宇宙観測技術開発に日本の産業基盤が組み込まれる可能性が高まるといえる。",
+      "body_chars": 1086
+    },
+    {
+      "title": "Radio galaxy from 12.5 billion years ago may be most powerful ever found",
+      "url": "https://phys.org/news/2026-10-radio-galaxy-billion-years-powerful.html",
+      "summary": "Astronomers have confirmed a powerful radio galaxy from nearly 12.5 billion years ago. The source, TXS 2354+015, was originally identified as a high-redshift candidate from its characteristic drop in optical light, and follow-up spectroscopy placed it at a redshift of 4.946. Their paper was posted to the arXiv preprint…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/radio-galaxy-from-125-1.jpg",
+      "published": "2026-10-07T19:40:10+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "124億年前の電波銀河、最強の可能性",
+      "summary_ja": "天文学者が約124億年前の強力な電波銀河を確認した。電波源 TXS 2354+015 は光の特性的減少から高赤方偏移の候補として特定され、追跡分光観測により赤方偏移 4.946 が確認された。論文は arXiv プリプリントに投稿されている。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "125億年前の宇宙に存在した電波銀河「TXS 2354+015」が確認され、これまで発見された電波銀河の中で最も強力なものとなることが明らかになった。この発見は、従来の観測方法では見落とされていた天体を捉える可能性を示している。\n\n電波銀河とは、銀河の中心にある超大質量ブラックホールへの物質落下が生み出す活動によって、相対論的速度のプラズマジェットを打ち出し大量の電波を放射する現象である。このジェットのエネルギーは銀河内の星形成に影響を与え、周囲のガスを加熱する。特に宇宙初期の強力な電波銀河は、その場所に最も巨大な銀河や銀河団が存在することを示す指標となる。しかし、これらの電波銀河の中心領域はダストに覆われており、電波ジェットだけが逃げ出せるため、光学や紫外線での確認が極めて難しい。2024年の研究によれば、赤方偏移3.5を超える電波銀河の最大90パーセントが紫外線と可視光では隠れている可能性があるとされている。\n\n従来、電波銀河を探す主流の手法は「急勾配スペクトラム」という特徴に基づくものだったが、この方法では見落とされている天体が相当な割合で存在すると考えられる。研究チームは光学画像の深い観測データと電波カタログを組み合わせ、ライマンブレークと呼ばれる特徴的な光の落ち込みを示す銀河を探すアプローチを採った。中性水素が紫外線を吸収することで、遠い銀河の光が急激に切れ落ちるこの特徴を見つけることで、宇宙初期の銀河を効率的に同定できる。この手法によってTXS 2354+015は検出され、赤方偏移4.946から、宇宙がわずか12億年足らずの時代に既に存在していたことが分かった。電波出力を計算すると、この銀河は従来の記録を上回り、今までに知られている中で最も強力なものとなった。推定される質量は太陽の約2兆倍に達しており、極めて明るい銀河の仲間である。\n\nこの発見の意義は、従来の選別基準では除外されていた天体を新しい手法が捕捉できることを実証した点にある。宇宙初期の超巨大ブラックホールと銀河の関係を理解するうえで、隠れた電波銀河を見つけることが不可欠だと考えられる。地上の電波望遠鏡と宇宙ミッションによる光学観測の組み合わせの有効性が改めて確認されたともいえよう。\n\n日本の製造業にとって、こうした発見は観測機器の精密部品や光学系を手掛ける企業にとって関心が高い。宇宙初期の銀河を追求する国際的な観測プロジェクトは常に感度と分解能の向上を求め続けており、その技術要求は日本が得意とする精密加工や組立分野への仕事として波及していく可能性を持っている。",
+      "body_chars": 1085
+    },
+    {
+      "title": "NASA’s Curiosity Looks Back After Reaching Elevation Milestone",
+      "url": "https://science.nasa.gov/photojournal/nasas-curiosity-looks-back-after-reaching-elevation-milestone/",
+      "summary": "Description NASA’s Curiosity Mars rover captured this view looking back at the floor of Gale Crater, with the crater’s rim visible in the distance, on Sept. 5, 2026, the 5,006th Martian day, or sol, of the mission. Just nine days prior, on Aug. 26 (Sol 4,996), Curiosity set a mission milestone by reaching 1 kilometer […",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26781/PIA26781.png",
+      "published": "2026-10-07T17:00:47Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASA の Curiosity、標高マイルストーン到達後に後ろを見る",
+      "summary_ja": "NASA の Curiosity 火星探査機が2026年9月5日（火星日 5006 日目）にゲール・クレーター床を見下ろす景観を撮影した。8月26日（火星日 4996 日目）に、Curiosity は標高1キロメートル到達というミッションマイルストーンを達成している。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "火星のキュリオシティ・ローバーが、ゲール・クレーター内での探査開始から12年あまり経った2026年8月26日、クレーター床面から1キロメートルの高度到達というマイルストーンを達成した。投入以来、このローバーはシャープ山と呼ばれる高さ5キロメートルの山の裾野を登り続けており、今回の達成は同山への着実な上昇を示している。\n\nキュリオシティが登攀を続けるシャープ山は、ゲール・クレーター内の中央に位置する。この山の地層は火星の地質学的な歴史を記録しており、異なる高度での岩石や砂の成分を調べることで、かつて火星にどのような環境があったのかを推測できる。ローバーは車体に搭載した複数の観測機器を用いて、各地点での試料採取と分析を行ってきた。高度1キロメートルに到達することで、火星の地質学的な時系列がさらに明確になると考えられる。クレーター床面から離れるほど、より古い時代の地層にアクセスできるようになるからだ。\n\nこのような長期運用ローバーが成功する背景には、高精度な機械設計と耐環境性に優れた部品の組み合わせがある。火星表面は極端な温度変化や砂塵の影響にさらされており、地球上の製造業にとってそれらに耐える部品開発は技術的な大きな課題である。キュリオシティが12年以上にわたって移動・観測を続けられているのは、個々の部品が設計段階での想定通りに機能し続けていることを意味している。地球上での試験条件では完全に再現できない火星の環境下での実績は、部品信頼性のベンチマークとなり得る。\n\n9月5日に撮影された画像には、ローバーの右前輪が刻んだ轍や、砂の粒径・組成が鮮明に記録されている。マストカメラと呼ばれる搭載カメラが95枚の画像を組み合わせたパノラマから、探査機がいまなお正常に機能していることが読み取れる。こうした継続的な観測機器の動作は、長期運用における環境耐性の重要性を強調している。\n\n日本の宇宙機器・部品メーカーにとって、キュリオシティのような長期ミッションの成功事例は、高信頼性・高耐久性を求める顧客の要求水準を示す指標となる。火星探査という最も過酷な条件下での動作実績は、同様の基準で部品やシステムを製造する際の技術的なベンチマークとして機能する。日本の製造業が宇宙産業でより大きな役割を担うには、こうした長期運用を支える部品の信頼性向上と、過酷環境での耐性検証が避けられない課題である。",
+      "body_chars": 1000
+    },
+    {
+      "title": "NASA’s Curiosity Captures Dawn Breaking on Wind-Carved Cliffs",
+      "url": "https://science.nasa.gov/photojournal/nasas-curiosity-captures-dawn-breaking-on-wind-carved-cliffs/",
+      "summary": "Description NASA’s Curiosity Mars rover captured this panorama of sunrise illuminating distant, wind-carved features called yardangs on Aug. 11, 2026, the 4,982nd Martian day, or sol, of the mission. Scientists are eager to learn more about how the yardang layer formed. Figure A is a crop zooming in on the distant yard…",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25629/PIA25629.png",
+      "published": "2026-10-07T16:49:50Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASA の Curiosity、風で削られた崖に差し込む夜明けを捉える",
+      "summary_ja": "NASA の Curiosity 火星探査機が2026年8月11日（火星日 4982 日目）に、遠くの風で削られた地形「ヤルダング」を照らす日の出のパノラマ画像を撮影した。科学者はヤルダング層がどのように形成されたかについてさらに学ぶことを望んでいる。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Artemis II Crew Moon Photo Annotations",
+      "url": "https://www.nasa.gov/image-article/artemis-ii-crew-moon-photo-annotations/",
+      "summary": "A visualization of a dark Moon eclipsing the Sun is marked with handwritten notes in this April 6, 2026, screenshot from an Artemis II crew member’s tablet. NASA astronauts Reid Wiseman (in blue) and Victor “Ike” Glover (in green) and CSA (Canadian Space Agency) Jeremy Hansen (in red) observed impact flashes and their…",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/art002e016252.jpg",
+      "published": "2026-10-07T15:44:59Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "Artemis II クルー月写真注釈",
+      "summary_ja": "2026年4月6日のスクリーンショットで、月が太陽を食する暗い景観が Artemis II クルー員のタブレット上に手書き注釈された。NASA 宇宙飛行士 Reid Wiseman（青）、Victor「Ike」Glover（緑）、カナダ宇宙庁の Jeremy Hansen（赤）が衝突フラッシュとその痕跡を観測した。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Mars' oddest cloud may be even odder than previously thought",
+      "url": "https://phys.org/news/2026-10-mars-oddest-cloud-odder-previously.html",
+      "summary": "Scientists using the European Space Agency's Mars Express, in combination with a state-of-the-art meteorological model of the Red Planet, have found that there may be some exotic physics behind Mars' most curious cloud. The paper, \"Homogeneous ice Nucleation from Water Vapour Suggested by Elongated Clouds on Mars,\" is…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/marss-oddest-cloud-may.jpg",
+      "published": "2026-10-07T15:01:01+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "火星の奇妙な雲、予想以上に奇妙である可能性",
+      "summary_ja": "ESA の火星エクスプレスと最先端の火星気象モデルを組み合わせた科学者らが、火星最奇妙な雲の背景にはエキゾチックな物理学がある可能性を発見した。論文「火星の細長い雲で示唆される水蒸気からの均質氷核生成」は学術誌に掲載されている。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "火星の南半球で春夏に観測される奇妙な雲「アルシア・モンス延長雲」（AMEC）について、欧州宇宙機関（ESA）の火星エクスプレス衛星と気象シミュレーションの分析により、これまで理論上のみ知られていた稀な物理現象が実際に起きていることが判明した。火星の大気が極端な条件に達することで、地球では観測されない仕組みで雲が形成されている可能性が高まっている。\n\nAMECは高さ20キロメートルのアルシア・モンス火山の風下に毎日出現する白い氷雲である。毎朝形成され、最大で1800キロメートルまで延びた後、夕方には消滅する周期を、火星の春夏にわたって繰り返す。その見た目の美しさから火星で最も視覚的に印象深い雲として知られている。火星エクスプレスが2018年に発見した後、継続的に監視されてきたが、その形成メカニズムを正確にシミュレーションすることは長く困難だった。既知の気象モデルだけではこの雲の出現を再現することができず、研究者たちは謎の解明に向けて新たなアプローチを必要としていた。\n\n新たな研究では、AMECの形成に「均一核生成」と呼ばれるプロセスが関与していることが明らかになった。通常、雲は水蒸気が冷却される際に塵や塩分といった核となる物質が必要とされる。ところがAMECでは、こうした核なしに水蒸気が直接氷粒へと変わると考えられる。教科書では理論として記載されているものの、惑星大気で実際に観測されたのは初めてである。こうした現象には相対湿度が地球の日常で経験する値の10万倍以上に達するという極端な条件が必要になる。火星エクスプレスのデータとシミュレーションにより、アルシア・モンス火山の高さと火星の希薄な大気が合致することで、風が流れるさいに数分間で大気が数キロメートル上昇させられ、わずか10分で気温が30度低下し、こうした極端な湿度条件が実現される仕組みが解明された。\n\nこの発見は火星大気の理解を深めるだけでなく、ほかの惑星や系外惑星の大気でも同様の現象が起きる可能性を示唆している。宇宙における大気形成のプロセスの見直しが必要と考えられる。従来は地球と火星の雲は同じ規則に従うと考えられてきたが、火星のこの奇妙な雲を理解するには地球では想定されない物理が必要であることが示された。特殊な環境条件下では、理論上のみ知られていた現象が実現しうることが実証されたわけである。\n\n日本の製造業にとって、こうした火星観測機器の高度化は計測装置の部品供給、シミュレーション計算用のコンピュータシステムの開発、火星エクスプレスのような探査機本体に組み込まれる部品やセンサーの製造といった形で、サプライチェーンに組み込まれる機会をもたらす。宇宙機関の観測ミッションが科学的課題に直面するたびに、その解決には最先端の計測技術と製造技術が不可欠になるという構図が、今後も続いていくと考えられる。",
+      "body_chars": 1194
+    },
+    {
+      "title": "Mars’s oddest cloud may be even odder than we thought",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
+      "summary": "Scientists using the European Space Agency's Mars Express, in combination with a state-of-the-art meteorological model of the Red Planet, have found that there may be some very exotic physics behind Mars’s most curious cloud.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/the_arsia_mons_elongated_cloud_as_seen_by_mars_express/27546706-1-eng-GB/The_Arsia_Mons_Elongated_Cloud_as_seen_by_Mars_Express_card_full.png",
+      "published": "2026-10-07T15:00:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "火星の奇妙な雲、予想以上に奇妙である可能性",
+      "summary_ja": "ESA の火星エクスプレスと最先端の火星気象モデルを組み合わせた科学者らが、火星最奇妙な雲の背景にはきわめてエキゾチックな物理学がある可能性を発見した。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "欧州宇宙機関（ESA）のマーズ・エクスプレス探査機が、マーズに毎日現れる奇妙な雲の正体を解明した。この雲は教科書には記載されているものの自然界では起こらないと考えられていた、極めて稀な物理現象によって形成されていることが分かった。\n\n毎年春から夏にかけて、マーズの南半球で観測されるアルシア・モンス・エロンゲイテッド・クラウド（AMEC）という白い雲がある。高さ20キロのアルシア・モンス火山の風下に毎朝現れ、長さ1800キロまで伸びてから夕方には消える。このサイクルが数ヶ月間、ほぼ毎日繰り返される。マーズ・エクスプレスは2018年にこの雲を初めて観測して以来、年ごとに追跡・観測し続けてきた。科学者たちは当初、風が火山の地形を過ぎるときに発生するオロガラフィック雲、つまり地球でも見られるタイプの雲だと考えていた。しかし、この雲がどのようなメカニズムで毎日規則的に形成されるのか、気象モデルで正確に再現することができなかった。観測とモデルの乖離は、科学者たちに別の物理現象を探索する契機となったのである。\n\nその謎の鍵となったのが、ホモジニアス核生成という稀な物理プロセスだった。通常、水蒸気が雲になるには、塵や塩、花粉などの微粒子が「核」として必要である。水蒸気はこうした核の表面に付着して液体や氷晶に変わるのだが、AMECではこのような核なしに、水蒸気が直接氷晶に変わるという。この現象は物理学の教科書には理論として記されているものの、実際の大気で起こることはないと考えられていた。それほど特異な条件を必要とするからである。マーズの薄い大気と火山の高さが相まって、風が火山を越えるときに大気が急速に上昇し、わずか10分で気温が30度低下する。その結果、相対湿度が地球での日常生活の10,000倍を超える極端な水準に達し、ホモジニアス核生成が起こり得る環境が生まれるのだと考えられる。このような極限条件は、マーズの惑星環境全体を考えても稀であり、アルシア・モンス周辺という限定的な場所で実現しているのが特筆すべき点である。\n\nこの発見は、宇宙産業における長期運用探査機の価値を改めて示すものである。マーズ・エクスプレスは打ち上げ以来、日々の観測を通じて、従来の理論では説明できない現象を捉え、既存の大気モデルに修正を迫る知見をもたらした。こうした太陽系探査の進展は、やがて宇宙機の搭載機器や着陸機システムの設計基準を更新させる可能性がある。日本の宇宙関連製造業が供給する部品や装置、特にセンサーや熱制御装置は、最新の惑星大気モデルに基づいて開発・検証される。マーズのような極限環境での大気現象の理解が深まれば、将来の探査機や着陸機の耐久性評価や熱特性設計に影響を及ぼすことになり、それが部品メーカーの設計基準や材料選定の要件変更につながる可能性を持っている。",
+      "body_chars": 1182
+    },
+    {
+      "title": "ESA at IAC 2026 – Day 3",
+      "url": "https://www.esa.int/About_Us/Corporate_news/ESA_at_IAC_2026_Day_3",
+      "summary": "The future of European exploration and the decisions ahead took centre stage during ESA’s third day at IAC 2026. ESA Director General Josef Aschbacher joined representatives of ESA Member States to discuss Europe's ambitions in low Earth orbit, around the Moon and beyond. The day also saw ESA Director of Space Transpor…",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/iac_2026_europe_s_exploration_ambition/27561963-1-eng-GB/IAC_2026_Europe_s_exploration_ambition_card_full.jpg",
+      "published": "2026-10-07T14:54:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "IAC 2026 における ESA—3日目",
+      "summary_ja": "ヨーロッパの宇宙探査の将来と今後の決断が IAC 2026 の ESA 3日目の議題の中心となった。ESA 事務局長 Josef Aschbacher は ESA 加盟国の代表者とともに、地球低軌道、月周辺、その先へのヨーロッパの野心について議論した。また、宇宙輸送部門長も重要な発表を行った。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Alcohol in space: Exotic methanol discovered in planet-building zones",
+      "url": "https://phys.org/news/2026-10-alcohol-space-exotic-methanol-planet.html",
+      "summary": "An international team of astronomers using the Atacama Large Millimeter/submillimeter Array (ALMA), of which the U.S. National Science Foundation National Radio Astronomy Observatory is a partner (NSF NRAO), has combined expertise from across the globe to open a new window on how the organic molecules that seed planets…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/cosmic-cocktail-exotic.jpg",
+      "published": "2026-10-07T14:40:18+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "宇宙のアルコール：惑星形成域で発見された異種メタノール",
+      "summary_ja": "ALMA（NSF NRAO がパートナーとなる）を使用した国際天文学者チームが、惑星形成の種となる有機分子がどのように生成されるかについて新たな視点を開く研究を発表した。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "アルマ望遠鏡による国際的な観測プログラムにより、若い星の周辺でメタノールなどの複雑な有機分子が予想以上に大量に存在することが明らかになった。これらの分子は、将来の惑星形成と生命の誕生に関わる化学プロセスの理解に新たな光をもたらす成果である。\n\n国際研究チーム（COMPASS Large Program）は、アルマ望遠鏡の高感度観測能力を活用し、太陽に似た11個の若い星（プロトスター）の化学組成を100時間以上の観測時間をかけて詳細に調査した。アルマ望遠鏡は最大66個のアンテナを組み合わせることで、極めて微弱な有機分子の「指紋」を検出し、若い星の周辺での化学物質の分布を太陽系に匹敵するスケールで精密に観測できる。今回の調査では、メタノールがこれらの若い星の周辺で広く検出され、その中でもメタノール・マーザー放射（メタノール分子が産生する天然の電波ビーコン）が、調査対象の星の半数以上で観測された。このメタノール・マーザーは、従来の理解より一般的な現象である可能性を示唆している。さらに注目すべき発見として、全ての水素原子が重い同位体・重水素に置き換わった「完全重ユーザーメタノール（CD₃OD）」が、宇宙で初めて検出された。この稀少な分子は、地球から約1000光年離れたペルセウス分子雲の若い星IRAS 4A2の周辺で見つかった。\n\nこれらの成果が意味するところは、惑星系が形成される前段階における化学的複雑性の発展メカニズムの解明が進むということである。メタノールのような有機分子は、より大きな有機化合物を構築する中心的な役割を果たすと考えられており、その前駆体となる物質の分布や濃度を知ることは、惑星の初期環境がどのような化学組成を持つかを理解する上で極めて重要だ。また、異なる環境と進化段階にある複数のプロトスターを比較分析することで、化学的複雑性がどのように発展するのか、その過程が星の誕生環境に由来するのか、それとも星形成中の進化プロセスに由来するのかが区別できるようになる。\n\n一方、日本の部品・装置・素材メーカーにとっても、この研究の進展は無視できない含意を持つ。アルマ望遠鏡のような高度な観測機器を実現するための部品・材料・精密加工技術は、宇宙科学の最前線に必要とされるものであり、こうした基礎研究の活発化は、それを支える産業基盤への需要を増加させる傾向にある。さらに、将来の宇宙探査や惑星形成の解明に向けた機器開発が活発化することで、新しい技術仕様や性能基準が生まれ、それが日本国内のサプライチェーンに求められる精度向上や新素材開発の契機となる可能性がある。こうした基礎研究と産業基盤の相互作用を理解することは、長期的な事業戦略を考える上で重要だ。",
+      "body_chars": 1136
+    },
+    {
+      "title": "Announcing the finalists for the 2026 SpaceNews Icon Awards",
+      "url": "https://spacenews.com/announcing-the-finalists-for-the-2026-spacenews-icon-awards/",
+      "summary": "Meet the 43 leaders and accomplishments that exemplified excellence across the industry over the last 12 months The post Announcing the finalists for the 2026 SpaceNews Icon Awards appeared first on SpaceNews.",
+      "image": "https://i0.wp.com/spacenews.com/wp-content/uploads/2026/10/2025-icon-awards-Purdy.jpg?fit=1024%2C768&ssl=1",
+      "published": "2026-10-07T14:18:18Z",
+      "source": "SpaceNews",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "2026年スペースニュース・アイコン・アワード、43人の最終候補者を発表",
+      "summary_ja": "過去12ヶ月間で業界全体を通じて卓越さを示した43人のリーダーと功績を紹介する。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "2026年の宇宙産業における主要な業績を表彰するスペースニュース社のアイコンアワーズが、その候補者を発表した。月面付近への宇宙飛行士派遣、軌道上での人工知能運用、衛星サービシング技術の実用化など、産業成長を象徴する個人、組織、ミッションが最終選考に選ばれている。\n\nこのアワーズは5つのカテゴリで受賞者を選定する。生涯功績部門では、衛星通信の先駆者として数十年にわたり高容量ブロードバンド衛星の発展に尽力した経営者や、欧州の宇宙機関・ロケット企業をリードしてきた指導者、NROやNASAで宇宙アーキテクチャの転換を推し進めた幹部らが名を連ねている。国際協力部門では、米仏とアラブ首長国連邦による衛星群構想や、欧州と中国が共同設計・運用するスペースシップミッション、ナンシー・グレース・ローマン宇宙望遠鏡といった大型天文台など、複数国による協力体制が認識されている。新興企業部門には、欧米で急成長する衛星メーカー、回収可能衛星を開発する企業、NASAのスウィフト観測衛星救援ミッションを実施した軌道内サービシング企業、インド民間初の軌道級ロケットを開発した企業らが挙げられている。革新技術部門では、光通信ネットワークの構築、軌道内輸送システムの拡張、GPS代替となる新型測位システムなどが表彰候補となっている。\n\nこれらの選出は、宇宙産業が新しいステージに進んでいることを示唆している。従来、宇宙開発は政府機関による基礎開発と大型プロジェクトが中心であった。しかし今回の候補者群を見ると、民間の新興企業や商業衛星オペレーターが次々と新しい市場を開拓している。衛星製造から衛星管制、軌道上での付加価値サービス、測位・通信インフラの構築まで、宇宙経済の層構造が急速に厚くなり、各階層で専門的な企業が活躍を始めている。また、米欧、欧中、米仏アラブといった異なる地政学的枠組みでの国際協力が並行して進むことで、宇宙産業がグローバルなサプライチェーンとして機能しつつあることがわかる。\n\n日本の部品・装置・素材メーカーにとって、この動きは機会と課題の両面を持つ。衛星数の増加、軌道上AI、サービシング技術、新型測位システムなど、技術難度の高い領域が実用段階に進むにつれ、それらを支える部品・モジュール・素材の需要は確実に高まると考えられる。特に、新興企業が急速に製品開発を進める中で、信頼性と供給能力を備えた日本の部品サプライヤーへの依存度は相対的に高まる可能性がある。同時に、国際協力の深化は日本企業がこれら世界的パートナーシップに組み込まれるチャンスを広げる。受賞候補に名を連ねる企業や国際プロジェクトの技術仕様、調達ニーズを丁寧に追い、適切な部品提案ができるかどうかが、今後の競争力を左右することになるだろう。",
+      "body_chars": 1152
+    },
+    {
+      "title": "飛行士が落としたバッグは、時速2万8000kmで地球軌道を周回中",
+      "url": "https://www.gizmodo.jp/article/astronauts-lost-item-yke/",
+      "summary": "国際宇宙ステーションの船外活動中に宇宙飛行士が落としたバッグが、現在地球の軌道上を高速周回しており、その姿が衛星写真で確認できる。",
+      "image": "https://media.loom-app.com/gizmodo/dist/images/2023/11/20/858d0132d5ec452b432c1313a6215d57.jpg?w=1200",
+      "published": "2026-10-07T14:00:00+00:00",
+      "source": "ギズモード・ジャパン",
+      "source_id": "gizmodo_jp",
+      "lang": "ja"
+    },
+    {
+      "title": "エンケラドゥスの内部海を模した強アルカリ性の実験環境で地球の微生物の一種が増殖",
+      "url": "https://sorae.info/astronomy/20261007-enceladus-ocean-simulate.html",
+      "summary": "ルートヴィヒ・マクシミリアン大学ミュンヘンのVanessa Helmbrecht氏を筆頭とする研究チームは、土星の衛星Enceladus（エンケラドゥス）で存在が予想される液体の水の海（内部海）の海底を模した環境で実験を…",
+      "image": null,
+      "published": "2026-10-07T13:24:22+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja",
+      "body_ja": "土星の衛星エンケラドゥスの内部海を模した強アルカリ環境で、地球の微生物が通常の生存限界を超えて増殖することが確認された。ルートヴィヒ・マクシミリアン大学ミュンヘンの研究チームが報告したこの成果は、太陽系内での生命の可能性を検証する新たな知見をもたらすものである。\n\nエンケラドゥスは土星の衛星の中で注目度が高い天体だ。南極付近からプルーム（水蒸気や氷粒の噴出）が観測されており、厚い氷殻の下に液体の水の海が存在すると考えられている。NASA と ESA の探査機カッシーニの観測では、このプルームから水素やメタンが検出され、生命が存在する可能性を示唆する証拠として議論されてきた。しかし生命が存在するためには、微生物が増殖できる化学環境が必要である。ここに大きな課題があった。エンケラドゥスの内部海は炭酸塩を多く含むアルカリ性であり、pH は 8～11.6 と推定されている。一方、地球の微生物のうちメタンを生成する者たちは、一般に中性からやや酸性の環境に適応している。なぜなら、水に溶けた炭素が二酸化炭素（CO2）の形で存在しやすいのは pH が低いときだからだ。pH が 9 を超えると炭素の大部分は炭酸水素イオンや炭酸イオンの形になり、利用可能な CO2 は極めて乏しくなる。こうした極限環境で微生物が本当に増殖できるのか、それは長年わかっていなかった。\n\n研究チームは沖縄トラフの深海熱水噴出孔で採取されたアーキア（古細菌）の一種「メタノサーモコッカス・オキナワエンシス」を用いて実験に臨んだ。この微生物は水素と CO2 からメタンを作ってエネルギーを得るもので、通常は pH 8.5 を上限に増殖するとされていた。実験では、エンケラドゥスの岩石コアを模した粉末に、炭素を豊富に含むアルカリ性の水と塩化鉄（Ⅱ）を加え、酸素のない環境に置いた。すると鉄と水の反応によって水素が発生し、この微生物は pH 11 という常識を超える強アルカリ環境でも増殖し、メタンを生み出した。分析によれば、微生物は還元的アセチルCoA 経路という CO2 取り込みの遺伝子を活発にさせることで、わずかな CO2 を効率よく集めていたと考えられる。模擬環境の水に溶けた炭素は通常の培養液と比べて 10 倍に上ったという。\n\nこの発見がもつ意味は重要である。それはエンケラドゥスという極限環境が、地球の最も古い代謝形式の一つを支え得ることを示したのだ。論文の共著者は「私たちの研究はエンケラドゥスに生命が存在することを証明するものではない」と慎重に述べながらも、「衛星の海に由来するプルームから試料を採取する将来のミッションの科学的根拠を強める」と指摘している。現に ESA ではエンケラドゥスに周回機と着陸機を送り込む探査ミッションの検討が進められており、この研究はそうした計画の意義をさらに高める材料となり得るのだ。\n\n日本の製造業にとって、この動きは衛星探査機器の需要につながる可能性を持つ。エンケラドゥス探査が実現すれば、耐酸化性・耐熱性に優れた素材や、高精度のセンサー・計測機器、通信機器の部品など、多くの最先端技術が要求されることになる。基礎科学の進展が、やがて産業の成長へと結びつく—その過程で日本の部品・装置メーカーが果たす役割は小さくない。",
+      "body_chars": 1371
+    },
+    {
+      "title": "Exclusive: Xona Ramps Up Production Ahead of Pulsar Launch",
+      "url": "https://payloadspace.com/exclusive-xona-ramps-up-production-ahead-of-pulsar-launch/",
+      "summary": "With FCC approval in hand and six sats ready for the pad, Xona is turning to its next challenge: building the next 250. The post Exclusive: Xona Ramps Up Production Ahead of Pulsar Launch appeared first on Payload .",
+      "image": null,
+      "published": "2026-10-07T13:00:00+00:00",
+      "source": "Payload",
+      "source_id": "payloadspace",
+      "lang": "en",
+      "title_ja": "Xona、Pulsar打ち上げに向け生産体制を強化",
+      "summary_ja": "FCC認可を取得し6機の衛星が打ち上げ準備完了となるなか、Xonaは次の課題に直面している。次の250機の製造である。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Brake! Time for ESA’s Hera asteroid mission to go slow",
+      "url": "https://www.esa.int/Space_Safety/Hera/Brake!_Time_for_ESA_s_Hera_asteroid_mission_to_go_slow",
+      "summary": "Launched two years ago today, the European Space Agency’s Hera mission for planetary defence has been hurtling away from Earth ever since. The small-car-sized spacecraft is now preparing for its single most challenging activity since lift-off: the sustained braking manoeuvres to slow it down to approach its target aste…",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/hera_braking/27560778-2-eng-GB/Hera_braking_card_full.gif",
+      "published": "2026-10-07T12:33:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "制動開始、ESA探査機Heraが速度低下へ",
+      "summary_ja": "2年前に打ち上げられた欧州宇宙機関の惑星防衛ミッションHeraは、以来地球から遠ざかり続けている。小型車サイズのこの宇宙機は打ち上げ以来最大の課題に立ち向かおうとしている。目標小惑星への接近のため速度を低下させるための継続的な制動機動である。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "ArbaLabs Launches AI Verification Demo On South Korea’s Nuri Rocket",
+      "url": "https://payloadspace.com/arbalabs-launches-ai-verification-demo-on-south-koreas-nuri-rocket/",
+      "summary": "“In short, tons of companies are looking at the latest and greatest physical AI deployments,” ArbaLabs CEO Ashley Reeves told Payload. “Nobody is really thinking about putting some checks and balances on what these AI models are doing.” The post ArbaLabs Launches AI Verification Demo On South Korea’s Nuri Rocket appear…",
+      "image": null,
+      "published": "2026-10-07T12:28:38+00:00",
+      "source": "Payload",
+      "source_id": "payloadspace",
+      "lang": "en",
+      "title_ja": "ArbaLabs、韓国ヌリロケット搭載でAI検証デモを実施",
+      "summary_ja": "「多くの企業は最新かつ最高の物理的AI展開に注目している」とArbaoLabsのアシュレイ・リーヴスCEOは述べた。「これらのAIモデルが何をしているのか監視・制御を検討している人はほぼいない」と指摘している。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "The Incredible Adventures of the Hera mission – The space detectives arrive",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/10/The_Incredible_Adventures_of_the_Hera_mission_The_space_detectives_arrive",
+      "summary": "Meet Hera, our very own asteroid detective. Together with two CubeSats – Milani the rock decoder and Juventas the radar visionary – Hera is off on an adventure to explore Didymos, a double asteroid system that is typical of the thousands that pose an impact risk to planet Earth.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/the_incredible_adventures_of_the_hera_mission_the_space_detectives_arrive/27561209-1-eng-GB/The_Incredible_Adventures_of_the_Hera_mission_The_space_detectives_arrive_card_full.png",
+      "published": "2026-10-07T12:00:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "Heraミッションの驚異的冒険、宇宙探偵が出発",
+      "summary_ja": "小惑星探偵Heraは、岩石解析装置Milaniとレーダー探査機Juventas という2つのキューブサットとともに、二重小惑星系Didymosを探査する冒険へ向かう。Didymosは地球への衝突リスクをもたらす数千の小惑星の典型的な事例である。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Thousands of Black Holes Could Be Lurking in Our Backyard—and You Can Help Find Them",
+      "url": "https://www.universetoday.com/articles/thousands-of-black-holes-could-be-lurking-in-our-backyardand-you-can-help-find-them",
+      "summary": "According to stellar evolution models, there should be hundreds of millions of black holes floating around in our galaxy. But so far we’ve only found 70. That’s in large part because they are so hard to find, but a citizen science project from the University of Southampton is actively seeking out these hidden monsters…",
+      "image": null,
+      "published": "2026-10-07T11:10:32+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "銀河系に潜む数千のブラックホール、市民科学で発見へ",
+      "summary_ja": "恒星進化モデルによれば、銀河系内には数億個のブラックホールが浮遊しているはずだが、これまでに発見されているのはわずか70個である。発見が極めて困難なためだが、ソウサンプトン大学の市民科学プロジェクトが現在これらの隠れた怪物を積極的に探索している。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "If you're looking, here's a \"good deal\" for NASA and the European Space Agency",
+      "url": "https://arstechnica.com/space/2026/10/nasa-is-keen-on-pursuing-at-least-one-joint-science-mission-with-europe/",
+      "summary": "\"We are in the era of people interested in having good deals, and LISA is a very good deal for the US.\"",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/lisa-2arms-gws-red2-500x500.webp",
+      "published": "2026-10-07T11:00:40+00:00",
+      "source": "Ars Technica",
+      "source_id": "arstechnica",
+      "lang": "en",
+      "title_ja": "NASAとESAにとって「好条件の契約」、LISA検討で",
+      "summary_ja": "良い条件を求める時代にあり、LISAはアメリカにとって非常に有利な契約である。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
       "title": "ArianeGroup Completes Second Themis Wet Dress Rehearsal",
       "url": "https://europeanspaceflight.com/arianegroup-completes-second-themis-wet-dress-rehearsal/",
       "summary": "The European Space Agency announced that ArianeGroup and Swedish Space Corporation completed a second wet dress rehearsal of the Themis reusable rocket demonstrator at Esrange in Sweden. ESA announced the completion of the latest rehearsal on 7 October, saying that the test had taken place on 29 September. As with the…",
@@ -37,6 +343,23 @@
       "source": "European Spaceflight",
       "source_id": "spaceflightnews",
       "lang": "en",
+      "title_ja_broken": false,
+      "title_ja": "ArianeGroup、再利用ロケットThemisの2度目の本番直前訓練完了",
+      "summary_ja": "欧州宇宙機関はArianeGroupとスウェーデン宇宙公社がスウェーデンのエスレンジ施設でThemis再利用ロケット実証機の2度目の本番直前訓練を完了したと発表した。訓練は9月29日に実施され、10月7日に完了が報告された。",
+      "translated_ja": true
+    },
+    {
+      "title": "Finding Hera’s way: ESA’s Flight Dynamics team into action",
+      "url": "https://www.esa.int/Space_Safety/Hera/Finding_Hera_s_way_ESA_s_Flight_Dynamics_team_into_action",
+      "summary": "The European Space Agency’s Hera planetary defence mission team is preparing to light a fire in the sky. On the early morning of 15 October the small-car-sized spacecraft will burn its Orbit Control Thrusters in the direction of its target asteroid system for a total of 93 minutes continuously. This braking manoeuvre w…",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2023/01/hera_approaching_didymos_asteroids/24679985-1-eng-GB/Hera_approaching_Didymos_asteroids_card_full.gif",
+      "published": "2026-10-07T08:03:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "Heraの航路確保へ、ESA飛行力学チームが機動開始",
+      "summary_ja": "欧州宇宙機関のHera惑星防衛ミッションチームが行動を開始している。10月15日早朝、小型車サイズの宇宙機は目標小惑星系の方向に計93分間連続で軌道制御スラスタを噴射する。この制動機動によって宇宙機は目標到達へ向けて速度を低下させる。",
+      "translated_ja": true,
       "title_ja_broken": false
     },
     {
@@ -48,7 +371,10 @@
       "source": "ESA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "太陽が黒くなるとき",
+      "summary_ja": "ESAブログより。",
+      "translated_ja": true
     },
     {
       "title": "ispace、欧州3社と相次ぎ覚書 ULTRAランダーの開発や月の通信・測位で協業を検討",
@@ -109,7 +435,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "APOD：超新星残骸Pa 30",
+      "summary_ja": "毎日異なる宇宙の画像または写真が、専門家による説明とともに紹介される。",
+      "translated_ja": true
     },
     {
       "title": "Arctic Sea Ice Shrinks to Its 2026 Minimum",
@@ -120,7 +449,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "北極海氷、2026年の最小値に縮小",
+      "summary_ja": "衛星観測データによれば、北極海氷が冬季・夏季ともに減少し、海洋をカバーする面積が縮小している。",
+      "translated_ja": true
     },
     {
       "title": "NASA、宇宙から持ち帰ったサンプル入り箱のフタが開かない",
@@ -151,7 +483,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "彷徨うブラックホール、宇宙進化の手がかりを示唆",
+      "summary_ja": "新しい研究によると、数十億年にわたって宇宙を旅してきた「彷徨う」ブラックホールが、宇宙の進化に痕跡を残した可能性がある。",
+      "translated_ja": true
     },
     {
       "title": "Galaxy Evolution Can be Affected by Black Hole Jets",
@@ -162,7 +497,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ブラックホールジェットが銀河進化に影響与える",
+      "summary_ja": "近年の観測で、超大質量ブラックホールが銀河の進化に大きな影響を与える証拠が見つかっている。これらは星形成に必要な物質を吸収して星の誕生を抑制する一方で、ジェットから放出されるエネルギーがガスに富んだ領域を活性化させ、星形成を促進する場合もある。",
+      "translated_ja": true
     },
     {
       "title": "Computer scientist tracks satellites with automated observatory built from off-the-shelf technology",
@@ -173,7 +511,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "コンピュータ科学者が市販技術で構築した自動観測装置で衛星を追跡",
+      "summary_ja": "サンディア国立研究所のコンピュータ科学者アレン・シュニッベンは、小学校のとき太陽系についての本を読み、中学では望遠鏡を手に入れて夜空の観測を趣味として始めた。",
+      "translated_ja": true
     },
     {
       "title": "Crew-12 set to depart the ISS after eighth months in orbit",
@@ -184,7 +525,10 @@
       "source": "NASASpaceflight",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "クルー12がISSでの8か月滞在後に出発予定",
+      "summary_ja": "NASAとスペースXのクルー12ミッションは、国際宇宙ステーションでの8か月間の滞在を終えて出発予定となっている。",
+      "translated_ja": true
     },
     {
       "title": "14回目の打上げでSpaceXのStarshipが初の地球周回軌道での自社衛星投入に成功。これまでの経緯と意義",
@@ -205,7 +549,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "模擬月面土壌と再生可能サーモプラスチック、将来の宇宙インフラ構築に活用か",
+      "summary_ja": "地球から月への物質運搬は極めてコストが高く、1キロあたり100万ドルを超える場合もある。将来の恒久的な月面基地の建設計画は、このコスト低減にかかっている。",
+      "translated_ja": true
     },
     {
       "title": "NASA's Curiosity rover catches stunning Martian dawn",
@@ -218,7 +565,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "NASAのキュリオシティ火星探査車が、火星の夜明けに撮影した新しいパノラマ画像を公開した。この画像は火星のシャープ山の北西部に広がる「ヤードラング」と呼ばれる風で削られた崖の詳細な景観を捉えており、2014年からこの山を登り続けてきた同探査車の探査活動が新たな段階へ進むことを示している。\n\n撮影は8月11日の火星時間午前8時30分に行われ、マストカムで捉えた6枚の画像を地球で組み合わせて完成した。通常の処理と異なり、白色バランス調整を施していないため、火星の朝の本来の光景がそのまま記録されている。このような映像処理の選択も、科学的な価値を重視する探査の姿勢を示している。\n\nシャープ山は高さ5キロメートルに及ぶ層状の地形であり、各層が火星の異なる地質時代を記録している。数十億年前、この地域には湖や川が流れていたが、やがて水が干上がり、塩分を含む鉱物が堆積した。その後、新しい物質の堆積が停止した後、風による浸食がヤードランと呼ばれる独特の形状を作り出したと考えられている。キュリオシティが最近達成した高度1キロメートルの登頂は、火星での探査における最大の上昇距離であり、ヤードランはシャープ山の北西部に約16キロメートルの幅で広がっている。\n\nただし、ヤードラング層には謎が多い。その色は周囲の地層と異なり、層の傾きも奇妙で、一見すると「貼り付けられた」ように見える。プロジェクト科学者のアシュウィン・ヴァサバダ氏は「何がこの層を作ったのか、誰も確実には知らない」と述べており、古い火山灰が堆積して形成された可能性が有力な説として検討されている。この仮説が正しいかどうかは、火星の火山活動の歴史解明にも直結する重要な問題だ。\n\nキュリオシティは現在、第5次拡張ミッションの2年目にあり、硫酸塩と炭酸塩が豊富に含まれる層の探査に取り組む予定である。両者とも火星表面の古い乾燥過程を示す痕跡であり、水の消失と鉱物化のプロセスを理解する上で重要だ。2027年までにヤードランの基部に到達することを目指しており、そこでロボットアームを使用して、これまで獲得できなかった直接的なデータを採取できる見込みである。この新しい知見は、火星の地質進化と生命が存在できた可能性に関する理解を深める上で、大きな転機となるだろう。\n\n火星探査におけるこのような継続的な成果は、過酷な環境で機器を正常に動作させるための素材・部品・制御システムの高度な技術を必要とする。日本の製造業、特に電子部品、金属加工、光学機器などのサプライヤーは、こうした火星探査ミッションの背後にある技術開発に直接的あるいは間接的に関わる可能性を持っている。長期間の探査を支える部品の信頼性向上や環境適応能力は、地上の産業用途や民間宇宙産業でも求められる技術であり、宇宙探査は日本の製造業全体の技術的競争力を磨く機会を提供し続けている。",
-      "body_chars": 1196
+      "body_chars": 1196,
+      "title_ja": "NASAの火星探査機キュリオシティが火星の夜明けを捉える",
+      "summary_ja": "NASAの火星探査機キュリオシティが撮影した新しいパノラマ画像は、風に侵食された火星の崖を最も詳細に映した画像だ。火星時間午前8時30分に撮影されたこの画像には、前景に印象的な青い色合いが見られている。",
+      "translated_ja": true
     },
     {
       "title": "It looks like the Atlantic storm season may finally produce a hurricane",
@@ -230,7 +580,10 @@
       "source_id": "spaceflightnews",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "大西洋のハリケーンシーズン、ついにハリケーン発生の見込み",
+      "summary_ja": "今年の大西洋熱帯域は例外的に静穏な状態が続いている。",
+      "translated_ja": true
     },
     {
       "title": "Deposition Sciences, Inc. Expands Sunshade® Tape Offering with New 12″ × 30″ Format",
@@ -243,7 +596,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "精密薄膜コーティング企業のデポジション・サイエンシズ（DSI）が、宇宙機器向けの熱制御テープ「サンシェード・テープ」に新しいサイズである12インチ×30インチ版を追加発表した。これまでの製品と比べてより大型の表面積への施工が容易になり、衛星やロケット部品、さらには地上の産業機器に至るまで、様々なシステムの熱管理設計に新たな選択肢をもたらすものだ。\n\nサンシェード・テープは太陽光反射性、熱的な安定性、極限環境での耐久性を特徴とする高性能材料である。軽量かつ柔軟な設計により、宇宙システムのエネルギー効率を改善しながら、熱に敏感な電子部品や機構部を保護する。宇宙環境では打ち上げから軌道運用、さらには再突入まで、激しい温度変化にさらされるため、こうした信頼性の高い熱制御材料の必要性は絶えない。従来のサイズでは対応しきれなかった大型の表面積や複雑な幾何形状の部品への施工ニーズが存在していたと考えられ、新サイズの導入は顧客企業からの要望に応えるかたちで実現したものだ。施工がしやすくなることは、製造工程の効率化や品質の一貫性確保にも寄与する可能性がある。\n\n宇宙産業全体のサプライチェーン構造を見ると、今回のような材料供給形態の多様化は重要な転機である。衛星やロケット開発では、システムインテグレーター（大手宇宙企業）が部品・材料の仕様を定義し、それを世界中のサプライヤーに発注する構図が標準的だ。新しいサイズが利用可能になれば、設計段階での自由度が増し、より効率的で信頼性の高い熱管理ソリューションが実現しやすくなると考えられる。特に小型衛星やリユーザブルロケット関連の事業が急速に拡大する現在、材料の選択肢拡充は個別のプロジェクト要件に対応するための柔軟性をもたらす。また、打ち上げビジネスの高頻度化に伴い、材料の調達と施工効率の向上は、プロジェクトのコスト管理にも直結する重要な要素である。\n\n日本の部品・素材メーカーにとって、この展開は複数の層で関わっている。国際的な衛星プログラムやロケット開発に納入する日本企業は既に存在し、それらの実装にこうしたアメリカ製の先進材料が組み込まれることは珍しくない。新サイズの追加は、日本のサプライヤーが衛星やロケット部品を設計・製造する際の選択肢を増やし、より最適な熱管理設計を追求する余地を生む。同時に、新しいサイズへの対応方法や加工・取付プロセスの習熟が、今後の国際競争における競争力に影響する可能性がある。特に熱管理が重要な部品（太陽電池パネル支持体、推進系機器周辺部品など）を扱う企業にとって、こうした新材料への適応能力は、顧客からの信頼を獲得するうえで欠かせない。材料供給の動きに敏感に対応し、早期にプロセス最適化を進める企業ほど、グローバルサプライチェーンでの役割強化につなげられるだろう。",
-      "body_chars": 1174
+      "body_chars": 1174,
+      "title_ja": "デポジション・サイエンス、サンシェードテープに新サイズを追加",
+      "summary_ja": "2026年10月、カリフォルニア州サンタローザの先進薄膜コーティング企業デポジション・サイエンス・インクは、サンシェード粘着テープの新フォーマット12インチ×30インチを発表した。",
+      "translated_ja": true
     },
     {
       "title": "NASA to Cover Northrop Grumman CRS-24 Spacecraft Departure",
@@ -256,7 +612,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "ノースロップ・グラマンのシグナス XL 宇宙船が国際宇宙ステーション（ISS）から離脱する。4 月の打ち上げから約 6 ヶ月間、11,000 ポンド以上の物資と実験機器を軌道上基地に届けたシグナス XL は、10 月 9 日に ISS の Unity モジュールから切り離され、その 2 日後に大気圏で焼却処理される。\n\nこの運用の流れは NASA の商業補給サービス（CRS）プログラムの中核をなすものだ。SpaceX のファルコン 9 ロケットで打ち上げられたシグナス XL は、物資輸送だけでなく ISS 上の不要物を地球に戻す役割も担う。今回も帰還時には数千ポンドの廃棄物を積載しており、大気圏への突入によって安全に焼却される。ISS という軌道上の閉鎖環境では、こうした定期的な廃棄処理が施設の長期的な運用を支える環境基盤となっている。補給機が物資を持ち上げると同時に、不要物を下ろすという往復体制があってこそ、人間が継続的に滞在し活動する条件が整うのだ。\n\nISS 上での切り離し作業は完全に自動化されていない。地上の飛行管制官が Canadarm2 ロボットアームを遠隔操作してシグナス XL を分離し、リリース位置へ移動させる。このとき ISS 上の宇宙飛行士は操作を監視する立場にある。こうした手順を確実に実行することは、ISS という複雑で繊細な軌道上プラットフォームの安全な運用に直結している。シグナスのような補給機が頻繁に往来する中で、ドッキング・アンドッキングの確実な遂行は ISS 自体の継続的利用を支える基盤であり、その背後には地上と軌道上を結ぶ通信・操作・監視のシステムと、それを信頼できるまでに高めた運用実績の積み重ねがある。\n\n補給機の定期的な往来と安全な運用は、日本の製造業にも深く関わっている。ISS 自体が各国のコンポーネントで構成されており、その維持・補給システムも国際的なサプライチェーンの一部であることを忘れてはならない。ロボットアーム、ドッキング機構、推進系統、センサーなど、ISS の各システムと補給機の相互作用を支える様々な部品・装置が関係している。米国と日本の宇宙機関の長期的な協力体制の中で、こうした技術的な運用の積み重ねが国際信頼の基盤となる。ノースロップ・グラマンの商業補給ミッションが継続される背景には、こうした複合的なサプライチェーンと技術的相互依存があると考えられる。",
-      "body_chars": 1018
+      "body_chars": 1018,
+      "title_ja": "NASAがノースロップ・グラマンCRS-24宇宙船の出発を中継",
+      "summary_ja": "国際宇宙ステーションに11,000ポンド以上の補給物資と科学実験装置を運搬したノースロップ・グラマン社のシグナスXL宇宙船は、商用補給サービス24号ミッションの一環として、10月9日金曜日に出発予定だ。",
+      "translated_ja": true
     },
     {
       "title": "October 2026 Satellite Puzzler",
@@ -269,7 +628,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "NASAが毎月公開する衛星画像パズルは、地球観測のデータを教育的に活用する企画である。毎月新しい謎の衛星画像を公開し、その撮影場所を特定するチャレンジを行っている。一見するとパズルゲームだが、その中に見えるのは、現代の衛星観測技術がもたらす情報の多様性と、それを読み解く能力の社会的価値である。このような企画を通じて、NASAは地球観測の重要性を広く認識させようとしている。\n\nNASAがパズル回答者に対して「印象的」とみなす答えは、撮影に使用された衛星名や観測機器、利用されたスペクトラルバンド、地質や歴史的背景の詳細な指摘などである。これが何を意味するかを考えると、現代の地球観測は単なる画像取得ではなく、複数波長のセンサーデータを組み合わせた多次元的な情報収集へと進化していることが分かる。赤外線センサー、分光計測機器、高解像度カメラなど、多様な観測機器が衛星に搭載され、それぞれが異なる情報を提供する。こうした機器の精密な製造と調整は、部品メーカーや装置メーカーの高度な技術力に支えられている。観測機器の性能向上に伴い、その構成部品に求められる精度や耐久性も年々上昇している。\n\n地球観測の重要性は、気候変動、天然資源管理、防災、都市計画など多くの分野で認識されており、世界的に衛星打ち上げの数は増加傾向にある。異なる国、異なる機関が独自の観測衛星を運用する状況の中で、それぞれの衛星システムが必要とする部品・素材の種類と数量も増加している。センサーの高精度化、機械的な安定性の向上、宇宙環境への耐性強化など、衛星機器に求められる要求水準は絶え間なく上昇している。また、衛星がより小型化・軽量化される一方で、機能はより高度になるという矛盾した要求も生まれている。\n\n日本の製造業にとって、地球観測衛星の発展は、観測機器を構成する精密部品や高機能素材の開発・供給の機会を生み出しつづけると考えられる。NASAのようなプロジェクトが地球観測の価値を啓発する中で、データ利用の民主化がさらに進むと考えられ、より多くのエンドユーザーが衛星データを求めるようになる可能性がある。それに応える新しい衛星システムの開発と打ち上げが加速すれば、部品・装置・素材サプライヤーへの需要も増加するとみられる。こうした産業の拡大に対応するためには、日本のサプライヤーが継続的に技術力を高め、衛星システムメーカーの多様で厳しいニーズに応える必要がある。",
-      "body_chars": 1017
+      "body_chars": 1017,
+      "title_ja": "2026年10月衛星画像パズル",
+      "summary_ja": "衛星画像の位置とその興味深い理由を特定する問題である。",
+      "translated_ja": true
     },
     {
       "title": "Lunar Grounding Challenge",
@@ -282,7 +644,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "NASAが月面南極での宇宙活動において、宇宙服に蓄積した静電荷による危険を回避するための新技術開発を公募している。月面での歩行や周囲のプラズマにより、宇宙服が高電圧を帯びるため、帰還時に着陸船との接触で静電放電が発生する恐れがあるという課題に対応するものだ。\n\n月の南極は、恒久影領域を含む暗い地域が多く、今後の月面基地建設の有力候補地だ。ここへの有人探査の準備が進む中で、予想外の課題が浮かび上がった。宇宙飛行士が月面を歩くときの摩擦帯電と、周囲のプラズマからの帯電により、宇宙服に静電荷が蓄積される。特に暗い領域では、環境離子流が不足し、光電子放出もないため、負電荷が大きく蓄積されやすい。結果として、宇宙飛行士の身体全体が高電圧コンデンサーのような状態になる可能性がある。\n\n日光が当たる地域での着陸船は、わずかに正の電位を持つため、宇宙飛行士が機体に近づく際に極端な電圧差が生じ、接触時に静電放電が発生する恐れがある。この放電は宇宙服の外層を損傷したり、内部の電子機器を破壊したり、酸素環境を脅かしたり、乗組員に危険な電撃を与える可能性がある。月面には、地球のように大気や磁場によって電荷を逃がすメカニズムがないため、一度蓄積された電荷は、着陸船との接触時まで溜まり続ける。\n\n月面南極での活動は、水氷資源の採取や将来の恒久拠点建設にとって重要だ。しかし、こうした基本的な安全課題の解決なしには、本格的な有人活動の実現は難しい。NASAがこの課題に対して公募という形式を取ったことは、既存の技術では明確な解決策がないことを示唆している。宇宙服の接地技術、着陸船の電位管理、あるいは遠隔での放電メカニズムなど、複数のアプローチが考えられるが、月面という極限環境での実装は極めて困難だ。このチャレンジの成功は、今後の月面での人間活動の安全性と実現可能性を左右する関門となる可能性がある。\n\n日本企業も、国際的な月面開発プログラムの一部として、宇宙服や機器、検査・測定装置などの部品サプライヤーとして関わる可能性がある。特に、静電放電対策は、半導体製造、精密電子機器、材料科学などの分野で既に高度な技術を持つ日本のサプライチェーンにとって、新たなビジネス機会として検討する価値がある。NASAが2027年1月までに募集する本チャレンジで提示されるソリューションの仕様や要件は、今後の月面機器開発の標準になる可能性が高く、国際競争力を維持するためには、こうした前線の課題への早期対応が重要だと考えられる。",
-      "body_chars": 1052
+      "body_chars": 1052,
+      "title_ja": "月面帯電チャレンジ",
+      "summary_ja": "宇宙飛行士が月の南極を横断する際、月面での歩行による摩擦帯電と周囲プラズマからのプラズマ帯電により、宇宙服に電荷が発生する。月の影や永久影の領域に入るとこの問題は一層深刻化し、暗い領域では宇宙服への帯電がより激しくなる。",
+      "translated_ja": true
     },
     {
       "title": "SpaceX reveals how its 1 Million AI satellite network will work and prevent space collisions",
@@ -295,7 +660,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "スペースXが最大100万個のAI衛星「スターマインド」の運用計画を明らかにした。現在約11,000個のスターリンク衛星を運用する同社は、スターリンク衛星を最大100,000個まで拡大し、加えてAI計算用に最大100万個のスターマインド衛星を打ち上げるという野心的な構想を正式に公表した。これはスターリンク衛星数だけで現在の約9倍への拡大を意味し、宇宙産業全体における衛星数の急速な増加傾向を示している。\n\nスターマインドはスペースXが開発する軌道上AI計算ネットワークで、地上の計算センターに代わり宇宙空間で大規模言語モデルなどのAI処理を実行するシステムである。従来の衛星通信衛星と異なり、スペースXの説明によれば、これらのAI衛星は単独では有効な計算ユニットとして機能せず、10個程度の衛星が密接な隊形で接続され、衛星間に毎秒10テラビット程度の光ファイバー帯域を備えた統合された単一の計算ユニットとして動作する。この独特な設計によって、数百万個の衛星を接近させた状態で運用することで、地上の計算センターに匹敵する処理能力を実現できると考えられている。\n\nこうした超高密度の衛星配置は同時に、軌道上での衝突回避を極めて複雑で困難な問題にしてしまう。スペースXが公開した安全性レポートによると、スターリンク衛星は2026年に約650個の異なる運用事業者の衛星からの潜在的な衝突リスクに直面していたという。より深刻な問題は、そのうち約半数のみが軌道データを共有していた点である。さらに過去6ヶ月間で、他の衛星が事前に通知していないマニューバを計画していた衝突リスクが約164,000件も記録された。スペースXはこうした軌道情報の非公開方針を「生産性を損なう」と明確に指摘し、他の運用事業者に対して軌道エフェメリス（衛星の位置・速度データ）の積極的共有を強く求めている。\n\n同社は軌道データの無料スクリーニング・プラットフォームの利用も促しており、スターゲイズという30,000個の光学センサーからなる独自のネットワークで1分以内にリスク判定結果を返すシステムを構築している。一方で、スターマインド計画は天文学者や環境団体からの反発も招いている。1個のスターマインド衛星は最大4,000キログラムの重量があり、既存のスターリンク衛星の約7倍に達する。スペースXはテキサス州バスロップの「ギガサット工場」で大規模な製造体制を整備し、2027年末からは数千個単位での衛星打ち上げを開始する予定である。\n\n宇宙産業のサプライチェーンにおいて、今回の発表がもつ意味は極めて大きい。スターマインドのような超大規模衛星群の運用には、精密な位置制御技術、高速光通信システム、自動衝突回避アルゴリズムなどが必須となり、こうした技術を供給する部品・装置メーカーにとって新たな需要が大幅に生じることが見込まれる。同時に、国際的な軌道安全基準の確立と、運用事業者間の情報共有プロトコルの標準化が急速に進む可能性が高い。日本の製造業は、こうした宇宙産業の急速な進化に対応した革新的な製品開発を迫られることになると考えられる。また、衛星製造の大規模化に伴い、高い信頼性と耐久性が求められるコンポーネントの国産化や技術開発も重要な課題となるだろう。",
-      "body_chars": 1359
+      "body_chars": 1359,
+      "title_ja": "スペースXが100万機AI衛星ネットワークの運用方法と衝突防止策を公表",
+      "summary_ja": "スペースXは100万機のスターマインドAI衛星計画を発表し、軌道変更を隠蔽する事業者を名指しで批判している。",
+      "translated_ja": true
     },
     {
       "title": "NASA Glenn Invites Phase 1 Proposals for Aerospace Power Systems Laboratory",
@@ -308,7 +676,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "NASAグレン研究センターが航空宇宙用電力システムの次世代テスト施設の構築に向けた企業提案を募集している。アルテミス計画による月面基地の建設・運用から火星探査まで、今後のNASAミッションの実現には、先進的な電力技術開発を支える現代的な研究基盤が必要だからである。\n\nこの募集は「航空宇宙電力システム研究所」の設計と建設を対象とした Phase 1提案の受付で、応募期限は2026年10月30日午後1時（米国東部標準時）と定められている。予定される契約開始は同年12月16日であり、施設はNASAグレン研究センターのオンサイトと受託企業のオフサイト施設の両方で構築・運営される。小企業向けの契約規模基準は4500万ドルと設定されており、NASAは完全かつ公開の競争入札プロセスとして実施する方針を明示している。技術的な質問についてはグレン研究センターの契約担当官宛に10月12日までの書面提出が定められており、提案企業には早期の質問提出が奨励されている。\n\n電力技術はNASAの宇宙探査における基盤要素である。月面での長期活動を想定したアルテミス計画と月基地建設、そして火星探査のいずれの実現においても、過酷な環境下で確実に動作する高性能で信頼性の高い電力システムが必須となる。グレン研究センターはこれまでのNASAミッションの中で電力技術領域における中核的な専門機関として機能してきた。新たな研究所は、アルテミス計画、月基地、火星探査といった次世代ミッションの要求水準に対応する試験・開発基盤として設計されると考えられる。月面基地の長期運用や火星探査といったミッション環境を踏まえれば、電力システムの信頼性と効率性に求められる基準はこれまで以上に厳しくなると考えられるのである。\n\n宇宙産業のサプライチェーンに関わる日本の製造業にとって、NASAのこうした施設投資動向は無視できない信号である。電力システム研究の深化と試験インフラの拡充に伴い、高精度の電子部品、耐久性に優れた特殊素材、精密な測定・試験機器といった関連部品への需要が増加する可能性が高い。月基地や火星探査のような長期かつ過酷な環境でのミッション運用を想定すれば、電力システムの信頼性検証に向けた多種多様な試験が実施されることになる。新しい研究所の整備は、そうした試験・開発活動の物理的・技術的基盤を整えるものであり、日本の部品・素材サプライヤーにとっては、NASAの次世代ミッション対応における要件変化と新たなビジネス機会の両方を示唆している。",
-      "body_chars": 1056
+      "body_chars": 1056,
+      "title_ja": "NASAグレン研究センター、航空宇宙電力システム実験棟の第1段階提案を募集",
+      "summary_ja": "NASAのクリーブランド・グレン研究センターは、航空宇宙電力システム実験棟の設計・建設に関する第1段階の提案を募集している。本調達の主目的は、電力システムの試験・開発を支援する実験棟施設を提供することで、関連する敷地整備やインフラを含む。",
+      "translated_ja": true
     },
     {
       "title": "Webb captures commotion from nebula's stellar jets",
@@ -319,7 +690,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ジェームズ・ウェッブ宇宙望遠鏡、星形成領域の恒星ジェットの活動をキャッチ",
+      "summary_ja": "NASA・ESA・カナダ宇宙機関のジェームズ・ウェッブ宇宙望遠鏡は、NGC 7129として知られる星形成領域で、塵の雲に隠されていた多数の恒星を明らかにした。地球から3300光年離れた宇宙創造の坩堝である。ウェッブは赤外線光を捉え、他の波長の光を散乱または吸収する密度の高い物質を貫通する。",
+      "translated_ja": true
     },
     {
       "title": "Colorado Springs, Huntsville Team Up on Golden Dome",
@@ -331,18 +705,24 @@
       "source_id": "payloadspace",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "コロラドスプリングスとハンツビル、「ゴールデンドーム」計画で連携強化",
+      "summary_ja": "下院議員ジェフ・クランク（共和党・コロラド州）はPayloadに対し、「コロラドスプリングスとハンツビルの関係は大きく変わった」と述べた。就任当初、両地域の関係は悪くなかったが、互いに警戒する状態にあったという。これはアメリカにとって良いことではなく、クランク議員はこうした状況の改善を指摘している。",
+      "translated_ja": true
     },
     {
       "title": "Five things that are keeping Tesla Full Self-Driving supervised",
       "url": "https://www.teslarati.com/tesla-full-self-driving-five-things-keeping-fsd-supervised/",
-      "summary": "Tesla Full Self-Driving is really good. I have used it for over 76 percent of my driving since FSD v14 launched around this time last year, equating to about 76 percent of my miles using the suite. It’s truly the only way I prefer to travel, but admittedly I save some of the more fun […] The post Five things that are k…",
+      "summary": "Tesla Full Self-Driving is really good. I have used it for over 10,000 of my 13,000 miles of driving since FSD v14 launched around this time last year, equating to about 76 percent of my miles using the suite. It’s truly the only way I prefer to travel, but admittedly I save some of the […] The post Five things that ar…",
       "image": null,
       "published": "2026-10-06T17:28:27+00:00",
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "テスラの完全自動運転、監視が必要な5つの要因",
+      "summary_ja": "テスラの完全自動運転（FSD）は高い性能を備えている。FSD v14が約1年前にリリースされて以来、1万3000マイルのうち1万マイル以上でFSDを使用しており、走行距離の約76％に相当する。最適な移動手段だが、複数の点で監視下に置かれた状態が継続している。",
+      "translated_ja": true
     },
     {
       "title": "A gamma-ray burst's engine stayed active for nearly a month, breaking the previous record",
@@ -355,7 +735,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "2022年7月に検出されたガンマ線バースト「GRB 220706A」は、その爆発を駆動するエンジンが約27日間もの間活動し続けるという異常な現象を示した。この継続期間は、それまでの観測記録を約20日も上回っており、宇宙で最も激しい爆発現象の理解を大きく揺さぶる発見である。\n\nガンマ線バーストは、宇宙における最高エネルギーの爆発現象だ。通常は巨大な星がブラックホールに崩壊するか、中性子星同士の合併によって生じる。こうした爆発の激しさにもかかわらず、その中心エンジンは通常、秒単位から数時間で活動を停止する。GRB 220706Aが異なるのは、このエンジンがX線の形で約51日間にわたってフレアを繰り返し続けたことだ。赤方偏移z=0.8577という遠距離にあるため、宇宙膨張による時間の引き伸ばし効果を補正すると、静止フレームでは約27日間のエンジン活動が記録されたことになる。これは549個のガンマ線バースト中で8番目に長いもので、初期バースト自体も約15.6時間続いており、従来の「典型的な」超長継続バーストの定義さえ超えている。観測には、スウィフト衛星のX線望遠鏡、ニッサー、チャンドラX線天文台が使われ、さらに4つの地上望遠鏡による光学・赤外線観測とNOEMA、VLAによる電波・ミリ波観測が組み合わせられた。2022年7月の検出から2023年10月まで、初期爆発後100秒から約1年半にわたる追跡観測が実施されている。\n\n科学者たちは、このバースト現象を説明するために複数の仮説を検討した。巨大で拡張した前駆星からのブラックホール降着は理論的には可能だが、標準的なモデルを極度に押し広げる必要がある。磁石星（磁気中性子星）エンジンは他の超長バースト事例では機能するが、ここでは大幅なパラメータ調整が必要だ。理論では、磁石星からのフレアは通常、秒から分単位であり、形成直後の磁石星は完全な外殻を持たないため、GRB 220706Aの観測時間スケールとは合致しない。爆発の約17日後に光学的な増光が観測され、超新星現象との一致が示唆される。ダスト減光の程度によっては、この超新星は「超高光度超新星」に分類されるほど明るく、もしそうなら、ガンマ線バーストと超高光度超新星が同一事象で同時に発生した初めての事例となる可能性もある。ただし、提案されたどの仮説も観測結果の全てを完全には説明しておらず、謎は依然として残されている。\n\nこの現象を解明するには、多波長同時観測と高度な信号処理が欠かせない。X線、光学、赤外線、電波という異なる周波数帯での観測データを統合し、タイムリーに分析する能力が現代の宇宙天文学の競争力を決める。これには、高感度の検出器、極低温冷却機構、精密な信号増幅回路、堅牢な通信機器といった多くの要素技術が必要だ。日本の部品・装置メーカーは、宇宙望遠鏡や衛星搭載機器の開発において世界的な役割を果たしており、GRB 220706Aのような予測困難な現象の追跡には、より高い精度と長期信頼性を備えた機器が今後さらに求められると考えられる。",
-      "body_chars": 1279
+      "body_chars": 1279,
+      "title_ja": "ガンマ線バースト、最長エンジン活動を記録更新",
+      "summary_ja": "天文学者がガンマ線バーストから記録上最も長く活動していた中心エンジンの活動を観測した。バーストは赤方偏移0.8577で発生し、バースト固有の静止系で約27日間活動が続いた。これは従来の記録を約20日上回る。論文はarXivプリプリント・サーバーに投稿されている。",
+      "translated_ja": true
     },
     {
       "title": "Stem cells survive unexpectedly rough space travel",
@@ -475,7 +858,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "GPS衛星星座の「ドリフト」問題に対し、月周回軌道に配置した衛星と地球軌道の衛星を連携させることで高精度な位置補正が実現できるという研究が発表された。上海のマイクロサテライト研究センターの研究チーム（林夏・林寶君ら）が学術誌「Satellite Navigation」に掲載した論文は、地上局が機能不全に陥った際のシステム堅牢性を大きく高める可能性を実験的に示している。\n\nグローバルな測位インフラが抱える根本的な脆弱性は、地上局への依存である。GPS衛星群は地上局との通信を通じて位置情報を維持しているが、自然災害やサイバー攻撃、その他の理由で地上局がオフラインになると、衛星の相対位置は保つことができても、空間上の絶対位置が徐々にズレていく現象が生じる。これを軌道力学の用語で「方向性ランク欠損」と呼ぶドリフトであり、数日から数週間で計測不可能な誤差へと成長する可能性がある。航空宇宙分野は従来、星追跡器やパルサーカウンター、軌道予測といった複数の対策を試みてきたが、世界規模のGPS運用に必要とされる精度水準をいずれも満たすことができなかった。\n\n研究チームは、この問題を月軌道衛星との連携で解決する手法を提案した。具体的には、NASAのLunaNetやESAのMoonlightといった月面南極への探査を支援する目的で計画されている月周回楕円凍結軌道（ELFO）上の衛星を用いる。月周回軌道の衛星は地球周回軌道の衛星とは異なる重力環境に置かれるため、地球軌道衛星に影響を与えるドリフトを相対的に観測し、補正信号を提供できるという理屈である。研究チームは中国のBeiDou-3衛星24機と、シミュレートされたELFO衛星4機を用いて60日間の実験を実施した。その結果、従来の地球上のリンクのみに依存した場合のドリフトは約7.85メートルに達したのに対し、軌道予測技術を組み合わせると0.6メートルまで低減し、さらに月軌道衛星との連携を導入すると誤差は0.35メートルにまで縮小した。双方向補正も機能し、月軌道衛星の位置精度は約2.26メートルの誤差に留まるため、月面での有人探査活動に必要な高精度測位が期待できる。\n\nこの成果が示唆するのは、将来の月面基地や月面活動の基盤となる測位ネットワークが、単に月面局部の問題ではなく、地球全体のGPS品質維持と表裏一体の関係にあるということである。地上局の冗長性が本質的に高まらない限り、グローバルなGPS依存の脆弱性は解決されないが、月軌道インフラの活用によってその間をつなぐ道が開かれた。日本の部品・装置メーカーにとっても、衛星間通信機器や軌道制御システム、高精度センサーといった領域で、この新しいシステムアーキテクチャへの関わりが生まれる可能性が高いと考えられる。",
-      "body_chars": 1159
+      "body_chars": 1159,
+      "title_ja": "GPS衛星星座の漂移防止、月に注目",
+      "summary_ja": "全地球測位システム（GPS）は世界人口の大部分にとって日常生活における重要な機能である。船舶が安全に荷物を配送する際や、帰宅時の交通状況を回避する際など、GPSは有用である。",
+      "translated_ja": true
     },
     {
       "title": "ESA at IAC 2026 – Day 2",
