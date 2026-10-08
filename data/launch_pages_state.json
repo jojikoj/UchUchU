@@ -1,175 +1,7 @@
 {
- "en:launches/": {
-  "lastmod": "2026-10-08",
-  "sig": "226fde28008cdb79"
- },
- "en:launches/2/": {
-  "lastmod": "2026-10-07",
-  "sig": "95e44775268ef614"
- },
- "en:launches/2026-07/": {
-  "lastmod": "2026-09-22",
-  "sig": "85b9719c9c59666d"
- },
- "en:launches/2026-08/": {
-  "lastmod": "2026-09-28",
-  "sig": "7b32aedb4bced5d5"
- },
- "en:launches/2026-09/": {
-  "lastmod": "2026-10-03",
-  "sig": "65bbf5cc5819467f"
- },
- "en:launches/2026-10/": {
-  "lastmod": "2026-10-08",
-  "sig": "eba740fd28ea75cb"
- },
- "en:launches/2026-11/": {
-  "lastmod": "2026-10-05",
-  "sig": "2ac7d8ad08dd08ff"
- },
- "en:launches/2026-12/": {
-  "lastmod": "2026-10-08",
-  "sig": "e715e2d55962bf26"
- },
- "en:launches/3/": {
-  "lastmod": "2026-10-07",
-  "sig": "2f6bd139e2fe73f9"
- },
- "en:launches/4/": {
-  "lastmod": "2026-10-08",
-  "sig": "077a2f181ffacdf9"
- },
- "en:launches/5/": {
-  "lastmod": "2026-10-08",
-  "sig": "705556dad638b4c1"
- },
- "en:launches/6/": {
-  "lastmod": "2026-10-08",
-  "sig": "3124ab9d070eb97c"
- },
- "en:launches/7/": {
-  "lastmod": "2026-10-08",
-  "sig": "fcb44c0a4fce67fa"
- },
- "en:launches/japan/": {
-  "lastmod": "2026-09-22",
-  "sig": "9cf6e19b5cd05e03"
- },
- "en:launches/provider/arianespace/": {
-  "lastmod": "2026-09-28",
-  "sig": "4f383779b9aa0b2b"
- },
- "en:launches/provider/casc/": {
-  "lastmod": "2026-10-03",
-  "sig": "7f3b33e2b02a8f93"
- },
- "en:launches/provider/firefly/": {
-  "lastmod": "2026-09-22",
-  "sig": "3f6127880ae9c1ab"
- },
- "en:launches/provider/isar-aerospace/": {
-  "lastmod": "2026-09-30",
-  "sig": "03474ff579880a11"
- },
- "en:launches/provider/isro/": {
-  "lastmod": "2026-10-02",
-  "sig": "66a89e70cb18663b"
- },
- "en:launches/provider/mhi/": {
-  "lastmod": "2026-09-22",
-  "sig": "30adb2fbddfc833c"
- },
- "en:launches/provider/orienspace/": {
-  "lastmod": "2026-09-22",
-  "sig": "d13df9c8745c971e"
- },
- "en:launches/provider/rocket-lab/": {
-  "lastmod": "2026-10-08",
-  "sig": "34712236457fb915"
- },
- "en:launches/provider/roscosmos/": {
-  "lastmod": "2026-09-22",
-  "sig": "7735f7b7f53051de"
- },
- "en:launches/provider/spacex/": {
-  "lastmod": "2026-10-08",
-  "sig": "d197386a881edee7"
- },
- "en:launches/provider/ula/": {
-  "lastmod": "2026-09-22",
-  "sig": "4cb262f4888f2c03"
- },
- "en:launches/site/andoya/": {
-  "lastmod": "2026-09-30",
-  "sig": "03474ff579880a11"
- },
- "en:launches/site/baikonur/": {
-  "lastmod": "2026-09-22",
-  "sig": "16d31dcec2b87e06"
- },
- "en:launches/site/cape-canaveral/": {
-  "lastmod": "2026-10-08",
-  "sig": "c16714aa125a33ef"
- },
- "en:launches/site/haiyang/": {
-  "lastmod": "2026-09-22",
-  "sig": "d12466e5f31b44e2"
- },
- "en:launches/site/jiuquan/": {
-  "lastmod": "2026-09-27",
-  "sig": "77846c7fcc8f6861"
- },
- "en:launches/site/kennedy/": {
-  "lastmod": "2026-10-02",
-  "sig": "287f2437d832b6eb"
- },
- "en:launches/site/kourou/": {
-  "lastmod": "2026-09-28",
-  "sig": "b4f6134bc198ce5f"
- },
- "en:launches/site/mahia/": {
-  "lastmod": "2026-10-08",
-  "sig": "4aafad0e930a0005"
- },
- "en:launches/site/plesetsk/": {
-  "lastmod": "2026-09-22",
-  "sig": "96e9e98395e8d90a"
- },
- "en:launches/site/satish-dhawan/": {
-  "lastmod": "2026-10-02",
-  "sig": "bc5c6f7880717e61"
- },
- "en:launches/site/saxavord-spaceport/": {
-  "lastmod": "2026-10-05",
-  "sig": "fc7c86f616adc4cc"
- },
- "en:launches/site/starbase/": {
-  "lastmod": "2026-09-29",
-  "sig": "e608627944e9a682"
- },
- "en:launches/site/taiyuan/": {
-  "lastmod": "2026-09-25",
-  "sig": "e981ad5af30138ba"
- },
- "en:launches/site/tanegashima/": {
-  "lastmod": "2026-09-22",
-  "sig": "30adb2fbddfc833c"
- },
- "en:launches/site/vandenberg/": {
-  "lastmod": "2026-10-08",
-  "sig": "97db1b8306233d90"
- },
- "en:launches/site/wallops/": {
-  "lastmod": "2026-09-22",
-  "sig": "4018898318cae1b9"
- },
- "en:launches/site/wenchang/": {
-  "lastmod": "2026-10-03",
-  "sig": "49095f96ff6240f1"
- },
  "ja:launches/": {
-  "lastmod": "2026-10-08",
-  "sig": "226fde28008cdb79"
+  "lastmod": "2026-10-09",
+  "sig": "3d280748686d9ec2"
  },
  "ja:launches/2/": {
   "lastmod": "2026-10-07",
@@ -188,36 +20,36 @@
   "sig": "65bbf5cc5819467f"
  },
  "ja:launches/2026-10/": {
-  "lastmod": "2026-10-08",
-  "sig": "eba740fd28ea75cb"
+  "lastmod": "2026-10-09",
+  "sig": "4f355caf39fbf442"
  },
  "ja:launches/2026-11/": {
   "lastmod": "2026-10-05",
   "sig": "2ac7d8ad08dd08ff"
  },
  "ja:launches/2026-12/": {
-  "lastmod": "2026-10-08",
-  "sig": "e715e2d55962bf26"
+  "lastmod": "2026-10-09",
+  "sig": "4b2c2227b65c6629"
  },
  "ja:launches/3/": {
   "lastmod": "2026-10-07",
   "sig": "2f6bd139e2fe73f9"
  },
  "ja:launches/4/": {
-  "lastmod": "2026-10-08",
-  "sig": "077a2f181ffacdf9"
+  "lastmod": "2026-10-09",
+  "sig": "412170f936b45e9a"
  },
  "ja:launches/5/": {
-  "lastmod": "2026-10-08",
-  "sig": "705556dad638b4c1"
+  "lastmod": "2026-10-09",
+  "sig": "9d8a6ab0cb33e778"
  },
  "ja:launches/6/": {
-  "lastmod": "2026-10-08",
-  "sig": "3124ab9d070eb97c"
+  "lastmod": "2026-10-09",
+  "sig": "4a8b0515ba22529b"
  },
  "ja:launches/7/": {
-  "lastmod": "2026-10-08",
-  "sig": "fcb44c0a4fce67fa"
+  "lastmod": "2026-10-09",
+  "sig": "2117f328308a48ec"
  },
  "ja:launches/japan/": {
   "lastmod": "2026-09-22",
@@ -226,6 +58,10 @@
  "ja:launches/provider/arianespace/": {
   "lastmod": "2026-09-28",
   "sig": "4f383779b9aa0b2b"
+ },
+ "ja:launches/provider/avio-s-p-a/": {
+  "lastmod": "2026-10-09",
+  "sig": "d63bb49b42731b56"
  },
  "ja:launches/provider/casc/": {
   "lastmod": "2026-10-03",
@@ -260,12 +96,12 @@
   "sig": "7735f7b7f53051de"
  },
  "ja:launches/provider/spacex/": {
-  "lastmod": "2026-10-08",
-  "sig": "d197386a881edee7"
+  "lastmod": "2026-10-09",
+  "sig": "10e4da87c866039a"
  },
  "ja:launches/provider/ula/": {
-  "lastmod": "2026-09-22",
-  "sig": "4cb262f4888f2c03"
+  "lastmod": "2026-10-09",
+  "sig": "0279475eb8cd3750"
  },
  "ja:launches/site/andoya/": {
   "lastmod": "2026-09-30",
@@ -276,8 +112,8 @@
   "sig": "16d31dcec2b87e06"
  },
  "ja:launches/site/cape-canaveral/": {
-  "lastmod": "2026-10-08",
-  "sig": "c16714aa125a33ef"
+  "lastmod": "2026-10-09",
+  "sig": "02aa514f21d18370"
  },
  "ja:launches/site/haiyang/": {
   "lastmod": "2026-09-22",
@@ -292,8 +128,8 @@
   "sig": "287f2437d832b6eb"
  },
  "ja:launches/site/kourou/": {
-  "lastmod": "2026-09-28",
-  "sig": "b4f6134bc198ce5f"
+  "lastmod": "2026-10-09",
+  "sig": "058a1ae6ea8dd543"
  },
  "ja:launches/site/mahia/": {
   "lastmod": "2026-10-08",
@@ -324,8 +160,8 @@
   "sig": "30adb2fbddfc833c"
  },
  "ja:launches/site/vandenberg/": {
-  "lastmod": "2026-10-08",
-  "sig": "97db1b8306233d90"
+  "lastmod": "2026-10-09",
+  "sig": "1520aadd1e77af3f"
  },
  "ja:launches/site/wallops/": {
   "lastmod": "2026-09-22",
