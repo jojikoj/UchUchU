@@ -46,7 +46,7 @@ Every rocket follows this same principle — up first, then tilt, then sideways 
 | Orbital speed at LEO | 7.9 km/s (28,000 km/h) |
 | Speed ratio vs. airliner | ~30× faster |
 
-## Summary
+## まとめ（Summary）
 
 - **Space Is Not That Far**: The edge of space (100 km) is closer than you think — the real challenge is reaching the sideways speed to stay there.
 - **Orbit Is Just Falling Forever**: An orbit is the state of falling forever without ever reaching the ground, requiring ~28,000 km/h of sideways speed.

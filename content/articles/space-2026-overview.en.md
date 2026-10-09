@@ -53,7 +53,7 @@ At UchUchU we track these developments through three lenses: **news, launch sche
 
 Space is one of the fastest-moving frontiers we have. Let's watch where it stands, together, from here.
 
-## Summary
+## まとめ（Summary）
 
 - **Three Main Theaters**: Space activity now concentrates in Low Earth Orbit (economic hub), cislunar space (next frontier), and Mars (long-term vision) — each with distinct timescales and drivers.
 - **It All Started With Collapsing Launch Costs**: Reusable rockets have cut the cost-per-kilogram to orbit by an order of magnitude, unlocking waves of new businesses from constellations to space tourism.
