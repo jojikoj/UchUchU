@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T09:34:15.855708+00:00",
+  "generated_at": "2026-10-10T21:34:39.175294+00:00",
   "count": 200,
   "items": [
     {
@@ -2579,12 +2579,35 @@
       "upcoming": true
     },
     {
+      "id": "a5e81552-ecdd-4d89-b6bd-b594e22ca891",
+      "name": "New Glenn | Blue Ring-1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Blue Origin",
+      "provider_country": "USA",
+      "provider_url": "https://www.blueorigin.com/",
+      "rocket": "New Glenn",
+      "pad": "Launch Complex 36A",
+      "pad_lat": "28.4705556",
+      "pad_lon": "-80.542194",
+      "location": "Cape Canaveral SFS, FL, USA",
+      "country": "USA",
+      "mission": "Blue Ring-1",
+      "mission_type": "Space Situational Awareness",
+      "mission_description": "The first mission of Blue Ring, Blue Origin's all-in-one, high-powered hybrid solar electric and chemical propelled spacecraft, will test the spacecraft's operations in Geostationary Transfer Orbit (GTO), as well as subsequent operations after reaching Geostationary Orbit (GEO). It will carry one of Scout Space's flagship next-generation space domain awareness (SDA) Owl sensors, which is designed…",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/new_glenn_on_lc_image_20240313170026.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
       "net": "2026-10-10T07:39:44Z",
       "window_end": "2026-10-10T07:39:44Z",
-      "status": "In Flight",
-      "status_name": "Launch in Flight",
+      "status": "Success",
+      "status_name": "Launch Successful",
       "provider": "SpaceX",
       "provider_country": "USA",
       "provider_url": "https://www.spacex.com/",
@@ -2598,7 +2621,7 @@
       "mission_type": "Government/Top Secret",
       "mission_description": "Tranche 1 Transport Layer A is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites. The constellation w…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcast": "https://www.youtube.com/watch?v=g2zSmp6e2Vs",
+      "webcast": "https://www.youtube.com/watch?v=lrCq8bWuExs",
       "upcoming": false
     },
     {
@@ -4579,29 +4602,6 @@
       "mission_description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcast": "https://www.youtube.com/watch?v=nbzgvvmQYEc",
-      "upcoming": false
-    },
-    {
-      "id": "2bedbf8c-8df2-4e24-8397-8c2a08fab581",
-      "name": "Long March 4B | Haiyang 2E",
-      "net": "2026-07-01T23:46:00Z",
-      "window_end": "2026-07-02T00:07:00Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "China Aerospace Science and Technology Corporation",
-      "provider_country": "CHN",
-      "provider_url": "https://english.spacechina.com/",
-      "rocket": "Long March 4B",
-      "pad": "Launch Area 94 (SLS-2 / 603)",
-      "pad_lat": "40.960482",
-      "pad_lon": "100.298059",
-      "location": "Jiuquan Satellite Launch Center, People's Republic of China",
-      "country": "CHN",
-      "mission": "Haiyang 2E",
-      "mission_type": "Earth Science",
-      "mission_description": "Haiyang 2E (Chinese: \"Ocean\"), abbreviated HY-2E, is a marine remote sensing satellite of China. The HY-2 series' primary objective is to measure ocean dynamic and regional environmental trends in the microwave spectral range, plus measurements of parameters such as marine wind vector, marine surface heat and Sea Surface Temperature (SST). These ocean dynamics real-time data aid aero-marine foreca…",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_4b_l_image_20251209044050.jpeg",
-      "webcast": null,
       "upcoming": false
     }
   ]
