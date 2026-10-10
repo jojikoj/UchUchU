@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>UchUchU — 宇宙産業と、日本のものづくりをつなぐ。</title>
+<link>https://uchuchu.tech/</link>
+<description>日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。</description>
+<language>ja</language>
+<lastBuildDate>Sat, 10 Oct 2026 09:45:25 +0000</lastBuildDate>
+<atom:link href="https://uchuchu.tech/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>中小製造業が宇宙産業に参入するには — 何から始めるべきか</title>
+<link>https://uchuchu.tech/articles/manufacturing-entry-guide/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/manufacturing-entry-guide/</guid>
+<description>「宇宙は大手だけの世界」ではない。町工場が宇宙部品を受注するまでに何が必要か、実際の入口を順に整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>2026年、宇宙開発はどこまで来たのか</title>
+<link>https://uchuchu.tech/articles/space-2026-overview/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-2026-overview/</guid>
+<description>宇宙開発は国家事業から採算の合う産業へ転換した。低軌道から月・火星までの3つの領域で、いま何が起きているのか。打ち上げコスト低下が起点となり、資金も民間投資へ。日本製造業の参入機会とは。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙用部品の品質要求 — JIS Q 9100とISO 9001は何が違うのか</title>
+<link>https://uchuchu.tech/articles/space-quality-requirements/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-quality-requirements/</guid>
+<description>「認証がないと参入できない」は誤解だが、品質管理体制の要求は確実に厳しい。何がどう違うのかを具体的に整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>ロケットはなぜ「宇宙に浮かんでいられる」のか</title>
+<link>https://uchuchu.tech/articles/how-rockets-reach-orbit/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/how-rockets-reach-orbit/</guid>
+<description>ロケットは上に飛ぶだけでは宇宙に留まれない。「軌道に乗る」とは何なのかを、できるだけやさしく解き明かす。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>衛星コンステレーション時代 — 宇宙産業に「量産」の需要が生まれている</title>
+<link>https://uchuchu.tech/articles/satellite-mass-production/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/satellite-mass-production/</guid>
+<description>宇宙は少量多品種の世界だった。しかし数千機規模の衛星群が現れ、製造業が得意とする量産の領域が初めて開いた。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>JAXAの調達に参加するには — 中小企業が入札にたどり着くまでの実務</title>
+<link>https://uchuchu.tech/articles/space-procurement-jaxa/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-procurement-jaxa/</guid>
+<description>「JAXAと取引したい」と思っても、どこから手をつければいいか分からない。入札参加資格の取り方から、実際に案件を見つけるまでの道筋を整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙で使える材料、使えない材料 — アウトガスと放射線という2つの壁</title>
+<link>https://uchuchu.tech/articles/space-parts-materials/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-parts-materials/</guid>
+<description>地上では優秀な材料が、宇宙では使い物にならないことがある。なぜそうなるのか、どう選べばいいのかを、材料の視点から整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙ビジネスの市場構造 — 「宇宙産業」の売上はどこで生まれているのか</title>
+<link>https://uchuchu.tech/articles/space-market-structure/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-market-structure/</guid>
+<description>宇宙産業の話題はロケットに偏りがちだが、お金が動いているのは別の場所だ。市場の構造を分解し、製造業にとっての機会がどこにあるかを見る。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙産業への参入にいくらかかるか — 設備投資より先に必要なもの</title>
+<link>https://uchuchu.tech/articles/space-entry-cost/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-entry-cost/</guid>
+<description>「新しい設備を買わないと無理」と思われがちだが、実際に費用がかかるのは別の場所だ。参入コストの内訳を、順序も含めて整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙用部品はどんな試験を受けるのか — 振動・熱真空・EMCの実務</title>
+<link>https://uchuchu.tech/articles/space-testing-requirements/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-testing-requirements/</guid>
+<description>宇宙機は打ち上げ前に地上で徹底的に試験される。どんな試験があり、部品メーカーは何を求められるのか。試験設備そのものが参入の入口にもなる。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙企業とどう出会うか — 商談にたどり着くための実務</title>
+<link>https://uchuchu.tech/articles/space-startup-approach/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-startup-approach/</guid>
+<description>技術があっても、相手に届かなければ受注はない。宇宙企業への接触経路、送るべき資料、避けるべき進め方を実務レベルで整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>軌道上サービスという新市場 — デブリ除去・燃料補給・寿命延長</title>
+<link>https://uchuchu.tech/articles/orbital-services-debris/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/orbital-services-debris/</guid>
+<description>「打ち上げて終わり」だった宇宙が、軌道上で整備する時代に入りつつある。地上の機械・ロボット技術がそのまま効く、製造業にとって最も近い新市場を解説する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>日本の製造業は宇宙で何を武器にできるか — 精密・素材・信頼性という3つの資産</title>
+<link>https://uchuchu.tech/articles/japan-manufacturing-strengths/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/japan-manufacturing-strengths/</guid>
+<description>宇宙で勝つのは「安く大量に作れる企業」ではない。少量・高信頼という宇宙の土俵で、日本の製造業が持つ強みと、正直に不利な領域を整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙案件はなぜ「時間がかかる」のか — 受注サイクルとキャッシュフローを経営に織り込む</title>
+<link>https://uchuchu.tech/articles/space-order-cycle-cashflow/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/space-order-cycle-cashflow/</guid>
+<description>宇宙案件は単価は高いが、引き合いから入金まで長く、量も読めない。この「時間差」を経営にどう織り込むか、資金繰りの視点から整理する。</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>インドの民間軌道打ち上げ成功が、製造業に問うもの</title>
+<link>https://uchuchu.tech/articles/news-2026-07-20/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-07-20/</guid>
+<description>インドのSkyroot Aerospaceが小型ロケット「Vikram-1」の軌道打ち上げに成功し、同国は米国・中国に次ぐ民間軌道打ち上げ能力を持つ国になった。2018年設立の企業がこの水準に到達した…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>タイトル: スターシップ13回目飛行、部品メーカーは何を学ぶべきか</title>
+<link>https://uchuchu.tech/articles/news-2026-07-27/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-07-27/</guid>
+<description>SpaceXは2026年、超大型ロケット「スターシップ」の13回目の試験飛行を行い、33基のエンジンを積む1段目ブースターと、最新型スターリンク衛星20基の軌道上分離に成功した。打ち上げ前にはエンジン…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>スターシップ13号機着水成功が示す、量産部品の品質管理</title>
+<link>https://uchuchu.tech/articles/news-2026-07-28/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-07-28/</guid>
+<description>SpaceXのスターシップは13回目の試験飛行で、機体を大きく損傷させることなくインド洋へ着水させた。機体を覆う18,000枚を超えるセラミックタイルが、摂氏1,430度（華氏2,600度）に達する再…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>ベゾス氏の宇宙工場構想は日本の製造業に何を問うか</title>
+<link>https://uchuchu.tech/articles/news-2026-07-29/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-07-29/</guid>
+<description>VIVATECH 2026でジェフ・ベゾス氏が語ったのは、ロケットの夢物語ではない。「機械を作る機械」、つまり量産に耐える工場をどう作るかという、製造業そのものの課題である。爆発事故からの射点復旧、独自…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>入門望遠鏡の普及設計は光学製造業に何を示すか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-03/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-03/</guid>
+<description>月探査計画への期待が高まる中、アポロ計画から60年を経た今、入門望遠鏡市場に新たな需要層が生まれている可能性がある。Celestronが発表した「Moon Mission 100mm卓上型ドブソニアン…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>スターシップの耐熱材料は「限界」か — 製造業が見るべき技術課題</title>
+<link>https://uchuchu.tech/articles/news-2026-08-04/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-04/</guid>
+<description>スターシップFlight 13は軌道投入後、洋上に数日間浮かんだ。打ち上げ成功の陰で、専門家は「現行の耐熱シールド技術は急速再利用の行き詰まり（dead end）だ」と警告した。この技術的課題は、日本…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>SpaceX初決算が示す宇宙量産の現在地</title>
+<link>https://uchuchu.tech/articles/news-2026-08-05/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-05/</guid>
+<description>SpaceXが初の決算を発表した。売上高は78億ドル（予想67億ドル）、調整後EBITDAは35億ドル（予想20億ドル）と、いずれも市場予想を大幅に上回った。製造業の読者にとって重要なのは、その数字よ…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>月面工場計画は製造業に何を問うか — SpaceX構想を読み解く</title>
+<link>https://uchuchu.tech/articles/news-2026-08-08/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-08/</guid>
+<description>SpaceXが月面に衛星製造工場を建設する構想を、2026年の決算説明会で改めて表明した。IPOで860億ドルを調達し、企業価値が17700億ドルに達した同社が本格的に語る「地球外製造」は、地上の部品…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>転用設計」という評価軸 — 月面基地ピボットが製造業に問うもの</title>
+<link>https://uchuchu.tech/articles/news-2026-08-09/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-09/</guid>
+<description>ノースロップ・グラマンとカナダ宇宙庁は、それぞれゲートウェイ向けに開発してきた技術を月面基地用に転用すると発表した。この「転用」という判断は、宇宙部品の調達側が「一用途完結型の設計」より「複数用途に転…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>90日設計が1,488周回を果たした — 宇宙部品の「余裕設計」とは何か</title>
+<link>https://uchuchu.tech/articles/news-2026-08-10/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-10/</guid>
+<description>宇宙機が設計寿命を大幅に超えて動き続けることは、使われた部品や素材の品質を示す最も直接的な証拠だ。1980年8月7日、NASAのバイキング1号火星周回機が活動を終えた。設計寿命は90日。しかし実際には…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>年間71回の衛星打上げは何を意味するか — 量産時代の部品需要</title>
+<link>https://uchuchu.tech/articles/news-2026-08-11/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-11/</guid>
+<description>2026年、SpaceXはFalcon 9を年間92回打ち上げ、そのうち71回をStarlinkコンステレーションの構築に費やしている。同コンステレーションは現在10,900基超の稼働衛星で構成され、…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>全自動車にスターリンク — 部品メーカーに何が起きるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-12/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-12/</guid>
+<description>テスラがサイバーキャブにスターリンク端末を標準搭載し、マスクは全車種・全メーカーへの展開を示唆した。これは自動車産業と衛星産業の交差点に、新しい部品カテゴリー「車載衛星端末」を実体として生み出す出来事…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>専用打上げへの転換 — 衛星市場の変化が部品メーカーに意味すること</title>
+<link>https://uchuchu.tech/articles/news-2026-08-13/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-13/</guid>
+<description>ライドシェア（相乗り打上げ）から専用ロケットへの移行は、単なる調達方法の変化ではない。衛星事業者がコスト優先から柔軟性・ミッション最適化を優先する段階に入ったことを意味しており、この変化は衛星搭載部品…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>専用設備ゼロ」の工場は実現するか — 米防衛製造スタートアップの転換点</title>
+<link>https://uchuchu.tech/articles/news-2026-08-14/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-14/</guid>
+<description>米国防省のミサイル増産要求を機に、商業宇宙産業で生まれた「ソフトウェアで制御する可変製造ライン」が防衛産業へ本格参入しつつある。専用金型・専用工具への初期投資を減らしながら多品種の航空宇宙構造体を製造…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>スペースX初決算 — 製造業は何を読み取るか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-15/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-15/</guid>
+<description>スペースXが2026年8月に初の決算説明会を開いた。2026年上半期の売上高は2025年同期比54%増の125億ドルに達し、収益1兆ドル（約160兆円）の達成時期は2031年から2030年に前倒しにな…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>月面ランダーが「量産品」に変わる — 部品調達に何が起きるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-17/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-17/</guid>
+<description>NASAが次世代の商業月面輸送プログラム（CLPS 2.0）を最大100億ドル・10年間の契約として整備しようとしている。重要なのは規模だけではない。ランダーの設計思想が「ミッションごとの特注品」から…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>打ち上げ枠争奪戦が始まった — 部品メーカーに何が求められるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-18/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-18/</guid>
+<description>衛星事業者が打ち上げ枠を2年先まで確保する動きが急速に広がっている。背景にあるのは、コンステレーション需要の増大と、特定ロケットの停止が計画全体を揺るがしたという現実だ。この「争奪戦」は、衛星コンポー…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>火星の衛星へ — MMXが製造業に課す技術課題</title>
+<link>https://uchuchu.tech/articles/news-2026-08-19/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-19/</guid>
+<description>JAXAの火星衛星探査機MMX（Martian Moons eXploration）が種子島宇宙センターからの打ち上げを控えている。フォボスから少なくとも10グラムのサンプルを採取し、2031年ごろに…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>軌道帰還型宇宙船 — 製造業が今から動く理由</title>
+<link>https://uchuchu.tech/articles/news-2026-08-20/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-20/</guid>
+<description>ドイツのATMOS Space Cargoが、再使用型の軌道帰還宇宙船「Phoenix 3」の初期設計研究を完了した。1,000kgを超えるペイロードを軌道から地球へ安全に回収するこの計画が実現すれば…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>繰り返し発注という好機 — SARコンステレーション時代の部品戦略</title>
+<link>https://uchuchu.tech/articles/news-2026-08-22/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-22/</guid>
+<description>東京に本社を置くiQPSが、合成開口レーダー（SAR）衛星の打ち上げを重ね、最終目標である36機のコンステレーションの構築を着実に進めている。部品・装置の製造業にとって、これは単発受注ではなく、規格を…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>年間1,000回打ち上げ時代 — 部品サプライヤーに何が求められるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-23/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-23/</guid>
+<description>トランプ大統領が署名した新たな宇宙輸送政策は、年間1,000回の打ち上げと大気圏再突入を国家目標に掲げた。SpaceXのマスクCEOが示したStarshipの目標値は、2030年に1日30機以上、年換…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>AIがロケット合金の壁を破った — 製造業に何が起きるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-25/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-25/</guid>
+<description>ワシントン州立大学の研究チームが、AIを使って市販の3Dプリンタでロケット級合金「GRCop-42」を印刷することに成功した。これまで市販機の大半では印刷できないとされてきたこの合金が、低出力の装置で…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>SpaceXの「宇宙港1000億ドル」— 製造業に何が問われるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-26/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-26/</guid>
+<description>SpaceXがルイジアナ州沿岸に最大1000億ドルを投じてStarship専用の生産・打ち上げ施設を建設する計画を発表した。単なる設備投資ではなく、年間数千機のStarshipを量産・打ち上げるための…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>北九州に月面ランダー工場が生まれる — 製造業は何を問われているのか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-27/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-27/</guid>
+<description>ispaceが北九州市に月面ランダーの開発・製造拠点を構えた。この出来事が製造業に示すのは、宇宙機の組み立てに必要な「高さ10メートルのクリーンルーム」と「柔軟な施設運用」を持つ場所が、この国では意外…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>衛星データと地上観測の統合 — 製造業に何が求められるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-28/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-28/</guid>
+<description>地球観測衛星と現地計測データを組み合わせた「デジタルMRV（監視・報告・検証）」基盤の整備が、カーボン市場や再生農業の分野で急速に進んでいる。LatConnect 60（LC60）とPhi Earth…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>アルテミスIIの成功は製造業に何を問うているか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-29/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-29/</guid>
+<description>アルテミスIIは2026年4月1日に打ち上げられ、4月10日に帰還した。乗組員4名は地球から252,756マイルという人類史上最遠の距離を飛行し、合計695,081マイルを旅して月を周回した。この偉業…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>軌道デブリ除去は製造業に何をもたらすのか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-30/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-30/</guid>
+<description>宇宙空間に漂うデブリの増加は、衛星運用の安全を脅かすだけでなく、除去技術の開発という新たな産業需要を生み出している。KMI Spaceは、タコやヤモリの把持機能から着想を得た技術を国際宇宙ステーション…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>ローマン宇宙望遠鏡 — 精密光学部品に何が求められるか</title>
+<link>https://uchuchu.tech/articles/news-2026-08-31/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-08-31/</guid>
+<description>2026年8月、NASAのローマン宇宙望遠鏡がファルコンヘビーで打ち上げられた。ハッブルと同口径の主鏡を持ちながらも視野は100倍に達し、高性能コロナグラフも備えるこの望遠鏡は、宇宙光学系の「精度」と…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>Synspective 30機計画が示すもの — 宇宙「量産」に何を準備すべきか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-02/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-02/</guid>
+<description>SynspectiveのSAR衛星コンステレーションが、衛星の「量産調達」という新しい現実を日本の製造業の前に突きつけている。2026年9月に打ち上げられたStrix衛星は、ロケット・ラボとの契約でさ…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>EV量産部品の品質限界 — 走行試験では見えなかった三つの盲点</title>
+<link>https://uchuchu.tech/articles/news-2026-09-05/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-05/</guid>
+<description>量産EVのサスペンションが9,000kmという比較的短距離で沈下する事例が中国で報告されており、従来の耐久試験が電気自動車の実使用条件を十分に捉えていない可能性がある。 テスラModel Y Lのリア…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>欧州初の民間軌道ロケット — 量産化競争が製造業に問うもの</title>
+<link>https://uchuchu.tech/articles/news-2026-09-06/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-06/</guid>
+<description>ドイツの宇宙企業Isar Aerospaceの「Spectrum」ロケットが、ノルウェーのAndøya宇宙センターから打ち上げられ、西欧の陸地から民間ロケットとして初めて軌道到達を果たした。この出来事…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>欧州民間ロケットが軌道に達した — 部品需要は何を変えるか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-07/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-07/</guid>
+<description>2026年、ドイツのイザー・エアロスペースが自社開発ロケット「スペクトラム」でノルウェーから軌道投入に成功した。欧州大陸の民間企業としては史上初の快挙である。この出来事が示すのは、欧州の宇宙打ち上げ需…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>欧州民間ロケット初成功 — 製造業は「量産」の波をどう読むか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-08/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-08/</guid>
+<description>ドイツのイザー・エアロスペースは、スペクトラムロケットで複数のCubeSatを低軌道に投入し、欧州の民間企業として初めて軌道到達を達成した。欧州大陸からの軌道打上げとしても史上初となる事例だ。この成果…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>スターク・スペースの完全再利用機 — 製造業は何を準備すべきか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-09/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-09/</guid>
+<description>完全再利用ロケットの商業化が、現実として近づいている。スターク・スペースが調達した総額23億ドルは、2027年の初号機打ち上げと2029年の次世代機Block 2実用化に向けて投入される。この動きが製…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>限定認証」とは何か — ドリームチェイサーが開く製造業の機会</title>
+<link>https://uchuchu.tech/articles/news-2026-09-10/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-10/</guid>
+<description>Sierra Spaceの再使用型宇宙機「ドリームチェイサー」が、2026年末の初飛行に向けてペイロード輸送契約を受注した。注目すべきは契約の成立ではなく、同機が「完全な宇宙環境認証なしにペイロードを…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>アルテミスII乗員の知識移転が示すもの — 2027年に何が変わるか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-11/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-11/</guid>
+<description>アルテミスII宇宙飛行士2名がNASAの名誉職（エメリタス）に移行した。これは単なる人事ではない。宇宙飛行士が実際に経験した機器の挙動と知見を、次世代ミッションのエンジニアや飛行管制官に体系的に移転す…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙太陽電池の材料転換 — 部品メーカーへの示唆</title>
+<link>https://uchuchu.tech/articles/news-2026-09-12/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-12/</guid>
+<description>2026年、Rocket Labが宇宙用太陽電池「IMM Apex」の量産を開始した。この製品が注目されるのは性能だけではない。従来品が依存してきたゲルマニウム基板を排除しながら、既存の衛星システムと…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>火星住宅研究が示す「育てる製造」という選択肢</title>
+<link>https://uchuchu.tech/articles/news-2026-09-13/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-13/</guid>
+<description>火星の岩石・ゼラチン・酵母を組み合わせた「生きた建材（Living Building Material）」が、圧縮強度10〜12メガパスカルを達成した。この数値は低品質コンクリートと同等であり、火星の…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙スタートアップが地方に根を張るとき — 製造業への調達波及をどう読むか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-15/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-15/</guid>
+<description>2026年秋、AstroX株式会社が岩手県宮古市と包括連携協定を締結した。協定の項目には「市内事業者との連携および地元調達の促進」が明記されており、単なる立地確保の話ではない。宇宙輸送の実験基地が地方…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>欧州衛星量産が加速する — 日本の部品メーカーに問われること</title>
+<link>https://uchuchu.tech/articles/news-2026-09-16/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-16/</guid>
+<description>英国の衛星メーカーOpen Cosmosが3億ユーロの資金調達を完了した。同社はすでに欧州各地の製造拠点で「1日1機」の衛星生産体制を整えており、今後さらなる増産を計画している。この動きが示すのは、衛…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>高度820kmの太陽同期軌道 — 部品に何が求められるか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-17/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-17/</guid>
+<description>2026年9月15日10時21分、Vega Cロケットが高度約820km・軌道傾斜角98.6度の太陽同期軌道へ地球観測衛星Sentinel-3CとFLEXを送り届けた。製造業の視点でこの打ち上げを読み…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>NASAの小型衛星調達 — ライドシェア契約は何を変えるか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-18/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-18/</guid>
+<description>NASAがライドシェア打ち上げ契約を使って科学衛星を軌道に送る体制を整えたことは、小型衛星の部品・装置を製造する企業にとって重要な市場シグナルだ。2028年以降を見据えた長期調達の枠組みのもとで、小型…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>商業有人宇宙輸送の定着 — 製造業には何が問われるか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-19/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-19/</guid>
+<description>NASAがSpaceXにCrew-15・Crew-16・Crew-17の追加発注を行った。今回の追加分の契約額は9.46億ドル、履行期間は2030年まで。この決定が示すのは、有人宇宙輸送が「政府の特別…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>小型SAR衛星12機の連続打ち上げは何を告げるか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-22/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-22/</guid>
+<description>2026年9月19日12時22分、ロケットラボはエレクトロンの通算96回目の打ち上げを成功させ、シンスペクティブのSAR衛星「StriX」12機目を高度572km・軌道傾斜角38度の地球低軌道へ投入し…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>NOAAの衛星受注、実証から運用への移行は製造業に何を意味するか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-25/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-25/</guid>
+<description>米企業エーテリアル・スペースが、NOAAの環境監視プログラムで24か月・2740万ドル（約2740万ドル、日本円換算はここでは行わない）規模のタスクオーダーを受注した。この受注が示すのは、小型衛星によ…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>シリコン太陽電池の衛星回帰、部品メーカーは何を問われるか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-26/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-26/</guid>
+<description>英サリー大学の研究チームが、衛星用太陽電池を現在主流のガリウム系（トリプルジャンクション）からシリコン系に置き換えることで、初期発電性能（BOL）ベースで電源コストを最大90%削減できるとする論文をA…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>打ち上げ670回という数字は、製造業に何を語るか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-27/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-27/</guid>
+<description>中国は2026年、太原衛星発射センターから「長征6号改」ロケットを打ち上げ、遥感40号系列の衛星群を軌道へ投入した。打ち上げは日本時間24日17時46分に行われ、長征シリーズとして通算670回目の飛行…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>米軍の衛星量産ラッシュは、日本の部品メーカーに何を語るか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-28/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-28/</guid>
+<description>SpaceXは9月26日、米宇宙軍の機密ミッションUSSF-385をバンデンバーグ宇宙軍基地から打ち上げ、ブースターB1100が10回目の着陸に成功した。同種の打ち上げはこの6週間でUSSF-366、…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>有人宇宙船の「13回目」が製造業に問いかけること</title>
+<link>https://uchuchu.tech/articles/news-2026-09-29/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-29/</guid>
+<description>NASAとSpaceXは10月1日、有人宇宙船クルー13号機をISSへ向けて打ち上げる。商業乗員輸送プログラムとしては13回目のローテーションミッションであり、使用する宇宙船もロケットのブースターも新…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>アルテミスIIの飛行後イベントは、部品メーカーに何を意味するか</title>
+<link>https://uchuchu.tech/articles/news-2026-09-30/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-09-30/</guid>
+<description>アルテミスIIの乗組員がヒューストンで公開イベントに登壇する。月周回飛行を終えた後の報告会にすぎないが、製造業にとっては読み取れる点が多い。有人での月周回飛行が実績として確立し、次の段階の調達が現実味…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>月面の5G通信契約は、部品・装置メーカーに何を求めるのか</title>
+<link>https://uchuchu.tech/articles/news-2026-10-01/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-01/</guid>
+<description>NASAが月面用の5G通信システムの開発を、Modulate Space Corporationに発注した。契約は固定価格で、規模は約3800万ドルである。この契約は、月面の通信が「宇宙専用の特注品」…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>Crew-13の打ち上げ</title>
+<link>https://uchuchu.tech/articles/news-2026-10-02/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-02/</guid>
+<description>有人輸送が日常になると何が変わるか — Crew-13から読む部品づくりCrew-13の打ち上げは、新技術の発表ではない。それでも製造業には読み取るべき点がある。有人輸送が「特別な一回」ではなく、繰り…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>打上げ前の地上作業は誰が担うのか — Quantum Spaceの契約から読む</title>
+<link>https://uchuchu.tech/articles/news-2026-10-03/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-03/</guid>
+<description>Quantum Spaceが、主要ミッション「Prime」の打上げ準備に向けて、All Points Logisticsと衛星の地上処理に関する作業契約を結んだ。この話は衛星メーカーの内輪の出来事に見…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>Transporter-18が示す、相乗り打ち上げは部品メーカーに何をもたらすか</title>
+<link>https://uchuchu.tech/articles/news-2026-10-04/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-04/</guid>
+<description>結論から言う。Transporter-18は、小型衛星の打ち上げが「特別な機会」ではなく、定期便として回り続ける段階に入ったことを示す出来事である。製造業にとっての意味は、衛星や搭載機器を短い周期で作…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>宇宙政策の週間予定は製造業に何を伝えるのか</title>
+<link>https://uchuchu.tech/articles/news-2026-10-05/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-05/</guid>
+<description>この週の宇宙政策の予定表が製造業に伝えているのは、需要の大きさではなく、需要が動き出す時期が政治の日程に縛られているという事実である。米議会は中間選挙まで休会に入り、予算や授権法の行方は選挙後の会期に…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>射場の運営が民間に移る意味とは — 製造業の取引はどう変わるか</title>
+<link>https://uchuchu.tech/articles/news-2026-10-06/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-06/</guid>
+<description>北海道スペースポートの運営がコンセッション方式に移り、射場は「公共の施設」から「利用料金で成り立つ事業」へと性格を変えた。製造業にとっての要点は、打上げ回数が運営側の収益に直結するため、射場まわりの設…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>推進系メーカーが経営陣を強化する理由は何か</title>
+<link>https://uchuchu.tech/articles/news-2026-10-07/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-07/</guid>
+<description>米国の推進系メーカー、エージャイル・スペース・インダストリーズが、取締役と戦略・企業開発の責任者を補強した。人事の発表に見えるが、部品や装置の供給者がサブシステム全体の供給者へ進むには、技術と同じ重さ…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>NASAの遠赤外線天文台PRIMAは、部品メーカーに何を問うのか</title>
+<link>https://uchuchu.tech/articles/news-2026-10-08/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-08/</guid>
+<description>2026年9月にNASAが選定した遠赤外線天文台PRIMAは、承認が確定すれば2033年の打ち上げを目指す計画である。製造業にとっての意味は、すぐに受注へつながる話ではなく、極低温・高精度・高信頼とい…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>NASA、SpaceX補給ミッションが示す宇宙の需要 — 運ばれる物から読む部品市場</title>
+<link>https://uchuchu.tech/articles/news-2026-10-09/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-09/</guid>
+<description>今回の補給ミッションは、宇宙での装置の更新や実験が、定常的な輸送の仕組みに乗って進んでいることを示している。製造業にとっての意味は、打ち上げの話題性ではなく、運ばれる物の種類が部品・装置の需要を決める…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>月面ホッパー実証機は部品メーカーに何を意味するか</title>
+<link>https://uchuchu.tech/articles/news-2026-10-10/</link>
+<guid isPermaLink="true">https://uchuchu.tech/articles/news-2026-10-10/</guid>
+<description>欧州の民間企業エクスプロレーション・カンパニーが、月面着陸技術の実証機ONEIROSをアラブ首長国連邦で2027年に試験する。この計画が製造業に示すのは、月面向けの需要は大型の本番機より先に、実証機の…</description>
+<dc:creator>UchUchU 編集部</dc:creator>
+</item>
+<item>
+<title>NASA、LISA計画向けの新型全ガラス製試験望遠鏡の開発を前進</title>
+<link>https://phys.org/news/2026-10-nasa-advances-lisa-mission-contributions.html</link>
+<guid isPermaLink="true">https://phys.org/news/2026-10-nasa-advances-lisa-mission-contributions.html</guid>
+<description>NASAは、重力波と呼ばれる時空のさざ波を検出するために設計された宇宙観測装置「LISA（レーザー干渉計宇宙アンテナ）」計画向けに、全ガラス製の新型望遠鏡の開発で次の段階に進んだ。</description>
+<source url="https://phys.org/news/2026-10-nasa-advances-lisa-mission-contributions.html">Phys.org</source>
+</item>
+<item>
+<title>太陽系外で変動する水雲を初めて検出</title>
+<link>https://phys.org/news/2026-10-discovery-variable-clouds-solar.html</link>
+<guid isPermaLink="true">https://phys.org/news/2026-10-discovery-variable-clouds-solar.html</guid>
+<description>木星ほどの大きさの天体が地球から7.5光年しか離れていないところにあり、雲に覆われ化学的に複雑であることに加え、予想以上に地球に近い性質を持つことがわかった。ジェームズ・ウェッブ宇宙望遠鏡を用いて、アリゾナ大学スチュワード天文台のアシスタント天文学者ブリタニー・マイルズ氏が率いるチームは、WISE 0855を11時間にわたり観測した…</description>
+<source url="https://phys.org/news/2026-10-discovery-variable-clouds-solar.html">Phys.org</source>
+</item>
+<item>
+<title>NASA、商業宇宙ステーションに向け米産業界の計画を募集</title>
+<link>https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/</link>
+<guid isPermaLink="true">https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/</guid>
+<description>NASAは、商業宇宙ステーションが地球低軌道で主導する未来の実現に向けて、次の段階を進めている。同機関は金曜日、次世代の商業宇宙ステーションの計画案を産業界から募るための最終提案依頼書（RFP）を公表した。「…に沿って…」…</description>
+<source url="https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/">NASA</source>
+</item>
+<item>
+<title>強い磁場により白色矮星はチャンドラセカール限界を超えて成長できる可能性</title>
+<link>https://phys.org/news/2026-10-strong-magnetic-fields-white-dwarfs.html</link>
+<guid isPermaLink="true">https://phys.org/news/2026-10-strong-magnetic-fields-white-dwarfs.html</guid>
+<description>恒星が燃料を使い果たして外層を放出すると、残された核が地球程度の大きさで極めて高密度の恒星の残骸となる。これを白色矮星という。強く自転しておらず磁場も持たない白色矮星には、太陽の約1.4倍というよく知られた質量の上限があり、それを…</description>
+<source url="https://phys.org/news/2026-10-strong-magnetic-fields-white-dwarfs.html">Phys.org</source>
+</item>
+<item>
+<title>観測史上最遠の高速電波バーストが示す発生源の手がかり</title>
+<link>https://www.universetoday.com/articles/the-most-distant-frb-tells-the-story-of-its-origin</link>
+<guid isPermaLink="true">https://www.universetoday.com/articles/the-most-distant-frb-tells-the-story-of-its-origin</guid>
+<description>天文学者はウェッブ望遠鏡を用いて遠方の高速電波バーストを観測し、これら謎めいた現象の発生源に関する手がかりを明らかにした。</description>
+<source url="https://www.universetoday.com/articles/the-most-distant-frb-tells-the-story-of-its-origin">Universe Today</source>
+</item>
+<item>
+<title>NASA、次世代の耐熱シールド技術を実証</title>
+<link>https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/</link>
+<guid isPermaLink="true">https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/</guid>
+<description>NASAは、月や火星の任務から帰還する宇宙飛行士を守る耐熱シールドを、いわば「ごみ出し」という独特の方法で試験している。ノースロップ・グラマン社によるNASA向け第24次補給ミッションが国際宇宙ステーションから分離した際、同機は設計された実験用の小型カプセル12基を搭載していた…</description>
+<source url="https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/">NASA</source>
+</item>
+<item>
+<title>船40号が帰還、船42号は極低温耐圧試験を継続</title>
+<link>https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/</link>
+<guid isPermaLink="true">https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/</guid>
+<description>Flight 15向けの船42号が、さらなる極低温耐圧試験のためマッセイズへ再び向かった…com.</description>
+<source url="https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/">NASASpaceflight</source>
+</item>
+<item>
+<title>宇宙の鏡の館</title>
+<link>https://www.nasa.gov/image-article/cosmic-house-of-mirrors/</link>
+<guid isPermaLink="true">https://www.nasa.gov/image-article/cosmic-house-of-mirrors/</guid>
+<description>2026年9月29日に公開されたNASAのジェームズ・ウェッブ宇宙望遠鏡の画像では、銀河が鏡の館のように歪んで増殖して見える。ここに写る輝く金色の銀河は、銀河団MACS J0454.1-0300の一部である。一方、画像の片側に密集するオレンジ色の銀河は、実際には…</description>
+<source url="https://www.nasa.gov/image-article/cosmic-house-of-mirrors/">NASA</source>
+</item>
+<item>
+<title>イタリア、軌道上に人工重力の研究基盤を構築する検討を開始</title>
+<link>https://europeanspaceflight.com/italy-explores-building-an-artificial-gravity-research-platform-in-orbit/</link>
+<guid isPermaLink="true">https://europeanspaceflight.com/italy-explores-building-an-artificial-gravity-research-platform-in-orbit/</guid>
+<description>イタリア宇宙機関（ASI）は、科学研究や技術開発を支えるため、人工重力を生成できる専用の軌道プラットフォームの開発を検討している。ASIは10月8日にこの構想を発表し、後日、科学・技術コミュニティとの協議を開始する見込みだ…</description>
+<source url="https://europeanspaceflight.com/italy-explores-building-an-artificial-gravity-research-platform-in-orbit/">European Spaceflight</source>
+</item>
+<item>
+<title>SPHEREx、大気中に水とメタンを持つ多様な褐色矮星の一群を観測</title>
+<link>https://phys.org/news/2026-10-spherex-menagerie-brown-dwarfs-atmospheric.html</link>
+<guid isPermaLink="true">https://phys.org/news/2026-10-spherex-menagerie-brown-dwarfs-atmospheric.html</guid>
+<description>NASAの宇宙望遠鏡SPHEREx（宇宙の歴史、再電離期、氷を探査する分光測光観測装置）は、恒星と系外惑星の境界を曖昧にする天体、褐色矮星の研究を進めている。学術誌『アストロフィジカル・ジャーナル』に掲載された新たな研究によると、これら暗く雲に覆われた天体は…</description>
+<source url="https://phys.org/news/2026-10-spherex-menagerie-brown-dwarfs-atmospheric.html">Phys.org</source>
+</item>
+<item>
+<title>週間画像：2026年10月5〜9日</title>
+<link>https://www.esa.int/About_Us/Week_in_images/Week_in_images_05-09_October_2026</link>
+<guid isPermaLink="true">https://www.esa.int/About_Us/Week_in_images/Week_in_images_05-09_October_2026</guid>
+<description>週間画像：2026年10月5〜9日</description>
+<source url="https://www.esa.int/About_Us/Week_in_images/Week_in_images_05-09_October_2026">ESA</source>
+</item>
+<item>
+<title>独占：カプタ・スペース、移動目標追跡用レーダー搭載物の開発で2,400万ドルを調達</title>
+<link>https://payloadspace.com/exclusive-kapta-space-raises-24m-series-a-to-build-moving-target-radar-payload/</link>
+<guid isPermaLink="true">https://payloadspace.com/exclusive-kapta-space-raises-24m-series-a-to-build-moving-target-radar-payload/</guid>
+<description>シアトルを拠点とするカプタ・スペースは、移動目標を追跡するよう設計された次世代のレーダー搭載物を開発するため、2,400万ドルのシリーズA資金調達を発表した。</description>
+<source url="https://payloadspace.com/exclusive-kapta-space-raises-24m-series-a-to-build-moving-target-radar-payload/">Payload</source>
+</item>
+<item>
+<title>NASA、宇宙原子力協定に署名 月面基地は計画より前倒しと発表</title>
+<link>https://payloadspace.com/nasa-signs-space-nuclear-pact-says-moon-base-is-ahead-of-schedule/</link>
+<guid isPermaLink="true">https://payloadspace.com/nasa-signs-space-nuclear-pact-says-moon-base-is-ahead-of-schedule/</guid>
+<description>アイザックマン長官がホワイトハウスの「科学：新たな黄金時代サミット」で最新状況を説明した。</description>
+<source url="https://payloadspace.com/nasa-signs-space-nuclear-pact-says-moon-base-is-ahead-of-schedule/">Payload</source>
+</item>
+<item>
+<title>花火のような超新星残骸「Pa 30」 ジェミニ北望遠鏡の観測で連なる塊状の構造が明らかに</title>
+<link>https://sorae.info/astronomy/20261009-pa-30.html</link>
+<guid isPermaLink="true">https://sorae.info/astronomy/20261009-pa-30.html</guid>
+<description>こちらは、ハワイのマウナケア山頂にあるジェミニ北望遠鏡が観測した超新星残骸「Pa 30」。カシオペヤ座の方向、地球から約7500光年先にあります。 超新星残骸は、超新星爆発の後に観測される天体です。 爆発で吹き飛ばされた…</description>
+<source url="https://sorae.info/astronomy/20261009-pa-30.html">sorae</source>
+</item>
+<item>
+<title>ロケット・レポート：ファルコン9が珍しく打ち上げ中止 ヴァルカンの出番は近いか</title>
+<link>https://arstechnica.com/space/2026/10/rocket-report-a-rare-falcon-9-scrub-is-it-just-about-vulcans-time-to-shine/</link>
+<guid isPermaLink="true">https://arstechnica.com/space/2026/10/rocket-report-a-rare-falcon-9-scrub-is-it-just-about-vulcans-time-to-shine/</guid>
+<description>「ヴァルカンでの打ち上げまで数週間だと言える」。</description>
+<source url="https://arstechnica.com/space/2026/10/rocket-report-a-rare-falcon-9-scrub-is-it-just-about-vulcans-time-to-shine/">Arstechnica</source>
+</item>
+<item>
+<title>18年間の周回を終えて流体科学実験室が退役へ</title>
+<link>https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Farewell_to_the_Fluid_Science_Laboratory_after_18_years_in_orbit</link>
+<guid isPermaLink="true">https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Farewell_to_the_Fluid_Science_Laboratory_after_18_years_in_orbit</guid>
+<description>10月9日、国際宇宙ステーションの宇宙飛行士らが、欧州の「コロンバス」実験棟内で最も長く運用されてきた科学施設の一つである、ESAの流体科学実験室（FSL）の最終的な退役作業を支援し始めた。</description>
+<source url="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Farewell_to_the_Fluid_Science_Laboratory_after_18_years_in_orbit">ESA</source>
+</item>
+<item>
+<title>欧州の地球観測企業、通信衛星分野へ照準</title>
+<link>https://payloadspace.com/europes-earth-observation-providers-set-their-sights-on-satcoms/</link>
+<guid isPermaLink="true">https://payloadspace.com/europes-earth-observation-providers-set-their-sights-on-satcoms/</guid>
+<description>Open Cosmosは192機からなる通信衛星コンステレーションの計画を明らかにし、ICEYEはNokiaと自社の通信衛星網で提携したと発表した。</description>
+<source url="https://payloadspace.com/europes-earth-observation-providers-set-their-sights-on-satcoms/">Payload</source>
+</item>
+<item>
+<title>宇宙飛行士4人、8か月の宇宙滞在を終えて帰還</title>
+<link>https://phys.org/news/2026-10-astronauts-earth-months-space.html</link>
+<guid isPermaLink="true">https://phys.org/news/2026-10-astronauts-earth-months-space.html</guid>
+<description>宇宙飛行士4人が木曜日、国際宇宙ステーション（ISS）から地球に帰還した。8か月前、体調を崩した同僚とその乗組員を交代させるため、急いでISSに向かっていた。</description>
+<source url="https://phys.org/news/2026-10-astronauts-earth-months-space.html">Phys.org</source>
+</item>
+<item>
+<title>ESA火星探査車「ロザリンド・フランクリン」の運用チームがスペインの砂漠でリハーサルを実施</title>
+<link>https://sorae.info/space/20261009-rosalind-franklin.html</link>
+<guid isPermaLink="true">https://sorae.info/space/20261009-rosalind-franklin.html</guid>
+<description>ESA（ヨーロッパ宇宙機関）は2026年10月6日付で、2030年の火星着陸を目指す探査車「ロザリンド・フランクリン（Rosalind Franklin）」の運用チームが、本番の探査活動に備えたリハーサルをスペインの砂漠…</description>
+<source url="https://sorae.info/space/20261009-rosalind-franklin.html">sorae</source>
+</item>
+<item>
+<title>「宇宙からの地球」：ナミビア最大の塩田</title>
+<link>https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Namibia_s_biggest_salt_pan</link>
+<guid isPermaLink="true">https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Namibia_s_biggest_salt_pan</guid>
+<description>欧州宇宙機関（ESA）のブログに掲載された記事である。</description>
+<source url="https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Namibia_s_biggest_salt_pan">ESA</source>
+</item>
+<item>
+<title>学生が3つの銀河を発見、銀河形成の謎解明につながる可能性</title>
+<link>https://www.universetoday.com/articles/a-student-finds-three-galaxies-and-possibly-solves-a-mystery</link>
+<guid isPermaLink="true">https://www.universetoday.com/articles/a-student-finds-three-galaxies-and-possibly-solves-a-mystery</guid>
+<description>高校生から大学生になった人物の名を冠した銀河が3つ見つかった。いずれも星形成の法則に反する特徴を持つことが注目される。発見したのは、カリフォルニア大学バークレー校の天体物理学専攻の学生ジュリアン・シャピロ氏で、大型渦巻銀河M101の近傍で奇妙な矮小銀河を見つけた…</description>
+<source url="https://www.universetoday.com/articles/a-student-finds-three-galaxies-and-possibly-solves-a-mystery">Universe Today</source>
+</item>
+<item>
+<title>欧州の宇宙防衛、兵器化には届かず</title>
+<link>https://payloadspace.com/europes-space-defenses-fall-just-shy-of-weaponization/</link>
+<guid isPermaLink="true">https://payloadspace.com/europes-space-defenses-fall-just-shy-of-weaponization/</guid>
+<description>欧州は宇宙空間に兵器を配備していない。しかし、だからといって軌道上を無防備なまま飛行することに安心しているわけではない。</description>
+<source url="https://payloadspace.com/europes-space-defenses-fall-just-shy-of-weaponization/">Payload</source>
+</item>
+<item>
+<title>SpaceX、携帯大手に照準 Starlink Mobileで通信事業へ</title>
+<link>https://www.teslarati.com/spacex-direc-cell-att-verizon-t-mobile-challenge/</link>
+<guid isPermaLink="true">https://www.teslarati.com/spacex-direc-cell-att-verizon-t-mobile-challenge/</guid>
+<description>SpaceXは、Grain社から800MHz帯の周波数を取得する。Starlink Mobileを通信事業者として展開するための措置である。</description>
+<source url="https://www.teslarati.com/spacex-direc-cell-att-verizon-t-mobile-challenge/">Teslarati</source>
+</item>
+<item>
+<title>天文写真サイト「APOD」、2026年10月9日付の掲載内容</title>
+<link>https://science.nasa.gov/image-article/apod-2026-october-9-stickney-crater/</link>
+<guid isPermaLink="true">https://science.nasa.gov/image-article/apod-2026-october-9-stickney-crater/</guid>
+<description>天文写真サイト「APOD」の2026年10月9日付の掲載記事。要約として取得できた本文は、サイトのナビゲーション等の案内文のみである。</description>
+<source url="https://science.nasa.gov/image-article/apod-2026-october-9-stickney-crater/">NASA</source>
+</item>
+<item>
+<title>タイ全土で洪水が深刻化</title>
+<link>https://science.nasa.gov/earth/earth-observatory/floodwaters-overwhelm-thailand/</link>
+<guid isPermaLink="true">https://science.nasa.gov/earth/earth-observatory/floodwaters-overwhelm-thailand/</guid>
+<description>9月中旬以降の豪雨により、タイ全土で広範囲にわたる洪水が発生し、数百万人が影響を受けている。</description>
+<source url="https://science.nasa.gov/earth/earth-observatory/floodwaters-overwhelm-thailand/">NASA</source>
+</item>
+</channel>
+</rss>

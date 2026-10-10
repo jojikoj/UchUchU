@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU SaxaVord Spaceport launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:91b13c6c-4525-496d-997b-3521bb6a4cd8@uchuchu.tech
+DTSTAMP:20261010T094525Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:RFA One | Maiden Flight
+LOCATION:SaxaVord Spaceport
+DESCRIPTION:Rocket Factory Augsburg / RFA One / Maiden Flight / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/saxavord-spaceport/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:1b11f81e-cdbf-49aa-a7ce-aa79f609046c@uchuchu.tech
+DTSTAMP:20261010T094525Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:Orbex Prime | Maiden Flight
+LOCATION:SaxaVord Spaceport
+DESCRIPTION:Orbex / Orbex Prime / Maiden Flight / To Be Determined
+URL:https://uchuchu.tech/en/launches/site/saxavord-spaceport/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
