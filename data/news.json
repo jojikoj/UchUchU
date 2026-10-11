@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T09:32:59.878920+00:00",
-  "count": 4393,
+  "generated_at": "2026-10-11T21:35:33.557657+00:00",
+  "count": 4396,
   "sources": {
     "jaxa": 20,
     "naoj": 16,
@@ -28,6 +28,52 @@
     "spaceflightnews": 300
   },
   "items": [
+    {
+      "title": "What’s Happening in Space Policy October 11-17, 2026",
+      "url": "https://spacepolicyonline.com/news/whats-happening-in-space-policy-october-11-17-2026/",
+      "summary": "Here is SpacePolicyOnline.com’s list of space policy events for the week of October 11-17, 2026 and any insight we can offer about them. The House and Senate are in recess, […]",
+      "image": "https://spacepolicyonline.com/wp-content/uploads/2026/10/Meir-Adenot-day-before-EVA-300x200.jpg",
+      "published": "2026-10-11T19:37:35Z",
+      "source": "SpacePolicyOnline.com",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "2026年10月11日〜17日の宇宙政策の動向",
+      "summary_ja": "SpacePolicyOnline.comが、2026年10月11日〜17日の週に予定される宇宙政策関連の出来事の一覧と、それらに関する見解を示した。下院と上院は休会中である。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "今週（2026年10月11〜17日）は連邦議会が中間選挙まで休会中のため政策面の動きは少ないが、ISSでの乗員運用、補給船SpX-35の打ち上げ、JAXAの火星衛星探査機MMXの打ち上げ準備と、宇宙開発の実務が続く週になる。\n\nISSでは、Crew-12が10月8日に帰還し、約8カ月にあたる237日間の任務を終えた。延長の原因は、Crew Dragon「Grace」の酸化剤漏れだった。修理を経てCrew-13が10月1日に打ち上げられ、ISSの乗員は再び7人に戻った。同じ週に打ち上げられるSpX-35には、ISSの既存太陽電池アレイを補うための最後のiROSA（ISSロールアウト式太陽電池アレイ）が積まれる。既存のアレイは20年以上の宇宙環境で劣化しており、iROSAはすでに6基が設置されている。\n\nMMXはJAXAが主導し、火星の衛星フォボスとダイモスを探査して、フォボスからサンプルを持ち帰る計画である。打ち上げは米東部時間10月19日（日本時間10月20日）の予定だ。NASAは観測装置MEGANEと表面サンプラー機構を提供し、深宇宙ネットワークによる通信・航法支援も担う。サンプラーはHoneybee Roboticsが開発し、NASAのDiscoveryプログラムで進められた。ほかにフランスのCNES、ドイツのDLR、ESA、オーストラリアなどが参加している。\n\nこの2つの事例が示すのは、宇宙機の成否が、国際的に分担された個別の機器や機構の信頼性に支えられているという点である。ISSのアレイ更新は、経年劣化する部材を後から補う運用が長期ミッションでは不可欠になることを示している。MMXでもサンプラーのような機構部品が、探査の目的そのものを左右する構成になっている。今後の注目点としては、NASAのJared Isaacman長官がXで示した10月23日前後のArtemis III関連の発表が挙げられる。ただし日付は確定していないと記事は伝えている。\n\n日本の製造業の視点では、MMXは日本が主導する探査であり、精密機構、サンプル採取、観測機器に関わる部品や素材は国内サプライヤーが関われる領域と考えられる。記事には国内企業の参加は示されていないため、具体的な関与の有無は判断できない。ただ、月面や火星の探査が続けば、低温・真空・放射線に耐える機構や材料への需要が増える可能性がある。ISSの部材更新のように、後から交換や補修ができる設計への要求も広がるかもしれない。",
+      "body_chars": 1048
+    },
+    {
+      "title": "Blue Origin Advances LC-36 Rebuild for Year-End New Glenn Return to Flight",
+      "url": "https://www.nasaspaceflight.com/2026/10/blue-origin-lc-36-rebuild-new-glenn/",
+      "summary": "Four months after Blue Origin’s New Glenn rocket exploded on the launch pad, the company… The post Blue Origin Advances LC-36 Rebuild for Year-End New Glenn Return to Flight appeared first on NASASpaceFlight.com.",
+      "image": "https://www.nasaspaceflight.com/wp-content/uploads/2026/10/NSF-2026-10-11-15-28-41-818.jpg",
+      "published": "2026-10-11T14:29:52Z",
+      "source": "NASASpaceflight",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "ブルーオリジン、年末のニューグレン復帰に向けLC-36の再建を進める",
+      "summary_ja": "ブルーオリジンのニューグレンロケットが発射台で爆発してから4カ月が経過した。同社は…",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Honda Wants to Put a Robotic Lab Assistant on Future Commercial Space Stations",
+      "url": "https://www.universetoday.com/articles/honda-wants-to-put-a-robotic-lab-assistant-on-future-commercial-space-stations",
+      "summary": "As I’m writing this I’m able to stare out into my driveway at my trusty Honda Odyssey. Most of the public’s association with Honda is through their “mobility” products - i.e. their cars. But the company has an impressive track record of other technical achievements, not the least of which has been in robotics. Now, it’…",
+      "image": null,
+      "published": "2026-10-11T12:33:57+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "ホンダ、将来の商業宇宙ステーション向けにロボット実験助手の搭載を構想",
+      "summary_ja": "私は今、自宅の私道に停めてある愛車のホンダ・オデッセイを眺めながらこの記事を書いている。ホンダは一般に「モビリティ」製品、つまり自動車で知られている。しかし同社はロボティクスをはじめ、ほかの技術分野でも目覚ましい実績を積み重ねてきた。今回…",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
     {
       "title": "火星衛星探査計画「MMX」の打ち上げをプラネタリウムで応援 相模原市立博物館で10月20日早朝にパブリックビューイング",
       "url": "https://sorae.info/event/20261011-sagamihara-mmx-public-viewing.html",
