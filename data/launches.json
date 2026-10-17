@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T09:34:37.194978+00:00",
+  "generated_at": "2026-10-17T21:34:28.478906+00:00",
   "count": 200,
   "items": [
     {
@@ -20,7 +20,7 @@
       "country": "USA",
       "mission": "Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
       "mission_type": "Dedicated Rideshare",
-      "mission_description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
+      "mission_description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers. This launch also carries the second demonstration mission for SpaceX’s Project Starfall, which aims to mass-produce reentry capsules designed to autonomously transport valuable customer experiments and other payloads safely back from space to Earth,…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
       "webcast": "https://x.com/i/broadcasts/1nxeLMddZlEJX",
       "upcoming": true
@@ -141,12 +141,35 @@
       "upcoming": true
     },
     {
+      "id": "9648124f-8568-46d2-86d7-4b4d6f12187f",
+      "name": "Long March 6A | Unknown Payload",
+      "net": "2026-10-23T10:15:00Z",
+      "window_end": "2026-10-23T10:28:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "provider_country": "CHN",
+      "provider_url": "https://english.spacechina.com/",
+      "rocket": "Long March 6A",
+      "pad": "Launch Complex 9A",
+      "pad_lat": "38.8583",
+      "pad_lon": "111.5802",
+      "location": "Taiyuan Satellite Launch Center, People's Republic of China",
+      "country": "CHN",
+      "mission": "Unknown Payload",
+      "mission_type": "Unknown",
+      "mission_description": "Details TBD.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_6a__image_20251209050223.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "3621085f-deae-4f89-bd54-c0f96ee44421",
       "name": "Long March 4B | Unknown Payload",
-      "net": "2026-10-23T18:00:00Z",
-      "window_end": "2026-10-23T21:00:00Z",
-      "status": "TBC",
-      "status_name": "To Be Confirmed",
+      "net": "2026-10-23T19:25:00Z",
+      "window_end": "2026-10-23T19:39:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "China Aerospace Science and Technology Corporation",
       "provider_country": "CHN",
       "provider_url": "https://english.spacechina.com/",
@@ -4579,29 +4602,6 @@
       "mission_description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcast": "https://www.youtube.com/watch?v=SmX7N766aL8",
-      "upcoming": false
-    },
-    {
-      "id": "135fb199-a39e-48cc-ba27-0aecd96ba9f8",
-      "name": "Falcon 9 Block 5 | Starlink Group 17-48",
-      "net": "2026-07-11T03:01:57Z",
-      "window_end": "2026-07-11T06:00:00Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "SpaceX",
-      "provider_country": "USA",
-      "provider_url": "https://www.spacex.com/",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "pad_lat": "34.632",
-      "pad_lon": "-120.611",
-      "location": "Vandenberg SFB, CA, USA",
-      "country": "USA",
-      "mission": "Starlink Group 17-48",
-      "mission_type": "Communications",
-      "mission_description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcast": "https://www.youtube.com/watch?v=LRES4HfNbi4",
       "upcoming": false
     }
   ]
