@@ -8,6 +8,13 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 ROOT=$(pwd)
 
+# 日次収集と記事生成は別ジョブで走る。両方が同じ dist/ を作り直すと
+# トップが欠けたまま公開判定に進むため、ビルドから push までを直列化する。
+if [ "${UCHUCHU_DEPLOY_LOCKED:-}" != "1" ]; then
+  exec /usr/bin/lockf -k -t 3600 "$ROOT/.deploy.lock" \
+    /usr/bin/env UCHUCHU_DEPLOY_LOCKED=1 /bin/bash "$ROOT/tools/deploy.sh" "$@"
+fi
+
 # 検査はビルドの後に回す。check_links は dist/ の中身も見るため、
 # 先に走らせると前回の（＝これから作り直す）生成物を検査してしまい、
 # 直したはずの不具合で毎回止まる（2026-08-16、a/ 欠落の残骸で1735件の誤検知）。

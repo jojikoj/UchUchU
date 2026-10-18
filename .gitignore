@@ -1,5 +1,6 @@
 # ビルド生成物（Actions が毎回生成するのでコミットしない）
 dist/
+.deploy.lock
 
 # ローカル確認用スクリーンショット
 .preview/
