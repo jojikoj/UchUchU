@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T21:45:39.136752+00:00",
-  "count": 4862,
+  "generated_at": "2026-10-21T09:49:49.703557+00:00",
+  "count": 4887,
   "sources": {
     "jaxa": 20,
     "naoj": 16,
@@ -9,8 +9,8 @@
     "sorabatake": 10,
     "astroarts": 0,
     "wired_jp": 3,
-    "gizmodo_jp": 1,
-    "karapaia": 1,
+    "gizmodo_jp": 2,
+    "karapaia": 0,
     "nasa": 10,
     "esa": 9,
     "esa_science": 15,
@@ -24,10 +24,271 @@
     "arstechnica": 20,
     "phys_space": 30,
     "skyandtelescope": 0,
-    "teslarati": 6,
+    "teslarati": 7,
     "spaceflightnews": 300
   },
   "items": [
+    {
+      "title": "SpaceX turns a profit after a string of losses as its satellite and computer leasing businesses soar",
+      "url": "https://phys.org/news/2026-10-spacex-profit-losses-satellite-leasing.html",
+      "summary": "SpaceX reported a bigger quarterly profit than expected Tuesday as its satellite communications operations and its business of leasing computing power to other companies boomed.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/spacex-crew-launch.jpg",
+      "published": "2026-10-21T08:48:15+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "アルテミス合意の署名国が77か国に トルコやウズベキスタンなどが新たに参加",
+      "url": "https://sorae.info/space/20261021-artemis-accords-77.html",
+      "summary": "アメリカ国務省は2026年10月19日、ウズベキスタンが「アルテミス合意」に署名したと発表しました。署名式は同国の都市サマルカンドで行われ、外務大臣のBakhtiyor Saidov氏が署名し、アメリカのルビオ国務長官が…",
+      "image": null,
+      "published": "2026-10-21T08:23:21+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "Finding Our Way: Inside the Galileo Project: 2 - The people behind the signal",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/10/Finding_Our_Way_Inside_the_Galileo_Project_2_-_The_people_behind_the_signal",
+      "summary": "At its heart, Galileo is a story about people: engineers, operators and programme leaders working across Europe, united by a shared mission to strengthen Europe’s technological sovereignty while delivering a secure, resilient signal that supports safety, innovation and economic growth across the globe. Finding Our Way:…",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/finding_our_way_inside_the_galileo_project_2_-_the_people_behind_the_signal/27585629-1-eng-GB/Finding_Our_Way_Inside_the_Galileo_Project_2_-_The_people_behind_the_signal_card_full.png",
+      "published": "2026-10-21T08:04:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Finding Our Way: Inside the Galileo Project: 1 – A European vision",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/10/Finding_Our_Way_Inside_the_Galileo_Project_1_A_European_vision",
+      "summary": "It started with a bold idea: Europe should find its own way. Finding Our Way: Inside the Galileo Project tells the story of the vision, perseverance and people behind Galileo, Europe’s global navigation satellite system, and the decades-long journey that turned an idea into the signal that guides us all.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/finding_our_way_inside_the_galileo_project_1_a_european_vision/27585539-1-eng-GB/Finding_Our_Way_Inside_the_Galileo_Project_1_A_European_vision_card_full.png",
+      "published": "2026-10-21T08:03:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Finding Our Way: Inside the Galileo Project: 3 - A symphony of precision",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/10/Finding_Our_Way_Inside_the_Galileo_Project_3_-_A_symphony_of_precision",
+      "summary": "Galileo is a system in perfect synchronisation: satellites orbiting above, atomic clocks setting the tempo, and ground stations listening and refining below. Each plays its part. Together, they create the precision behind the signal that guides us all. See how it all comes together in Finding Our Way: Inside the Galile…",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/finding_our_way_inside_the_galileo_project_3_-_a_symphony_of_precision/27585719-1-eng-GB/Finding_Our_Way_Inside_the_Galileo_Project_3_-_A_symphony_of_precision_card_full.png",
+      "published": "2026-10-21T08:03:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "スペースX、ライドシェアミッション「Bandwagon-5」を打ち上げ 再突入カプセル「Starfall」が2回目の飛行",
+      "url": "https://sorae.info/ssn/20261021-bandwagon-5.html",
+      "summary": "SpaceX（スペースX）は日本時間2026年10月20日、ケープカナベラル宇宙軍基地から「Falcon 9（ファルコン9）」ロケットを打ち上げ、小型衛星の相乗り（ライドシェア）ミッション「Bandwagon-5（バンド…",
+      "image": "https://sorae.info/wp-content/uploads/2026/10/20261021-bandwagon-5_1.jpg",
+      "published": "2026-10-21T06:37:05+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "[プレスリリース・記者会見等] 火星衛星探査機（MMX）の初期クリティカル運用フェーズ終了",
+      "url": "https://www.jaxa.jp/press/2026/10/20261021-1_j.html",
+      "summary": "宇宙航空研究開発機構（JAXA）は、10月20日に打ち上げられた火星衛星探査機（MMX）について、初期運用における重要なシーケンスが正常に実施され、探査機の健全性が確保されたことを、本日",
+      "image": null,
+      "published": "2026-10-21T05:00:00+00:00",
+      "source": "JAXA",
+      "source_id": "jaxa",
+      "lang": "ja"
+    },
+    {
+      "title": "SpaceX showcases exactly how it plans to catch Starship next month",
+      "url": "https://www.teslarati.com/spacex-starship-tower-catch-flight-15/",
+      "summary": "SpaceX played a new Starship Flight 15 simulation showing the ship caught by tower chopsticks. The post SpaceX showcases exactly how it plans to catch Starship next month appeared first on TESLARATI .",
+      "image": null,
+      "published": "2026-10-21T04:44:49+00:00",
+      "source": "Teslarati",
+      "source_id": "teslarati",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "APOD: 2026 October 21 – New Ghosts Revealed in Cassiopeia",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-21-new-ghosts-revealed-in-cassiopeia/",
+      "summary": "APOD Science APOD APOD: 2026 October 21 – New… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professio…",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/IC63.png",
+      "published": "2026-10-21T04:05:00Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Extratropical Cyclone Whips Past Iceland",
+      "url": "https://science.nasa.gov/earth/earth-observatory/extratropical-cyclone-whips-past-iceland/",
+      "summary": "The powerful low-pressure system formed over the North Atlantic out of the remnants of Hurricane Isaias.",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/extratropical-cyclone-whips-past-iceland/icelandstorm_vir2_20261014.jpg",
+      "published": "2026-10-21T04:01:00Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "SpaceX’s AI Revenue Leads Q3 Earnings",
+      "url": "https://payloadspace.com/spacexs-ai-revenue-leads-q3-earnings/",
+      "summary": "With its first full quarter as a public company under its belt, SpaceX blew past expectations Tuesday with ~$14.6B in revenue and net income of $4.4B. The post SpaceX’s AI Revenue Leads Q3 Earnings appeared first on Payload .",
+      "image": null,
+      "published": "2026-10-21T02:50:15+00:00",
+      "source": "Payload",
+      "source_id": "payloadspace",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "A magnetar can be born when two neutron stars touch",
+      "url": "https://phys.org/news/2026-10-magnetar-born-neutron-stars.html",
+      "summary": "All neutron stars have intense magnetic fields. The typical magnetic field of a neutron star is about 100,000 times stronger than the strongest magnetic fields we can create on Earth. But about 1% of neutron stars have even stronger magnetic fields. Known as magnetars, their magnetic fields can be 1,000 times stronger…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/illustration-of-a-bina.jpg",
+      "published": "2026-10-21T02:40:08+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "相模原市の光学ガラスメーカー「オハラ」の製品、火星衛星探査機「MMX」に採用",
+      "url": "https://sorae.info/space/20261021-ohara-mmx.html",
+      "summary": "神奈川県相模原市の光学ガラスメーカー「オハラ」は2026年10月20日、同社の光学ガラスがJAXA（宇宙航空研究開発機構）の火星衛星探査機「MMX」に採用されたと発表しました。このガラスは、広角分光カメラ「OROCHI（…",
+      "image": null,
+      "published": "2026-10-21T02:33:40+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "多っっっ！ 来年のサムスンは折りたたみスマホを6モデル準備中!?",
+      "url": "https://www.gizmodo.jp/article/2610-samsung-foldable-phones-six-models/",
+      "summary": "サムスンが来年リリースを噂される6モデルの折りたたみスマホについて解説。新登場のGalaxy Z SlideやProモデルを含むラインナップの最新リーク情報を紹介します。",
+      "image": "https://media.loom-app.com/loom/2026/10/20/15dd03f0-f5cc-41fd-ba0b-18bae245e839/original.jpg?w=1200",
+      "published": "2026-10-21T02:00:00+00:00",
+      "source": "ギズモード・ジャパン",
+      "source_id": "gizmodo_jp",
+      "lang": "ja"
+    },
+    {
+      "title": "アクセルスペースとASPINA、リアクションホイールの軌道上実証へ 「GRUS-3」に搭載",
+      "url": "https://sorae.info/biz/20261021-axelspace-al-lab-aspina.html",
+      "summary": "株式会社アクセルスペースは2026年10月15日、宇宙用機器を対象とした軌道上実証サービス「AxelLiner Laboratory（アクセルライナーラボラトリー、AL Lab）」の適用第1号として、ASPINA シナノ…",
+      "image": null,
+      "published": "2026-10-21T01:58:24+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "iPhone Duoのバッテリーは、他社の折りたたみスマホよりは大きい（から大丈夫よね？）",
+      "url": "https://www.gizmodo.jp/article/2610-iphone-duo-battery-capacity/",
+      "summary": "Apple初の折りたたみiPhone Duoのバッテリー容量を他社製品と比較。GalaxyやPixelなどのライバル機と比べても遜色ない大きさを誇り、普段使いでの実際の持ち具合や安心感について解説します。",
+      "image": "https://media.loom-app.com/loom/2026/10/21/eb6a4edd-41e8-48d1-a157-5756d6dfde98/original.jpg?w=1200",
+      "published": "2026-10-21T01:45:00+00:00",
+      "source": "ギズモード・ジャパン",
+      "source_id": "gizmodo_jp",
+      "lang": "ja"
+    },
+    {
+      "title": "NASAが有人月面探査車「LTV」の開発状況を報告 2028年までに月の南極域へ送り込む予定",
+      "url": "https://sorae.info/space/20261021-nasa-moon-base-update.html",
+      "summary": "NASA（アメリカ航空宇宙局）は2026年10月20日付で、月の南極域における有人活動の拠点を築く「月面基地（Moon Base）」計画で使われる有人月面探査車（ローバー）の「LTV（Lunar Terrain Vehi…",
+      "image": null,
+      "published": "2026-10-21T01:22:34+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "Rare solar radiation storm gives scientists clearest picture yet of flight risks",
+      "url": "https://phys.org/news/2026-10-rare-solar-storm-scientists-clearest.html",
+      "summary": "The most comprehensive data set ever collected from Earth's atmosphere during a solar radiation event has highlighted the importance of better-coordinated radiation monitoring for aviation safety, according to new research led by the University of Surrey.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/rare-solar-radiation-s.jpg",
+      "published": "2026-10-21T01:00:01+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "【11/5（木）〜6（金）開催】宇宙×不動産をテーマに産官学が集結 「SPACE REALTY CONFERENCE 2026」【PR】",
+      "url": "https://spacemedia.jp/news/21305",
+      "summary": "宇宙×不動産カンファレンス・SRC2026とは 「5000年続いた不動産産業を、宇宙とAIで変革する」を掲げ、衛星データを活用した不動産取引や災害リスク評価、軌道上データセンター、宇宙港、宇宙居住、月の土地まで、宇宙と不 […]",
+      "image": null,
+      "published": "2026-10-21T01:00:00+00:00",
+      "source": "Space Media",
+      "source_id": "spacemedia",
+      "lang": "ja"
+    },
+    {
+      "title": "Scientists Use Ancient Rains to Map the Possible Origin Life on Mars",
+      "url": "https://www.universetoday.com/articles/scientists-use-ancient-rains-to-map-the-possible-origin-life-on-mars",
+      "summary": "Billions of years ago, rain may have helped shape where the chemistry of life could begin on Mars. A new study maps how formaldehyde, an important prebiotic molecule, may have reached the surface. This map could help guide future missions searching for signs of past life on Mars.",
+      "image": null,
+      "published": "2026-10-20T23:16:34+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Elon Musk just confirmed the Tesla and SpaceX merger step everyone was waiting for",
+      "url": "https://www.teslarati.com/elon-musk-tesla-spacex-merger-committee/",
+      "summary": "Tesla and SpaceX formed special committees to weigh a merger, and Elon Musk supports it. The post Elon Musk just confirmed the Tesla and SpaceX merger step everyone was waiting for appeared first on TESLARATI .",
+      "image": null,
+      "published": "2026-10-20T23:13:48+00:00",
+      "source": "Teslarati",
+      "source_id": "teslarati",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "「日本の文化に魅かれた」「実機がある」2人のアメリカ出身エンジニアがElevationSpaceで働く理由",
+      "url": "https://sorabatake.jp/47117/",
+      "summary": "大学卒業後から日本で働くCodyさんと、NASAでのキャリアを積んでから日本で働くCalvinさんのお二人は現在、日本で大気圏再突入機を開発するElevationSpaceで活躍中。日本を選んだ理由と、ElevationSpaceでの実際の働き方や今後の期待について伺いました。",
+      "image": null,
+      "published": "2026-10-20T23:00:51+00:00",
+      "source": "宙畑",
+      "source_id": "sorabatake",
+      "lang": "ja"
+    },
+    {
+      "title": "SpaceX will attempt 1st-ever double Starship rocket catch on next test launch, a 'profound technology milestone,' Elon Musk says",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says",
+      "summary": "SpaceX will try to recover both Starship stages during the megarocket's next test flight, which is expected to take place in November, according to Elon Musk.",
+      "image": "https://cdn.mos.cms.futurecdn.net/bdHKBGYDk9vQ58gCeTzvgW-1920-80.jpg",
+      "published": "2026-10-20T22:29:46+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "スペースX、スターシップ2機同時キャッチに挑戦へ 次回試験飛行",
+      "summary_ja": "スペースXは、イーロン・マスク氏によれば、11月に予定される次回の試験飛行で、巨大ロケット「スターシップ」の両段をともに回収する計画だ。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Making SpaceX and Tesla a single company has \"a lot of merit,\" Musk says",
+      "url": "https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/",
+      "summary": "\"I do think there's a lot of merit to combining the companies.\"",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/tesla-in-space.jpg",
+      "published": "2026-10-20T22:04:54Z",
+      "source": "Arstechnica",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "マスク氏、スペースXとテスラの統合に「大きな利点」と発言",
+      "summary_ja": "マスク氏は「両社を統合することには大きな利点があると考えている」と述べた。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
     {
       "title": "'Terror of kings': Why the 1066 appearance of Halley's Comet terrified the medieval world",
       "url": "https://phys.org/news/2026-10-terror-kings-halley-comet-medieval.html",
@@ -49,7 +310,10 @@
       "source_id": "spaceflightnews",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "ライブ中継：スペースX、ヴァンデンバーグ宇宙軍基地からファルコン9でスターリンク衛星27機を打ち上げへ",
+      "summary_ja": "打ち上げは、同社が上場企業として第2四半期決算を発表してから数時間後に行われる。ヴァンデンバーグ宇宙軍基地の発射台4Eからの離昇は、現地時間午後4時10分（東部夏時間午後7時10分、協定世界時2310時）に予定されている。",
+      "translated_ja": true
     },
     {
       "title": "Using eyedrops in space—wearable patch offers a new approach",
@@ -60,7 +324,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "宇宙で目薬を使う 装着型パッチが新たな方法を提案",
+      "summary_ja": "ほぼ無重力の宇宙では、目薬をさすのは難しい。KAISTの研究チームは、重力に頼らずに目へ目薬を届ける装着型パッチを開発した。研究チームは、生命・脳工学科のチョン・ギフン教授が率いており、同分野の研究者と共同で進めた。",
+      "translated_ja": true
     },
     {
       "title": "On this day in space! Oct. 20, 1970: The Soviet Union launches last-ever Zond moon mission",
@@ -71,7 +338,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "今日は宇宙の日 1970年10月20日、ソ連が最後のゾンド月探査機を打ち上げ",
+      "summary_ja": "1970年10月20日、ソ連は月へ向かう探査機「ゾンド8号」を打ち上げた。その意義を解説する。",
+      "translated_ja": true
     },
     {
       "title": "SpaceX delivers blockbuster Q3 results as Super Intelligence segment booms",
@@ -82,7 +352,10 @@
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スペースX、第3四半期決算は好調 「超知能」部門が急成長",
+      "summary_ja": "スペースXは10月20日、2026年第3四半期の決算を発表した。今年上場後初めて、明確な黒字を計上した四半期となった。株式コード「$SPCX」で取引されている。売上高は145億8,000万ドルで、前年同期の56億ドルから161%増えた。市場予想を大きく上回った。",
+      "translated_ja": true
     },
     {
       "title": "Water as we've never known it: Physicists test water beyond Earth-like conditions",
@@ -93,7 +366,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "地球とは異なる条件下の水 物理学者が極限環境での挙動を検証",
+      "summary_ja": "水は必ずしも見た目どおりのものではない。他の惑星にあるような極限条件下では、原子構造が変化することが分かった。その結果、外観やその他の性質も変わりうる。",
+      "translated_ja": true
     },
     {
       "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
@@ -105,7 +381,10 @@
       "source_id": "universetoday",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "JAXAの火星衛星探査計画MMX、火星とフォボスへ向けて航行中",
+      "summary_ja": "JAXAは火星衛星探査機「MMX」の打ち上げに成功し、火星とフォボスへ向けて航行を始めた。火星には約6か月で到着し、約1か月間火星を周回したのち、フォボスの周回軌道へ移る。小型の着陸機を投下し、本体による試料採取地点の選定を支援する。",
+      "translated_ja": true
     },
     {
       "title": "Aurora supercomputer powers two of the largest cosmological simulations to date",
@@ -116,7 +395,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スーパーコンピューター「オーロラ」、史上最大級の宇宙論シミュレーションを2件完了",
+      "summary_ja": "米エネルギー省（DOE）のアルゴンヌ国立研究所の研究者らは、史上最大級の宇宙論シミュレーションを2件完了した。いずれのシミュレーションも、28.6億光年の幅をもつ領域で、134兆個の暗黒物質粒子の進化を再現した。",
+      "translated_ja": true
     },
     {
       "title": "Can’t make it to the Lucas Museum of Narrative Art for the 'Star Wars' display? This is the companion book set you’re looking for!",
@@ -127,7 +409,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ルーカス・ミュージアムに行けなくても 『スター・ウォーズ』関連の画集セットで楽しむ",
+      "summary_ja": "ルーカス氏の生涯収集した絵画、ポスター、コミック、コンセプトアート、イラストを光速で巡る作品集が紹介されている。",
+      "translated_ja": true
     },
     {
       "title": "Does anyone actually want to win the medium-lift race in the United States?",
@@ -139,7 +424,10 @@
       "source_id": "spaceflightnews",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "米国の中型ロケット開発競争に本当に勝ちたい企業はあるのか",
+      "summary_ja": "Ars Technicaが、中型ロケット開発競争のガイドを掲載する。",
+      "translated_ja": true
     },
     {
       "title": "The Orionid meteor shower is coming. Here's how and when to watch",
@@ -282,7 +570,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASA、火星ヘリコプターの新型ブレードを設計 飛行距離の延長を目指す",
+      "summary_ja": "NASAの研究者らは、火星での飛行の未来を切り開く取り組みを進めている。赤い惑星で科学観測を行いながら、より高く遠くまで飛行できるヘリコプターの実現に向けた基盤を整えている。高精度のコンピュータシミュレーションと風洞試験を用いて、エンジニアらは回転翼ブレードの設計を見直している。",
+      "translated_ja": true
     },
     {
       "title": "A Magnetar Can Be Born When Two Neutron Stars Touch",
@@ -293,7 +584,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "2つの中性子星が接触するとマグネター誕生の可能性",
+      "summary_ja": "マグネターとは、通常の中性子星の1000倍もの強さの磁場をもつ中性子星である。マグネターの形成経路の一つとして、質量の小さい中性子星2つが合体する過程が考えられている。",
+      "translated_ja": true
     },
     {
       "title": "NASA Provides Progress Update on Moon Base Rovers",
@@ -304,7 +598,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASA、月面基地向けローバーの開発状況を発表",
+      "summary_ja": "NASAは月面基地の建設を進めており、有人・無人の月面ローバーが初期段階で重要な役割を果たす。技術実証、宇宙飛行士の輸送、地形マッピング、科学調査、資源探査などを担う。これらの初期ミッションで得られるデータは、今後の移動システムや関連インフラの設計に反映される。",
+      "translated_ja": true
     },
     {
       "title": "Space Rider test model lost following failed drop test",
@@ -315,7 +612,10 @@
       "source": "European Spaceflight",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "欧州のSpace Riderの試験モデル、落下試験の失敗で喪失",
+      "summary_ja": "欧州宇宙機関（ESA）の宇宙船「Space Rider」の実物大落下試験が、試験モデルのパラフォイル（翼状パラシュート）が想定どおりに展開しなかったことで、途中で打ち切られた。Space Riderの落下試験が異常により中断されたのは、5月の中止に続き今年2度目となる。",
+      "translated_ja": true
     },
     {
       "title": "Webb Captures Stellar Jets",
@@ -326,7 +626,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ウェッブ望遠鏡、恒星のジェットを捉える",
+      "summary_ja": "NASAのジェイムズ・ウェッブ宇宙望遠鏡が2026年10月6日に公開した画像は、宇宙での星の誕生の現場を捉えたものである。ウェッブは、星形成領域NGC 7129で、塵の雲に隠れていた多数の恒星を明らかにした。同領域は地球から約3300光年の距離にある。",
+      "translated_ja": true
     },
     {
       "title": "NASA Welcomes Uzbekistan as Newest Artemis Accords Signatory",
@@ -337,7 +640,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ウズベキスタン、アルテミス合意に77番目の署名国として参加",
+      "summary_ja": "ウズベキスタン共和国は月曜日、サマルカンドで行われた式典でアルテミス合意の77番目の署名国となった。同国は、安全で透明性が高く責任ある民間宇宙探査を導く原則への取り組みを約束した。NASAのデピュティ・アドミニストレーター（副長官）は、ウズベキスタンが極めて重要な時期にアルテミス合意へ参加したと述べた。",
+      "translated_ja": true
     },
     {
       "title": "Red light, white light: How to preserve your night vision while using stargazing apps",
@@ -348,7 +654,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "赤色光と白色光の使い分け 星空アプリ利用中も暗順応を保つ方法",
+      "summary_ja": "星空観察アプリを使えば観察の手間を大きく減らせるが、画面の明るさによって目が暗闇に慣れにくくなることもある。暗順応を妨げずに星空観察を楽しむ方法を紹介する。",
+      "translated_ja": true
     },
     {
       "title": "The view from the edge of a sparkling spiral galaxy | Space photo of the day for Oct. 20, 2026",
@@ -359,7 +668,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "渦巻銀河の縁から見た景色 10月20日の宇宙写真",
+      "summary_ja": "遠方から宇宙を進み、渦巻銀河の縁に近づいたとすれば、このような光景が見えるかもしれない。",
+      "translated_ja": true
     },
     {
       "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
@@ -370,7 +682,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "月は冷えながら今も縮小中 月面ミッションの新たな危険要因に",
+      "summary_ja": "月はゆっくりと冷えながら、少しずつ縮んでいる。月の断層崖（スカープ）を調べた研究では、その縮小速度が極めて小さいことが計算された。ただし、縮小によって月面で地滑りが起きる可能性があり、月面ミッションにとって潜在的な危険となりうる。",
+      "translated_ja": true
     },
     {
       "title": "Giant canyon on Mars is still tectonically active today",
@@ -381,7 +696,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "火星の巨大峡谷、今も地殻変動が続く",
+      "summary_ja": "コロンビア大学とインペリアル・カレッジ・ロンドンの科学者らの研究により、太陽系最大の峡谷システムが今なお活動を続け、現在の火星の地形を形作っていることが分かった。形成から数十億年を経た現在も変動が続いている。",
+      "translated_ja": true
     },
     {
       "title": "AnySignal to Deliver Space-to-Earth Communications for Three Reflect Orbital Missions",
@@ -392,7 +710,10 @@
       "source": "SpaceNews",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "AnySignal、Reflect Orbitalの3ミッションに宇宙と地上の通信を提供",
+      "summary_ja": "ロサンゼルス発――ソフトウェア無線機と宇宙ベースのネットワーク技術の大手プロバイダーであるAnySignalは、本日、Reflect Orbitalとの契約を発表した。契約に基づき、Reflect Orbitalの初ミッションに対し、宇宙から地上への通信を提供する。",
+      "translated_ja": true
     },
     {
       "title": "State Department Taps Trio for $5M Space Diplomacy Push",
@@ -403,7 +724,10 @@
       "source": "Payload",
       "source_id": "payloadspace",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "米国務省、宇宙外交推進に500万ドルを投じる3者を選定",
+      "summary_ja": "先週開催された第2回米国宇宙フォーラムで、ウィーンの国際機関担当米国代表部は、国際的な宇宙パートナーシップの構築を目指す500万ドル規模の取り組み「プロジェクト・コンステレーション」を発表した。",
+      "translated_ja": true
     },
     {
       "title": "Reaction Dynamics Targets 2031 for Borealis Medium-Lift Launch",
@@ -414,7 +738,10 @@
       "source": "Payload",
       "source_id": "payloadspace",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "Reaction Dynamics、2031年にボレアリス中型打ち上げ機を投入へ",
+      "summary_ja": "カナダで商業打ち上げ能力の構築が進むなか、ケベック州のスタートアップ、リアクション・ダイナミクスが新たな重量クラスに参入した。",
+      "translated_ja": true
     },
     {
       "title": "天王星と海王星は“双子”と言えるほど似てないかも？ 海王星が大移動した可能性を改めて示唆",
@@ -435,7 +762,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "太陽が星間彗星3I/ATLASの表層を数メートル剥ぎ取った可能性",
+      "summary_ja": "星間彗星3I/ATLASは、別の惑星系に由来する物質を望遠鏡で観測できる距離までもたらした。しかし、その化学組成を読み解くことは難しい問題となっている。移動中に遭遇した高エネルギー粒子によって表層が変化した可能性があり、天文学者が検出している物質がどこまで彗星本来の組成を反映しているのかが問われている。",
+      "translated_ja": true
     },
     {
       "title": "Lunar Link complete and ready for a new adventure",
@@ -446,7 +776,10 @@
       "source": "ESA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "月探査通信衛星「ルナー・リンク」が完成、新たな任務へ",
+      "summary_ja": "ESAの月通信要素「ルナー・リンク」は、フランス・カンヌのタレス・アレニア・スペースで最後の主要な組み立て・試験作業を終えた。",
+      "translated_ja": true
     },
     {
       "title": "Could a $200K bond for satellites paid before launch prevent a space junk disaster in orbit? Here's why some scientists think so",
@@ -457,7 +790,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "打ち上げ前に20万ドルの保証金を支払う制度で軌道上のごみ問題を防げるか",
+      "summary_ja": "地球周回軌道はごみの山と化しつつある。研究者らは、返還可能な保証金制度によって衛星運用者に対し、臨界点に達する前に対策を講じさせられると考えている。",
+      "translated_ja": true
     },
     {
       "title": "JWST Tracks Shifting Water Clouds and Churning Gases on the Coldest Known Brown Dwarf",
@@ -468,7 +804,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "JWST、既知で最も低温の褐色矮星で移り変わる水の雲と対流するガスを観測",
+      "summary_ja": "星といえば、空に輝く巨大な燃えるガスの塊を思い浮かべる人が多いだろう。一方、惑星は岩石質の地球型と木星のようなガス惑星の二つに大別される。しかし、そのどちらにも属さない第三の天体カテゴリーも存在する。",
+      "translated_ja": true
     },
     {
       "title": "SpaceX launches its 'Starfall' return capsule for 2nd time ever (video)",
@@ -479,7 +818,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スペースX、再突入カプセル「スターフォール」を2回目の打ち上げ",
+      "summary_ja": "スペースXは10月20日午前、再突入カプセル「スターフォール」を相乗り型ミッション「バンドワゴン5」で打ち上げた。同カプセルの打ち上げは今回が2回目となる。",
+      "translated_ja": true
     },
     {
       "title": "Lucy mission marks 5 years of discoveries",
@@ -490,7 +832,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ルーシー計画、発見の5年間を振り返る",
+      "summary_ja": "NASAの小惑星探査機ルーシーは2021年10月16日の早朝に打ち上げられ、これまで探査されたことのない木星トロヤ群小惑星へ向けて旅立った。トロヤ群小惑星の至近距離からの初撮影まで1年を切ったいま、南西研究所が主導するこのミッションは最初の5年間で既にいくつもの発見をしている。",
+      "translated_ja": true
     },
     {
       "title": "French MPs propose symbolic €1 budget line for VORTEX spaceplane",
@@ -501,7 +846,10 @@
       "source": "European Spaceflight",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "フランス下院議員、VORTEX宇宙往還機に象徴的な1ユーロの予算計上を提案",
+      "summary_ja": "フランスの下院議員らは、ダッソー・アビエーションの宇宙往還機「VORTEX」計画に対し、象徴的な1ユーロの予算を充てることを提案した。政府に同計画への財政的なコミットメントを明確にさせるのが狙いだ。10月16日、フランスの2027年度予算案に対する修正案において、「不服従のフランス」党の議員71人が…",
+      "translated_ja": true
     },
     {
       "title": "NASA closes the book on epic OSIRIS-REx asteroid-sampling mission: 'I am immensely proud of what we did'",
@@ -512,7 +860,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASA、小惑星サンプル採取の「OSIRIS-REx」計画を終了「誇りに思う」",
+      "summary_ja": "NASAの小惑星サンプル採取ミッション「OSIRIS-REx」は2026年9月30日に正式に終了した。ただし、持ち帰った岩石片は今後も数十年にわたって科学者が研究を続けるという。",
+      "translated_ja": true
     },
     {
       "title": "Near miss: Indonesia probes crash of suspected Chinese rocket fragment",
@@ -523,7 +874,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "インドネシアで中国ロケットの残骸とみられる落下物を調査",
+      "summary_ja": "インドネシア当局は火曜日、中国のロケットのものとみられる車ほどの大きさの残骸が、政府機関によれば、住宅や作業現場の近くにあるパーム油農園に落下したことを受けて調査を進めている。",
+      "translated_ja": true
     },
     {
       "title": "Japan launches spacecraft to mysterious moons of Mars in a bold mission to bring home soil samples",
@@ -534,7 +888,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "日本、火星の衛星探査と土壌サンプル持ち帰りを目指す探査機を打ち上げ",
+      "summary_ja": "日本の探査機が火曜日、火星の謎多き衛星の探査とサンプルの持ち帰りを目指し、火星に向けて打ち上げられた。",
+      "translated_ja": true
     },
     {
       "title": "New brain for Galileo",
@@ -545,7 +902,10 @@
       "source": "ESA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ガリレオ、新たな「頭脳」を搭載",
+      "summary_ja": "今後数年のうちに、12機のガリレオ第2世代（G2）衛星が現行の衛星群に加わる。新たな信号生成モジュールなど、衛星の「頭脳」にあたる複数の新機能により、これまでにない測位・航法・計時能力を提供する予定だ。",
+      "translated_ja": true
     },
     {
       "title": "日本の火星衛星探査機「MMX」が打ち上げ成功、サンプルリターンを中国と競う",
@@ -711,6 +1071,16 @@
       "source_id": "spaceflightnews",
       "lang": "en",
       "title_ja_broken": false
+    },
+    {
+      "title": "H3ロケット10号機による火星衛星探査機（MMX）の打上げ結果",
+      "url": "https://www.jaxa.jp/press/2026/10/20261020-1_j.html",
+      "summary": "宇宙航空研究開発機構（JAXA）は、種子島宇宙センターから2026年10月20日4時41分03秒（日本標準時、24時間表記）に、H3ロケット10号機による火星衛星探査機（MMX）の打上げを",
+      "image": null,
+      "published": "2026-10-19T23:00:00+00:00",
+      "source": "JAXA",
+      "source_id": "jaxa",
+      "lang": "ja"
     },
     {
       "title": "Planetary 'twins' Uranus and Neptune may have different origin stories",
