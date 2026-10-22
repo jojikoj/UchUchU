@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-21T21:50:59.929921+00:00",
-  "count": 4924,
+  "generated_at": "2026-10-22T21:54:15.663756+00:00",
+  "count": 4977,
   "sources": {
     "jaxa": 20,
     "naoj": 16,
     "sorae": 24,
     "spacemedia": 20,
-    "sorabatake": 0,
+    "sorabatake": 10,
     "astroarts": 0,
     "wired_jp": 3,
     "gizmodo_jp": 0,
-    "karapaia": 1,
+    "karapaia": 2,
     "nasa": 10,
     "esa": 9,
     "esa_science": 15,
@@ -24,10 +24,655 @@
     "arstechnica": 20,
     "phys_space": 30,
     "skyandtelescope": 0,
-    "teslarati": 7,
+    "teslarati": 6,
     "spaceflightnews": 300
   },
   "items": [
+    {
+      "title": "Tesla is building its own maps to fix Navigation issues",
+      "url": "https://www.teslarati.com/tesla-building-its-own-maps-fix-navigation-issues/",
+      "summary": "Tesla revealed plans to develop its own maps internally to fix Navigation issues and give owners more control over their routing. On the company’s Q3 2026 Earnings Call, a question was asked about FSD Navigation issues, particularly speed limit recognition, parking, and routing. These are issues that surface from versi…",
+      "image": null,
+      "published": "2026-10-22T21:14:16+00:00",
+      "source": "Teslarati",
+      "source_id": "teslarati",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "On this day in space! Oct. 22, 1992: Ashes of 'Star Trek' creator Gene Roddenberry launch into space on NASA shuttle",
+      "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-22-2026",
+      "summary": "On Oct. 22, 1992, the space shuttle Columbia launched into space with the ashes of Gene Roddenberry, the creator of \"Star Trek.\" Here's why it mattered.",
+      "image": "https://cdn.mos.cms.futurecdn.net/JDnT5gidkxtFmwCnuxnt5Z-1920-80.jpg",
+      "published": "2026-10-22T21:08:26+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Even the Rubin's Test Camera Produces Stunning Images",
+      "url": "https://www.universetoday.com/articles/even-the-rubins-test-camera-produces-stunning-images",
+      "summary": "The Vera Rubin Observatory's Commissioning Camera operated for about 7 weeks in 2024, before the observatory released its well-known first look images. It's an engineering camera, and its job was to test the VRO's equipment and procedures. Now, the VRO has released the ComCam's image of the Seagull nebula. It's a prett…",
+      "image": null,
+      "published": "2026-10-22T21:04:01+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Moon’s South Pole Not the Only Compelling Location for Human Exploration",
+      "url": "https://spacepolicyonline.com/news/moons-south-pole-not-the-only-compelling-location-for-human-exploration/",
+      "summary": "A new report from the National Academies of Sciences, Engineering, and Medicine identifies four locations on the Moon separate from the South Pole where human exploration could yield valuable scientific […]",
+      "image": "https://spacepolicyonline.com/wp-content/uploads/2026/10/NASEM-full-chart-228x300.jpg",
+      "published": "2026-10-22T20:44:04Z",
+      "source": "SpacePolicyOnline.com",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "After Starshield interruption, Ukraine wants to build its own satellite communication network with ICEYE and Nokia",
+      "url": "https://www.space.com/space-exploration/satellites/after-starshield-interruption-ukraine-wants-to-build-its-own-satellite-communication-network-with-iceye-and-nokia",
+      "summary": "Ukraine's military just signed a letter of intent with Nokia and the Finnish satellite maker ICEYE to look into developing a sovereign satellite-communication system for the war-torn nation.",
+      "image": "https://cdn.mos.cms.futurecdn.net/iDJPMWFjKosNxmMX5pramC-1920-80.jpg",
+      "published": "2026-10-22T20:28:04+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "The 2027 total solar eclipse will plunge these 10 ancient Egyptian temples and monuments into darkness",
+      "url": "https://www.space.com/stargazing/solar-eclipses/the-2027-total-solar-eclipse-will-plunge-these-10-ancient-egyptian-temples-and-monuments-into-darkness",
+      "summary": "The \"eclipse of the century\" will plunge some of ancient Egypt's most spectacular sites into darkness on Aug. 2, 2027. These temples, tombs and monuments are inside the path of totality.",
+      "image": "https://cdn.mos.cms.futurecdn.net/HhikU8TZyyLiqfJAGhfXQE-1920-80.jpg",
+      "published": "2026-10-22T20:08:33+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Two Disks in One: How Accretion Disks Drive Black Hole Jets",
+      "url": "https://www.universetoday.com/articles/two-disks-in-one-how-accretion-disks-drive-black-hole-jets",
+      "summary": "SMBH jets are driven by thick, hot accretion disks with powerful magnetic fields. But there's a bit of a paradox. Some SMBH produce jets, even though they appear to have thin, cold accretion disks. New research has solved this paradox, showing that disks can be truncated into an outer cold disk and an inner hot disk.",
+      "image": null,
+      "published": "2026-10-22T19:25:24+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "US official: Russia's stalker satellite sure looks like an orbital weapon",
+      "url": "https://arstechnica.com/space/2026/10/russia-claims-its-stalker-satellite-is-purely-peaceful-in-character/",
+      "summary": "The Russian official who called commercial satellites \"legitimate targets\" now says concerns are \"unfounded.\"",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/vorontsov-500x500.jpg",
+      "published": "2026-10-22T18:29:39+00:00",
+      "source": "Ars Technica",
+      "source_id": "arstechnica",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Rethinking networks in space with Aalyria’s Brian Barritt",
+      "url": "https://spacenews.com/rethinking-networks-in-space-with-aalyrias-brian-barritt/",
+      "summary": "In this episode, SpaceNews’ Mike Gruss talks with the CEO of Aalyria Brian Barritt about how networks are evolving, what scaling the company means and the role of software interoperability […] The post Rethinking networks in space with Aalyria’s Brian Barritt appeared first on SpaceNews.",
+      "image": "https://i0.wp.com/spacenews.com/wp-content/uploads/2026/10/space-minds-podcast-Aalyria-2000-1500.jpg?fit=1024%2C768&ssl=1",
+      "published": "2026-10-22T18:13:38Z",
+      "source": "SpaceNews",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Van Gogh's 'The Starry Night' depicts the sky on July 22, 1889, researchers find",
+      "url": "https://www.space.com/astronomy/van-goghs-the-starry-night-depicts-the-sky-on-july-22-1889-researchers-find",
+      "summary": "Researchers think they might have pinpointed the exact night sky that we see depicted in Vincent van Gogh's iconic painting \"The Starry Night.\"",
+      "image": "https://cdn.mos.cms.futurecdn.net/mQnFXjxdzADHwECNu8fH45-1920-80.png",
+      "published": "2026-10-22T18:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "New Evidence for an Old Prediction: Recoiling Supermassive Black Holes",
+      "url": "https://www.universetoday.com/articles/new-evidence-for-an-old-prediction-recoiling-supermassive-black-holes",
+      "summary": "Theory says that during some SMBH mergers, the merger remnant receives a recoil kick from gravitational waves. Instead of sitting placidly in the galactic center, these recoiled SMBH are sent on a pendulum-like motion, back and forth through the galactic center. New research has found statistical evidence supporting th…",
+      "image": null,
+      "published": "2026-10-22T17:52:01+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Webb captures stars in the early stages of life in a nearby stellar nursery",
+      "url": "https://phys.org/news/2026-10-webb-captures-stars-early-stages.html",
+      "summary": "The NASA/ESA/CSA James Webb Space Telescope continues to reveal hidden parts of the cosmos with its advanced suite of infrared instruments. In a newly released image, Webb revealed many stars previously hidden by the dust clouds of NGC 7129, a stellar nursery about 3,300 light-years from Earth in the constellation Ceph…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/webb-captures-stars-in.jpg",
+      "published": "2026-10-22T17:40:18+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Webb image reveals young stars brewing in a nebulous cauldron",
+      "url": "https://phys.org/news/2026-10-webb-image-reveals-young-stars.html",
+      "summary": "In this Picture of the Month from the NASA/ESA James Webb Space Telescope, we visit a turbulent cauldron of star formation to see what is brewing inside dense clumps of gas. This is a star-forming region named LHA 120-N 159, or simply N159, located 161,000 light-years away in the Large Magellanic Cloud (LMC), one of th…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/stars-brewing-in-a-neb.jpg",
+      "published": "2026-10-22T17:40:01+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "ウェッブ望遠鏡の画像、星雲の中で若い星が形成される様子を捉える",
+      "summary_ja": "NASA・ESAのジェイムズ・ウェッブ宇宙望遠鏡による「今月の一枚」では、高密度のガス塊の内部で何が形成されつつあるのかを探るため、乱流の渦巻く星形成領域を紹介している。対象はLHA 120-N 159（通称N159）と呼ばれる星形成領域で、大マゼラン銀河（LMC）に位置し、地球から16万1000光年離れている。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "NASA’s Hubble Charts Path for Roman with Gravitational Lenses",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-charts-path-for-roman-with-gravitational-lenses/",
+      "summary": "This observation is one of many gravitational lensing images taken by Hubble in preparation for science with the new Nancy Grace Roman Space Telescope.",
+      "image": null,
+      "published": "2026-10-22T16:20:37+00:00",
+      "source": "NASA",
+      "source_id": "nasa",
+      "lang": "en",
+      "title_ja": "NASAのハッブル、ローマ宇宙望遠鏡に向けた重力レンズ観測を実施",
+      "summary_ja": "今回の観測は、新たなナンシー・グレース・ローマ宇宙望遠鏡による科学観測に備え、ハッブル望遠鏡が実施した多数の重力レンズ画像の一つである。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
+      "url": "https://phys.org/news/2026-10-supermassive-black-holes-ejected-galactic.html",
+      "summary": "By analyzing data on around 100,000 quasars, or extremely luminous galactic nuclei, researchers at Eötvös Loránd University (ELTE) have found statistical evidence that some supermassive black holes at the centers of galaxies are ejected from their positions after forming. The relationship now identified in the data was…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/supermassive-black-hol-9.jpg",
+      "published": "2026-10-22T16:20:25+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "超大質量ブラックホールは銀河中心から放出されるのか 準光学天体の調査が10年前の予測を裏付け",
+      "summary_ja": "約10万個の準光学天体（クエーサー）、すなわち極めて明るい銀河中心核のデータを分析した結果、エトヴェシュ・ロラーンド大学（ELTE）の研究チームは、銀河の中心にある超大質量ブラックホールの一部が形成後にその位置から放出されることを示す統計的証拠を見いだした。今回データ上で確認された関係性は…",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "'Cabin leak suspected': Artemis II astronaut reveals how a warning nearly derailed NASA's epic moon mission",
+      "url": "https://www.space.com/space-exploration/artemis/cabin-leak-suspected-artemis-ii-astronaut-reveals-how-a-warning-nearly-derailed-moon-mission",
+      "summary": "Victor Glover recalls how a suspected cabin leak warning came just 15 minutes before a crucial engine burn — and why receiving it just five minutes later could have changed everything.",
+      "image": "https://cdn.mos.cms.futurecdn.net/WYk9XAvGNRSrMijJ8MqzF-1920-80.jpg",
+      "published": "2026-10-22T16:14:56+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "「客室で漏れの疑い」 アルテミスII宇宙飛行士が明かす、NASAの有人月探査を揺るがしかけた警告",
+      "summary_ja": "ビクター・グローバー飛行士は、客室からの漏れの疑いを示す警告が、重要なエンジン噴射のわずか15分前に届いた経緯を振り返る。この警告がわずか5分遅れて届いていたら、状況は一変していたかもしれないと説明した。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "From Dusk, Towards Dawn: Venus Slides Past the Sun This Weekend",
+      "url": "https://www.universetoday.com/articles/from-dusk-towards-dawn-venus-slides-past-the-sun-this-weekend",
+      "summary": "Where have all the planets gone? Late October 2026 sees a decided dearth of planets in the dusk sky, with only bashful Mercury receding from view, and Saturn fresh off of opposition. Venus, the former lucida of the evening sky is now lost from view, taking the plunge sunward. But this vanishing act allows for a dramati…",
+      "image": null,
+      "published": "2026-10-22T15:30:00+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "夕暮れから夜明けへ 今週末、金星が太陽の近くを通過",
+      "summary_ja": "惑星はどこへ行ったのか。2026年10月下旬の夕空では惑星の姿が極めて少なく、見えるのは水星のみで、その水星も遠ざかりつつある。土星は衝を過ぎたばかりだ。かつて宵の空で最も明るかった金星も見えなくなり、太陽に向かって沈んでいく。この消失は、劇的な光景を見る機会にもなる。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Autonomous Triangular Modules Could Build Tomorrow’s Mega-Observatories",
+      "url": "https://www.universetoday.com/articles/autonomous-triangular-modules-could-build-tomorrows-mega-observatories",
+      "summary": "Private companies are getting better and better at launching more and more mass into space with larger and larger rockets. But, there is still a major constraint on the size of objects we can get into orbit - fairing size. This places physical constraints on the overall shape of what we can launch, and severely limits…",
+      "image": null,
+      "published": "2026-10-22T15:18:23+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "自律型の三角形モジュールが次世代の巨大観測施設を組み立てる可能性",
+      "summary_ja": "民間企業は、より大型のロケットでより多くの質量を打ち上げる能力を着実に高めている。しかし、宇宙に投入できる物体の大きさには依然として大きな制約がある。それがフェアリングのサイズだ。これにより打ち上げ可能な物体の全体形状は物理的に制限され、大型の構造物の打ち上げは厳しく制約されている…",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Black hole observations uncover evidence of solar storm–like magnetic eruptions",
+      "url": "https://phys.org/news/2026-10-black-hole-uncover-evidence-solar.html",
+      "summary": "Technion researchers have presented evidence for the existence of solar-storm-like outbursts near supermassive black holes, which can be a million times larger than the sun or more. The phenomenon was discovered in the vicinity of the black hole in the galaxy NGC 3783, and the researchers' findings were published in Th…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/solar-storms-around-a.jpg",
+      "published": "2026-10-22T15:03:31+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "ブラックホールの観測で、太陽フレアに似た磁気噴出の証拠を発見",
+      "summary_ja": "テクニオンの研究者らは、太陽の100万倍以上になりうる超大質量ブラックホールの近傍で、太陽嵐に似た爆発現象が起きている証拠を提示した。この現象は銀河NGC 3783のブラックホール周辺で見つかったもので、研究成果は学術誌に掲載された。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "ESA Provides New Details on Failed Space Rider Drop Test",
+      "url": "https://europeanspaceflight.com/esa-provides-new-details-on-failed-space-rider-drop-test/",
+      "summary": "The European Space Agency (ESA) has provided new details about the failed Space Rider drop test, confirming that the vehicle’s parafoil detached during deployment, sending the full-scale test model back to terra firma more rapidly than planned. Speaking at an ESA media briefing on 22 October, Géraldine Naja, the agency…",
+      "image": "https://europeanspaceflight.com/wp-content/uploads/2026/10/ESA-Provides-New-Details-on-Failed-Space-Rider-Drop-Test.webp",
+      "published": "2026-10-22T15:02:37Z",
+      "source": "European Spaceflight",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "ESA、失敗に終わったスペースライダーの落下試験の詳細を発表",
+      "summary_ja": "欧州宇宙機関（ESA）は、失敗に終わったスペースライダーの落下試験について新たな詳細を明らかにした。パラフォイル（翼状パラシュート）が展開時に分離し、実寸大の試験機が予定より速く地上に落下したことを確認した。10月22日にESAが開いたメディアブリーフィングで、ジェラルディン・ナジャ氏は…",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "New study traces van Gogh's famed 'Starry Night' to an actual night sky from 1889",
+      "url": "https://phys.org/news/2026-10-sky-van-gogh-starry-night.html",
+      "summary": "Scientists doubling as art detectives have traced Vincent van Gogh's \"The Starry Night\" to a celestial scene that suggests a new date for one of the world's most famous paintings.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/the-sky-in-van-goghs-t.jpg",
+      "published": "2026-10-22T15:00:15+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "ゴッホの名画「星月夜」は1889年の実際の夜空を描いたものだったと新研究が指摘",
+      "summary_ja": "美術の鑑定を兼ねる科学者らが、フィンセント・ファン・ゴッホの「星月夜」を、1889年の実在の星空にまで遡ることができたと発表した。この結果は、世界で最も有名な絵画の一つの制作年について新たな時期を示唆している。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
+      "url": "https://www.universetoday.com/articles/supernova-explosions-first-aided-then-later-impeded-the-epoch-of-reionization",
+      "summary": "The Epoch of Reionization is when radiation from early galaxies and their stars reionized neutral hydrogen and let light travel freely through the cosmos. Some research shows that supernovae helped the process. But new research shows that, though they may have helped initially, supernovae eventually slowed reionization…",
+      "image": null,
+      "published": "2026-10-22T14:53:56+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "超新星爆発は再電離時代をまず助け、その後妨げていた",
+      "summary_ja": "再電離時代とは、初期の銀河とその星々からの放射が中性水素を電離させ、光が宇宙を自由に進めるようになった時期を指す。一部の研究では、超新星がこの過程を助けたとされている。しかし新たな研究では、超新星は当初は助けになったものの、やがて再電離の進行を遅らせたことが示された。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "There should be black holes in our neighborhood. Can we find them?",
+      "url": "https://phys.org/news/2026-10-black-holes-neighborhood.html",
+      "summary": "Scientific estimates show that there should be between about 100 million and 1 billion stellar-mass black holes in the Milky Way. But they aren't easy to locate. They're not like supermassive black holes (SMBH) at the centers of galaxies. Those are usually easy to spot for different reasons.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/there-should-be-black.jpg",
+      "published": "2026-10-22T14:40:07+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "天の川銀河の近傍にもブラックホールは存在するはずだ 発見は可能か",
+      "summary_ja": "科学的な推定によれば、天の川銀河には恒星質量ブラックホールが1億個から10億個ほど存在するはずだという。しかし、その位置を特定するのは容易ではない。銀河中心にある超大質量ブラックホール（SMBH）とは異なり、見つけやすい理由がないからだ。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Curtain-like plasma structures explain solar jets' apparent spinning in simulations",
+      "url": "https://phys.org/news/2026-10-curtain-plasma-solar-jets-apparent.html",
+      "summary": "An international team of scientists from the University of Sheffield and the Indian Institute of Astrophysics, led by a postdoctoral research fellow from the University of Newcastle, Australia, has discovered that solar jets called spicules, which are 6–8 Mm long, take the form of warped, denser plasma sheets like plea…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/solar-plasma.jpg",
+      "published": "2026-10-22T14:20:06+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "太陽ジェットが回転して見える現象、カーテン状のプラズマ構造で説明可能とシミュレーションで判明",
+      "summary_ja": "シェフィールド大学およびインド天体物理学研究所の国際研究チームは、ニューカッスル大学（オーストラリア）の博士研究員が率いた研究で、長さ6〜8Mmのスピキュールと呼ばれる太陽ジェットが、ひだ状の高密度プラズマシートの形をとっていることを発見した。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "350th ESA Council: Media information session",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/10/350th_ESA_Council_Media_information_session",
+      "summary": "Watch the replay of the media information session where ESA Director General Josef Aschbacher and ESA Council Chair at delegate level Juan Carlos Cortés outline the key decisions and main outcomes of the 350th Council meeting held at ESA Headquarters in Paris on 21—22 October 2026.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/350th_esa_council_media_information_session/27588859-3-eng-GB/350th_ESA_Council_Media_information_session_card_full.jpg",
+      "published": "2026-10-22T14:00:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Australia's bizarre 'Spider Crater' seen from orbit | Space photo of the day for Oct. 22, 2026",
+      "url": "https://www.space.com/astronomy/earth/australias-bizarre-spider-crater-seen-from-orbit-space-photo-of-the-day-for-oct-22-2026",
+      "summary": "A satellite image of \"Spider Crater\" in Western Australia.",
+      "image": "https://cdn.mos.cms.futurecdn.net/iVcnLSTUZARNuqmErdNThU-1920-80.png",
+      "published": "2026-10-22T14:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Are 'mega-Earths' real? Stellar activity may explain these oversized rocky worlds",
+      "url": "https://phys.org/news/2026-10-mega-earths-real-stellar-oversized.html",
+      "summary": "A new study suggests that some of the heaviest rocky planets ever reported may not be as heavy as they look. These so-called 'mega-Earths,' rocky planets weighing more than about 10 Earths, could be an illusion created by activity on their host stars. The paper was posted to the arXiv preprint server on Oct. 8.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/are-mega-earths-real-s.jpg",
+      "published": "2026-10-22T13:50:01+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Xona Raises $250M Series D to Scale Commercial GPS Constellation",
+      "url": "https://payloadspace.com/xona-raises-250m-series-d-to-scale-commercial-gps-constellation/",
+      "summary": "Xona’s long-term plan is to build a ~258-sat constellation to offer an upgraded commercial alternative to government GPS networks. The post Xona Raises $250M Series D to Scale Commercial GPS Constellation appeared first on Payload .",
+      "image": null,
+      "published": "2026-10-22T13:00:00+00:00",
+      "source": "Payload",
+      "source_id": "payloadspace",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "National Academies Rank Nonpolar Moon Sites",
+      "url": "https://payloadspace.com/national-academies-rank-ideal-nonpolar-moon-sites/",
+      "summary": "A new report from the National Academies ranks the top four non-polar sites for future crewed lunar missions. The post National Academies Rank Nonpolar Moon Sites appeared first on Payload .",
+      "image": null,
+      "published": "2026-10-22T12:30:00+00:00",
+      "source": "Payload",
+      "source_id": "payloadspace",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Resilience takes centre stage at the NAVISP Industry Days",
+      "url": "https://www.esa.int/Applications/Satellite_navigation/Resilience_takes_centre_stage_at_the_NAVISP_Industry_Days",
+      "summary": "Resilience, maritime and drone applications, and alternative navigation technologies were on the menu of the sixth edition of the European Space Agency's (ESA) NAVISP Industry Days, which brought together over 350 participants in Rome, Italy for two days of discussions, networking and collaboration.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/panel_on_pnt_for_ports_during_the_navisp_industry_days_2026/27587799-1-eng-GB/Panel_on_PNT_for_ports_during_the_NAVISP_Industry_Days_2026_card_full.jpg",
+      "published": "2026-10-22T12:23:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "MMX Lifts Off on Mission to Explore Moons of Mars",
+      "url": "https://www.spacescout.info/2026/10/mmx-lifts-off-on-mission-to-explore-moons-of-mars/",
+      "summary": "The five-year mission will return samples from Mars’ moon Phobos and answer long-standing questions about the moon’s origin.",
+      "image": "https://i0.wp.com/www.spacescout.info/wp-content/uploads/2026/10/image-4.png",
+      "published": "2026-10-22T12:08:43Z",
+      "source": "Space Scout",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "Next Mass Effect game cancelled as EA shuts down legendary sci-fi RPG studio BioWare",
+      "url": "https://www.space.com/entertainment/space-games/next-mass-effect-game-cancelled-as-ea-shuts-down-developer-bioware",
+      "summary": "The legendary RPG studio behind classics such as Star Wars: Knights of the Old Republic, Mass Effect, and Dragon Age is no more.",
+      "image": "https://cdn.mos.cms.futurecdn.net/rTWQm3qqzypmSzDmjqtm3j-1920-80.jpg",
+      "published": "2026-10-22T12:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "中国軍の脅威を数分で特定。台湾がAIを活用した衛星画像分析システムを導入予定",
+      "url": "https://karapaia.com/archives/633690.html",
+      "summary": "台湾周辺で軍事的な圧力を強める中国への対策として、台湾国防部が新たなシステムを導入する。AIを活用して既存の衛星画像を自動で分析し、中国軍の艦艇や航空機の動きを素早く察知する仕組みだ。開発を請け負うのは、日本の空間情報技術企業と台湾企業が設立した合弁会社である…",
+      "image": null,
+      "published": "2026-10-22T11:30:00+00:00",
+      "source": "カラパイア",
+      "source_id": "karapaia",
+      "lang": "ja"
+    },
+    {
+      "title": "Help a lost lunar rover find its way in new ESA competition",
+      "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Help_a_lost_lunar_rover_find_its_way_in_new_ESA_competition",
+      "summary": "A small rover is alone on the Moon, with no signal and no idea of its position. All it has is a panoramic camera and an aerial map of the Moon’s surface. The lunar night is fast approaching… can you help the rover find its way before it’s too late?",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/panorama_of_the_moon_for_lunar_x-view_competition/27586136-1-eng-GB/Panorama_of_the_Moon_for_Lunar_X-view_competition_card_full.jpg",
+      "published": "2026-10-22T11:10:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "火星・マリネリス峡谷は今も活動中？ NASA探査機が観測した地震波の分析結果が示唆",
+      "url": "https://sorae.info/astronomy/20261022-mars-valles-marineris.html",
+      "summary": "インペリアル・カレッジ・ロンドンのJung-Hun Song氏を筆頭とする研究チームは、NASA（アメリカ航空宇宙局）の火星探査機「InSight（インサイト）」が観測した地震波の分析を通じて、火星の巨大な峡谷「マリネリ…",
+      "image": null,
+      "published": "2026-10-22T11:04:58+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "NASA giving update about Artemis moon plans on Oct. 23: Watch it live",
+      "url": "https://www.space.com/space-exploration/artemis/nasa-giving-update-about-artemis-moon-plans-on-oct-23-watch-it-live",
+      "summary": "NASA will provide an update about its Artemis III mission and its plans to land astronauts on the moon during a press conference on Friday (Oct. 23). Here's how to watch it live.",
+      "image": "https://cdn.mos.cms.futurecdn.net/C9EEVo5B2rTe7JYJ2NhjCa-1920-80.jpg",
+      "published": "2026-10-22T10:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "ESA Open Days 2026",
+      "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/10/ESA_Open_Days_2026",
+      "summary": "ESA Open Days 2026 welcomed over 23 000 visitors across its six establishments, giving the public the opportunity to discover more about Europe’s space activities, meet the people behind the missions and explore how ESA is shaping the future of space.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/esa_open_days_2026/27587076-1-eng-GB/ESA_Open_Days_2026_card_full.png",
+      "published": "2026-10-22T09:00:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "ESA Council approves appointment of two new directors",
+      "url": "https://www.esa.int/About_Us/Corporate_news/ESA_Council_approves_appointment_of_two_new_directors",
+      "summary": "The European Space Agency Council has approved the appointment of two new directors: Andrzej Banasiak as Director of Commercialisation and Industry Partnership, and Nicolaus Hanowski as Director of Space Operations.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/11/europe_seen_by_ers_satellite/16486928-1-eng-GB/Europe_seen_by_ERS_satellite_card_full.jpg",
+      "published": "2026-10-22T08:26:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false
+    },
+    {
+      "title": "ミズノ、JAXA発emblemの「ウェアラブル飛行装置」向けギアを開発",
+      "url": "https://sorae.info/news/20261022-mizuno-emblem.html",
+      "summary": "ミズノ（美津濃株式会社）は2026年10月22日、JAXA（宇宙航空研究開発機構）発のスタートアップであるemblem株式会社が開発する「ウェアラブル飛行装置」向けに、パイロットが着用するギアを開発したと発表しました。 …",
+      "image": null,
+      "published": "2026-10-22T08:04:00+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "Stars brewing in a nebulous cauldron",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
+      "summary": "From the ESA Blogs.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/stars_brewing_in_a_nebulous_cauldron/27584043-1-eng-GB/Stars_brewing_in_a_nebulous_cauldron_card_full.jpg",
+      "published": "2026-10-22T08:00:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false,
+      "title_ja": "星雲の大釜で輝く星々",
+      "summary_ja": "ESAブログからの記事である。",
+      "translated_ja": true
+    },
+    {
+      "title": "Moon crane to take a load off lunar landers",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Moon_crane_to_take_a_load_off_lunar_landers",
+      "summary": "From the ESA Blogs.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/moon_crane_to_take_a_load_off_lunar_landers/27582872-2-eng-GB/Moon_crane_to_take_a_load_off_lunar_landers_card_full.jpg",
+      "published": "2026-10-22T07:45:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_ja": "記事に含まれない「月周回」の語が本文に入っていたため、その一文を修正した全文を以下に示す。字数は約1200字で、1600字の上限内に収まる。\n\n欧州宇宙機関（ESA）の月着陸機「アルゴナウト」は、最大1500kgの荷物を月へ運ぶ計画である。その荷降ろし用の専用クレーン「Loader」を、ルーマニアの研究機関COMOTIとInitium Spaceが共同で開発し、ESAの研究室で縮尺モデルによる動作試験を行った。実機は最大1000kgの荷を着陸機から持ち上げ、最大6m先に置く能力を目指している。\n\n背景には、荷降ろしの位置の問題がある。科学機器は着陸機の影響を避けて測定するため、着陸機から数メートル離して設置する必要がある。こうした距離はロボットアームの届く範囲を超えるため、専用の装置が求められていた。クレーンは折りたたんだ状態で着陸機の搭載デッキに載せ、月面に到着してから展開する方式である。収納時の小ささを保つため、ケーブルの管理と展開の順序があらかじめ定められている。傾斜地に着陸した場合でも垂直を保てるよう、水平を調整する機構も備える。先端のグリッパは、電源なしでロックできるバネ式と、荷を回転させて精密に位置を合わせる電動式の2種類がある。試験は縮尺モデルで、地球上では30kgを持ち上げる能力である。月の重力は地球の6分の1なので、実機は2倍以上の大きさで月面では約1トンを扱える見込みだと説明されている。\n\nこの装置が示すのは、月面での荷降ろしが着陸機の設計と一体で考えられ始めたことだと考えられる。着陸機が荷を載せて降りるだけでなく、月面上で機材を配置する作業まで含めて設計する段階に入りつつあるという見方もできる。着陸機から離れた位置に機器を置けるようになれば、着陸機からの影響を抑えた観測がしやすくなる可能性がある。また、月面インフラの建材を運ぶ用途にも使えるとすれば、資材輸送に関わる機構や部品への需要が着陸機の周辺にも広がるとみられる。ただし、記事は試作段階の技術実証を伝えるもので、実機の強度や真空・低温・放射線の下での信頼性はまだ確かめられていない。\n\n日本の製造業にとっては、この種の展開機構や可動部に用いられる部品に関わる余地があると考えられる。折りたたみ式の構造に使う軽量で高強度の材料や、ヒンジ、ケーブル管理に関わる部品、バネ式ロック機構、電動グリッパ向けの小型モーターや減速機、傾斜を検知して水平を保つためのセンサや精密な機構部品などが候補になる。記事に日本企業の参加は書かれていないため、あくまで一般的な視点での可能性にとどまる。月面向けの機器は地上の試験より厳しい環境で動くため、製造業側には耐環境性と信頼性を示せる実績が求められると考えられる。",
+      "body_chars": 1148,
+      "title_ja": "月クレーンで月着陸船の負荷を軽減へ",
+      "summary_ja": "ESAブログからの記事である。",
+      "translated_ja": true
+    },
+    {
+      "title": "中国Galactic Energy、「Ceres-1S」7回目の洋上打ち上げ 初飛行から7回連続成功",
+      "url": "https://sorae.info/ssn/20261022-ceres-1s.html",
+      "summary": "中国の民間宇宙企業Galactic Energy（星河動力）は日本時間2026年10月21日、山東省日照市付近の海域から固体ロケット「Ceres-1S（谷神星1号海射型）」遥8を打ち上げ、搭載されていた地球観測衛星「西光…",
+      "image": "https://sorae.info/wp-content/uploads/2026/10/20261022-ceres-1s.jpg",
+      "published": "2026-10-22T06:45:59+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "スウェーデンのSSC Space、日本企業2社と覚書・サービス契約締結 実証の共同検討やサービス利用で協力",
+      "url": "https://spacemedia.jp/news/21396",
+      "summary": "宇宙インフラ企業のSSC Space（スウェーデン・キルナ、CEO：Charlotta Sund）は、株式会社ElevationSpace（宮城県仙台市、代表取締役CEO：小林稜平）、株式会社アークエッジ・スペース（東京 […]",
+      "image": null,
+      "published": "2026-10-22T05:59:57+00:00",
+      "source": "Space Media",
+      "source_id": "spacemedia",
+      "lang": "ja"
+    },
+    {
+      "title": "北海道大樹町とSPACE COTAN、米バージニア州の宇宙港と提携 教育とまちづくりで共創進める",
+      "url": "https://spacemedia.jp/news/21391",
+      "summary": "2026年10月21日、北海道大樹町（町長：黒川豊）とSPACE COTAN株式会社（北海道広尾郡大樹町、代表取締役社長：小田切義憲）は、アメリカ・バージニア州の商業宇宙港を「Mid-Atlantic Regional […]",
+      "image": null,
+      "published": "2026-10-22T05:48:47+00:00",
+      "source": "Space Media",
+      "source_id": "spacemedia",
+      "lang": "ja"
+    },
+    {
+      "title": "北海道大樹町と米バージニア州の宇宙港が教育・まちづくりで連携へ 基本合意書を締結",
+      "url": "https://sorae.info/biz/20261022-hospo-vsa-mou.html",
+      "summary": "商業宇宙港「北海道スペースポート（HOSPO）」を運営する北海道大樹町とSPACE COTAN株式会社は2026年10月21日、アメリカ・バージニア州の商業宇宙港「Mid-Atlantic Regional Spacep…",
+      "image": null,
+      "published": "2026-10-22T05:42:53+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "宇宙電力インフラのZero Industries、約4.7億円を調達 前澤ファンドなど出資",
+      "url": "https://spacemedia.jp/news/21384",
+      "summary": "2026年10月22日、宇宙空間の電力インフラ構築を目指すZero Industries, PBC（アメリカ・カリフォルニア州、CEO：杉原海）は、プレシードラウンドで300万ドル（約4.7億円）の資金調達を完了したと発 […]",
+      "image": null,
+      "published": "2026-10-22T05:42:24+00:00",
+      "source": "Space Media",
+      "source_id": "spacemedia",
+      "lang": "ja"
+    },
+    {
+      "title": "ウズベキスタン、アルテミス協定に署名 77カ国目の署名国に",
+      "url": "https://spacemedia.jp/news/21379",
+      "summary": "2026年10月20日、アメリカ航空宇宙局（NASA）は、ウズベキスタン共和国が「アルテミス協定（Artemis Accords）」に署名したと発表しました（NASAによる発表）。 ウズベキスタンは77番目の署名国となり […]",
+      "image": null,
+      "published": "2026-10-22T05:39:16+00:00",
+      "source": "Space Media",
+      "source_id": "spacemedia",
+      "lang": "ja"
+    },
+    {
+      "title": "APOD: 2026 October 22 – The First Green Star, WD J1330+6435",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-22-the-first-green-star-wd-j13306435/",
+      "summary": "APOD Science APOD APOD: 2026 October 22 – The… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professio…",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/green_wd_mark-garlick_annotated2.jpg",
+      "published": "2026-10-22T04:05:00Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_ja": "天文学者が、白色矮星のなかには名前に反して黄色や緑、水色、ピンク、紫に見えるものがあることを見つけた。今回注目された天体はWD J1330+6435で、天体画像はこの白色矮星の周りを、ガスや岩石を含む降着円盤が回る様子を描いたイラストである。白色矮星は白く見えるものという先入観があるが、その色は思いのほか変わりうるということが、今回の発見の要点である。恒星の色は一般に温度と結びつき、青い星は赤い星より高温だと記事は説明している。\n\n白色矮星は、太陽のような恒星が核燃料を使い切ったあとに残る小さく暗い天体である。今回紹介された仕組みは、星に降着した微量元素が星の大気と相互作用し、本来の白い色を変えるというものだ。つまり、星の外から取り込まれたごく少量の物質が、星全体の見え方を左右しうることになる。天体の色が必ずしも温度だけでは決まらないという観測結果は、天文学の解釈そのものを見直す材料になると考えられる。記事はこうした星が今夜は暗すぎて見えないとも記しており、タイトルの問いかけに対する答えは、残念ながら今夜の空にはないという形になっている。\n\nこの発見が宇宙産業に直接及ぼす影響は小さいと考えられる。白色矮星の色の研究は、遠方の天体を光の性質から読み解く天文学の基礎に近く、製品や市場の動きに直結する話題とはいいにくい。ただし、わずかな不純物が全体の見え方を変えるという性質は、材料や表面処理の分野で微量成分が特性を大きく左右する場面と重なって見える。宇宙機器の多くは観測性能の微小な差に対して厳しい仕様を求められるため、こうした基礎研究の知見が将来の機器設計の前提に影響する可能性は否定できない。製造業の側から見れば、こうした基礎研究の動向を継続的に追っておくことは、将来の案件の見通しを立てる材料になると考えられる。\n\n日本の製造業の視点で見ると、本記事から直ちに受注や新規需要が生まれるとは考えにくい。ただ、天体観測に用いられる分光器や光学フィルター、高感度の検出器などは、部品単位で微小な色の違いや不純物の影響を抑える必要があり、部品や素材を作る側の品質管理の考え方が生きる場面はあると考えられる。少量で高い精度が求められる光学部品や表面処理を手がける企業が、こうした分野に関わる余地があると考えられる。宇宙産業の裾野として、観測機器の部品を既存の光学・精密加工の取引先と検討してみる価値もあると考えられる。ただし、本記事は観測の話題であり、特定の調達や市場の動きを示すものではない点は押さえておく必要がある。",
+      "body_chars": 1065,
+      "title_ja": "APOD：2026年10月22日――最初の緑色の星、WD J1330+6435",
+      "summary_ja": "APODの科学分野ページの記事である。",
+      "translated_ja": true
+    },
+    {
+      "title": "Fires Char New Guinea",
+      "url": "https://science.nasa.gov/earth/earth-observatory/fires-char-new-guinea/",
+      "summary": "Emissions on both sides of the island are unusually high as human-set fires spread in a landscape parched by drought.",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/new-guinea-on-fire/papuanewguinea_vir_20261011.jpg",
+      "published": "2026-10-22T04:01:00Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false,
+      "title_ja": "ニューギニア島で大規模火災 干ばつの中で人為的な火が拡大",
+      "summary_ja": "干ばつで乾燥した土地に人為的に放たれた火が広がり、島の両側で排出量が異常に多くなっている。",
+      "translated_ja": true
+    },
+    {
+      "title": "JAXAが火星衛星探査機「MMX」の初期クリティカル運用フェーズ終了を発表",
+      "url": "https://sorae.info/space/20261022-mmx.html",
+      "summary": "JAXA（宇宙航空研究開発機構）は2026年10月21日付で、「H3」ロケット10号機で打ち上げられた火星衛星探査機「MMX」について、打ち上げ直後の重要な運用を正常に終え、探査機の健全性を確認したと発表しました。 太陽…",
+      "image": null,
+      "published": "2026-10-22T02:34:29+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "Faster to Science: A Letter to the Science Community",
+      "url": "https://science.nasa.gov/directorates/smd/faster-to-science-a-letter-to-the-science-community/",
+      "summary": "NASA Science wants to deliver science faster, so we’re changing how we compete and select missions. On Monday, October 26, we will host a virtual NASA Science Town Hall.",
+      "image": "https://blogs.nasa.gov/spacestation/wp-content/uploads/sites/240/2023/01/nasa-logo-web-rgb.png",
+      "published": "2026-10-22T00:00:16Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_ja": "NASAの科学部門（SMD）は、ミッション選定の競争方式を「Competition Model 2.0（CM2.0）」へ改めると発表した。提案段階では詳細な工学設計や費用の作り込みを求めず、まず科学の中身で選ぶことで、構想から選定までの期間を縮めるのが狙いである。10月26日にはオンライン形式のタウンホールが予定されており、改革の詳細はそこで示される見通しだ。\n\n背景には、従来の二段階審査への不満がある。元記事によれば、ミッションの構想が二段階の審査を通るまでに何年もかかり、契約管理の難しさや予算不足も指摘されてきた。NASA長官のジャレッド・アイザックマンはSMDに対し、科学の提供を加速させ、長期にわたる競争に費やす時間と資源を減らすよう指示したという。一方で、大型の旗艦ミッションは今回の変更対象外とされた。ジェイムズ・ウェッブ宇宙望遠鏡の後に整理された大型ミッション向けの手法を引き続き使い、NASAがセンターを指定して全体を進め、科学チームや機器は個別の公募で選ぶ形になる。\n\n中型ミッション群（Astro-Probes、New Frontiers、Discovery）では、選定が二段階から加速型へ変わる。第1段階で求められるのは、科学的根拠、科学の実施計画、概念実証のためのミッション設計の3点だけで、従来の提案書で必要だった内容のおよそ半分が不要になる。第2段階は、ゴダード宇宙飛行センターやJPLなどが担うミッション実施検討である。公募（AO）から第2段階の選定までの期間は、約35カ月から約19.5カ月へ、最大45%短縮される見込みだという。小型ミッションでは、SMEXや「Missions of Opportunity」などを対象に単一段階の競争へ移行し、審査チームを小さくして現地審査もオンラインで行う。最終選定までの期間は約32カ月から約19カ月へ、最大40%短くなるとされる。\n\n選定が早まり、提案に必要な作業が減ることは、宇宙産業の構造にも影響しうる。元記事は、大学や商業企業を含む幅広い実施組織が参加できると示しており、ミッションが頻繁に立ち上がる環境が整えば、部品や装置を供給する企業にとっての受注機会も増える可能性がある。ただし、実施主体は過去の類似案件の実績で評価されると記されているため、実績の少ない企業が新たに参入するには時間がかかると考えられる。\n\n日本の製造業や部品サプライヤーにとっては、開発サイクルが短くなることで、設計変更や品質対応、短納期への即応がこれまで以上に求められる可能性がある。小型ミッションの領域で商業化が進んでいる点を踏まえると、既存の量産技術や品質管理の経験を活かせる余地があると考えられる。一方で、調達の具体的な仕組みや日本企業が関わる窓口については、元記事の範囲では確認できない。10月26日の説明会で示される内容を確かめたうえで、自社が実績を積める分野を見極めることが現実的な対応になるだろう。",
+      "body_chars": 1237,
+      "title_ja": "NASA、科学ミッションの選定方式を変更へ 科学界に書簡",
+      "summary_ja": "NASA科学部門は、科学成果をより迅速に届けるため、ミッションの競争と選定の方法を変更する。10月26日（月）にはオンラインのNASA科学タウンホールを開催する。",
+      "translated_ja": true
+    },
+    {
+      "title": "How Flare Ribbons Reveal Hidden Solar Explosions on the Sun",
+      "url": "https://www.universetoday.com/articles/how-flare-ribbons-reveal-hidden-solar-explosions-on-the-sun",
+      "summary": "Solar flaring is complex behaviour triggered by reconnection, when magnetic field lines break and then snap back to the Sun's surface. The flaring is complex behaviour, and its details are difficult to observe. Researchers found a new way to study flaring behaviour.",
+      "image": null,
+      "published": "2026-10-21T23:18:19+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_skip": "no_body",
+      "title_ja": "フレア・リボンが明らかにする太陽の隠れた爆発",
+      "summary_ja": "太陽フレアは、磁力線が切れて元に戻る磁気リコネクションによって引き起こされる複雑な現象である。その詳細は観測が難しいが、研究者はフレアの振る舞いを調べる新たな手法を見いだした。",
+      "translated_ja": true
+    },
+    {
+      "title": "On this day in space! Oct. 21, 2008: India launches its 1st mission to the moon with Chandrayaan-1",
+      "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-21-2026",
+      "summary": "1, 2008, the Indian Space Research Organization launched its first mission to the moon. Here's why it mattered.",
+      "image": "https://cdn.mos.cms.futurecdn.net/XYSXm8VMcSGEYE32UYqTAA-1920-80.jpg",
+      "published": "2026-10-21T21:41:37+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja_broken": false,
+      "body_ja": "インド宇宙研究機関（ISRO）が2008年10月21日、初の月探査機「チャンドラヤーン1号」を打ち上げた。周回機と衝突機を組み合わせた構成で、インドにとって初の本格的な深宇宙ミッションだった。\n\n記事によると、打ち上げには国産ロケットPSLV-XLが使われ、サティシュ・ダワン宇宙センターから飛び立った。月周回軌道への投入は約3週間後の2008年11月8日で、投入後に搭載していた衝突機（Moon Impact Probe）を分離し、11月14日に月面へ衝突させた。周回機は約1年にわたって月のデータを地球へ送り続けたが、電源系の故障が疑われる原因で、予定より14か月早く通信が途絶えた。周回機には11の観測機器が載り、うち5つがISRO製だった。残りは欧州宇宙機関（ESA）とNASAの装置で、米国、英国、ドイツ、スウェーデン、ブルガリアの機器も搭載されていた。\n\nこのミッションの科学的な成果として記事が挙げるのは、月の極域で水や水酸基を含む分子に関係する吸収特徴が検出された点である。これは米国製のM3観測機器のデータにもとづくもので、結果は2009年9月に発表された。ISROにとっては、深宇宙へ探査機を送り、長期にわたって運用して成果を出す能力を示した節目になったと考えられる。通信途絶までに設計上の目標の少なくとも95%は達成されたとされ、計画上の2年の寿命には届かなかったものの、成果は大きかったと読める。\n\nその後の流れも記事は簡潔に触れている。2019年の「チャンドラヤーン2号」は周回には成功したが、搭載した着陸機の着陸に失敗した。2023年の「チャンドラヤーン3号」は月の南極付近に着陸機と探査車を降ろすことに成功した。さらに2028年には月の試料を地球へ持ち帰る「チャンドラヤーン4号」が計画されているという。これは計画段階の情報であり、実施時期は今後変わる可能性がある。\n\n製造業の立場から見ると、この一連の流れは月探査が一度きりの挑戦ではなく、周回、着陸、試料回収へと段階的に積み上がっていることを示している。探査の難易度が上がるほど、周回機や着陸機に載る観測装置、構造部材、熱制御や電源まわりの部品には高い信頼性と精度が求められるとみられる。今回の記事が伝える電源系の問題は、小型で耐環境性の高い電子部品やバッテリー関連部材の重要性を改めて示す事例といえる。日本の部品・素材メーカーにとっては、精密加工品や耐熱・耐放射線材料を供給する余地があると考えられる。",
+      "body_chars": 1044,
+      "title_ja": "今日の宇宙史：2008年10月21日、インドが初の月探査機チャンドラヤーン1号を打ち上げ",
+      "summary_ja": "2008年10月21日、インド宇宙研究機関（ISRO）は初の月探査ミッションを打ち上げた。その意義を解説する。",
+      "translated_ja": true
+    },
     {
       "title": "NASA Conducts RS-25 Engine Test in Support of Future Artemis Missions",
       "url": "https://www.nasa.gov/image-article/rs-25-engine-test-in-support-of-future-artemis-missions/",
@@ -37,7 +682,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASA、アルテミス計画に向けRS-25エンジン試験を実施",
+      "summary_ja": "NASAは10月21日、ミシシッピ州ベイセントルイス近郊のステニス宇宙センターにあるフレッド・ヘイズ試験スタンドで、RS-25エンジン10001号機の試験を行った。試験チームは開発用エンジンを約8分半（500秒）燃焼させた。これはNASAのSLS（スペース・ローンチ・システム）の打ち上げ時にRS-25エンジンが燃焼する時間と同じである。",
+      "translated_ja": true
     },
     {
       "title": "Webb Captures Stars in the Early Stages of Life in a Nearby Stellar Nursery",
@@ -49,7 +697,10 @@
       "source_id": "universetoday",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "ウェッブ望遠鏡、近傍の星形成領域で生まれたばかりの星々を捉える",
+      "summary_ja": "2026年10月6日に公開されたウェッブ望遠鏡の赤外線画像は、約3,300光年離れた星形成領域NGC 7129を示している。中心にあるLkHα 234は太陽の5〜8倍の質量をもつ若い星で、その噴出物が約3.5光年にわたる空洞を切り開いた。領域の右側では、さらに若い原始星が……",
+      "translated_ja": true
     },
     {
       "title": "China readies first commercial resupply craft, first booster reflight, and next landing attempt",
@@ -61,7 +712,10 @@
       "source_id": "spaceflightnews",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "中国、初の商業補給機と再使用ロケットの再飛行、次の着陸試験に備える",
+      "summary_ja": "打ち上げ頻度が高まる中国は、再使用ロケットの実用化に向けて一歩ずつ前進している。……",
+      "translated_ja": true
     },
     {
       "title": "NASA JPL Looks to Next 90 Years of Innovation, Exploration",
@@ -72,7 +726,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASAジェット推進研究所、次の90年の革新と探査に目を向ける",
+      "summary_ja": "星間探査機、月面ドローン、火星のヘリコプター。1936年10月31日、パサデナのアロヨ・セコでカリフォルニア工科大学の大学院生らがロケット推進の試験を始めた時点では、その活動がジェット推進研究所の出発点になるとは思いもしなかった。それから90年、同研究所は……",
+      "translated_ja": true
     },
     {
       "title": "NASA's CASALS instrument bridges gaps in 3D maps of Earth's surface",
@@ -85,7 +742,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "NASAのゴダード宇宙飛行センターの研究チームが、レーザーによる地表観測の隙間を埋める新型ライダー装置CASALSを開発した。可動式の鏡を使わず、レーザーの波長を変えて光の向きを振り分けることで、地表を連続した3次元の帯として描ける点が特徴である。\n\nライダーはレーザーを照射し、戻ってきた光から地形や植生の高さを測る装置である。従来の宇宙搭載型は観測点が線状に並ぶため、軌跡の間に測定されない領域が残っていた。CASALSは中心波長1040ナノメートルの種レーザーを使い、256種類の波長を高速に切り替えながら、回折格子と呼ばれる微細な凹凸を持つ光学部品を通す。波長によって光の曲がる角度が異なるため、各パルスが飛行経路上の別々の位置に振り分けられる仕組みだ。検出器の量子効率は80%とされ、暗い表面や密な植生からでも弱い反射光を拾えるという。2024年11月には航空機B200キングエアに搭載された空中プロトタイプが飛行し、初回の観測から科学的に使えるデータを得た。高度約5キロメートルから、22センチメートルの水平分解能で枝や地形の微小な起伏を識別できたと報告されている。次は2027年夏の空中観測キャンペーンASCENTでの再飛行が予定されている。\n\n宇宙産業にとって、この方式の意味は連続した3次元データを取得できる可能性にある。線の間を補間に頼らずに済めば、森林の構造や地形変化の把握精度が上がると考えられる。弱い反射光を拾えることは、暗い地表や植生の濃い地域でも観測が途切れにくくなることを意味し、これまで捉えにくかった対象の把握にもつながる可能性がある。また、可動部を減らすことで装置の大きさや重量、消費電力を抑えられ、振動や温度変化の厳しい宇宙環境での信頼性向上にもつながる可能性がある。記事は、宇宙搭載型として初めて地表を連続した3次元の帯で観測するライダーになりうると述べている。ただし宇宙版の実現には観測幅の拡大と、搭載用のデータ処理ソフトの追加が必要であり、実用までには段階があると見るのが妥当である。\n\n日本の製造業の視点では、微細な凹凸を持つ回折格子などの光学部品の精密加工、高い量子効率を実現する受光素子、波長を安定して切り替えるレーザー光源などが関わりうる領域と考えられる。とりわけ、わずかな形状の違いが光の振り分けに影響する部品は、高い加工精度と検査体制が求められる分野である。可動機構が減ることは、モーターや駆動部品に対する需要の構造が変わる可能性を示すとも読める。一方で、記事には調達先や国内企業の関与は示されておらず、ここに挙げた関わり方は一般論にとどまる。次の開発段階で部品の仕様や供給体制が明らかになるかを注視する価値がある。",
-      "body_chars": 1136
+      "body_chars": 1136,
+      "title_ja": "NASAのCASALS装置、地表の3次元地図の空白を埋める",
+      "summary_ja": "NASAゴダード宇宙飛行センターの研究チームは、地表のライダーデータの線と線の間にできる死角を解消する新たな装置を開発した。NASA地球科学技術室（ESTO）の支援を受けて開発された、人工知能を用いた分光ライダーシステム（CASALS）は……",
+      "translated_ja": true
     },
     {
       "title": "Sci-fi legend Alan Dean Foster on his new futuristic adventure 'Lost On Paradise': 'It's paradise until you get there, and then maybe you mess it up' (interview)",
@@ -234,7 +894,10 @@
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "SpaceX、スターシップ15号機の打ち上げ時期を確定 船体キャッチへの初挑戦も",
+      "summary_ja": "SpaceXは、スターシップの第15回打ち上げ機会の日程を確定した。今回のミッションでは、船体を初めて捕捉することを試みるという大きな野心を掲げている。イーロン・マスクCEOは10月20日夜に行われた決算説明会で、11月に第15回試験飛行としてスターシップを打ち上げることを明らかにした。",
+      "translated_ja": true
     },
     {
       "title": "Under Extreme Pressure on Ice Giants, Water Ice Gets Weird",
@@ -246,7 +909,10 @@
       "source_id": "universetoday",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "極限圧力下で水の氷が奇妙な性質を示す",
+      "summary_ja": "地球上では、水の氷は単に水が凍ったものにすぎない。しかし極端な圧力下では、非対称な特異な構造をとる。分子としての性質を失い、原子が奇妙な非対称性へと押し込められる。",
+      "translated_ja": true
     },
     {
       "title": "Science on the Space Station with NASA Astronaut Jessica Watkins",
@@ -257,7 +923,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASA宇宙飛行士ジェシカ・ワトキンズが宇宙ステーションで生命科学実験を実施",
+      "summary_ja": "NASA宇宙飛行士で、長期滞在計画「Expedition 75」の飛行エンジニアを務めるジェシカ・ワトキンズは、2026年10月9日に日本実験棟「きぼう」の生命科学グローブボックス内で作業を行った。細胞の試料をバイオインクと安全に混ぜ合わせ、その細胞インク混合物を専用のカートリッジに充填した。この先進的な研究作業は、InSPA‑Auxili…",
+      "translated_ja": true
     },
     {
       "title": "Global Satcom Services Revenues to Reach $145 Billion by 2035",
@@ -268,7 +937,10 @@
       "source": "SpaceNews",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "衛星通信サービスの世界売上高、2035年に1450億ドルへ到達の見通し",
+      "summary_ja": "【パリ（フランス）、2026年10月】Novaspaceの第33回「衛星接続性レポート」によると、世界の衛星サービス売上高は44%増加し、2035年には1450億ドルに達する見通しだ。",
+      "translated_ja": true
     },
     {
       "title": "星々がきらめく美しき光の帯 ハッブル宇宙望遠鏡が観測した渦巻銀河「NGC 1827」",
@@ -289,7 +961,10 @@
       "source": "European Spaceflight",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "エアバス、アリアン6ブロック2向けの軽量化ヴァルカン後部ベイを出荷",
+      "summary_ja": "エアバス・オランダは、ロケット「アリアン6」のブロック2改良の一環として、初の軽量化ヴァルカン後部ベイを納入した。ただし、全体の重量削減幅は当初想定されたほど大きくはない模様だ。エアバス・オランダのロブ・ポスマ社長は10月21日付のLinkedIn投稿で、改良された構造体について発表した。",
+      "translated_ja": true
     },
     {
       "title": "\"A great budget lens for astrophotography, the sharpness produced at f/1.8 and f/2.8 is exactly what you want.\" Viltrox AF 16mm f/1.8 FE lens review",
@@ -300,7 +975,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "「天体写真に最適なコストパフォーマンスの広角レンズ」 Viltrox AF 16mm f/1.8 FEレビュー",
+      "summary_ja": "Viltrox AF 16mm f/1.8 FEは、手頃な価格ながら操作性、作りの良さ、描写力に優れた超広角単焦点レンズだ。f/1.8とf/2.8での鮮明さは、天体撮影に求められる性能そのものである。",
+      "translated_ja": true
     },
     {
       "title": "Space Nuclear Power Corporation Awarded DARPA Agreement for Ground Test of Autonomous Nuclear Reactor Controller",
@@ -311,7 +989,10 @@
       "source": "SpaceNews",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スペース・ニュークリア・パワー社、DARPAと契約 自律型原子炉制御装置の地上試験を受注",
+      "summary_ja": "【ロスアラモス（米ニューメキシコ州）、2026年10月21日】スペース・ニュークリア・パワー社（SpaceNukes）は本日、国防高等研究計画局（DARPA）が同社にOther Transaction（OT）契約を授与したと発表した。",
+      "translated_ja": true
     },
     {
       "title": "Space botanist conducts plant experiments in orbit | Space photo of the day for Oct. 21, 2026",
@@ -322,7 +1003,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "宇宙植物学者が軌道上で植物実験を実施 今日の宇宙写真（2026年10月21日）",
+      "summary_ja": "NASA宇宙飛行士ルーク・デラニーが、国際宇宙ステーション（ISS）で植物学の実験を行っている。",
+      "translated_ja": true
     },
     {
       "title": "SpaceX stock gets a slew of price target boosts after bullish earnings call",
@@ -333,7 +1017,10 @@
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "SpaceX株、好調な決算説明会を受けて目標株価が相次いで引き上げ",
+      "summary_ja": "ウォール街のアナリストらは、SpaceX（NASDAQ: SPCX）が10月20日の市場終了後に2026年第3四半期の好調な業績を発表したことを受け、同社の目標株価を相次いで引き上げた。時間外取引および米国市場の開場前取引では株価が大きく上昇した。SpaceXの売上高は146億ドルで、前年同期比161%増となった。",
+      "translated_ja": true
     },
     {
       "title": "Astronomers uncover the engine behind the most powerful stellar flares in the Kepler field",
@@ -344,7 +1031,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ケプラー視野で最も激しい恒星フレアの発生源を天文学者が特定",
+      "summary_ja": "ハンガリーのブダペストにあるHUN-REN天文地球科学研究センター（HUN-REN CSFK）コンコリ天文台の研究者らが主導した新たな研究により、ケプラー視野内で最も爆発的に活動している遠方の赤色巨星の要因が明らかになった。その答えは、意外にも微妙な相互作用にあるという。",
+      "translated_ja": true
     },
     {
       "title": "When will SpaceX and Blue Origin fly to the moon? NASA reveals lunar lander timelines (and an Artemis III update)",
@@ -355,7 +1045,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "SpaceXとブルーオリジンはいつ月へ飛ぶのか NASAが月着陸船の計画時期を公表（アルテミス3号の最新情報も）",
+      "summary_ja": "NASAは有人月探査計画「アルテミス3号」の計画時期を更新するとともに、SpaceXとブルーオリジンがそれぞれ開発する月着陸船の想定される進捗を示した。",
+      "translated_ja": true
     },
     {
       "title": "NASA’s CASALS Instrument Bridges Gaps in 3D Maps of Earth’s Surface",
@@ -366,7 +1059,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASAのCASALS装置、地表の3次元地図の空白を埋める",
+      "summary_ja": "宇宙からのレーザー観測機器は、森林や地形を一度に一本の狭い線で計測している。その線と線の間には、科学者が直接計測したことのない数百万エーカーもの広大な空白が存在する。NASAのCASALS装置は、機械学習と超小型ライダー装置を組み合わせることで、その空白を埋めることを目指している。",
+      "translated_ja": true
     },
     {
       "title": "Hewlett Packard Enterprise to Send AI Compute Module to the Moon",
@@ -909,7 +1605,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スーパーコンピューター、探査車「FLIP」で月へ打ち上げへ AI搭載",
+      "summary_ja": "月面探査車「FLIP」に搭載されたスーパーコンピューターが月へ打ち上げられる予定だ。同機にはAIも搭載されている。",
+      "translated_ja": true
     },
     {
       "title": "The Gas Near Sagittarius A-star is Enriched in Metals, Probably from Supernovae Explosions",
@@ -920,7 +1619,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "いて座Aスター付近のガス、超新星爆発由来とみられる金属を含む",
+      "summary_ja": "天の川銀河の超大質量ブラックホール「いて座Aスター」付近のガスは、わずかではあるものの金属元素に富んでいることがわかった。その原因は超新星爆発とみられる。超新星爆発では水素とヘリウムより重い元素が合成される。こうした金属に富んだガスは時間をかけてこのブラックホールへ流れ込んだという。金属量の増加と…",
+      "translated_ja": true
     },
     {
       "title": "SpaceX reports its second earnings today: here’s what to expect",
@@ -931,7 +1633,10 @@
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スペースX、今日2回目の決算発表 注目点は",
+      "summary_ja": "スペースX（NASDAQ: SPCX）は、今年早くに実施した新規株式公開（IPO）以降、2回目となる公開決算説明会を本日行う。注目される話題があるほか、ウォール街のアナリストもすでに説明会への期待を示している。ウォール街のアナリストによるコンセンサス予想では、売上高は127億2000万ドルで、…",
+      "translated_ja": true
     },
     {
       "title": "Launch Preview: H3, Falcon 9, Electron, and others to launch during busy week",
@@ -942,7 +1647,10 @@
       "source": "NASASpaceflight",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "打ち上げ予報：H3、ファルコン9、エレクトロンなど、多忙な週に複数機が打ち上げ予定",
+      "summary_ja": "今週は計9機のロケットが、カリフォルニア、フロリダ、ニュージーランド、日本などから打ち上げられる予定だ。",
+      "translated_ja": true
     },
     {
       "title": "Hot plasma may explain how rapidly feeding black holes launch powerful jets",
@@ -953,7 +1661,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "高温のプラズマが、急速に物質を取り込むブラックホールからジェットが噴出する仕組みを説明か",
+      "summary_ja": "一部の超大質量ブラックホールは、周囲の物質を急速に吸い込むと同時に、ほぼ光速に近い速度で強力なプラズマの流れを宇宙空間へ放出している。しかし、ここには物理的な矛盾がある。急速な物質の取り込みは、ブラックホール周囲に低温で平坦な降着円盤を形成すると予想されるが、それでは強力なジェットの…",
+      "translated_ja": true
     },
     {
       "title": "Congress Seeks Answers On Starlink Disruptions in Ukraine",
@@ -964,7 +1675,10 @@
       "source": "Payload",
       "source_id": "payloadspace",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "議会、ウクライナでのスターリンク障害の説明を求める",
+      "summary_ja": "「米国政府には、海外に駐在する米国人を守る基本的な義務がある」と上院議員らは書簡で述べた。「防止可能な障害、不十分な調整、あるいは米国政府自身による判断によって米国人が危険にさらされた可能性は、直ちに精査と説明責任を求めるものだ」。",
+      "translated_ja": true
     },
     {
       "title": "SpaceX just launched its secret Starfall saucer again",
@@ -975,7 +1689,10 @@
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スペースX、秘密のスターフォール円盤型カプセルを再び打ち上げ",
+      "summary_ja": "スペースXは「バンドワゴン5」ミッションでスターフォールカプセルを再び打ち上げた。今回は相乗り顧客と並んで公開されていた。",
+      "translated_ja": true
     },
     {
       "title": "NASA Experimental Mars Helicopter Blade Designs Target Longer Flights",
@@ -1354,7 +2071,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "火星の衛星探査計画「MMX（Martian Moons eXploration）」を載せたH3ロケットが、2026年10月20日の午前4時41分（日本時間）に種子島宇宙センターから打ち上げられた。JAXAが主導する本ミッションが狙うのは火星本体ではなく、火星の衛星であるフォボスとダイモスである。打ち上げは成功し、探査機は火星に向けた航海を始めた。ESAのプロジェクト科学者は今回の打ち上げを見事なものだったと評価し、H3ロケットが探査機を火星へ送り出す役割を十分に果たしたと述べている。\n\nMMXはJAXAを中心に、NASA、フランスの国立宇宙研究センター（CNES）、ドイツ航空宇宙センター（DLR）、欧州宇宙機関（ESA）が協力する国際ミッションである。ESAの科学計画における「ミッション・オブ・オポチュニティ」として位置づけられ、ESAは深宇宙通信機器を提供するとともに、地上局網Estrackを通じて探査機への指令送信とデータ受信を支えている。さらに、ESAが任命した欧州の科学者がミッションの科学チームに直接加わり、観測計画の立案、搭載機器が取得したデータの解析、フォボスから持ち帰られる試料の研究を担う。ESAのプロジェクト科学者は、火星への到着が来年夏に予定されていることに触れ、チームの意欲はさらに高まっていると述べている。\n\nMMXが挑むのは三つの「初めて」である。フォボスを周回する初の探査機であり、フォボスの表面から試料を採取する初の探査機であり、火星系から地球へ帰還する初の探査機となる。火星の衛星を対象に、周回、採取、帰還を一つの計画で行う点に新しさがある。宇宙産業の視点で見ると、火星圏から試料を地球へ持ち帰る設計は、長期の深宇宙航行、試料の封じ込め、地球帰還時の取り扱いといった要素技術の蓄積につながると考えられる。帰還までの運用期間が長くなれば、通信の安定性や機器の耐久性に対する要求も高まる可能性がある。また、複数の宇宙機関が通信、運用、科学解析の役割を分け合う国際体制は、今後の深宇宙ミッションの進め方にも影響する可能性がある。\n\n製造業の立場から見ると、関わりの入口は探査機本体の部品に限らない。深宇宙での長期運用を前提とした通信機器、真空や低温、放射線の環境に耐える電子部品や素材、試料を採取・保持する機構に関わる精密部品などは、今後の類似ミッションでも需要として出てくると考えられる。特に試料を扱う部分は、汚染を防ぐための清浄度管理や、地球到着後の取り扱いを含めた品質要求が厳しくなる可能性が高い。国内の部品サプライヤーにとっては、地上の製品とは異なる環境条件や文書管理の水準が加わることも想定される。ただし、本記事は個々の部品供給者や調達内容に触れていないため、具体的な参入先については別途確認が必要である。宇宙向けの要求仕様を早い段階から把握しておくことが、次の機会への備えになると考えられる。",
-      "body_chars": 1222
+      "body_chars": 1222,
+      "title_ja": "MMX、火星の衛星フォボスへ向け打ち上げ",
+      "summary_ja": "ESAブログより。",
+      "translated_ja": true
     },
     {
       "title": "Japan launches mission to bring home a piece of the Martian moon Phobos",
@@ -1366,7 +2086,10 @@
       "source_id": "arstechnica",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "日本、火星の衛星フォボスの試料持ち帰りミッションを打ち上げ",
+      "summary_ja": "MMXのクライマックスは2029年に訪れる。その時、探査機はフォボスへの着陸を最大2回試みる予定だ。",
+      "translated_ja": true
     },
     {
       "title": "JAXA、火星衛星探査機「MMX」の打上げに成功 探査機の状態は安定、約1年かけて火星圏へ",
@@ -1433,7 +2156,10 @@
       "lang": "en",
       "title_ja_broken": false,
       "body_ja": "2026年10月20日のAPODは、イタリア・プレゼンツァーノでスマートフォンにより撮影された珍しい虹を取り上げた。その虹は太陽の光が当たる扇形の範囲にだけ現れ、太陽が丘のすぐ手前あたりに見えるという特徴をもつ。ただし実際の太陽はそこにはない。写真は夕暮れどきの太陽の位置と、雲の間から差す光の関係を一枚に収めたものだ。\n\n通常の虹は、降る雨粒による後方への反射で生じる。そのため太陽は観測者の背後になければならず、この写真はその前提と逆になっている。記事によれば、沈みかけた太陽の近くにあった雲の切れ目を通って光線が空を横切り、前方で収束するように見えたという。この現象は反薄明光線（anticrepuscular rays）と呼ばれ、記事では珍しいものとして紹介されている。撮影者は先週の夕暮れ時、洗濯物を干している最中にこの虹に気づいた。写真が特別な機材ではなくスマートフォンで撮られた点も、この現象が身近な環境で観察されうることを示している。\n\nこの記事は地上の大気光学現象を扱っており、宇宙開発や部品・材料の供給網に関わる出来事を報じてはいない。記事中に産業や市場の動きを読み取れる事実も含まれていないため、宇宙産業への影響を断定することはできない。あえて関連づけるなら、雲や大気の状態によって光の届き方が大きく変わるという点は、地上からの天体観測や光学計測において、気象条件が測定結果に影響しうることを示す一例と考えられる。一般に地上からの天体観測は大気の揺らぎや透過率の影響を受けるとされ、その点で大気の状態に目を向けることは観測の前提になる。これは記事が述べた内容ではなく、読者の側で想定できる範囲の推測である。\n\n日本の製造業・部品サプライヤーにとって、この記事から直接の取引機会や技術上の判断材料を引き出すのは難しい。もし光学部品や観測機器を手がける企業が関心を持つとすれば、大気条件が光の振る舞いに与える影響を、設計や検証の前提として意識するきっかけになる可能性がある。たとえば検査時に周囲の光環境や気象条件を記録する運用は、こうした現象を背景知識として理解しておくことで、データの解釈に役立つかもしれない。ただし、これも筆者の推測であり、記事自体は産業用途に触れていない。\n\n一方で、この記事は見えている像と幾何学的な実際の配置を切り分けて示している点に読みどころがある。見た目の印象だけで判断せず、基準となる位置関係を確かめる姿勢は、製造現場の検査や計測にも通じる考え方だと考えられる。",
-      "body_chars": 1056
+      "body_chars": 1056,
+      "title_ja": "APOD：2026年10月20日 反薄明光線の虹",
+      "summary_ja": "APOD 天文学ピクチャー・オブ・ザ・デイ 今日のAPOD 投稿アーカイブ 索引 検索 カレンダー RSS 教育 について APODについて議論 天文学ピクチャー・オブ・ザ・デイ 宇宙を発見しよう！ 毎日、宇宙の魅力的な画像や写真を一枚ずつ取り上げ、専門家による簡単な解説を添えて紹介しています。",
+      "translated_ja": true
     },
     {
       "title": "The Human Fingerprint on Earth’s Water Cycle",
@@ -1444,7 +2170,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "地球の水循環に残る人間の痕跡",
+      "summary_ja": "人間の活動は、大陸にまたがる水の分布と密接に絡み合うようになっている。新たな研究により、その影響がより鮮明に見えてきた。",
+      "translated_ja": true
     },
     {
       "title": "サムスン中の人も認める、iPhone DuoのおかげでGalaxy Z Fold8の売り上げ伸びてます（しかも今すぐ入手可能）",
@@ -1475,7 +2204,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "キュリオシティのブログ、5036〜5042太陽日：流れる雲を観察",
+      "summary_ja": "執筆はヨーク大学大気科学者のアレックス・イナネン。地球の計画日：2026年10月9日（金）。火星の新しい年へようこそ！火星では北半球の春の始まり、すなわち春分とともに新しい年を迎える。その後は太陽黄経の度数を数えることで季節の推移を追っている。",
+      "translated_ja": true
     },
     {
       "title": "JAXA’s MMX Enroute to Mars To Return Samples of Phobos",
