@@ -301,7 +301,8 @@ def generate(item: dict, body: str, retry_note: str = "") -> tuple[str, str] | N
         body=body[:6000])
     try:
         p = subprocess.run(
-            ["claude", "-p", "--tools", "", "--model", MODEL, prompt],
+            ["claude", "-p", "--tools", "", "--model", MODEL,
+             *fulltext.translate.CLAUDE_LIGHT_FLAGS, prompt],
             capture_output=True, text=True, timeout=600,
             stdin=subprocess.DEVNULL)
     except Exception as e:
@@ -501,7 +502,8 @@ def main() -> int:
     # タイムアウトは「確認できなかった」として生成を続ける（対話セッション内など）。
     try:
         _probe = subprocess.run(
-            ["claude", "-p", "--tools", "", "--model", "haiku", "OK"],
+            ["claude", "-p", "--tools", "", "--model", "haiku",
+             *fulltext.translate.CLAUDE_LIGHT_FLAGS, "OK"],
             capture_output=True, text=True, timeout=30,
             stdin=subprocess.DEVNULL)
         if _probe.returncode != 0:

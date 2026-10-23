@@ -52,6 +52,13 @@ CLAUDE_TIMEOUT = 240       # 秒
 # 上位モデルを使うと利用枠を圧迫し、対話側が止まる。
 BATCH_MODEL = os.environ.get("UCHUCHU_BATCH_MODEL", "haiku")
 
+# 無人のバッチ呼び出しでは、ユーザー設定（SessionStart フック・プラグイン・MCP）を
+# 読み込ませない。読み込むと1回あたり約120秒かかり（実測。無しなら約4秒）、
+# 翻訳・要約・記事生成が全部タイムアウトして日次処理が3600秒で殺される。
+# 認証（OAuth）は残る。--bare は OAuth を読まないため使えない。
+CLAUDE_LIGHT_FLAGS = ["--setting-sources", "project", "--strict-mcp-config",
+                      "--disable-slash-commands"]
+
 _PROMPT = """あなたは宇宙開発分野の専門翻訳者です。
 以下のJSONは英語の宇宙関連ニュースです。各記事の title と summary を、
 日本語のニュース記事として自然な文体に翻訳してください。
@@ -94,8 +101,10 @@ def _claude_call(payload: dict) -> dict | None:
     prompt = _PROMPT + json.dumps(payload, ensure_ascii=False, indent=1)
     try:
         proc = subprocess.run(
-            [CLAUDE_BIN, "--tools", "", "--model", BATCH_MODEL, "-p", prompt],
+            [CLAUDE_BIN, "--tools", "", "--model", BATCH_MODEL,
+             *CLAUDE_LIGHT_FLAGS, "-p", prompt],
             capture_output=True, text=True, timeout=CLAUDE_TIMEOUT,
+            stdin=subprocess.DEVNULL,
         )
     except (subprocess.TimeoutExpired, OSError) as e:
         print(f"    [claude] 呼び出し失敗: {type(e).__name__}", file=sys.stderr)
