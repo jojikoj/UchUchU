@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU 2026年10月の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:6b95bcc8-1f88-4539-84fe-f63630138766@uchuchu.tech
+DTSTAMP:20261024T094924Z
+DTSTART:20261025T015000Z
+DTEND:20261025T025000Z
+SUMMARY:Long March 8A | Unknown Payload
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 8A / Unknown Payload / Go for Launch
+URL:https://uchuchu.tech/launches/2026-10/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:e2886a96-5ce9-4f45-872f-4e25a00be837@uchuchu.tech
+DTSTAMP:20261024T094924Z
+DTSTART:20261027T044500Z
+DTEND:20261027T054500Z
+SUMMARY:Falcon 9 Block 5 | Starlink Group 15-16
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Starlink Group 15-16 / Go for Launch
+URL:https://uchuchu.tech/launches/2026-10/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ef9850ad-1096-425b-9d27-f7bbd186e61a@uchuchu.tech
+DTSTAMP:20261024T094924Z
+DTSTART:20261029T000000Z
+DTEND:20261029T010000Z
+SUMMARY:Vulcan VC6L | Amazon Leo (LV-01)
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:United Launch Alliance / Vulcan VC6L / Amazon Leo (LV-01) / To Be Determined
+URL:https://uchuchu.tech/launches/2026-10/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:57ce0a39-d035-4f16-a418-bd6108f78199@uchuchu.tech
+DTSTAMP:20261024T094924Z
+DTSTART:20261030T040200Z
+DTEND:20261030T050200Z
+SUMMARY:Falcon 9 Block 5 | Starlink Group 15-18
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Starlink Group 15-18 / Go for Launch
+URL:https://uchuchu.tech/launches/2026-10/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:20d5676e-111b-40e3-8923-b218c3665ca2@uchuchu.tech
+DTSTAMP:20261024T094924Z
+DTSTART:20261030T170000Z
+DTEND:20261030T180000Z
+SUMMARY:GSLV Mk II | IRNSS-1L (NVS-03)
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / GSLV Mk. II / IRNSS-1L (NVS-03) / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-10/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dc570565-4dcf-4ab9-8174-bf88efef477f@uchuchu.tech
+DTSTAMP:20261024T094924Z
+DTSTART:20261031T000000Z
+DTEND:20261031T010000Z
+SUMMARY:Long March 12A | Flight 2
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 12A / Flight 2 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-10/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

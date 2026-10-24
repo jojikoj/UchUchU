@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Space News &amp; Launch Schedule · UchUchU</title>
+  <meta name="description" content="A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.">
+  <link rel="canonical" href="https://uchuchu.tech/en/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="UchUchU — Connecting Japan&#39;s manufacturing to the space industry.">
+  <meta property="og:description" content="A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.">
+  <meta property="og:url" content="https://uchuchu.tech/en/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UchUchU — Connecting Japan&#39;s manufacturing to the space industry.">
+  <meta name="twitter:description" content="A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/en/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"A practical media for manufacturers entering the space supply chain — company database, entry guides, procurement information, and global news.","inLanguage":"en","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/en/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://uchuchu.tech/en/"}]}]}</script>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/style.css?v=30279b0e">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "en";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/" : "https://uchuchu.tech/en/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="en">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="./">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">Space Industry Portal</span>
+    </a>
+
+    <a class="side-tagbtn" href="topics/moon/">#Browse by tag</a>
+
+    <form class="side-search" action="search/" method="get" role="search">
+      <input type="search" name="q" placeholder="Search articles"
+             aria-label="Search">
+    </form>
+
+    <nav class="side-nav">
+      <a href="./" class="on">Home</a>
+      <a href="companies/" class="">Companies</a>
+      <a href="articles/" class="">Features</a>
+      <a href="launches/" class="">Launches</a>
+      <a href="news/" class="">News</a>
+      <a href="papers/" class="">Research</a>
+      <a href="faq/" class="">FAQ</a>
+      <a href="advertise/" class="">Advertise</a>
+      <a href="contact/" class="cta ">Contact</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/" class="" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/" class="on" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="./">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+
+<section class="today-board">
+  <div class="today-head">
+    <span class="live-dot" aria-hidden="true"></span>
+    <h2 class="today-title">Space Today</h2>
+    <span class="today-date">Oct 24, 2026</span>
+    <a class="today-more" href="launches/">Launches →</a>
+    <a class="today-more today-more-2" href="launches/japan/">Japanese launches →</a>
+  </div>
+
+  <div class="today-grid">
+    <article class="today-next">
+      <span class="today-label">Next launch</span>
+      <div class="today-cd">
+        <span class="net-countdown today-cd-num" data-net="2026-10-25T01:50:00Z">T-16h 0m</span>
+        <span class="pill status-tbd">Go</span>
+      </div>
+      <h3 class="today-next-name">Long March 8A | Unknown Payload</h3>
+      <p class="today-next-meta">
+        Oct 25, 2026 01:50 UTC · Wenchang Space Launch Site, People&#39;s Republic of China      </p>
+    </article>
+
+    <div class="today-stats">
+      <a class="today-stat" href="launches/">
+        <span class="today-stat-n">0</span>
+        <span class="today-stat-l">Launches today</span>
+      </a>
+      <a class="today-stat" href="launches/">
+        <span class="today-stat-n">5</span>
+        <span class="today-stat-l">Launches this week</span>
+      </a>
+      <a class="today-stat" href="news/">
+        <span class="today-stat-n">28</span>
+        <span class="today-stat-l">News in 24h</span>
+      </a>
+    </div>
+
+    <div class="today-results">
+      <span class="today-label">
+        Results in 24h
+      </span>
+      <ul class="today-result-list">
+        <li>
+          <span class="res-mark res-success">Success</span>
+          <span class="res-name">Falcon 9 Block 5 | Starlink Group 15-15</span>
+        </li>
+        <li>
+          <span class="res-mark res-success">Success</span>
+          <span class="res-name">Long March 4B | Yaogan 53-07 to 09/56-19 to 21</span>
+        </li>
+        <li>
+          <span class="res-mark res-success">Success</span>
+          <span class="res-name">Long March 6A | Yaogan 50-03</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="hero-block">
+  <div class="hero-main">
+    <a class="hero-media" href="a/arstechnica-c18b6ba39e/">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/gallery-gallery_ng-2-ascent-2-500x500.jpg" alt="" loading="eager"
+           onerror="this.closest('.hero-media').classList.add('no-img')">    </a>
+    <div class="hero-body">
+      <h1 class="hero-title"><a href="a/arstechnica-c18b6ba39e/">Inside the Pentagon, the pressure is on to find a home for a new spaceport</a></h1>
+      <div class="hero-meta">
+        <span class="pill-tag src">Ars Technica</span>
+<time datetime="2026-10-23T19:33:58+00:00">2026.10.23</time>      </div>
+    </div>
+  </div>
+
+  <div class="hero-side">
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/spaceflightnews-81ab86f46b/">
+<img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2026/10/2026-11-05-RTX-SpaceNews-2000-1500-scaled.jpg?fit=1024%2C768&amp;ssl=1" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/spaceflightnews-81ab86f46b/">Nov. 5: Satellite Mission Management at the Edge</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#Satellites</span><time datetime="2026-10-23T19:53:25Z">2026.10.23</time>        </div>
+      </div>
+    </article>
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/space_com-2a67b6b17b/">
+<img src="https://cdn.mos.cms.futurecdn.net/4Qkczefm8pjzwLat4Khu2E-1920-80.jpg" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/space_com-2a67b6b17b/">On this day in space! Oct. 23, 2007: NASA launches Harmony module to ISS on STS-120 space shuttle mission</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#Human Spaceflight</span><time datetime="2026-10-23T20:47:13+00:00">2026.10.23</time>        </div>
+      </div>
+    </article>
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/phys_space-a3aff43dc5/">
+<img src="https://scx1.b-cdn.net/csz/news/tmb/2026/penn-engineers-turn-ev.jpg" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/phys_space-a3aff43dc5/">Everyday Mylar turned into a promising insulator for lunar habitats</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#Moon</span><time datetime="2026-10-23T19:20:01+00:00">2026.10.23</time>        </div>
+      </div>
+    </article>
+    <article class="hero-item">
+      <a class="hero-item-media" href="a/phys_space-fec6944045/">
+<img src="https://scx1.b-cdn.net/csz/news/tmb/2026/can-a-black-hole-split.jpg" alt="" loading="lazy"
+             onerror="this.closest('.hero-item-media').classList.add('no-img')">      </a>
+      <div class="hero-item-body">
+        <h3><a href="a/phys_space-fec6944045/">Black holes spinning near maximum rate could split in two, calculations suggest</a></h3>
+        <div class="hero-item-meta">
+<span class="pill-tag sm">#Space Science</span><time datetime="2026-10-23T18:20:12+00:00">2026.10.23</time>        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+<section class="block block-tint">
+  <div class="sec-head">
+  <span class="sec-en">DATABASE</span>
+  <span class="sec-ja">Space Industry Company Database</span>
+<a class="sec-more" href="companies/">View all companies →</a></div>
+
+  <p class="block-lead">Japanese companies in the space industry, organised by business area. Listing is free.</p>
+  <div class="db-cats">
+    <a class="db-cat" href="companies/component/">
+      <span class="db-cat-media">
+        <img src="../static/img/cat-component.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">26</span>
+      </span>
+      <span class="db-cat-name">Components &amp; Materials</span>
+    </a>
+    <a class="db-cat" href="companies/satellite/">
+      <span class="db-cat-media">
+        <img src="../static/img/cat-satellite.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">13</span>
+      </span>
+      <span class="db-cat-name">Satellite Manufacturing</span>
+    </a>
+    <a class="db-cat" href="companies/ground/">
+      <span class="db-cat-media">
+        <img src="../static/img/cat-ground.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">12</span>
+      </span>
+      <span class="db-cat-name">Ground Systems</span>
+    </a>
+    <a class="db-cat" href="companies/service/">
+      <span class="db-cat-media">
+        <img src="../static/img/cat-service.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">10</span>
+      </span>
+      <span class="db-cat-name">Data &amp; Services</span>
+    </a>
+    <a class="db-cat" href="companies/exploration/">
+      <span class="db-cat-media">
+        <img src="../static/img/cat-exploration.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">9</span>
+      </span>
+      <span class="db-cat-name">Exploration &amp; In-orbit</span>
+    </a>
+    <a class="db-cat" href="companies/launch/">
+      <span class="db-cat-media">
+        <img src="../static/img/cat-launch.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">6</span>
+      </span>
+      <span class="db-cat-name">Launch Vehicles</span>
+    </a>
+  </div>
+  <div class="db-preview">
+<a class="db-chip" href="companies/">ALE Co., Ltd.</a><a class="db-chip" href="companies/">Advantest</a><a class="db-chip" href="companies/">ArkEdge Space</a><a class="db-chip" href="companies/">Astroscale</a><a class="db-chip" href="companies/">Axelspace</a><a class="db-chip" href="companies/">Canon Electronics</a><a class="db-chip" href="companies/">Cosmotec</a><a class="db-chip" href="companies/">ElevationSpace</a><a class="db-chip" href="companies/">Furukawa Electric</a><a class="db-chip" href="companies/">GITAI</a><a class="db-chip" href="companies/">Hamamatsu Photonics</a><a class="db-chip" href="companies/">IHI Aerospace</a><a class="db-chip" href="companies/">Ibiden</a><a class="db-chip" href="companies/">Infostellar</a>    <a class="db-chip db-chip-more" href="companies/">View all companies →</a>
+  </div>
+</section>
+
+
+<section class="launch-strip">
+  <div class="strip-head">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span class="strip-title">Next Launches</span>
+    <a class="strip-more" href="launches/">View all →</a>
+  </div>
+  <div class="strip-items">
+    <article class="strip-item">
+      <div class="strip-cd">
+<span class="net-countdown" data-net="2026-10-25T01:50:00Z">T-16h 0m</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Long March 8A | Unknown Payload</h3>
+      <p>Oct 25, 2026 01:50 UTC · Wenchang Space Launch Site, People&#39;s Republic of China</p>
+    </article>
+    <article class="strip-item">
+      <div class="strip-cd">
+<span class="net-countdown" data-net="2026-10-27T04:45:00Z">T-2d 18h</span><span class="pill status-tbd">Go</span>      </div>
+      <h3>Falcon 9 Block 5 | Starlink Group 15-16</h3>
+      <p>Oct 27, 2026 04:45 UTC · Vandenberg SFB, CA, USA</p>
+    </article>
+    <article class="strip-item">
+      <div class="strip-cd">
+<span class="net-countdown" data-net="2026-10-29T00:00:00Z">T-4d</span><span class="pill status-tbd">TBD</span>      </div>
+      <h3>Vulcan VC6L | Amazon Leo (LV-01)</h3>
+      <p>Oct 29, 2026　time TBD · Cape Canaveral SFS, FL, USA</p>
+    </article>
+  </div>
+</section>
+
+
+<section class="block block-tint">
+  <div class="sec-head">
+  <span class="sec-en">NEW</span>
+  <span class="sec-ja">Latest News</span>
+<a class="sec-more" href="news/">View all →</a></div>
+
+  <div class="tile-grid">
+<article class="news-tile">
+  <a class="tile-media" href="a/payloadspace-e7f1778fba/">
+    <img src="../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">Illustrative image</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/payloadspace-e7f1778fba/">NASA Outlines the Details of Artemis III and IV Missions</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Moon</span><time datetime="2026-10-23T21:13:28+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Payload</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/universetoday-048dfb9365/">
+    <img src="../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">Illustrative image</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/universetoday-048dfb9365/">The Largest Canyon in the Solar System is Still Tectonically Active</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Mars</span><time datetime="2026-10-23T21:09:09+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/phys_space-1a5699e1b3/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/stellar-collision-may.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/phys_space-1a5699e1b3/">Stellar collision may explain why Orion Nebula&#39;s planet-forming disks appear younger than its stars</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Space Science</span><time datetime="2026-10-23T19:00:01+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/nasa-8ad48a4cdb/">
+    <img src="../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">Illustrative image</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/nasa-8ad48a4cdb/">RS-25 Engine Tests at NASA Stennis</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Rockets</span><time datetime="2026-10-23T18:57:04+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/universetoday-a74b59131d/">
+    <img src="../static/img/fallback-space.jpg" alt="" loading="lazy">
+    <span class="stock-mark">Illustrative image</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/universetoday-a74b59131d/">Saudi Arabia Joins the Search for Alien Civilizations</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-10-23T18:17:49+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/space_com-d96c2eca90/">
+    <img src="https://cdn.mos.cms.futurecdn.net/A5wksxeyTW6tFg2RVsCcn3-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/space_com-d96c2eca90/">Halley&#39;s Comet dazzles from afar in spectacular astrophoto of Orionid meteor shower</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Space Science</span><time datetime="2026-10-23T18:00:00+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/nasa-58812ea796/">
+    <img src="../static/img/fallback-space.jpg" alt="" loading="lazy">
+    <span class="stock-mark">Illustrative image</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/nasa-58812ea796/">NASA, Virginia Launch Power Partnership for Energy Security</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Space Business</span><time datetime="2026-10-23T17:50:21+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/phys_space-590dc80115/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/alma-spots-dragon-egg.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/phys_space-590dc80115/">ALMA spots &#39;dragon egg&#39; that may represent the earliest stages of massive star formation</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Space Science</span><time datetime="2026-10-23T16:50:01+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/universetoday-5ce87f85d1/">
+    <img src="../static/img/fallback-space.jpg" alt="" loading="lazy">
+    <span class="stock-mark">Illustrative image</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/universetoday-5ce87f85d1/">Magnetic Field Reversals and Extinctions: The Correlation Won&#39;t Go Away.</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-10-23T16:11:14+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/space_com-7cd5ad986f/">
+    <img src="https://cdn.mos.cms.futurecdn.net/WZyHqvXzdZYsVNqGxBqQCQ-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/space_com-7cd5ad986f/">Never finishing the fight: Where did Xbox go wrong with Halo?</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-10-23T16:00:00+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/phys_space-7697cb2d0d/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/artemis-i-crystals-of.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/phys_space-7697cb2d0d/">Artemis I: Crystals of experimental detectors record radiation doses near the moon</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Moon</span><time datetime="2026-10-23T15:40:01+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="a/phys_space-1927595088/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/pedal-to-the-metal-nas.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="a/phys_space-1927595088/">Pedal to the metal: NASA&#39;s Psyche heads toward asteroid belt</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#Mars</span><time datetime="2026-10-23T15:10:01+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+    </div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="block">
+  <div class="sec-head">
+  <span class="sec-en">TOPICS</span>
+  <span class="sec-ja">Browse by Topic</span>
+</div>
+
+  <div class="topic-grid">
+    <a class="topic-card" href="topics/science/">
+      <span class="topic-card-name">#Space Science</span>
+      <span class="topic-card-count">1628</span>
+      <span class="topic-card-desc">Astronomy, planetary science, and astrophysics</span>
+    </a>
+    <a class="topic-card" href="topics/human/">
+      <span class="topic-card-name">#Human Spaceflight</span>
+      <span class="topic-card-count">1154</span>
+      <span class="topic-card-desc">Astronauts, the ISS, and life in orbit</span>
+    </a>
+    <a class="topic-card" href="topics/business/">
+      <span class="topic-card-name">#Space Business</span>
+      <span class="topic-card-count">636</span>
+      <span class="topic-card-desc">Funding, contracts, and the space industry</span>
+    </a>
+    <a class="topic-card" href="topics/rocket/">
+      <span class="topic-card-name">#Rockets</span>
+      <span class="topic-card-count">596</span>
+      <span class="topic-card-desc">Launch vehicles, engines, and reusability</span>
+    </a>
+    <a class="topic-card" href="topics/satellite/">
+      <span class="topic-card-name">#Satellites</span>
+      <span class="topic-card-count">576</span>
+      <span class="topic-card-desc">Satellites, constellations, and Earth observation</span>
+    </a>
+    <a class="topic-card" href="topics/moon/">
+      <span class="topic-card-name">#Moon</span>
+      <span class="topic-card-count">571</span>
+      <span class="topic-card-desc">Lunar exploration, landings, and the Artemis program</span>
+    </a>
+    <a class="topic-card" href="topics/mars/">
+      <span class="topic-card-name">#Mars</span>
+      <span class="topic-card-count">278</span>
+      <span class="topic-card-desc">Mars exploration, rovers, and crewed Mars plans</span>
+    </a>
+    <a class="topic-card" href="topics/japan/">
+      <span class="topic-card-name">#Japan in Space</span>
+      <span class="topic-card-count">96</span>
+      <span class="topic-card-desc">JAXA, Japanese companies, and national space policy</span>
+    </a>
+  </div>
+</section>
+
+<section class="block block-tint">
+  <div class="sec-head">
+  <span class="sec-en">RESEARCH</span>
+  <span class="sec-ja">Latest Research</span>
+<a class="sec-more" href="papers/">View all →</a></div>
+
+  <div class="grid grid-papers">
+<article class="card paper-card">
+  <div class="card-body">
+    <div class="card-meta">
+<span class="pill ghost mono">hep-ph</span><span class="pill ghost mono">astro-ph.HE</span><time datetime="2026-10-22T17:59:46+00:00">Oct 22, 2026</time>    </div>
+    <h3 class="card-title"><a href="p/arxiv-2610-31666v1/">Boosted Dark Matter Directionality in Large Liquid Scintillator Detectors</a></h3>
+<p class="paper-authors">Samuel S. H. Tse, Qishan Liu, Kenny C. Y. Ng, Koun Choi, Yu-Feng Li</p><p class="card-summary">Light dark matter can be boosted by cosmic-ray-dark matter interactions, which opens the possibility of direct-detection searches with large neutrino detectors. We consider the signal produced by boosted dark matter undergoing quasi-elastic scattering off carbon and knocking out a neutron in a large liquid scintillator detector. A distinctive delayed gamma ray from neutron capture can be reconstructed after $\sim 210$ $μ$s, which is paired up with the prompt signal during neutron propagation. We…</p>    <div class="card-actions">
+      <a class="card-link" href="p/arxiv-2610-31666v1/">Read →</a>
+    </div>
+  </div>
+</article>
+<article class="card paper-card">
+  <div class="card-body">
+    <div class="card-meta">
+<span class="pill ghost mono">astro-ph.GA</span><span class="pill ghost mono">astro-ph.CO</span><time datetime="2026-10-22T17:59:32+00:00">Oct 22, 2026</time>    </div>
+    <h3 class="card-title"><a href="p/arxiv-2610-31664v1/">Odd radio circle J1555+2726: Observational evidence for shock re-acceleration of fossil plasma</a></h3>
+<p class="paper-authors">L. Bruno, B. Koribalski, R. P. Norris, A. Ivleva, T. Venturi, A. Botteon, C. J. Riseley, K. Dolag et al.</p><p class="card-summary">Context. Odd radio circles (ORCs) are peculiar extragalactic sources recently discovered. They are characterised by one or more bright rings extending on scales of hundreds of kiloparsecs, and are filled with fainter emission. A massive elliptical galaxy lies at the centre of ORCs. While their formation mechanism is debated, a shock is plausibly involved. Aims. We aim to constrain the nature of ORC J1555+2726 (ORC4) through the analysis of its morphological and spectral properties. Methods. We u…</p>    <div class="card-actions">
+      <a class="card-link" href="p/arxiv-2610-31664v1/">Read →</a>
+    </div>
+  </div>
+</article>
+<article class="card paper-card">
+  <div class="card-body">
+    <div class="card-meta">
+<span class="pill ghost mono">astro-ph.SR</span><time datetime="2026-10-22T17:56:28+00:00">Oct 22, 2026</time>    </div>
+    <h3 class="card-title"><a href="p/arxiv-2610-31647v1/">Magnetic Activity as a Driver of Low-gravity-like Spectral Morphology in Late-M Dwarfs</a></h3>
+<p class="paper-authors">Chia-Lung Lin, Daniel Apai, Benjamin V. Rackham, Prajwal Niraula, Mark S. Giampapa, Ana Glidden, Julien de Wit, Valeriy Vasilyev et al.</p><p class="card-summary">We present a systematic investigation of the connection between magnetic activity and the low-surface-gravity-like near-infrared spectral morphology of late-M dwarfs. Our sample includes TRAPPIST-1 observed with JWST NIRISS/SOSS and 22 late-M dwarfs observed with IRTF/SpeX, together with flare observations from K2, TESS, JWST NIRISS/SOSS, and literature-reported X-ray luminosities. Using one-component PHOENIX/NewEra spectral modeling, we find that all targets are better reproduced by lower-surfa…</p>    <div class="card-actions">
+      <a class="card-link" href="p/arxiv-2610-31647v1/">Read →</a>
+    </div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="block">
+  <div class="cta-band">
+    <div class="cta-band-body">
+      <h2>Talk to us</h2>
+      <p>We welcome inquiries about entering the space industry, free database listings, and advertising.</p>
+    </div>
+    <div class="cta-band-actions">
+      <a class="btn btn-primary" href="contact/">Contact</a>
+      <a class="btn btn-ghost" href="advertise/">Advertise</a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">Connecting Japan&#39;s manufacturing to the space industry.</p>
+          <p class="footer-desc">An open platform broadcasting the present of space exploration to Japan and the world — running only on free public data, with no AI API cost.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Home</h4>
+          <a href="companies/">Companies</a>
+          <a href="articles/">Features</a>
+          <a href="launches/">Launches</a>
+          <a href="news/">News</a>
+          <a href="papers/">Research</a>
+          <a href="topics/moon/">Topics</a>
+          <a href="search/">Search</a>
+          <a href="about/">About us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Data sources</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>Who runs this</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">TOE Inc.</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AI Oni — AI practice &amp; measurement lab</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · Static site · auto-updated</span>
+        <span class="footer-updated">Updated: 2026-10-24 09:49 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../static/js/main.js?v=30279b0e" defer></script>
+</body>
+</html>
