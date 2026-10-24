@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T09:33:36.040418+00:00",
-  "count": 5047,
+  "generated_at": "2026-10-24T21:34:38.584449+00:00",
+  "count": 5053,
   "sources": {
     "jaxa": 20,
     "naoj": 16,
@@ -28,6 +28,92 @@
     "spaceflightnews": 300
   },
   "items": [
+    {
+      "title": "How flare ribbons reveal hidden solar explosions on the sun",
+      "url": "https://phys.org/news/2026-10-flare-ribbons-reveal-hidden-solar.html",
+      "summary": "Many topics in astronomy and astrophysics are esoteric. There's not much of a relationship between something like the supermassive black hole at the center of the Milky Way and the life of a regular person going about their business. But the sun is different. Its presence in our lives is inescapable. Its behavior, espe…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/how-flare-ribbons-reve.jpg",
+      "published": "2026-10-24T18:00:01+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "フレアリボンが明らかにする太陽表面の隠れた爆発",
+      "summary_ja": "天文学や天体物理学のテーマの多くは専門性が高い。天の川銀河の中心にある超大質量ブラックホールのような存在と、日々の暮らしを送る一般の人々の生活との間には、あまり関係がない。しかし太陽は違う。私たちの生活における存在は避けられないものだ。その振る舞い、特に…",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "太陽フレアの発生過程を、太陽表面に現れる「フレアリボン」の細かな形状から読み解く研究が報告された。米国の研究者らが2015年6月22日のM6.5級フレアを太陽観測衛星IRISのデータで解析し、リボンの複雑さが磁気リコネクションの速さとともに増すことを示した。\n\nフレアはA、B、C、M、Xの順にX線の明るさで分類され、一段階ごとに放出エネルギーが10倍になる。その引き金は、太陽の強い磁場がねじれて限界に達し、磁力線がつなぎ直されるリコネクションである。フレアの起点は太陽の外層であるコロナにあるが、太陽の強い光に隠れて直接観測しにくい。そこで研究者らは、リコネクションの際に高エネルギー粒子が太陽の彩層に衝突して明るく光るフレアリボンに注目した。リボンの微細な構造は上空で起きている現象を反映すると考えられており、研究チームはモデルを作って合成観測データで検証した後、実際のフレアに適用した。その結果、エネルギーは滑らかに放出されるのではなく、リボンが大小の断片に分かれて断続的に放出されることが分かった。この成果は『The Astrophysical Journal』に掲載されている。\n\nこの研究が、フレアの発生を直接予報する手段になるわけではない。ただ、フレアがどのようにエネルギーを放出するかという理解を深め、より良いモデルを作るための基礎となる点に意味がある。シミュレーションが長く示唆してきた振る舞いを観測で定量的に検証した点も重要である。フレアは地上の電波通信やGPS、宇宙機の電子機器、送電網にも影響しうるとされており、その仕組みの理解が進めば、宇宙機や地上インフラの設計や運用の前提を見直す材料になる可能性がある。太陽観測の精度が上がれば観測機器への要求も高まるとみられ、基礎研究の進展は宇宙産業のサプライチェーンにとって機材需要の源にもなりうる。\n\n日本の部品・装置・素材メーカーにとって、本記事は直接の受注につながる話ではないと考えられる。ただ、太陽観測衛星に搭載される分光器や撮像装置は高精度な光学部品と機械部品の集まりであり、観測機器の需要が科学の進展とともに続くのであれば、精密加工や光学部材を手がける企業にとって関わりうる入り口になる。また、フレアが宇宙機の電子機器に影響しうるという点は、耐放射線性を持つ電子部品や遮蔽材料に求められる条件を考える上での参考になる可能性がある。ただし、本記事はこうした需要の規模や動向を示すものではなく、ここでの見方はあくまで推測である。",
+      "body_chars": 1052
+    },
+    {
+      "title": "This Week In Space podcast: Episode 233 — The Artemis Generation",
+      "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-233-the-artemis-generation",
+      "summary": "On Episode 233 of This Week In Space, Tariq Malik and Rick Jenet are joined by Dr. Amanda Smith-Hackler, with the Universities Space Research Association, about entering the space workforce.",
+      "image": "https://cdn.mos.cms.futurecdn.net/za9UwmsH9m9DmWxUk3pm5n-1920-80.jpg",
+      "published": "2026-10-24T15:53:21+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "ポッドキャスト「This Week In Space」第233回 ― アルテミス世代",
+      "summary_ja": "「This Week In Space」第233回では、タリク・マリクとリック・ジェネットが、全米大学宇宙研究協会のアマンダ・スミス＝ハックラー博士を迎え、宇宙産業の人材として社会に参入することについて語り合う。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "米宇宙メディアSpace.comのポッドキャスト「This Week In Space」第233回は、宇宙産業で働く若い人材をどう呼び込み、育てるかを主題とした。ゲストには大学宇宙研究協会（USRA）教育部門ディレクターで、米空軍研究所（AFRL）の奨学生・STEM人材育成プログラムの責任者を務めるエイミー・スミス＝ハックラー博士が招かれた。タイトルの「アルテミス世代」は、月再訪計画の時代に宇宙分野へ入っていく次の世代を指すと考えられる。\n\n番組が挙げた背景は三つである。第一に、月を目指す主要国の動きが活発になっていること。第二に、低軌道の利用が増え、以前よりも混雑していること。第三に、多くの新興企業が宇宙市場に参入していることだ。番組はこれらを受けて「Newspaceは採用中である」と打ち出し、採用の入り口がこれまで以上に重要になったと位置づけている。冒頭のニュースでは、NASAがアルテミス月計画の加速について説明する内容が取り上げられた。また、スターシールドを巡る中断を受けて、ウクライナがICEYEやノキアと組んで独自の衛星通信網の構築を目指す動きも紹介された。ただし元記事は見出しと番組概要が中心で、個々の計画の詳細までは示していない。ここでは元記事で確認できる範囲に限って述べる。\n\n宇宙産業の拡大は、機体や衛星の設計・製造に携わる人材の需要が増えることを意味する。ロケットや衛星の開発には、機械、電子、ソフトウェア、材料といった多分野の知識が組み合わさるため、特定の分野だけ人材が不足しても事業全体の速度が落ちやすい。番組が採用パイプラインを強調した背景には、人材をどれだけ確保できるかが新規参入の速度を左右するという認識があると考えられる。また、衛星通信網のような地上インフラの構想が増えれば、衛星を支える地上局や通信機器の需要も広がる可能性がある。宇宙産業の成長は、打ち上げ機や衛星だけでなく、それを支える周辺の製造業にも波及しうる。\n\n日本の製造業にとって、この話題は個別の受注情報ではないが、人材と事業の両面から関わりうる。部品や装置、素材を手がける企業であれば、大学や高等専門学校と連携したインターンシップや共同研究を通じて、宇宙分野を目指す学生と早い段階で接点を持てる。元記事で紹介された米国の奨学制度がそのまま日本企業に開かれているわけではないが、大学と産業界が若手を育てる仕組みの考え方は参考になる。また、宇宙向けの高信頼性部品や厳格な品質管理の経験を持つ企業は、新興企業が調達先を探す際の候補になる可能性がある。人材育成と調達の両方で、早めに準備を始めておく価値はあると考えられる。",
+      "body_chars": 1112
+    },
+    {
+      "title": "On this day in space! Oct. 24, 1946: V-2 rocket takes 1st photos of Earth from space",
+      "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-24-2026",
+      "summary": "On October 24, 1946, a V-2 rocket captured the first-ever photo of Earth from space. Here's why it mattered.",
+      "image": "https://cdn.mos.cms.futurecdn.net/gyqZmq6G2J32EA2wYwRMi5-1920-80.jpg",
+      "published": "2026-10-24T15:33:08+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "今日は宇宙の日 1946年10月24日、V-2ロケットが宇宙から初めて地球を撮影",
+      "summary_ja": "1946年10月24日、V-2ロケットが宇宙から地球を写した史上初の写真を撮影した。その意義は以下のとおりである。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "2026年のノーベル物理学賞は宇宙分野 主役の「IceCube」とはなにか",
+      "url": "https://sorae.info/astronomy/20261024-nobel-prize-in-physics-2026.html",
+      "summary": "素粒子「ニュートリノ」は、従来では取得できなかった高エネルギーの天文現象の情報を持っていると考えられている一方、非常に観測が難しいという課題もあります。 2026年10月6日、スウェーデン王立科学アカデミーは、「IceC…",
+      "image": null,
+      "published": "2026-10-24T12:18:45+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja",
+      "body_ja": "2026年10月6日、スウェーデン王立科学アカデミーは、IceCubeニュートリノ観測所への決定的な貢献と天体起源の高エネルギーニュートリノの発見を理由に、2026年のノーベル物理学賞をフランシス・ルイ・ハルツェン氏に授与すると発表した。宇宙分野からの受賞は、ニュートリノ研究が天文学の中心的な手段のひとつになりつつあることを改めて示すものである。\n\nニュートリノは物質とほとんど反応しないため、観測には大量の媒質と、その中で極めて微弱な光を捉える仕組みが必要になる。水を使う装置は透明性を理由に採用されてきたが、ハワイ沖で天然の水を使おうとしたDUMANDは1995年に終了している。ハルツェン氏らはその経験を踏まえ、南極の氷を検出媒質とする方向へ舵を切った。AMANDAで氷が検出器として機能することは示されたものの、初期のデータは気泡による光の散乱で使い物にならなかった。その後、深度1400m以深では十分な透明度が得られることがわかり、大型化への道が開けた。装置の性能が材料の状態に大きく左右されることを、この経緯は端的に示している。\n\nIceCubeの意義は、ニュートリノが磁場や塵の影響を受けずに届くという性質を、天文学の観測手段として実用化した点にある。2017年の高エネルギーニュートリノは活動銀河核TXS 0506+056との関連が強く示され、2022年の報告では銀河M77（NGC 1068）からのニュートリノが継続的に検出されたとされる。これらは発生源を特定の天体へ絞り込む動きとして注目されている。2026年に公表された最新のプレプリントは、高エネルギーニュートリノの一部が天の川銀河の内部に発生源を持つ可能性を示しているが、これは未確定の段階であり、遠方の天体が発生源である可能性を否定するものではない。ニュートリノ振動の検証も含め、IceCubeは天文学と素粒子物理学をつなぐ装置として位置づけられている。\n\n宇宙産業の文脈で見ると、IceCubeは人工衛星や打ち上げロケットのような宇宙機ではなく、南極の氷床の下に置かれた大型の観測インフラである。しかし、その構成要素は製造業の技術と深く結びついている。ガラスケースに収められた光電子増倍管と電子機器、ケーブル内を通る光ファイバー、86本のケーブルを深さ1450mから2450mまで降ろすための掘削と設置の仕組みなどが、その例である。極低温で長期間止めずに運用する前提が考えられるため、部品には高い信頼性と保守性が求められるだろう。\n\n日本でも、水を用いたチェレンコフ光の観測装置として、ハイパーカミオカンデが建設中である。同系統の技術を扱う国内の部品や素材のメーカーにとっては、大型観測装置の知見をどう自社の製品へ生かすかを考える余地がある可能性がある。また、IceCubeは現在アップグレードと拡張工事が行われており、性能向上に伴って電子機器の更新や増設、データ伝送の拡大が必要になることも考えられる。どの部品がどの企業の受注に結びつくかは、本記事の情報からは判断できないが、長期運用と保守を前提とした提案力が求められる分野であることは確かである。",
+      "body_chars": 1316
+    },
+    {
+      "title": "'Star Trek: Strange New Worlds' was afraid to say anything in season of gimmicks",
+      "url": "https://www.space.com/entertainment/space-movies-shows/star-trek-strange-new-worlds-season-of-gimmicks-was-afraid-to-say-anything",
+      "summary": "The fourth season of \"Star Trek: Strange New Worlds\" was one giant gimmick: shoving \"Trek\" into as many genres as possible and often directly adapting classic films from those genres.",
+      "image": "https://cdn.mos.cms.futurecdn.net/uVddfz5cHqvaRvYy33pn7k-1920-80.jpg",
+      "published": "2026-10-24T12:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "『スター・トレック：ストレンジ・ニュー・ワールド』、ギミック満載のシーズンで何も語れず",
+      "summary_ja": "『スター・トレック：ストレンジ・ニュー・ワールド』の第4シーズンは、一つの巨大なギミックだった。「トレック」をできるだけ多くのジャンルに押し込み、そうしたジャンルの古典的な映画をそのまま翻案することも多かった。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Medusa's eye, Halloween fireballs and more: 5 skywatching targets to look out for this spooky season",
+      "url": "https://www.space.com/stargazing/medusas-eye-halloween-fireballs-and-more-5-skywatching-targets-to-look-out-for-this-spooky-season",
+      "summary": "Five spooky skywatching targets perfect for naked eye stargazing this Halloween!",
+      "image": "https://cdn.mos.cms.futurecdn.net/VxuSMyHGHhsXMizCD3sTAS-1920-80.jpg",
+      "published": "2026-10-24T10:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "メデューサの目、ハロウィーンの火球など：不気味な季節に注目すべき天体観測の対象5選",
+      "summary_ja": "ハロウィーンの時期に肉眼での星空観察にぴったりの、不気味な天体観測の対象が5つ紹介される！",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
     {
       "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
       "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
@@ -65,7 +151,12 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "APOD：2026年10月24日 – ロゼッタの自撮り",
+      "summary_ja": "APOD 科学 APOD APOD：2026年10月24日 –… 本日のAPOD アーカイブ 投稿 索引 検索 カレンダー RSS 教育 概要 APODについて議論 天文学今日の天体写真 宇宙を発見せよ！毎日、宇宙の驚異を写した異なる画像や写真が、専門家による簡単な解説とともに紹介される…",
+      "translated_ja": true,
+      "body_ja": "天文写真の紹介サイトAPODが2026年10月24日付で、彗星探査機ロゼッタの「自撮り」画像を取り上げた。撮影は2014年10月7日で、当時ロゼッタは地球から約4億7200万キロメートル離れていたが、彗星67P/チュリュモフ・ゲラシメンコの表面からはわずか16キロメートルの位置にあった。画面の上部には、二つの葉が連なったような不思議な形の彗星核から塵とガスが流れ出す様子が写り込んでいる。明るい太陽光を受けて光る太陽電池パドルは長さ14メートルで、探査機の規模を伝える要素にもなっている。\n\nこの画像は、ロゼッタに取り付けられたままの着陸機フィラエに搭載されたCIVAカメラシステムで撮影された。明るい日差しと暗い領域が同時に写る強いコントラストの場面を記録するため、短時間露光と長時間露光の二枚が合成されている。フィラエの第一候補の着陸地点は、彗星核の小さいほうの葉の可視側にあった。この画像は、2014年11月12日にフィラエがロゼッタから分離する前にカメラで撮られた最後のものである。分離直後、フィラエはロゼッタを振り返る画像を一枚撮影してから、彗星核への降下を開始した。\n\n元記事は2014年に撮影された画像を扱ったもので、新たな探査の成果を伝えるものではない。そのため、今回の掲載から宇宙産業の動きを断定することはできず、掲載の経緯も元記事からは読み取れない。一方で、画像に写る条件は宇宙機の設計にとって示唆が多い。彗星のような不規則な天体の近傍では、強い太陽光と影が混在するため、露光を組み合わせる撮像の工夫が必要になる。14メートルに及ぶ展開式の太陽電池パドルは、打ち上げ時の収納と軌道上での確実な展開を両立させる必要があると考えられる。また、着陸機が母機に取り付いたまま観測を続け、分離後に母機を撮影するという運用は、複数の機体を連携させ、分離のタイミングを正確に管理することの難しさを物語っている。\n\n日本の製造業・部品サプライヤーの視点で見ると、こうした探査機の運用に関わりうる領域は多い。太陽電池パドルのような大型の展開構造物では、ヒンジや展開機構の精度、軽量で剛性のある材料の選定が重要になると考えられる。カメラや光学部品では、強い光と暗部が混在する環境に対応する遮光や光学設計、長期の宇宙環境に耐える素材の選定が問われるだろう。分離機構や取り付け部の締結部品も分離の確実性を左右する部分であり、精密加工の技術が生きる領域である。ただし、本件は過去に撮影された画像であり、ここから直接の受注機会や市場の動きを読み取ることはできない点に留意が必要である。",
+      "body_chars": 1089
     },
     {
       "title": "NASA Artemis Update: SLS Stacking, Sortie Suit, Dual 2028 Paths",
@@ -110,7 +201,7 @@
       "body_skip": "no_body"
     },
     {
-      "title": "SpaceX launches Starlink satellites from California as Falcon 9 cadence slows (photos)",
+      "title": "SpaceX launches Starlink satellites from California as Falcon 9 cadence slows (video)",
       "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-starlink-group-15-15-b1063-ocisly",
       "summary": "SpaceX sent 27 more of its Starlink broadband satellites to orbit today (Oct. 23), in its first Starlink launch in 11 days.",
       "image": "https://cdn.mos.cms.futurecdn.net/9Xh2uRRjmC6ZiQ6YNb7vpY-1920-80.jpg",
@@ -237,7 +328,9 @@
       "title_ja": "NASAのSwift計画が終了、科学的成果の宝庫を残す",
       "summary_ja": "NASAのニール・ゲーレルス・スウィフト天文台は、衛星が地表から275キロメートル（171マイル）未満の高度を周回するようになったため、科学観測ミッションを終了した。この高度では大気抵抗が強く、衛星の望遠鏡が天体を安定して観測することができない。Swiftは最後の…",
       "translated_ja": true,
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "body_ja": "NASA の Neil Gehrels Swift 天文台が科学観測を終了した。軌道高度が約275キロメートルまで下がり、大気抵抗の増加によって望遠鏡を天体に安定して向けられなくなったためである。最終観測は10月20日に行われ、今後数週間のうちに大気圏へ再突入する見通しだ。\n\nSwift は、ガンマ線バーストを素早く捉えて位置を特定するために設計された衛星である。当初の主要ミッションは2年間の想定だったが、10年以上にわたって運用が続いた。その間に2,000回を超えるガンマ線バーストを観測し、1,400件を超える超新星爆発を研究した。ブラックホールが恒星を引き裂く現象や活動銀河核、全天X線サーベイ、小惑星や彗星の観測にも使われた。Swift のデータを基にした論文は約7,000本に上るという。\n\n技術的な特徴は、X線望遠鏡と紫外・可視光望遠鏡を同じ方向に揃えて搭載し、バーストの位置を数分以内に絞り込める点にあった。観測計画も柔軟で、地上からの指令により数分で対象を切り替えられ、1日に最大75の独立した対象を扱えた。2005年には GRB 050509B の観測に成功し、継続時間わずか0.03秒の短いガンマ線バーストに残光が検出された。この結果は、短いガンマ線バーストが中性子星同士の合体に由来するという従来の理論を裏付けるものとなった。\n\n今回の終了で注目すべきは、観測装置そのものよりも、約22年分の観測データが公開アーカイブとして残ることである。総容量は約12テラバイトで、今後も新たな発見の材料になると期待されている。NASA は、Swift の後継として既存の宇宙望遠鏡を活用する方針を示しており、そのなかには商用の打ち上げ能力を使った小規模で迅速な観測手段も含まれるとしている。突発天体への即応性という機能を、どのような機体と運用体制で補っていくのかが、今後の課題になると考えられる。\n\n日本の製造業にとって、この動きは機体部品や観測機器の需要を考えるうえで参考になる。迅速に打ち上げられる小型衛星や、既存の望遠鏡を補完する機器の開発が進めば、軽量な光学部品、高精度の駆動機構、耐放射線性を持つ電子部品などへの需要が生まれる可能性がある。また、大気抵抗の影響で低高度の運用が難しくなった点は、低軌道衛星の設計や軌道管理に関わる部品メーカーにとっても考慮すべき材料となるだろう。",
+      "body_chars": 1001
     },
     {
       "title": "NASA Outlines the Details of Artemis III and IV Missions",
