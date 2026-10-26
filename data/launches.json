@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T21:33:51.286333+00:00",
+  "generated_at": "2026-10-26T09:33:33.318014+00:00",
   "count": 200,
   "items": [
     {
@@ -2901,6 +2901,29 @@
       "upcoming": true
     },
     {
+      "id": "d055f3cc-ef83-4229-98df-73bf68e67581",
+      "name": "Vulcan | USSF-43",
+      "net": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "United Launch Alliance",
+      "provider_country": "USA",
+      "provider_url": "https://www.ulalaunch.com/",
+      "rocket": "Vulcan",
+      "pad": "Space Launch Complex 41",
+      "pad_lat": "28.58341025",
+      "pad_lon": "-80.58303644",
+      "location": "Cape Canaveral SFS, FL, USA",
+      "country": "USA",
+      "mission": "USSF-43",
+      "mission_type": "Government/Top Secret",
+      "mission_description": "Classified payload for the US Space Force.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_image_20240107162928.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "6b95bcc8-1f88-4539-84fe-f63630138766",
       "name": "Long March 8A | SatNet LEO Group 28",
       "net": "2026-10-25T02:03:00Z",
@@ -4579,29 +4602,6 @@
       "mission_description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcast": "https://www.youtube.com/watch?v=Z-d74RyN6rw",
-      "upcoming": false
-    },
-    {
-      "id": "24675e3d-2458-48a3-8c70-5196e44d4dc3",
-      "name": "Falcon 9 Block 5 | NROL-95",
-      "net": "2026-07-30T07:10:19Z",
-      "window_end": "2026-07-30T07:21:00Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "SpaceX",
-      "provider_country": "USA",
-      "provider_url": "https://www.spacex.com/",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "pad_lat": "28.56194122",
-      "pad_lon": "-80.57735736",
-      "location": "Cape Canaveral SFS, FL, USA",
-      "country": "USA",
-      "mission": "NROL-95",
-      "mission_type": "Government/Top Secret",
-      "mission_description": "Classified payload for the US National Reconnaissance Office.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_at_slc_image_20260729112529.jpeg",
-      "webcast": "https://www.youtube.com/watch?v=L6c0OzSQevo",
       "upcoming": false
     }
   ]
