@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T09:34:59.671924+00:00",
-  "count": 5199,
+  "generated_at": "2026-10-28T21:36:14.249132+00:00",
+  "count": 5233,
   "sources": {
     "jaxa": 20,
     "naoj": 16,
@@ -9,12 +9,12 @@
     "sorabatake": 10,
     "astroarts": 0,
     "wired_jp": 1,
-    "gizmodo_jp": 2,
-    "karapaia": 1,
+    "gizmodo_jp": 0,
+    "karapaia": 2,
     "nasa": 10,
     "esa": 9,
     "esa_science": 15,
-    "spacenews": 15,
+    "spacenews": 16,
     "spaceflightnow": 10,
     "nasaspaceflight": 10,
     "payloadspace": 13,
@@ -24,10 +24,488 @@
     "arstechnica": 20,
     "phys_space": 30,
     "skyandtelescope": 0,
-    "teslarati": 4,
+    "teslarati": 5,
     "spaceflightnews": 300
   },
   "items": [
+    {
+      "title": "Could next-gen artificial intelligence help map out future space outposts?",
+      "url": "https://phys.org/news/2026-10-gen-artificial-intelligence-future-space.html",
+      "summary": "Planning a successful trip can be challenging, especially when your destination is in outer space. Even before liftoff, space missions require extraordinary amounts of scientific preparation and data analysis to succeed, which can take years to complete. However, as space agencies race to establish a permanent presence…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2024/earth-from-the-moon.jpg",
+      "published": "2026-10-28T21:30:01+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "次世代AIは将来の宇宙拠点の計画策定に役立つか",
+      "summary_ja": "成功する旅行の計画は難しく、目的地が宇宙空間の場合はなおさらである。打ち上げ前の段階でも、宇宙ミッションの成功には膨大な科学的準備とデータ解析が必要であり、完了までに数年を要することもある。しかし、各宇宙機関が恒久的な拠点の確立を競う中で…",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "米オハイオ州立大学の研究チームが、月面着陸候補地の評価や危険箇所の特定を支援する人工知能（AI）フレームワーク「LUMINA」の予備的な成果を発表した。発表は米天文学会の惑星科学部会（DPS 58）で行われた。月面への着陸は今も難しく、候補地の選定には地形、危険箇所、水氷などの資源の分布といった多くの情報を突き合わせる必要がある。\n\nLUMINAは、同大学の研究チームがかつて開発した月面向けの視覚言語基盤モデル「LLaVA-LE」を土台としている。LLaVA-LEは月の地形を説明し、科学的な質問に答えられるモデルであり、LUMINAはその能力を広げた。複数段階の解析を計画して実行し、着陸候補地を評価するとともに、その推奨の根拠を説明できる点が特徴とされる。背景には、NASAのアルテミス計画をはじめ、各国が月面での活動拠点の確立を急いでいる状況がある。観測データが増え続けるなか、データの中から必要な情報を効率よく探し出す手段の重要性が高まっている。\n\n開発者は、LUMINAを人間の判断に代わる半自律的な機械ではなく、計画担当者とともに最終判断を支える意思決定支援システムとして位置づけている。乗員の安全に直結する判断を機械に委ねない設計であり、人間が判断の主体にとどまるという考え方を示している。また、宇宙探査向けの地図関連AIモデルはまだ多くないとされ、研究チームは火星や小惑星など他の天体の地表にも一般化させることを目指している。探査対象が広がるほど、こうした道具が探査の効率を左右していく可能性がある。\n\n製造業の視点で見ると、AIが扱う情報を生み出すのは、カメラや観測機器、それを搭載する探査機であり、データを処理・保存する計算機器もその基盤となる。解析能力が高まり、高品質の月面データが増えれば、高性能な撮像・観測機器や、極端な環境に耐える電子部品、大容量のデータ処理装置への需要が生じる可能性があると考えられる。ただし、本記事は具体的な調達計画や発注の動きには触れていないため、これは推測である。日本の部品・装置メーカーにとっては、宇宙向けの電子機器や光学部品の要求仕様を早めに把握しておくことが、将来の参入機会につながると考えられる。\n\n研究チームは今後、新たに得られる高品質の月面データでLUMINAを試験し、ミッション計画への有用性をさらに評価する計画だ。月面は極めて厳しい環境であり、人が降り立つ前の段階で、情報を検証し問い直す「もう一つの目」としてAIが役立つかどうかが今後の焦点となる。",
+      "body_chars": 1061
+    },
+    {
+      "title": "Comparing KSC, Starbase construction timelines to understand the development of Starbase, Louisiana",
+      "url": "https://www.nasaspaceflight.com/2026/10/construction-timeline-comparisons/",
+      "summary": "In the world of spaceflight, launch infrastructure is critical for rocket launches. For agencies and… The post Comparing KSC, Starbase construction timelines to understand the development of Starbase, Louisiana appeared first on NASASpaceFlight.com.",
+      "image": "https://www.nasaspaceflight.com/wp-content/uploads/2026/10/kscvsstarbasecomparison.jpg",
+      "published": "2026-10-28T21:12:08Z",
+      "source": "NASASpaceflight",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "KSCとスターベースの建設工程を比較、ルイジアナ州「スターベース」の開発を読む",
+      "summary_ja": "宇宙飛行の分野では、ロケットの打ち上げに発射インフラが欠かせない。各機関や…com.",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "NASA nears end of space station solar array upgrade with Oct. 29 and Nov. 5 spacewalks",
+      "url": "https://spaceflightnow.com/2026/10/28/nasa-nears-end-of-space-station-solar-array-upgrade-with-oct-29-and-nov-5-spacewalks/",
+      "summary": "NASA is two spacewalks away from completing a major, years-long upgrade to the International Space Station that will power the orbiting lab through to its planned decommissioning in 2030.",
+      "image": "http://spaceflightnow.com/wp-content/uploads/2026/10/20261028-IROSA-Install-3.jpg",
+      "published": "2026-10-28T21:03:33Z",
+      "source": "Spaceflight Now",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASA、10月29日と11月5日の船外活動でISS太陽電池アレイの改修が最終段階へ",
+      "summary_ja": "NASAは、国際宇宙ステーション（ISS）で数年にわたって進めてきた大規模な改修作業の完了まで、あと2回の船外活動を残すのみとなった。この改修により、2030年に予定されている運用終了までの間、周回実験施設に電力が供給され続ける。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "5 days beneath the waves: What it's like to live in an underwater 'space station'",
+      "url": "https://www.space.com/space-exploration/human-spaceflight/5-days-beneath-the-waves-what-its-like-to-live-in-an-underwater-space-station",
+      "summary": "Confined inside a research station 22 feet (7 meters) underwater, Analog Astronaut Commander Dr. Musilova and her crew performed research and maintenance activities like future astronauts on Mars.",
+      "image": "https://cdn.mos.cms.futurecdn.net/WNLaUHkpQnQ3DjY2bvgruD-1920-80.jpg",
+      "published": "2026-10-28T21:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "水深約7メートルの「宇宙ステーション」で5日間、海中生活の実態",
+      "summary_ja": "水深22フィート（7メートル）の研究施設に閉じ込められた状態で、アナログ宇宙飛行士の司令官であるムシロヴァ博士と乗組員は、火星で活動する将来の宇宙飛行士さながらに研究および保守作業を行った。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Sun's outer magnetic field mapped in 3D for the first time",
+      "url": "https://phys.org/news/2026-10-sun-outer-magnetic-field-3d.html",
+      "summary": "A team of researchers has produced the first global, three-dimensional estimates of the sun's magnetic field, including the area beyond the sun's visible edge. This marks a step toward more accurate models of solar activity—and ultimately, better predictions of solar magnetic eruptions, which are the root cause of extr…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/a-triptych-of-an-image.jpg",
+      "published": "2026-10-28T20:10:02+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "太陽の外縁の磁場、世界で初めて3次元マッピング",
+      "summary_ja": "研究チームは、太陽の可視縁の外側の領域を含む、太陽磁場の初の全球的な3次元推定値を作成した。これは太陽活動のより正確なモデル化に向けた一歩であり、ひいては太陽磁気爆発の予測精度の向上につながる。太陽磁気爆発は、極端な…の根本原因である…",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "太陽のコロナ（大気の外層）を含む領域について、磁場の全体像を3次元で推定した初めての成果が報告された。対象は太陽の可視縁の外側にまで及ぶ。コロナの形状は数十年にわたって観測されてきたが、それを形づくる磁場の全体は測定できていなかった。研究はNSF NCAR、NSF NSO、サウスウエスト研究所の共同によるもので、成果は2026年に『The Astrophysical Journal Letters』に掲載された。\n\n今回の手法は新たな観測装置を作ったものではなく、既存の観測データを新しい方法で解析したものだ。使われたのは、NSF NCARが運用するマウナロア太陽観測所（MLSO）の観測装置CoMPとUCoMPのデータで、2016年10月14日と2022年6月1日の観測が対象となった。研究チームは、コロナの2次元磁場マップを初めて作成した先行研究と、IQUD反転と呼ばれる手法を組み合わせた。コロナ中を伝わる波に含まれる情報を取り出すことで、3次元の磁場を再構成している。IQUD反転は理論と統計の両面で有望性が示されていた手法で、今回はそれを実観測に適用した点に意味がある。\n\nこの成果の意義は、太陽活動の予測精度を高める土台になりうる点にある。記事によれば、太陽の磁気的な噴出現象は極端な宇宙天気の根本原因であり、地上の重要インフラに影響を及ぼしうる。磁場の3次元構造が分かれば、噴出を予測するモデルをより現実に近づけられる可能性がある。ただし、初期の磁場マップには限界があり、日常的に使える観測データとして定着するには追加の開発と検証が必要とされている。手法のソフトウェアとデータは公開されており、他の研究者が検証や改良を進められる状態にある。一方で、既存の観測運用パイプラインにはまだ組み込まれていない。研究チームは、次世代のCOSMOコロナグラフ網で標準的なデータ製品になることを目指している。\n\n日本の製造業にとって、この研究がすぐに発注につながるわけではない。ただ、宇宙天気を観測する体制を支える領域には関わりの余地がありそうだ。コロナグラフや偏光計などの光学機器、高感度の検出器、精密な光学部品や筐体、観測データを処理する電子機器などが、観測網を構成する要素になる。今回の研究が示したのは、既存の観測データを解析する手法の進歩によって、観測網の価値を高められるという点である。今後、観測網の整備が進めば、装置の性能を引き出す精密部品や長期運用に耐える素材への需要が生じる可能性がある。太陽観測網の整備に伴う機器の調達動向は、引き続き注視する価値がある。",
+      "body_chars": 1088
+    },
+    {
+      "title": "ISS astronaut will conduct Canada's 1st spacewalk in 7 years on Oct. 29: Watch it live",
+      "url": "https://www.space.com/space-exploration/international-space-station/iss-astronaut-will-conduct-canadas-1st-spacewalk-in-7-years-on-oct-29-watch-it-live",
+      "summary": "Joshua Kutryk will venture outside the International Space Station on Oct. 29, on the first spacewalk by a Canadian astronaut in more than seven years. Here's how to watch it live.",
+      "image": "https://cdn.mos.cms.futurecdn.net/8t5b8rkdDqK6rmfzeVT4bX-1920-80.jpg",
+      "published": "2026-10-28T20:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "カナダ人宇宙飛行士、7年ぶりの船外活動を10月29日に実施へ 生中継の視聴方法も",
+      "summary_ja": "ジョシュア・クトリック宇宙飛行士が10月29日、国際宇宙ステーションの外に出る。7年以上ぶりとなるカナダ人宇宙飛行士による船外活動である。ライブ配信の視聴方法も紹介されている。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "カナダ宇宙庁（CSA）の宇宙飛行士ジョシュア・クトリクと、NASAの宇宙飛行士アニル・メノンが、10月29日（米東部時間午前8時）に国際宇宙ステーション（ISS）で船外活動を行う予定である。カナダ人宇宙飛行士による船外活動は7年ぶりで、作業時間は約6時間45分を見込む。今回の目的はISSの発電能力を高める太陽電池アレイの増設であり、2回に分けて実施される計画だ。\n\nISSの既存の太陽電池アレイは数十年前に設置されたもので、経年による劣化が進んでいる。今回設置されるのはロールアウト型太陽電池アレイ（iROSA）で、既存のアレイの上に重ねて取り付ける方式である。最初の1基は2021年に展開されている。全8基が稼働すると、ISSの電力供給は約160キロワットから約215キロワットへと、およそ30%増える見込みだ。今回の船外活動では7基目と8基目を設置し、2回目は11月5日以降に予定されている。1基あたりは折りたたんだ状態で約3メートル、地上での重さは約340キログラムとされ、NASAは作業の負担を減らすため、アレイの重心を中心に回転させる手順を新たに組んだという。ケーブルの接続作業は太陽光が当たらない時間帯に行う必要があり、ISSが約90分で地球を一周するため、タイミングの管理が重要になる。\n\nこの出来事が宇宙産業に持つ意味は、有人宇宙施設の運用において、新規の打ち上げだけでなく、既存設備の性能を後から引き上げる改修や増設の比重が高まっていることを示す点にあると考えられる。ロボットアームのカナダアーム2が大型の部材を運び、船内の宇宙飛行士が操作を支え、船外の宇宙飛行士が最後の接合を行うという、地上・船内・船外・ロボットが連携する作業の形は、今後の月周回や月面での構造物の組み立てにも応用されていく可能性がある。記事は、来夏に地球周回軌道で有人月着陸船の試験を行うアルテミスIIIにも触れており、その準備が進む中での作業でもある。\n\n日本の製造業の視点では、記事に日本企業の関与は出てこない。ただ、こうした作業を支える部品や素材の需要は想定されると考えられる。展開機構の締結ボルトや結合部、高電圧の電力ケーブルとその接続部品、真空・温度変化・放射線に耐える軽量構造材や表面材などは、宇宙用として要求水準が高く、日本の部品・素材メーカーが精密加工や材料技術を生かせる領域だろう。一方で、宇宙機器の受注は、政府機関や大手メーカーを通じた品質認定を経るのが一般的であり、参入には実績の積み上げが前提になると考えられる。",
+      "body_chars": 1064
+    },
+    {
+      "title": "Meet Apeiron, Virgin Galactic's 1st 'Delta-class' space plane",
+      "url": "https://www.space.com/space-exploration/private-spaceflight/meet-apeiron-virgin-galactics-1st-delta-class-space-plane",
+      "summary": "Virgin Galactic has officially unveiled its first \"Delta-class\" space plane, and announced the results of the worldwide vote to choose its name.",
+      "image": "https://cdn.mos.cms.futurecdn.net/BuDak7cvUqjKEVN6j4V3RC-1920-80.jpg",
+      "published": "2026-10-28T19:28:10+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "ヴァージン・ギャラクティックの初の「デルタ級」宇宙船「アペイロン」を公開",
+      "summary_ja": "ヴァージン・ギャラクティック社は、初の「デルタ級」宇宙船を正式に公開するとともに、名称を選ぶ世界規模の投票の結果を発表した。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "ヴァージン・ギャラクティックは、次世代のデルタ級宇宙機の第1号機となる「アペイロン」を正式に公開した。機体名は従業員から寄せられた276案の中から4案に絞り込み、一般投票で決めた。投票には83カ国の人々が参加し、名称は古代ギリシャ語で「無限」を意味する言葉に由来する。\n\n背景として、同社は前機VSSユニティの運航を止め、後継機の開発に力を注いできた。VSSユニティは2023年夏から2024年にかけて7回の亜軌道飛行を行ったが、アペイロンの開発を優先するため飛行を停止した。今回の公開と同じ日に、アペイロンは母機VMSイヴに懸架された状態でアリゾナ州メサの製造施設からニューメキシコ州のスペースポート・アメリカへ移送される。現地では航空電子機器のソフトウェア作業を終えてから飛行試験に入る計画である。顧客の搭乗は2027年半ばに再開する見通しで、同社の2026年第2四半期の証券提出書類によれば、搭乗券を持ったまま待っている人は約675人にのぼる。座席価格は2014年の約20万ドルから、現在は85万ドルに上がったとされる。\n\nデルタ級の大きな特徴は、1機あたり月に最大8回の飛行を想定している点にある。亜軌道飛行とはいえ、これは機体を繰り返し飛ばす運用である。そのため、機体の耐久性や、飛行ごとの点検・整備の手間、部品の交換周期が事業の採算を左右すると考えられる。単発の打ち上げ能力を競う段階から、繰り返し使う機体をいかに効率よく回せるかが問われる段階へ、業界の重心が移りつつある可能性がある。座席価格の大幅な上昇は需要の強さを示すが、同時に機体コストを回収することが急務であることもうかがわせる。同じく有人の亜軌道飛行を手がけるブルー・オリジンが今年、飛行を一時停止している事実からも、顧客向けの安定運航が業界全体にとって容易ではないことが分かる。\n\n日本の製造業の視点では、この動きは部品や素材への需要の出方が変わりうることを示している。機体の構造材や耐熱・軽量素材、航空電子機器に組み込まれる電子部品、与圧や座席まわりの精密部品などは、新造機の製造だけでなく、高頻度運用に伴う整備や更新の需要も生むと考えられる。ただし、今回の記事が伝えているのは機体の公開と運用計画であり、具体的な調達先や仕様は示されていない。国内のサプライヤーが関わるには、量産と繰り返し運用に耐える品質管理や、航空宇宙分野の認証要求に応えられる体制づくりが前提になるだろう。",
+      "body_chars": 1028
+    },
+    {
+      "title": "The last, best hope for space tourism just rolled onto a runway in Arizona",
+      "url": "https://arstechnica.com/space/2026/10/the-last-best-hope-for-space-tourism-just-rolled-onto-a-runway-in-arizona/",
+      "summary": "It has been nearly a year since any space tourism flights occurred.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/VIRGIN-GALACTIC_CORDWELL_10232026_APEIRON_STILLS-SELECT-1653.jpg",
+      "published": "2026-10-28T19:20:36Z",
+      "source": "Arstechnica",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "宇宙旅行の「最後にして最良の希望」、アリゾナの滑走路に登場",
+      "summary_ja": "宇宙旅行の飛行が行われなくなってから、ほぼ1年が経過した。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Artemis III SLS Core Stage Joins Boosters at Kennedy",
+      "url": "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy/",
+      "summary": "NASA’s Artemis III SLS (Space Launch System) core stage is integrated alongside the twin solid rocket boosters on Oct. 28 inside the Vehicle Assembly Building’s High Bay 3 at NASA’s Kennedy Space Center in Florida. Technicians lifted the 212-foot rocket stage from the facility’s High Bay 2 using a one-of-a kind lifting…",
+      "image": "https://images-assets.nasa.gov/image/KSC-20261022-PH-SNC01_0001/KSC-20261022-PH-SNC01_0001~large.jpg",
+      "published": "2026-10-28T18:59:44Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "アルテミスIII用SLSのコアステージ、ケネディ宇宙センターでブースターと結合",
+      "summary_ja": "NASAのアルテミスIII用SLS（スペース・ローンチ・システム）のコアステージは、10月28日にフロリダ州のケネディ宇宙センターの車両組立棟（VAB）内の高層ベイ3で、双子の固体ロケットブースターと結合された。技術者らは、全長212フィート（約65メートル）のロケットステージを、施設の高層ベイ2から同施設ならではの特殊な吊り上げ装置を用いて持ち上げた。…",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Betelgeuse Is Disturbed By Its Companion Star",
+      "url": "https://www.universetoday.com/articles/betelgeuse-is-disturbed-by-its-companion-star",
+      "summary": "Betelgeuse has a close-orbiting companion that disturbs the red supergiant into an egg-like shape. New observations show how the two stars interact and how this could help explain the varying brightness of Betelgeuse.",
+      "image": null,
+      "published": "2026-10-28T18:34:09+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "ベテルギウス、伴星の影響で形状が乱れていることが判明",
+      "summary_ja": "ベテルギウスには近接軌道を回る伴星があり、赤色超巨星を卵形に歪めている。新たな観測により、二つの星がどのように相互作用しているかが明らかになった。この相互作用は、ベテルギウスの明るさが変動する理由の説明につながる可能性がある。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Supersonic waves could explain the strange orbits of hot Jupiters and Neptunes",
+      "url": "https://phys.org/news/2026-10-supersonic-strange-orbits-hot-jupiters.html",
+      "summary": "Using advanced new simulations, a team of astronomers in the U.S. has developed a promising new theory for how giant, gaseous exoplanets migrate into stiflingly close orbits around their host stars. Led by J. J. Zanazzi at The Pennsylvania State University, the team showed how both massive \"hot Jupiters\" and smaller, N…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/supersonic-waves-could.jpg",
+      "published": "2026-10-28T18:20:06+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "超音速波が、ホット・ジュピターや海王星型惑星の奇妙な軌道を説明できる可能性",
+      "summary_ja": "高度な新シミュレーションを用いて、米国の天文学者チームが、巨大なガス状の系外惑星が恒星の極めて近い軌道へと移動する仕組みについて、有望な新理論を提唱した。ペンシルベニア州立大学のJ・J・ザナッツィ氏が率いるチームは、大質量の「ホット・ジュピター」と、より小型で「N…",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "米国の天文学者チームが、ホット・ジュピターや海王星サイズの巨大ガス惑星が、遠方の楕円軌道から恒星のごく近くへ移動する仕組みについて新たな説明を提案した。鍵となるのは、惑星の外層大気で起きる超音速の衝撃波である。\n\nこれまで天文学では、こうした惑星は誕生時に恒星から遠く離れた細長い楕円軌道を回っていたと考えられてきた。恒星の潮汐力によって軌道のエネルギーが失われるにつれ、惑星は徐々に内側へ移動し、ほぼ円形の安定軌道に落ち着いたとされる。ただ、軌道の形が変わるには惑星自身が膨大な軌道エネルギーを吸収する必要がある。元記事によれば、そのエネルギーが惑星の内部でどのような過程を経て消費されるのかは、これまで十分に検討されてこなかった。\n\n研究チームは、ペンシルベニア州立大学のJ・J・ザナッツィ氏らが、ハーバード大学のモーガン・マクロード氏の手による巨大惑星の移動シミュレーションを詳しく調べた。楕円軌道の最近接点では恒星の重力を強く受け、惑星の全体を横切る「表面重力波」が生じる。大気の薄い外層では密度が急に下がるため、この波が気体中の音速を超えて衝撃波となり、波のエネルギーが熱へと変わる。そのエネルギーは惑星の軌道から引き出されるため、衝撃が繰り返されるたびに軌道はエネルギーの低い、より円に近い形へ変化していく。シミュレーションでは、衝撃が大気のどの深さで起きるかによって結末が分かれた。浅い衝撃では惑星の質量が保たれ、深い衝撃では気体の外層が吹き飛ばされて核だけが残る。研究チームは、後者の過程が地球の数十倍の質量を持ち、極めて近い軌道を回る高密度の岩石惑星を生んだ可能性があると見ている。\n\nさらに研究チームは、軌道が引き伸ばされる速さの違いが観測される惑星の分布を説明できるとしている。ゆっくり引き伸ばされる場合は、衝撃波が早い段階で軌道を円に近づけ、ホット・ジュピターの集中と海王星リッジが形成されると考えられる。一方、速く引き伸ばされると、惑星は衝撃波が効く前に恒星へ近づきすぎ、近日点を通過するたびに気体を剥ぎ取られる可能性がある。この見方は、「海王星砂漠」の境界が気体の剥離が始まる距離とほぼ一致する点とも整合する。ただし、これは理論モデルに基づく提案にとどまり、今後の観測で予測が裏付けられるかどうかが課題となる。\n\nこのような基礎天文学の成果が、製造業のサプライチェーンに直接影響することは考えにくい。ただ研究チームは、こうした気体の剥離を観測できる望遠鏡の検討を進めているとしており、観測装置への需要が将来的に生まれる可能性はある。日本の部品・装置メーカーにとっては、高感度の検出器や光学部品、精密な制御機器などが観測機器の分野で関わりうる領域として考えられる。ただし現時点では理論研究の段階であり、具体的な受注につながるかどうかは未確定である。",
+      "body_chars": 1187
+    },
+    {
+      "title": "Ancient Comets Carried Organic Compounds, But They Didn't Survive Crashing Into Earth",
+      "url": "https://www.universetoday.com/articles/ancient-comets-carried-organic-compounds-but-they-didnt-survive-crashing-into-earth",
+      "summary": "Perhaps the biggest mystery we face is life on Earth started. One hypothesis says that comets, which are known to carry important chemicals in abiogenesis, delivered these compounds to Earth, leading to the appearance of life. But new research concludes that that is highly unlikely.",
+      "image": null,
+      "published": "2026-10-28T18:04:26+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "太古の彗星は有機化合物を運んだが、地球衝突時に生き残れなかったことが判明",
+      "summary_ja": "地球上で生命がどのように始まったのかは、我々が直面する最大の謎の一つかもしれない。生命の起源において重要な化学物質を運ぶことが知られている彗星が、それらの化合物を地球に届け、生命の出現につながったという仮説がある。しかし新たな研究は、その可能性は極めて低いと結論づけている。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "NASA University Challenge Ignites Trajectory of Drone Entrepreneur",
+      "url": "https://www.nasa.gov/aeronautics/nasa-challenge-drone-entrepreneur/",
+      "summary": "Five years ago, Gavin Gardner was a Michigan State University engineering student researching next-generation drone technology as part of a NASA grant. Garder expected the research to be demanding – but he was surprised that navigating the financial side of the work presented an even greater challenge. Although Gardner…",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/usrc-gardner-ag3-team.jpg",
+      "published": "2026-10-28T18:00:28Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASAの大学向けチャレンジが、ドローン起業家の歩みを後押し",
+      "summary_ja": "5年前、ギャビン・ガードナーはミシガン州立大学の工学部生として、NASAの助成金を受けた次世代ドローン技術の研究に取り組んでいた。研究が厳しいものになるとは予想していたが、研究の財務面を進めることがさらに大きな課題になるとは思っていなかったという。ガードナーは……",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "NASA Selects 19 New Citizen Science Proposals in 2026",
+      "url": "https://science.nasa.gov/get-involved/citizen-science/nasa-selects-19-new-citizen-science-proposals-in-2026/",
+      "summary": "So far, 2026 has seen a flood of successes for volunteers who do NASA science, exemplifying NASA’s commitment to gold-standard science—transparent, reproducible and intrinsically collaborative. The Backyard Worlds: Planet 9 project announced that their project volunteers have now discovered most of the known brown dwar…",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/citizen-science/highlights/2026/NASA_citizen_science_projects_2026.jpg",
+      "published": "2026-10-28T16:25:29Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "NASA、2026年に新たな市民科学の提案19件を選定",
+      "summary_ja": "2026年はNASAの科学活動に参加するボランティアにとって成功が相次いだ年となっている。NASAが掲げる、透明性があり再現可能で本質的に協働的な「最高水準の科学」への取り組みを体現するものだ。「Backyard Worlds: Planet 9」プロジェクトは、ボランティアらが既知の褐色矮星の大部分を発見したと発表した。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "NASAの科学ミッション本部（SMD）は、2026年に市民科学（ボランティアが研究に参加する仕組み）の新たな提案19件を選定したと発表した。そのうち12件は「市民科学シード資金プログラム（CSSFP-25）」の採択分で、市民科学の手法を使う専門家の裾野を広げることを目的としている。対象は天体物理学と太陽物理学・宇宙天気分野（ヘリオフィジックス）に及ぶ。記事はこの選定を、NASAが市民科学を再現性と透明性のある科学の手法として重視していることの表れと位置づけている。\n\n背景として、記事は2026年がすでに市民科学の成果が相次いだ年であることを挙げている。Backyard Worlds: Planet 9のボランティアは既知の褐色矮星のほとんどを発見し、NASAの助成を受けるZooniverseプラットフォームでは分類作業が10億件に達したという。さらに、「超知能（SI）」と記事が呼ぶ新しい技術を使い、ボランティアの作業を補助・拡張するプロジェクトが複数立ち上がっている。データツールの作成や論文執筆に関わるボランティアも過去になく増えたとされる。観測データが増え続ける中で、人による分類と自動化を組み合わせる流れが強まっていると考えられる。\n\n採択案の内容を見ると、扱うデータの規模と性格がわかる。SPHEREx望遠鏡の全天データから若い星団の中の自由浮遊惑星や褐色矮星を探す案、ナンシー・グレース・ローマン宇宙望遠鏡のデータから星の光の曲がり方で系外惑星を見つける案、磁気圏マルチスケール（MMS）衛星群のデータから宇宙天気に関わる前面過渡現象を探す案などがある。宇宙天気の分野では、参加者が自ら低コストの磁力計をアラスカに設置して観測を続ける提案もある。機械的な処理だけでは拾いにくい微妙な変化を人が見分ける役割は、今後も一定程度残ると考えられる。\n\n製造業の視点では、こうした取り組みは観測機器の裾野が広がることを意味する可能性がある。低コストで屋外に設置できる磁力計のような機材は、センサー、データロガー、防水筐体、電源、通信モジュールなどの部品需要につながりうる。記事は機材の仕様や調達先には触れていないため、これは一般論としての推測である。GPS障害や放射線リスクの予測は測位や宇宙天気監視に関わる国内の部品メーカーにとっても関心の対象になりうるが、記事は採択19件の全てを示していない。個別の仕様や実施体制は、NASAの一次資料で確認する必要がある。",
+      "body_chars": 1037
+    },
+    {
+      "title": "China's secretive space plane caught on camera in incredible new photo released by US military",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/chinas-secretive-space-plane-caught-on-camera-in-incredible-new-photo-released-by-us-military",
+      "summary": "A U.S. military intelligence agency has released an incredible new photograph of China's secretive space plane, showing it docked to another spacecraft in orbit.",
+      "image": "https://cdn.mos.cms.futurecdn.net/JpmpruDZZZWpvqmMs3f8F7-1920-80.jpg",
+      "published": "2026-10-28T15:50:04+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "米軍が公開した新写真に、中国の謎の宇宙飛行機が写る",
+      "summary_ja": "米軍の情報機関が、中国の謎に包まれた宇宙飛行機の新たな写真を公開した。写真には、軌道上で別の宇宙船とドッキングしている様子が写っている。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "米軍の情報機関が、中国の無人宇宙往還機「シェンロン」が別の人工衛星にドッキングしている様子を捉えた写真を公開した。写真は2024年に、ヴァンター社の衛星WorldView 3が約90キロメートルの距離から撮影したもので、地上からの観測では得られなかった細部まで写っている。画像では、太陽電池パネルを展開した別の衛星と結合したシェンロンの姿と、開いたままのペイロード扉を確認できる。\n\nシェンロンは今回で4回目のミッションにあたり、2026年2月に打ち上げられた。中国の宇宙当局は、将来の宇宙利用をより手軽で安価にする往復輸送の方法につながる技術を試験していると説明している。ただし過去にも、軌道上で別の物体を放出したことが観測されている。2026年6月には米国の宇宙情報企業LeoLabsが、宇宙機の近くで新たな物体を検出し、シェンロンから放出されたものと高い確度で評価したと発表した。2023年の2回目のミッションでも、物体の放出と、二つの宇宙機が接近して操作を行うランデブー・近接運用の可能性が指摘されている。\n\n今回の写真で分かるのは外形と位置関係が中心で、ドッキング先の衛星の正体も、扉の内側に何を積んでいたのかも明らかになっていない。扉の開閉は物体の放出や物資の出し入れと関係している可能性があるが、目的を断定できる材料はない。軍事宇宙の運用は、もともと公開される情報が少ない分野だ。米国のX-37Bも同様に、2025年に公開された軌道上の写真や2023年に描かれた想像図が、能力の一部だけを示す形になっている。米中が新たな宇宙開発競争で主導権を争う中、こうした限られた画像の公開は、能力の一端を見せて存在感を示す手段として使われていると考えられる。\n\n製造業の視点では、今回の写真から部品レベルの情報を直接読み取ることは難しい。ただ、宇宙機が別の衛星と結合し、扉を開閉し、物体を分離するといった動作には、結合・展開・開閉・分離などの機構に高精度の機械要素が使われていると考えられる。こうした機構は、軌道上で繰り返し動作するため、真空や大きな温度差の中での耐久性や位置合わせの精度が求められ、日本の部品・素材メーカーが得意とする精密加工や材料技術と重なる分野だと考えられる。ただし今回の事例は中国の軍事色を帯びた計画であり、日本企業が直接関わる可能性は小さいと見るのが妥当だ。むしろ公開情報から、軌道上で動く機械にどのような性能が求められるかを読み取り、自社技術の応用先を探ることに実務上の意味がある。",
+      "body_chars": 1056
+    },
+    {
+      "title": "NASA systems engineering team details Habitable Worlds Observatory mission architecture",
+      "url": "https://phys.org/news/2026-10-nasa-team-habitable-worlds-observatory.html",
+      "summary": "Finding an Earth-like world beyond the solar system is the holy grail of exoplanet research, and the field has seen remarkable technological advances in detecting and studying exoplanets since the first confirmed exoplanet around a sun-like star was discovered in 1995. These advances include ground- and space-based tel…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/nasa-systems-engineeri.jpg",
+      "published": "2026-10-28T15:40:11+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "NASAのシステムエンジニアリングチーム、ハビタブル・ワールズ観測衛星のミッション構成を詳細に発表",
+      "summary_ja": "太陽系外で地球に似た惑星を見つけることは、系外惑星研究における究極の目標とされている。太陽に似た恒星を周回する系外惑星の最初の確認が1995年に行われて以降、系外惑星の検出と観測の技術は目覚ましく進歩してきた。その進歩には、地上や宇宙に設置された望遠鏡などが含まれる。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "NASAのシステムエンジニアリングチームが、系外惑星を直接撮像することを目指す「Habitable Worlds Observatory（HWO）」のミッション構成案を詳しく示した。2026年6月に学術誌で公表された研究で、検討対象は設計の初期段階にあたる最初の3案である。\n\n地球に似た惑星を太陽のような恒星の周りに見つけ、直接撮像することは系外惑星研究の中心的な目標である。1995年に太陽型恒星を回る系外惑星が初めて確認されて以来、地上望遠鏡やジェームズ・ウェッブ宇宙望遠鏡などの技術は大きく進んだ。それでも地球型惑星の直接撮像は難しく、惑星が恒星に比べて極めて暗く、空で恒星のごく近くに見えるためである。HWOは構想から約10年が経過しているが、打ち上げは2040年代が見込まれている。今回の研究では、科学目標と工学上の要求を両立させるため「探索的解析ケース（EAC）」と呼ばれる設計案を用い、望遠鏡の形式、口径、そして光を遮る部分が視野内にあるオン軸か、視野外に置くオフ軸かを比較した。EAC1は内接6m・外接7.2mのオフ軸、EAC2は直径6mの円形鏡のオフ軸、EAC3は外径8mのオン軸である。研究チームは最終的にオフ軸設計を有利と評価し、集光面積を確保するため大口径化を重視した。HWOはジェームズ・ウェッブ宇宙望遠鏡の後継として主力の宇宙望遠鏡になることも想定されている。\n\n温度特性も設計上の重要な検討項目として挙げられた。温度は集光性能や望遠鏡全体の運用に影響し、とくに恒星の光を遮って惑星を見えるようにするコロナグラフ装置との関係が深い。注目すべきは、設計検討が複数のNASAセンターとJPLにまたがるチームで行われた点である。チームはJWSTの知見を基にしたモデル駆動の手法で、パラメトリックな設計検討ツールを開発した。さらにそのモデルを産業界のパートナーと共有し、技術の成熟化や独立したアーキテクチャ検討を支援している。宇宙産業にとって、これは機器メーカーが完成間際に要求を受け取るのではなく、設計の早い段階からモデルを前提に部品や装置の仕様を詰めていく流れが強まることを意味すると考えられる。\n\n日本の製造業や部品サプライヤーにとって、こうした初期設計の段階は関与の余地がある機会になりうる。大型鏡の形状や配置、その製造や支持に関わる部品、温度変化への対策に使う素材、コロナグラフ周辺の精密部品などは、今後の検討で需要が生じる可能性がある。ただし記事は具体的な調達計画や発注先に触れていないため、どの部品が実際に求められるかは今後の公表を待つ必要がある。現時点で現実的な準備としては、モデルを用いた性能評価に対応できる解析力を身につけ、温度や寸法の変化を定量的に示せる体制を整えておくことが考えられる。",
+      "body_chars": 1166
+    },
+    {
+      "title": "2024 solar storm triggered ultrarelativistic electrons inside Earth's 'impenetrable barrier'",
+      "url": "https://phys.org/news/2026-10-solar-storm-triggered-ultrarelativistic-electrons.html",
+      "summary": "The Earth is surrounded by an invisible barrier that was thought to prevent highly energetic electrons from reaching closer to our planet. But in 2024, Japan's Arase space probe detected these electrons well inside the barrier. Now, research led by Nagoya University has found evidence that the electrons were accelerate…",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/2024-solar-storm-trigg.jpg",
+      "published": "2026-10-28T15:40:07+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "2024年の太陽嵐、地球の「不可侵の壁」内部で超相対論的電子を発生させる",
+      "summary_ja": "地球は、高エネルギーの電子が地球に近づくのを妨げると考えられてきた目に見えない壁に囲まれている。しかし2024年、日本の宇宙探査機「あらせ」が、その壁のはるか内側でこれらの電子を観測した。名古屋大学が主導した研究により、電子が加速された証拠が見つかったという。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_ja": "2024年5月の巨大磁気嵐の最中、日本の宇宙探査機あらせが、地球を取り巻く放射線帯の内側で、ほぼ光速で動く高エネルギー電子を観測した。これまで電子が入り込めないと考えられてきた領域での観測であり、一部の電子は3メガ電子ボルトを超えていた。このエネルギーは、衛星の遮蔽を貫通しうる水準である。この嵐では北海道から兵庫県までオーロラが見えるほど、太陽活動の影響が地上にまで及んだ。\n\nこの「越えられない壁」は2014年に初めて見つかったが、起源は完全には解明されていない。候補として、プラズマ圏ヒスと呼ばれる低周波の電波や、潜水艦との通信に使われる超低周波の人工電波が、電子を大気側へ散乱させて境界の形成に関わる可能性が挙げられている。今回、名古屋大学の三好由純教授らは、複数回の軌道観測から電子の位相空間密度を解析し、壁の内側付近にピークが生じて時間とともに強まることを示した。これは外側の放射線帯から流れ込んだのではなく、その場で電子が加速されたことを示す証拠だと研究チームは説明している。加速の要因としては、周波数が上昇しながら鳴く、コーラス波と呼ばれる電磁波が考えられる。\n\n嵐によってプラズマ圏が大きく削られ、その外縁が地球近くまで後退したことで、壁の周辺は低密度のプラズマに覆われた。このため高温の電子がより内側まで入り込み、コーラス波を生み出しやすくなったと考えられる。さらに、通常は約2日で回復するプラズマ密度が、今回は約4.3〜4.7日かけて嵐の前の半分以上まで戻った。この長く続いた低密度の状態が、壁の内側での電子の加速を持続させた可能性がある。宇宙産業にとって重要なのは、従来は比較的守られた領域と見なされてきた場所でも、極端な宇宙天気の下では放射線が大きく増強されうると示された点である。衛星や有人宇宙機の放射線設計で、軌道の位置による安全の前提を固定的に扱うことへの再考を促す知見だといえる。研究者も、極端な条件下で電子がどう振る舞うかを理解し予測することの重要性を強調している。\n\n日本の製造業、とりわけ部品や素材を手がけるサプライヤーにとっては、耐放射線性の電子部品や遮蔽材、あるいはそれらの試験・評価条件の設定に関わる機会として読める。将来的には、極端な放射線環境を想定した設計上の余裕や、長期間の低密度状態を模擬する試験が求められる可能性もある。ただし今回の知見は一つの嵐の観測に基づいており、他の事例で同様の現象が起きるかどうかは今後の検証を待つ必要がある。その検証の過程で、どの条件の試験が実際に要るのかを見極めることが、サプライヤーにとっての次の課題になるだろう。",
+      "body_chars": 1100
+    },
+    {
+      "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
+      "url": "https://www.universetoday.com/articles/the-rubin-observatory-finds-its-first-dwarf-planet-candidate",
+      "summary": "The Vera Rubin Observatory found a distant Solar System object before its decade-long Legacy Survey of Space and Time even got started. The object is a dwarf planet candidate named 2026 ED138, and if confirmed, it will be one of the largest dwarf planets beyond Neptune. It may be up to 1500 km in diameter.",
+      "image": null,
+      "published": "2026-10-28T15:34:33+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "ルービン天文台、最初の準惑星候補を発見",
+      "summary_ja": "ヴェラ・C・ルービン天文台は、10年間にわたる「宇宙の遺産サーベイ」が本格的に始まる前に、太陽系の遠方天体を発見した。この天体は「2026 ED138」と名付けられた準惑星候補で、確認されれば海王星より外側にある最大級の準惑星の一つになるという。直径は最大で1500キロメートルに達する可能性があるとされる。",
+      "translated_ja": true,
+      "title_ja_broken": false,
+      "body_skip": "no_body"
+    },
+    {
+      "title": "Webb Sees Turbulent Star Nursery",
+      "url": "https://www.nasa.gov/image-article/webb-sees-turbulent-star-nursery/",
+      "summary": "In this Webb image released on Oct. 22, 2026, we see a turbulent cauldron of star formation filled with dense clumps of gas. This region is named N159 and is located 161,000 light-years away in the Large Magellanic Cloud, one of the satellite galaxies orbiting the Milky Way galaxy. This region has a lower metallicity […",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/55604475252-31d25bf2e0-o.jpg",
+      "published": "2026-10-28T15:33:10Z",
+      "source": "NASA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "ウェッブ望遠鏡、乱流する星の誕生領域を捉える",
+      "summary_ja": "2026年10月22日に公開されたウェッブ望遠鏡の画像には、高密度のガスの塊に満ちた、乱流状態の星形成の大きな渦が写っている。この領域は「N159」と名付けられ、天の川銀河の伴銀河の一つである大マゼラン雲の中、16万1000光年の距離にある。この領域は金属量が低く……",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "The final ‘Dune: Part Three’ trailer reignites war on Arrakis and leaves us with more questions than answers",
+      "url": "https://www.space.com/entertainment/space-movies-shows/the-final-dune-part-three-trailer-reignites-war-on-arrakis-and-leaves-us-with-more-questions-than-answers",
+      "summary": "The spoilerific final look at Denis Villeneuve's third and final sci-fi epic is loaded with action and drama that set it apart from Dune: Messiah's pages.",
+      "image": "https://cdn.mos.cms.futurecdn.net/fpJh3YVczoGzvfCVhR2QLf-1920-80.jpg",
+      "published": "2026-10-28T15:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "映画『デューン 第三部』最終予告編、アラキスでの戦いが再燃 答えより多くの疑問を残す",
+      "summary_ja": "デニス・ヴィルヌーヴ監督によるSF大作三部作の最終章について、結末に触れる内容を含む最新の映像が公開された。アクションとドラマが盛り込まれ、『デューン・メシア』の原作とは異なる独自の作品性を感じさせる。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Flexell Space and Satoro Agree to Collaborate on In-Orbit Demonstration of Next-Generation Space Solar Cells",
+      "url": "https://spacenews.com/flexell-space-and-satoro-agree-to-collaborate-on-in-orbit-demonstration-of-next-generation-space-solar-cells/",
+      "summary": "– Two demonstration missions planned aboard SpaceX Falcon 9, one each in 2027 and 2028 – Satoro to provide “Satellite-as-a-service” solution; Flexell Space to supply solar cells and test modules […] The post Flexell Space and Satoro Agree to Collaborate on In-Orbit Demonstration of Next-Generation Space Solar Cells app…",
+      "image": "https://i0.wp.com/spacenews.com/wp-content/uploads/2026/10/LOGO_FLEXELLBlack.png?fit=1024%2C1024&ssl=1",
+      "published": "2026-10-28T14:43:08Z",
+      "source": "SpaceNews",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "フレクセル・スペースとサトロ、次世代宇宙用太陽電池の軌道上実証で協業に合意",
+      "summary_ja": "– 2027年と2028年にそれぞれ1回ずつ、スペースXのファルコン9に搭載して実証ミッションを実施する計画 – サトロは「サテライト・アズ・ア・サービス」を提供し、フレクセル・スペースは太陽電池とテストモジュールを供給する…",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "The Leap Second is History. Long Live the 'Leap Hour'",
+      "url": "https://www.universetoday.com/articles/the-leap-second-is-history-long-live-the-leap-hour",
+      "summary": "Time and time-keeping is a hot topic once again, as many of us ‘fall back’ to Standard Time this coming weekend. Another time-related dilemma was also addressed this month, when a key conference did away with the leap second and the alignment of Universal Time (UT1) with Universal Coordinated Time (UTC). Somewhere off…",
+      "image": null,
+      "published": "2026-10-28T14:02:00+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "うるう秒は廃止へ 今後は「うるう時」の時代に",
+      "summary_ja": "今週末は多くの人が標準時へ戻すなど、時刻と時間管理が再び注目を集めている。今月は、主要な国際会議で、うるう秒の廃止と世界時（UT1）と協定世界時（UTC）の整合の取り扱いについても決定された。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Satellites watch an escaping Antarctic iceberg | Space photo of the day for Oct. 28, 2026",
+      "url": "https://www.space.com/astronomy/earth/satellites-watch-an-escaping-antarctic-iceberg-space-photo-of-the-day-for-oct-28-2026",
+      "summary": "Iceberg A-81 escaping the Weddell Sea and drifting near the edge of South Georgia's underwater shelf.",
+      "image": "https://cdn.mos.cms.futurecdn.net/WTJygm6KpeTPFvacZfEAe-1920-80.png",
+      "published": "2026-10-28T14:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "衛星が捉えた、南極から離れつつある氷山 2026年10月28日の宇宙写真",
+      "summary_ja": "ウェッデル海を離れ、サウスジョージア島の海底棚の縁付近を漂う氷山「A-81」。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Glowing Salt Crystals Tracked Radiation Aboard Artemis I",
+      "url": "https://www.universetoday.com/articles/glowing-salt-crystals-tracked-radiation-aboard-artemis-i",
+      "summary": "There weren’t any humans strapped into the bucket seats of the Orion spacecraft for the Artemis I mission. But there were two anthropomorphic mannequins made to mimic human bone and soft tissue, but also equipped with hundreds of radiation sensors spread throughout their body as part of the Matroshka AstroRad Radiation…",
+      "image": null,
+      "published": "2026-10-28T13:20:49+00:00",
+      "source": "Universe Today",
+      "source_id": "universetoday",
+      "lang": "en",
+      "title_ja": "発光する塩の結晶が、アルテミスI号内部の放射線を記録",
+      "summary_ja": "アルテミスI号ミッションでオリオン宇宙船の座席に人間は座っていなかった。代わりに、人間の骨と軟部組織を模した2体の人体模型が搭載され、体内の数百個の放射線センサーが、マトルシュカ・アストロラド放射線実験の一部として配置されていた。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Shield Space Launches UK Space Superiority Coalition",
+      "url": "https://payloadspace.com/shield-space-launches-uk-space-superiority-coalition/",
+      "summary": "The UK Space Superiority Coalition brings together space companies across the UK in an effort to build a space-based carrier strike force. The post Shield Space Launches UK Space Superiority Coalition appeared first on Payload .",
+      "image": null,
+      "published": "2026-10-28T13:00:00+00:00",
+      "source": "Payload",
+      "source_id": "payloadspace",
+      "lang": "en",
+      "title_ja": "シールド・スペース、英国の宇宙優勢連合を発足",
+      "summary_ja": "英国宇宙優勢連合は、宇宙空間に宇宙航空母艦打撃部隊を構築する取り組みとして、英国内の宇宙企業を結集させたものである。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Exclusive: Rendezvous Robotics Raises $20M to Develop Self-Assembling Spacecraft",
+      "url": "https://payloadspace.com/exclusive-rendezvous-robotics-raises-20m-to-develop-self-assembling-spacecraft/",
+      "summary": "Rendezvous Robotics is developing technology to allow future satellites to launch in pieces that can self-assemble in space. The post Exclusive: Rendezvous Robotics Raises $20M to Develop Self-Assembling Spacecraft appeared first on Payload .",
+      "image": null,
+      "published": "2026-10-28T13:00:00+00:00",
+      "source": "Payload",
+      "source_id": "payloadspace",
+      "lang": "en",
+      "title_ja": "独占：ランデブー・ロボティクス、自己組み立て型宇宙機の開発で2000万ドルを調達",
+      "summary_ja": "ランデブー・ロボティクスは、将来の人工衛星を複数の部品に分けて打ち上げ、宇宙空間で自己組み立てさせる技術を開発している。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Astronomers found a mysterious object beyond Neptune, and it could be a new dwarf planet",
+      "url": "https://www.space.com/astronomy/dwarf-planets/astronomers-found-a-mysterious-object-beyond-neptune-and-it-could-be-a-new-dwarf-planet",
+      "summary": "The Vera Rubin Observatory has discovered a suspected dwarf planet beyond Neptune's orbit. If confirmed, it would be the sixth known dwarf planet in our solar system.",
+      "image": "https://cdn.mos.cms.futurecdn.net/5UR38v6ujvUPE5EBEzvts3-1920-80.jpg",
+      "published": "2026-10-28T12:58:18+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "海王星の彼方で謎の天体を発見、新たな準惑星の可能性",
+      "summary_ja": "ヴェラ・ルービン天文台は、海王星軌道の外側で準惑星の可能性がある天体を発見した。確認されれば、太陽系で6番目に知られる準惑星となる。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Tesla’s ‘Emergency Drive Away’ function gets its first use in the real world",
+      "url": "https://www.teslarati.com/tesla-emergency-drive-away-function-first-use-real-world/",
+      "summary": "Tesla’s launch of the “Emergency Drive Away” function a few months back offered owners a safe option to evacuate an area if they were in reasonable danger. The function finally got its first use in the real world, but it appears it was by mistake. A video shared by u/Joshalander in the r/TeslaLounge subreddit recorded…",
+      "image": null,
+      "published": "2026-10-28T12:34:09+00:00",
+      "source": "Teslarati",
+      "source_id": "teslarati",
+      "lang": "en",
+      "title_ja": "テスラの「緊急ドライブアウェイ」機能、実環境で初めて作動",
+      "summary_ja": "テスラが数か月前に導入した「緊急ドライブアウェイ」機能は、危険が迫った場合にオーナーが安全に地域から避難できる手段として提供されたものである。この機能が実環境で初めて作動したが、誤作動によるものだとみられる。r/TeslaLoungeサブレディットのu/Joshalanderが共有した動画には、…",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "ブラックホールの「分裂」はあり得るのか？ もしも見つかれば重力をより深く理解する手がかりに",
+      "url": "https://sorae.info/astronomy/20261028-black-hole-split-in-two.html",
+      "summary": "フランス国立科学研究センターのGiacomo Cacciapaglia氏を筆頭とする研究チームは、ブラックホールが“分裂”する条件を理論的に調べた研究成果を発表しました。ブラックホールは合体時に放出された重力波が観測され…",
+      "image": null,
+      "published": "2026-10-28T12:30:56+00:00",
+      "source": "sorae",
+      "source_id": "sorae",
+      "lang": "ja"
+    },
+    {
+      "title": "Virgin Galactic is finally revealing its new Delta-class spaceship this week",
+      "url": "https://www.space.com/space-exploration/private-spaceflight/virgin-galactic-is-finally-revealing-its-new-delta-class-spaceship-this-week",
+      "summary": "Virgin Galactic will unveil its first Delta-class spaceship on Wednesday (Oct. 28), revealing a name chosen by public vote before transporting the spacecraft from Arizona to Spaceport America in New Mexico.",
+      "image": "https://cdn.mos.cms.futurecdn.net/vuFrKMvC6jeb9yBXDmRXhd-1920-80.jpg",
+      "published": "2026-10-28T12:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "ヴァージン・ギャラクティック、今週デルタ級宇宙船を初公開",
+      "summary_ja": "ヴァージン・ギャラクティックは10月28日（水）に初のデルタ級宇宙船を公開する。公募投票で選ばれた名称を明らかにした後、同機をアリゾナ州からニューメキシコ州のスペースポート・アメリカへ輸送する。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "ゴッホの「星月夜」は実際の夜空を描いていた。1889年7月22日の景色とほぼ一致",
+      "url": "https://karapaia.com/archives/635045.html",
+      "summary": "オランダ出身の画家「ファン・ゴッホ」は亡くなる約1年前、フランスの精神病院で療養中に「星月夜」を描き、後に彼の代表作となった。その幻想的な景色は、長年ゴッホの頭の中で作り上げられた空想の産物だと考えられてきたが、天文学研究チームによる新たな検証で、絵画の月や星の配置が…",
+      "image": null,
+      "published": "2026-10-28T11:30:00+00:00",
+      "source": "カラパイア",
+      "source_id": "karapaia",
+      "lang": "ja"
+    },
+    {
+      "title": "Comets probably didn't seed life on Earth after all, new study suggests",
+      "url": "https://phys.org/news/2026-10-comets-didnt-seed-life-earth.html",
+      "summary": "The theory that comets delivered the molecular building blocks for life on Earth is a long-standing one, since comets are known to carry many of these molecules. However, a new study challenges this idea.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/comets-probably-didnt.jpg",
+      "published": "2026-10-28T10:00:10+00:00",
+      "source": "Phys.org",
+      "source_id": "phys_space",
+      "lang": "en",
+      "title_ja": "彗星が地球に生命をもたらしたとは限らない、新研究が示唆",
+      "summary_ja": "彗星が地球の生命の材料となる分子を運んだという説は長年唱えられてきた。彗星が多くの分子を含むことは知られているためである。しかし、新たな研究はこの考えに疑問を投げかけている。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
+    {
+      "title": "Black holes can split in two — but only if they spin at extreme speeds",
+      "url": "https://www.space.com/astronomy/black-holes/black-holes-can-split-in-two-but-only-if-they-spin-at-extreme-speeds",
+      "summary": "Scientists have long known that when two black holes collide, they merge to create a more massive black hole. New research suggests that the opposite may happen too: single black holes may split in two.",
+      "image": "https://cdn.mos.cms.futurecdn.net/g6GtMnubb79QUr4bKsdaMM-1920-80.png",
+      "published": "2026-10-28T10:00:00+00:00",
+      "source": "Space.com",
+      "source_id": "space_com",
+      "lang": "en",
+      "title_ja": "ブラックホールは極端な高速回転の場合にのみ二つに分裂する",
+      "summary_ja": "二つのブラックホールが衝突すると、合体してより質量の大きいブラックホールになることは以前から知られている。新たな研究によれば、その逆も起こる可能性があり、単一のブラックホールが二つに分裂するかもしれないという。",
+      "translated_ja": true,
+      "title_ja_broken": false
+    },
     {
       "title": "マイナス170℃でも凍らない！NASAが宇宙探査向けの「新型バッテリー」を開発",
       "url": "https://karapaia.com/archives/634465.html",
@@ -37,6 +515,20 @@
       "source": "カラパイア",
       "source_id": "karapaia",
       "lang": "ja"
+    },
+    {
+      "title": "New contracts to modernise Galileo ground segment for next generation",
+      "url": "https://www.esa.int/Applications/Satellite_navigation/New_contracts_to_modernise_Galileo_ground_segment_for_next_generation",
+      "summary": "On 27 October 2026, Indra Space celebrated the signature of two contracts with the European Space Agency, European Commission and EU Agency for the Space Programme to develop new ground stations for the second generation of Galileo, Europe’s satellite navigation system.",
+      "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/galileo_ground_segment_to_be_modernised_for_next_generation/27593327-1-eng-GB/Galileo_ground_segment_to_be_modernised_for_next_generation_card_full.jpg",
+      "published": "2026-10-28T07:09:00Z",
+      "source": "ESA",
+      "source_id": "spaceflightnews",
+      "lang": "en",
+      "title_ja": "次世代ガリレオの地上設備を刷新する新規契約",
+      "summary_ja": "2026年10月27日、インドラ・スペースは欧州宇宙機関、欧州委員会、EU宇宙計画機関との間で、欧州の衛星航法システムである第2世代ガリレオ向けの新たな地上局を開発する2件の契約締結を祝った。",
+      "translated_ja": true,
+      "title_ja_broken": false
     },
     {
       "title": "人工衛星の「帯電」をAIで自動検出 約19年分のデータから帯電しやすい宇宙環境が明らかに",
@@ -57,7 +549,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "キュリオシティのブログ、ソル5043〜5049：「ナスカ」でのドリル掘削に向けて準備",
+      "summary_ja": "執筆はNASAゴダード宇宙飛行センターの惑星科学者ルーシー・リム。地球での計画日は2026年10月16日（金）。バスク湖でのドリル掘削キャンペーンに続き、キュリオシティは次のドリル掘削キャンペーンを行うため、「チウチウ」ブロックからわずか数メートルの地点に戻った。「チウチウ」自体は良好な試料ではなかった…",
+      "translated_ja": true
     },
     {
       "title": "APOD: 2026 October 28 – The Mutual Occultation of Ganymede and Io",
@@ -68,7 +563,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "APOD：2026年10月28日 ― ガニメデとイオの相互食",
+      "summary_ja": "APODサイエンス APOD APOD：2026年10月28日 ―… 本日のAPOD アーカイブ 投稿一覧 検索 カレンダー RSS 教育 概要 APODについて議論 今日の天文写真 宇宙の驚きを発見しよう。毎日、宇宙の魅力を伝える異なる画像や写真が、専門家による簡潔な解説とともに紹介される…",
+      "translated_ja": true
     },
     {
       "title": "The Land of the Standing-Up Rocks",
@@ -79,7 +577,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "直立する岩々の大地",
+      "summary_ja": "1920年代から国定記念物であったチリカワは、アメリカで最も新しい国立公園である。",
+      "translated_ja": true
     },
     {
       "title": "Windows XPは25周年。あの丘、もう跡形もなかった",
@@ -101,7 +602,10 @@
       "source_id": "universetoday",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "NASAのシステムエンジニアリングチーム、HWOのミッション構成を詳述",
+      "summary_ja": "太陽系外で地球に似た惑星を見つけることは、系外惑星研究の究極の目標とされている。1995年に最初の系外惑星が発見されて以来、この分野では系外惑星の探索と同定に関する技術が飛躍的に進歩した。これには地上望遠鏡と宇宙望遠鏡の両方、特に…",
+      "translated_ja": true
     },
     {
       "title": "可視光線では影なのに赤外線では輝く塵 波長によって姿を変える“子持ち銀河”こと「M51」",
@@ -123,7 +627,10 @@
       "source_id": "universetoday",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "星の誕生の謎に迫る",
+      "summary_ja": "1985年、物理学者のハインツ・R・ペイゲルスは「星は野生の動物のようなものだ。若い星は見られるかもしれないが、ベールに包まれた秘密の出来事である実際の誕生を見ることはできない」と記した。それ以降の数十年で、天文学者たちは、そのベールに覆われた恒星の揺りかごの中で実際に何が起きているのかを、少しずつ明らかにしつつある…",
+      "translated_ja": true
     },
     {
       "title": "【2026年11月開催分】宇宙ビジネス関連イベント情報",
@@ -174,7 +681,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ルービン天文台、太陽系で初の準惑星候補を発見",
+      "summary_ja": "科学者らは、太陽系の公式な準惑星リストに新たな準惑星を加える可能性がある。暫定的に「2026 ED138」と呼ばれている遠方の氷天体は、冥王星の外側で太陽系を周回している。今月初め、米国国立科学財団・エネルギー省のヴェラ・C・ルービン天文台にあるサイモニ・サーベイ望遠鏡のデータを精査していた科学者が発見した。",
+      "translated_ja": true
     },
     {
       "title": "China's top-secret spaceplane can't hide in low-Earth orbit",
@@ -185,7 +695,10 @@
       "source": "Ars Technica",
       "source_id": "arstechnica",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "中国の極秘宇宙往還機、地球低軌道に隠れきれず",
+      "summary_ja": "米国防情報局（DIA）の脅威評価によると、中国は近く宇宙に指向性エネルギー兵器を配備する可能性がある。",
+      "translated_ja": true
     },
     {
       "title": "Dead Planets Orbiting a Dead Star",
@@ -196,7 +709,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "死んだ恒星を公転する死んだ惑星",
+      "summary_ja": "太陽のような恒星は最期を迎えると、「白色矮星」と呼ばれるゾンビのような恒星になる。これらの天体は核融合を終えており、長い長い間、残存する熱を放射し続けるだけである。白色矮星になる前、恒星は膨張して周囲の惑星を飲み込み、破壊する。天文学者らは、ある白色矮星の周囲に残骸円盤を発見した…",
+      "translated_ja": true
     },
     {
       "title": "Double debris disk orbiting a dead star hints at our solar system's future",
@@ -207,7 +723,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "死んだ恒星を周回する二重の残骸円盤、太陽系の未来を示唆",
+      "summary_ja": "天文学者らは、欧州南天天文台（ESO）の超大型望遠鏡（VLT）を用いて、死んだ恒星の周囲に珍しい残骸円盤を発見した。太陽系に起こりうる未来を垣間見せる発見である。これまでに見つかった類似の系とは異なり、かつてその恒星を公転していた惑星の名残である残骸は、…",
+      "translated_ja": true
     },
     {
       "title": "A brief-ish history of METI. Part I: Early ideas and experiments",
@@ -218,7 +737,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "METI（地球外知的生命体へのメッセージ送信）の歴史 前編：初期の構想と実験",
+      "summary_ja": "現代天文学よりはるか以前から、人類は星空を見上げ、そこに映る光景に畏怖の念を抱いてきた。最も古い時代の認識においても、夜空は畏敬の念を喚起し、自らの小ささを感じさせ、想像力をかき立て、希望やつながりの感覚を育むのに十分なものを示していた。しかし、人類が宇宙を観測し続けてきた間…",
+      "translated_ja": true
     },
     {
       "title": "How 'spacewalking' underwater made me feel like I was really in space",
@@ -229,7 +751,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "水中での「宇宙遊泳」、本物の宇宙にいるような感覚を体験",
+      "summary_ja": "アナログ宇宙飛行士で水中探検家のミハエラ・ムシロバは、模擬宇宙ミッションにおける宇宙飛行士の安全性と通信手順を検証するため、視界の悪い水中で模擬的な「宇宙遊泳」を主導した。",
+      "translated_ja": true
     },
     {
       "title": "Ukrainian startup, GomSpace test satellite for future communications network",
@@ -240,7 +765,10 @@
       "source": "SpaceNews",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ウクライナの新興企業とゴムスペース社、将来の通信網に向けた試験衛星を打ち上げ",
+      "summary_ja": "両社は、10月1日に打ち上げられた実験衛星が、ウクライナが管理する衛星網につながる可能性があると発表した。",
+      "translated_ja": true
     },
     {
       "title": "Autonomous rendezvous system overcomes simulated spacecraft failures in lab tests",
@@ -251,7 +779,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "自律ランデブーシステム、実験室試験で模擬的な宇宙機の故障を克服",
+      "summary_ja": "地球低軌道では問題が生じており、その規模は拡大している。欧州宇宙機関（ESA）によると、軌道上には約1万9440機の衛星があり、そのうち3540機は機能していないか、他の宇宙機に自らの位置を知らせる信号を発していない。こうした機能停止状態のまま漂う衛星を軌道上で整備する必要性は、今後さらに高まる…",
+      "translated_ja": true
     },
     {
       "title": "NASA Invites Media to Crew Completion of Yearlong Mars Simulation",
@@ -262,7 +793,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASA、1年間の火星模擬実験の完了をメディアに公開",
+      "summary_ja": "1年以上にわたりNASAの模擬火星ミッション施設で生活し、作業していた4人のボランティアが、ヒューストンのNASAジョンソン宇宙センターの施設で378日間の隔離生活を終え、10月31日（土）に居住施設から退出する。模擬実験で収集された健康と作業パフォーマンスのデータは、NASAが…の方法を開発する助けとなる可能性がある…",
+      "translated_ja": true
     },
     {
       "title": "Astronomers discover the secrets of 'string of pearls' supernova relic and the zombie star at its heart",
@@ -273,7 +807,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "天文学者、「真珠の首飾り」状の超新星残骸と中心のゾンビ星の正体を解明",
+      "summary_ja": "科学者らは、約850年前に人類が観測した超新星が残した特異な天体遺物である宇宙の「真珠の首飾り」について、研究を続けている。その中心には、ゾンビ星が存在する。",
+      "translated_ja": true
     },
     {
       "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
@@ -285,7 +822,10 @@
       "source_id": "universetoday",
       "lang": "en",
       "title_ja_broken": false,
-      "body_skip": "no_body"
+      "body_skip": "no_body",
+      "title_ja": "巨大な恒星同士の衝突が初期の超巨大ブラックホールを説明できる可能性",
+      "summary_ja": "初期の宇宙では、高密度の恒星環境が一般的だった。こうした環境では恒星同士の衝突がより多く起こり、その一部は非常に大質量の恒星を形成する合体であったと考えられる。そうした恒星は超新星爆発を起こして大質量ブラックホールになり、今日の超巨大ブラックホールの種となった可能性がある…",
+      "translated_ja": true
     },
     {
       "title": "First light: Hera resolves two asteroids instead of one",
@@ -296,7 +836,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ヘラ、初観測で小惑星2つを個別に分離して捉える",
+      "summary_ja": "欧州宇宙機関（ESA）の惑星防衛探査機「ヘラ」が、標的とする2つの小惑星を初めて個別に分離して捉えることに成功した。これによりディディモス系が連星であることが明らかになった。現在の地球からの距離は約1億9700万km（1億2200万マイル）である。",
+      "translated_ja": true
     },
     {
       "title": "Cowboy Space unveils 'Big Iron' rocket to launch 20,000 AI data centers",
@@ -307,7 +850,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "カウボーイ・スペース、AIデータセンター2万基の打ち上げ用ロケット「ビッグ・アイアン」を公開",
+      "summary_ja": "カウボーイ・スペースは、AIデータセンター衛星群の構築に使用する自社ロケット「ビッグ・アイアン」の初めての姿を公開した。ビッグ・アイアンの初飛行は2028年後半を目標としている。",
+      "translated_ja": true
     },
     {
       "title": "November full moon 2026: When, where and how to see the Beaver Moon",
@@ -318,7 +864,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "2026年11月の満月「ビーバームーン」、観測の日時と方法",
+      "summary_ja": "2026年11月の満月「ビーバームーン」について、極大の時刻や天体観測の見どころを解説する。",
+      "translated_ja": true
     },
     {
       "title": "NASA’s Neo Surveyor Sunshade",
@@ -329,7 +878,10 @@
       "source": "NASA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASAのNEOサーベイヤー、大型の日よけ構造体を公開",
+      "summary_ja": "2026年10月26日に公開された画像では、技術者がNASAの地球近傍天体（NEO）サーベイヤー計画の大型日よけを点検している。日よけ構造物は高さ20フィート（6メートル）、基部の幅8フィート（2.4メートル）で、赤外線宇宙望遠鏡を冷却しながら地球近傍天体を…",
+      "translated_ja": true
     },
     {
       "title": "NASA, Agriculture Department Partner On Space Data Sharing",
@@ -340,7 +892,10 @@
       "source": "Payload",
       "source_id": "payloadspace",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "NASA、農務省と宇宙データ共有で提携",
+      "summary_ja": "今回の覚書（MoU）は、今月NASAが政府機関間の連携強化に向けて締結した2件目のものである。",
+      "translated_ja": true
     },
     {
       "title": "A small star is eating a brown dwarf so slowly that the meal could last billions of years, and the two orbit each other every 87 minutes inside a space that would fit within the Sun",
@@ -351,7 +906,10 @@
       "source": "SpaceDaily",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "小型の恒星が褐色矮星をゆっくり捕食、食事は数十億年続く可能性も",
+      "summary_ja": "小型の赤色矮星が、87分周期で互いを周回する褐色矮星からガスを引き寄せている。周回軌道は太陽の内側に収まる大きさである。物質が恒星の表面に衝突して高温の斑点を生じており、この食事は数十億年続く可能性がある。この系はZTF J0440+2325と呼ばれ、位置する… The post A small sta…",
+      "translated_ja": true
     },
     {
       "title": "This Oddbal Reflective Lava World is Challenging to Understand",
@@ -362,7 +920,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "風変わりな反射性の溶岩惑星、理解に苦戦",
+      "summary_ja": "恒星に極めて近い系外惑星は大気を失っていると予想されている。しかしその一つであるTOI-561 bは、厚い大気を保持しているように見える。この超地球型惑星がどのようにして大気を持つに至ったのかを理解することは難しい。",
+      "translated_ja": true
     },
     {
       "title": "Perseverance offers clues to protect crews from ultrafine Mars dust",
@@ -373,7 +934,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "パーサビアランス、火星の超微細粉塵から乗組員を守る手がかり",
+      "summary_ja": "NASAの火星探査車パーサビアランスは、1645火星日にわたり、探査車に搭載された宇宙服素材のサンプルに付着した微細および超微細な火星の塵を計測した。その中には肺に入り込み、血流に達するほど小さな粒子も含まれていた。研究成果は『Proceedi…",
+      "translated_ja": true
     },
     {
       "title": "'Dungeon Crawler Carl' is getting a killer new comic book series",
@@ -384,7 +948,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "『ダンジョン・クローラー・カール』、新コミックシリーズ化へ",
+      "summary_ja": "「現在活躍している中でも最高のクリエイターやアーティストたちと仕事ができること自体が、夢のようだ」",
+      "translated_ja": true
     },
     {
       "title": "Earth may have formed much of its water as the planet grew",
@@ -395,7 +962,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "地球の水は惑星の成長過程でその多くが生成された可能性",
+      "summary_ja": "地球の水の多くは、惑星の形成過程で岩石質の小石が若い地球を取り巻く水素を豊富に含む大気と反応することで生成された可能性がある。『Nature Geoscience』に掲載された新たな研究が明らかにした。この知見は、生命に不可欠な成分の一つである水を地球がどのように獲得したのかについて、一つの説明を与えるものだ…",
+      "translated_ja": true
     },
     {
       "title": "Starlink is ‘biggest competitive advantage,’ but it’s temporary, United CEO says",
@@ -406,7 +976,10 @@
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スターリンクは「最大の競争優位」だが一時的、ユナイテッド航空CEOが指摘",
+      "summary_ja": "ユナイテッド航空のスコット・カービーCEOは、SpaceXのスターリンク衛星インターネットが米国の航空業界で同社の主要な競争優位だと述べた。ただし最近の発言では、同サービスを同社が現在持つ「最大の競争優位」と評価する一方、その優位性が一時的であることも認めた…",
+      "translated_ja": true
     },
     {
       "title": "Radio images reveal disturbances from Betelgeuse's mysterious companion that lurks within its shadows",
@@ -417,7 +990,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "電波画像が明らかにする、ベテルギウスの影に潜む謎の伴星による乱れ",
+      "summary_ja": "有名な恒星ベテルギウスには、謎の「同居人」がいるようだ。比喩的に言えば、天井を揺らし、配管を鳴らし、戸棚を叩きつけるように、大気に微妙な乱れを生じさせており、まるで幽霊の物音のようでもある。その原因は誰か。新たなデータによれば、最近発見された…",
+      "translated_ja": true
     },
     {
       "title": "Tesla Cybercab’s unorthodox paint process explained",
@@ -428,7 +1004,10 @@
       "source": "Teslarati",
       "source_id": "teslarati",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "テスラ、サイバーキャブの異例な塗装工程を解説",
+      "summary_ja": "テスラの完全自動運転車「サイバーキャブ」は、従来の塗装工場を全く使わない異例の工程で車体に色を付けている。ただし、この判断は賢明だったとされる。特殊合金と型内着色を採用したことで、工場のコスト、床面積の利用効率、工程の複雑さが大幅に削減されたためだ。Munro Liveは…",
+      "translated_ja": true
     },
     {
       "title": "ESA’s INVICTUS Hypersonic Programme Clears First Major Review",
@@ -439,7 +1018,10 @@
       "source": "European Spaceflight",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ESAの極超音速機「INVICTUS」計画、初の主要審査を通過",
+      "summary_ja": "欧州宇宙機関（ESA）の極超音速航空機計画「INVICTUS」は、最初の主要要求審査を通過し、次の開発段階に移行した。2回目の審査は2027年10月に予定されている。フレイザー・ナッシュでINVICTUSの主任エンジニアを務めるステファン・キャロル氏は、10月23日にLinkedInで、同計画が…と明らかにした。",
+      "translated_ja": true
     },
     {
       "title": "Webb links interstellar comet 3I/ATLAS to worlds beyond Neptune through similar ice signatures",
@@ -450,7 +1032,10 @@
       "source": "Phys.org",
       "source_id": "phys_space",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ウェッブ望遠鏡、星間彗星3I/ATLASと海王星以遠の天体の氷の共通点を示す",
+      "summary_ja": "米サウスウエスト研究所（SwRI）が主導した研究では、NASAのジェイムズ・ウェッブ宇宙望遠鏡を用いて、太陽系外から飛来した天体として確認された3例目の星間彗星、3I/ATLASから放出される氷の粒子を調べた。観測結果は、1ミクロン程度かそれ以下の微小な水の氷と塵の集合体を示している。",
+      "translated_ja": true
     },
     {
       "title": "First light: Hera resolves two asteroids instead of one",
@@ -461,7 +1046,10 @@
       "source": "ESA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ヘラ、小惑星2つを初めて個別に分解観測 ディディモス系の連星構造を確認",
+      "summary_ja": "惑星防衛のための欧州宇宙機関（ESA）の探査機ヘラが、2つの目標小惑星を初めて個別に分解して捉え、ディディモス系が連星であることを明らかにした。同系は現在、地球から約1億9700万キロメートルの距離にある。",
+      "translated_ja": true
     },
     {
       "title": "On this day in space! Oct. 27, 1961: NASA launches Saturn I rocket on 1st test flight from Florida to set stage for the mighty Saturn V moon rocket",
@@ -472,7 +1060,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "【今日は宇宙の日】1961年10月27日、NASAがサターンIの初試験飛行を実施 月ロケット「サターンV」への布石",
+      "summary_ja": "1961年10月27日、NASAは新型宇宙打ち上げ機「サターンI」の初試験飛行をフロリダから行った。その意義を振り返る。",
+      "translated_ja": true
     },
     {
       "title": "Mars rover tracks from a historic drive | Space photo of the day for Oct. 27, 2026",
@@ -483,7 +1074,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "火星探査車の歴史的走行の跡 2026年10月27日の宇宙写真",
+      "summary_ja": "火星の地表には、NASAの火星探査車パーサヴィアランスが残した走行の跡が見られる。",
+      "translated_ja": true
     },
     {
       "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
@@ -494,7 +1088,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ハッブル、ローマン宇宙望遠鏡の支援に乗り出す",
+      "summary_ja": "ナンシー・グレース・ローマン宇宙望遠鏡は、重力マイクロレンズ効果を用いて暗黒物質を研究する予定だ。しかし同望遠鏡は広視野サーベイ望遠鏡であり、実績豊かなハッブル宇宙望遠鏡にしかできないことがある。そのため、ハッブルが支援に乗り出している。",
+      "translated_ja": true
     },
     {
       "title": "OSMOS X Tapped to Lead EDF-backed Tactical Capture Consortium",
@@ -505,7 +1102,10 @@
       "source": "Payload",
       "source_id": "payloadspace",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "OSMOS X、欧州防衛基金（EDF）支援の戦術的捕獲コンソーシアムの主導役に指名",
+      "summary_ja": "欧州は軌道上での戦いに備えを進めている。",
+      "translated_ja": true
     },
     {
       "title": "A Deep-Mantle Garnet Might Hold the Secret to Ancient Martian Magma",
@@ -516,7 +1116,10 @@
       "source": "Universe Today",
       "source_id": "universetoday",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "マントル深部のガーネットが古代火星のマグマの謎を解く鍵となるか",
+      "summary_ja": "惑星の火山活動の歴史は、その岩石に記録されている。しかし火星の岩石、少なくとも火星から地球へたどり着いた隕石の多くは、矛盾する過去を物語っていた。それらは酸化の度合いが高いように見えたが、火星の内部火山活動に関する従来の理解では、それらは…",
+      "translated_ja": true
     },
     {
       "title": "強力な紫外線が削り出した星雲の境目 ウェッブ宇宙望遠鏡が観測した「オリオンバー」とは",
@@ -537,7 +1140,10 @@
       "source": "Payload",
       "source_id": "payloadspace",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "MP Space、衛星用バッテリーの量産体制構築に向け2300万豪ドルを調達",
+      "summary_ja": "MP Spaceのバッテリーは先週、SpaceXのBandwagon-5ミッションで初めて打ち上げられ、非公開の顧客の搭載物として宇宙へ送られた。すでに同社は500機以上の宇宙機を支える受注を抱えている。",
+      "translated_ja": true
     },
     {
       "title": "'Star Trek' legend and sci-fi luminary Walter Koenig dies at 90",
@@ -548,7 +1154,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "『スタートレック』のレジェンド、SF界の重鎮ウォルター・ケーニグ氏が90歳で死去",
+      "summary_ja": "U.S.S.エンタープライズ号のパヴェル・チェコフ役を演じた人物が、60年にわたる舞台と映像でのキャリアを経て逝去した。",
+      "translated_ja": true
     },
     {
       "title": "Russian Military Satellite Flies Within Kilometer of American Satellite Supporting Ukrainian Military",
@@ -559,7 +1168,10 @@
       "source": "Space Scout",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ロシア軍衛星、ウクライナ軍支援の米国衛星に1キロメートル以内まで接近",
+      "summary_ja": "これは、相手の同意を得ていない標的に対して衛星が近接ランデブーを行った初の確認事例であり、重大な国際法違反を示すものと考えられる。",
+      "translated_ja": true
     },
     {
       "title": "Starliner to Return to Flight by January, Fly Crew in 2028",
@@ -570,7 +1182,10 @@
       "source": "Space Scout",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スターライナー、1月の復帰飛行へ 2028年に乗員搭乗予定",
+      "summary_ja": "NASAとボーイングは9月28日、スターライナー宇宙船の復帰飛行に向けた進捗状況について説明した。",
+      "translated_ja": true
     },
     {
       "title": "【G15-16】スペースXがスターリンク衛星27機を軌道投入 ヴァンデンバーグでの年間打ち上げ数が過去最多に",
@@ -591,7 +1206,10 @@
       "source": "SpaceNews",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "クラフト・プロスペクト、宇宙向け光通信の高度化を目指す「PERSEUS」プロジェクトを開始",
+      "summary_ja": "クラフト・プロスペクトは、フラウンホーファー応用フォトニクスセンター（Fraunhofer CAP）およびベクター・フォトニクスと共同で新規プロジェクトに取り組んでいる。次世代レーザー技術が高性能な光通信に与える可能性を探るものだ。",
+      "translated_ja": true
     },
     {
       "title": "What causes mysterious long delayed radio echoes in Earth's atmosphere?",
@@ -602,7 +1220,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "地球の大気で観測される長時間遅延の電波エコーの原因は何か",
+      "summary_ja": "不可解な長時間の電波エコーの遅延について、さまざまな仮説が提示されている。その多くは、地球の大気中で起きている未解明の自然現象に着目したものである。",
+      "translated_ja": true
     },
     {
       "title": "SpaceX Falcon 9 launches early morning Starlink mission from California (video)",
@@ -613,7 +1234,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "スペースXのファルコン9、早朝にカリフォルニアからスターリンク衛星を打ち上げ（動画）",
+      "summary_ja": "スペースXは10月27日夜間に、カリフォルニアから夜明け前に打ち上げられたファルコン9ロケットにより、スターリンク衛星27機を地球低軌道へ追加で投入した。",
+      "translated_ja": true
     },
     {
       "title": "ESA procures four new Galileo Second Generation satellites",
@@ -624,7 +1248,10 @@
       "source": "ESA",
       "source_id": "spaceflightnews",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "ESA、ガリレオ第2世代衛星4機を新たに調達",
+      "summary_ja": "欧州宇宙機関（ESA）は、ガリレオ第2世代（G2）衛星を4機追加で製造するための既存契約を延長した。コンステレーションの長期的な継続性を確保し、新サービスの展開を支える狙いがある。今回の調達により、ガリレオ第2世代衛星は16機体制となる。",
+      "translated_ja": true
     },
     {
       "title": "Astroscale proposes fleet of 'bodyguard' spacecraft to protect satellites from orbital attacks",
@@ -635,7 +1262,10 @@
       "source": "Space.com",
       "source_id": "space_com",
       "lang": "en",
-      "title_ja_broken": false
+      "title_ja_broken": false,
+      "title_ja": "アストロスケール、衛星を軌道上の攻撃から守る「ボディガード」宇宙機群を提案",
+      "summary_ja": "宇宙ごみの除去や故障衛星の修理のために開発された技術を転用し、重要な資産を攻撃から守る「ボディガード」宇宙機の群れを構築できる可能性があるという。",
+      "translated_ja": true
     },
     {
       "title": "合体で誕生した巨大なブラックホールは銀河中心から弾き飛ばされる？ 10年前の予測を検証",
@@ -1194,7 +1824,7 @@
     {
       "title": "SpaceX ignites giant Super Heavy booster engines ahead of daring Starship launch (video)",
       "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
-      "summary": "SpaceX conducted a static-fire test with its Super Heavy boosters B22 on Sunday (Oct. 25), beginning a test campaign to ready the giant rocket for Starship's Flight Test 15.",
+      "summary": "SpaceX conducted a static-fire test with its Super Heavy booster B22 on Sunday (Oct. 25), beginning a test campaign to ready the giant rocket for Starship's Flight Test 15.",
       "image": "https://cdn.mos.cms.futurecdn.net/tPwHSadFnKXigUVzEAMXwf-1920-80.png",
       "published": "2026-10-26T16:00:00+00:00",
       "source": "Space.com",
@@ -13398,11 +14028,11 @@
     {
       "title": "Webb captures commotion from nebula’s stellar jets",
       "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
-      "summary": "From the ESA Blogs.",
+      "summary": "Image: Webb captures commotion from nebula’s stellar jets",
       "image": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/webb_captures_commotion_from_nebula_s_stellar_jets/27545931-4-eng-GB/Webb_captures_commotion_from_nebula_s_stellar_jets_card_full.jpg",
-      "published": "2026-10-06T13:00:00Z",
-      "source": "ESA",
-      "source_id": "spaceflightnews",
+      "published": "2026-10-06T13:00:00+00:00",
+      "source": "ESA Science",
+      "source_id": "esa_science",
       "lang": "en",
       "title_ja": "ウェッブ宇宙望遠鏡、星形成領域の激動をとらえた",
       "summary_ja": "ESAブログより。",
