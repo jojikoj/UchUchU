@@ -1,0 +1,285 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU 2026年11月の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:426bd2a5-02dd-4fbd-9f4d-2b8439c3a1ff@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261102T164100Z
+DTEND:20261102T174100Z
+SUMMARY:Electron | The Sea God Surveys (iQPS Launch 9)
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / The Sea God Surveys (iQPS Launch 9) / Go for Launch
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f3f201cd-0ff9-4ff7-9aaa-1d22c399c75a@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261103T001000Z
+DTEND:20261103T011000Z
+SUMMARY:Kinetica 2 | SpaceSail Polar Group TBD?
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:CAS Space / Kinetica 2 / SpaceSail Polar Group TBD? / Go for Launch
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:54d471e8-695c-4fa7-a3cf-dbd8b389e8ae@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261103T014200Z
+DTEND:20261103T024200Z
+SUMMARY:Falcon 9 Block 5 | USSF-432
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / USSF-432 / Go for Launch
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:9e27a1ed-e81a-4918-b32b-0380cf3a9f8f@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261104T050000Z
+DTEND:20261104T060000Z
+SUMMARY:Mir | Demo Flight
+LOCATION:Sea Launch
+DESCRIPTION:Agency for Defense Development / Mir / Demo Flight / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:e91d1da2-819b-4523-95bf-39ac7daa871d@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261104T210000Z
+DTEND:20261104T220000Z
+SUMMARY:Ceres-2 | Unknown Payload
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:Galactic Energy / Ceres-2 / Unknown Payload / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:711de6bc-f755-475b-a12f-ec5240da3a11@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261105T160000Z
+DTEND:20261105T170000Z
+SUMMARY:Long March 2C | Unknown Payload
+LOCATION:Xichang Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 2C / Unknown Payload / Go for Launch
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a2423132-f965-423f-8b03-6891b775dc54@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261105T211500Z
+DTEND:20261105T221500Z
+SUMMARY:Long March 12 | SatNet LEO Group TBD?
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 12 / SatNet LEO Group TBD? / Go for Launch
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:3cdb9dee-b5cb-406c-bbd1-06a219930fb7@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261106T022100Z
+DTEND:20261106T032100Z
+SUMMARY:Falcon 9 Block 5 | Starlink Group 15-21
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Starlink Group 15-21 / Go for Launch
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:db3500ac-965b-4ad8-b417-cb8d8d005586@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261110T000000Z
+DTEND:20261110T010000Z
+SUMMARY:Electron | The Mountain God Rises (iQPS Launch 10)
+LOCATION:Rocket Lab Launch Complex 1\, Mahia Peninsula\, New Zealand
+DESCRIPTION:Rocket Lab / Electron / The Mountain God Rises (iQPS Launch 10) / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:6aa7b90b-e5ed-45d8-a52e-04fbf399d178@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261110T030300Z
+DTEND:20261110T040300Z
+SUMMARY:Falcon 9 Block 5 | USSF-xxx ("R-5")
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / USSF-xxx ("R-5") / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ef9850ad-1096-425b-9d27-f7bbd186e61a@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261113T000000Z
+DTEND:20261113T010000Z
+SUMMARY:Vulcan VC6L | Amazon Leo (LV-01)
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:United Launch Alliance / Vulcan VC6L / Amazon Leo (LV-01) / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bff2fc91-eddd-4dfc-af26-ac0674cfab4d@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261119T000000Z
+DTEND:20261119T010000Z
+SUMMARY:Soyuz 2.1a/Fregat-M | MKA Kinosputnik\, KOEN and others
+LOCATION:Vostochny Cosmodrome\, Siberia\, Russian Federation
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1a Fregat-M / MKA Kinosputnik\, KOEN and others / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a2975167-7c6f-4403-99e1-b40df17c8140@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261120T110000Z
+DTEND:20261120T120000Z
+SUMMARY:Long March 8A | SatNet LEO Group TBD?
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 8A / SatNet LEO Group TBD? / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7bdc412b-c965-4517-a131-f57a01189803@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261123T000000Z
+DTEND:20261123T010000Z
+SUMMARY:Ariane 64 Block 2 | Amazon Leo (LE-04)
+LOCATION:Guiana Space Centre\, French Guiana
+DESCRIPTION:Arianespace / Ariane 64 Block 2 / Amazon Leo (LE-04) / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:8dd5de11-831b-445f-86f0-bffefe0550d9@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261124T050300Z
+DTEND:20261124T060300Z
+SUMMARY:Soyuz 2.1b | Progress MS-36 (97P)
+LOCATION:Baikonur Cosmodrome\, Republic of Kazakhstan
+DESCRIPTION:Russian Federal Space Agency (ROSCOSMOS) / Soyuz 2.1b / Progress MS-36 (97P) / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:5ce59e3a-c343-430f-ae4e-e608ba536754@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261124T070000Z
+DTEND:20261124T080000Z
+SUMMARY:Long March 12 | SatNet LEO Group TBD?
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 12 / SatNet LEO Group TBD? / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:c9605b67-8a53-4239-a8ae-577fe3b79799@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261125T000000Z
+DTEND:20261125T010000Z
+SUMMARY:Long March 2F/G | Shenzhou 24
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 2F/G / Shenzhou 24 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dff42a2e-f047-48d7-b260-3888d3a4fe33@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261126T200000Z
+DTEND:20261126T210000Z
+SUMMARY:Spectrum | AT-Astra and Others (Spectrum Flight 3)
+LOCATION:Andøya Spaceport
+DESCRIPTION:Isar Aerospace / Spectrum / AT-Astra and Others (Spectrum Flight 3) / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261129T160000Z
+DTEND:20261129T170000Z
+SUMMARY:Falcon 9 Block 5 | Cygnus CRS-2 NG-25
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / Cygnus CRS-2 NG-25 / To Be Confirmed
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Falcon 9 Block 5 | NROL-195
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / NROL-195 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:7c891a0b-7194-4425-8cfd-2e8c75af2924@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:HANBIT-Nano | InnoSat-0
+LOCATION:Alcântara Space Center\, Federative Republic of Brazil
+DESCRIPTION:Innospace / HANBIT-Nano / InnoSat-0 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:dfac5ab7-7017-454f-b6cf-eeed277a97b5@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:LVM-3 | Gaganyaan-1
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / Launch Vehicle Mark-3 (GSLV Mk III) / Gaganyaan-1 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b5a9bccb-30d7-4af6-8ad1-fabb563be53c@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:PSLV-XL | TDS-01
+LOCATION:Satish Dhawan Space Centre\, India
+DESCRIPTION:Indian Space Research Organization / PSLV XL / TDS-01 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:0f867f0c-5422-4d44-93b8-d7faaae7019b@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Starship | Flight 15
+LOCATION:SpaceX Starbase\, TX\, USA
+DESCRIPTION:SpaceX / Starship V3 / Flight 15 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:b0dc988c-ea4a-423f-81b6-6b0fbe7cc17c@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:Falcon 9 Block 5 | OneWeb 21
+LOCATION:Vandenberg SFB\, CA\, USA
+DESCRIPTION:SpaceX / Falcon 9 Block 5 / OneWeb 21 / To Be Determined
+URL:https://uchuchu.tech/launches/2026-11/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

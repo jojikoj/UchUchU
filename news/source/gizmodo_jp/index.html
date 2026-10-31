@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ギズモード・ジャパン · UchUchU</title>
+  <meta name="description" content="ギズモード・ジャパン — 国内外の公式発表とメディアを横断して集約。">
+  <link rel="canonical" href="https://uchuchu.tech/news/source/gizmodo_jp/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/news/source/gizmodo_jp/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/news/source/gizmodo_jp/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="ギズモード・ジャパン · UchUchU">
+  <meta property="og:description" content="ギズモード・ジャパン — 国内外の公式発表とメディアを横断して集約。">
+  <meta property="og:url" content="https://uchuchu.tech/news/source/gizmodo_jp/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ギズモード・ジャパン · UchUchU">
+  <meta name="twitter:description" content="ギズモード・ジャパン — 国内外の公式発表とメディアを横断して集約。">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"ニュース","item":"https://uchuchu.tech/news/"},{"@type":"ListItem","position":3,"name":"ギズモード・ジャパン","item":"https://uchuchu.tech/news/source/gizmodo_jp/"}]},{"@type":"ItemList","name":"宇宙開発ニュース","numberOfItems":30,"itemListElement":[{"@type":"ListItem","position":1,"name":"ウェッブ宇宙望遠鏡、何もなかったはずの宇宙空間に謎の光を発見","url":"https://www.gizmodo.jp/article/jwst-mysterious-emission-line/"},{"@type":"ListItem","position":2,"name":"木星探査機JUICEが長旅の途中で「太陽系外からの珍客」を激写","url":"https://www.gizmodo.jp/article/2610-juice-interstellar-comet-3i-atlas/"},{"@type":"ListItem","position":3,"name":"来年のGalaxy S27シリーズ、バッテリー増量の予感。Ultraは5,000mAh台後半に？","url":"https://www.gizmodo.jp/article/galaxy-s27-pro-ultra-battery-leak/"},{"@type":"ListItem","position":4,"name":"「銀河の果て」について新たにわかったこと","url":"https://www.gizmodo.jp/article/astronomers-find-edge-milky-way-galaxy-efl/"},{"@type":"ListItem","position":5,"name":"iPhone DuoとAndroidの折りたたみスマホを徹底的にサイズ比較してみた","url":"https://www.gizmodo.jp/article/2610-iphone-duo-android-foldable-size-comparison/"},{"@type":"ListItem","position":6,"name":"Windows XPは25周年。あの丘、もう跡形もなかった","url":"https://www.gizmodo.jp/article/windows-xp-bliss-hill-today/"},{"@type":"ListItem","position":7,"name":"国産シンセファン歓喜。ローランドの名機「JUPITER-8」がミニサイズで復活","url":"https://www.gizmodo.jp/article/roland-jupiter-08/"},{"@type":"ListItem","position":8,"name":"Starlinkより高速でコンパクトな高速衛星インターネットサービス「Amazon Leo」がやってくる","url":"https://www.gizmodo.jp/article/2610-amazon-leo-satellite-internet/"},{"@type":"ListItem","position":9,"name":"1970年のレトロTVをオマージュ。Mac miniを収納して使う球体ディスプレイ","url":"https://www.gizmodo.jp/article/iretrolab-the-time-planet/"},{"@type":"ListItem","position":10,"name":"寝ているときは要注意。Galaxy Watch、一部ユーザーが長時間の装着で熱傷か","url":"https://www.gizmodo.jp/article/2610-galaxy-watch-burn-reports/"},{"@type":"ListItem","position":11,"name":"iPhone DuoとGalaxy Z Fold8、トントン相撲で戦わせてみた","url":"https://www.gizmodo.jp/article/iphone-duo-galaxy-z-fold8-sumo/"},{"@type":"ListItem","position":12,"name":"経営陣は16歳・19歳・20歳。「宇宙の電力会社」スタートアップが設立6か月で4.7億円集めた","url":"https://www.gizmodo.jp/article/zero-industries-space-power-funding/"},{"@type":"ListItem","position":13,"name":"iPhone Duo先行レビュー：来年入手でも欲しい…。折りたたみスマホは他社モデルでは到達できなかった高みへ","url":"https://www.gizmodo.jp/article/iphone-duo-review-2026/"},{"@type":"ListItem","position":14,"name":"多っっっ！ 来年のサムスンは折りたたみスマホを6モデル準備中!?","url":"https://www.gizmodo.jp/article/2610-samsung-foldable-phones-six-models/"},{"@type":"ListItem","position":15,"name":"iPhone Duoのバッテリーは、他社の折りたたみスマホよりは大きい（から大丈夫よね？）","url":"https://www.gizmodo.jp/article/2610-iphone-duo-battery-capacity/"},{"@type":"ListItem","position":16,"name":"サムスン中の人も認める、iPhone DuoのおかげでGalaxy Z Fold8の売り上げ伸びてます（しかも今すぐ入手可能）","url":"https://www.gizmodo.jp/article/2610-iphone-duo-galaxy-z-fold8-sales/"},{"@type":"ListItem","position":17,"name":"米AmazonがAIガジェット「Bee」発表。カードサイズのボイスレコーダーなど","url":"https://www.gizmodo.jp/article/2610-amazon-bee-ai-gadgets/"},{"@type":"ListItem","position":18,"name":"テスラ、ロケット技術で空飛ぶロードスターをガチで作ってしまう","url":"https://www.gizmodo.jp/article/tesla-flying-roadster-spacex/"},{"@type":"ListItem","position":19,"name":"Galaxy Z Fold8が絶好調。Samsung出荷シェアを伸ばす","url":"https://www.gizmodo.jp/article/2610-galaxy-z-fold8-samsung-market-share/"},{"@type":"ListItem","position":20,"name":"もう圏外補完だけじゃない。Starlinkが携帯電話キャリアになる道が開いちゃった","url":"https://www.gizmodo.jp/article/2610-starlink-mobile-carrier/"},{"@type":"ListItem","position":21,"name":"iPhone Duoはやくも追加生産。品薄予想で3割増、1000万台に到達","url":"https://www.gizmodo.jp/article/2610-iphone-duo-additional-production/"},{"@type":"ListItem","position":22,"name":"火星から届いた夜明けの風景ベストショット。NASAが貴重な写真を公開","url":"https://www.gizmodo.jp/article/a-rare-image-of-mars-at-dawn-reveals-captivating-beauty-of-its-ancient-cliffs/"},{"@type":"ListItem","position":23,"name":"iPhoneが誤差数cmの測量機になる。撮るだけで3D、歩いてもずれないARも","url":"https://www.gizmodo.jp/article/2610-lrtk-iphone-survey-3d-ar/"},{"@type":"ListItem","position":24,"name":"サムスン噂のヘッドホン、製品名は「Galaxy Studio」？","url":"https://www.gizmodo.jp/article/2610-galaxy-studio-headphone-rumor/"},{"@type":"ListItem","position":25,"name":"日本の企業が世界初の快挙。宇宙ごみを捕獲して除去するプロジェクト","url":"https://www.gizmodo.jp/article/2610-astroscale-space-debris-removal/"},{"@type":"ListItem","position":26,"name":"何を着けても良い。VESA取り付け選手権、自由形の王者","url":"https://www.gizmodo.jp/article/sanwa-vesa-mount-mr-vesa7/"},{"@type":"ListItem","position":27,"name":"宇宙から人類の紛争を50年間見つめ続けた軍事人工衛星、運用終了へ","url":"https://www.gizmodo.jp/article/space-force-just-retired-the-satellites-that-watched-for-world-war-iii/"},{"@type":"ListItem","position":28,"name":"レンズ交換式GoPro「MISSION 1 PRO ILS」が得たものと失ったもの","url":"https://www.gizmodo.jp/article/gopro-mission-1-ils-review/"},{"@type":"ListItem","position":29,"name":"飛行士が落としたバッグは、時速2万8000kmで地球軌道を周回中","url":"https://www.gizmodo.jp/article/astronauts-lost-item-yke/"},{"@type":"ListItem","position":30,"name":"NASA、宇宙から持ち帰ったサンプル入り箱のフタが開かない","url":"https://www.gizmodo.jp/article/nasa-struggling-open-asteroid-sample-container-jpn-qic/"}]}]}</script>
+  <link rel="icon" href="../../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../static/css/style.css?v=30279b0e">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/news/source/gizmodo_jp/" : "https://uchuchu.tech/en/news/source/gizmodo_jp/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../../" class="">ホーム</a>
+      <a href="../../../companies/" class="">企業DB</a>
+      <a href="../../../procurement/" class="">調達情報</a>
+      <a href="../../../articles/" class="">特集</a>
+      <a href="../../../launches/" class="">打ち上げ</a>
+      <a href="../../../news/" class="on">ニュース</a>
+      <a href="../../../faq/" class="">よくある質問</a>
+      <a href="../../../advertise/" class="">広告掲載</a>
+      <a href="../../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/news/source/gizmodo_jp/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/news/source/gizmodo_jp/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>ギズモード・ジャパン</h1>
+    <p class="page-sub">国内外の公式発表とメディアを横断して集約。</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <details class="filter-fold" open>
+      <summary>配信元で絞り込む</summary>
+      <div class="filter-bar">
+        <a class="chip " href="../../">すべて</a>
+        <a class="chip " href="../../source/jaxa/">JAXA</a>
+        <a class="chip " href="../../source/naoj/">国立天文台</a>
+        <a class="chip " href="../../source/sorae/">sorae</a>
+        <a class="chip " href="../../source/spacemedia/">Space Media</a>
+        <a class="chip " href="../../source/sorabatake/">宙畑</a>
+        <a class="chip " href="../../source/wired_jp/">WIRED.jp</a>
+        <a class="chip on" href="../../source/gizmodo_jp/">ギズモード・ジャパン</a>
+        <a class="chip " href="../../source/karapaia/">カラパイア</a>
+        <a class="chip " href="../../source/nasa/">NASA</a>
+        <a class="chip " href="../../source/esa/">ESA</a>
+        <a class="chip " href="../../source/esa_science/">ESA Science</a>
+        <a class="chip " href="../../source/spaceflightnow/">Spaceflight Now</a>
+        <a class="chip " href="../../source/nasaspaceflight/">NASASpaceflight</a>
+        <a class="chip " href="../../source/payloadspace/">Payload</a>
+        <a class="chip " href="../../source/everydayastronaut/">Everyday Astronaut</a>
+        <a class="chip " href="../../source/space_com/">Space.com</a>
+        <a class="chip " href="../../source/universetoday/">Universe Today</a>
+        <a class="chip " href="../../source/arstechnica/">Ars Technica</a>
+        <a class="chip " href="../../source/phys_space/">Phys.org</a>
+        <a class="chip " href="../../source/skyandtelescope/">Sky &amp; Telescope</a>
+        <a class="chip " href="../../source/teslarati/">Teslarati</a>
+        <a class="chip " href="../../source/spaceflightnews/">Spaceflight News</a>
+      </div>
+    </details>
+    <div class="tile-grid">
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-cfa165656e/">
+    <img src="https://media.loom-app.com/loom/2026/10/26/6d081292-0def-44a5-b19b-e85e61da565a/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-cfa165656e/">ウェッブ宇宙望遠鏡、何もなかったはずの宇宙空間に謎の光を発見</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-31T09:30:00+00:00">2026.10.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-3d09978f15/">
+    <img src="https://media.loom-app.com/gizmodo/dist/images/2026/03/05/First_glimpse_of_comet_3I_ATLAS(1).jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-3d09978f15/">木星探査機JUICEが長旅の途中で「太陽系外からの珍客」を激写</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-10-31T02:35:00+00:00">2026.10.31</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-77acdee44e/">
+    <img src="https://media.loom-app.com/loom/2026/10/30/72661fc5-833a-4f4e-a1a2-5f553cc4cd6d/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-77acdee44e/">来年のGalaxy S27シリーズ、バッテリー増量の予感。Ultraは5,000mAh台後半に？</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-30T13:00:00+00:00">2026.10.30</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-99dca58806/">
+    <img src="https://media.loom-app.com/gizmodo/dist/images/2023/01/22/1ced41dd51c3bcaae2b32e3ea5760d04.jpg.webp?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-99dca58806/">「銀河の果て」について新たにわかったこと</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-10-29T14:00:00+00:00">2026.10.29</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-85f00bd748/">
+    <img src="https://media.loom-app.com/loom/2026/10/28/50e45179-9a24-484d-b8c7-87e82dfe296b/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-85f00bd748/">iPhone DuoとAndroidの折りたたみスマホを徹底的にサイズ比較してみた</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-29T12:00:00+00:00">2026.10.29</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-365a57696d/">
+    <img src="https://media.loom-app.com/loom/2026/10/28/97ceb214-d599-46c5-9a46-ca39c6f290ac/original.png?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-365a57696d/">Windows XPは25周年。あの丘、もう跡形もなかった</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#有人宇宙</span><time datetime="2026-10-28T03:45:00+00:00">2026.10.28</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-b35df5c83e/">
+    <img src="https://media.loom-app.com/loom/2026/10/25/4ad823ad-c54b-423f-a0d3-ab76e39db998/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-b35df5c83e/">国産シンセファン歓喜。ローランドの名機「JUPITER-8」がミニサイズで復活</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-28T01:00:00+00:00">2026.10.28</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-602242d736/">
+    <img src="https://media.loom-app.com/loom/2026/10/24/2a2c99ad-6e71-4e71-a374-153dae815007/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-602242d736/">Starlinkより高速でコンパクトな高速衛星インターネットサービス「Amazon Leo」がやってくる</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#衛星・地球観測</span><time datetime="2026-10-26T03:30:00+00:00">2026.10.26</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-c8fd761723/">
+    <img src="https://media.loom-app.com/loom/2026/10/22/db1b15a3-9234-43b0-a302-bfc296ece214/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-c8fd761723/">1970年のレトロTVをオマージュ。Mac miniを収納して使う球体ディスプレイ</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-10-25T03:00:00+00:00">2026.10.25</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-3e4120b2f7/">
+    <img src="https://media.loom-app.com/loom/2026/10/23/ff3cb76c-3c35-4d92-9b3f-bca308547961/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-3e4120b2f7/">寝ているときは要注意。Galaxy Watch、一部ユーザーが長時間の装着で熱傷か</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-24T23:00:00+00:00">2026.10.25</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-dfd0f5f767/">
+    <img src="https://media.loom-app.com/loom/2026/10/23/0fc18b6e-f765-4ad3-979e-e8285121ef57/original.png?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-dfd0f5f767/">iPhone DuoとGalaxy Z Fold8、トントン相撲で戦わせてみた</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-23T10:15:00+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-072fd5af4a/">
+    <img src="https://media.loom-app.com/loom/2026/10/22/c7fddc43-115b-4d46-a3fb-c719d789d3f0/original.png?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-072fd5af4a/">経営陣は16歳・19歳・20歳。「宇宙の電力会社」スタートアップが設立6か月で4.7億円集めた</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙ビジネス</span><time datetime="2026-10-23T06:00:00+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-7f9f7ea8e0/">
+    <img src="https://media.loom-app.com/loom/2026/10/22/e5eb7525-07fb-4e88-af65-cf3e40d68fd8/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-7f9f7ea8e0/">iPhone Duo先行レビュー：来年入手でも欲しい…。折りたたみスマホは他社モデルでは到達できなかった高みへ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-23T03:15:00+00:00">2026.10.23</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-5eb8677924/">
+    <img src="https://media.loom-app.com/loom/2026/10/20/15dd03f0-f5cc-41fd-ba0b-18bae245e839/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-5eb8677924/">多っっっ！ 来年のサムスンは折りたたみスマホを6モデル準備中!?</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-21T02:00:00+00:00">2026.10.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-4d406d96cf/">
+    <img src="https://media.loom-app.com/loom/2026/10/21/eb6a4edd-41e8-48d1-a157-5756d6dfde98/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-4d406d96cf/">iPhone Duoのバッテリーは、他社の折りたたみスマホよりは大きい（から大丈夫よね？）</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-21T01:45:00+00:00">2026.10.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-5f44639388/">
+    <img src="https://media.loom-app.com/loom/2026/10/20/4e5962db-9c53-4c9b-94d1-3e16d4968630/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-5f44639388/">サムスン中の人も認める、iPhone DuoのおかげでGalaxy Z Fold8の売り上げ伸びてます（しかも今すぐ入手可能）</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-20T03:10:00+00:00">2026.10.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-019f9bdd65/">
+    <img src="https://media.loom-app.com/loom/2026/10/16/d72ed3ba-0b1b-4646-8437-98ea043dc02b/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-019f9bdd65/">米AmazonがAIガジェット「Bee」発表。カードサイズのボイスレコーダーなど</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-10-17T09:00:00+00:00">2026.10.17</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-9ec5b2ff15/">
+    <img src="https://media.loom-app.com/loom/2026/10/16/d3992fd0-a786-4103-a417-90f580633f7e/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-9ec5b2ff15/">テスラ、ロケット技術で空飛ぶロードスターをガチで作ってしまう</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-10-16T07:40:00+00:00">2026.10.16</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-5f12c450d7/">
+    <img src="https://media.loom-app.com/loom/2026/10/15/97ed9aff-252c-46fd-bd62-45ad914dcfb8/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-5f12c450d7/">Galaxy Z Fold8が絶好調。Samsung出荷シェアを伸ばす</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-16T01:00:00+00:00">2026.10.16</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-0fe1ab3f03/">
+    <img src="https://media.loom-app.com/loom/2026/10/14/db0082a6-9eb9-4ed5-95aa-0b3cfae180a4/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-0fe1ab3f03/">もう圏外補完だけじゃない。Starlinkが携帯電話キャリアになる道が開いちゃった</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#衛星・地球観測</span><time datetime="2026-10-15T07:35:00+00:00">2026.10.15</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-a49930cc01/">
+    <img src="https://media.loom-app.com/loom/2026/10/15/ec89bcda-0d48-4030-af17-7bfbd982d381/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-a49930cc01/">iPhone Duoはやくも追加生産。品薄予想で3割増、1000万台に到達</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-10-15T03:45:00+00:00">2026.10.15</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-704a181958/">
+    <img src="https://media.loom-app.com/loom/2026/10/12/728fedc3-e0e8-4d4e-9196-af8f201e49b4/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-704a181958/">火星から届いた夜明けの風景ベストショット。NASAが貴重な写真を公開</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#火星</span><time datetime="2026-10-14T22:00:00+00:00">2026.10.15</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-a534962cc0/">
+    <img src="https://media.loom-app.com/loom/2026/10/13/4dae8b3a-c93a-4933-9c0e-0b240a718e80/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-a534962cc0/">iPhoneが誤差数cmの測量機になる。撮るだけで3D、歩いてもずれないARも</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙ビジネス</span><time datetime="2026-10-14T12:30:00+00:00">2026.10.14</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-b2f2d4d4a1/">
+    <img src="https://media.loom-app.com/loom/2026/10/13/9f524057-b2d7-4ac7-92e5-ac6f8b9d445c/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-b2f2d4d4a1/">サムスン噂のヘッドホン、製品名は「Galaxy Studio」？</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-10-13T11:00:00+00:00">2026.10.13</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-c0ff52f20a/">
+    <img src="https://media.loom-app.com/gizmodo/dist/images/2025/09/30/67481-79-ba3a1fd27e3d21d9d5d37426df330f9e-3840x2160.jpeg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-c0ff52f20a/">日本の企業が世界初の快挙。宇宙ごみを捕獲して除去するプロジェクト</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#日本の宇宙開発</span><time datetime="2026-10-12T02:35:00+00:00">2026.10.12</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-e5fd58a4bf/">
+    <img src="https://media.loom-app.com/loom/2026/10/09/c607c7e2-9f80-43aa-b8a1-f76d9ccd28fa/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-e5fd58a4bf/">何を着けても良い。VESA取り付け選手権、自由形の王者</a></h3>
+    <div class="tile-meta">
+<time datetime="2026-10-12T02:00:00+00:00">2026.10.12</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-0d0ba3445e/">
+    <img src="https://media.loom-app.com/loom/2026/10/08/bc94a715-31fa-4752-99c8-a30a37d18861/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-0d0ba3445e/">宇宙から人類の紛争を50年間見つめ続けた軍事人工衛星、運用終了へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-10-08T22:00:00+00:00">2026.10.09</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-a6b45ef852/">
+    <img src="https://media.loom-app.com/loom/2026/10/07/a64a4d56-c6b7-4c24-8d37-5015563d6768/original.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-a6b45ef852/">レンズ交換式GoPro「MISSION 1 PRO ILS」が得たものと失ったもの</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#有人宇宙</span><time datetime="2026-10-08T09:00:00+00:00">2026.10.08</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-e90512bf64/">
+    <img src="https://media.loom-app.com/gizmodo/dist/images/2023/11/20/858d0132d5ec452b432c1313a6215d57.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-e90512bf64/">飛行士が落としたバッグは、時速2万8000kmで地球軌道を周回中</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#有人宇宙</span><time datetime="2026-10-07T14:00:00+00:00">2026.10.07</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../../a/gizmodo_jp-bba178be2d/">
+    <img src="https://media.loom-app.com/gizmodo/dist/images/2023/10/24/231024akanai.jpg?w=1200" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../../a/gizmodo_jp-bba178be2d/">NASA、宇宙から持ち帰ったサンプル入り箱のフタが開かない</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-10-07T02:35:00+00:00">2026.10.07</time>    </div>
+    <div class="tile-src">
+      <span class="src">ギズモード・ジャパン</span>
+    </div>
+  </div>
+</article>
+    </div>
+    <nav class="pager" aria-label="pagination">
+<span class="pager-btn disabled">← 前へ</span>  <span class="pager-nums">
+<span class="pager-num on" aria-current="page">1</span>
+<a class="pager-num" href="2/">2</a><a class="pager-num" href="3/">3</a><span class="pager-gap">…</span>
+<a class="pager-num" href="5/">5</a>  </span>
+<a class="pager-btn" href="2/" rel="next">次へ →</a>
+</nav>
+
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../../companies/">企業DB</a>
+<a href="../../../procurement/">調達情報</a>          <a href="../../../articles/">特集</a>
+          <a href="../../../launches/">打ち上げ</a>
+          <a href="../../../news/">ニュース</a>
+          <a href="../../../papers/">研究動向</a>
+          <a href="../../../topics/moon/">トピック</a>
+          <a href="../../../search/">検索</a>
+          <a href="../../../about/">運営会社</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-10-31 21:39 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../../static/js/main.js?v=30279b0e" defer></script>
+</body>
+</html>

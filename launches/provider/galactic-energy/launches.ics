@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU 星河動力（Galactic Energy）の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:e91d1da2-819b-4523-95bf-39ac7daa871d@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261104T210000Z
+DTEND:20261104T220000Z
+SUMMARY:Ceres-2 | Unknown Payload
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:Galactic Energy / Ceres-2 / Unknown Payload / To Be Confirmed
+URL:https://uchuchu.tech/launches/provider/galactic-energy/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

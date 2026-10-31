@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU ブルーオリジン（Blue Origin）の打ち上げ
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:ca3d56b7-2175-48e4-9a6a-2ecc9996d96b@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:New Glenn | Amazon Leo (LN-01)
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:Blue Origin / New Glenn / Amazon Leo (LN-01) / To Be Determined
+URL:https://uchuchu.tech/launches/provider/blue-origin/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f0460950-3cb6-4889-8cbe-707f063d0565@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:New Glenn | BlueBird Block 2
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:Blue Origin / New Glenn / BlueBird Block 2 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/blue-origin/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:a5e81552-ecdd-4d89-b6bd-b594e22ca891@uchuchu.tech
+DTSTAMP:20261031T213914Z
+DTSTART:20261231T000000Z
+DTEND:20261231T010000Z
+SUMMARY:New Glenn | Blue Ring-1
+LOCATION:Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:Blue Origin / New Glenn / Blue Ring-1 / To Be Determined
+URL:https://uchuchu.tech/launches/provider/blue-origin/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
