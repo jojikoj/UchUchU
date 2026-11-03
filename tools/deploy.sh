@@ -35,10 +35,17 @@ done
 python3 tools/check_links.py            # リンク切れがあればここで止める
 
 TMP=$(mktemp -d)
-trap 'rm -rf "$TMP"' EXIT
+# 後片付けの失敗は公開の成否ではないので、落とさず警告だけ出す（終了コードを汚さない）。
+trap 'rm -rf "$TMP" || echo "⚠️ 一時ディレクトリを消せませんでした: $TMP" >&2' EXIT
 cp -R dist/. "$TMP/"
 cd "$TMP"
 git init -q
+# dist は1万数千ファイルあり、commit すると loose object が gc.auto の閾値(6700)を超える。
+# すると git が裏で gc --auto を起動し、スクリプト終了時の rm -rf "$TMP" と競合して
+# "Directory not empty" になり、EXIT トラップが非0で終わって日次が失敗扱いになっていた
+# （2026-11-02 夜以降）。一時リポジトリでは gc も maintenance も不要なので止める。
+git config gc.auto 0
+git config maintenance.auto false
 git add -A
 git -c user.email=noreply@anthropic.com -c user.name=deploy \
     commit -q -m "deploy $(date +%F_%H%M)"
