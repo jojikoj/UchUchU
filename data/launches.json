@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T21:34:32.601387+00:00",
+  "generated_at": "2026-11-04T09:33:29.459640+00:00",
   "count": 200,
   "items": [
     {
@@ -96,11 +96,11 @@
     },
     {
       "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
-      "name": "Falcon 9 Block 5 | USSF-xxx (\"R-5\")",
+      "name": "Falcon 9 Block 5 | USSF-627",
       "net": "2026-11-10T03:03:00Z",
       "window_end": "2026-11-10T07:03:00Z",
-      "status": "TBC",
-      "status_name": "To Be Confirmed",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "SpaceX",
       "provider_country": "USA",
       "provider_url": "https://www.spacex.com/",
@@ -110,20 +110,20 @@
       "pad_lon": "-120.611",
       "location": "Vandenberg SFB, CA, USA",
       "country": "USA",
-      "mission": "USSF-xxx (\"R-5\")",
+      "mission": "USSF-627",
       "mission_type": "Government/Top Secret",
       "mission_description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcast": null,
+      "webcast": "https://x.com/i/broadcasts/2brkWyolnlBbLM",
       "upcoming": true
     },
     {
       "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
-      "name": "Falcon 9 Block 5 | USSF-xxx (\"R-6\")",
+      "name": "Falcon 9 Block 5 | USSF-317",
       "net": "2026-11-13T04:23:00Z",
       "window_end": "2026-11-13T08:23:00Z",
-      "status": "TBC",
-      "status_name": "To Be Confirmed",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "SpaceX",
       "provider_country": "USA",
       "provider_url": "https://www.spacex.com/",
@@ -133,11 +133,11 @@
       "pad_lon": "-120.611",
       "location": "Vandenberg SFB, CA, USA",
       "country": "USA",
-      "mission": "USSF-xxx (\"R-6\")",
+      "mission": "USSF-317",
       "mission_type": "Government/Top Secret",
       "mission_description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcast": null,
+      "webcast": "https://x.com/i/broadcasts/2lgkMvaRVPMdYR",
       "upcoming": true
     },
     {
