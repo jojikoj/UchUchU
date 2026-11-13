@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T21:34:36.463846+00:00",
+  "generated_at": "2026-11-13T09:34:35.093461+00:00",
   "count": 200,
   "items": [
     {
@@ -82,23 +82,23 @@
       "provider_country": "USA",
       "provider_url": "https://rocketlabcorp.com",
       "rocket": "Electron",
-      "pad": "Unknown Pad",
-      "pad_lat": "-39.260881",
-      "pad_lon": "177.865826",
+      "pad": "Rocket Lab Launch Complex 1A",
+      "pad_lat": "-39.262833",
+      "pad_lon": "177.864469",
       "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
       "country": "NZL",
       "mission": "The Mountain God Rises (iQPS Launch 10)",
       "mission_type": "Earth Science",
       "mission_description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcast": null,
+      "webcast": "https://www.youtube.com/watch?v=kyR8kZ2XlhQ",
       "upcoming": true
     },
     {
       "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
       "name": "Falcon 9 Block 5 | USSF-317",
-      "net": "2026-11-15T03:55:00Z",
-      "window_end": "2026-11-15T07:55:00Z",
+      "net": "2026-11-18T03:14:00Z",
+      "window_end": "2026-11-18T07:14:00Z",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "SpaceX",
