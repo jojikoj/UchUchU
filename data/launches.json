@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T09:33:44.801100+00:00",
+  "generated_at": "2026-11-14T21:33:43.458141+00:00",
   "count": 200,
   "items": [
     {
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
       "name": "Vulcan VC6L | Amazon Leo (LV-01)",
-      "net": "2026-11-14T17:32:30Z",
-      "window_end": "2026-11-14T18:01:00Z",
+      "net": "2026-11-15T17:11:30Z",
+      "window_end": "2026-11-15T17:31:00Z",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "United Launch Alliance",
@@ -21,7 +21,7 @@
       "mission": "Amazon Leo (LV-01)",
       "mission_type": "Communications",
       "mission_description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610…",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_vc6l_image_20220406123130.jpg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_vc6l_on__image_20261114102518.jpeg",
       "webcast": "https://www.youtube.com/watch?v=qM5A1ZO9oh8",
       "upcoming": true
     },
@@ -3135,8 +3135,8 @@
       "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
       "net": "2026-11-13T22:47:36Z",
       "window_end": "2026-11-14T00:00:00Z",
-      "status": "In Flight",
-      "status_name": "Launch in Flight",
+      "status": "Success",
+      "status_name": "Launch Successful",
       "provider": "SpaceX",
       "provider_country": "USA",
       "provider_url": "https://www.spacex.com/",
