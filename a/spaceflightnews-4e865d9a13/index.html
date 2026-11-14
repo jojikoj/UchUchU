@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>TB 26-09：計測されたハンマー打撃入力 · UchUchU</title>
+  <meta name="description" content="詳細はラングレー研究所のJoel W. Sills（joel.w.sills@nasa.gov）まで問い合わせること。PDF版はダウンロード可能。計測ハンマー試験では、理想化された単一の半正弦波形は必要ない。力と応答を正確に計測すれば、波頭のリップルや接触の分離があっても、既知の入力として扱える…">
+  <link rel="canonical" href="https://uchuchu.tech/a/spaceflightnews-4e865d9a13/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/a/spaceflightnews-4e865d9a13/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/a/spaceflightnews-4e865d9a13/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="noindex, follow">  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="TB 26-09：計測されたハンマー打撃入力 · UchUchU">
+  <meta property="og:description" content="詳細はラングレー研究所のJoel W. Sills（joel.w.sills@nasa.gov）まで問い合わせること。PDF版はダウンロード可能。計測ハンマー試験では、理想化された単一の半正弦波形は必要ない。力と応答を正確に計測すれば、波頭のリップルや接触の分離があっても、既知の入力として扱える…">
+  <meta property="og:url" content="https://uchuchu.tech/a/spaceflightnews-4e865d9a13/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TB 26-09：計測されたハンマー打撃入力 · UchUchU">
+  <meta name="twitter:description" content="詳細はラングレー研究所のJoel W. Sills（joel.w.sills@nasa.gov）まで問い合わせること。PDF版はダウンロード可能。計測ハンマー試験では、理想化された単一の半正弦波形は必要ない。力と応答を正確に計測すれば、波頭のリップルや接触の分離があっても、既知の入力として扱える…">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"ニュース","item":"https://uchuchu.tech/news/"},{"@type":"ListItem","position":3,"name":"TB 26-09：計測されたハンマー打撃入力","item":"https://uchuchu.tech/a/spaceflightnews-4e865d9a13/"}]},{"@type":"ItemList","name":"宇宙開発ニュース","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"TB 26-09 Measured Hammer-Tap Inputs","url":"https://www.nasa.gov/centers-and-facilities/nesc/tb-26-09-measured-hammer-tap-inputs/"}]}]}</script>
+  <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../static/css/style.css?v=30279b0e">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/a/spaceflightnews-4e865d9a13/" : "https://uchuchu.tech/en/a/spaceflightnews-4e865d9a13/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../" class="">ホーム</a>
+      <a href="../../companies/" class="">企業DB</a>
+      <a href="../../procurement/" class="">調達情報</a>
+      <a href="../../articles/" class="">特集</a>
+      <a href="../../launches/" class="">打ち上げ</a>
+      <a href="../../news/" class="on">ニュース</a>
+      <a href="../../faq/" class="">よくある質問</a>
+      <a href="../../advertise/" class="">広告掲載</a>
+      <a href="../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/a/spaceflightnews-4e865d9a13/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/a/spaceflightnews-4e865d9a13/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<article class="ndetail">
+
+  <div class="ndetail-head">
+    <div class="ndetail-meta">
+      <span class="pill-tag src">NASA</span>
+<time datetime="2026-11-02T20:47:41Z">2026.11.03</time><span class="mt-mark">自動翻訳</span>    </div>
+    <h1>TB 26-09：計測されたハンマー打撃入力</h1>
+  </div>
+
+  <div class="ndetail-media">
+    <img src="https://www.nasa.gov/wp-content/uploads/2015/04/tb-26-09-1-illustrative-hammer-force-time-histories.png"
+         alt="" loading="eager" onerror="this.closest('.ndetail-media').remove()">
+  </div>
+
+  <div class="ndetail-body">
+    <p>NASA ラングレー研究センターの技術文書「TB 26-09」は、ハンマー打撃試験の入力について、理想的な半正弦波でなくても、力と応答を正確に計測していれば試験として成立しうると整理した。波形の見た目で妥当性を判断するのではなく、計測精度、帯域、信号対雑音比、試験目的に対する加振の範囲で評価すべきだという立場である。</p>
+    <p>背景として、ハンマー試験はモード解析の基礎となり、パイロショック試験の前段にも使われる。記事は半正弦波、接触が保たれたままリップル（細かな揺らぎ）が現れる波形、接触が分離する波形を比べている。力がゼロの区間でも構造物は振動を続け、その振動に再接触が作用するため、打撃力の形そのものが応答に影響する。半正弦波は広い周波数帯に成分を持つが、奇数倍の周波数で成分がゼロになる性質があり、波形がきれいだからといって加振が十分だとは言えない。クレストのリップルは成分を加えて零点を埋め、接触の分離後に生じる時間差は決定論的な干渉を生む。理論面では、厳密なモデルと試験体に同じ力と初期条件を与えれば応答は一意に定まるが、近似モデルは入力が励起する周波数や振幅、非線形状態によって誤差が変わるとされる。</p>
+    <p>この考え方が示すのは、試験データの信頼性は「理想的な波形だったか」ではなく「実際に加えられた力を正しく測れているか」で決まるということである。記事は推奨事項として、力の全体を十分な帯域、校正、ダイナミックレンジ、時刻同期で計測すること、応答がクリップや飽和を起こさず信号対雑音比が確保されていることを確認すること、周波数、振幅、非線形応答の範囲が試験目的を満たしているかを検証することを挙げている。試験の棄却や再実施は、計測や加振の不足が特定できる場合に限るとも明記されている。宇宙機の構造や機器の評価では、この試験データが設計判断の根拠になるため、計測系の品質管理の重要性が高まると考えられる。</p>
+    <p>日本の製造業にとっては、この記事は直接の発注や製品仕様を示すものではない。ただ、妥当性判断の中心に力センサー、加速度センサー、データ収集装置、校正、時刻同期といった計測要素が置かれるため、これらを手がける部品メーカーや校正サービス事業者にとっては、帯域やダイナミックレンジ、同期精度の仕様がより厳しく問われる可能性がある。また、試験体の取付部や治具の剛性が応答に影響しうるとすれば、治具や締結部品を供給する側も計測結果の質に関わり得る。これは記事から直接読み取れる内容ではなく、筆者の推測である。</p>
+    <p class="ndetail-more">※ 内容の紹介はここまでです。続きは元記事をご覧ください。</p>
+  </div>
+
+  <p class="ndetail-source">
+    出典：<a href="https://www.nasa.gov/centers-and-facilities/nesc/tb-26-09-measured-hammer-tap-inputs/" target="_blank" rel="noopener nofollow">NASA</a>
+<span class="ndetail-note">／ 自動翻訳のため訳文が不正確な場合があります</span>  </p>
+
+
+  <section class="ndetail-cta">
+    <div class="ndetail-cta-inner">
+      <h2>この分野の企業を探していますか？</h2>
+      <p>UchUchUは宇宙産業に関わる日本企業をデータベース化しています。参入検討・取引先探索にお使いください。</p>
+      <div class="ndetail-cta-actions">
+        <a class="btn btn-primary" href="../../../companies/">企業データベースを見る</a>
+        <a class="btn btn-ghost" href="../../../articles/">参入ガイドを読む</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ndetail-back">
+    <a href="../../../news/">← ニュース一覧へ戻る</a>
+  </div>
+
+</article>
+<aside class="toe-training-wrap" aria-label="株式会社TOEの法人向けAI研修">
+  <p class="toe-training-disclosure">PR｜運営会社TOEのAI研修</p>
+  <a class="toe-training-banner" href="https://ai-training-lp-rouge.vercel.app/?utm_source=uchuchu&amp;utm_medium=display&amp;utm_campaign=toe_ai_training_202610&amp;utm_content=article_banner">
+    <span class="toe-training-visual"><img class="toe-training-photo" src="../../static/img/toe-training-photo-v2.webp" alt="パソコンで提案の準備を進める社員と経営者のイメージ" width="1100" height="733" loading="lazy"><small class="toe-training-image-note">AI生成のイメージ写真</small></span>
+    <span class="toe-training-copy">
+      <span class="toe-training-brand"><img src="../../static/img/toe-training-logo.png" alt="TOE" width="573" height="200" loading="lazy"><span>法人向けAI研修</span></span>
+      <strong class="toe-training-title">見積も、提案も。<br><span>社長ひとりで抱えない。</span></strong>
+      <span class="toe-training-body">見積・提案・顧客対応を題材に、AIで下書きや情報整理を学ぶ法人研修です。</span>
+      <span class="toe-training-action">無料30分相談<span aria-hidden="true">→</span></span>
+    </span>
+    <span class="toe-training-grant">
+      <span class="toe-training-deadline">まもなく終了</span>
+      <span class="toe-training-label">助成率</span>
+      <span class="toe-training-rate"><small>最大</small><b>75</b><span>%</span></span>
+      <small class="toe-training-note">中小企業・要件あり</small>
+    </span>
+  </a>
+</aside>
+<script src="../../static/js/toe-training-banner-v3.js" defer></script>    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../companies/">企業DB</a>
+<a href="../../procurement/">調達情報</a>          <a href="../../articles/">特集</a>
+          <a href="../../launches/">打ち上げ</a>
+          <a href="../../news/">ニュース</a>
+          <a href="../../papers/">研究動向</a>
+          <a href="../../topics/moon/">トピック</a>
+          <a href="../../search/">検索</a>
+          <a href="../../about/">運営会社</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-11-14 09:38 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../static/js/main.js?v=30279b0e" defer></script>
+</body>
+</html>
