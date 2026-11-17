@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T09:33:55.165749+00:00",
+  "generated_at": "2026-11-17T21:38:07.072037+00:00",
   "count": 200,
   "items": [
     {
@@ -28,8 +28,8 @@
     {
       "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
       "name": "Falcon 9 Block 5 | USSF-317",
-      "net": "2026-11-19T03:00:00Z",
-      "window_end": "2026-11-19T07:00:00Z",
+      "net": "2026-11-20T02:46:00Z",
+      "window_end": "2026-11-20T06:46:00Z",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "SpaceX",
@@ -97,10 +97,10 @@
     {
       "id": "7bdc412b-c965-4517-a131-f57a01189803",
       "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
-      "net": "2026-11-23T00:00:00Z",
-      "window_end": "2026-11-23T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
+      "net": "2026-11-23T11:09:00Z",
+      "window_end": "2026-11-23T11:38:00Z",
+      "status": "Go",
+      "status_name": "Go for Launch",
       "provider": "Arianespace",
       "provider_country": "FRA",
       "provider_url": "https://www.arianespace.com",
