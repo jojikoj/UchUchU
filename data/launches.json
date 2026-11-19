@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T09:34:20.774258+00:00",
+  "generated_at": "2026-11-19T21:33:53.282427+00:00",
   "count": 200,
   "items": [
     {
       "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
       "name": "Falcon 9 Block 5 | USSF-317",
-      "net": "2026-11-20T04:28:55Z",
+      "net": "2026-11-20T04:32:55Z",
       "window_end": "2026-11-20T06:46:00Z",
       "status": "Go",
       "status_name": "Go for Launch",
@@ -275,7 +275,7 @@
       "mission_type": "Resupply",
       "mission_description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcast": null,
+      "webcast": "https://plus.nasa.gov/scheduled-video/nasas-northrop-grumman-commercial-resupply-services-25-launch/",
       "upcoming": true
     },
     {
@@ -486,6 +486,29 @@
       "upcoming": true
     },
     {
+      "id": "22e117bf-041c-49d5-9d09-7b180036e143",
+      "name": "Ariane 62 | Metop-SG B1",
+      "net": "2026-12-17T00:00:00Z",
+      "window_end": "2026-12-17T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Arianespace",
+      "provider_country": "FRA",
+      "provider_url": "https://www.arianespace.com",
+      "rocket": "Ariane 62",
+      "pad": "Ariane Launch Area 4",
+      "pad_lat": "5.256319",
+      "pad_lon": "-52.786838",
+      "location": "Guiana Space Centre, French Guiana",
+      "country": "GUF",
+      "mission": "Metop-SG B1",
+      "mission_type": "Earth Science",
+      "mission_description": "Second of EUMETSAT's second generation of Metop weather satellites.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
       "name": "Long March 12A | Flight 2",
       "net": "2026-12-31T00:00:00Z",
@@ -528,29 +551,6 @@
       "mission_type": "Technology",
       "mission_description": "Ride-share launch of multiple satellites, including the in-orbit refueling demonstration satellite AayulSAT-1A from OrbitAID Aerospace. Other payload's identities TBD.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/sslv_image_20220912001724.jpeg",
-      "webcast": null,
-      "upcoming": true
-    },
-    {
-      "id": "22e117bf-041c-49d5-9d09-7b180036e143",
-      "name": "Ariane 62 | Metop-SG B1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "Arianespace",
-      "provider_country": "FRA",
-      "provider_url": "https://www.arianespace.com",
-      "rocket": "Ariane 62",
-      "pad": "Ariane Launch Area 4",
-      "pad_lat": "5.256319",
-      "pad_lon": "-52.786838",
-      "location": "Guiana Space Centre, French Guiana",
-      "country": "GUF",
-      "mission": "Metop-SG B1",
-      "mission_type": "Earth Science",
-      "mission_description": "Second of EUMETSAT's second generation of Metop weather satellites.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcast": null,
       "upcoming": true
     },
