@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>宇宙科学 · UchUchU</title>
+  <meta name="description" content="天体観測・惑星科学・宇宙物理">
+  <link rel="canonical" href="https://uchuchu.tech/topics/science/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/topics/science/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/topics/science/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="宇宙科学 · UchUchU">
+  <meta property="og:description" content="天体観測・惑星科学・宇宙物理">
+  <meta property="og:url" content="https://uchuchu.tech/topics/science/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="宇宙科学 · UchUchU">
+  <meta name="twitter:description" content="天体観測・惑星科学・宇宙物理">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"宇宙科学","item":"https://uchuchu.tech/topics/science/"}]},{"@type":"ItemList","name":"宇宙開発ニュース","numberOfItems":30,"itemListElement":[{"@type":"ListItem","position":1,"name":"A Radical Theory about the Universe Just Passed Some Key Tests. So... What Does that Mean?","url":"https://www.universetoday.com/articles/a-radical-theory-about-the-universe-just-passed-some-key-tests-so-what-does-that-mean"},{"@type":"ListItem","position":2,"name":"GTA hasn't gone to space (yet), but these sci-fi games can offer you a life of crime among the stars","url":"https://www.space.com/entertainment/space-games/gta-hasnt-gone-to-space-yet-but-these-sci-fi-games-can-offer-you-a-life-of-crime-among-the-stars"},{"@type":"ListItem","position":3,"name":"There's an impostor hiding in the Hyades star cluster. Can you spot it?","url":"https://www.space.com/stargazing/theres-an-impostor-hiding-in-the-hyades-star-cluster-can-you-spot-it"},{"@type":"ListItem","position":4,"name":"A Triple Star System 'That Shouldn't Exist,' Only 28 Light-Years from Earth","url":"https://www.universetoday.com/articles/a-triple-star-system-that-shouldnt-exist-only-28-light-years-from-earth"},{"@type":"ListItem","position":5,"name":"Researchers trace shifting pulsation modes in δ Scuti star KIC 4737720","url":"https://phys.org/news/2026-11-shifting-pulsation-modes-scuti-star.html"},{"@type":"ListItem","position":6,"name":"Venus-like conditions reveal how minerals could preserve traces of ancient water","url":"https://phys.org/news/2026-11-venus-conditions-reveal-minerals-ancient.html"},{"@type":"ListItem","position":7,"name":"A star's last gasps: ALMA reveals a giant gas ring and budding hourglass around a star in transition","url":"https://phys.org/news/2026-11-star-gasps-alma-reveals-giant.html"},{"@type":"ListItem","position":8,"name":"Sound Waves From Sunspots Launch Fiery Plasma Jets Across the Sun","url":"https://www.universetoday.com/articles/sound-waves-from-sunspots-launch-fiery-plasma-jets-across-the-sun"},{"@type":"ListItem","position":9,"name":"Astronomers reveal the oceanic origin of Europa's sodium cloud","url":"https://phys.org/news/2026-11-astronomers-reveal-oceanic-europa-sodium.html"},{"@type":"ListItem","position":10,"name":"Dark energy may originate from known laws of particle physics","url":"https://phys.org/news/2026-11-dark-energy-laws-particle-physics.html"},{"@type":"ListItem","position":11,"name":"This is the First Time Astronomers Have Seen One of These Stellar Mergers","url":"https://www.universetoday.com/articles/this-is-the-first-time-astronomers-have-seen-one-of-these-stellar-mergers"},{"@type":"ListItem","position":12,"name":"I got to tour SpaceX's Starfactory facility in Starbase, Texas, and what I saw blew my mind","url":"https://www.space.com/space-exploration/private-spaceflight/i-got-to-tour-spacexs-starfactory-facility-in-starbase-texas-and-what-i-saw-blew-my-mind"},{"@type":"ListItem","position":13,"name":"巨星に飲み込まれた伴星の行方は？ アンドロメダ銀河の増光現象を分析した研究成果","url":"https://sorae.info/astronomy/20261120-at-2025abao.html"},{"@type":"ListItem","position":14,"name":"Space travel changes the brain's immune cells, but not behavior","url":"https://phys.org/news/2026-11-space-brain-immune-cells-behavior.html"},{"@type":"ListItem","position":15,"name":"Why are some galaxies more lopsided than others? A catalog offers clues to the imbalance","url":"https://phys.org/news/2026-11-galaxies-lopsided-clues-imbalance.html"},{"@type":"ListItem","position":16,"name":"Tiny Grains of Sand Act as Cosmic Speedometers for Alien Winds","url":"https://www.universetoday.com/articles/tiny-grains-of-sand-act-as-cosmic-speedometers-for-alien-winds"},{"@type":"ListItem","position":17,"name":"I handpicked every Star Trek Blu-ray discounted on Amazon for Black Friday 2026 that I think is worth buying right now","url":"https://www.space.com/entertainment/space-movies-shows/i-handpicked-every-star-trek-blu-ray-discounted-on-amazon-for-black-friday-2026-that-i-think-is-worth-buying-right-now"},{"@type":"ListItem","position":18,"name":"Einstein was right! Scientists verify 1st image of a black hole ever captured","url":"https://www.space.com/astronomy/black-holes/einstein-was-right-scientists-verify-1st-image-of-a-black-hole-ever-captured"},{"@type":"ListItem","position":19,"name":"SpaceX Dragon cargo capsule heads home to Earth from the ISS","url":"https://www.space.com/space-exploration/launches-spacecraft/spacex-crs-35-dragon-iss-cargo-mission-return-to-earth"},{"@type":"ListItem","position":20,"name":"Galactic shock: Discovery challenges our understanding of the Milky Way's structure","url":"https://phys.org/news/2026-11-galactic-discovery-milky.html"},{"@type":"ListItem","position":21,"name":"年老いた銀河で星を生むリング ユークリッド宇宙望遠鏡が観測した「NGC 1291」","url":"https://sorae.info/astronomy/20261120-ngc-1291.html"},{"@type":"ListItem","position":22,"name":"Danish Soldiers Are Sneaking Starlink Terminals into Greenland","url":"https://europeanspaceflight.com/danish-soldiers-are-sneaking-starlink-terminals-into-greenland/"},{"@type":"ListItem","position":23,"name":"APOD: 2026 November 20 – V-G-R","url":"https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/"},{"@type":"ListItem","position":24,"name":"スターシグナルとSynspective、宇宙状況把握サービスの試用評価・将来展開に向けた連携で合意","url":"https://spacemedia.jp/news/21665"},{"@type":"ListItem","position":25,"name":"Mercury-bound X-ray telescope delivers first images after eight years in space","url":"https://phys.org/news/2026-11-mercury-bound-ray-telescope-images.html"},{"@type":"ListItem","position":26,"name":"Euclid's hunt for strong gravitational lenses is off to a strong start","url":"https://phys.org/news/2026-11-euclid-strong-gravitational-lenses.html"},{"@type":"ListItem","position":27,"name":"On this day in space! Nov. 19, 2005: Japan's Hayabusa spacecraft makes 1st-ever liftoff from surface of an asteroid","url":"https://www.space.com/space-exploration/on-this-day-in-space-november-19-2005"},{"@type":"ListItem","position":28,"name":"On this day in space! Nov. 19, 2005: Japan's Hayabusa spacecraft makes 1st-ever liftoff from surface of an asteroid","url":"https://www.space.com/space-exploration/on-this-day-in-space-november-19-2026"},{"@type":"ListItem","position":29,"name":"ESA's Hera probe uses 'superhuman' vision to inspect NASA's asteroid crash site","url":"https://phys.org/news/2026-11-esa-hera-probe-superhuman-vision.html"},{"@type":"ListItem","position":30,"name":"If tiny 'primordial' black holes exist, here's how we might find them","url":"https://phys.org/news/2026-11-tiny-primordial-black-holes.html"}]}]}</script>
+  <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../static/css/style.css?v=30279b0e">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/topics/science/" : "https://uchuchu.tech/en/topics/science/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../" class="">ホーム</a>
+      <a href="../../companies/" class="">企業DB</a>
+      <a href="../../procurement/" class="">調達情報</a>
+      <a href="../../articles/" class="">特集</a>
+      <a href="../../launches/" class="">打ち上げ</a>
+      <a href="../../news/" class="">ニュース</a>
+      <a href="../../faq/" class="">よくある質問</a>
+      <a href="../../advertise/" class="">広告掲載</a>
+      <a href="../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/topics/science/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/topics/science/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>宇宙科学</h1>
+    <p class="page-sub">天体観測・惑星科学・宇宙物理</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="filter-bar">
+      <a class="chip " href="../moon/">#月</a>
+      <a class="chip " href="../mars/">#火星</a>
+      <a class="chip " href="../rocket/">#ロケット</a>
+      <a class="chip " href="../satellite/">#衛星・地球観測</a>
+      <a class="chip " href="../human/">#有人宇宙</a>
+      <a class="chip on" href="../science/">#宇宙科学</a>
+      <a class="chip " href="../business/">#宇宙ビジネス</a>
+      <a class="chip " href="../japan/">#日本の宇宙開発</a>
+    </div>
+    <div class="tile-grid">
+<article class="news-tile">
+  <a class="tile-media" href="../../a/universetoday-49577626bf/">
+    <img src="../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/universetoday-49577626bf/">宇宙に関する急進的な理論、主要な検証を通過 その意味は</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T20:07:21+00:00">2026.11.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-dcb3f9b57c/">
+    <img src="https://cdn.mos.cms.futurecdn.net/aQAx9sgVy5bNZq3Lb57AsB-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-dcb3f9b57c/">GTAは宇宙へ進出していないが、SF系ゲームで星々の間の犯罪生活を楽しめる</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T20:00:00+00:00">2026.11.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-25136dcc28/">
+    <img src="https://cdn.mos.cms.futurecdn.net/t6dSNrTvpEr2jN8TwJN8de-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-25136dcc28/">ヒアデス星団に紛れ込んだ偽物の星 見分けられるか</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#衛星・地球観測</span><time datetime="2026-11-20T19:00:00+00:00">2026.11.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/universetoday-b8f87589f0/">
+    <img src="../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/universetoday-b8f87589f0/">地球から約28光年、「存在するはずのない」三重連星系を発見</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T16:52:03+00:00">2026.11.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-7b07147361/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/researchers-trace-shif.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-7b07147361/">δ Scuti型変光星KIC 4737720、脈動モードの変化を研究者が追跡</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T16:20:08+00:00">2026.11.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-16496c6f47/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/venus.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-16496c6f47/">金星に近い環境の実験で、鉱物が古代の水の痕跡を保存し得ることが判明</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T16:20:01+00:00">2026.11.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-e07a649dad/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/a-stars-last-gasps-alm.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-e07a649dad/">恒星の最後の輝き、ALMAが捉えた巨大なガスリングと砂時計状の構造</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T15:20:01+00:00">2026.11.21</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/universetoday-c92c7d1fb7/">
+    <img src="../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/universetoday-c92c7d1fb7/">黒点からの音波が太陽上で高温プラズマのジェットを発生させる</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T14:58:26+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-45bfce7d02/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/astronomers-reveal-the.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-45bfce7d02/">天文学者、木星の衛星エウロパのナトリウム雲の起源が海洋にあることを解明</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-11-20T14:00:06+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-bcc9ceb3ac/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/dark-energy.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-bcc9ceb3ac/">暗黒エネルギーは既知の素粒子物理の法則に由来する可能性</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T13:20:06+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/universetoday-ac0215ca18/">
+    <img src="../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/universetoday-ac0215ca18/">天文学者、恒星合体の現象を初めて観測</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T13:04:40+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-ca34120f48/">
+    <img src="https://cdn.mos.cms.futurecdn.net/G8BaMEVyvn9LdvXRCrtDD3-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-ca34120f48/">SpaceX、テキサス州スターベースの「スターファクトリー」を公開見学 製造現場の規模に驚き</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#ロケット</span><time datetime="2026-11-20T13:00:00+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/sorae-3e4c9252cb/">
+    <img src="../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/sorae-3e4c9252cb/">巨星に飲み込まれた伴星の行方は？ アンドロメダ銀河の増光現象を分析した研究成果</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T12:57:34+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-618eb67c02/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2025/iss.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-618eb67c02/">宇宙旅行は脳の免疫細胞を変化させるが、行動には影響せず</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T12:40:08+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-beb957e607/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/why-are-some-galaxies.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-beb957e607/">銀河の「偏り」はなぜ生じるのか 新たなカタログが手がかりに</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T12:00:01+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/universetoday-208cdc9bd3/">
+    <img src="../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/universetoday-208cdc9bd3/">微細な砂粒が「宇宙の速度計」に 異星の風の解明へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T11:57:20+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Universe Today</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-ab7b4803a0/">
+    <img src="https://cdn.mos.cms.futurecdn.net/fPZenShuZTwTUr8jU3ET3o-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-ab7b4803a0/">2026年ブラックフライデー、アマゾンで割引中のスター・トレックBlu-rayから注目作を厳選</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T11:00:32+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-3e506a6327/">
+    <img src="https://cdn.mos.cms.futurecdn.net/B6udrvzScShF4sK8KB6sLT-1920-80.png" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-3e506a6327/">アインシュタインの理論を裏付け 人類が初めて撮影したブラックホール画像を独立検証</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T11:00:00+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-b4e6ebcc3e/">
+    <img src="https://cdn.mos.cms.futurecdn.net/ugf6BTHPoeoNQ3J9iuTShh-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-b4e6ebcc3e/">SpaceXのドラゴン補給船、国際宇宙ステーションを離脱し地球へ帰還へ</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#有人宇宙</span><time datetime="2026-11-20T11:00:00+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-6c3f806bdf/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/galactic-shock-discove.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-6c3f806bdf/">銀河の衝撃波が示す天の川銀河の構造、従来理解に一石</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T10:00:07+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/sorae-bbf2691092/">
+    <img src="../../../static/img/fallback-research.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/sorae-bbf2691092/">年老いた銀河で星を生むリング ユークリッド宇宙望遠鏡が観測した「NGC 1291」</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T09:48:32+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">sorae</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/spaceflightnews-05bd53cdaa/">
+    <img src="https://europeanspaceflight.com/wp-content/uploads/2026/11/Danish-Soldiers-Are-Sneaking-Starlink-Terminals-into-Greenland.webp" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/spaceflightnews-05bd53cdaa/">デンマーク兵、スターリンク端末をグリーンランドに持ち込んでいるとの疑い</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#衛星・地球観測</span><time datetime="2026-11-20T07:09:49Z">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">European Spaceflight</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/spaceflightnews-7d625a5ccc/">
+    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/IMG_4364N_Kyriazis.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/spaceflightnews-7d625a5ccc/">APOD: 2026 November 20 – V-G-R</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#有人宇宙</span><time datetime="2026-11-20T05:05:00Z">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">NASA</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/spacemedia-7cc3363b6e/">
+    <img src="../../../static/img/fallback-launch.jpg" alt="" loading="lazy">
+    <span class="stock-mark">イメージ</span>
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/spacemedia-7cc3363b6e/">スターシグナルとSynspective、宇宙状況把握サービスの試用評価・将来展開に向けた連携で合意</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-11-20T04:19:04+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space Media</span>
+    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-599019c95b/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/first-x-ray-imaging-in.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-599019c95b/">水星へ向かうX線望遠鏡、宇宙での8年を経て初の画像を公開</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-20T00:00:10+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-8b6fad81a6/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/euclids-image-of-the-a.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-8b6fad81a6/">ユークリッド望遠鏡、強い重力レンズの探索で好スタート</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-19T23:20:06+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-7912923708/">
+    <img src="https://cdn.mos.cms.futurecdn.net/wenvdAJvXtGPUg2a65RxeF-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-7912923708/">今日は宇宙で何の日か：2005年11月19日、日本のはやぶさが小惑星表面から史上初の離陸</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#日本の宇宙開発</span><time datetime="2026-11-19T22:53:16+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/space_com-7e219c427c/">
+    <img src="https://cdn.mos.cms.futurecdn.net/wenvdAJvXtGPUg2a65RxeF-1920-80.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/space_com-7e219c427c/">宇宙の今日の出来事 2005年11月19日、日本の探査機「はやぶさ」が小惑星表面から史上初の離陸</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#日本の宇宙開発</span><time datetime="2026-11-19T22:53:16+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Space.com</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-a32f91d0b6/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/high-resolution-image.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-a32f91d0b6/">ESA探査機ヘラ、「超人的」な視覚でNASAの小惑星衝突現場を調査</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#月</span><time datetime="2026-11-19T22:40:17+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+<article class="news-tile">
+  <a class="tile-media" href="../../a/phys_space-e17e0feb02/">
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/if-tiny-primordial-bla.jpg" alt="" loading="lazy"
+         onerror="this.closest('.tile-media').classList.add('no-img')">
+  </a>
+  <div class="tile-body">
+    <h3 class="tile-title"><a href="../../a/phys_space-e17e0feb02/">もし小さな「原始」ブラックホールが存在するなら、それを見つける方法</a></h3>
+    <div class="tile-meta">
+<span class="tag-hash">#宇宙科学</span><time datetime="2026-11-19T22:40:07+00:00">2026.11.20</time>    </div>
+    <div class="tile-src">
+      <span class="src">Phys.org</span>
+<span class="mt-mark">自動翻訳</span>    </div>
+  </div>
+</article>
+    </div>
+    <nav class="pager" aria-label="pagination">
+<span class="pager-btn disabled">← 前へ</span>  <span class="pager-nums">
+<span class="pager-num on" aria-current="page">1</span>
+<a class="pager-num" href="2/">2</a><a class="pager-num" href="3/">3</a><span class="pager-gap">…</span>
+<a class="pager-num" href="84/">84</a>  </span>
+<a class="pager-btn" href="2/" rel="next">次へ →</a>
+</nav>
+
+  </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../companies/">企業DB</a>
+<a href="../../procurement/">調達情報</a>          <a href="../../articles/">特集</a>
+          <a href="../../launches/">打ち上げ</a>
+          <a href="../../news/">ニュース</a>
+          <a href="../../papers/">研究動向</a>
+          <a href="../../topics/moon/">トピック</a>
+          <a href="../../search/">検索</a>
+          <a href="../../about/">運営会社</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-11-21 09:38 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../static/js/main.js?v=30279b0e" defer></script>
+</body>
+</html>

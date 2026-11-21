@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Taiyuan Satellite Launch Center launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:a6421db3-7c8a-4cf7-a659-cec195140f7f@uchuchu.tech
+DTSTAMP:20261121T093850Z
+DTSTART:20261127T130000Z
+DTEND:20261127T140000Z
+SUMMARY:Long March 6A | Unknown Payload
+LOCATION:Taiyuan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 6A / Unknown Payload / Go for Launch
+URL:https://uchuchu.tech/en/launches/site/taiyuan/
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:13270554-4bdb-42ae-916f-1bb54492204f@uchuchu.tech
+DTSTAMP:20261121T093850Z
+DTSTART:20261129T035000Z
+DTEND:20261129T045000Z
+SUMMARY:Long March 6C | Unknown Payload
+LOCATION:Taiyuan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 6C / Unknown Payload / Go for Launch
+URL:https://uchuchu.tech/en/launches/site/taiyuan/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
