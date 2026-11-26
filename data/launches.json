@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T21:34:54.528889+00:00",
+  "generated_at": "2026-11-26T09:33:55.340002+00:00",
   "count": 200,
   "items": [
     {
@@ -36,9 +36,9 @@
       "provider_country": "USA",
       "provider_url": "https://rocketlabcorp.com",
       "rocket": "Electron",
-      "pad": "Unknown Pad",
-      "pad_lat": "-39.260881",
-      "pad_lon": "177.865826",
+      "pad": "Rocket Lab Launch Complex 1B",
+      "pad_lat": "-39.262833",
+      "pad_lon": "177.864469",
       "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
       "country": "NZL",
       "mission": "Night Owls Never Sleep (StriX Launch 14)",
@@ -3821,6 +3821,29 @@
       "upcoming": true
     },
     {
+      "id": "13db71e3-2f7e-4a95-8d51-b096bac36e74",
+      "name": "PSLV-CA | ISSA-J1",
+      "net": "2027-06-30T00:00:00Z",
+      "window_end": "2027-06-30T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Indian Space Research Organization",
+      "provider_country": "IND",
+      "provider_url": "https://www.isro.gov.in/",
+      "rocket": "PSLV-CA",
+      "pad": "Unknown Pad",
+      "pad_lat": "13.733",
+      "pad_lon": "80.235",
+      "location": "Satish Dhawan Space Centre, India",
+      "country": "IND",
+      "mission": "ISSA-J1",
+      "mission_type": "Technology",
+      "mission_description": "Astroscale's ISSA-J1 (In-situ Space Situational Awareness-Japan 1) mission will diagnose and inspect two large satellite debris in orbit by imaging and diagnosing them in close proximity after rendezvous. The satellite is built on Astroscale’s heritage in rendezvous and proximity operations, inspection and characterization capabilities",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/pslv_image_20230730102956.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
       "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
       "name": "Long March 2F/G | Shenzhou 24",
       "net": "2026-11-25T00:18:52Z",
@@ -4577,29 +4600,6 @@
       "mission_description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcast": "https://www.youtube.com/watch?v=0rd-mypixIg",
-      "upcoming": false
-    },
-    {
-      "id": "dfcabb3c-078b-4f5b-a47c-0161f248cee9",
-      "name": "Zhuque-2E Block 2 | 10 satellites",
-      "net": "2026-10-14T11:40:00Z",
-      "window_end": "2026-10-14T12:19:00Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "LandSpace",
-      "provider_country": "CHN",
-      "provider_url": "https://en.wikipedia.org/wiki/LandSpace",
-      "rocket": "Zhuque-2E Block 2",
-      "pad": "Launch Area 96A",
-      "pad_lat": "40.91491",
-      "pad_lon": "100.245488",
-      "location": "Jiuquan Satellite Launch Center, People's Republic of China",
-      "country": "CHN",
-      "mission": "10 satellites",
-      "mission_type": "Technology",
-      "mission_description": "Ride-share of 10 satellites to sun-synchronous orbit, including: * Guangchuan-03 & 04 (LT-03/04) from LandSpace's subsidiary LandTower for testing and demonstrating LEO communication satellite constellation technologies, including high-speed laser communication nodes/terminals and new-type solar array power systems. * 8 satellites (XSD-39 and XSD-44 through XSD-50) for ADA Space for technology ver…",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhuque-2e_y6_la_image_20260609122825.jpeg",
-      "webcast": null,
       "upcoming": false
     }
   ]
