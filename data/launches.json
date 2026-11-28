@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:35:00.774830+00:00",
+  "generated_at": "2026-11-28T09:34:05.242742+00:00",
   "count": 200,
   "items": [
     {
@@ -7,6 +7,7 @@
       "name": "Long March 6C | Unknown Payload",
       "net": "2026-11-29T03:50:00Z",
       "window_end": "2026-11-29T04:15:00Z",
+      "net_precision": "Hour",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -23,14 +24,14 @@
       "mission_description": "Details TBD.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-6c_on_the_la_image_20240507065151.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Hour"
+      "upcoming": true
     },
     {
       "id": "b0d27def-0a88-44c3-a947-1fd5b8503e2c",
       "name": "Falcon 9 Block 5 | USSF-380",
-      "net": "2026-11-29T04:39:00Z",
+      "net": "2026-11-29T04:39:03Z",
       "window_end": "2026-11-29T08:39:00Z",
+      "net_precision": "Second",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "SpaceX",
@@ -47,14 +48,14 @@
       "mission_description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcast": "https://www.youtube.com/watch?v=xpfmP-4EGIw",
-      "upcoming": true,
-      "net_precision": "Minute"
+      "upcoming": true
     },
     {
       "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
       "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
       "net": "2026-11-29T15:47:00Z",
       "window_end": "2026-11-29T15:47:00Z",
+      "net_precision": "Minute",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "SpaceX",
@@ -71,8 +72,7 @@
       "mission_description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": "https://www.youtube.com/watch?v=YLrybIli73I",
-      "upcoming": true,
-      "net_precision": "Minute"
+      "upcoming": true
     },
     {
       "id": "7c891a0b-7194-4425-8cfd-2e8c75af2924",
@@ -102,6 +102,7 @@
       "name": "Kinetica 1 | Unknown Payload",
       "net": "2026-12-01T01:45:00Z",
       "window_end": "2026-12-01T02:03:00Z",
+      "net_precision": "Hour",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "CAS Space",
@@ -118,14 +119,14 @@
       "mission_description": "Details TBD.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhongke-1a_image_20220912002218.png",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Hour"
+      "upcoming": true
     },
     {
       "id": "e2523821-9760-4cb4-ad1f-7ce2e30419bd",
       "name": "Kuaizhou 11 | Unknown Payload",
       "net": "2026-12-02T11:55:00Z",
       "window_end": "2026-12-02T12:33:00Z",
+      "net_precision": "Hour",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "ExPace",
@@ -142,14 +143,14 @@
       "mission_description": "Details TBD.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kuaizhou_11_lif_image_20240520155835.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Hour"
+      "upcoming": true
     },
     {
       "id": "5591cfa3-6336-41ab-a37a-7c57aa28ab5f",
       "name": "Falcon 9 Block 5 | NROL-132",
       "net": "2026-12-02T20:30:00Z",
       "window_end": "2026-12-03T00:30:00Z",
+      "net_precision": "Minute",
       "status": "TBC",
       "status_name": "To Be Confirmed",
       "provider": "SpaceX",
@@ -166,14 +167,14 @@
       "mission_description": "Sixteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Minute"
+      "upcoming": true
     },
     {
       "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
       "name": "Falcon 9 Block 5 | CHORUS",
       "net": "2026-12-04T12:55:00Z",
       "window_end": "2026-12-04T13:24:00Z",
+      "net_precision": "Minute",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "SpaceX",
@@ -190,14 +191,14 @@
       "mission_description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Eart…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": "https://x.com/i/broadcasts/2VNlrbYvYNmMgM",
-      "upcoming": true,
-      "net_precision": "Minute"
+      "upcoming": true
     },
     {
       "id": "5ce59e3a-c343-430f-ae4e-e608ba536754",
       "name": "Long March 12 | SatNet LEO Group TBD?",
       "net": "2026-12-10T07:00:00Z",
       "window_end": "2026-12-10T10:00:00Z",
+      "net_precision": "Hour",
       "status": "TBC",
       "status_name": "To Be Confirmed",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -214,14 +215,14 @@
       "mission_description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group. The constellation will eventually consists of 13000 satellites.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Hour"
+      "upcoming": true
     },
     {
       "id": "22e117bf-041c-49d5-9d09-7b180036e143",
       "name": "Ariane 62 | Metop-SG B1",
       "net": "2026-12-18T00:36:00Z",
       "window_end": "2026-12-18T00:36:00Z",
+      "net_precision": "Minute",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "Arianespace",
@@ -238,14 +239,14 @@
       "mission_description": "Second of EUMETSAT's second generation of Metop weather satellites.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Minute"
+      "upcoming": true
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
       "name": "Mir | Demo Flight",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Agency for Defense Development",
@@ -262,14 +263,14 @@
       "mission_description": "Note: Launch vehicle name is provisional. First orbital full version launch of the South Korean military small satellite launch vehicle, after 2 sub-orbital tests of individual stages on 30 March and 30 December 2022, and 1 orbital test flight without the 2nd stage on 4 December 2023. Details TBD.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/south2520korea_image_20231204145331.png",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "dff42a2e-f047-48d7-b260-3888d3a4fe33",
       "name": "Spectrum | AT-Astra and Others (Spectrum Flight 3)",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Isar Aerospace",
@@ -286,14 +287,14 @@
       "mission_description": "Third test flight of the Isar Spectrum launch vehicle. This launch will carry various satellites including R-Space’s AT-Astra/IOD-01, which will perform in-orbit demonstrations for ENPULSION, SUNBOOSTER GmbH, and Synopsis Planet.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
       "name": "Falcon 9 Block 5 | Starlink Group 15-21",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -310,14 +311,14 @@
       "mission_description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcast": "https://www.youtube.com/watch?v=z9uME3O2xHk",
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49",
       "name": "Falcon 9 Block 5 | NROL-195",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -334,14 +335,14 @@
       "mission_description": "Sixteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "b0dc988c-ea4a-423f-81b6-6b0fbe7cc17c",
       "name": "Falcon 9 Block 5 | OneWeb 21",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -358,14 +359,14 @@
       "mission_description": "A batch of 32 satellites for the OneWeb satellite constellation, which is intended to provide global Internet broadband service for individual consumers. The constellation is planned to have around 648 microsatellites (of which 60 are spares), around 150 kg each, operating in Ku-band from low Earth orbit.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20241020164113.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
       "name": "Long March 12A | Flight 2",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -382,14 +383,14 @@
       "mission_description": "Second test launch of CASC/SAST’s Long March 12A rocket. Payload identities are TBD.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_12a__image_20251224005749.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "e59ff9a4-f72f-4841-8546-3c94346ecdba",
       "name": "SSLV | AayulSAT-1A & others",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Indian Space Research Organization",
@@ -406,14 +407,14 @@
       "mission_description": "Ride-share launch of multiple satellites, including the in-orbit refueling demonstration satellite AayulSAT-1A from OrbitAID Aerospace. Other payload's identities TBD.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/sslv_image_20220912001724.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
       "name": "Electron | LOXSAT 1",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -430,14 +431,14 @@
       "mission_description": "LOXSAT 1 is a demonstration satellite of a complete cryogenic oxygen fluid management system in orbit, developed by Eta Space and sponsored by NASA's Tipping Point program. The system will be integrated on a Rocket Lab Photon-LEO satellite bus and collect critical cryogenic fluid management data in orbit for 9 months, demonstrating capabilities of in-space cryogenic storage and transferal. Eta Spa…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "548df42c-ae26-4cc9-921a-f0042941911a",
       "name": "Electron | BlackSky Gen-3 6",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -454,14 +455,14 @@
       "mission_description": "BlackSky Gen-3 Earth-imaging satellites",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer A",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -478,14 +479,14 @@
       "mission_description": "Tranche 1 Tracking Layer A is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer C",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -502,8 +503,7 @@
       "mission_description": "Tranche 1 Tracking Layer C is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5",
@@ -533,6 +533,7 @@
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer D",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -549,14 +550,14 @@
       "mission_description": "Tranche 1 Transport Layer D is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites. The constellation w…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "c5783e2b-d458-4b99-9936-4043c236190b",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer F",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -573,8 +574,7 @@
       "mission_description": "Tranche 1 Transport Layer F is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites. The constellation w…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "875ba957-be5f-42bd-8a6e-ed98254f572a",
@@ -650,6 +650,7 @@
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer D",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -666,14 +667,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "71ed4649-8d71-42e8-8548-d42ffa2c5a6e",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer E",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -690,8 +691,7 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "ce1317de-ec94-4479-9b28-38ebf11f13ae",
@@ -767,6 +767,7 @@
       "name": "Spectrum | 1 x Pelican satellite",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Isar Aerospace",
@@ -783,14 +784,14 @@
       "mission_description": "Payload consists of a single Pelican high-resolution imaging satellite for Planet Labs Germany.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "b48e32c5-3776-4684-a956-5ea4df032e90",
       "name": "Spectrum | ΣYNDEO-3",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Isar Aerospace",
@@ -807,8 +808,7 @@
       "mission_description": "ΣYNDEO-3 is a satellite built by Redwire Corporation for the European Union/European Space Agency (ESA)’s In-Orbit Demonstration and In-Orbit Validation Programme (IOD/IOV), which will carry 10 different technological demonstration payload from institutions of Spain, France, Germany, Italy, Luxembourg and the European Commission. The satellite is built on Redwire's Hammerhead spacecraft platform.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
@@ -838,6 +838,7 @@
       "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -854,8 +855,7 @@
       "mission_description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees. In early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is s…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "b78857c4-3b8d-4462-929e-bc76f39c0e6d",
@@ -885,6 +885,7 @@
       "name": "Electron | BlackSky Gen-3 7",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -901,8 +902,7 @@
       "mission_description": "BlackSky Gen-3 Earth-imaging satellites",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "280fba47-8e6e-4a4f-8bdd-b9687d99a9c5",
@@ -955,6 +955,7 @@
       "name": "Electron | iQPS Launch 11",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -971,32 +972,7 @@
       "mission_description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
-    },
-    {
-      "id": "cb0c27fd-496c-4f74-aa04-9c0e5af33e3c",
-      "name": "Epsilon S | Demo Flight",
-      "net": "2027-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "Japan Aerospace Exploration Agency",
-      "provider_country": "JPN",
-      "provider_url": "https://www.jaxa.jp/",
-      "rocket": "Epsilon S",
-      "pad": "Mu Center",
-      "pad_lat": "31.2509794",
-      "pad_lon": "131.0821319",
-      "location": "Uchinoura Space Center, Japan",
-      "country": "JPN",
-      "mission": "Demo Flight",
-      "mission_type": "Test Flight",
-      "mission_description": "Vietnamese Synthetic Aperture Radar Earth observation satellite build by NEC Corporation of Japan, based on Japan's ASNARO 2 satellite and the NEXTAR NX-300L satellite bus. The satellite will contribute to measures against natural disasters and climate change in Vietnam.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/epsilon_image_20190207032600.jpeg",
-      "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "4d3943e9-c894-46c4-a318-84d526d0ef40",
@@ -1302,6 +1278,7 @@
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Tracking Layer A",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -1318,14 +1295,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Tracking Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "cb1762f0-90f4-4902-a5f6-655a7ade25bf",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Tracking Layer B",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -1342,14 +1319,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Tracking Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "c703fab3-2ce4-4cf1-861d-754da3f3ad42",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer A",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -1366,8 +1343,7 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "428edcbe-bbd7-4475-8eb1-3dd90b39ad75",
@@ -1512,6 +1488,7 @@
       "name": "Falcon 9 Block 5 | USSF-31",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -1528,14 +1505,14 @@
       "mission_description": "Classified US Space Force carrying two payloads directly to geostationary orbit.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "fc1bd321-e502-4d0f-81f4-1926dece81c6",
       "name": "Falcon 9 Block 5 | VICTUS SURGO",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -1552,14 +1529,14 @@
       "mission_description": "A new Tactically Responsive Space (TacRS) mission by the United States Space Force Space Systems Command to deliver responsive space delivery. The mission consists of an Impulse Space Mira orbital transfer vehicle that will operate in Geosynchronous Transfer Orbit (GTO), which would be transferred from Low Earth Orbit (LEO) on an Impulse Space Helios kick stage. A Helios rideshare payload will als…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "c1bd775a-2fff-45bb-9726-765b69817c19",
       "name": "Falcon Heavy | USSF-75",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -1576,8 +1553,7 @@
       "mission_description": "Classified payload for the United States Space Force",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "b94b49fc-5784-4dfd-92e7-07e57f50edcd",
@@ -1630,6 +1606,7 @@
       "name": "Gravity-2 | Demo Flight",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Orienspace Technology",
@@ -1646,8 +1623,7 @@
       "mission_description": "First test launch of OrienSpace’s Gravity-2 rocket.",
       "image": null,
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "c101b9da-2165-4d7b-aa9e-12a965ef8cd2",
@@ -1719,106 +1695,11 @@
       "upcoming": true
     },
     {
-      "id": "ac02da00-6e8b-45a0-b829-09d614891e6a",
-      "name": "H3-22 | ETS-9",
-      "net": "2027-06-30T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "Mitsubishi Heavy Industries",
-      "provider_country": "JPN",
-      "provider_url": "https://www.mhi.com/",
-      "rocket": "H3-22",
-      "pad": "Yoshinobu Launch Complex LP-2",
-      "pad_lat": "30.400938",
-      "pad_lon": "130.97564",
-      "location": "Tanegashima Space Center, Japan",
-      "country": "JPN",
-      "mission": "ETS-9",
-      "mission_type": "Communications",
-      "mission_description": "The Engineering Test Satellite 9 (ETS-9) is a JAXA project aimed to develop an advanced satellite bus, or common model, for various high-throughput satellites (HTS) for communications. The new satellite bus by Mitsubishi Electric will focus specifically on advanced communication needs: - Up to 25kW of power to support HTS communications - Light mass, all-electric bus system achieved with 6kW high-…",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
-      "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year Half 1"
-    },
-    {
-      "id": "a2234679-5efe-4a00-9aff-cf82dbac22b0",
-      "name": "H3-24 | HTV-X2",
-      "net": "2027-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "Mitsubishi Heavy Industries",
-      "provider_country": "JPN",
-      "provider_url": "https://www.mhi.com/",
-      "rocket": "H3-24",
-      "pad": "Yoshinobu Launch Complex LP-2",
-      "pad_lat": "30.400938",
-      "pad_lon": "130.97564",
-      "location": "Tanegashima Space Center, Japan",
-      "country": "JPN",
-      "mission": "HTV-X2",
-      "mission_type": "Resupply",
-      "mission_description": "Second flight of the upgraded Japanese HTV-X spacecraft designed to resupply the International Space Station.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
-      "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
-    },
-    {
-      "id": "be50d3a3-1385-4371-a4dd-d7ab4969be59",
-      "name": "H3-24 | HTV-X3",
-      "net": "2027-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "Mitsubishi Heavy Industries",
-      "provider_country": "JPN",
-      "provider_url": "https://www.mhi.com/",
-      "rocket": "H3-24",
-      "pad": "Yoshinobu Launch Complex LP-2",
-      "pad_lat": "30.400938",
-      "pad_lon": "130.97564",
-      "location": "Tanegashima Space Center, Japan",
-      "country": "JPN",
-      "mission": "HTV-X3",
-      "mission_type": "Resupply",
-      "mission_description": "Third flight of the upgraded Japanese HTV-X spacecraft designed to resupply the International Space Station.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
-      "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
-    },
-    {
-      "id": "3a4dc969-d264-48a1-b113-bf69a798a5c4",
-      "name": "H3-24 | Lunar Polar Exploration Mission (LUPEX)",
-      "net": "2028-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": "TBD",
-      "status_name": "To Be Determined",
-      "provider": "Mitsubishi Heavy Industries",
-      "provider_country": "JPN",
-      "provider_url": "https://www.mhi.com/",
-      "rocket": "H3-24",
-      "pad": "Yoshinobu Launch Complex LP-2",
-      "pad_lat": "30.400938",
-      "pad_lon": "130.97564",
-      "location": "Tanegashima Space Center, Japan",
-      "country": "JPN",
-      "mission": "Lunar Polar Exploration Mission (LUPEX)",
-      "mission_type": "Lunar Exploration",
-      "mission_description": "The Lunar Polar Exploration mission (LUPEX) is a robotic lunar mission jointly developed by the Indian Space Research Organisation (ISRO) and Japan Aerospace Exploration Agency (JAXA), deploying a lunar rover and lander to explore the south pole region of the Moon. JAXA will provide the under-development H3 launch vehicle and the rover, while ISRO would be responsible for the lander.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
-      "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
-    },
-    {
       "id": "04522dea-1450-48f5-bc9d-2d7f1e637f9b",
       "name": "HASTE | Leidos-3",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -1835,14 +1716,14 @@
       "mission_description": "",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "0196fba7-dd6c-4ba0-bf71-e1460930ffde",
       "name": "HASTE | Leidos-4",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -1859,14 +1740,14 @@
       "mission_description": "",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "71489c66-8ecd-4610-9847-3620a543fd75",
       "name": "HASTE | Leidos-5",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -1883,14 +1764,14 @@
       "mission_description": "",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "84f8dd64-8146-45e1-b34c-7df662a59c65",
       "name": "Hyperbola-3 | Demo Flight",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "i-Space",
@@ -1907,14 +1788,14 @@
       "mission_description": "First test launch of i-Space’s Hyperbola-3 rocket.",
       "image": null,
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "8d2a11e2-51e3-4841-a616-d41589373025",
       "name": "Long March 10A | Demo Flight",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -1931,8 +1812,7 @@
       "mission_description": "First test launch of CASC/CALT’s Long March 10A rocket. Payload is expected to be a prototype of the Low Earth Orbit mission version of the Mengzhou crew spacecraft.",
       "image": null,
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "a8c191e1-b231-4b2e-aefd-5e8ad55c7a82",
@@ -1962,6 +1842,7 @@
       "name": "Nebula-1 | Demo Flight",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Deep Blue Aerospace",
@@ -1978,8 +1859,7 @@
       "mission_description": "First test launch of Deep Blue Aerospace’s Nebula-1 rocket. The test flight profile is reported to be sub-orbital.",
       "image": null,
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "ca3d56b7-2175-48e4-9a6a-2ecc9996d96b",
@@ -2078,6 +1958,7 @@
       "name": "Spectrum | Cassini",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Isar Aerospace",
@@ -2094,8 +1975,7 @@
       "mission_description": "Three small satellites hosting payloads for companies across Europe as part of the ESA-European Union IOD (In-Orbit Demonstration) and IOV (In-Orbit Verification) programs.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "2e37a196-f5f8-4496-96ae-63f4b6b27912",
@@ -2125,6 +2005,7 @@
       "name": "Themis Demonstrator | T1H-1",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "European Space Agency",
@@ -2141,8 +2022,7 @@
       "mission_description": "First low-altitude hop test of a Themis demonstrator, with a targeted altitude up to 100 m.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/themis_t1h_on_t_image_20250919095336.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "b97a54e5-5c6f-4f85-bcf3-69da17fa9682",
@@ -2218,6 +2098,7 @@
       "name": "Vega-C | IRIDE 1",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Avio S.p.A",
@@ -2234,8 +2115,7 @@
       "mission_description": "First dedicated launch for the European Space Agency's IRIDE Earth observation constellation, with six satellites onboard.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vega-c_image_20220713154437.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "eaff0f48-04b7-49fc-bee6-9afd9ec8cc5f",
@@ -2311,6 +2191,7 @@
       "name": "Falcon 9 Block 5 | BlueBird 14-16 (Block 2 #9-11)",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -2327,8 +2208,7 @@
       "mission_description": "AST SpaceMobile’s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applicatio…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "0a8cb805-3004-468e-bea6-743368af3253",
@@ -2450,6 +2330,7 @@
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer D",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Quarter 4",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -2466,8 +2347,7 @@
       "mission_description": "Tranche 1 Tracking Layer D is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 4"
+      "upcoming": true
     },
     {
       "id": "1e74ee8f-c0fe-4ad6-9db3-26ae953d8a2e",
@@ -2681,6 +2561,7 @@
       "name": "Zéphyr | Maiden Flight",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Latitude",
@@ -2697,14 +2578,14 @@
       "mission_description": "Maiden flight of the Zéphyr small launch vehicle.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/z25c325a9phyr_image_20251116181217.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "cf2647a7-e99a-4cbe-acab-a206a2f2fc3a",
       "name": "Vikram-I | NILA III & SCOPE",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Year",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Skyroot Aerospace",
@@ -2721,14 +2602,14 @@
       "mission_description": "Second launch of Skyroot Aerospace's Vikram-I launch vehicle. 2 payloads will be launched on board: - HEX20 (India)'s NILA III satellite (4U cubesat), which will test OhmSpace (Italy)'s high-temperature resistojet/3D-printed electric propulsion system for high-thrust orbital manoeuvres - Skyroot's own SCOPE satellite (4U cubesat) Exolaunch of Germany will provide the cubesat deployer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vikram-i_on_lau_image_20260717052522.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Year"
+      "upcoming": true
     },
     {
       "id": "9b9db235-8ffb-4569-b09b-0e852ad231a0",
       "name": "Falcon 9 Block 5 | Amazon Leo (LF-04)",
       "net": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -2745,14 +2626,14 @@
       "mission_description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit designed to offer broadband internet access managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
       "name": "Falcon Heavy | Griffin Mission One",
       "net": "2027-01-06T00:00:00Z",
       "window_end": "2027-01-06T00:00:00Z",
+      "net_precision": "Day",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -2769,14 +2650,14 @@
       "mission_description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Day"
+      "upcoming": true
     },
     {
       "id": "21561fba-dc41-41b3-9d18-e13339fc3396",
       "name": "H3-30 | IGS Optical Diversification 1",
       "net": "2027-01-10T23:00:00Z",
       "window_end": "2027-01-11T01:00:00Z",
+      "net_precision": "Minute",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "Mitsubishi Heavy Industries",
@@ -2793,14 +2674,14 @@
       "mission_description": "The IGS Optical Diversification 1 is a Japanese optical reconnaissance satellite. The satellite is operated by the Cabinet Satellite Information Center. The satellite serves both Japan's national defense and civil natural disaster monitoring.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-30_f6_liftof_image_20261120032629.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Minute"
+      "upcoming": true
     },
     {
       "id": "07e945c1-2ec6-4d29-a500-1afbe920440f",
       "name": "Atlas V N22 | Starliner-1",
       "net": "2027-01-14T00:00:00Z",
       "window_end": "2027-01-14T00:00:00Z",
+      "net_precision": "Day",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "United Launch Alliance",
@@ -2817,14 +2698,14 @@
       "mission_description": "Starliner-1 is the first operational flight of a Starliner spacecraft to the International Space Station as part of NASA's Commercial Crew Program. Due to problems with the Starliner spacecraft's RCS attitude control system during the Crew Flight Test mission in 2024, this mission has been re-scoped to not carry a crew by NASA. It will instead deliver necessary cargo to the orbital laboratory and…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/atlas_v_n22_image_20210813082339.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Day"
+      "upcoming": true
     },
     {
       "id": "7149bbf6-bf27-4115-bb19-8c7c7b93fad9",
       "name": "KAIROS | JSDF SDA Demonstration satellite",
       "net": "2027-01-22T06:00:00Z",
       "window_end": "2027-01-22T06:20:00Z",
+      "net_precision": "Minute",
       "status": "Go",
       "status_name": "Go for Launch",
       "provider": "Space One",
@@ -2841,14 +2722,14 @@
       "mission_description": "Demonstration satellite for Space Domain Awareness (SDA) observations of objects in low and high Earth orbits for the Japanese Ministry of Defense.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kairos_image_20240216144656.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Minute"
+      "upcoming": true
     },
     {
       "id": "0d6ad64c-3aed-4041-b095-e1d951bc6d29",
       "name": "Electron | Aspera",
       "net": "2027-01-29T00:00:00Z",
       "window_end": "2027-01-29T00:00:00Z",
+      "net_precision": "Day",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -2865,14 +2746,14 @@
       "mission_description": "Aspera houses an ultraviolet telescope and will examine hot gas in the intergalactic medium, thought to be contributing to the birth of stars and planets. Aspera will be the first NASA astrophysics mission to gather and map these ultraviolet light signatures, potentially unlocking a deeper understanding of the origins of stars, planets, and life in the universe.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Day"
+      "upcoming": true
     },
     {
       "id": "3ac1bd74-bf9a-4afe-ae00-3e1d180142dd",
       "name": "Astra Rocket 4 | Maiden Flight",
       "net": "2027-01-31T00:00:00Z",
       "window_end": "2027-01-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Astra Space",
@@ -2889,14 +2770,14 @@
       "mission_description": "First flight of Astra Space's second generation small satellite launch vehicle.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/astra_rocket_4_image_20250918165934.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "a5e81552-ecdd-4d89-b6bd-b594e22ca891",
       "name": "New Glenn | Blue Ring-1",
       "net": "2027-01-31T00:00:00Z",
       "window_end": "2027-01-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Blue Origin",
@@ -2913,14 +2794,14 @@
       "mission_description": "The first mission of Blue Ring, Blue Origin's all-in-one, high-powered hybrid solar electric and chemical propelled spacecraft, will test the spacecraft's operations in Geostationary Transfer Orbit (GTO), as well as subsequent operations after reaching Geostationary Orbit (GEO). It will carry one of Scout Space's flagship next-generation space domain awareness (SDA) Owl sensors, which is designed…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/new_glenn_on_lc_image_20240313170026.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "de3d5d91-f115-4a86-b923-203a91a08735",
       "name": "Falcon 9 Block 5 | Axiom Space Mission 5",
       "net": "2027-01-31T00:00:00Z",
       "window_end": "2027-01-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -2937,14 +2818,14 @@
       "mission_description": "This is a Crew Dragon flight for a private company Axiom Space. The mission will carry a professionally trained commander alongside three private astronauts to and from the International Space Station for a month.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210525170218.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "542a51bb-2351-48b9-98c5-9db130fb4c29",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer C",
       "net": "2027-01-31T00:00:00Z",
       "window_end": "2027-01-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -2961,14 +2842,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "5276b922-e440-466b-9b19-5851a2d67e75",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer F",
       "net": "2027-01-31T00:00:00Z",
       "window_end": "2027-01-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -2985,14 +2866,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "d1a3807e-f304-467c-a095-e08b86924347",
       "name": "Firefly Alpha Block 2 | QuickSounder",
       "net": "2027-02-15T00:00:00Z",
       "window_end": "2027-02-15T00:00:00Z",
+      "net_precision": "Day",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Firefly Aerospace",
@@ -3009,14 +2890,14 @@
       "mission_description": "QuickSounder is the first satellite mission of the Near Earth Orbit Network (NEON) program of the National Oceanic and Atmospheric Administration (NOAA), which aims to replace the current Joint Polar Satellite System (JPSS) series of polar orbit weather satellites. This pathfinder mission will demonstrate NOAA's ability to launch a small satellite within 3 years, flying a refurbished Advanced Tech…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/firefly_alpha_l_image_20240605174156.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Day"
+      "upcoming": true
     },
     {
       "id": "0b85fcca-5252-48d7-9ccb-c10b1da9d183",
       "name": "Ariane 62 | Galileo L15 (FOC FM28 & FM31)",
       "net": "2027-02-28T00:00:00Z",
       "window_end": "2027-02-28T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Arianespace",
@@ -3033,14 +2914,14 @@
       "mission_description": "Payload consists of two satellites for Europe's Galileo navigation system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "3624047e-9891-420b-820f-7db4a7570383",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer G",
       "net": "2027-02-28T00:00:00Z",
       "window_end": "2027-02-28T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3057,14 +2938,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "8d066e3a-ed12-4997-a5f4-3bc13cf5c8a2",
       "name": "Falcon 9 Block 5 | SICRAL 3A",
       "net": "2027-02-28T00:00:00Z",
       "window_end": "2027-02-28T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3081,14 +2962,14 @@
       "mission_description": "SICRAL 3A and 3B are next generation communication satellites for the Italian Ministry of Defence, providing UHF and SHF communications services in replacement of SICRAL 2 and adding Ka-band capacities. One of the satellites will provide UHF and SHF band communications, while the other carries a Ka-band payload. These 2 geostationary satellites will provide confidential strategic and tactical comm…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "22023c17-c196-4b56-bfd4-7fc5e9db84c0",
       "name": "Falcon 9 Block 5 | Transporter 19 (Dedicated SSO Rideshare)",
       "net": "2027-02-28T00:00:00Z",
       "window_end": "2027-02-28T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3105,14 +2986,14 @@
       "mission_description": "Dedicated rideshare flight to a sun-synchronous orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "dfac5ab7-7017-454f-b6cf-eeed277a97b5",
       "name": "LVM-3 | Gaganyaan-1",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Indian Space Research Organization",
@@ -3129,14 +3010,14 @@
       "mission_description": "First uncrewed orbital test flight of the Gaganyaan capsule.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "b5a9bccb-30d7-4af6-8ad1-fabb563be53c",
       "name": "PSLV-XL | TDS-01",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Indian Space Research Organization",
@@ -3153,14 +3034,14 @@
       "mission_description": "TDS-01 (Technology Demonstration Satellite-01) is an Indian geostationary orbit technology demonstration satellite carrying payloads for the Indian Space Research Organisation (ISRO)’s Institute of Plasma Research, Gandhinagar and the CSIR-CEERI, Pilani. Payloads to be tested included an internally developed 300 mN electric powered thrusters, atomic clocks, travelling wave tube amplifiers (TWTA) &…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/pslv_image_20190224012254.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "0c26b3d4-43e3-4c1a-8976-592ff319bc51",
       "name": "Falcon 9 Block 5 | Nova-C IM-3",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3177,14 +3058,14 @@
       "mission_description": "This is the third mission to the Moon for Intuitive Machines with its Nova-C lunar lander. It is to deliver 130 kg of payloads to the lunar surface. This mission also includes a rideshare possibility due to available excess capacity on the launch vehicle.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "9bfa0324-db74-444f-8dc3-1c7d373ca659",
       "name": "Falcon 9 Block 5 | 5x Astranis MicroGEO",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3201,14 +3082,14 @@
       "mission_description": "Five Astranis MicroGEO communications satellite to be inserted in a custom geostationary orbit, from where they conduct on-orbit maneuvers to reach their individual slots. The 5 satellites include: * Apco 1 & Apco 2 (Mexico) * Thaicom-9 (Thailand) * 1x for Chunghwa Telecom (Taiwan) * 1x for MB Group (Oman)",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241221043403.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "90232cff-15ff-4755-8a56-4ed544767665",
       "name": "PSLV-XL | EOS-10 (Oceansat-3A)",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Indian Space Research Organization",
@@ -3225,14 +3106,14 @@
       "mission_description": "Oceansat-3A is a part of ISRO's Oceansat program. Its main purpose is ocean observation, which includes gathering ocean color data, sea surface temperature measurements and wind vector data.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/pslv_image_20190224012254.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "526b4a0f-f0c9-4a20-9066-e9fc8c79307b",
       "name": "Ariane 62 Block 2 | PLATO",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Arianespace",
@@ -3249,14 +3130,14 @@
       "mission_description": "Plato, for PLAnetary Transits and Oscillations of stars, is a European Space Agency (ESA) mission with 26 cameras to study terrestrial exoplanets in orbits up to the habitable zone of Sun-like stars. Its goal is to measure the sizes of exoplanets and discover exomoons and rings around them, as well as characterise planets' host stars by studying tiny light variations in the starlight it receives.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "a5556e79-a01f-48c6-b822-69bbadb4460d",
       "name": "Falcon 9 Block 5 | Crew-14",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3273,14 +3154,14 @@
       "mission_description": "SpaceX Crew-14 is the fourteenth crewed operational flight of a Crew Dragon spacecraft to the International Space Station as part of NASA's Commercial Crew Program.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "cedcc397-f2c2-439f-9bed-b983669fc205",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer H",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3297,14 +3178,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "0c69c87a-a253-4cdd-b83f-f434ff0f666b",
       "name": "Soyuz 2.1a | Soyuz MS-30",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Russian Federal Space Agency (ROSCOSMOS)",
@@ -3321,14 +3202,14 @@
       "mission_description": "Soyuz MS-30 will carry two cosmonauts and one astronaut to the International Space Station aboard the Soyuz spacecraft from the Baikonur Cosmodrome in Kazakhstan. The crew consists of Roscosmos cosmonauts Dmitri Petelin and Konstantin Borisov, as well as NASA astronaut Deniz Burnham.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1a_image_20230805184309.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "c73425e7-d668-4b80-b123-39cff09b31d7",
       "name": "Ariane 62 | Galileo L16 (FOC FM29 & FM30)",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Arianespace",
@@ -3345,14 +3226,14 @@
       "mission_description": "Payload consists of two satellites for Europe's Galileo navigation system.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "eda0f3bb-3a5e-438f-bdba-9dab2a86c281",
       "name": "Electron | TSIS-2",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -3369,14 +3250,14 @@
       "mission_description": "The Total and Spectral Solar Irradiance Sensor 2 (TSIS-2) is a satellite designed by NASA to measure the Sun's energy input to Earth. TSIS-2 comprises two instruments, the Total Irradiance Monitor (TIM), and the spectral Irradiance Monitor (SIM). TIM measures total brightness and SIM measures spectral irradiance over a wavelength range that includes 96% of the energy in the solar spectrum. Both in…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "304b8810-9c89-47ee-a21a-05559fcf14af",
       "name": "Eris-1 | Flight Two",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Gilmour Space Technologies",
@@ -3393,14 +3274,14 @@
       "mission_description": "Second test flight of Gilmour Space's orbital launch vehicle Eris.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/eris_on_the_lau_image_20250227073032.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "4cc61288-6f94-41de-8fd5-7fe4d72aedfb",
       "name": "Falcon 9 Block 5 | Haven-1",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3417,14 +3298,14 @@
       "mission_description": "Commercial space station developed by Vast",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "bb34dbf6-9b46-400a-94d6-a0b6dbd6cb03",
       "name": "Falcon 9 Block 5 | WSF-M2 & BLAZE-2 (USSF-178)",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3441,14 +3322,14 @@
       "mission_description": "Second Weather System Follow-on (WSF) satellite. WSF-M (Weather System Follow-on - Microwave) is the next-generation operational environmental satellite system for the Department of Defense (DoD), to replace the microwave wavelength weather forecasting capabilities of the DMSP satellites. Ball Aerospace has been selected in late November 2017 to be the prime contractor for 2 Low Earth Orbit (LEO)…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "98ec4234-8c4e-4365-b6c5-6b89da53f8dd",
       "name": "New Glenn | Blue Moon Pathfinder",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Blue Origin",
@@ -3465,14 +3346,14 @@
       "mission_description": "First flight of Blue Origin's Blue Moon MK1 lunar lander, MK1-SN001 \"Endurance\".",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/new_glenn_on_lc_image_20240313170026.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "260a062e-ddff-410f-a17a-cc3241a5df47",
       "name": "Nova | AstroForge Autonomy-1 (Demo Flight)",
       "net": "2027-03-31T00:00:00Z",
       "window_end": "2027-03-31T00:00:00Z",
+      "net_precision": "Quarter 1",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Stoke Space",
@@ -3489,14 +3370,14 @@
       "mission_description": "First launch of Stoke Space’s Nova launch vehicle. Asteroid mining technologies company AstroForge's Autonomy-1 will fly on this launch. Autonomy-1 will be the first full-scale flight demonstration of AstroForge's own spacecraft artificial intelligence model, Solo. The spacecraft will be tested for functionality in orbit without being commanded from the ground, and will transmit telemetry and scie…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/stoke_space_nov_image_20251115203820.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 1"
+      "upcoming": true
     },
     {
       "id": "d89815f1-7cc8-4dad-b3c4-5db80a9f4c01",
       "name": "Falcon 9 Block 5 | Bandwagon 6 (Dedicated Mid-Inclination Rideshare)",
       "net": "2027-04-30T00:00:00Z",
       "window_end": "2027-04-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3513,14 +3394,14 @@
       "mission_description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "0d7dd3ae-0750-49be-a6ef-db40fd6ec5a5",
       "name": "Falcon 9 Block 5 | Turkish Lunar Mission-1 (TLM-1)",
       "net": "2027-04-30T00:00:00Z",
       "window_end": "2027-04-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3537,14 +3418,14 @@
       "mission_description": "Turkish Lunar Mission-1 (TLM-1) is the first Turkish lunar exploration spacecraft mission. The TLM-1 spacecraft will operate for at least 3 months (possibly extended to 6) in a 100-km circular lunar orbit above the lunar surface before concluding its mission with a controlled crash landing. It will test the 1st Turkish spacecraft hybrid propulsion system and collect data about the Moon's water, ma…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "91f5f940-da5a-44de-a10a-b44c59066285",
       "name": "Vega-C | KOMPSAT-6 & PLATiNO 1",
       "net": "2027-04-30T00:00:00Z",
       "window_end": "2027-04-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Avio S.p.A",
@@ -3561,14 +3442,14 @@
       "mission_description": "Korean Multi-purpose Satellite 6 (KOMPSAT-6) is the sixth South Korean Earth observation satellite of the KOMPSAT series. It is equipped with a synthetic aperture radar with a ground resolution between 0.5 and 20 meters. PLATiNO 1 is an experimental X-band SAR earth observation satellite project by the Italian Space Agency (ASI), with a radar payload from Thales Alenia Space Italia. The X-band SAR…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vega-c_image_20220713154437.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "71f2a458-f872-4f82-80d7-c07f9e0a1f97",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer I",
       "net": "2027-05-31T00:00:00Z",
       "window_end": "2027-05-31T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3585,14 +3466,38 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "ac02da00-6e8b-45a0-b829-09d614891e6a",
+      "name": "H3-22 | ETS-9",
+      "net": "2027-06-30T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Mitsubishi Heavy Industries",
+      "provider_country": "JPN",
+      "provider_url": "https://www.mhi.com/",
+      "rocket": "H3-22",
+      "pad": "Yoshinobu Launch Complex LP-2",
+      "pad_lat": "30.400938",
+      "pad_lon": "130.97564",
+      "location": "Tanegashima Space Center, Japan",
+      "country": "JPN",
+      "mission": "ETS-9",
+      "mission_type": "Communications",
+      "mission_description": "The Engineering Test Satellite 9 (ETS-9) is a JAXA project aimed to develop an advanced satellite bus, or common model, for various high-throughput satellites (HTS) for communications. The new satellite bus by Mitsubishi Electric will focus specifically on advanced communication needs: - Up to 25kW of power to support HTS communications - Light mass, all-electric bus system achieved with 6kW high-…",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
+      "webcast": null,
       "upcoming": true,
-      "net_precision": "Month"
+      "net_precision": "Year Half 1"
     },
     {
       "id": "00e88b18-f8d1-4dbc-84e1-5e5067fdf0c6",
       "name": "Electron | PolSIR-1",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -3609,14 +3514,14 @@
       "mission_description": "The PoISIR (Polarized Submillimeter Ice-cloud Radiometer) mission will help provide a better understanding of ice clouds that form at high altitudes throughout tropical and subtropical regions. Consisting of two small satellites, both of PoISIR’s 16U CubeSats have a scientific instrument designed to measure a specific spectrum of electromagnetic radiation, which will determine how the amount of ic…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "b40f5810-e8b6-4f2c-8686-8bde7ab950a1",
       "name": "Electron | PolSIR-2",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Rocket Lab",
@@ -3633,14 +3538,14 @@
       "mission_description": "The PoISIR (Polarized Submillimeter Ice-cloud Radiometer) mission will help provide a better understanding of ice clouds that form at high altitudes throughout tropical and subtropical regions. Consisting of two small satellites, both of PoISIR’s 16U CubeSats have a scientific instrument designed to measure a specific spectrum of electromagnetic radiation, which will determine how the amount of ic…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "9642cfef-4687-495a-af2e-2ac81fa1e12a",
       "name": "Falcon 9 Block 5 | KOMPSAT-7A",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3657,14 +3562,14 @@
       "mission_description": "KOMPSAT-7 and 7A are the follow-up satellites of KOMPSAT-3A, whose mission is to provide high-resolution satellite images to satisfy South-Korea's governmental and institutional needs.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "f3763818-4d71-403d-a10d-aa549c859b5d",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer J",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3681,14 +3586,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "7e8171b8-5c83-4cac-85a3-fe83f276034c",
       "name": "Falcon 9 Block 5 | Transporter 20 (Dedicated SSO Rideshare)",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3705,14 +3610,14 @@
       "mission_description": "Dedicated rideshare flight to a sun-synchronous orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "48a578ae-7a03-4597-9348-6ec95b4c01d3",
       "name": "New Glenn | Blue Origin HLS LEO Demo",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Blue Origin",
@@ -3729,14 +3634,14 @@
       "mission_description": "The Blue Moon HLS pathfinder spacecraft in support of NASA's Artemis III mission in Low Earth Orbit will be a modified Blue Moon Mark 1 vehicle equipped with a docking mechanism, a crew cabin and environmental control systems on board. This Blue Moon HLS will launch before the Artemis III Orion has launched into LEO aboard SLS. Once docked, Orion and Blue Moon will spend about two days docked toge…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/new_glenn_on_lc_image_20240313170026.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "8034d81b-af96-460c-a7b7-5c8e7f1a1d86",
       "name": "SLS Block 1 | Artemis III",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "National Aeronautics and Space Administration",
@@ -3753,14 +3658,14 @@
       "mission_description": "Artemis III is the second crew mission as part of the Artemis program. Artemis III will send a crew of 4 on a Low Earth Orbit mission, with the Orion rendezvous and dock with one or both commercial lunar landers in development by SpaceX and Blue Origin, performing in-space tests of the docked vehicles, integrated checkout of life support, communications, and propulsion systems, as well as tests of…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/space_launch_sy_image_20260405204639.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "b97ec300-56b8-49b1-9a17-43b06bcae6f1",
       "name": "Starship | SpaceX HLS LEO Demo",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Month",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3777,14 +3682,14 @@
       "mission_description": "The Starship HLS pathfinder spacecraft in support of NASA's Artemis III mission in Low Earth Orbit will be a Version 3 vehicle equipped with a docking mechanism, but with no crew cabin or environmental control systems on board. This Starship HLS will launch after the Artemis III Orion has launched into LEO aboard SLS, and has completed its demonstrations with Blue Origin's Blue Moon lander. Once d…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20250111100520.jpg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Month"
+      "upcoming": true
     },
     {
       "id": "104004ff-a363-441a-8aa5-9b363080d05b",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Tracking Layer C",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Quarter 2",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3801,14 +3706,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Tracking Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 2"
+      "upcoming": true
     },
     {
       "id": "870f6e2b-c440-48c2-9f5a-4b9b9fbc4dd7",
       "name": "Falcon 9 Block 5 | SDA Tranche 2 Tracking Layer D",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Quarter 2",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3825,14 +3730,14 @@
       "mission_description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Tracking Layer.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 2"
+      "upcoming": true
     },
     {
       "id": "02e34864-4363-4056-b884-9d4a7a9cd5e8",
       "name": "Falcon 9 Block 5 | Trinity",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Quarter 2",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "SpaceX",
@@ -3849,14 +3754,14 @@
       "mission_description": "Trinity is a three-spacecraft mission from US satellite manufacturer K2 Space, with each satellite deploying to a different orbital regime to prove out K2 Space’s multi-orbit satellite platform. 2 satellites will be dropped off in LEO, 1 remaining in LEO for a period before raising itself to MEO, while the other will immediately begin climbing to MEO and will aim to complete orbit raising within 9…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 2"
+      "upcoming": true
     },
     {
       "id": "13db71e3-2f7e-4a95-8d51-b096bac36e74",
       "name": "PSLV-CA | ISSA-J1",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Quarter 2",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Indian Space Research Organization",
@@ -3873,14 +3778,14 @@
       "mission_description": "Astroscale's ISSA-J1 (In-situ Space Situational Awareness-Japan 1) mission will diagnose and inspect two large satellite debris in orbit by imaging and diagnosing them in close proximity after rendezvous. The satellite is built on Astroscale’s heritage in rendezvous and proximity operations, inspection and characterization capabilities",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/pslv_image_20230730102956.jpeg",
       "webcast": null,
-      "upcoming": true,
-      "net_precision": "Quarter 2"
+      "upcoming": true
     },
     {
       "id": "3631c659-b638-45bc-9115-a2cb7373b9d0",
       "name": "Spectrum | Tom & Jerry",
       "net": "2027-06-30T00:00:00Z",
       "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Quarter 2",
       "status": "TBD",
       "status_name": "To Be Determined",
       "provider": "Isar Aerospace",
@@ -3897,14 +3802,134 @@
       "mission_description": "Two satellites designed to demonstrate rendezvous and capture operations essential for Infinite Orbits's in-orbit servicing capabilities.",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "6b89cfc8-8880-4b5b-856c-0e547d45b639",
+      "name": "SR75 | Flight 2",
+      "net": "2027-06-30T00:00:00Z",
+      "window_end": "2027-06-30T00:00:00Z",
+      "net_precision": "Quarter 2",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "HyImpulse",
+      "provider_country": "DEU",
+      "provider_url": "https://hyimpulse.de/en/",
+      "rocket": "SR75",
+      "pad": "Unknown Pad",
+      "pad_lat": "60.8184",
+      "pad_lon": "-0.7692",
+      "location": "SaxaVord Spaceport",
+      "country": "GBR",
+      "mission": "Flight 2",
+      "mission_type": "Test Flight",
+      "mission_description": "Test flight of HyImpulse's SR75 sounding rocket.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/sr-75_liftoff__image_20240503065630.jpeg",
+      "webcast": null,
+      "upcoming": true
+    },
+    {
+      "id": "cb0c27fd-496c-4f74-aa04-9c0e5af33e3c",
+      "name": "Epsilon S | Demo Flight",
+      "net": "2027-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Japan Aerospace Exploration Agency",
+      "provider_country": "JPN",
+      "provider_url": "https://www.jaxa.jp/",
+      "rocket": "Epsilon S",
+      "pad": "Mu Center",
+      "pad_lat": "31.2509794",
+      "pad_lon": "131.0821319",
+      "location": "Uchinoura Space Center, Japan",
+      "country": "JPN",
+      "mission": "Demo Flight",
+      "mission_type": "Test Flight",
+      "mission_description": "Vietnamese Synthetic Aperture Radar Earth observation satellite build by NEC Corporation of Japan, based on Japan's ASNARO 2 satellite and the NEXTAR NX-300L satellite bus. The satellite will contribute to measures against natural disasters and climate change in Vietnam.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/epsilon_image_20190207032600.jpeg",
+      "webcast": null,
       "upcoming": true,
-      "net_precision": "Quarter 2"
+      "net_precision": "Year"
+    },
+    {
+      "id": "a2234679-5efe-4a00-9aff-cf82dbac22b0",
+      "name": "H3-24 | HTV-X2",
+      "net": "2027-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Mitsubishi Heavy Industries",
+      "provider_country": "JPN",
+      "provider_url": "https://www.mhi.com/",
+      "rocket": "H3-24",
+      "pad": "Yoshinobu Launch Complex LP-2",
+      "pad_lat": "30.400938",
+      "pad_lon": "130.97564",
+      "location": "Tanegashima Space Center, Japan",
+      "country": "JPN",
+      "mission": "HTV-X2",
+      "mission_type": "Resupply",
+      "mission_description": "Second flight of the upgraded Japanese HTV-X spacecraft designed to resupply the International Space Station.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
+      "webcast": null,
+      "upcoming": true,
+      "net_precision": "Year"
+    },
+    {
+      "id": "be50d3a3-1385-4371-a4dd-d7ab4969be59",
+      "name": "H3-24 | HTV-X3",
+      "net": "2027-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Mitsubishi Heavy Industries",
+      "provider_country": "JPN",
+      "provider_url": "https://www.mhi.com/",
+      "rocket": "H3-24",
+      "pad": "Yoshinobu Launch Complex LP-2",
+      "pad_lat": "30.400938",
+      "pad_lon": "130.97564",
+      "location": "Tanegashima Space Center, Japan",
+      "country": "JPN",
+      "mission": "HTV-X3",
+      "mission_type": "Resupply",
+      "mission_description": "Third flight of the upgraded Japanese HTV-X spacecraft designed to resupply the International Space Station.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
+      "webcast": null,
+      "upcoming": true,
+      "net_precision": "Year"
+    },
+    {
+      "id": "3a4dc969-d264-48a1-b113-bf69a798a5c4",
+      "name": "H3-24 | Lunar Polar Exploration Mission (LUPEX)",
+      "net": "2028-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": "TBD",
+      "status_name": "To Be Determined",
+      "provider": "Mitsubishi Heavy Industries",
+      "provider_country": "JPN",
+      "provider_url": "https://www.mhi.com/",
+      "rocket": "H3-24",
+      "pad": "Yoshinobu Launch Complex LP-2",
+      "pad_lat": "30.400938",
+      "pad_lon": "130.97564",
+      "location": "Tanegashima Space Center, Japan",
+      "country": "JPN",
+      "mission": "Lunar Polar Exploration Mission (LUPEX)",
+      "mission_type": "Lunar Exploration",
+      "mission_description": "The Lunar Polar Exploration mission (LUPEX) is a robotic lunar mission jointly developed by the Indian Space Research Organisation (ISRO) and Japan Aerospace Exploration Agency (JAXA), deploying a lunar rover and lander to explore the south pole region of the Moon. JAXA will provide the under-development H3 launch vehicle and the rover, while ISRO would be responsible for the lander.",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
+      "webcast": null,
+      "upcoming": true,
+      "net_precision": "Year"
     },
     {
       "id": "a6421db3-7c8a-4cf7-a659-cec195140f7f",
       "name": "Long March 6A | Yaogan 50-04",
       "net": "2026-11-27T13:05:00Z",
       "window_end": "2026-11-27T13:15:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -3928,6 +3953,7 @@
       "name": "Electron | Night Owls Never Sleep (StriX Launch 14)",
       "net": "2026-11-27T00:15:00Z",
       "window_end": "2026-11-27T01:00:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Rocket Lab",
@@ -3951,6 +3977,7 @@
       "name": "Long March 2D | Yaogan 49 Group 01",
       "net": "2026-11-26T09:38:00Z",
       "window_end": "2026-11-26T09:52:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -3974,6 +4001,7 @@
       "name": "Long March 2F/G | Shenzhou 24",
       "net": "2026-11-25T00:18:52Z",
       "window_end": "2026-11-25T00:48:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -3997,6 +4025,7 @@
       "name": "Falcon 9 Block 5 | USSF-266",
       "net": "2026-11-24T16:08:59Z",
       "window_end": "2026-11-24T19:55:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4020,6 +4049,7 @@
       "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
       "net": "2026-11-24T11:14:52Z",
       "window_end": "2026-11-24T11:14:52Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Arianespace",
@@ -4043,6 +4073,7 @@
       "name": "Soyuz 2.1b | Progress MS-36 (97P)",
       "net": "2026-11-24T10:17:46Z",
       "window_end": "2026-11-24T10:17:46Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Russian Federal Space Agency (ROSCOSMOS)",
@@ -4066,6 +4097,7 @@
       "name": "Falcon 9 Block 5 | NROL-136",
       "net": "2026-11-22T12:23:56Z",
       "window_end": "2026-11-22T12:46:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4089,6 +4121,7 @@
       "name": "Falcon 9 Block 5 | USSF-317",
       "net": "2026-11-21T04:20:35Z",
       "window_end": "2026-11-21T06:32:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4112,6 +4145,7 @@
       "name": "Long March 8A | SatNet LEO Group 30",
       "net": "2026-11-20T11:59:00Z",
       "window_end": "2026-11-20T12:17:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4135,6 +4169,7 @@
       "name": "Long March 2D | Shijian 24",
       "net": "2026-11-18T22:51:00Z",
       "window_end": "2026-11-18T23:05:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4158,6 +4193,7 @@
       "name": "Vulcan VC6L | Amazon Leo (LV-01)",
       "net": "2026-11-15T17:40:30Z",
       "window_end": "2026-11-15T17:40:30Z",
+      "net_precision": "Second",
       "status": "Failure",
       "status_name": "Launch Failure",
       "provider": "United Launch Alliance",
@@ -4181,6 +4217,7 @@
       "name": "Electron | The Mountain God Rises (iQPS Launch 10)",
       "net": "2026-11-14T05:30:00Z",
       "window_end": "2026-11-14T05:30:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Rocket Lab",
@@ -4204,6 +4241,7 @@
       "name": "Soyuz 2.1b/Fregat-M | MKA Kinosputnik, KOEN and others",
       "net": "2026-11-14T01:16:00Z",
       "window_end": "2026-11-14T01:50:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Russian Federal Space Agency (ROSCOSMOS)",
@@ -4227,6 +4265,7 @@
       "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
       "net": "2026-11-13T22:47:36Z",
       "window_end": "2026-11-14T00:00:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4250,6 +4289,7 @@
       "name": "Falcon 9 Block 5 | USSF-627",
       "net": "2026-11-12T04:36:30Z",
       "window_end": "2026-11-12T06:35:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4273,6 +4313,7 @@
       "name": "Long March 2D | CAS Pathfinder-1",
       "net": "2026-11-11T11:41:00Z",
       "window_end": "2026-11-11T12:05:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4296,6 +4337,7 @@
       "name": "Long March 12 | SatNet LEO Group 29",
       "net": "2026-11-08T20:24:00Z",
       "window_end": "2026-11-08T20:47:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4319,6 +4361,7 @@
       "name": "Soyuz 2.1b/Fregat | Glonass-K1? (Kosmos 2621?)",
       "net": "2026-11-07T13:22:00Z",
       "window_end": "2026-11-07T21:00:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Russian Space Forces",
@@ -4342,6 +4385,7 @@
       "name": "Falcon 9 Block 5 | USSF-432",
       "net": "2026-11-07T00:48:42Z",
       "window_end": "2026-11-07T04:46:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4365,6 +4409,7 @@
       "name": "Ceres-2 | 4 satellites",
       "net": "2026-11-06T23:37:00Z",
       "window_end": "2026-11-06T23:50:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Galactic Energy",
@@ -4388,6 +4433,7 @@
       "name": "Long March 2C | Yaogan 51-07 to 09",
       "net": "2026-11-05T15:58:00Z",
       "window_end": "2026-11-05T16:16:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4411,6 +4457,7 @@
       "name": "Kinetica 2 | SpaceSail Polar Group #17",
       "net": "2026-11-03T00:15:00Z",
       "window_end": "2026-11-03T00:33:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "CAS Space",
@@ -4434,6 +4481,7 @@
       "name": "Electron | The Sea God Surveys (iQPS Launch 9)",
       "net": "2026-11-02T16:41:00Z",
       "window_end": "2026-11-02T18:20:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Rocket Lab",
@@ -4457,6 +4505,7 @@
       "name": "Falcon 9 Block 5 | Starlink Group 15-18",
       "net": "2026-10-31T04:04:34Z",
       "window_end": "2026-10-31T07:48:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4480,6 +4529,7 @@
       "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
       "net": "2026-10-30T18:21:00Z",
       "window_end": "2026-10-30T21:00:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Indian Space Research Organization",
@@ -4503,6 +4553,7 @@
       "name": "Falcon 9 Block 5 | Starlink Group 15-16",
       "net": "2026-10-27T07:25:51Z",
       "window_end": "2026-10-27T08:45:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4526,6 +4577,7 @@
       "name": "Long March 8A | SatNet LEO Group 28",
       "net": "2026-10-25T02:03:00Z",
       "window_end": "2026-10-25T02:32:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4549,6 +4601,7 @@
       "name": "Falcon 9 Block 5 | Starlink Group 15-15",
       "net": "2026-10-23T22:48:44Z",
       "window_end": "2026-10-24T01:30:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4572,6 +4625,7 @@
       "name": "Long March 4B | Yaogan 53-07 to 09/56-19 to 21",
       "net": "2026-10-23T19:25:00Z",
       "window_end": "2026-10-23T19:39:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4595,6 +4649,7 @@
       "name": "Long March 6A | Yaogan 50-03",
       "net": "2026-10-23T10:15:00Z",
       "window_end": "2026-10-23T10:28:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "China Aerospace Science and Technology Corporation",
@@ -4618,6 +4673,7 @@
       "name": "Electron | We're Not Hawking Around (3x HawkEye 360)",
       "net": "2026-10-23T07:11:00Z",
       "window_end": "2026-10-23T08:45:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Rocket Lab",
@@ -4641,6 +4697,7 @@
       "name": "Ceres-1S | Xiguang-4 01",
       "net": "2026-10-21T03:39:00Z",
       "window_end": "2026-10-21T03:50:00Z",
+      "net_precision": "Minute",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "Galactic Energy",
@@ -4664,6 +4721,7 @@
       "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
       "net": "2026-10-20T11:04:00Z",
       "window_end": "2026-10-20T11:30:00Z",
+      "net_precision": "Second",
       "status": "Success",
       "status_name": "Launch Successful",
       "provider": "SpaceX",
@@ -4680,29 +4738,6 @@
       "mission_description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers. This launch also carries the second demonstration mission for SpaceX’s Project Starfall, which aims to mass-produce reentry capsules designed to autonomously transport valuable customer experiments and other payloads safely back from space to Earth,…",
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
       "webcast": "https://www.youtube.com/watch?v=UJmcwHwxip0",
-      "upcoming": false
-    },
-    {
-      "id": "69ebbcd2-b257-4070-9ef9-21e7d1f8a883",
-      "name": "H3-24 | Martian Moons eXploration (MMX)",
-      "net": "2026-10-19T19:41:03Z",
-      "window_end": "2026-10-19T19:41:03Z",
-      "status": "Success",
-      "status_name": "Launch Successful",
-      "provider": "Mitsubishi Heavy Industries",
-      "provider_country": "JPN",
-      "provider_url": "https://www.mhi.com/",
-      "rocket": "H3-24",
-      "pad": "Yoshinobu Launch Complex LP-2",
-      "pad_lat": "30.400938",
-      "pad_lon": "130.97564",
-      "location": "Tanegashima Space Center, Japan",
-      "country": "JPN",
-      "mission": "Martian Moons eXploration (MMX)",
-      "mission_type": "Planetary Science",
-      "mission_description": "MMX is a Japanese scientific mission to land on Phobos, one of the two moons of Mars, to collect samples before bringing them back to Earth. The mission includes a small French/German rover to explore the surface of Phobos.",
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
-      "webcast": "https://www.youtube.com/watch?v=Fn6gzuGa-6c",
       "upcoming": false
     }
   ]
