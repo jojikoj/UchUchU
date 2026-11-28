@@ -224,6 +224,22 @@ STRINGS = {
                          "en": "Times are in UTC."},
     "launches.japan": {"ja": "日本の打ち上げ", "en": "Japanese launches"},
     "launches.time_tbd": {"ja": "時刻未定", "en": "time TBD"},
+    "home.intro_title": {"ja": "宇宙関連の調達案件・宇宙企業データベース・ロケット打ち上げ予定（日本時間）",
+                         "en": "Rocket launch schedule, space company database and industry news"},
+    "home.intro_lead": {"ja": "JAXA・省庁が出す宇宙関連の調達案件を毎日集め、宇宙産業に関わる企業を分野別に整理し、世界の打ち上げ予定を日本時間で載せています。",
+                        "en": "Upcoming launches worldwide, Japan's space companies by field, and the latest news from the space industry."},
+    "launches.undated": {"ja": "日付が決まっていない予定", "en": "Date not yet set"},
+    # 状態の意味は Launch Library 2 の定義（Go / TBC / TBD）による
+    "launches.status_legend": {
+        "ja": "状態の見方：確定＝公式発表などで日時が確かめられたもの／暫定＝日付はほぼ分かっているが公式発表待ち／未定＝見込みの日付（変わることが多い）。",
+        "en": "Status: Go = confirmed by official or reliable sources / TBC = awaiting official confirmation / TBD = estimated (no earlier than)."},
+    "launches.viewing": {"ja": "見学できる場所と中継", "en": "Where to watch"},
+    "launches.viewing_note": {
+        "ja": "見学場と入場の方法は打ち上げごとに変わります。出かける前に、各公式ページで最新の案内を確かめてください。",
+        "en": "Viewing arrangements change for each launch. Check the official pages before you go."},
+    "launches.viewing_live": {"ja": "中継", "en": "Live"},
+    "launches.viewing_checked": {"ja": "確認日", "en": "Checked"},
+    "launches.viewing_more": {"ja": "日本の射場の見学・中継の案内", "en": "Where to watch Japanese launches"},
 
     # 「今日の宇宙」— 毎日ここだけ見れば今日の状況が分かる、が狙い。
     "today.title": {"ja": "今日の宇宙", "en": "Space Today"},

@@ -41,7 +41,10 @@ def key_filename() -> str:
 
 def sitemap_urls() -> list[str]:
     """生成済み sitemap.xml から URL を読み出す。"""
-    path = config.DIST_DIR / "sitemap.xml"
+    # Bing 向けの一覧があればそちらを送る（IndexNow は Bing 系の仕組み。2026-11-28）
+    path = config.DIST_DIR / "sitemap-bing.xml"
+    if not path.exists():
+        path = config.DIST_DIR / "sitemap.xml"
     if not path.exists():
         return []
     root = ET.parse(path).getroot()

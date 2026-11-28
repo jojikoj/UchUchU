@@ -83,6 +83,22 @@ def is_space_related(item: dict) -> bool:
     return any(term in blob for term in _SPACE_TERMS)
 
 
+# 通販・配信のセール記事。Space.com などは宇宙と無関係なセール記事
+# （カメラの最安値・映画配信の割引）も同じフィードで流し、トップの
+# 「24時間のニュース」に宇宙ニュースとして並んでいた（2026-11-28 実測・90日で約40件）。
+# 「deal」単体は事業の契約（engine deal 等）なので見ない。買い物の言い回しだけで落とす。
+_SHOPPING_RE = re.compile(
+    r"black friday|cyber monday|prime day|\d+\s?% off|\$\d[\d,]*\s?off|half-price"
+    r"|\d+% cheaper|cheapest|lowest price|discounted|blu-ray|gift guide"
+    r"|ブラックフライデー|セール(?!ス)|最安値|割引|クーポン",
+    re.I)
+
+
+def is_shopping_promo(item: dict) -> bool:
+    """宇宙ニュースではない通販・配信のセール記事か。"""
+    return bool(_SHOPPING_RE.search(item.get("title", "") or ""))
+
+
 def _parse_feed_date(entry) -> str | None:
     for key in ("published", "updated", "created"):
         val = entry.get(key)
@@ -184,6 +200,7 @@ def fetch_news_source(source: dict) -> list[dict]:
     # 総合メディアは宇宙関連記事だけに絞る
     if source.get("topic_filter"):
         items = [it for it in items if is_space_related(it)]
+    items = [it for it in items if not is_shopping_promo(it)]
     return items
 
 
@@ -217,6 +234,10 @@ def fetch_launches() -> list[dict]:
             "net": l.get("net"),  # ISO打ち上げ予定時刻(UTC)
             # 打ち上げウィンドウの終了時刻。構造化データの endDate に使う。
             "window_end": l.get("window_end"),
+            # 日付の確からしさ（Minute / Hour / Day / Month / Quarter 1 / Year など）。
+            # 「2026年内」の予定は net が 2026-12-31 で入ってくるため、これが無いと
+            # 年内の予定を12月31日の打ち上げとして出してしまう（2026-11-28 実測で日本の5件）。
+            "net_precision": (l.get("net_precision") or {}).get("name"),
             "status": (l.get("status") or {}).get("abbrev") or (l.get("status") or {}).get("name"),
             "status_name": (l.get("status") or {}).get("name"),
             "provider": provider.get("name"),

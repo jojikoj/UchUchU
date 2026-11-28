@@ -33,6 +33,10 @@
   <meta name="robots" content="noindex, follow">
   {%- else %}
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  {%- if google_noindex %}
+  {# Google にだけ見せない（Bing には見せる）。理由は config.GOOGLE_NOINDEX_PREFIXES #}
+  <meta name="googlebot" content="noindex, follow">
+  {%- endif %}
   {%- endif %}
   <!-- OGP -->
   <meta property="og:type" content="{{ og_type or 'website' }}">

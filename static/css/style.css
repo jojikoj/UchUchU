@@ -1503,3 +1503,28 @@ a.tag-hash:hover { color: var(--accent-ink); text-decoration: underline; }
 .toe-training-wrap .toe-training-body { display:block; margin:0; text-wrap:balance; color:#415967; font-size:16px; font-weight:500; line-height:1.75; letter-spacing:0; }
 .toe-training-floating .toe-training-body { display:none; }
 @media(max-width:760px) { .toe-training-wrap .toe-training-body { font-size:15px; line-height:1.75; } }
+
+
+/* --- 打ち上げ：状態の見方・見学と中継（2026-11-28） --------------------- */
+.status-legend { color: var(--text-2); font-size: .86rem; line-height: 1.8; max-width: 62em; margin: 8px 0 0; }
+.viewing { margin-top: 40px; }
+.viewing-note { color: var(--text-2); font-size: .9rem; line-height: 1.8; margin: 0 0 16px; max-width: 62em; }
+.viewing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.viewing-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-lg); padding: 24px; box-shadow: var(--sh-1);
+  display: flex; flex-direction: column; gap: 12px;
+}
+.viewing-name { font-family: var(--font-head); font-size: 1.08rem; margin: 0; line-height: 1.5; }
+.viewing-rocket { display: inline-block; margin-left: 8px; font-family: var(--font); font-size: .8rem; font-weight: 600; color: var(--text-2); }
+.viewing-lines { margin: 0; padding-left: 1.2em; font-size: .92rem; line-height: 1.8; }
+.viewing-lines li + li { margin-top: 4px; }
+.viewing-live { margin: 0; font-size: .9rem; line-height: 1.8; }
+.viewing-links { list-style: none; margin: auto 0 0; padding: 12px 0 0; border-top: 1px solid var(--line); font-size: .9rem; line-height: 1.8; }
+.viewing-links a { color: var(--accent); font-weight: 600; }
+.viewing-links a:hover { color: var(--accent-ink); }
+.viewing-more { margin: 12px 0 0; font-size: .92rem; }
+.viewing-more a { color: var(--accent); font-weight: 650; }
+.home-intro { padding: 28px 0 0; }
+.home-intro-title { font-family: var(--font-head); font-size: clamp(1.15rem, 2.4vw, 1.5rem); line-height: 1.5; letter-spacing: -.015em; margin: 0 0 6px; }
+.home-intro-lead { color: var(--text-2); font-size: .94rem; line-height: 1.8; margin: 0; max-width: 760px; }

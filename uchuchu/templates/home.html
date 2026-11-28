@@ -14,6 +14,18 @@
 {% block content %}
 
 {#
+  トップの h1。2026-11-28 まで h1 はニュースの見出し（他媒体の記事）だった。
+  このサイトが何を毎日出しているかを1行で言う。
+#}
+<section class="home-intro">
+  <div class="wrap">
+    <h1 class="home-intro-title">{{ t('home.intro_title') }}</h1>
+    <p class="home-intro-lead">{{ t('home.intro_lead') }}</p>
+  </div>
+</section>
+
+
+{#
   「今日の宇宙」。トップの最上部に置く唯一のブロック。
   毎日見る理由になるのは「今日変わったこと」だけなので、
   次のT-0・今日と今週の本数・24時間以内の結果を1画面にまとめる。
@@ -39,12 +51,12 @@
         <span class="net-countdown today-cd-num"{% if not today.next.time_tbd %} data-net="{{ today.next.net }}"{% endif %}>{{ today.next.countdown }}</span>
         {% endif %}
         {% if today.next.status %}
-        <span class="pill status-{{ today.next.status_class or 'tbd' }}">{{ today.next.status }}</span>
+        <span class="pill status-{{ today.next.status_class or 'tbd' }}">{{ today.next.status_label or today.next.status }}</span>
         {% endif %}
       </div>
       <h3 class="today-next-name">{{ today.next.name }}</h3>
       <p class="today-next-meta">
-        {{ today.next.net_display }}{% if today.next.location %} · {{ today.next.location }}{% endif %}
+        {{ today.next.net_display }}{% if today.next.location %} · {{ today.next.location_display or today.next.location }}{% endif %}
       </p>
       {% if today.next.webcast %}
       <a class="today-watch" href="{{ today.next.webcast }}" target="_blank" rel="noopener">▶ {{ t('launches.watch') }}</a>
@@ -92,6 +104,110 @@
 </section>
 {% endif %}
 
+
+
+
+
+
+
+
+{#
+  独自資産2: 調達情報。
+  読者を「参入したい製造業」と「サプライヤーを探す宇宙企業」に絞ったとき、
+  両者が毎日確認する実務情報はこれ。ニュースは他媒体でも読めるが、
+  宇宙分野の調達だけを集めた一覧は他に無い。
+  2026-11-28 から「今日の宇宙」の直後＝トップの2番目に置く（このサイトの主役）。
+#}
+{% if procurement %}
+<section class="block">
+  {{ sec_head('TENDERS', t('procurement.recent'), rel ~ 'procurement/', t('home.view_all')) }}
+  <p class="block-lead">{{ t('procurement.subtitle') }}</p>
+  <div class="proc-list proc-list-home">
+    {% for p in procurement %}
+    <a class="proc-row" href="{{ rel }}procurement/">
+      <span class="proc-row-meta">
+        {% if p.is_jaxa %}<span class="pill accent">{{ t('procurement.jaxa_only') }}</span>{% endif %}
+        {% if p.kind %}<span class="pill status-{{ p.kind_class }}">{{ p.kind }}</span>{% endif %}
+        <time datetime="{{ p.issued }}">{{ p.issued_display }}</time>
+        <span class="proc-org">{{ p.org }}</span>
+      </span>
+      <span class="proc-row-name">{{ p.name }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{# 独自資産: 企業DB。調達の直後に置く（2026-11-28 並び替え） #}
+<section class="block block-tint">
+  {{ sec_head('DATABASE', t('home.db_title'), rel ~ 'companies/', t('home.db_more')) }}
+  <p class="block-lead">{{ t('home.db_lead') }}</p>
+  <div class="db-cats">
+    {% for c in company_cats %}
+    <a class="db-cat" href="{{ rel }}companies/{{ c.id }}/">
+      <span class="db-cat-media">
+        <img src="{{ asset }}static/img/cat-{{ c.id }}.jpg" alt="" loading="lazy">
+        <span class="db-cat-n">{{ c.count }}</span>
+      </span>
+      <span class="db-cat-name">{{ c.name }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="db-preview">
+    {% for c in featured_companies %}<a class="db-chip" href="{{ rel }}companies/">{{ c.display_name }}</a>{% endfor %}
+    <a class="db-chip db-chip-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
+  </div>
+</section>
+
+{# 独自資産2: 参入ガイド #}
+{% if guides %}
+<section class="block">
+  {{ sec_head('GUIDE', t('home.guide_title'), rel ~ 'articles/', t('home.view_all')) }}
+  <p class="block-lead">{{ t('home.guide_lead') }}</p>
+  <div class="guide-grid">
+    {% for a in guides %}
+    <a class="guide-card" href="{{ rel }}articles/{{ a.slug }}/">
+      {% if a.hero %}
+      <span class="guide-media">
+        <img src="{{ asset }}static/img/{{ a.hero }}" alt="" loading="lazy">
+        <span class="guide-num">{{ '%02d'|format(loop.index) }}</span>
+      </span>
+      {% endif %}
+      <h3 class="guide-title">{{ a.title }}</h3>
+      <p class="guide-excerpt">{{ a.excerpt }}</p>
+      <span class="card-link">{{ t('articles.read') }} →</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{# 打ち上げ帯。時間で変化する固有データ。参入ガイドの下に置く #}
+{% if next_launches %}
+<section class="launch-strip">
+  <div class="strip-head">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span class="strip-title">{{ t('home.next_launch') }}</span>
+    <a class="strip-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
+  </div>
+  <div class="strip-items">
+    {% for l in next_launches %}
+    <article class="strip-item">
+      <div class="strip-cd">
+        {% if l.countdown %}<span class="net-countdown" data-net="{{ l.net }}">{{ l.countdown }}</span>{% endif %}
+        {% if l.status %}<span class="pill status-{{ l.status_class or 'tbd' }}">{{ l.status_label or l.status }}</span>{% endif %}
+      </div>
+      <h3>{{ l.name }}</h3>
+      <p>{{ l.net_display }}{% if l.location %} · {{ l.location_display or l.location }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if lang == "ja" %}{% with training_placement="home_banner" %}{% include "training-banner.html" %}{% endwith %}{% endif %}
+
+{# ニュース（他媒体の記事の紹介）は、独自の一覧（調達・企業DB・参入ガイド・打ち上げ）の後に置く（2026-11-28） #}
 {#
   ヒーロー: 左に大きな注目記事、右に縦積みリスト。
   1画面に「主役1本＋選択肢4本」を出せる、情報メディアの定番構成。
@@ -106,10 +222,9 @@
            onerror="this.closest('.hero-media').classList.add('no-img')">{% endif %}
     </a>
     <div class="hero-body">
-      {# トップに h1 が1つも無い状態が続いていた（2026-08-05 実測）。
-         ヒーローがトップの主役なので、ここを h1 にする。見た目は
-         .hero-title のクラス指定で決まるため、タグを変えても変化しない。 #}
-      <h1 class="hero-title"><a href="{{ rel }}a/{{ f.slug }}/">{{ ftitle }}</a></h1>
+      {# 2026-11-28 h1 から h2 へ。トップの h1 が他媒体の記事の見出しになっていたため、
+         サイトの中身を言う h1 を最上部（.home-intro）に置いた。見た目は .hero-title で決まる。 #}
+      <h2 class="hero-title"><a href="{{ rel }}a/{{ f.slug }}/">{{ ftitle }}</a></h2>
       <div class="hero-meta">
         {% for tp in f.topic_labels or [] %}<span class="pill-tag">#{{ tp }}</span>{% endfor %}
         <span class="pill-tag src">{{ f.source }}</span>
@@ -134,104 +249,6 @@
         </div>
       </div>
     </article>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
-
-{% if lang == "ja" %}{% with training_placement="home_banner" %}{% include "training-banner.html" %}{% endwith %}{% endif %}
-
-{# 独自資産1: 企業DB。
-   このサイトが広告主に売れる中核資産のため、最初のブロックに置く #}
-<section class="block block-tint">
-  {{ sec_head('DATABASE', t('home.db_title'), rel ~ 'companies/', t('home.db_more')) }}
-  <p class="block-lead">{{ t('home.db_lead') }}</p>
-  <div class="db-cats">
-    {% for c in company_cats %}
-    <a class="db-cat" href="{{ rel }}companies/{{ c.id }}/">
-      <span class="db-cat-media">
-        <img src="{{ asset }}static/img/cat-{{ c.id }}.jpg" alt="" loading="lazy">
-        <span class="db-cat-n">{{ c.count }}</span>
-      </span>
-      <span class="db-cat-name">{{ c.name }}</span>
-    </a>
-    {% endfor %}
-  </div>
-  <div class="db-preview">
-    {% for c in featured_companies %}<a class="db-chip" href="{{ rel }}companies/">{{ c.display_name }}</a>{% endfor %}
-    <a class="db-chip db-chip-more" href="{{ rel }}companies/">{{ t('home.db_more') }} →</a>
-  </div>
-</section>
-
-{#
-  独自資産2: 調達情報。
-  読者を「参入したい製造業」と「サプライヤーを探す宇宙企業」に絞ったとき、
-  両者が毎日確認する実務情報はこれ。ニュースは他媒体でも読めるが、
-  宇宙分野の調達だけを集めた一覧は他に無い。企業DBの直後に置く。
-#}
-{% if procurement %}
-<section class="block">
-  {{ sec_head('TENDERS', t('procurement.recent'), rel ~ 'procurement/', t('home.view_all')) }}
-  <p class="block-lead">{{ t('procurement.subtitle') }}</p>
-  <div class="proc-list proc-list-home">
-    {% for p in procurement %}
-    <a class="proc-row" href="{{ rel }}procurement/">
-      <span class="proc-row-meta">
-        {% if p.is_jaxa %}<span class="pill accent">{{ t('procurement.jaxa_only') }}</span>{% endif %}
-        {% if p.kind %}<span class="pill status-{{ p.kind_class }}">{{ p.kind }}</span>{% endif %}
-        <time datetime="{{ p.issued }}">{{ p.issued_display }}</time>
-        <span class="proc-org">{{ p.org }}</span>
-      </span>
-      <span class="proc-row-name">{{ p.name }}</span>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
-{# 打ち上げ帯。時間で変化する固有データ。
-   独自資産である企業DBを先に見せたいので、その下に置く #}
-{% if next_launches %}
-<section class="launch-strip">
-  <div class="strip-head">
-    <span class="live-dot" aria-hidden="true"></span>
-    <span class="strip-title">{{ t('home.next_launch') }}</span>
-    <a class="strip-more" href="{{ rel }}launches/">{{ t('home.view_all') }} →</a>
-  </div>
-  <div class="strip-items">
-    {% for l in next_launches %}
-    <article class="strip-item">
-      <div class="strip-cd">
-        {% if l.countdown %}<span class="net-countdown" data-net="{{ l.net }}">{{ l.countdown }}</span>{% endif %}
-        {% if l.status %}<span class="pill status-{{ l.status_class or 'tbd' }}">{{ l.status }}</span>{% endif %}
-      </div>
-      <h3>{{ l.name }}</h3>
-      <p>{{ l.net_display }}{% if l.location %} · {{ l.location }}{% endif %}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
-{# 独自資産2: 参入ガイド #}
-{% if guides %}
-<section class="block">
-  {{ sec_head('GUIDE', t('home.guide_title'), rel ~ 'articles/', t('home.view_all')) }}
-  <p class="block-lead">{{ t('home.guide_lead') }}</p>
-  <div class="guide-grid">
-    {% for a in guides %}
-    <a class="guide-card" href="{{ rel }}articles/{{ a.slug }}/">
-      {% if a.hero %}
-      <span class="guide-media">
-        <img src="{{ asset }}static/img/{{ a.hero }}" alt="" loading="lazy">
-        <span class="guide-num">{{ '%02d'|format(loop.index) }}</span>
-      </span>
-      {% endif %}
-      <h3 class="guide-title">{{ a.title }}</h3>
-      <p class="guide-excerpt">{{ a.excerpt }}</p>
-      <span class="card-link">{{ t('articles.read') }} →</span>
-    </a>
     {% endfor %}
   </div>
 </section>

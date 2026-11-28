@@ -189,6 +189,10 @@ def build_filter_pages(launches: list[dict], lang: str, now: datetime) -> list[d
     # --- 月別 -------------------------------------------------------------
     by_month: dict[str, list[dict]] = {}
     for l in launches:
+        # 「年内」「1〜3月」など月が決まっていない予定は月別に入れない。
+        # 入れると仮置きの 12/31 に寄って「12月113件」になる（2026-11-28 実測）。
+        if l.get("date_fuzzy") and not l.get("month_known"):
+            continue
         k = _month_key(l, lang)
         if k:
             by_month.setdefault(k, []).append(l)
@@ -215,7 +219,7 @@ def _page(lang: str, path: str, kind: str, key: str, name: str,
     ja = lang == "ja"
     upcoming = [l for l in items if l.get("upcoming")]
     past = [l for l in items if not l.get("upcoming")]
-    nxt = upcoming[0] if upcoming else None
+    nxt = next_dated(upcoming)
 
     # 見出しは「読者が検索窓に打つ語」を先頭に置く。
     if kind == "japan":
@@ -251,7 +255,7 @@ def _page(lang: str, path: str, kind: str, key: str, name: str,
         head = (f"{name}の打ち上げ予定{len(upcoming)}件と直近の結果{len(past)}件を日本時間で掲載。"
                 if kind != "month" else
                 f"{name}に予定・実施されたロケット打ち上げ{len(items)}件を日本時間で一覧。")
-        lead = head + nxt_s + "時刻が決まっていない打ち上げは「時刻未定」と明示し、毎日更新しています。"
+        lead = head + nxt_s + "日付や時刻が決まっていない打ち上げは「日付未定」「時刻未定」と明示し、毎日更新しています。"
         desc = head + nxt_s + "カレンダー購読可。"
     else:
         head = (f"{len(upcoming)} upcoming launches and {len(past)} recent results for {name}, times in UTC."
@@ -266,6 +270,18 @@ def _page(lang: str, path: str, kind: str, key: str, name: str,
         "title": title, "h1": h1, "lead": lead, "desc": desc, "ics_label": ics,
         "always": always,
     }
+
+
+def next_dated(upcoming: list[dict]) -> dict | None:
+    """「次回」に出す打ち上げ。日付の決まっているものを優先する。
+
+    「2026年内」の予定を次回として出すと、日付の決まっている次の打ち上げ
+    （例: H3 の 2027-01-11）が見えなくなる。決まったものが無いときだけ未定のものを出す。
+    """
+    for l in upcoming:
+        if not l.get("date_fuzzy"):
+            return l
+    return upcoming[0] if upcoming else None
 
 
 def next_phrase(nxt: dict | None, lang: str, *, with_site: bool = True,
@@ -299,8 +315,8 @@ def main_page_meta(lang: str, launches: list[dict]) -> dict:
     """
     upcoming = [l for l in launches if l.get("upcoming")]
     past = [l for l in launches if not l.get("upcoming")]
-    nxt = upcoming[0] if upcoming else None
-    jp = next((l for l in upcoming if l.get("is_japan")), None)
+    nxt = next_dated(upcoming)
+    jp = next_dated([l for l in upcoming if l.get("is_japan")])
     if lang == "ja":
         title = "ロケット打ち上げ予定【日本時間】JAXA・H3・SpaceX・Rocket Lab の次回はいつ"
         h1 = "ロケット打ち上げ予定（日本時間）"

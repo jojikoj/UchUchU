@@ -8,6 +8,7 @@
   <div class="wrap">
     <h1>{{ fp.h1 }}</h1>
     <p class="page-sub">{{ fp.lead }} {{ t('launches.tz_note') }}</p>
+    <p class="status-legend">{{ t('launches.status_legend') }}</p>
     {#
       このページに載っている打ち上げだけのカレンダー。
       「日本の打ち上げだけ」「SpaceXだけ」を購読したい人に、全件のカレンダーを
@@ -40,6 +41,26 @@
     {% endfor %}
     {% else %}
     <p class="empty">{{ t('meta.no_data') }}</p>
+    {% endif %}
+    {% if viewing %}
+    <section class="viewing" id="viewing" aria-labelledby="viewing-h">
+      <h2 class="launch-group" id="viewing-h">{{ t('launches.viewing') }}</h2>
+      <p class="viewing-note">{{ t('launches.viewing_note') }}（{{ t('launches.viewing_checked') }}：{{ viewing_checked }}）</p>
+      <div class="viewing-grid">
+        {% for v in viewing %}
+        <article class="viewing-card">
+          <h3 class="viewing-name">{{ v.name }}<span class="viewing-rocket">{{ v.rocket }}</span></h3>
+          <ul class="viewing-lines">
+            {% for line in v.lines %}<li>{{ line }}</li>{% endfor %}
+          </ul>
+          <p class="viewing-live"><span class="pill ghost">{{ t('launches.viewing_live') }}</span> {{ v.live }}</p>
+          <ul class="viewing-links">
+            {% for label, url in v.links %}<li><a href="{{ url }}" target="_blank" rel="noopener">{{ label }} ↗</a></li>{% endfor %}
+          </ul>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
     {% endif %}
     <p class="launch-back"><a href="{{ rel }}launches/">← {{ t('launches.all_launches') }}</a></p>
   </div>

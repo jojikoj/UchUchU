@@ -8,6 +8,7 @@
   <div class="wrap">
     <h1>{{ page_h1 or t('launches.title') }}</h1>
     <p class="page-sub">{{ t('launches.subtitle') }} {{ t('launches.tz_note') }}</p>
+    <p class="status-legend">{{ t('launches.status_legend') }}</p>
     {#
       カレンダー購読。毎日サイトを開かせるより、相手のカレンダーに
       予定を置いてもらう方が強い。打ち上げのたびに向こうから戻ってくる。
@@ -39,6 +40,7 @@
     <div class="grid grid-launches">
       {% for l in jp_launches %}{{ launch_card(l, lang, t) }}{% endfor %}
     </div>
+    {% if lang == 'ja' %}<p class="viewing-more"><a href="{{ rel }}launches/japan/#viewing">{{ t('launches.viewing_more') }} →</a></p>{% endif %}
     {% endif %}
 
     {% set ns = namespace(group=None) %}

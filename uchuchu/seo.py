@@ -119,6 +119,10 @@ def _launch_events(base: str, launches: list[dict]) -> list[dict]:
     for l in launches[:20]:
         if not l.get("net") or not l.get("name"):
             continue
+        # 「2026年内」「2027年1〜3月」の予定は日付が無い。net の仮置き（12/31 等）を
+        # 開始日として申告しない。
+        if l.get("date_fuzzy"):
+            continue
         ev = {
             "@type": "Event",
             "name": l["name"],

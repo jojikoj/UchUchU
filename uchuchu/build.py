@@ -28,7 +28,8 @@ from pathlib import Path
 import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import business, companies, config, indexnow, launch_pages, seo, topics
+from . import business, companies, config, indexnow, launch_pages, seo, topics, viewing
+from .collectors.sources import is_shopping_promo
 from .i18n import t as _t
 
 sys.path.insert(0, str(Path.home() / "claude_AIR/TOEcompany/メディア事業部/共通/運用"))
@@ -103,6 +104,26 @@ def head_title(title: str, limit: float = 46) -> str:
 # --- 日付整形 -----------------------------------------------------------
 _EN_MONTHS = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def google_noindex_path(path: str) -> bool:
+    """Google にだけ見せないページか（config.GOOGLE_NOINDEX_* を参照）。
+
+    path は言語ルートからの相対（"news/2/"・"articles/news-2026-11-27/"・トップは ""）。
+    """
+    p = path.strip("/")
+    if not p:
+        return False
+    if (p + "/").startswith(config.GOOGLE_NOINDEX_PREFIXES):
+        return True
+    if config.GOOGLE_NOINDEX_PAGINATION and p.rsplit("/", 1)[-1].isdigit():
+        return True
+    if p.startswith("articles/"):
+        slug = p.split("/", 1)[1]
+        if config.GOOGLE_NOINDEX_ARTICLE_SLUG_PREFIX and slug.startswith(
+                config.GOOGLE_NOINDEX_ARTICLE_SLUG_PREFIX):
+            return True
+    return False
 
 
 def _parse_iso(s: str | None) -> datetime | None:
@@ -282,6 +303,85 @@ _RESULT_CLASS = {
 }
 
 
+# 打ち上げの状態（Launch Library 2 の status.abbrev）を日本語で。
+# 定義は LL2 による: Go＝公式・信頼できる情報で日時が確定、TBC＝公式発表待ちだが
+# 日付はほぼ分かっている、TBD＝信頼度の低い情報からの見込み（No Earlier Than）。
+_STATUS_LABEL_JA = {
+    "go": "確定", "tbc": "暫定", "tbd": "未定", "hold": "保留",
+    "in flight": "飛行中",
+}
+# ミッションの種類（LL2 の mission.type）。表に無いものは英語のまま。
+_MISSION_TYPE_JA = {
+    "Earth Science": "地球観測", "Planetary Science": "惑星科学",
+    "Astrophysics": "天文・天体物理", "Heliophysics": "太陽物理",
+    "Human Exploration": "有人探査", "Robotic Exploration": "無人探査",
+    "Lunar Exploration": "月探査",
+    "Government/Top Secret": "政府・非公開", "Tourism": "宇宙旅行",
+    "Unknown": "不明", "Communications": "通信", "Resupply": "物資補給",
+    "Suborbital": "サブオービタル", "Test Flight": "試験飛行",
+    "Dedicated Rideshare": "相乗り（ライドシェア）", "Navigation": "測位",
+    "Technology": "技術実証", "Military": "軍事",
+    "Space Situational Awareness": "宇宙状況把握", "Astronomy": "天文",
+}
+_EN_MON = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+           "Oct", "Nov", "Dec"]
+
+
+def fuzzy_launch_date(dt: datetime | None, precision: str | None,
+                      lang: str) -> dict | None:
+    """日付まで決まっていない打ち上げの表示（「2026年内」「2027年1〜3月」）。
+
+    Launch Library 2 は「2026年内」の予定を net=2026-12-31 で返す。精度を見ずに
+    日付として出すと、年内の予定を12月31日の打ち上げとして載せてしまう
+    （2026-11-28、日本の打ち上げページの「次回」5件がこれだった）。
+    日付まで決まっているもの（Day 以上の精度）は None を返す。
+    """
+    if dt is None or not precision:
+        return None
+    pr = precision.strip()
+    ja = lang == "ja"
+    y, m = dt.year, dt.month
+    if pr == "Week":
+        d = dt.astimezone(JST) if ja else dt
+        if ja:
+            return {"long": f"{d.year}年{d.month}月{d.day}日の週（日付未定）",
+                    "short": f"{d.month}月{d.day}日の週", "month_known": True}
+        return {"long": f"Week of {_EN_MON[d.month]} {d.day}, {d.year} (date TBD)",
+                "short": f"Week of {_EN_MON[d.month]} {d.day}", "month_known": True}
+    if pr == "Month":
+        if ja:
+            return {"long": f"{y}年{m}月（日付未定）", "short": f"{y}年{m}月",
+                    "month_known": True}
+        return {"long": f"{_EN_MON[m]} {y} (date TBD)", "short": f"{_EN_MON[m]} {y}",
+                "month_known": True}
+    # LL2 は「Year Half 1」「Quarter 1」のように年と組み合わせた名前も返す（2026-11-28 実測）
+    if "Quarter" in pr:
+        try:
+            q = int(pr.split()[-1])
+        except ValueError:
+            q = (m - 1) // 3 + 1
+        a, b = 3 * q - 2, 3 * q
+        if ja:
+            return {"long": f"{y}年{a}〜{b}月（日付未定）", "short": f"{y}年{a}〜{b}月",
+                    "month_known": False}
+        return {"long": f"Q{q} {y} (date TBD)", "short": f"Q{q} {y}", "month_known": False}
+    if "Half" in pr:
+        try:
+            h = int(pr.split()[-1])
+        except ValueError:
+            h = 1 if m <= 6 else 2
+        if ja:
+            lbl, rng = ("前半", "1〜6月") if h == 1 else ("後半", "7〜12月")
+            return {"long": f"{y}年{lbl}（{rng}・日付未定）", "short": f"{y}年{lbl}",
+                    "month_known": False}
+        return {"long": f"H{h} {y} (date TBD)", "short": f"H{h} {y}", "month_known": False}
+    if pr in ("Year",) or "Year" in pr:
+        if ja:
+            return {"long": f"{y}年内（日付未定）", "short": f"{y}年内", "month_known": False}
+        return {"long": f"{y} (date TBD)", "short": f"{y}", "month_known": False}
+    return None
+
+
 def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
     """打ち上げを表示用に整形し、予定→実績の順に並べ直す。
 
@@ -321,11 +421,41 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
             # 時刻が決まっていないものを秒まで刻むと、無い精度を主張することになる。
             days = max((dt - now).days, 0)
             it["countdown"] = f"T-{days}日" if lang == "ja" else f"T-{days}d"
+        # 日付まで決まっていない予定（「2026年内」など）。仮置きの日付を出さない。
+        fz = fuzzy_launch_date(dt, it.get("net_precision"), lang) if upcoming else None
+        it["date_fuzzy"] = bool(fz)
+        it["month_known"] = bool(fz and fz["month_known"])
+        if fz:
+            it["time_tbd"] = True
+            it["net_display"] = fz["long"]
+            it["net_short"] = fz["short"]
+            it["countdown"] = None
         st = (it.get("status_name") or it.get("status") or "").lower()
-        it["status_class"] = _STATUS_CLASS.get(st, "tbd")
+        abbrev = (it.get("status") or "").lower()
+        # status_name は「Go for Launch」なので表に当たらず、確定も未定と同じ色で出ていた
+        # （2026-11-28 に気づいた）。略号（Go / TBC / TBD）を先に見る。
+        it["status_class"] = _STATUS_CLASS.get(abbrev) or _STATUS_CLASS.get(st, "tbd")
+        it["status_label"] = (_STATUS_LABEL_JA.get(abbrev) or _STATUS_LABEL_JA.get(st)
+                              or it.get("status")) if lang == "ja" else it.get("status")
+        # 一覧の項目を日本語で（日本語サイトのみ）。表に無い名前は英語のまま。
+        if lang == "ja":
+            it["provider_display"] = (launch_pages._provider_meta(it["provider"])["ja"]
+                                      if it.get("provider") else None)
+            it["location_display"] = (launch_pages._site_meta(it["location"])["ja"]
+                                      if it.get("location") else None)
+            it["mission_type_display"] = _MISSION_TYPE_JA.get(
+                it.get("mission_type") or "", it.get("mission_type"))
+            it["mission_display"] = ("搭載物は未公表"
+                                     if (it.get("mission") or "") == "Unknown Payload"
+                                     else it.get("mission"))
+        else:
+            it["provider_display"] = it.get("provider")
+            it["location_display"] = it.get("location")
+            it["mission_type_display"] = it.get("mission_type")
+            it["mission_display"] = it.get("mission")
         it["result_class"] = _RESULT_CLASS.get(st) if not upcoming else None
         # 「今日」「今週」の仕分け。日本の読者が見るので日本時間で切る。
-        if dt is not None:
+        if dt is not None and not it["date_fuzzy"]:
             days = (dt.astimezone(tz).date() - today).days
             it["days_from_today"] = days
             it["is_today"] = days == 0
@@ -340,6 +470,8 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
         # 一覧の見出し分け。並び順と一致するので、切り替わった所に見出しを出す。
         if not upcoming:
             it["group"] = "results"
+        elif it["date_fuzzy"]:
+            it["group"] = "undated"
         elif it["is_today"]:
             it["group"] = "today"
         elif it["is_this_week"]:
@@ -349,8 +481,9 @@ def prepare_launches(raw: list[dict], lang: str, now: datetime) -> list[dict]:
         out.append(it)
 
     # 予定は近い順、実績は新しい順。stale を降格した結果を必ず並べ直す。
+    # 日付の決まっていない予定は、決まっているものの後ろにまとめる（見出し「日付未定」）。
     upcoming_list = sorted([l for l in out if l["upcoming"]],
-                           key=lambda x: x.get("net") or "")
+                           key=lambda x: (x.get("date_fuzzy", False), x.get("net") or ""))
     past_list = sorted([l for l in out if not l["upcoming"]],
                        key=lambda x: x.get("net") or "", reverse=True)
     return upcoming_list + past_list
@@ -794,6 +927,8 @@ class Builder:
         self.procurement_raw = _load_json("procurement.json").get("items", [])
         # 言語ごとに実際に出力したパスを記録（sitemap生成に使う）
         self.paths_by_lang: dict[str, list[str]] = {l: [] for l in config.LANGS}
+        # Bing 向けの sitemap-bing.xml に載せるパス（Google にだけ見せないページも含む）
+        self.bing_paths_by_lang: dict[str, list[str]] = {l: [] for l in config.LANGS}
         # sitemap の lastmod。内容が固定のページは公開日を入れる。
         # 全URLに毎日ビルド日を入れると更新シグナルとして無効になるため。
         self.lastmod_by_lang: dict[str, dict[str, str]] = {l: {} for l in config.LANGS}
@@ -836,6 +971,8 @@ class Builder:
             "ga_id": config.GA_MEASUREMENT_ID,
             # 集約ページ（/a/）はインデックスさせない
             "noindex": path.startswith("a/"),
+            # Google にだけ見せない（Bing には見せる）。理由は config.GOOGLE_NOINDEX_PREFIXES
+            "google_noindex": (not path.startswith("a/")) and google_noindex_path(path),
             "home_url": rel or "./",
             "active": active,
             "year": self.year,
@@ -916,13 +1053,17 @@ class Builder:
         # p/（論文の抄録ページ）はサイトマップの86%を占めてクロール予算を
         # 吸っていた実測があるため外す（2026-09-03。ページ自体は残る）。
         if not (path.startswith("a/") or path.startswith("p/")):
-            self.paths_by_lang[lang].append(path.rstrip("/") + "/")
+            self.bing_paths_by_lang[lang].append(path.rstrip("/") + "/")
+            # Google 向けの sitemap.xml には、Google に見せるページだけを載せる
+            if not google_noindex_path(path):
+                self.paths_by_lang[lang].append(path.rstrip("/") + "/")
 
     def _write_root(self, lang: str, html: str) -> None:
         out_dir = self._lang_root(lang)
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(html, encoding="utf-8")
         self.paths_by_lang[lang].append("")
+        self.bing_paths_by_lang[lang].append("")
 
     def _today_board(self, lang: str, launches: list[dict],
                      news: list[dict]) -> dict:
@@ -1010,12 +1151,18 @@ class Builder:
         # という完了感を与えるため（可変だと読み終わりの判断ができない）。
         # ヒーローは画像がある記事だけを使う。
         # 画像なしだとグレーの矩形が出て、トップの見栄えが崩れるため。
-        with_img = [n for n in news if n.get("image")]
+        # 通販・配信のセール記事はトップに出さない（収集時にも落とすが、2026-11-28 以前に
+        # 取り込んだ分が残っている）。個別ページ（noindex）は残す。
+        def _promo(n: dict) -> bool:
+            return (is_shopping_promo({"title": n.get("title", "")})
+                    or is_shopping_promo({"title": n.get("title_ja", "") or ""}))
+        news_home = [n for n in news if not _promo(n)]
+        with_img = [n for n in news_home if n.get("image")]
         # メインの1本は「媒体の顔」になるので、新しい順に置くだけにしない。
-        # 製造業читатель向けB2Bメディアとして相応しいものを選ぶ。
+        # 製造業の読者向けB2Bメディアとして相応しいものを選ぶ。
         featured = _order_featured(with_img)[:5]
         used = {id(n) for n in featured}
-        latest = [n for n in news if id(n) not in used][:12]
+        latest = [n for n in news_home if id(n) not in used][:12]
         upcoming = [l for l in launches if l.get("upcoming")]
         today_board = self._today_board(lang, launches, news)
         tcounts = topics.counts(news)
@@ -1475,6 +1622,11 @@ class Builder:
             ctx["fp"] = fp
             ctx["page_title"] = fp["title"]
             ctx["launch_nav"] = launch_pages.nav_for(pages, lang, path)
+            # 見学できる場所と中継（日本の射場・日本語サイトのみ。中身は viewing.py）
+            if lang == "ja":
+                site_slug = path.strip("/").split("/")[-1] if fp["kind"] == "site" else None
+                ctx["viewing"] = viewing.for_page(fp["kind"], site_slug)
+                ctx["viewing_checked"] = viewing.CHECKED
             ctx["ics_href"] = f"webcal://{host}/{prefix}{path}launches.ics"
             ctx["jsonld"] = seo.build_jsonld(
                 self.base_url, lang, "launches",
@@ -1520,6 +1672,9 @@ class Builder:
         now_stamp = stamp(self.now)
         for l in launches:
             if not l.get("upcoming"):
+                continue
+            # 「2026年内」などは日付が無い。仮置きの 12/31 を予定として入れない
+            if l.get("date_fuzzy"):
                 continue
             dt = _parse_iso(l.get("net"))
             if dt is None or not l.get("id"):
@@ -1568,6 +1723,12 @@ class Builder:
         articles_ja = load_articles(config.DEFAULT_LANG)
         (config.DIST_DIR / "sitemap.xml").write_text(
             seo.build_sitemap(self.base_url, self.paths_by_lang, self.now,
+                              self.lastmod_by_lang),
+            encoding="utf-8")
+        # Bing 向け（2026-11-28）。Google にだけ見せないページも含めた従来の一覧。
+        # robots.txt には書かない（Google に読ませないため）。Bing へは API と IndexNow で渡す。
+        (config.DIST_DIR / "sitemap-bing.xml").write_text(
+            seo.build_sitemap(self.base_url, self.bing_paths_by_lang, self.now,
                               self.lastmod_by_lang),
             encoding="utf-8")
 
