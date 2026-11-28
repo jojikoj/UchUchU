@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Wenchang Space Launch Site launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:5ce59e3a-c343-430f-ae4e-e608ba536754@uchuchu.tech
+DTSTAMP:20261128T094049Z
+DTSTART:20261210T070000Z
+DTEND:20261210T080000Z
+SUMMARY:Long March 12 | SatNet LEO Group TBD?
+LOCATION:Wenchang Space Launch Site\, People's Republic of China
+DESCRIPTION:China Aerospace Science and Technology Corporation / Long March 12 / SatNet LEO Group TBD? / To Be Confirmed
+URL:https://uchuchu.tech/en/launches/site/wenchang/
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

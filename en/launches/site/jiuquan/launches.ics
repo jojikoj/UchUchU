@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Jiuquan Satellite Launch Center launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:e2523821-9760-4cb4-ad1f-7ce2e30419bd@uchuchu.tech
+DTSTAMP:20261128T094049Z
+DTSTART:20261202T115500Z
+DTEND:20261202T125500Z
+SUMMARY:Kuaizhou 11 | Unknown Payload
+LOCATION:Jiuquan Satellite Launch Center\, People's Republic of China
+DESCRIPTION:ExPace / Kuaizhou 11 / Unknown Payload / Go for Launch
+URL:https://uchuchu.tech/en/launches/site/jiuquan/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

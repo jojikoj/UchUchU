@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>MacでSteamOSを動かすには？ 手軽な導入方法を解説 · UchUchU</title>
+  <meta name="description" content="無料の「FX Steam Launcher」を使えば、Apple Silicon搭載Macの仮想マシン上でSteamOSを起動できる。通常はMacでは動作しないPCゲームや旧世代のゲームもプレイできるようになる。">
+  <link rel="canonical" href="https://uchuchu.tech/a/wired_jp-8972534836/">
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="ja" href="https://uchuchu.tech/a/wired_jp-8972534836/">
+  <link rel="alternate" hreflang="en" href="https://uchuchu.tech/en/a/wired_jp-8972534836/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">  <meta name="robots" content="noindex, follow">  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UchUchU">
+  <meta property="og:title" content="MacでSteamOSを動かすには？ 手軽な導入方法を解説 · UchUchU">
+  <meta property="og:description" content="無料の「FX Steam Launcher」を使えば、Apple Silicon搭載Macの仮想マシン上でSteamOSを起動できる。通常はMacでは動作しないPCゲームや旧世代のゲームもプレイできるようになる。">
+  <meta property="og:url" content="https://uchuchu.tech/a/wired_jp-8972534836/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MacでSteamOSを動かすには？ 手軽な導入方法を解説 · UchUchU">
+  <meta name="twitter:description" content="無料の「FX Steam Launcher」を使えば、Apple Silicon搭載Macの仮想マシン上でSteamOSを起動できる。通常はMacでは動作しないPCゲームや旧世代のゲームもプレイできるようになる。">
+  <meta name="twitter:image" content="https://uchuchu.tech/static/img/ogp.png">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="UchUchU"
+        href="https://uchuchu.tech/feed.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uchuchu.tech/#organization","name":"UchUchU","url":"https://uchuchu.tech/","logo":{"@type":"ImageObject","url":"https://uchuchu.tech/static/img/ogp.png"}},{"@type":"WebSite","@id":"https://uchuchu.tech/#website","url":"https://uchuchu.tech/","name":"UchUchU","description":"日本の製造業が宇宙産業に参入・受注するための実務メディア。宇宙関連企業データベース、参入ガイド、調達情報、国内外のニュースを集約。","inLanguage":"ja-JP","publisher":{"@id":"https://uchuchu.tech/#organization"},"about":[{"@type":"Thing","name":"Spaceflight","sameAs":"https://www.wikidata.org/wiki/Q18343"},{"@type":"Thing","name":"Space exploration","sameAs":"https://www.wikidata.org/wiki/Q180046"},{"@type":"Thing","name":"Rocket launch","sameAs":"https://www.wikidata.org/wiki/Q3196867"},{"@type":"Thing","name":"Astronomy","sameAs":"https://www.wikidata.org/wiki/Q333"},{"@type":"Thing","name":"Satellite","sameAs":"https://www.wikidata.org/wiki/Q26540"}],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uchuchu.tech/search/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://uchuchu.tech/"},{"@type":"ListItem","position":2,"name":"ニュース","item":"https://uchuchu.tech/news/"},{"@type":"ListItem","position":3,"name":"MacでSteamOSを動かすには？ 手軽な導入方法を解説","item":"https://uchuchu.tech/a/wired_jp-8972534836/"}]},{"@type":"ItemList","name":"宇宙開発ニュース","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"MacでSteamOSを動かすには？ 手軽な導入方法を解説","url":"https://wired.jp/article/get-steamos-easily-running-on-your-mac/"}]}]}</script>
+  <link rel="icon" href="../../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../static/css/style.css?v=5ce84496">
+  <!-- Language routing: Japanese browsers get /, everyone else gets /en/.
+       Runs before paint to avoid a flash. A manual choice always wins. -->
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem("uchuchu-lang")) return;        // 手動選択を尊重
+      if (sessionStorage.getItem("uchuchu-redirected")) return; // 1セッション1回だけ
+      var cur = "ja";
+      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      var want = nav.indexOf("ja") === 0 ? "ja" : "en";
+      if (want === cur) return;
+      var target = want === "ja" ? "https://uchuchu.tech/a/wired_jp-8972534836/" : "https://uchuchu.tech/en/a/wired_jp-8972534836/";
+      if (!target) return;
+      sessionStorage.setItem("uchuchu-redirected", "1");
+      location.replace(target);
+    } catch (e) {}
+  })();
+  </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2EDF9P7P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N2EDF9P7P6');
+</script></head>
+<body data-lang="ja">
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="side-brand" href="../../">
+      <span class="side-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5.2" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(28 16 16)"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg>
+      </span>
+      <span class="side-name">UchUchU</span>
+      <span class="side-tag">宇宙産業ポータル</span>
+    </a>
+
+    <a class="side-tagbtn" href="../../topics/moon/">#タグから探す</a>
+
+    <form class="side-search" action="../../search/" method="get" role="search">
+      <input type="search" name="q" placeholder="記事を検索"
+             aria-label="検索">
+    </form>
+
+    <nav class="side-nav">
+      <a href="../../" class="">ホーム</a>
+      <a href="../../companies/" class="">企業DB</a>
+      <a href="../../procurement/" class="">調達情報</a>
+      <a href="../../articles/" class="">特集</a>
+      <a href="../../launches/" class="">打ち上げ</a>
+      <a href="../../news/" class="on">ニュース</a>
+      <a href="../../faq/" class="">よくある質問</a>
+      <a href="../../advertise/" class="">広告掲載</a>
+      <a href="../../contact/" class="cta ">お問い合わせ</a>
+    </nav>
+
+    <div class="side-lang">
+      <a href="https://uchuchu.tech/a/wired_jp-8972534836/" class="on" hreflang="ja">JA</a>
+      <a href="https://uchuchu.tech/en/a/wired_jp-8972534836/" class="" hreflang="en">EN</a>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="mobile-bar">
+      <a class="mb-brand" href="../../">UchUchU</a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+<article class="ndetail">
+
+  <div class="ndetail-head">
+    <div class="ndetail-meta">
+      <span class="pill-tag src">WIRED.jp</span>
+<time datetime="2026-11-22T08:00:00+00:00">2026.11.22</time>    </div>
+    <h1>MacでSteamOSを動かすには？ 手軽な導入方法を解説</h1>
+  </div>
+
+  <div class="ndetail-media">
+    <img src="https://media.wired.jp/photos/6afd01be21617204b3f7c492/master/pass/GettyImages-1394116979.jpg"
+         alt="" loading="eager" onerror="this.closest('.ndetail-media').remove()">
+  </div>
+
+  <div class="ndetail-body">
+    <p>※元記事はMacでSteamOSを動かす導入ガイドで、宇宙産業やサプライチェーンには触れていない。そのため、宇宙産業との関係は元記事の事実から書けなかった。以下は、元記事の範囲で製造業にも関係しうる互換性とプラットフォーム移行の観点から書いた解説である。宇宙関連の記事で書き直す場合は、その元記事を提供してほしい。</p>
+    <p>無料のオープンソースアプリ「FX Steam Launcher」を使えば、Apple Siliconを搭載したMac上で、Valveの携帯型ゲーム機Steam Deckの基本OSである「SteamOS」のARM版を起動できる。仮想マシンと互換レイヤーを組み合わせる仕組みで、Intel Macは対象外であり、macOS 15以降が必要となる。Steam Deckと同じ操作感を、専用機を持たなくても試せる点が特徴だ。</p>
+    <p>この動きの背景には、Macの公式なソフトウェア環境の変化がある。アップルは2019年にリリースした「macOS Catalina」で32ビットアプリのサポートを終了した。そのため、記事の筆者が所有する古いインディーゲームの多くはMacでは動かせなくなっている。さらにアップルは、macOS 27を最後に、Apple SiliconのMacでIntel向けアプリを原則として動作させない方針だと伝えられている。以前は互換レイヤー「Wine」を使ってWindows向けゲームを動かす方法があったが、セットアップに手間がかかり、当時使われていたバージョンはすでにサポートが終了していた。</p>
+    <p>この事例は宇宙産業の話ではなく、元記事もそれを扱っていない。ただ、CPUの仕組みやOSの仕様が変わると、それまで使ってきたソフトウェアが動かなくなるという構図は、製造現場の制御機器や検査装置にも当てはまる可能性がある。記事から読み取れるのは、既存の環境を動かし続ける手段が、ある時点を境に制約を受けるということである。対象となる製品や装置のソフトウェアが、どの世代のOSやCPU上で動いているかを把握しておくことは、将来の変化に備えるうえで有効だと考えられる。</p>
+    <p>記事の筆者は、他のユーザーの報告をまとめた互換性リストで動作状況を事前に確認するよう勧めている。また、Macの処理能力には限界があり、仮想マシンの仕組み上、本来の性能をすべて引き出せないとも指摘している。ゲームパッドはXbox用やDualSense、MFi対応などの幅広い製品に対応しており、接続も比較的手軽だった。サプライヤーにとっても、移行先での性能や動作を実機で確かめる前に、関連情報を集めて検証計画を立てる姿勢は共通して役立つと考えられる。</p>
+    <p class="ndetail-more">※ 内容の紹介はここまでです。続きは元記事をご覧ください。</p>
+  </div>
+
+  <p class="ndetail-source">
+    出典：<a href="https://wired.jp/article/get-steamos-easily-running-on-your-mac/" target="_blank" rel="noopener nofollow">WIRED.jp</a>
+  </p>
+
+
+  <section class="ndetail-cta">
+    <div class="ndetail-cta-inner">
+      <h2>この分野の企業を探していますか？</h2>
+      <p>UchUchUは宇宙産業に関わる日本企業をデータベース化しています。参入検討・取引先探索にお使いください。</p>
+      <div class="ndetail-cta-actions">
+        <a class="btn btn-primary" href="../../../companies/">企業データベースを見る</a>
+        <a class="btn btn-ghost" href="../../../articles/">参入ガイドを読む</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ndetail-back">
+    <a href="../../../news/">← ニュース一覧へ戻る</a>
+  </div>
+
+</article>
+<aside class="toe-training-wrap" aria-label="株式会社TOEの法人向けAI研修">
+  <p class="toe-training-disclosure">PR｜運営会社TOEのAI研修</p>
+  <a class="toe-training-banner" href="https://ai-training-lp-rouge.vercel.app/?utm_source=uchuchu&amp;utm_medium=display&amp;utm_campaign=toe_ai_training_202610&amp;utm_content=article_banner">
+    <span class="toe-training-visual"><img class="toe-training-photo" src="../../static/img/toe-training-photo-v2.webp" alt="パソコンで提案の準備を進める社員と経営者のイメージ" width="1100" height="733" loading="lazy"><small class="toe-training-image-note">AI生成のイメージ写真</small></span>
+    <span class="toe-training-copy">
+      <span class="toe-training-brand"><img src="../../static/img/toe-training-logo.png" alt="TOE" width="573" height="200" loading="lazy"><span>法人向けAI研修</span></span>
+      <strong class="toe-training-title">見積も、提案も。<br><span>社長ひとりで抱えない。</span></strong>
+      <span class="toe-training-body">見積・提案・顧客対応を題材に、AIで下書きや情報整理を学ぶ法人研修です。</span>
+      <span class="toe-training-action">無料30分相談<span aria-hidden="true">→</span></span>
+    </span>
+    <span class="toe-training-grant">
+      <span class="toe-training-deadline">まもなく終了</span>
+      <span class="toe-training-label">助成率</span>
+      <span class="toe-training-rate"><small>最大</small><b>75</b><span>%</span></span>
+      <small class="toe-training-note">中小企業・要件あり</small>
+    </span>
+  </a>
+</aside>
+<script src="../../static/js/toe-training-banner-v3.js" defer></script>    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="side-name">UchUchU</div>
+          <p class="footer-tagline">宇宙産業と、日本のものづくりをつなぐ。</p>
+          <p class="footer-desc">宇宙開発の「いま」を国内外へ発信するオープンなプラットフォーム。運用中にAI APIを使わず、無料の公開データのみで動きます。</p>
+        </div>
+        <div class="footer-col">
+          <h4>ホーム</h4>
+          <a href="../../companies/">企業DB</a>
+<a href="../../procurement/">調達情報</a>          <a href="../../articles/">特集</a>
+          <a href="../../launches/">打ち上げ</a>
+          <a href="../../news/">ニュース</a>
+          <a href="../../papers/">研究動向</a>
+          <a href="../../topics/moon/">トピック</a>
+          <a href="../../search/">検索</a>
+          <a href="../../about/">運営会社</a>
+        </div>
+        <div class="footer-col">
+          <h4>データ提供</h4>
+          <a href="https://www.jaxa.jp/" rel="noopener" target="_blank">JAXA</a>
+          <a href="https://www.nasa.gov/" rel="noopener" target="_blank">NASA</a>
+          <a href="https://spaceflightnewsapi.net/" rel="noopener" target="_blank">Spaceflight News API</a>
+          <a href="https://thespacedevs.com/" rel="noopener" target="_blank">The Space Devs</a>
+          <a href="https://arxiv.org/" rel="noopener" target="_blank">arXiv</a>
+        </div>
+        <div class="footer-col">
+          <h4>運営元</h4>
+          <a href="https://gtoe.info/" rel="noopener" target="_blank">株式会社TOE</a>
+          <a href="https://ai-oni.com/" rel="noopener" target="_blank">AIの鬼 — AI実践・実測ラボ</a>
+          <a href="https://hojokin.website/" rel="noopener" target="_blank">補助金の鬼 — 補助金・助成金の実務メディア</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 UchUchU · 静的サイト・自動更新</span>
+        <span class="footer-updated">更新: 2026-11-28 09:40 UTC</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="../../static/js/main.js?v=5ce84496" defer></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UchUchU//Launch Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UchUchU Japan launches
+X-WR-TIMEZONE:UTC
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:21561fba-dc41-41b3-9d18-e13339fc3396@uchuchu.tech
+DTSTAMP:20261128T094049Z
+DTSTART:20270110T230000Z
+DTEND:20270111T000000Z
+SUMMARY:H3-30 | IGS Optical Diversification 1
+LOCATION:Tanegashima Space Center\, Japan
+DESCRIPTION:Mitsubishi Heavy Industries / H3-30 / IGS Optical Diversification 1 / Go for Launch
+URL:https://uchuchu.tech/en/launches/japan/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7149bbf6-bf27-4115-bb19-8c7c7b93fad9@uchuchu.tech
+DTSTAMP:20261128T094049Z
+DTSTART:20270122T060000Z
+DTEND:20270122T070000Z
+SUMMARY:KAIROS | JSDF SDA Demonstration satellite
+LOCATION:Spaceport Kii\, Japan
+DESCRIPTION:Space One / Kii-based Advanced & Instant ROcket System / JSDF SDA Demonstration satellite / Go for Launch
+URL:https://uchuchu.tech/en/launches/japan/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
